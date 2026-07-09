@@ -1,0 +1,105 @@
+#------------------------------------------------------------
+# Lattice Radiant (from online forum)
+#------------------------------------------------------------
+*.html
+#impl*/
+*.xml
+.build_status
+.run_manager.ini
+.recovery
+.spread_sheet.ini
+.spreadsheet_view.ini
+*.dir/
+*.log
+*.tcl
+*.ccl
+*.srp
+*.dmp
+._Real_._Math_.vhd
+
+#------------------------------------------------------------
+# GHDL gitignore
+#------------------------------------------------------------
+
+# --- GHDL Library and Analysis Files ---
+*.cf
+*.o
+*.a
+*.s
+
+# --- Simulation Outputs & Data ---
+*.vcd
+*.ghw
+*.fst
+work/
+cover/
+
+# --- Executables ---
+*.exe
+
+# --- Log Files ---
+*.log
+*.rpt
+*.txt
+
+# --- Build & VUnit Directories ---
+vunit_out/
+build/
+dist/
+
+
+#------------------------------------------------------------
+# Emacs.gitignore
+#------------------------------------------------------------
+
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# elpa packages
+/elpa/
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+# network security
+/network-security.data
+
+# undo-tree
+*.~undo-tree~
