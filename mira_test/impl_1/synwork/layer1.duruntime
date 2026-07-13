@@ -1,0 +1,59 @@
+Runtime Summary:
+================
+
+	The following design units have negligible CPU times:
+	=====================================================
+		* Library: work, DesignUnit: main_pll
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: main_pll_ipgen_lscc_pll_Z17_layer1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmi_fifo_Z16_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_Z15_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_hw_core_Z14_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_hard_fifo_Z13_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_main_Z12_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_fwft_fabric_noreg_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: process_image_out_fifo
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_dphy_rx
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DPHY_Z7_layer1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_cross_clk_fifo
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric_reg_0s_34s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: PLL
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: FIFO16K
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time

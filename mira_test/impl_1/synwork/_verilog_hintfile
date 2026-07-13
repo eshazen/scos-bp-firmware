@@ -1,0 +1,121 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|0|-ignore_undefined_lib|-lib|pmi|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\bin64\\c_vhdl.exe":1762883054
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\location.map":1762955099
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\std.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1762882135
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\std1164.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\std_textio.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\numeric.vhd":1762883261
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd\\umr_capim.vhd":1762882135
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\arith.vhd":1762882135
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\unsigned.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_lifcl.vhd":1760761307
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\mipi_rx.vhd":1783438483
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\frame_buf.vhd":1783444952
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\uart_rx.vhd":1692077381
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\img_mean_std.vhd":1783446400
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\uart_tx.vhd":1779117114
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\process_image.vhd":1783445256
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\mira_test_top.vhd":1783445014
+@E8lFkRDClNHs_#0C0F_0bH
+DLssN$FRIsH	
+M0bkR	BDcBUGQ
+R4HkMb0CR)#GC0)4QR
+FHMkv0RH)bHG.uR
+FHMkv0RH)bHG.hR
+FHMkv0RH)bHGuB	RH4
+M0FkRbvHHB)G	4hR
+bHMkz0RN)s0a01MFtwuqQG7RF4
+kk0b0NRzsa0B1FM0wQa7GR7m4k
+F00bkRszN0twuqw0FaG7Q74mR
+bHMkz0RNws0a07QFtwuqQG7RF4
+kk0b0CR7L7koNG0N74mR.k
+F00bkR7p GR1m4Cc
+MF8l8CkD
+8lFkRDCbOsFC_##HolNCH
+DLssN$FRIsb	
+NlsNCs0CRaAQ_u7 aH]RMo0CCHs
+M0bkR	BDGRBQ-H4
+M0bkR#)CC)0GQ4R-
+bHMk)0Rk1MGQ4R-
+bHMku0RHNGeDQG7R
+-4HkMb0HRuGs7N	DeNGR7Q-H4
+M0bkRGuHeHND8QG1R
+-4HkMb0sRwNelCN8DHGR1Q-H4
+M0bkRMpHCDeNH18GQ4R-
+0FkbRk0u07NGR7m-F4
+kk0b07RuNN0eDGH81-mR4M
+HbRk0)w8$F7suN10GQ4R-
+0FkbRk0u07NeHND8FwslFusOmG1R
+-4ClM8FD8kCF
+l8CkDRskN0G_0
+LDHs$NsRsIF	N
+bsCNl0RCsaBX_p7i_QHeRMo0CCHs
+M0bkR	BDGRBQ-H4
+M0bkR#)CC)0GQ4R-
+bHMkB0RaG1M1-QR4k
+F00bkRs1C7GN07-mR4k
+F00bkRszN0$)8GR1m-H4
+M0bkRsuN7eN0N8DHGR1Q-H4
+M0bkRsuN7GN07-QR4M
+C88lFk
+DClkF8DHCRllo_C_NM#
+08DsHLNRs$I	Fs
+sbNN0lCCAsRQ7a_ ]uaR0HMCsoC
+bHMkB0RDB	GQ4R-
+bHMk)0RC0#CGR)Q-H4
+M0bkRGuHeGND7-QR4M
+HbRk0u7HGNes	N7DGQ4R-
+bHMku0RHNGeDGH81-QR4M
+HbRk0wlsNCDeNH18GQ4R-
+bHMkp0RHeMCN8DHGR1Q-F4
+kk0b0HRuGl1kGR7m-F4
+kk0b0HRuG11Jk7lGm4R-
+0FkbRk0u07NeHND8mG1R
+-4ClM8FD8kCF
+l8CkDRskN0G_s
+LDHs$NsRsIF	N
+bsCNl0RCs)BX_p7i_QHeRMo0CCHs
+M0bkR	BDGRBQ-H4
+M0bkR#)CC)0GQ4R-
+bHMk10RCNs70QG7R
+-4Fbk0ku0RNNs70mG7R
+-4Fbk0ku0RNNs70$)8GR1m-F4
+kk0b0CR7LGko1-mR4M
+C88lFk
+DClkF8DVCRsCNl_VLk
+LDHs$NsRsIF	N
+bsCNl0RCsA_Qa7a u]MRH0CCosM
+HbRk0BGD	B-QR4M
+HbRk0)CC#0QG)R
+-4HkMb0HRuG07NGR7Q-H4
+M0bkRGuH7eN0N8DHGR1Q-H4
+M0bkRwQMsCNlGR1Q-H4
+M0bkRHasoQG1R
+-4HkMb0DR1H1OCC7DGQ4R-
+bHMk10RkMlB0QG7R
+-4HkMb0NRzs80)$QG1R
+-4Fbk0ku0R7GN07-mR4k
+F00bkRNu70DeNH18Gm4R-
+8CMlkF8DlC
+FD8kCHRlbsH_GH
+DLssN$FRIsb	
+NlsNCs0CRaAQ_u7 aH]RMo0CCHs
+M0bkR	BDGRBQ-H4
+M0bkR#)CC)0GQ4R-
+FHMkv0RH)bHG-uR4M
+HFRk0vHHb)RGh-H4
+M0FkRbvHHB)G	-uR4M
+HFRk0vHHb)	GBh4R-
+0FkbRk0u7HGNG0N7-mR4k
+F00bkRGuH7NN0eHND8mG1R
+-4Fbk0kQ0RMMpHCmG1R
+-4Fbk0kQ0RMNwsl1CGm4R-
+0FkbRk07kCLo07NNmG7R
+-4ClM8FD8kC
+
+
+
+
+@ 

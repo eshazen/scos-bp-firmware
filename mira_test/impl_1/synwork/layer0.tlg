@@ -1,0 +1,170 @@
+@N: CD231 :"C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Synthesizing work.mira_test_top.architecture_mira_test_top.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":59:23:59:24|Using onehot encoding for type cfgfsmstate_type. For example, enumeration sidle is mapped to "10000".
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":163:3:163:16|OTHERS clause is not synthesized.
+Running optimization stage 1 on main_pll .......
+Finished optimization stage 1 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 156MB peak: 157MB)
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd":12:7:12:13|Synthesizing work.uart_rx.behavioral.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd":29:19:29:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000".
+Post processing for work.uart_rx.behavioral
+Running optimization stage 1 on uart_rx .......
+Finished optimization stage 1 on uart_rx (CPU Time 0h:00m:00s, Memory Used current: 156MB peak: 158MB)
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":14:7:14:13|Synthesizing work.uart_tx.behavioral.
+@N: CD233 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":30:19:30:20|Using sequential encoding for type fsmstatetype.
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":134:3:134:16|OTHERS clause is not synthesized.
+Running optimization stage 1 on pmi_fifo_work_mira_test_top_architecture_mira_test_top_0 .......
+Finished optimization stage 1 on pmi_fifo_work_mira_test_top_architecture_mira_test_top_0 (CPU Time 0h:00m:00s, Memory Used current: 156MB peak: 158MB)
+Post processing for work.uart_tx.behavioral
+Running optimization stage 1 on uart_tx .......
+Finished optimization stage 1 on uart_tx (CPU Time 0h:00m:00s, Memory Used current: 157MB peak: 158MB)
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":16:7:16:15|Synthesizing work.frame_buf.architecture_frame_buf.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":50:22:50:23|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000".
+@N: CD233 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":84:24:84:25|Using sequential encoding for type fifo_fsmstatetype.
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":265:12:265:25|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":347:3:347:16|OTHERS clause is not synthesized.
+Post processing for work.frame_buf.architecture_frame_buf
+Running optimization stage 1 on frame_buf .......
+Finished optimization stage 1 on frame_buf (CPU Time 0h:00m:03s, Memory Used current: 360MB peak: 361MB)
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":15:7:15:19|Synthesizing work.process_image.architecture_process_image.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":41:19:41:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000000000".
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":190:3:190:16|OTHERS clause is not synthesized.
+Running optimization stage 1 on process_image_out_fifo .......
+Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 360MB peak: 361MB)
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":15:7:15:18|Synthesizing work.img_mean_std.architecture_img_mean_std.
+Post processing for work.img_mean_std.architecture_img_mean_std
+Running optimization stage 1 on img_mean_std .......
+Finished optimization stage 1 on img_mean_std (CPU Time 0h:00m:00s, Memory Used current: 362MB peak: 363MB)
+Post processing for work.process_image.architecture_process_image
+Running optimization stage 1 on process_image .......
+Finished optimization stage 1 on process_image (CPU Time 0h:00m:00s, Memory Used current: 362MB peak: 363MB)
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":14:7:14:13|Synthesizing work.mipi_rx.architecture_mipi_rx.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":59:19:59:20|Using onehot encoding for type fsmstatetype. For example, enumeration swaitfssync is mapped to "100000000000".
+Running optimization stage 1 on mipi_cross_clk_fifo .......
+Finished optimization stage 1 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 362MB peak: 363MB)
+Running optimization stage 1 on mipi_dphy_rx .......
+Finished optimization stage 1 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 362MB peak: 363MB)
+Post processing for work.mipi_rx.architecture_mipi_rx
+Running optimization stage 1 on mipi_rx .......
+Finished optimization stage 1 on mipi_rx (CPU Time 0h:00m:00s, Memory Used current: 362MB peak: 363MB)
+Post processing for work.mira_test_top.architecture_mira_test_top
+Running optimization stage 1 on mira_test_top .......
+@W: CL271 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Pruning unused bits 6 to 4 of p_cfg_memzing.CfgFSMSRegxDP_0_2(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+Finished optimization stage 1 on mira_test_top (CPU Time 0h:00m:00s, Memory Used current: 362MB peak: 364MB)
+Running optimization stage 2 on mipi_dphy_rx .......
+Finished optimization stage 2 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 333MB peak: 364MB)
+Running optimization stage 2 on mipi_cross_clk_fifo .......
+Finished optimization stage 2 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 333MB peak: 364MB)
+Running optimization stage 2 on mipi_rx_10 .......
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":126:2:126:3|Trying to extract state machine for register StatexDP.
+Extracted state machine for register StatexDP
+State machine has 11 reachable states with original encodings of:
+   000000000001
+   000000000010
+   000000000100
+   000000001000
+   000000100000
+   000001000000
+   000010000000
+   000100000000
+   001000000000
+   010000000000
+   100000000000
+Finished optimization stage 2 on mipi_rx_10 (CPU Time 0h:00m:00s, Memory Used current: 333MB peak: 364MB)
+Running optimization stage 2 on img_mean_std_10 .......
+@W: CL279 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Pruning register bits 31 to 23 of PixValSqCombxDP(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Pruning register bits 21 to 13 of PixValCombxDP(21 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Register bit PixValCombxDP(12) is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Register bit PixValSqCombxDP(22) is always 0.
+@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Pruning register bit 22 of PixValSqCombxDP(22 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Pruning register bit 12 of PixValCombxDP(12 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Finished optimization stage 2 on img_mean_std_10 (CPU Time 0h:00m:02s, Memory Used current: 362MB peak: 364MB)
+Running optimization stage 2 on process_image_out_fifo .......
+Finished optimization stage 2 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 346MB peak: 364MB)
+Running optimization stage 2 on process_image_10 .......
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":83:2:83:3|Trying to extract state machine for register StatexDP.
+Extracted state machine for register StatexDP
+State machine has 11 reachable states with original encodings of:
+   00000000001
+   00000000010
+   00000000100
+   00000001000
+   00000010000
+   00000100000
+   00001000000
+   00010000000
+   00100000000
+   01000000000
+   10000000000
+Finished optimization stage 2 on process_image_10 (CPU Time 0h:00m:00s, Memory Used current: 347MB peak: 364MB)
+Running optimization stage 2 on frame_buf_10 .......
+@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":144:2:144:3|Found RAM FIFOMemxDP, depth=16, width=64
+@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":144:2:144:3|Found RAM MemxDP, depth=16000, width=64
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":113:2:113:3|Trying to extract state machine for register StatexDP.
+Extracted state machine for register StatexDP
+State machine has 9 reachable states with original encodings of:
+   000000001
+   000000010
+   000000100
+   000001000
+   000010000
+   000100000
+   001000000
+   010000000
+   100000000
+@W: CL246 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":27:1:27:11|Input port bits 7 to 4 of sliceselxdi(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+Finished optimization stage 2 on frame_buf_10 (CPU Time 0h:00m:01s, Memory Used current: 354MB peak: 364MB)
+Running optimization stage 2 on pmi_fifo_work_mira_test_top_architecture_mira_test_top_0 .......
+Finished optimization stage 2 on pmi_fifo_work_mira_test_top_architecture_mira_test_top_0 (CPU Time 0h:00m:00s, Memory Used current: 354MB peak: 364MB)
+Running optimization stage 2 on uart_tx_8 .......
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":77:2:77:3|Trying to extract state machine for register StatexDP.
+Extracted state machine for register StatexDP
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+Finished optimization stage 2 on uart_tx_8 (CPU Time 0h:00m:00s, Memory Used current: 354MB peak: 364MB)
+Running optimization stage 2 on uart_rx_8 .......
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd":42:2:42:3|Trying to extract state machine for register StatexDP.
+Extracted state machine for register StatexDP
+State machine has 5 reachable states with original encodings of:
+   00001
+   00010
+   00100
+   01000
+   10000
+Finished optimization stage 2 on uart_rx_8 (CPU Time 0h:00m:00s, Memory Used current: 354MB peak: 364MB)
+Running optimization stage 2 on main_pll .......
+Finished optimization stage 2 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 354MB peak: 364MB)
+Running optimization stage 2 on mira_test_top .......
+@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Pruning register bit 3 of CfgRegxDP_14(3 downto 2). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Pruning unused register p_cfg_memzing.CfgRegxDP_15(0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Pruning unused register CfgRegxDP_14(2). Make sure that there are no unused intermediate registers.
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Trying to extract state machine for register CfgStatexDP.
+Extracted state machine for register CfgStatexDP
+State machine has 5 reachable states with original encodings of:
+   00001
+   00010
+   00100
+   01000
+   10000
+Finished optimization stage 2 on mira_test_top (CPU Time 0h:00m:00s, Memory Used current: 354MB peak: 364MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\layer0.duruntime
+
+

@@ -1,0 +1,60 @@
+#List of actual used RTLs.
+
+File                                                                                                Type     IN_PROJECT/INCLUDED/LIBRARY
+
+"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd"                            vhdl                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v"                                 verilog                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd"                                  vhdl                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd"                                  vhdl                      IN PROJECT
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v"                                                       verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v"                       verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.v"                                                      verilog                      IN PROJECT
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v"                                                        verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v"                                     verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_rom.v"                                                        verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v"                                                  verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dq/rtl\lscc_lfmxo4_ram_dq.v"                        verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v"                               verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v"                                                     verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v"              verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v"                     verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_true.v"                                                verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v"                                                  verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v"                        verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v"                               verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v"                                                     verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v"                       verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v"                                                       verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v"                   verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v"                                                 verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v"           verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v"                                              verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v"             verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v"                                                        verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v"                             verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo_dc.v"                                                    verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v"                                   verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v"                verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v"                                      verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v"             verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_rom.v"                                            verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v"         verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_spram.v"                                          verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v"         verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_dpram.v"                                          verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v"                                verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_counter.v"                                                    verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v"                   verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v"                                               verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/adder/rtl\lscc_adder.v"                                 verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_add.v"                                                        verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v"                    verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v"                                                     verilog                        INCLUDED
+"C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.vhd"                                                       vhdl                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd"                                vhdl                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd"                            vhdl                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v"     verilog                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd"                             vhdl                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd"                                  vhdl                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v"           verilog                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v"                         verilog                      IN PROJECT

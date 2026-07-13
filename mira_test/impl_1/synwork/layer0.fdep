@@ -1,0 +1,78 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-mixedhdl|-top|mira_test_top|-layerid|0|-orig_srs|C:\\Users\\Bernhard\\my_designs\\mira_test\\impl_1\\synwork\\mira_test_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|0|-ignore_undefined_lib|-lib|pmi|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\bin64\\c_vhdl.exe":1762883054
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\location.map":1762955099
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\std.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1762882135
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\std1164.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\std_textio.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\numeric.vhd":1762883261
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd\\umr_capim.vhd":1762882135
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\arith.vhd":1762882135
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\unsigned.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd\\hyperents.vhd":1762882134
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_lifcl.vhd":1760761307
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\mipi_rx.vhd":1783438483
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\frame_buf.vhd":1783444952
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\uart_rx.vhd":1692077381
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\img_mean_std.vhd":1783446400
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\uart_tx.vhd":1779117114
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\process_image.vhd":1783445256
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\mira_test_top.vhd":1783445014
+0 "C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.vhd" vhdl
+1 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd" vhdl
+2 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd" vhdl
+3 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd" vhdl
+4 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd" vhdl
+5 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd" vhdl
+6 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd" vhdl
+7 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 0 
+6 4 
+7 1 6 2 5 3 
+
+# Dependency Lists (Users Of)
+0 5 
+1 7 
+2 7 
+3 7 
+4 6 
+5 7 
+6 7 
+7 -1
+
+# Design Unit to File Association
+arch work mipi_rx architecture_mipi_rx 1
+module work mipi_rx 1
+arch work frame_buf architecture_frame_buf 2
+module work frame_buf 2
+arch work uart_rx behavioral 3
+module work uart_rx 3
+arch work img_mean_std architecture_img_mean_std 4
+module work img_mean_std 4
+arch work uart_tx behavioral 5
+module work uart_tx 5
+arch work process_image architecture_process_image 6
+module work process_image 6
+arch work mira_test_top architecture_mira_test_top 7
+module work mira_test_top 7
+
+# Unbound Instances to File Association
+inst work mipi_rx mipi_cross_clk_fifo 1
+inst work mipi_rx mipi_dphy_rx 1
+inst work uart_tx pmi_fifo 5
+inst work process_image process_image_out_fifo 6
+inst work mira_test_top main_pll 7
+
+#identified top module
+top_module mira_test_top
+
+
+# Configuration files used

@@ -1,0 +1,35 @@
+Runtime Summary:
+================
+
+	*Library: work, Entity: img_mean_std_10, Architecture: architecture_img_mean_std
+		Optimization Phase          : 0h:00m:01s
+
+	*Library: work, Entity: frame_buf_10, Architecture: architecture_frame_buf
+		Initial Cleanup Phase       : 0h:00m:03s
+
+	The following design units have negligible CPU times:
+	=====================================================
+		*Library: work, Entity: mipi_rx_10, Architecture: architecture_mipi_rx
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: img_mean_std_10, Architecture: architecture_img_mean_std
+			Hardware Generation Phase, Initial Cleanup Phase: Negligible CPU time
+		*Library: work, Entity: process_image_10, Architecture: architecture_process_image
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: frame_buf_10, Architecture: architecture_frame_buf
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: uart_tx_8, Architecture: behavioral
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: uart_rx_8, Architecture: behavioral
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: mira_test_top, Architecture: architecture_mira_test_top
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: mipi_dphy_rx, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: mipi_cross_clk_fifo, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: process_image_out_fifo, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: pmi_fifo_work_mira_test_top_architecture_mira_test_top_0, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: main_pll, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time

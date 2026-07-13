@@ -1,0 +1,114 @@
+
+fsm_encoding {1012621261} onehot
+
+fsm_state_encoding {1012621261} swaitfssync {00000000001}
+
+fsm_state_encoding {1012621261} sfsdi {00000000010}
+
+fsm_state_encoding {1012621261} swaitlssync {00000000100}
+
+fsm_state_encoding {1012621261} slsdi {00000001000}
+
+fsm_state_encoding {1012621261} sreadldatafirst {00000010000}
+
+fsm_state_encoding {1012621261} sreadldata0 {00000100000}
+
+fsm_state_encoding {1012621261} sreadldata1 {00001000000}
+
+fsm_state_encoding {1012621261} sreadldata2 {00010000000}
+
+fsm_state_encoding {1012621261} sreadldata3 {00100000000}
+
+fsm_state_encoding {1012621261} sreadldata4 {01000000000}
+
+fsm_state_encoding {1012621261} sreadldatalast {10000000000}
+
+fsm_registers {1012621261} {StatexDP[0]}  {StatexDP[1]}  {StatexDP[2]}  {StatexDP[3]}  {StatexDP[4]}  {StatexDP[5]}  {StatexDP[6]}  {StatexDP[7]}  {StatexDP[8]}  {StatexDP[9]}  {StatexDP[10]} 
+
+fsm_encoding {15832832} onehot
+
+fsm_state_encoding {15832832} sidle {00000000001}
+
+fsm_state_encoding {15832832} swaitinterframe {00000000010}
+
+fsm_state_encoding {15832832} sacquire {00000000100}
+
+fsm_state_encoding {15832832} sloadsreg1 {00000001000}
+
+fsm_state_encoding {15832832} sloadsreg2 {00000010000}
+
+fsm_state_encoding {15832832} stxbytes {00000100000}
+
+fsm_state_encoding {15832832} spauseacquire {00001000000}
+
+fsm_state_encoding {15832832} spauseloadsreg1 {00010000000}
+
+fsm_state_encoding {15832832} spauseloadsreg2 {00100000000}
+
+fsm_state_encoding {15832832} spausetxbytes {01000000000}
+
+fsm_state_encoding {15832832} swaitidle {10000000000}
+
+fsm_registers {15832832} {StatexDP[0]}  {StatexDP[1]}  {StatexDP[2]}  {StatexDP[3]}  {StatexDP[4]}  {StatexDP[5]}  {StatexDP[6]}  {StatexDP[7]}  {StatexDP[8]}  {StatexDP[9]}  {StatexDP[10]} 
+
+fsm_encoding {1111321133} onehot
+
+fsm_state_encoding {1111321133} sidle {000000001}
+
+fsm_state_encoding {1111321133} sresetfifo {000000010}
+
+fsm_state_encoding {1111321133} sloadfifo {000000100}
+
+fsm_state_encoding {1111321133} swaitframe {000001000}
+
+fsm_state_encoding {1111321133} swaitslice {000010000}
+
+fsm_state_encoding {1111321133} sstoreslice {000100000}
+
+fsm_state_encoding {1111321133} sloadword {001000000}
+
+fsm_state_encoding {1111321133} sshiftoutbyte {010000000}
+
+fsm_state_encoding {1111321133} swaitidle {100000000}
+
+fsm_registers {1111321133} {StatexDP[0]}  {StatexDP[1]}  {StatexDP[2]}  {StatexDP[3]}  {StatexDP[4]}  {StatexDP[5]}  {StatexDP[6]}  {StatexDP[7]}  {StatexDP[8]} 
+
+fsm_encoding {14772774} sequential
+
+fsm_state_encoding {14772774} swaitcts {00}
+
+fsm_state_encoding {14772774} sload {01}
+
+fsm_state_encoding {14772774} stxbits {10}
+
+fsm_state_encoding {14772774} stxstop {11}
+
+fsm_registers {14772774} {StatexDP[1]}  {StatexDP[0]} 
+
+fsm_encoding {12422425} onehot
+
+fsm_state_encoding {12422425} sidle {00001}
+
+fsm_state_encoding {12422425} sstart {00010}
+
+fsm_state_encoding {12422425} sread {00100}
+
+fsm_state_encoding {12422425} spdrdy {01000}
+
+fsm_state_encoding {12422425} sstop {10000}
+
+fsm_registers {12422425} {StatexDP[0]}  {StatexDP[1]}  {StatexDP[2]}  {StatexDP[3]}  {StatexDP[4]} 
+
+fsm_encoding {1610721076} onehot
+
+fsm_state_encoding {1610721076} sidle {00001}
+
+fsm_state_encoding {1610721076} srxbytes {00010}
+
+fsm_state_encoding {1610721076} sdecodecmd {00100}
+
+fsm_state_encoding {1610721076} stxheader {01000}
+
+fsm_state_encoding {1610721076} stxreg {10000}
+
+fsm_registers {1610721076} {CfgStatexDP[0]}  {CfgStatexDP[1]}  {CfgStatexDP[2]}  {CfgStatexDP[3]}  {CfgStatexDP[4]} 

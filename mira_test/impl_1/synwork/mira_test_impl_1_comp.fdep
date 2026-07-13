@@ -1,0 +1,381 @@
+#OPTIONS:"|-mixedhdl|-top|mira_test_top|-layerid|0|-orig_srs|C:\\Users\\Bernhard\\my_designs\\mira_test\\impl_1\\synwork\\mira_test_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|0|-ignore_undefined_lib|-lib|pmi|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\bin64\\c_vhdl.exe":1762883054
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\location.map":1762955099
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\std.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1762882135
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\std1164.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\std_textio.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\numeric.vhd":1762883261
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd\\umr_capim.vhd":1762882135
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\arith.vhd":1762882135
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\unsigned.vhd":1762882136
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd\\hyperents.vhd":1762882134
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_lifcl.vhd":1760761307
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\mipi_rx.vhd":1783438483
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\frame_buf.vhd":1783444952
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\uart_rx.vhd":1692077381
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\img_mean_std.vhd":1783446400
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\uart_tx.vhd":1779117114
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\process_image.vhd":1783445256
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\mira_test_top.vhd":1783445014
+#OPTIONS:"|-mixedhdl|-modhint|C:\\Users\\Bernhard\\my_designs\\mira_test\\impl_1\\synwork\\_verilog_hintfile|-top|work.mipi_cross_clk_fifo|-top|work.mipi_dphy_rx|-top|work.process_image_out_fifo|-top|work.pmi_fifo|-top|work.main_pll|-mpparams|C:\\Users\\Bernhard\\my_designs\\mira_test\\impl_1\\synwork\\_mh_params|-layerid|1|-orig_srs|C:\\Users\\Bernhard\\my_designs\\mira_test\\impl_1\\synwork\\mira_test_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|C:\\Users\\Bernhard\\my_designs\\mira_test|-I|C:\\Users\\Bernhard\\my_designs\\mira_test\\main_pll|-I|C:\\Users\\Bernhard\\my_designs\\mira_test\\mipi_cross_clk_fifo|-I|C:\\Users\\Bernhard\\my_designs\\mira_test\\mipi_dphy_rx|-I|C:\\Users\\Bernhard\\my_designs\\mira_test\\process_image_out_fifo|-I|C:\\Users\\Bernhard\\my_designs\\mira_test\\impl_1\\|-I|C:\\lscc\\radiant\\2025.2\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\lucent\\lifcl.v|-devicelib|C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\bin64\\c_ver.exe":1762882888
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\impl_1\\synwork\\_verilog_hintfile":1783458227
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\lucent\\lifcl.v":1764829772
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\lucent\\pmi_def.v":1762872209
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vlog\\hypermods.v":1762882133
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vlog\\scemi_objects.v":1762882133
+#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vlog\\scemi_pipes.svh":1762882133
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_lifcl.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_addsub.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/adder_subtractor/rtl/lscc_add_sub.v":1760761302
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_add.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/adder/rtl/lscc_adder.v":1760761302
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_complex_mult.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/complex_mult/rtl/lscc_complex_mult.v":1760761302
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_counter.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/counter/rtl/lscc_cntr.v":1760761302
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_distributed_dpram.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/distributed_dpram/rtl/lscc_distributed_dpram.v":1760761302
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_distributed_spram.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/distributed_spram/rtl/lscc_distributed_spram.v":1760761302
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_distributed_rom.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/distributed_rom/rtl/lscc_distributed_rom.v":1760761302
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_distributed_shift_reg.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/ram_shift_reg/rtl/lscc_shift_register.v":1760761305
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_fifo.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/fifo/rtl/lscc_fifo.v":1760761302
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_fifo_dc.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/fifo_dc/rtl/lscc_fifo_dc.v":1760761303
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_mac.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/mult_accumulate/rtl/lscc_mult_accumulate.v":1760761304
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_multaddsubsum.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":1760761304
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_multaddsub.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/mult_add_sub/rtl/lscc_mult_add_sub.v":1760761304
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_mult.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/multiplier/rtl/lscc_multiplier.v":1760761304
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_ram_dp.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/ram_dp/rtl/lscc_ram_dp.v":1760761304
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v":1762960848
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_ram_dp_be.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/ram_dp/rtl/lscc_ram_dp.v":1760761304
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v":1762960848
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_ram_dp_true.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1760761305
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../LFMXO4/ram_dp_true/rtl/lscc_lfmxo4_ram_dp_true.v":1760761300
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_ram_dq.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/ram_dq/rtl/lscc_ram_dq.v":1760761305
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v":1763090442
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_ram_dq_be.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/ram_dq/rtl/lscc_ram_dq.v":1760761305
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v":1763090442
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_rom.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/rom/rtl/lscc_rom.v":1760761305
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_sub.v":1760761307
+#CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1760761305
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\mipi_dphy_rx\\rtl\\mipi_dphy_rx.v":1777582229
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\mipi_cross_clk_fifo\\rtl\\mipi_cross_clk_fifo.v":1777609417
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\main_pll\\rtl\\main_pll.v":1777582265
+#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\process_image_out_fifo\\rtl\\process_image_out_fifo.v":1783358398
+0			"C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.vhd" vhdl
+1			"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd" vhdl
+2			"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd" vhdl
+3			"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd" vhdl
+4			"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd" vhdl
+5			"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd" vhdl
+6			"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd" vhdl
+7			"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd" vhdl
+8			"C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.v" verilog
+9		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v" verilog
+10		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" verilog
+11		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_add.v" verilog
+12		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/adder/rtl\lscc_adder.v" verilog
+13		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v" verilog
+14		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" verilog
+15		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_counter.v" verilog
+16		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v" verilog
+17		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_dpram.v" verilog
+18		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" verilog
+19		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_spram.v" verilog
+20		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" verilog
+21		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_rom.v" verilog
+22		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" verilog
+23		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v" verilog
+24		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" verilog
+25		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v" verilog
+26		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v" verilog
+27		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo_dc.v" verilog
+28		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v" verilog
+29		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v" verilog
+30		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" verilog
+31		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v" verilog
+32		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" verilog
+33		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v" verilog
+34		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" verilog
+35		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v" verilog
+36		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" verilog
+37		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v" verilog
+38		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v" verilog
+39		*	"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v" verilog
+40		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v" verilog
+41		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_true.v" verilog
+42		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v" verilog
+43		*	"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v" verilog
+44		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v" verilog
+45		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v" verilog
+46		*	"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dq/rtl\lscc_lfmxo4_ram_dq.v" verilog
+47		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v" verilog
+48		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_rom.v" verilog
+49		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v" verilog
+50		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v" verilog
+51		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" verilog
+52			"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v" verilog
+53			"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v" verilog
+54			"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v" verilog
+55			"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 53 52
+2 -1
+3 -1
+4 -1
+5 25 0
+6 55 4
+7 54 3 5 2 6 1
+8 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9
+9 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 8
+10 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 9 8
+11 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 10 9 8
+12 8 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 11 10 9
+13 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 12 11 10 9 8
+14 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 13 12 11 10 9 8
+15 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 14 13 12 11 10 9 8
+16 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 15 14 13 12 11 10 9 8
+17 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 16 15 14 13 12 11 10 9 8
+18 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 17 16 15 14 13 12 11 10 9 8
+19 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 18 17 16 15 14 13 12 11 10 9 8
+20 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 19 18 17 16 15 14 13 12 11 10 9 8
+21 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 19 18 17 16 15 14 13 12 11 10 9 8
+22 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+23 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+24 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+25 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+26 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+27 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+28 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+29 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+30 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+31 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+32 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+33 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+34 8 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9
+35 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+36 8 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9
+37 51 50 49 48 47 46 45 44 43 42 41 40 39 38 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+38 51 50 49 48 47 46 45 44 43 42 41 38 40 39 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+39 51 50 49 48 47 46 45 44 43 42 41 39 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+40 51 50 49 48 47 46 45 44 43 42 41 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+41 51 50 49 48 47 46 45 44 43 42 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+42 51 50 49 48 47 46 45 44 43 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+43 51 50 49 48 47 46 45 44 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+44 51 50 49 48 47 46 45 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+45 51 50 49 48 45 47 46 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+46 51 50 49 48 46 47 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+47 51 50 49 48 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+48 51 50 49 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+49 51 50 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+50 51 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+51 8 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9
+52 -1
+53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+54 -1
+55 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+#Dependency Lists(Users Of)
+0 5
+1 7
+2 7
+3 7
+4 6
+5 7
+6 7
+7 -1
+8 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9
+9 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 8
+10 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 9 8
+11 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 10 9 8
+12 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 11 10 9 8
+13 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 12 11 10 9 8
+14 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 13 12 11 10 9 8
+15 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 14 13 12 11 10 9 8
+16 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 15 14 13 12 11 10 9 8
+17 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 16 15 14 13 12 11 10 9 8
+18 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 17 16 15 14 13 12 11 10 9 8
+19 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 18 17 16 15 14 13 12 11 10 9 8
+20 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 19 18 17 16 15 14 13 12 11 10 9 8
+21 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 19 18 17 16 15 14 13 12 11 10 9 8
+22 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+23 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+24 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+25 5 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+26 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+27 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+28 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+29 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+30 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+31 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+32 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+33 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+34 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+35 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+36 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+37 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+38 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+39 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+40 55 53 51 50 49 48 47 46 45 44 43 42 41 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+41 55 53 51 50 49 48 47 46 45 44 43 42 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+42 55 53 51 50 49 48 47 46 45 44 43 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+43 55 53 51 50 49 48 47 46 45 44 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+44 55 53 51 50 49 48 47 46 45 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+45 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+46 55 53 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+47 55 53 51 50 49 48 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+48 55 53 51 50 49 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+49 55 53 51 50 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+50 55 53 51 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+51 55 53 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8
+52 1
+53 1
+54 7
+55 6
+#Design Unit to File Association
+module work process_image_out_fifo_ipgen_lscc_fifo_hw_core 55
+module work process_image_out_fifo_ipgen_lscc_soft_fifo 55
+module work process_image_out_fifo_ipgen_lscc_hard_fifo 55
+module work process_image_out_fifo_ipgen_lscc_fifo_main 55
+module work process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric 55
+module work process_image_out_fifo_ipgen_lscc_fifo 55
+module work process_image_out_fifo 55
+module work main_pll_ipgen_pll_csr 54
+module work main_pll_ipgen_lscc_apb2lmmi 54
+module work main_pll_ipgen_lscc_pll 54
+module work main_pll 54
+module work mipi_cross_clk_fifo_ipgen_lscc_fifo_mem_core 53
+module work mipi_cross_clk_fifo_ipgen_lscc_fifo_mem_main 53
+module work mipi_cross_clk_fifo_ipgen_lscc_fifo_soft_mem 53
+module work mipi_cross_clk_fifo_ipgen_lscc_reset_async 53
+module work mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core 53
+module work mipi_cross_clk_fifo_ipgen_lscc_soft_fifo_dc 53
+module work mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc 53
+module work mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main 53
+module work mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric 53
+module work mipi_cross_clk_fifo_ipgen_lscc_fifo_dc 53
+module work mipi_cross_clk_fifo 53
+module work mipi_dphy_rx_ipgen_pll_csr 52
+module work mipi_dphy_rx_ipgen_lscc_apb2lmmi 52
+module work mipi_dphy_rx_ipgen_lscc_pll 52
+module work mipi_dphy_rx_ipgen_lscc_mipi_dphy_soft_tx 52
+module work mipi_dphy_rx_ipgen_lscc_mipi_wrapper_tx 52
+module work mipi_dphy_rx_ipgen_lscc_mipi_dphy_soft_rx 52
+module work mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx 52
+module work mipi_dphy_rx_ipgen_lscc_gddr_sync 52
+module work mipi_dphy_rx_ipgen_lscc_clock_divider 52
+module work mipi_dphy_rx_ipgen_lscc_mipi_dphy 52
+module work mipi_dphy_rx 52
+module work pmi_sub 50
+module work pmi_rom 48
+module work lscc_rom_inst_core 49
+module work lscc_rom_inst 49
+module work lscc_rom 49
+module work pmi_ram_dq_be 47
+module work pmi_ram_dq 44
+module work ebr_read_mux 46
+module work ebr_addr_pipe 46
+module work lscc_lfmxo4_ram_dq_core 46
+module work lscc_lfmxo4_ram_dq_inst 46
+module work lscc_lfmxo4_write_through 46
+module work lscc_lfmxo4_ram_dq_main 46
+module work lscc_lfmxo4_ram_dq 46
+module work lscc_ram_dq_core 45
+module work lscc_ram_dq_inst 45
+module work lscc_ram_dq_main 45
+module work lscc_ram_dq 45
+module work pmi_ram_dp_true 41
+module work lscc_lfxo4_ram_dp_true_read_mux 43
+module work lscc_lfxo4_ram_dp_true_addr_pipe 43
+module work lscc_lfmxo4_ram_dp_true_core 43
+module work lscc_lfmxo4_ram_dp_true_inst 43
+module work lscc_lfmxo4_ram_dp_true_main 43
+module work lscc_lfmxo4_ram_dp_true 43
+module work lscc_ram_dp_true_core 42
+module work lscc_ram_dp_true_inst 42
+module work lscc_write_through 42
+module work lscc_ram_dp_true_main 42
+module work lscc_ram_dp_true 42
+module work pmi_ram_dp_be 40
+module work pmi_ram_dp 37
+module work lscc_lfmxo4_ram_dp_core 39
+module work lscc_lfmxo4_ram_dp_main 39
+module work lscc_lfmxo4_ram_dp 39
+module work lscc_ram_dp_core 38
+module work lscc_ram_dp_main 38
+module work lscc_ram_dp 38
+module work pmi_mult 35
+module work pmi_multaddsub 33
+module work pmi_multaddsubsum 31
+module work lscc_mult_add_sub_sum 32
+module work pmi_mac 29
+module work lscc_mult_accumulate 30
+module work pmi_fifo_dc 27
+module work lscc_fifo_mem_core 28
+module work lscc_fifo_mem_main 28
+module work lscc_fifo_soft_mem 28
+module work lscc_reset_async 28
+module work lscc_fifo_dc_hw_core 28
+module work lscc_soft_fifo_dc 28
+module work lscc_hard_fifo_dc 28
+module work lscc_fifo_dc_main 28
+module work lscc_fifo_dc_fwft_fabric 28
+module work lscc_fifo_dc 28
+module work pmi_fifo 25
+module work lscc_fifo_hw_core 26
+module work lscc_soft_fifo 26
+module work lscc_hard_fifo 26
+module work lscc_fifo_main 26
+module work lscc_fifo_fwft_fabric 26
+module work lscc_fifo 26
+module work pmi_distributed_shift_reg 23
+module work lscc_shift_register 24
+module work pmi_distributed_rom 21
+module work lscc_distributed_rom 22
+module work pmi_distributed_spram 19
+module work lscc_distributed_spram 20
+module work pmi_distributed_dpram 17
+module work lscc_distributed_dpram 18
+module work pmi_counter 15
+module work lscc_cntr 16
+module work pmi_complex_mult 13
+module work lscc_multiplier_dsp 14
+module work lscc_multiplier_lut 14
+module work lscc_multiplier 14
+module work lscc_mult_add_sub 14
+module work lscc_complex_mult 14
+module work pmi_add 11
+module work pmi_addsub 9
+module work lscc_subtractor 10
+module work lscc_adder 10
+module work lscc_add_sub 10
+module work mira_test_top 7
+arch work mira_test_top architecture_mira_test_top 7
+module work process_image 6
+arch work process_image architecture_process_image 6
+module work uart_tx 5
+arch work uart_tx behavioral 5
+module work img_mean_std 4
+arch work img_mean_std architecture_img_mean_std 4
+module work uart_rx 3
+arch work uart_rx behavioral 3
+module work frame_buf 2
+arch work frame_buf architecture_frame_buf 2
+module work mipi_rx 1
+arch work mipi_rx architecture_mipi_rx 1

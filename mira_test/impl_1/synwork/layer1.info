@@ -1,0 +1,5 @@
+work.main_pll
+|work.pmi_fifo|parameter pmi_data_width 8;,parameter pmi_data_depth 2047;,parameter pmi_full_flag 256;,parameter pmi_empty_flag 0;,parameter pmi_almost_full_flag 2000;,parameter pmi_almost_empty_flag 0;,parameter pmi_regmode "noreg";,parameter pmi_family "LIFCL";,parameter module_type "pmi_fifo";,parameter pmi_implementation "HARD_IP";|
+work.process_image_out_fifo
+work.mipi_dphy_rx
+work.mipi_cross_clk_fifo
