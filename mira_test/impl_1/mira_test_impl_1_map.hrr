@@ -1,0 +1,546 @@
+---------------------------------------------------
+Report for cell mira_test_top
+   Instance path: mira_test_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       4.00        100.0
+                                  LUT4	       5005        100.0
+                               LUTGATE	       3233        100.0
+                                LUTCCU	       1772        100.0
+                                 IOBUF	         32        100.0
+                                PFUREG	       2218        100.0
+                                   EBR	         36        100.0
+                                 ACC54	          2        100.0
+                                  LRAM	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                          frame_buf_10	          1         9.9
+                              main_pll	          1         0.0
+                            mipi_rx_10	          1         5.1
+                      process_image_10	          1        82.1
+                             uart_rx_8	          1         0.7
+                             uart_tx_8	          1         0.7
+---------------------------------------------------
+Report for cell mipi_rx_10
+   Instance path: mira_test_top/mipi_rx_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        255         5.1
+                               LUTGATE	        229         7.1
+                                LUTCCU	         26         1.5
+                                PFUREG	        143         6.4
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                   mipi_cross_clk_fifo	          1         0.0
+                          mipi_dphy_rx	          1         0.1
+---------------------------------------------------
+Report for cell mipi_cross_clk_fifo
+   Instance path: mira_test_top/mipi_rx_inst/mipi_cross_clk_fifo_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.1
+                                PFUREG	         37         1.7
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1	          1         0.0
+---------------------------------------------------
+Report for cell mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1
+   Instance path: mira_test_top/mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.1
+                                PFUREG	         37         1.7
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1	          1         0.0
+---------------------------------------------------
+Report for cell mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1
+   Instance path: mira_test_top/mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.1
+                                PFUREG	         37         1.7
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1	          1         0.0
+---------------------------------------------------
+Report for cell mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1
+   Instance path: mira_test_top/mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.1
+                                PFUREG	         37         1.7
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1	          1         0.0
+---------------------------------------------------
+Report for cell mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1
+   Instance path: mira_test_top/mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.1
+                                PFUREG	         37         1.7
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell mipi_dphy_rx
+   Instance path: mira_test_top/mipi_rx_inst/mipi_dphy_rx_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.1
+                               LUTGATE	          7         0.2
+                                PFUREG	          4         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1	          1         0.1
+---------------------------------------------------
+Report for cell mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1
+   Instance path: mira_test_top/mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.1
+                               LUTGATE	          7         0.2
+                                PFUREG	          4         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1	          1         0.1
+---------------------------------------------------
+Report for cell mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1
+   Instance path: mira_test_top/mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.1
+                               LUTGATE	          7         0.2
+                                PFUREG	          4         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s	          1         0.1
+---------------------------------------------------
+Report for cell mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s
+   Instance path: mira_test_top/mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_clock_divider
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.1
+                               LUTGATE	          5         0.2
+                                PFUREG	          4         0.2
+---------------------------------------------------
+Report for cell process_image_10
+   Instance path: mira_test_top/process_image_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       4.00        100.0
+                                  LUT4	       4109        82.1
+                               LUTGATE	       2535        78.4
+                                LUTCCU	       1574        88.8
+                                PFUREG	       1675        75.5
+                                   EBR	         32        88.9
+                                 ACC54	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                       img_mean_std_10	          1        79.1
+                process_image_out_fifo	          1         0.0
+---------------------------------------------------
+Report for cell img_mean_std_10
+   Instance path: mira_test_top/process_image_inst/img_mean_std_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       4.00        100.0
+                                  LUT4	       3959        79.1
+                               LUTGATE	       2385        73.8
+                                LUTCCU	       1574        88.8
+                                PFUREG	       1533        69.1
+                                 ACC54	          2        100.0
+---------------------------------------------------
+Report for cell process_image_out_fifo
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         64         2.9
+                                   EBR	         32        88.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1	          1         0.0
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         64         2.9
+                                   EBR	         32        88.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1	          1         0.0
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         64         2.9
+                                   EBR	         32        88.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1	          1         0.0
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         64         2.9
+                                   EBR	         32        88.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_25	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_26	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_27	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_28	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_29	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_30	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_31	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_32	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_33	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_34	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_35	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_36	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_37	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_38	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_39	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_40	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_41	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_42	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_43	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_44	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_45	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_46	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_47	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_48	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_49	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_30	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_4	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_5	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_6	          1         0.0
+process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_7	          1         0.0
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[5].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_30
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_25
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[23].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_26
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[7].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_27
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[2].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_28
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[8].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_29
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[3].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[11].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_30
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[6].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_31
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[1].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_32
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[9].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_33
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[4].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_4
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[12].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_34
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[18].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_5
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[13].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_35
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[10].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_36
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[30].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_37
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[31].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_38
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[26].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_39
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[21].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_40
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[16].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_41
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[24].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_42
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[19].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_6
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[14].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_43
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[22].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_44
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[17].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_45
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[25].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_46
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[20].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_7
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[15].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_47
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[28].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_48
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[29].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1_24_49
+   Instance path: mira_test_top/process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[27].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.1
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell frame_buf_10
+   Instance path: mira_test_top/frame_buf_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        495         9.9
+                               LUTGATE	        351        10.9
+                                LUTCCU	        144         8.1
+                                PFUREG	        198         8.9
+                                   EBR	          2         5.6
+                                  LRAM	          2        100.0
+---------------------------------------------------
+Report for cell uart_tx_8
+   Instance path: mira_test_top/uart_tx_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         35         0.7
+                               LUTGATE	         35         1.1
+                                PFUREG	         22         1.0
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                   pmi_fifo_Z16_layer1	          1         0.0
+---------------------------------------------------
+Report for cell pmi_fifo_Z16_layer1
+   Instance path: mira_test_top/uart_tx_inst/uart_tx_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                  lscc_fifo_Z15_layer1	          1         0.0
+---------------------------------------------------
+Report for cell lscc_fifo_Z15_layer1
+   Instance path: mira_test_top/uart_tx_inst/uart_tx_fifo/u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+             lscc_fifo_main_Z12_layer1	          1         0.0
+---------------------------------------------------
+Report for cell lscc_fifo_main_Z12_layer1
+   Instance path: mira_test_top/uart_tx_inst/uart_tx_fifo/u_mem0/fifo0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+             lscc_hard_fifo_Z13_layer1	          1         0.0
+---------------------------------------------------
+Report for cell lscc_hard_fifo_Z13_layer1
+   Instance path: mira_test_top/uart_tx_inst/uart_tx_fifo/u_mem0/fifo0/_HARD_IP.u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         2.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+          lscc_fifo_hw_core_Z14_layer1	          1         0.0
+---------------------------------------------------
+Report for cell lscc_fifo_hw_core_Z14_layer1
+   Instance path: mira_test_top/uart_tx_inst/uart_tx_fifo/u_mem0/fifo0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         2.8
+---------------------------------------------------
+Report for cell uart_rx_8
+   Instance path: mira_test_top/uart_rx_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         34         0.7
+                               LUTGATE	         34         1.1
+                                PFUREG	         23         1.0
+---------------------------------------------------
+Report for cell main_pll
+   Instance path: mira_test_top/main_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+    main_pll_ipgen_lscc_pll_Z17_layer1	          1         0.0
+---------------------------------------------------
+Report for cell main_pll_ipgen_lscc_pll_Z17_layer1
+   Instance path: mira_test_top/main_pll_inst/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0

@@ -1,0 +1,106 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "14:04:58    07-Jul-2026",
+	"Working Directory" : "C:/Users/Bernhard/my_designs/mira_test/impl_1",
+	"Install" : "C:/lscc/radiant/2025.2/synpbase"
+},
+"hdl_info_gen" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "14:03:46",
+   "Runtime" : "01s",
+   "Executable Run Time" : "01s",
+   "hdl_info_gen" : {
+      "executable" : "bin64/c_vhdl.exe",
+      "Run Directory" : "C:/Users/Bernhard/my_designs/mira_test/impl_1",
+      "Run State" : "Complete",
+      "Return Code" : "0",
+      "Run Success" : "yes",
+      "Run Start Time" : "14:03:46",
+      "Run Time" : "01s",
+      "Exe Run Time" : "01s",
+      "Memory Usage" : "-",
+      "Up-to-date (run skipped)" : "no"
+   }
+},
+"impl_1" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "14:03:47",
+   "Runtime" : "01m:11s",
+   "Executable Run Time" : "01m:10s",
+   "synthesis" : {
+      "Job Flow" : "Sequential",
+      "Start Time" : "14:03:47",
+      "Runtime" : "01m:11s",
+      "Executable Run Time" : "01m:10s",
+      "compile" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "14:03:47",
+         "Runtime" : "40s",
+         "Executable Run Time" : "39s",
+         "compile_flow" : {
+            "Job Flow" : "Sequential",
+            "Start Time" : "14:03:47",
+            "Runtime" : "37s",
+            "Executable Run Time" : "36s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/Bernhard/my_designs/mira_test/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Run Success" : "yes",
+               "Run Start Time" : "14:03:47",
+               "Run Time" : "37s",
+               "Exe Run Time" : "36s",
+               "max_parallel_jobs" : "4",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/Bernhard/my_designs/mira_test/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Run Success" : "yes",
+               "Run Start Time" : "14:04:24",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/Bernhard/my_designs/mira_test/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Run Success" : "yes",
+            "Run Start Time" : "14:04:24",
+            "Run Time" : "03s",
+            "Exe Run Time" : "03s",
+            "max_parallel_jobs" : "4",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "14:04:27",
+         "Runtime" : "31s",
+         "Executable Run Time" : "31s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/Bernhard/my_designs/mira_test/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Run Success" : "yes",
+            "Run Start Time" : "14:04:27",
+            "Run Time" : "31s",
+            "Exe Run Time" : "31s",
+            "max_parallel_jobs" : "4",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

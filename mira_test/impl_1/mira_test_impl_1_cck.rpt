@@ -1,0 +1,143 @@
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: ZBOOKNB
+
+Implementation : impl_1
+
+# Written on Tue Jul  7 14:04:27 2026
+
+##### DESIGN INFO #######################################################
+
+Top View:                "mira_test_top"
+Constraint File(s):      "C:\lscc\radiant\2025.2\scripts\tcl\flow\radiant_synplify_vars.tcl"
+                         "C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1_cpe.ldc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 2 constraints
+
+
+##### DETAILS ############################################################
+
+
+Clock Summary
+*************
+
+          Start                                                         Requested     Requested     Clock        Clock                     Clock
+Level     Clock                                                         Frequency     Period        Type         Group                     Load 
+------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       Clk48xCI                                                      48.0 MHz      20.830        declared     default_clkgroup          0    
+                                                                                                                                                
+0 -       main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     2573 
+================================================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                                              Clock     Source                                                              Clock Pin                Non-clock Pin     Non-clock Pin
+Clock                                                         Load      Pin                                                                 Seq Example              Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Clk48xCI                                                      0         Clk48xCI(port)                                                      -                        -                 -            
+                                                                                                                                                                                                    
+main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     2573      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     CfgFSMSRegxDP_0[7].C     -                 -            
+====================================================================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Starting                                                      Ending                                                        |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                        System                                                        |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                        main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     System                                                        |     5.000            |     No paths         |     No paths         |     No paths                         
+main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+=======================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:DebugDataxDO[0]
+p:DebugDataxDO[1]
+p:DebugDataxDO[2]
+p:DebugDataxDO[3]
+p:DebugDataxDO[4]
+p:DebugDataxDO[5]
+p:DebugDataxDO[6]
+p:DebugDataxDO[7]
+p:DebugDataxDO[8]
+p:DebugDataxDO[9]
+p:DebugDataxDO[10]
+p:DebugDataxDO[11]
+p:LEDxSO[0]
+p:LEDxSO[1]
+p:LEDxSO[2]
+p:LEDxSO[3]
+p:LEDxSO[4]
+p:LEDxSO[5]
+p:LEDxSO[6]
+p:LEDxSO[7]
+p:LEDxSO[8]
+p:LEDxSO[9]
+p:LEDxSO[10]
+p:LEDxSO[11]
+p:LEDxSO[12]
+p:LEDxSO[13]
+p:MipiRxCkN (bidir end point)
+p:MipiRxCkN (bidir start point)
+p:MipiRxCkP (bidir end point)
+p:MipiRxCkP (bidir start point)
+p:MipiRxN[0] (bidir end point)
+p:MipiRxN[0] (bidir start point)
+p:MipiRxN[1] (bidir end point)
+p:MipiRxN[1] (bidir start point)
+p:MipiRxP[0] (bidir end point)
+p:MipiRxP[0] (bidir start point)
+p:MipiRxP[1] (bidir end point)
+p:MipiRxP[1] (bidir start point)
+p:ResetxRI
+p:UartCTSntoFTDIxDO
+p:UartFPGAtoFTDIxDO
+p:UartFTDItoFPGAxDI
+p:UartRTSntoFPGAxDI
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

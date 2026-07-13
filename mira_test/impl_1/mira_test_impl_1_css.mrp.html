@@ -1,0 +1,739 @@
+<HTML>
+<HEAD>
+<TITLE>Map Report</TITLE>
+<link href="file:///C:/lscc/radiant/2025.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2025.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Mrp"></A>                         Lattice Mapping Report File
+
+Design:  mira_test_top
+Family:  LIFCL
+Device:  LIFCL-40
+Package: CABGA400
+Performance Grade:  9_High-Performance_1.0V
+
+Mapper:    version Radiant Software (64-bit) 2025.2.0.48.0
+Mapped on: Tue Jul  7 14:05:12 2026
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -pdc
+     C:/Users/Bernhard/my_designs/mira_test/source/impl_1/impl_1.pdc -i
+     mira_test_impl_1_syn.udb -o mira_test_impl_1_map.udb -mp
+     mira_test_impl_1.mrp -hierrpt -gui -msgset
+     C:/Users/Bernhard/my_designs/mira_test/promote.xml
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+
+   Number of registers:        2218 out of 32811 (7%)
+      Number of SLICE         registers: 2218 out of 32256 (7%)
+      Number of PIO Input     registers:    0 out of   185 (0%)
+      Number of PIO Output    registers:    0 out of   185 (0%)
+      Number of PIO Tri-State registers:    0 out of   185 (0%)
+   Number of LUT4s:            5005 out of 32256 (16%)
+      Number used as logic LUT4s:                       3233
+      Number used as distributed RAM:                      0 (6 per 16X4 RAM)
+      Number used as ripple logic:                      1772 (2 per CCU2)
+   Number of PIOs used/reserved:   39 out of   185 (21%)
+      Number of PIOs reserved:      7 (per sysConfig and/or prohibit constraint)
+      Number of PIOs used:         32
+        Number of PIOs used for single ended IO:        32
+        Number of PIO pairs used for differential IO:    0
+        Number allocated to regular speed PIOs:    32 out of  111 (29%)
+        Number allocated to high speed PIOs:        0 out of   74 (0%)
+   Number of Dedicated IO used for ADC/PCIE/DPHY:    6 out of   32 (19%)
+   Number of IDDR/ODDR/TDDR functions used:      0 out of   444 (0%)
+   Number of IOs using at least one DDR function: 0 (0 differential)
+   Number of Block RAMs:          36 out of 84 (43%)
+   Number of Large RAMs:          2 out of 2 (100%)
+   Number of Logical DSP Functions:
+      Number of Pre-Adders (9+9):    0 out of 112 (0%)
+      Number of Multipliers (18x18): 4 out of 56 (7%)
+         Number of 9X9:        0 (1 18x18 = 2   9x9)
+         Number of 18x18:      4 (1 18x18 = 1 18x18)
+         Number of 18x36:      0 (2 18x18 = 1 18x36)
+         Number of 36x36:      0 (4 18x18 = 1 36x36)
+      Number of 54-bit Accumulators: 2 out of 28 (7%)
+      Number of 18-bit Registers:    8 out of 112 (7%)
+   Number of Physical DSP Components:
+      Number of PREADD9:             8 out of 112 (7%)
+         Used PREADD9:               0
+         Bypassed PREADD9:           8
+      Number of MULT9:               8 out of 112 (7%)
+         Used MULT9:                 8
+         Bypassed MULT9:             0
+      Number of MULT18:              4 out of 56 (7%)
+         Used MULT18:                4
+         Disabled MULT18:            0
+      Number of MULT18X36:           0 out of 28 (0%)
+      Number of MULT36:              0 out of 14 (0%)
+      Number of ACC54:               2 out of 28 (7%)
+      Number of REG18:               8 out of 112 (7%)
+         Used REG18:                 8
+         Bypassed REG18:             0
+   Number of ALUREGs:             0 out of 1 (0%)
+   Number of PLLs:                1 out of 3 (33%)
+   Number of DDRDLLs:             0 out of 2 (0%)
+   Number of DLLDELs:             0 out of 10 (0%)
+   Number of DQSs:                0 out of 4 (0%)
+   Number of DCSs:                0 out of 1 (0%)
+   Number of DCCs:                0 out of 62 (0%)
+   Number of PCLKDIVs:            0 out of 1 (0%)
+   Number of ECLKDIVs:            0 out of 12 (0%)
+   Number of ECLKSYNCs:           0 out of 12 (0%)
+   Number of ADC Blocks:          0 out of 1 (0%)
+   Number of SGMIICDRs:           0 out of 2 (0%)
+   Number of PMUs:                0 out of 1 (0%)
+   Number of BNKREF18s:           0 out of 3 (0%)
+   Number of BNKREF33s:           0 out of 5 (0%)
+   Number of I2CFIFOs:            0 out of 1 (0%)
+   Number of DPHYs:               1 out of 2 (50%)
+   Number of Oscillator:          0 out of 1 (0%)
+   Number of GSR:                 0 out of 1 (0%)
+   Number of Cryptographic Block: 0 out of 1 (0%)
+   Number of Config IP:           0 out of 1 (0%)
+                 TSALL:           0 out of 1 (0%)
+   Number of JTAG:                0 out of 1 (0%)
+   Number of Config LMMI:         0 out of 1 (0%)
+   Number of Config MULTIBOOT:    0 out of 1 (0%)
+   Number of SED:                 0 out of 1 (0%)
+   Number of Config WDT:          0 out of 1 (0%)
+   Number of PCIEs:               0 out of 1 (0%)
+   Number of Clocks:  6
+      Net ClkxC: 2317 loads, 2317 rising, 0 falling (Driver: Pin
+     main_pll_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP)
+      Net mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_
+     wrapper_rx.DPhyClkxC: 2 loads, 0 rising, 2 falling (Driver: Pin mipi_rx_ins
+     t.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_
+     IP.CIL.u_dphy_cil.DPHY_inst/URWDCKHS)
+      Net mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_
+     wrapper_rx.tx_esc_clk_w: 1 loads, 1 rising, 0 falling (Driver: Pin mipi_rx_
+     inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HA
+     RD_IP.CIL.u_clock_divider.clk_r.ff_inst/Q)
+      Net Clk48xCI_c: 1 loads, 1 rising, 0 falling (Driver: Port Clk48xCI)
+      Net MipiRxCkP: 1 load, 1 rising, 0 falling (Driver: Port MipiRxCkP)
+      Net MipiRxCkN: 1 load, 1 rising, 0 falling (Driver: Port MipiRxCkN)
+   Number of Clock Enables:  69
+      Net VCC: 8 loads, 0 SLICEs
+      Net mipi_rx_inst.DPhyPDxSP_i: 4 loads, 0 SLICEs
+      Net mipi_rx_inst.StatexDP_RNIB2JQB[3]: 16 loads, 16 SLICEs
+      Net mipi_rx_inst.N_929_i: 8 loads, 8 SLICEs
+      Net mipi_rx_inst.N_204_i: 40 loads, 40 SLICEs
+      Net mipi_rx_inst.ByteCntxDPe: 9 loads, 9 SLICEs
+      Net mipi_rx_inst.FifoEmptyxS_i: 1 loads, 0 SLICEs
+      Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
+     _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.FifoFullxS_i: 1
+     loads, 0 SLICEs
+      Net process_image_inst.N_120_i: 64 loads, 64 SLICEs
+      Net process_image_inst.N_115_i: 32 loads, 0 SLICEs
+      Net process_image_inst.img_mean_std_inst.TileCntxDPe: 5 loads, 5 SLICEs
+      Net process_image_inst.img_mean_std_inst.un317_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un283_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un300_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un334_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un351_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un368_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un385_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un402_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un96_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un79_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un28_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un11_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un62_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un113_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un45_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.N_39_i: 4 loads, 4 SLICEs
+      Net process_image_inst.img_mean_std_inst.un419_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un164_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un215_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un249_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un266_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un198_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un181_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un130_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un232_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.un147_summemxdn: 54 loads, 54
+     SLICEs
+      Net process_image_inst.img_mean_std_inst.LineCntxDPe: 6 loads, 6 SLICEs
+      Net process_image_inst.PDatValidxS: 32 loads, 0 SLICEs
+      Net frame_buf_inst.StatexDP[2]: 8 loads, 8 SLICEs
+      Net frame_buf_inst.N_461_1: 2 loads, 0 SLICEs
+      Net RdyForCfgPDatxS: 1 loads, 1 SLICEs
+      Net frame_buf_inst.un9_fifowrenxsp: 2 loads, 0 SLICEs
+      Net frame_buf_inst.RdAddrxDPe: 14 loads, 14 SLICEs
+      Net frame_buf_inst.un1_StatexDP_11_i: 18 loads, 18 SLICEs
+      Net frame_buf_inst.SumCntxDPe: 8 loads, 8 SLICEs
+      Net frame_buf_inst.WrAddrxDPe: 14 loads, 14 SLICEs
+      Net frame_buf_inst.N_163_i: 56 loads, 56 SLICEs
+      Net N_45_i: 13 loads, 13 SLICEs
+      Net PDatOutValidxS: 1 loads, 0 SLICEs
+      Net uart_tx_inst.BitCntxDPe: 4 loads, 4 SLICEs
+      Net uart_tx_inst.FifoRdEnxS_0_sqmuxa: 1 loads, 0 SLICEs
+      Net uart_tx_inst.N_388_i: 8 loads, 8 SLICEs
+      Net uart_tx_inst.SRegxDPce[8]: 1 loads, 1 SLICEs
+      Net uart_rx_inst.N_365_i: 8 loads, 8 SLICEs
+      Net CfgRegxDN_10_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_2_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_3_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_11_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_7_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_6_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_0_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_1_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_4_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_5_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_8_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_9_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_13_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_12_1_sqmuxa: 8 loads, 8 SLICEs
+   Number of LSRs:  9
+      Net VCC: 21 loads, 0 SLICEs
+      Net mipi_rx_inst.StatexDP[10]: 1 loads, 1 SLICEs
+      Net N_1145: 1 loads, 1 SLICEs
+      Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
+     _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.EMPTY: 2 loads, 2
+     SLICEs
+      Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
+     _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.FULL: 1 loads, 1
+     SLICEs
+      Pin ResetxRI: 2097 loads, 1996 SLICEs (Net: ResetxRI_c)
+      Net mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_
+     wrapper_rx.HARD_IP.CIL.u_clock_divider.count_0_sqmuxa_i: 3 loads, 3 SLICEs
+      Net frame_buf_inst.StatexDP[2]: 3 loads, 3 SLICEs
+      Net frame_buf_inst.FIFOResetxS: 8 loads, 8 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net ResetxRI_c: 2097 loads
+      Net process_image_inst.img_mean_std_inst.MemWrEnxS_0_sqmuxa_0_a2okb: 675
+     loads
+      Net process_image_inst.img_mean_std_inst.MemWrEnxS_0_sqmuxa_0_a2okb_1: 675
+     loads
+      Net process_image_inst.img_mean_std_inst.RdAddrxDP[4]: 486 loads
+      Net VCC: 449 loads
+      Net process_image_inst.img_mean_std_inst.RdAddrxDP[2]: 432 loads
+      Net process_image_inst.img_mean_std_inst.RdAddrxDP[1]: 216 loads
+      Net process_image_inst.img_mean_std_inst.RdAddrxDP[3]: 108 loads
+      Net frame_buf_inst.StatexDP[2]: 83 loads
+      Net process_image_inst.StatexDP_Z[6]: 67 loads
+
+   Number of warnings:  0
+   Number of criticals: 0
+   Number of errors:    0
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Criticals/Warnings</big></U></B>
+
+   No error, critical, or warning presents.
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[13]          | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[12]          | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[11]          | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[10]          | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[9]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[8]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[7]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[6]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[5]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[4]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[3]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[2]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[1]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| LEDxSO[0]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[11]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[10]    | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[9]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[8]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[7]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[6]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[5]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[4]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[3]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[2]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[1]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DebugDataxDO[0]     | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| UartFTDItoFPGAxDI   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| UartFPGAtoFTDIxDO   | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| UartCTSntoFTDIxDO   | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| UartRTSntoFPGAxDI   | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ResetxRI            | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| Clk48xCI            | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Block VCC_cZ was optimized away.
+Block mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrap
+     per_rx/HARD_IP.CIL.u_dphy_cil_RNI4NA24 was optimized away.
+
+<A name="mrp_pll"></A><B><U><big>PLL Summary</big></U></B>
+
+PLL 1:                                 Pin/Node Value
+  PLL Instance Name:                            main_pll_inst/lscc_pll_inst/gen_
+       no_refclk_mon.u_PLL.PLL_inst
+  Input Reference Clock:               PIN      Clk48xCI_c
+  Output Clock(P):                     NODE     ClkxC
+  Output Clock(S):                              NONE
+  Output Clock(S2):                             NONE
+  Output Clock(S3):                             NONE
+  Output Clock(S4):                             NONE
+  Output Clock(S5):                             NONE
+  Feedback Signal:                     NODE
+       main_pll_inst.lscc_pll_inst.intclkop_w
+  Reset Signal:                        NODE     GND
+  Standby Signal:                      NODE     GND
+  PLL LOCK signal:                     NODE
+       main_pll_inst.lscc_pll_inst.PLLLockxS
+  PLL Internal LOCK Signal:                     NONE
+  A Divider:                                    15
+  B Divider:                                    7
+  C Divider:                                    7
+  D Divider:                                    7
+  E Divider:                                    7
+  F Divider:                                    7
+  A Post Divider Shift:                         15
+  B Post Divider Shift:                         7
+  C Post Divider Shift:                         7
+  D Post Divider Shift:                         7
+  E Post Divider Shift:                         7
+  F Post Divider Shift:                         7
+  A Section VCO Phase Shift:                    0
+  B Section VCO Phase Shift:                    0
+  C Section VCO Phase Shift:                    0
+  D Section VCO Phase Shift:                    0
+  E Section VCO Phase Shift:                    0
+  F Section VCO Phase Shift:                    0
+  CLKOP Trim Setting:                           0000
+  CLKOS Trim Setting:                           0000
+  CLKOS2 Trim Setting:                          0000
+  CLKOS3 Trim Setting:                          0000
+  CLKOS4 Trim Setting:                          0000
+  CLKOS5 Trim Setting:                          0000
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+
+Instance Name: mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/
+     _HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo1
+     6K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_
+     mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst
+         Type: DPHY_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].MULT9_L0
+         Type: MULT9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].MULT9_H0
+         Type: MULT9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].MULT9_L1
+         Type: MULT9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].MULT9_H1
+         Type: MULT9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].PREADD9_L0
+         Type: PREADD9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].PREADD9_H0
+         Type: PREADD9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].PREADD9_L1
+         Type: PREADD9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].PREADD9_H1
+         Type: PREADD9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].MULT18_0
+         Type: MULT18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].MULT18_1
+         Type: MULT18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].REG18_L0_0
+         Type: REG18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].REG18_L0_1
+         Type: REG18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].REG18_L1_0
+         Type: REG18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].REG18_L1_1
+         Type: REG18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].ACC54_0
+         Type: ACC54_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].MULT9_L0
+         Type: MULT9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].MULT9_H0
+         Type: MULT9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].MULT9_L1
+         Type: MULT9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].MULT9_H1
+         Type: MULT9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].PREADD9_L0
+         Type: PREADD9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].PREADD9_H0
+         Type: PREADD9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].PREADD9_L1
+         Type: PREADD9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].PREADD9_H1
+         Type: PREADD9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].MULT18_0
+         Type: MULT18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].MULT18_1
+         Type: MULT18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].REG18_L0_0
+         Type: REG18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].REG18_L0_1
+         Type: REG18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].REG18_L1_0
+         Type: REG18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].REG18_L1_1
+         Type: REG18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].ACC54_0
+         Type: ACC54_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[5].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[23].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[7].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[2].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[8].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[3].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[11].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[6].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[1].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[9].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[4].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[12].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[18].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[13].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[10].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[30].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[31].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[26].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[21].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[16].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[24].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[19].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[14].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[22].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[17].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[25].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[20].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[15].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[28].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[29].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[27].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: frame_buf_inst/p_memzing.FIFOMemxDP_p_memzing.FIFOMemxDP_0_0.PDPS
+     C16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: frame_buf_inst/p_memzing.FIFOMemxDP_p_memzing.FIFOMemxDP_0_1.PDPS
+     C16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: frame_buf_inst/p_memzing.MemxDP_p_memzing.MemxDP_0_1.LRAM_inst
+         Type: LRAM_CORE
+Instance Name: frame_buf_inst/p_memzing.MemxDP_p_memzing.MemxDP_0_0.LRAM_inst
+         Type: LRAM_CORE
+Instance Name: uart_tx_inst/uart_tx_fifo/u_mem0/fifo0/_HARD_IP.u_fifo/_SAME_WIDT
+     H._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst
+         Type: PLL_CORE
+
+<A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
+
+   Total number of constraints: 43
+   Total number of constraints dropped: 0
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+
+   Total CPU Time: 4 secs
+   Total REAL Time: 6 secs
+   Peak Memory Usage: 435 MB
+Checksum -- map: c45ada9b3156329b66f81745c2db1e34f666d011
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&amp;T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor
+     Corporation,  All rights reserved.
+</PRE></DIV>
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#mrp_di>Design Information</A></LI>
+<LI><A href=#mrp_ds>Design Summary</A></LI>
+<LI><A href=#mrp_dwe>Design Errors/Criticals/Warnings</A></LI>
+<LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
+<LI><A href=#mrp_rm>Removed logic</A></LI>
+<LI><A href=#mrp_pll>PLL Summary</A></LI>
+<LI><A href=#mrp_asic>ASIC Components</A></LI>
+<LI><A href=#mrp_consum>Constraint Summary</A></LI>
+<LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+
+

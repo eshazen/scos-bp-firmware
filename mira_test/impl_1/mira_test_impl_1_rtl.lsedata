@@ -1,0 +1,22 @@
+<top name = "mira_test_top"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "MipiRxCkN"  type = "net" />
+    <clockitem name = "MipiRxCkP"  type = "net" />
+    <clockitem name = "ClkxC"  type = "net" />
+    <clockitem name = "Clk48xCI"  type = "port" />
+    <clockitem name = "mipi_rx_inst/DPhyClkxC"  type = "net" />
+    <clockitem name = "mipi_rx_inst/DPhyClkxCN"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 6
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+</top>

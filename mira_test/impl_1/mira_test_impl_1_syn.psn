@@ -1,0 +1,77 @@
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2025.2.0.48.0
+Command Line: postsyn -a LIFCL -p LIFCL-40 -t CABGA400 -sp 9_High-Performance_1.0V -oc Commercial -top -ipsdc ipsdclist.txt -w -o mira_test_impl_1_syn.udb -ldc mira_test_impl_1.ldc -gui -msgset C:/Users/Bernhard/my_designs/mira_test/promote.xml mira_test_impl_1.vm 
+   Architecture:     LIFCL
+   Device:           LIFCL-40
+   Package:          CABGA400
+   Performance:      9_High-Performance_1.0V
+Reading input file 'mira_test_impl_1.vm' ...
+Reading constraint file 'mira_test_impl_1.ldc' ...
+Reading constraint file 'C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc' ...
+Reading constraint file 'C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/constraints/constraint.sdc' ...
+WARNING <1027013> - No cell matched 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.afull_r*.*_inst '.
+WARNING <1026001> - C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc (74) : Can't resolve object 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.afull_r*.*_inst ' in constraint 'set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst mipi_rx_inst/mipi_cross_clk_fifo_in   ....   FO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst }] -to [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.afull_r*.*_inst }] -datapath_only 6.4'.
+WARNING <1027013> - No cell matched 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_r*.*_inst '.
+WARNING <1026001> - C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc (74) : Can't resolve object 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_r*.*_inst ' in constraint 'set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst mipi_rx_inst/mipi_cross_clk_fifo_i   ....   O_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst }] -to [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_r*.*_inst }] -datapath_only 6.4'.
+WARNING <1027013> - No cell matched 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_r*.*_inst '.
+WARNING <1026001> - C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc (74) : Can't resolve object 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_r*.*_inst ' in constraint 'set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_r*.*_inst }] -to [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_sync_r*.*_inst }] -datapath_only 6.4'.
+WARNING <1027013> - No cell matched 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_sync_r*.*_inst '.
+WARNING <1026001> - C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc (74) : Can't resolve object 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_sync_r*.*_inst ' in constraint 'set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_r*.*_inst }] -to [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_sync_r*.*_inst }] -datapath_only 6.4'.
+WARNING <1027013> - No cell matched 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_sync_r*.*_inst '.
+WARNING <1026001> - C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc (74) : Can't resolve object 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_sync_r*.*_inst ' in constraint 'set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst mipi_rx_inst/mipi_cross_clk_f   ....   R[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst }] -to [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_sync_r*.*_inst }] -datapath_only 6.4'.
+WARNING <1027013> - No pin matched 'mipi_rx_inst/mipi_dphy_rx_inst/u_eclkdiv.ECLKDIV_inst/DIVRST'.
+WARNING <1026001> - C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/constraints/constraint.sdc (149) : Can't resolve object 'mipi_rx_inst/mipi_dphy_rx_inst/u_eclkdiv.ECLKDIV_inst/DIVRST ' in constraint 'set_false_path -to [get_pins {mipi_rx_inst/mipi_dphy_rx_inst/u_eclkdiv.ECLKDIV_inst/DIVRST }]'.
+ 
+IP Constraint Propagation
+-------------------------
+set_max_delay -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.full_r*.*_inst] -datapath_only 6.4 originating in instance mipi_cross_clk_fifo_inst was updated to set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH.   ....   ].u_fifo/_LIFCL.full_r.ff_inst }] -datapath_only 6.4 and kept.
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_max_delay -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.afull_r*.*_inst] -datapath_only 6.4 originating in instance mipi_cross_clk_fifo_inst was removed. Can't resolve object 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.afull_r*.*_inst ' in constraint 'set_max_delay -from [get_cell   ....   c_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADD 
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_max_delay -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.empty_r*.*_inst] -datapath_only 6.4 originating in instance mipi_cross_clk_fifo_inst was updated to set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH   ....   _LIFCL.genblk2.empty_r.ff_inst }] -datapath_only 6.4 and kept.
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_max_delay -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.aempty_r*.*_inst] -datapath_only 6.4 originating in instance mipi_cross_clk_fifo_inst was removed. Can't resolve object 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_r*.*_inst ' in constraint 'set_max_delay -from [get_ce   ....   cc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_AD 
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_false_path -from [get_pins -hierarchical */*.FIFO16K_MODE_inst/EMPTY] -to [get_pins -hierarchical */*.FIFO16K_MODE_inst/EMPTYI] originating in instance mipi_cross_clk_fifo_inst was updated to set_false_path -from [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIF   ....   0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTYI }] and kept.
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_false_path -from [get_pins -hierarchical */*.FIFO16K_MODE_inst/FULL] -to [get_pins -hierarchical */*.FIFO16K_MODE_inst/FULLI] originating in instance mipi_cross_clk_fifo_inst was updated to set_false_path -from [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_   ....   [0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/FULLI }] and kept.
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_max_delay -from [get_cells -hierarchical */*.empty_r*.*_inst] -to [get_cells -hierarchical */*.empty_sync_r*.*_inst] -datapath_only 6.4 originating in instance mipi_cross_clk_fifo_inst was updated to set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WI   ....   L.genblk2.empty_sync_r.ff_inst }] -datapath_only 6.4 and kept.
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_max_delay -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.empty_sync_r*.*_inst] -datapath_only 6.4 originating in instance mipi_cross_clk_fifo_inst was updated to set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_   ....   L.genblk2.empty_sync_r.ff_inst }] -datapath_only 6.4 and kept.
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_max_delay -from [get_cells -hierarchical */*.aempty_r*.*_inst] -to [get_cells -hierarchical */*.aempty_sync_r*.*_inst] -datapath_only 6.4 originating in instance mipi_cross_clk_fifo_inst was removed. Can't resolve object 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_r*.*_inst ' in constraint 'set_max_delay -from [ge   ....   k_fifo_inst/*/*.aempty_sync_r*.*_inst }] -datapath_only 6.4'. 
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_max_delay -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.aempty_sync_r*.*_inst] -datapath_only 6.4 originating in instance mipi_cross_clk_fifo_inst was removed. Can't resolve object 'mipi_rx_inst/mipi_cross_clk_fifo_inst/*/*.aempty_sync_r*.*_inst ' in constraint 'set_max_delay -fr   ....   st/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FI 
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc
+set_false_path -to [get_pins -hierarchical u_eclkdiv.ECLKDIV_inst/DIVRST] originating in instance mipi_dphy_rx_inst was removed. Can't resolve object 'mipi_rx_inst/mipi_dphy_rx_inst/u_eclkdiv.ECLKDIV_inst/DIVRST ' in constraint 'set_false_path -to [get_pins {mipi_rx_inst/mipi_dphy_rx_inst/u_eclkdiv.ECLKDIV_inst/DIVRST }]'. 
+##Original File: C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/constraints/constraint.sdc
+
+
+Removing unused logic ...
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.genblk2.empty_sync_r.intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.genblk2.empty_r.intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.full_r.intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[0].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[1].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[2].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[3].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[4].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[5].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[6].intGnd undriven or does not drive anything - clipped
+INFO <35811149> - ... More signals are undriven or does not drive anything - clipped
+Starting design annotation....
+WARNING <70001949> - The object mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTY in the option "-from" of constraint set_false_path -from [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTY}] -to [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTYI}] is not valid.
+WARNING <70001908> - set_false_path -from [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTY}] -to [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTYI}] is being ignored due to errors
+WARNING <70001949> - The object mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/FULL in the option "-from" of constraint set_false_path -from [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/FULL}] -to [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/FULLI}] is not valid.
+WARNING <70001908> - set_false_path -from [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/FULL}] -to [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/FULLI}] is being ignored due to errors
+ 
+Constraint Summary:
+   Total number of constraints: 13
+   Total number of constraints dropped: 5
+ 
+Writing output file 'mira_test_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 2 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 200 MB
+Checksum -- postsyn: e9421da37bc50bf7b7bd64db6610083ab48efa93

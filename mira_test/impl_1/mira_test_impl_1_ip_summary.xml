@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LatticeIPSummary>
+    <IpInfo IP_Module_Name="mipi_dphy_rx" IP_Name="MIPI_DPHY" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.9.0" Vlnv="latticesemi.com:module:mipi_dphy:1.9.0"/>
+    <IpInfo IP_Module_Name="mipi_cross_clk_fifo" IP_Name="FIFO_DC" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="2.7.0" Vlnv="latticesemi.com:module:fifo_dc:2.7.0"/>
+    <IpInfo IP_Module_Name="main_pll" IP_Name="PLL" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.9.1" Vlnv="latticesemi.com:module:pll:1.9.1"/>
+    <IpInfo IP_Module_Name="process_image_out_fifo" IP_Name="FIFO" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="2.5.0" Vlnv="latticesemi.com:module:fifo:2.5.0"/>
+</LatticeIPSummary>
