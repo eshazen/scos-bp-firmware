@@ -1,0 +1,7 @@
+C:\lscc\radiant\2025.2\synpbase\bin64\syn_nfilter.exe  -link  -top  mira_test_top  -multisrs  C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\mira_test_impl_1_comp.srs  -osyn  C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\mira_test_impl_1_mult.srs  -log  C:\Users\Bernhard\my_designs\mira_test\impl_1\synlog\mira_test_impl_1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\lscc\radiant\2025.2\synpbase\bin64\syn_nfilter.exe -link -top mira_test_top -multisrs ..\synwork\mira_test_impl_1_comp.srs -osyn ..\synwork\mira_test_impl_1_mult.srs -log ..\synlog\mira_test_impl_1_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\mira_test_impl_1_comp.srs|io:i|time:1783458262|size:130589|exec:0|csum:F5E4BCC58254AC269E6F6D3385346FB7
+file:..\synwork\mira_test_impl_1_mult.srs|io:o|time:1783458264|size:10145|exec:0|csum:
+file:..\synlog\mira_test_impl_1_multi_srs_gen.srr|io:o|time:1783458264|size:1153|exec:0|csum:
+file:..\..\..\..\..\..\lscc\radiant\2025.2\synpbase\bin64\syn_nfilter.exe|io:i|time:1762883177|size:10805248|exec:1|csum:852D19A9663831A0E2C4EB49CF2B6DEC

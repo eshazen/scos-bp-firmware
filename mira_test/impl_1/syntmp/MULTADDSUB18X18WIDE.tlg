@@ -1,0 +1,376 @@
+Selecting top level module MULTADDSUB18X18WIDE
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":46301:7:46301:16|Synthesizing module MULT9_CORE in library work.
+
+	SIGNEDSTATIC_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	ASIGNED_OPERAND_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	BYPASS_MULT9=49'b0000000000000000001010101010100110100010101000100
+	REGBYPSB=65'b00000000000000000010000100101100101010000010000010101001101010011
+	REGBYPSA1=65'b00101001001000101010001110100100101010011010101000100010101010010
+	REGBYPSA2=65'b00000000000000000010000100101100101010000010000010101001101010011
+	SHIFTA=65'b00100010001001001010100110100000101000010010011000100010101000100
+	SR_18BITSHIFT_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	GSR=65'b00000000001000101010011100100000101000010010011000100010101000100
+	RESET=41'b00100000101010011010110010100111001000011
+   Generated name = MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_REGISTER_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z1
+@W: CG532 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":46713:1:46713:7|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":47213:7:47213:14|Synthesizing module MULT9_hw in library work.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":47471:5:47471:16|Removing wire dsp_sleep_lt, as there is no assignment to it.
+Running optimization stage 1 on MULT9_hw .......
+Finished optimization stage 1 on MULT9_hw (CPU Time 0h:00m:00s, Memory Used current: 161MB peak: 162MB)
+Running optimization stage 1 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_REGISTER_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z1 .......
+Finished optimization stage 1 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_REGISTER_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z1 (CPU Time 0h:00m:00s, Memory Used current: 161MB peak: 162MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":44247:7:44247:18|Synthesizing module PREADD9_CORE in library work.
+
+	SIGNEDSTATIC_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	SUBSTRACT_EN=89'b00101001101010101010000100101010001010010010000010100001101010100010010010100111101001110
+	CSIGNED=65'b00100010001001001010100110100000101000010010011000100010101000100
+	BSIGNED_OPERAND_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	BYPASS_PREADD9=49'b0010000100101100101010000010000010101001101010011
+	REGBYPSBR0=65'b00101001001000101010001110100100101010011010101000100010101010010
+	REGBYPSBR1=65'b00000000000000000010000100101100101010000010000010101001101010011
+	REGBYPSBL=65'b00101001001000101010001110100100101010011010101000100010101010010
+	SHIFTBR=65'b00101001001000101010001110100100101010011010101000100010101010010
+	SHIFTBL=65'b00101001001000101010001110100100101010011010101000100010101010010
+	GSR=65'b00000000001000101010011100100000101000010010011000100010101000100
+	PREADDCAS_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	SR_18BITSHIFT_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	OPC=217'b0010010010100111001010000010101010101010001011111010000100101111101000001010100110101111101010000010100100100010101000001010001000100010001000101010100100101111101001111010100000100010101010010010000010100111001000100
+	RESET=41'b00100000101010011010110010100111001000011
+   Generated name = PREADD9_CORE_Z2
+@W: CG532 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":44665:1:44665:7|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":45321:7:45321:16|Synthesizing module PREADD9_hw in library work.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":45563:5:45563:16|Removing wire dsp_sleep_lt, as there is no assignment to it.
+Running optimization stage 1 on PREADD9_hw .......
+Finished optimization stage 1 on PREADD9_hw (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+Running optimization stage 1 on PREADD9_CORE_Z2 .......
+Finished optimization stage 1 on PREADD9_CORE_Z2 (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":43147:7:43147:15|Synthesizing module MULT18_hw in library work.
+Running optimization stage 1 on MULT18_hw .......
+Finished optimization stage 1 on MULT18_hw (CPU Time 0h:00m:00s, Memory Used current: 164MB peak: 165MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":42531:7:42531:17|Synthesizing module MULT18_CORE in library work.
+
+	SFTEN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	MULT18X18=65'b00000000001000101010011100100000101000010010011000100010101000100
+	ROUNDHALFUP=65'b00100010001001001010100110100000101000010010011000100010101000100
+	ROUNDRTZI=137'b00000000000000000000000000000000001010010010011110101010101001110010001000101111101010100010011110101111101011010010001010101001001001111
+	ROUNDBIT=113'b00000000001010010010011110101010101001110010001000101111101010100010011110101111101000010010010010101010000110000
+   Generated name = MULT18_CORE_DISABLED_ENABLED_DISABLED_ROUND_TO_ZERO_ROUND_TO_BIT0_Z3
+Running optimization stage 1 on MULT18_CORE_DISABLED_ENABLED_DISABLED_ROUND_TO_ZERO_ROUND_TO_BIT0_Z3 .......
+Finished optimization stage 1 on MULT18_CORE_DISABLED_ENABLED_DISABLED_ROUND_TO_ZERO_ROUND_TO_BIT0_Z3 (CPU Time 0h:00m:00s, Memory Used current: 164MB peak: 165MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":43501:7:43501:16|Synthesizing module REG18_CORE in library work.
+
+	REGBYPS=65'b00101001001000101010001110100100101010011010101000100010101010010
+	GSR=65'b00000000001000101010011100100000101000010010011000100010101000100
+	RESET=41'b00100000101010011010110010100111001000011
+   Generated name = REG18_CORE_REGISTER_ENABLED_ASYNC
+@W: CG532 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":43673:1:43673:7|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":43923:7:43923:14|Synthesizing module REG18_hw in library work.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":44035:5:44035:16|Removing wire dsp_sleep_lt, as there is no assignment to it.
+Running optimization stage 1 on REG18_hw .......
+Finished optimization stage 1 on REG18_hw (CPU Time 0h:00m:00s, Memory Used current: 164MB peak: 165MB)
+Running optimization stage 1 on REG18_CORE_REGISTER_ENABLED_ASYNC .......
+Finished optimization stage 1 on REG18_CORE_REGISTER_ENABLED_ASYNC (CPU Time 0h:00m:00s, Memory Used current: 164MB peak: 165MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":50199:7:50199:16|Synthesizing module ACC54_CORE in library work.
+
+	SIGN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	M9ADDSUB_CTRL=89'b00000000000000000000000000100000101000100010001000100100101010100010010010100111101001110
+	ADDSUB_CTRL=201'b001000001010001000100010001011111010000010100010001000100010111110100001101010100010100100100110001011111001101010011010001011111010000100100100101010100010111110100000101000100010001000100010101010010
+	STATICOPCODE_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	OUTREGBYPS=65'b00000000000000000010000100101100101010000010000010101001101010011
+	GSR=65'b00000000001000101010011100100000101000010010011000100010101000100
+	PROGCONST=873'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000001100010001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000
+	CONSTSEL=49'b0010000100101100101010000010000010101001101010011
+	DSPCASCADE=65'b00100010001001001010100110100000101000010010011000100010101000100
+	ACC108CASCADE=217'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000010010110010101000001000001010100110101001101000011010000010101001101000011010000010100010001000101
+	ACCUMODE=41'b00100110101001111010001000100010100110111
+	ACCUBYPS=49'b0000000000000000001010101010100110100010101000100
+	CREGBYPS1=65'b00000000000000000010000100101100101010000010000010101001101010011
+	CREGBYPS2=65'b00101001001000101010001110100100101010011010101000100010101010010
+	CREGBYPS3=65'b00000000000000000010000100101100101010000010000010101001101010011
+	CINREGBYPS1=65'b00000000000000000010000100101100101010000010000010101001101010011
+	CINREGBYPS2=65'b00000000000000000010000100101100101010000010000010101001101010011
+	CINREGBYPS3=65'b00000000000000000010000100101100101010000010000010101001101010011
+	LOADREGBYPS1=65'b00000000000000000010000100101100101010000010000010101001101010011
+	LOADREGBYPS2=65'b00000000000000000010000100101100101010000010000010101001101010011
+	LOADREGBYPS3=65'b00000000000000000010000100101100101010000010000010101001101010011
+	M9ADDSUBREGBYPS1=65'b00000000000000000010000100101100101010000010000010101001101010011
+	M9ADDSUBREGBYPS2=65'b00101001001000101010001110100100101010011010101000100010101010010
+	M9ADDSUBREGBYPS3=65'b00000000000000000010000100101100101010000010000010101001101010011
+	ADDSUBSIGNREGBYPS1=65'b00000000000000000010000100101100101010000010000010101001101010011
+	ADDSUBSIGNREGBYPS2=65'b00101001001000101010001110100100101010011010101000100010101010010
+	ADDSUBSIGNREGBYPS3=65'b00000000000000000010000100101100101010000010000010101001101010011
+	ROUNDHALFUP=65'b00100010001001001010100110100000101000010010011000100010101000100
+	ROUNDRTZI=137'b00000000000000000000000000000000001010010010011110101010101001110010001000101111101010100010011110101111101011010010001010101001001001111
+	ROUNDBIT=113'b00000000001010010010011110101010101001110010001000101111101010100010011110101111101000010010010010101010000110000
+	CASCOUTREGBYPS=65'b00000000000000000010000100101100101010000010000010101001101010011
+	SFTEN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	RESET=41'b00100000101010011010110010100111001000011
+   Generated name = ACC54_CORE_Z4
+@W: CG532 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":51421:1:51421:7|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":53867:7:53867:14|Synthesizing module ACC54_hw in library work.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54353:5:54353:16|Removing wire dsp_sleep_lt, as there is no assignment to it.
+Running optimization stage 1 on ACC54_hw .......
+Finished optimization stage 1 on ACC54_hw (CPU Time 0h:00m:00s, Memory Used current: 167MB peak: 168MB)
+Running optimization stage 1 on ACC54_CORE_Z4 .......
+Finished optimization stage 1 on ACC54_CORE_Z4 (CPU Time 0h:00m:00s, Memory Used current: 167MB peak: 168MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":14:7:14:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+Finished optimization stage 1 on VHI (CPU Time 0h:00m:00s, Memory Used current: 167MB peak: 168MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":24:7:24:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+Finished optimization stage 1 on VLO (CPU Time 0h:00m:00s, Memory Used current: 167MB peak: 168MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":34439:7:34439:25|Synthesizing module MULTADDSUB18X18WIDE in library work.
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35565:13:35565:13|Input AS10 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35567:13:35567:13|Input AS11 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35569:13:35569:13|Input AS12 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35571:13:35571:13|Input AS13 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35573:13:35573:13|Input AS14 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35575:13:35575:13|Input AS15 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35577:13:35577:13|Input AS16 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35579:13:35579:13|Input AS17 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35581:13:35581:13|Input AS18 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35583:13:35583:13|Input AS20 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35585:13:35585:13|Input AS21 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35587:13:35587:13|Input AS22 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35589:13:35589:13|Input AS23 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35591:13:35591:13|Input AS24 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35593:13:35593:13|Input AS25 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35595:13:35595:13|Input AS26 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35597:13:35597:13|Input AS27 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35599:13:35599:13|Input AS28 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35601:18:35601:18|Input ASSIGNED1 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35603:18:35603:18|Input ASSIGNED2 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35791:13:35791:13|Input AS20 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35793:13:35793:13|Input AS21 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35795:13:35795:13|Input AS22 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35797:13:35797:13|Input AS23 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35799:13:35799:13|Input AS24 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35801:13:35801:13|Input AS25 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35803:13:35803:13|Input AS26 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35805:13:35805:13|Input AS27 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35807:13:35807:13|Input AS28 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":35811:18:35811:18|Input ASSIGNED2 on instance MULT9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36399:14:36399:14|Input BRS10 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36401:14:36401:14|Input BRS11 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36403:14:36403:14|Input BRS12 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36405:14:36405:14|Input BRS13 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36407:14:36407:14|Input BRS14 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36409:14:36409:14|Input BRS15 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36411:14:36411:14|Input BRS16 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36413:14:36413:14|Input BRS17 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36415:14:36415:14|Input BRS18 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36417:14:36417:14|Input BRS20 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36419:14:36419:14|Input BRS21 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36421:14:36421:14|Input BRS22 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36423:14:36423:14|Input BRS23 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36425:14:36425:14|Input BRS24 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36427:14:36427:14|Input BRS25 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36429:14:36429:14|Input BRS26 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36431:14:36431:14|Input BRS27 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36433:14:36433:14|Input BRS28 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36471:14:36471:14|Input BRSS1 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36473:14:36473:14|Input BRSS2 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36479:16:36479:16|Input PRCASIN on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36631:14:36631:14|Input BRS20 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36633:14:36633:14|Input BRS21 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36635:14:36635:14|Input BRS22 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36637:14:36637:14|Input BRS23 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36639:14:36639:14|Input BRS24 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36641:14:36641:14|Input BRS25 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36643:14:36643:14|Input BRS26 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36645:14:36645:14|Input BRS27 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36647:14:36647:14|Input BRS28 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":36687:14:36687:14|Input BRSS2 on instance PREADD9_H0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38355:15:38355:15|Input DSPIN0 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38357:15:38357:15|Input DSPIN1 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38359:15:38359:15|Input DSPIN2 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38361:15:38361:15|Input DSPIN3 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38363:15:38363:15|Input DSPIN4 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38365:15:38365:15|Input DSPIN5 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38367:15:38367:15|Input DSPIN6 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38369:15:38369:15|Input DSPIN7 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38371:15:38371:15|Input DSPIN8 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38373:15:38373:15|Input DSPIN9 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38375:16:38375:16|Input DSPIN10 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38377:16:38377:16|Input DSPIN11 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38379:16:38379:16|Input DSPIN12 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38381:16:38381:16|Input DSPIN13 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38383:16:38383:16|Input DSPIN14 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38385:16:38385:16|Input DSPIN15 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38387:16:38387:16|Input DSPIN16 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38389:16:38389:16|Input DSPIN17 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38391:16:38391:16|Input DSPIN18 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38393:16:38393:16|Input DSPIN19 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38395:16:38395:16|Input DSPIN20 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38397:16:38397:16|Input DSPIN21 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38399:16:38399:16|Input DSPIN22 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38401:16:38401:16|Input DSPIN23 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38403:16:38403:16|Input DSPIN24 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38405:16:38405:16|Input DSPIN25 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38407:16:38407:16|Input DSPIN26 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38409:16:38409:16|Input DSPIN27 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38411:16:38411:16|Input DSPIN28 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38413:16:38413:16|Input DSPIN29 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38415:16:38415:16|Input DSPIN30 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38417:16:38417:16|Input DSPIN31 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38419:16:38419:16|Input DSPIN32 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38421:16:38421:16|Input DSPIN33 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38423:16:38423:16|Input DSPIN34 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38425:16:38425:16|Input DSPIN35 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38427:16:38427:16|Input DSPIN36 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38429:16:38429:16|Input DSPIN37 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":38431:16:38431:16|Input DSPIN38 on instance ACC54_0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+
+Only the first 100 messages of id 'CG781' are reported. To see all messages use 'report_messages -log C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.log -id CG781' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CG781} -count unlimited' in the Tcl shell.
+Running optimization stage 1 on MULTADDSUB18X18WIDE .......
+Finished optimization stage 1 on MULTADDSUB18X18WIDE (CPU Time 0h:00m:00s, Memory Used current: 167MB peak: 168MB)
+Running optimization stage 2 on MULTADDSUB18X18WIDE .......
+Finished optimization stage 2 on MULTADDSUB18X18WIDE (CPU Time 0h:00m:00s, Memory Used current: 167MB peak: 168MB)
+Running optimization stage 2 on VLO .......
+Finished optimization stage 2 on VLO (CPU Time 0h:00m:00s, Memory Used current: 167MB peak: 168MB)
+Running optimization stage 2 on VHI .......
+Finished optimization stage 2 on VHI (CPU Time 0h:00m:00s, Memory Used current: 167MB peak: 168MB)
+Running optimization stage 2 on ACC54_hw .......
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54949:23:54949:79|Found combinational loop
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[52]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[51]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[50]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[49]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[48]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[47]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[46]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[45]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[44]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[43]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[42]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[41]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[40]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[39]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[38]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[37]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[36]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[35]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[34]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[33]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[32]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[31]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[30]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[29]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[28]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[27]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[26]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[25]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[24]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[23]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[22]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[21]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[20]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[19]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[18]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[17]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[16]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[15]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[14]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[13]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[12]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[11]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[10]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[9]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[8]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[7]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[6]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[5]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[4]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[3]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[2]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[1]
+@W: CL179 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":55017:24:55017:64|Found combinational loop at acc54_tmp2[0]
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@W: CL181 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54945:24:54945:129|Found combinational loop
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54125:7:54125:17|Input mc1_rsto_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54139:7:54139:17|Input mc1_rstc_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54141:7:54141:18|Input mc1_rstc2_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54143:7:54143:18|Input mc1_rstc3_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54157:7:54157:19|Input mc1_rstcin_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54159:7:54159:20|Input mc1_rstcin2_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54161:7:54161:20|Input mc1_rstcin3_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54175:7:54175:20|Input mc1_rstctrl_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54177:7:54177:21|Input mc1_rstctrl2_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":54179:7:54179:21|Input mc1_rstctrl3_en is unused.
+Finished optimization stage 2 on ACC54_hw (CPU Time 0h:00m:01s, Memory Used current: 181MB peak: 192MB)
+Running optimization stage 2 on ACC54_CORE_Z4 .......
+Finished optimization stage 2 on ACC54_CORE_Z4 (CPU Time 0h:00m:00s, Memory Used current: 181MB peak: 192MB)
+Running optimization stage 2 on REG18_hw .......
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":43985:10:43985:20|Input mc1_rstp_en is unused.
+Finished optimization stage 2 on REG18_hw (CPU Time 0h:00m:00s, Memory Used current: 181MB peak: 192MB)
+Running optimization stage 2 on REG18_CORE_REGISTER_ENABLED_ASYNC .......
+Finished optimization stage 2 on REG18_CORE_REGISTER_ENABLED_ASYNC (CPU Time 0h:00m:00s, Memory Used current: 181MB peak: 192MB)
+Running optimization stage 2 on MULT18_CORE_DISABLED_ENABLED_DISABLED_ROUND_TO_ZERO_ROUND_TO_BIT0_Z3 .......
+Finished optimization stage 2 on MULT18_CORE_DISABLED_ENABLED_DISABLED_ROUND_TO_ZERO_ROUND_TO_BIT0_Z3 (CPU Time 0h:00m:00s, Memory Used current: 181MB peak: 192MB)
+Running optimization stage 2 on MULT18_hw .......
+@W: CL246 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":43191:12:43191:15|Input port bits 19 to 18 of pl18[19:0] are unused. Assign logic for all port bits or change the input port size.
+Finished optimization stage 2 on MULT18_hw (CPU Time 0h:00m:00s, Memory Used current: 178MB peak: 192MB)
+Running optimization stage 2 on PREADD9_hw .......
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":45503:10:45503:21|Input mc1_rstcl_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":45505:10:45505:20|Input mc1_rstb_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":45507:10:45507:21|Input mc1_rstb2_en is unused.
+Finished optimization stage 2 on PREADD9_hw (CPU Time 0h:00m:00s, Memory Used current: 180MB peak: 192MB)
+Running optimization stage 2 on PREADD9_CORE_Z2 .......
+Finished optimization stage 2 on PREADD9_CORE_Z2 (CPU Time 0h:00m:00s, Memory Used current: 180MB peak: 192MB)
+Running optimization stage 2 on MULT9_hw .......
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":47375:16:47375:26|Input mc1_rsta_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":47377:16:47377:27|Input mc1_rsta2_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":47385:16:47385:26|Input mc1_rstp_en is unused.
+Finished optimization stage 2 on MULT9_hw (CPU Time 0h:00m:00s, Memory Used current: 180MB peak: 192MB)
+Running optimization stage 2 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_REGISTER_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z1 .......
+Finished optimization stage 2 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_REGISTER_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z1 (CPU Time 0h:00m:00s, Memory Used current: 180MB peak: 192MB)

@@ -1,0 +1,17 @@
+@P:  Worst Slack : 0.657
+@P:  Clk48xCI - Estimated Frequency : NA
+@P:  Clk48xCI - Requested Frequency : 48.0 MHz
+@P:  Clk48xCI - Estimated Period : NA
+@P:  Clk48xCI - Requested Period : 20.830
+@P:  Clk48xCI - Slack : NA
+@P:  main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock - Estimated Frequency : 230.3 MHz
+@P:  main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock - Estimated Period : 4.343
+@P:  main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock - Requested Period : 5.000
+@P:  main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock - Slack : 0.657
+@P:  System - Estimated Frequency : 429.8 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 2.326
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : 2.674
+@P:  CPU Time : 0h:00m:29s

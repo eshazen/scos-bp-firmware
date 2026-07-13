@@ -1,0 +1,156 @@
+Selecting top level module MULT9X9
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":44247:7:44247:18|Synthesizing module PREADD9_CORE in library work.
+
+	SIGNEDSTATIC_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	SUBSTRACT_EN=89'b00101001101010101010000100101010001010010010000010100001101010100010010010100111101001110
+	CSIGNED=65'b00100010001001001010100110100000101000010010011000100010101000100
+	BSIGNED_OPERAND_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	BYPASS_PREADD9=49'b0010000100101100101010000010000010101001101010011
+	REGBYPSBR0=65'b00000000000000000010000100101100101010000010000010101001101010011
+	REGBYPSBR1=65'b00000000000000000010000100101100101010000010000010101001101010011
+	REGBYPSBL=65'b00101001001000101010001110100100101010011010101000100010101010010
+	SHIFTBR=65'b00101001001000101010001110100100101010011010101000100010101010010
+	SHIFTBL=65'b00101001001000101010001110100100101010011010101000100010101010010
+	GSR=65'b00000000001000101010011100100000101000010010011000100010101000100
+	PREADDCAS_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	SR_18BITSHIFT_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	OPC=217'b0010010010100111001010000010101010101010001011111010000100101111101000001010100110101111101010000010100100100010101000001010001000100010001000101010100100101111101001111010100000100010101010010010000010100111001000100
+	RESET=41'b00100000101010011010110010100111001000011
+   Generated name = PREADD9_CORE_Z1
+@W: CG532 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":44665:1:44665:7|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":45321:7:45321:16|Synthesizing module PREADD9_hw in library work.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":45563:5:45563:16|Removing wire dsp_sleep_lt, as there is no assignment to it.
+Running optimization stage 1 on PREADD9_hw .......
+Finished optimization stage 1 on PREADD9_hw (CPU Time 0h:00m:00s, Memory Used current: 161MB peak: 163MB)
+Running optimization stage 1 on PREADD9_CORE_Z1 .......
+Finished optimization stage 1 on PREADD9_CORE_Z1 (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":46301:7:46301:16|Synthesizing module MULT9_CORE in library work.
+
+	SIGNEDSTATIC_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	ASIGNED_OPERAND_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	BYPASS_MULT9=49'b0000000000000000001010101010100110100010101000100
+	REGBYPSB=65'b00000000000000000010000100101100101010000010000010101001101010011
+	REGBYPSA1=65'b00000000000000000010000100101100101010000010000010101001101010011
+	REGBYPSA2=65'b00000000000000000010000100101100101010000010000010101001101010011
+	SHIFTA=65'b00100010001001001010100110100000101000010010011000100010101000100
+	SR_18BITSHIFT_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
+	GSR=65'b00000000001000101010011100100000101000010010011000100010101000100
+	RESET=41'b00100000101010011010110010100111001000011
+   Generated name = MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_BYPASS_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z2
+@W: CG532 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":46713:1:46713:7|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":47213:7:47213:14|Synthesizing module MULT9_hw in library work.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":47471:5:47471:16|Removing wire dsp_sleep_lt, as there is no assignment to it.
+Running optimization stage 1 on MULT9_hw .......
+Finished optimization stage 1 on MULT9_hw (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+Running optimization stage 1 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_BYPASS_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z2 .......
+Finished optimization stage 1 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_BYPASS_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z2 (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":43501:7:43501:16|Synthesizing module REG18_CORE in library work.
+
+	REGBYPS=65'b00000000000000000010000100101100101010000010000010101001101010011
+	GSR=65'b00000000001000101010011100100000101000010010011000100010101000100
+	RESET=41'b00100000101010011010110010100111001000011
+   Generated name = REG18_CORE_BYPASS_ENABLED_ASYNC
+@W: CG532 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":43673:1:43673:7|Within an initial block, only Verilog force statements and memory initialization statements and initialization of entire variable are recognized, and all other content is ignored. Simulation mismatch may occur
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":43923:7:43923:14|Synthesizing module REG18_hw in library work.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":44035:5:44035:16|Removing wire dsp_sleep_lt, as there is no assignment to it.
+Running optimization stage 1 on REG18_hw .......
+Finished optimization stage 1 on REG18_hw (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+Running optimization stage 1 on REG18_CORE_BYPASS_ENABLED_ASYNC .......
+Finished optimization stage 1 on REG18_CORE_BYPASS_ENABLED_ASYNC (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14:7:14:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+Finished optimization stage 1 on VHI (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":24:7:24:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+Finished optimization stage 1 on VLO (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":13778:7:13778:13|Synthesizing module MULT9X9 in library work.
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14048:14:14048:14|Input BRS10 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14050:14:14050:14|Input BRS11 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14052:14:14052:14|Input BRS12 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14054:14:14054:14|Input BRS13 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14056:14:14056:14|Input BRS14 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14058:14:14058:14|Input BRS15 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14060:14:14060:14|Input BRS16 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14062:14:14062:14|Input BRS17 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14064:14:14064:14|Input BRS18 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14066:14:14066:14|Input BRS20 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14068:14:14068:14|Input BRS21 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14070:14:14070:14|Input BRS22 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14072:14:14072:14|Input BRS23 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14074:14:14074:14|Input BRS24 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14076:14:14076:14|Input BRS25 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14078:14:14078:14|Input BRS26 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14080:14:14080:14|Input BRS27 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14082:14:14082:14|Input BRS28 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14084:14:14084:14|Input BLS10 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14086:14:14086:14|Input BLS11 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14088:14:14088:14|Input BLS12 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14090:14:14090:14|Input BLS13 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14092:14:14092:14|Input BLS14 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14094:14:14094:14|Input BLS15 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14096:14:14096:14|Input BLS16 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14098:14:14098:14|Input BLS17 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14100:14:14100:14|Input BLS18 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14102:14:14102:14|Input BLS20 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14104:14:14104:14|Input BLS21 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14106:14:14106:14|Input BLS22 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14108:14:14108:14|Input BLS23 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14110:14:14110:14|Input BLS24 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14112:14:14112:14|Input BLS25 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14114:14:14114:14|Input BLS26 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14116:14:14116:14|Input BLS27 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14118:14:14118:14|Input BLS28 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14120:14:14120:14|Input BRSS1 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14122:14:14122:14|Input BRSS2 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14124:14:14124:14|Input BLSS1 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14126:14:14126:14|Input BLSS2 on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14128:16:14128:16|Input PRCASIN on instance PREADD9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14260:13:14260:13|Input AS10 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14262:13:14262:13|Input AS11 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14264:13:14264:13|Input AS12 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14266:13:14266:13|Input AS13 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14268:13:14268:13|Input AS14 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14270:13:14270:13|Input AS15 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14272:13:14272:13|Input AS16 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14274:13:14274:13|Input AS17 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14276:13:14276:13|Input AS18 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14278:13:14278:13|Input AS20 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14280:13:14280:13|Input AS21 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14282:13:14282:13|Input AS22 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14284:13:14284:13|Input AS23 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14286:13:14286:13|Input AS24 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14288:13:14288:13|Input AS25 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14290:13:14290:13|Input AS26 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14292:13:14292:13|Input AS27 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14294:13:14294:13|Input AS28 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14296:18:14296:18|Input ASSIGNED1 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14298:18:14298:18|Input ASSIGNED2 on instance MULT9_L0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+Running optimization stage 1 on MULT9X9 .......
+@W: CL168 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14516:8:14516:18|Removing instance vloInt_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":14514:8:14514:14|Removing instance vloInst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Finished optimization stage 1 on MULT9X9 (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+Running optimization stage 2 on MULT9X9 .......
+Finished optimization stage 2 on MULT9X9 (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+Running optimization stage 2 on VLO .......
+Finished optimization stage 2 on VLO (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+Running optimization stage 2 on VHI .......
+Finished optimization stage 2 on VHI (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+Running optimization stage 2 on REG18_hw .......
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":43985:10:43985:20|Input mc1_rstp_en is unused.
+Finished optimization stage 2 on REG18_hw (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+Running optimization stage 2 on REG18_CORE_BYPASS_ENABLED_ASYNC .......
+Finished optimization stage 2 on REG18_CORE_BYPASS_ENABLED_ASYNC (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 163MB)
+Running optimization stage 2 on MULT9_hw .......
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":47375:16:47375:26|Input mc1_rsta_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":47377:16:47377:27|Input mc1_rsta2_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":47385:16:47385:26|Input mc1_rstp_en is unused.
+Finished optimization stage 2 on MULT9_hw (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 164MB)
+Running optimization stage 2 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_BYPASS_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z2 .......
+Finished optimization stage 2 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_BYPASS_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z2 (CPU Time 0h:00m:00s, Memory Used current: 162MB peak: 164MB)
+Running optimization stage 2 on PREADD9_hw .......
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":45503:10:45503:21|Input mc1_rstcl_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":45505:10:45505:20|Input mc1_rstb_en is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULT9X9.v":45507:10:45507:21|Input mc1_rstb2_en is unused.
+Finished optimization stage 2 on PREADD9_hw (CPU Time 0h:00m:00s, Memory Used current: 164MB peak: 165MB)
+Running optimization stage 2 on PREADD9_CORE_Z1 .......
+Finished optimization stage 2 on PREADD9_CORE_Z1 (CPU Time 0h:00m:00s, Memory Used current: 164MB peak: 165MB)
