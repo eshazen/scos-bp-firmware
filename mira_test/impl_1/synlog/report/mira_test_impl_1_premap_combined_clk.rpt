@@ -1,0 +1,26 @@
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 2448 clock pin(s) of sequential element(s)
+0 instances converted, 2448 sequential instances remain driven by gated/generated clocks
+
+============================================================================================================================================================================ Gated/Generated Clocks =============================================================================================================================================================================
+Clock Tree ID     Driving Element                                                                                                         Drive Element Type     Unconverted Fanout     Sample Instance                                                                                                                                            Explanation                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_40      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP                                                              PLL                    2447                   CfgStatexDP[0]                                                                                                                                             Clock Optimization not enabled
+@KP:ckid0_41      mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_dphy_cil.URWDCKHS     DPHY_Z7_layer1         1                      mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.full_r     Clock Optimization not enabled
+=================================================================================================================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+

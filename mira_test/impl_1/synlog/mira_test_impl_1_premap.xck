@@ -1,0 +1,2 @@
+ckid0_40:@|S:main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP@|E:CfgStatexDP[0]@|F:@syn_dgcc_clockid0_40==1@|M:ClockId_0_40
+ckid0_41:@|S:mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_dphy_cil.URWDCKHS@|E:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.full_r@|F:@syn_dgcc_clockid0_41==1@|M:ClockId_0_41

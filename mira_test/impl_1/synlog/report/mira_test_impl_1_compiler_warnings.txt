@@ -1,0 +1,92 @@
+@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3205:23:3205:34|Net lmmi_rdata_o is not declared.
+@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3206:23:3206:40|Net lmmi_rdata_valid_o is not declared.
+@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3207:23:3207:34|Net lmmi_ready_o is not declared.
+@W: CL271 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Pruning unused bits 6 to 4 of p_cfg_memzing.CfgFSMSRegxDP_0_2(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL279 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Pruning register bits 31 to 23 of PixValSqCombxDP(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Pruning register bits 21 to 13 of PixValCombxDP(21 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Pruning register bit 22 of PixValSqCombxDP(22 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Pruning register bit 12 of PixValCombxDP(12 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL246 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":27:1:27:11|Input port bits 7 to 4 of sliceselxdi(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Pruning register bit 3 of CfgRegxDP_14(3 downto 2). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Pruning unused register p_cfg_memzing.CfgRegxDP_15(0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Pruning unused register CfgRegxDP_14(2). Make sure that there are no unused intermediate registers.
+@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3205:23:3205:34|Net lmmi_rdata_o is not declared.
+@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3206:23:3206:40|Net lmmi_rdata_valid_o is not declared.
+@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3207:23:3207:34|Net lmmi_ready_o is not declared.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":783:40:783:48|Object wr_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":784:40:784:48|Object rd_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":785:40:785:52|Object wr_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":786:40:786:52|Object rd_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|Removing wire wr_data_cnt_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|Removing wire rd_data_cnt_o, as there is no assignment to it.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|*Output wr_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|*Output rd_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CG146 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":2615:7:2615:10|Creating black box for empty module DPHY_Z7_layer1
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":703:16:703:28|Removing wire lp_rx_clk_p_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":704:16:704:28|Removing wire lp_rx_clk_n_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":733:15:733:25|Removing wire lp_data_p_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":734:15:734:25|Removing wire lp_data_n_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":740:9:740:21|Removing wire clk_lp_ctrl_i, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":742:9:742:15|Removing wire cd_d0_p, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":743:9:743:15|Removing wire cd_d0_n, as there is no assignment to it.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":703:16:703:28|*Output lp_rx_clk_p_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":704:16:704:28|*Output lp_rx_clk_n_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3075:16:3075:22|Object empty_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3076:16:3076:26|Object empty_out_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3077:16:3077:27|Object aempty_out_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3078:16:3078:25|Object pre_read_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3079:16:3079:24|Object rd_en_p_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":721:40:721:48|Object wr_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":722:40:722:48|Object rd_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":723:40:723:52|Object wr_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":724:40:724:52|Object rd_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":691:27:691:39|Removing wire wr_data_cnt_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":692:27:692:39|Removing wire rd_data_cnt_o, as there is no assignment to it.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":691:27:691:39|*Output wr_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":692:27:692:39|*Output rd_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":488:29:488:38|Removing wire data_cnt_o, as there is no assignment to it.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":488:29:488:38|*Output data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2526:8:2526:14|Object empty_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2527:8:2527:18|Object empty_out_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2528:8:2528:19|Object aempty_out_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2529:8:2529:17|Object pre_read_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2530:8:2530:16|Object rd_en_p_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":715:28:715:36|Object wr_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":716:28:716:36|Object rd_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":718:28:718:40|Object wr_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":719:28:719:40|Object rd_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":693:27:693:39|Removing wire wr_data_cnt_o, as there is no assignment to it.
+@W: CG360 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":694:27:694:39|Removing wire rd_data_cnt_o, as there is no assignment to it.
+@W: CL318 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":693:27:693:39|*Output wr_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":694:27:694:39|*Output rd_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CG360 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":459:29:459:38|Removing wire data_cnt_o, as there is no assignment to it.
+@W: CL318 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":459:29:459:38|*Output data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":285:16:285:24|Removing wire refdetlos, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":304:16:304:27|Removing wire apb_pready_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":305:16:305:28|Removing wire apb_pslverr_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":306:23:306:34|Removing wire apb_prdata_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":629:9:629:26|Removing wire apb_lmmi_request_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":630:15:630:31|Removing wire apb_lmmi_offset_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":631:15:631:30|Removing wire apb_lmmi_wdata_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":632:15:632:30|Removing wire apb_lmmi_rdata_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":633:9:633:25|Removing wire apb_lmmi_wr_rdn_w, as there is no assignment to it.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":285:16:285:24|*Output refdetlos has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":304:16:304:27|*Output apb_pready_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":305:16:305:28|*Output apb_pslverr_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":306:23:306:34|*Output apb_prdata_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Pruning register bit 31 of count[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Pruning register bits 30 to 3 of count[30:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

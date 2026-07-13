@@ -1,0 +1,329 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Top entity is set to mira_test_top.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd'.
+@N: CD231 :"C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N|Running in 64-bit mode
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3275:17:3275:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3282:17:3282:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3339:17:3339:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3346:17:3346:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3401:17:3401:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3408:17:3408:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5142:25:5142:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5146:25:5146:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5177:29:5177:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5181:29:5181:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2040:25:2040:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2048:25:2048:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2114:29:2114:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2122:29:2122:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":194:11:194:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":203:11:203:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2502:29:2502:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2507:29:2507:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2538:33:2538:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2542:33:2542:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2575:29:2575:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2580:29:2580:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2611:33:2611:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2615:33:2615:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3097:29:3097:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3102:29:3102:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3133:33:3133:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3137:33:3137:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3170:29:3170:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3175:29:3175:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3206:33:3206:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3210:33:3210:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1897:29:1897:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1902:29:1902:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1933:33:1933:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1937:33:1937:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1970:29:1970:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1975:29:1975:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2006:33:2006:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2010:33:2010:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2439:29:2439:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2444:29:2444:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2475:33:2475:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2479:33:2479:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2512:29:2512:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2517:29:2517:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2548:33:2548:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2552:33:2552:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@N:"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Top entity is set to mira_test_top.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd'.
+@N: CD231 :"C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Synthesizing work.mira_test_top.architecture_mira_test_top.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":59:23:59:24|Using onehot encoding for type cfgfsmstate_type. For example, enumeration sidle is mapped to "10000".
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":163:3:163:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd":12:7:12:13|Synthesizing work.uart_rx.behavioral.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd":29:19:29:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000".
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":14:7:14:13|Synthesizing work.uart_tx.behavioral.
+@N: CD233 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":30:19:30:20|Using sequential encoding for type fsmstatetype.
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":134:3:134:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":16:7:16:15|Synthesizing work.frame_buf.architecture_frame_buf.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":50:22:50:23|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000".
+@N: CD233 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":84:24:84:25|Using sequential encoding for type fifo_fsmstatetype.
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":265:12:265:25|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":347:3:347:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":15:7:15:19|Synthesizing work.process_image.architecture_process_image.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":41:19:41:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000000000".
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":190:3:190:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":15:7:15:18|Synthesizing work.img_mean_std.architecture_img_mean_std.
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":14:7:14:13|Synthesizing work.mipi_rx.architecture_mipi_rx.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":59:19:59:20|Using onehot encoding for type fsmstatetype. For example, enumeration swaitfssync is mapped to "100000000000".
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":126:2:126:3|Trying to extract state machine for register StatexDP.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Register bit PixValCombxDP(12) is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Register bit PixValSqCombxDP(22) is always 0.
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":83:2:83:3|Trying to extract state machine for register StatexDP.
+@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":144:2:144:3|Found RAM FIFOMemxDP, depth=16, width=64
+@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":144:2:144:3|Found RAM MemxDP, depth=16000, width=64
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":113:2:113:3|Trying to extract state machine for register StatexDP.
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":77:2:77:3|Trying to extract state machine for register StatexDP.
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd":42:2:42:3|Trying to extract state machine for register StatexDP.
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Trying to extract state machine for register CfgStatexDP.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3275:17:3275:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3282:17:3282:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3339:17:3339:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3346:17:3346:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3401:17:3401:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3408:17:3408:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5142:25:5142:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5146:25:5146:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5177:29:5177:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5181:29:5181:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2040:25:2040:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2048:25:2048:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2114:29:2114:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2122:29:2122:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":194:11:194:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":203:11:203:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2502:29:2502:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2507:29:2507:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2538:33:2538:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2542:33:2542:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2575:29:2575:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2580:29:2580:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2611:33:2611:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2615:33:2615:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3097:29:3097:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3102:29:3102:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3133:33:3133:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3137:33:3137:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3170:29:3170:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3175:29:3175:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3206:33:3206:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3210:33:3210:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1897:29:1897:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1902:29:1902:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1933:33:1933:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1937:33:1937:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1970:29:1970:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1975:29:1975:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2006:33:2006:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2010:33:2010:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2439:29:2439:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2444:29:2444:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2475:33:2475:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2479:33:2479:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2512:29:2512:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2517:29:2517:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2548:33:2548:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2552:33:2552:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":317:7:317:56|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":477:7:477:49|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":702:7:702:49|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3159:7:3159:52|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":3785:7:3785:13|Synthesizing module FIFO16K in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":130:7:130:44|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":11:78:11:96|Synthesizing module mipi_cross_clk_fifo in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5512:7:5512:39|Synthesizing module mipi_dphy_rx_ipgen_lscc_mipi_dphy in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":655:7:655:45|Synthesizing module mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":267:7:267:43|Synthesizing module mipi_dphy_rx_ipgen_lscc_clock_divider in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":2615:7:2615:10|Synthesizing module DPHY in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":11:71:11:82|Synthesizing module mipi_dphy_rx in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":287:7:287:56|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":447:7:447:49|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_main in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":639:7:639:49|Synthesizing module process_image_out_fifo_ipgen_lscc_hard_fifo in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2968:7:2968:52|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_hw_core in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":120:7:120:44|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":11:81:11:102|Synthesizing module process_image_out_fifo in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":254:7:254:27|Synthesizing module lscc_fifo_fwft_fabric in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":411:7:411:20|Synthesizing module lscc_fifo_main in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":632:7:632:20|Synthesizing module lscc_hard_fifo in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2424:7:2424:23|Synthesizing module lscc_fifo_hw_core in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":57:7:57:15|Synthesizing module lscc_fifo in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v":49:7:49:14|Synthesizing module pmi_fifo in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":158:7:158:29|Synthesizing module main_pll_ipgen_lscc_pll in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":10022:7:10022:9|Synthesizing module PLL in library work.
+@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":11:67:11:74|Synthesizing module main_pll in library work.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":260:10:260:20|Input usr_fbclk_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":284:10:284:20|Input refdetreset is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":297:10:297:19|Input apb_pclk_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":298:10:298:23|Input apb_preset_n_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":299:15:299:27|Input apb_penable_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":300:15:300:24|Input apb_psel_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":301:15:301:26|Input apb_pwrite_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":302:22:302:32|Input apb_paddr_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":303:22:303:33|Input apb_pwdata_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2452:29:2452:42|Input full_cascade_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":678:28:678:43|Input almost_full_th_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":679:28:679:47|Input almost_full_clr_th_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":680:28:680:44|Input almost_empty_th_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":681:28:681:48|Input almost_empty_clr_th_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":259:26:259:30|Input clk_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":260:26:260:30|Input rst_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2994:10:2994:23|Input full_cascade_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":679:32:679:47|Input almost_full_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":680:32:680:51|Input almost_full_clr_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":681:32:681:48|Input almost_empty_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":682:32:682:52|Input almost_empty_clr_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":290:10:290:14|Input clk_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":291:10:291:14|Input rst_i is unused.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[30] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[29] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[28] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[27] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[26] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[25] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[24] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[23] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[22] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[21] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[20] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[19] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[18] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[17] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[16] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[15] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[14] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[13] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[12] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[11] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[10] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[9] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[8] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[7] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[6] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[5] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[4] is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[3] is always 0.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":682:15:682:27|Input lmmi_resetn_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":691:15:691:24|Input pll_lock_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":693:15:693:28|Input hs_rx_clk_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":694:15:694:29|Input hs_rx_data_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":695:15:695:30|Input hs_data_des_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":696:15:696:24|Input hs_rx_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":700:15:700:24|Input lp_rx_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":706:15:706:24|Input lp_tx_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":707:15:707:28|Input lp_tx_data_p_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":708:15:708:28|Input lp_tx_data_n_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":709:15:709:29|Input lp_tx_data_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":710:15:710:27|Input lp_tx_clk_p_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":711:15:711:27|Input lp_tx_clk_n_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":715:15:715:24|Input usrstdby_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5684:15:5684:24|Input hs_tx_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5685:15:5685:28|Input hs_tx_clk_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5686:36:5686:47|Input hs_tx_data_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5687:15:5687:29|Input hs_tx_data_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5709:15:5709:25|Input pll_clkop_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5710:15:5710:25|Input pll_clkos_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5723:15:5723:28|Input txclk_hsgate_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3186:10:3186:23|Input full_cascade_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":743:32:743:47|Input almost_full_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":744:32:744:51|Input almost_full_clr_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":745:32:745:48|Input almost_empty_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":746:32:746:52|Input almost_empty_clr_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":320:10:320:14|Input clk_i is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":321:10:321:14|Input rst_i is unused.
+@N|Running in 64-bit mode
+@N: NF117 :"c:\users\bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":139:3:139:14|Number of passed parameters/generics from instance uart_tx_fifo does not match cell pmi_fifo_Z16_layer1 
+

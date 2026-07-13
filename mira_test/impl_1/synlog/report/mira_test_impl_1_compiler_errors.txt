@@ -1,0 +1,9 @@
+@E: CD255 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":219:38:219:38|No identifier "uartfpgatoftdixd" in scope
+@E: CD415 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":235:33:235:33|Expecting keyword 'is'
+@E: CD632 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":256:27:256:27|duplicate entity name work
+@E: CD632 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":275:29:275:29|duplicate entity name work
+@E: CD632 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":302:30:302:30|duplicate entity name work
+@E: CD632 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":316:27:316:27|duplicate entity name work
+@E: Parse errors encountered - exiting
+@E::VHDL compiler failed
+
