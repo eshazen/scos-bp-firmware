@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/Bernhard/my_designs/mira_test/aux_osc/rtl/aux_osc.v"
+-sdc "C:/Users/Bernhard/my_designs/mira_test/aux_osc/constraints/aux_osc.ldc"
+-path "C:/Users/Bernhard/my_designs/mira_test/aux_osc" "C:/Users/Bernhard/my_designs/mira_test"
+-top aux_osc
+-a "LIFCL"
+-t "LIFCL-40"

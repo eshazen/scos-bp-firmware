@@ -1,0 +1,9 @@
+-ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/Bernhard/my_designs/mira_test/main_pll/rtl/main_pll.v"
+-sdc "C:/Users/Bernhard/my_designs/mira_test/main_pll/constraints/main_pll.ldc"
+-path "C:/Users/Bernhard/my_designs/mira_test/main_pll" "C:/Users/Bernhard/my_designs/mira_test"
+-vh2008
+-top main_pll
+-a "LIFCL"
+-t "LIFCL-40"

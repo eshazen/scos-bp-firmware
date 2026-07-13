@@ -1,0 +1,10 @@
+-ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v"
+-sdc "C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/constraints/mipi_dphy_rx.ldc"
+-sdc "C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/constraints/constraint.sdc"
+-path "C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx" "C:/Users/Bernhard/my_designs/mira_test"
+-vh2008
+-top mipi_dphy_rx
+-a "LIFCL"
+-t "LIFCL-40"

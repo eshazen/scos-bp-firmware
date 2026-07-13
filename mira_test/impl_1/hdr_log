@@ -1,0 +1,12 @@
+synthesis:  version Radiant Software (64-bit) 2025.2.0.48.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Mar 17 22:53:05 2026
+
+
+Command Line:  synthesis -comp -f mira_test_impl_1_lattice.synproj -gui -msgset C:/Users/Bernhard/my_designs/mira_test/promote.xml 
+

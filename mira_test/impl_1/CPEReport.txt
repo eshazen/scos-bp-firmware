@@ -1,0 +1,45 @@
+###File created by Lattice CPE. Do not modify.###
+create_clock -name {Clk48xCI} -period 20.83 [get_ports Clk48xCI] originating in top was kept as is.
+
+create_clock -name {clki_i} -period 20.833 [get_ports clki_i] originating in instance main_pll_inst in IP main_pll was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {wr_clk_i} -period 8 [get_ports wr_clk_i] originating in instance mipi_cross_clk_fifo_inst in IP mipi_cross_clk_fifo was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {rd_clk_i} -period 8 [get_ports rd_clk_i] originating in instance mipi_cross_clk_fifo_inst in IP mipi_cross_clk_fifo was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {sync_clk_i} -period 10.416 [get_ports sync_clk_i] originating in instance mipi_dphy_rx_inst in IP constraint was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+# IO_TYPE constraint - Refclk originating in instance main_pll_inst in IP main_pll was kept as is.
+
+# Clock period calculations for different clock domains originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#set CLK_PERIOD [expr {double(round(1000000/$SYNC_CLOCK_FREQ ))/1000}] originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#set CLKOP_FREQ_VAL  [expr {round($CLKOP_FREQ_ACTUAL)}] originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+# originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#if { $radiant(stage) == "presyn" } { originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#	if {$INT_TYPE == "TX" & $PLL_MODE == "EXTERNAL"} { originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#		create_clock -name {sync_clk_i} -period $CLK_PERIOD [get_ports sync_clk_i] originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#		create_clock -name {pll_clkop_i} -period $CLK_PERIOD [get_ports pll_clkop_i] originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#		create_clock -name {pll_clkos_i} -period $CLK_PERIOD [get_ports pll_clkos_i] originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#	} elseif {$INT_TYPE == "TX" & $PLL_MODE == "INTERNAL"} { originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#	} else { originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#		#create_clock -name {clk_p_io} -period $CLK_PERIOD [get_ports clk_p_io] originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#	} originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#} elseif { $radiant(stage) == "premap" } { originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#	set_false_path -to [get_pins -hierarchical u_eclkdiv.ECLKDIV_inst/DIVRST] originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+#} originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+

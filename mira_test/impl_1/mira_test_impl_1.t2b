@@ -1,0 +1,4 @@
+-gui
+-msgset "C:/Users/Bernhard/my_designs/mira_test/promote.xml"
+
+-g REGISTER_INIT:ON

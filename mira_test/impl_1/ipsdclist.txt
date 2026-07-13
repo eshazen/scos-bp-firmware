@@ -1,0 +1,2 @@
+mipi_dphy_rx=C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/constraints/constraint.sdc
+mipi_cross_clk_fifo=C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/constraints/constraint.sdc

@@ -1,0 +1,9 @@
+-w
+-gui
+-msgset "C:/Users/Bernhard/my_designs/mira_test/promote.xml"
+-n 3
+-t 1
+-s 1
+-cores 1
+-hsp m
+-exp parPathBased=ON

@@ -1,0 +1,354 @@
+PAD Specification File
+***************************
+
+PART TYPE:        LIFCL-40
+Performance Grade:      9_High-Performance_1.0V
+PACKAGE:          CABGA400
+Package Status:                     Final          Version 1
+
+Tue Jul  7 14:07:26 2026
+
+Pinout by Port Name:
++-------------------+----------+--------------+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Port Name         | Pin/Bank | Buffer Type  | Site      | Properties                                                                                                                                                          |
++-------------------+----------+--------------+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Clk48xCI          | K2/7     | LVCMOS33_IN  | PL19A     | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF     |
+| DebugDataxDO[0]   | R4/6     | LVCMOS33_OUT | PL49B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[10]  | N4/6     | LVCMOS33_OUT | PL40A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[11]  | P2/6     | LVCMOS33_OUT | PL44B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[1]   | R3/6     | LVCMOS33_OUT | PL49A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[2]   | P5/6     | LVCMOS33_OUT | PL46A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[3]   | N6/6     | LVCMOS33_OUT | PL42A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[4]   | M6/6     | LVCMOS33_OUT | PL38A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[5]   | M5/6     | LVCMOS33_OUT | PL36B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[6]   | L8/6     | LVCMOS33_OUT | PL32B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[7]   | L7/6     | LVCMOS33_OUT | PL32A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[8]   | N7/6     | LVCMOS33_OUT | PL42B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| DebugDataxDO[9]   | K6/6     | LVCMOS33_OUT | PL24B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[0]         | E17/1    | LVCMOS33_OUT | PR3B      | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[10]        | U20/2    | LVCMOS33_OUT | PR42A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[11]        | T20/2    | LVCMOS33_OUT | PR42B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[12]        | W20/2    | LVCMOS33_OUT | PR44A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[13]        | V20/2    | LVCMOS33_OUT | PR44B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[1]         | F13/1    | LVCMOS33_OUT | PR4A      | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[2]         | G13/1    | LVCMOS33_OUT | PR4B      | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[3]         | F14/1    | LVCMOS33_OUT | PR6A      | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[4]         | L16/1    | LVCMOS33_OUT | PR19A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[5]         | L15/1    | LVCMOS33_OUT | PR19B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[6]         | L20/1    | LVCMOS33_OUT | PR20A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[7]         | L19/1    | LVCMOS33_OUT | PR20B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[8]         | R17/2    | LVCMOS33_OUT | PR40A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| LEDxSO[9]         | R18/2    | LVCMOS33_OUT | PR40B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| MipiRxCkN         | B1/60    | HSIO         | DPHY0_CKN |                                                                                                                                                                     |
+| MipiRxCkP         | A2/60    | HSIO         | DPHY0_CKP |                                                                                                                                                                     |
+| MipiRxN[0]        | C1/60    | HSIO         | DPHY0_DN0 |                                                                                                                                                                     |
+| MipiRxN[1]        | B3/60    | HSIO         | DPHY0_DN1 |                                                                                                                                                                     |
+| MipiRxP[0]        | B2/60    | HSIO         | DPHY0_DP0 |                                                                                                                                                                     |
+| MipiRxP[1]        | A3/60    | HSIO         | DPHY0_DP1 |                                                                                                                                                                     |
+| ResetxRI          | L2/6     | LVCMOS33_IN  | PL27B     | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF     |
+| UartCTSntoFTDIxDO | K4/7     | LVCMOS33_OUT | PL20B     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| UartFPGAtoFTDIxDO | K3/7     | LVCMOS33_OUT | PL20A     | DRIVE:8mA SLEWRATE:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
+| UartFTDItoFPGAxDI | J2/7     | LVCMOS33_IN  | PL17A     | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF     |
+| UartRTSntoFPGAxDI | J1/7     | LVCMOS33_IN  | PL17B     | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF     |
++-------------------+----------+--------------+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 1    | 3.3V  |
+| 2    | 3.3V  |
+| 6    | 3.3V  |
+| 7    | 3.3V  |
++------+-------+
+
+Vref by Bank:
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+Pinout by Pin Number:
++---------------+-----------------------+------------+--------------+-------------+---------------------------------------------------------+
+| Pin/Bank      | Pin Info              | Preference | Buffer Type  | Site        | Dual Function                                           |
++---------------+-----------------------+------------+--------------+-------------+---------------------------------------------------------+
+| A2/60         | MipiRxCkP             |            |              | DPHY0_CKP   |                                                         |
+| A3/60         | MipiRxP[1]            |            |              | DPHY0_DP1   |                                                         |
+| A4/60         |                       |            |              | DPHY0_DP3   |                                                         |
+| A6/61         |                       |            |              | DPHY1_DP2   |                                                         |
+| A7/61         |                       |            |              | DPHY1_DP0   |                                                         |
+| A8/61         |                       |            |              | DPHY1_CKP   |                                                         |
+| A9/61         |                       |            |              | DPHY1_DP1   |                                                         |
+| A10/61        |                       |            |              | DPHY1_DP3   |                                                         |
+| A12/80        |                       |            |              | SD0_TXDN    |                                                         |
+| A13/80        |                       |            |              | SD0_TXDP    |                                                         |
+| A15/80        |                       |            |              | SD0_RXDN    |                                                         |
+| A16/80        |                       |            |              | SD0_RXDP    |                                                         |
+| B1/60         | MipiRxCkN             |            |              | DPHY0_CKN   |                                                         |
+| B2/60         | MipiRxP[0]            |            |              | DPHY0_DP0   |                                                         |
+| B3/60         | MipiRxN[1]            |            |              | DPHY0_DN1   |                                                         |
+| B4/60         |                       |            |              | DPHY0_DN3   |                                                         |
+| B6/61         |                       |            |              | DPHY1_DN2   |                                                         |
+| B7/61         |                       |            |              | DPHY1_DN0   |                                                         |
+| B8/61         |                       |            |              | DPHY1_CKN   |                                                         |
+| B9/61         |                       |            |              | DPHY1_DN1   |                                                         |
+| B10/61        |                       |            |              | DPHY1_DN3   |                                                         |
+| B14/80        |                       |            |              | SD0_REFRET  |                                                         |
+| C1/60         | MipiRxN[0]            |            |              | DPHY0_DN0   |                                                         |
+| C2/60         |                       |            |              | DPHY0_DP2   |                                                         |
+| C14/80        |                       |            |              | SD0_REXT    |                                                         |
+| D1/60         |                       |            |              | DPHY0_DN2   |                                                         |
+| D3/7          |     unused, PULL:DOWN |            |              | PL8B        | EIO                                                     |
+| D4/7          |     unused, PULL:DOWN |            |              | PL8A        | EIO                                                     |
+| D5/7          |     unused, PULL:DOWN |            |              | PL6B        | EIO                                                     |
+| D6/7          |     unused, PULL:DOWN |            |              | PL6A        | ULC_GPLL0T_MFGOUT2/EIO                                  |
+| D7/7          |     unused, PULL:DOWN |            |              | PL4A        | ULC_GPLL0T_MFGOUT1/EIO                                  |
+| D8/7          |     unused, PULL:DOWN |            |              | PL4B        | EIO                                                     |
+| D9/7          |     unused, PULL:DOWN |            |              | PL3B        | EIO                                                     |
+| D10/7         |     unused, PULL:DOWN |            |              | PL3A        | ULC_GPLL0T_IN/EIO                                       |
+| D11/0         | Reserved: sysCONFIG   |            |              | PT74A       | INITN                                                   |
+| D12/0         | Reserved: sysCONFIG   |            |              | PT76B       | DONE/S0_OUT                                             |
+| D13/0         |     unused, PULL:DOWN |            |              | PT78B       | MOSI/MD0/SD4/S1_OUT                                     |
+| D14/0         |     unused, PULL:DOWN |            |              | PT80B       | MD2/SD6/S2_OUT                                          |
+| D15/0         |     unused, PULL:DOWN |            |              | PT80A       | MISO/MD1/SD5/S2_IN/OSC_HI                               |
+| D16/0         |     unused, PULL:DOWN |            |              | PT82A       | MD3/SD7/S6_IN/OSC_BURST                                 |
+| D17/0         |     unused, PULL:DOWN |            |              | PT84B       | S7_OUT                                                  |
+| E2/7          |     unused, PULL:DOWN |            |              | PL15A       | EIO                                                     |
+| E3/7          |     unused, PULL:DOWN |            |              | PL13B       | EIO                                                     |
+| E4/7          |     unused, PULL:DOWN |            |              | PL13A       | EIO                                                     |
+| E7/7          |     unused, PULL:DOWN |            |              | PL11A       | EIO                                                     |
+| E8/7          |     unused, PULL:DOWN |            |              | PL11B       | EIO                                                     |
+| E9/7          |     unused, PULL:DOWN |            |              | PL10B       | EIO                                                     |
+| E10/7         |     unused, PULL:DOWN |            |              | PL10A       | EIO                                                     |
+| E11/0         | Reserved: sysCONFIG   |            |              | PT74B       | PROGRAMN                                                |
+| E12/0         |     unused, PULL:DOWN |            |              | PT76A       | MCLK/S0_IN/PCLKT0_0/DPHY_REFCLKT0_4                     |
+| E13/0         |     unused, PULL:DOWN |            |              | PT78A       | MCSN/S1_IN/PCLKT0_1/DPHY_REFCLKT1_4                     |
+| E16/0         |     unused, PULL:DOWN |            |              | PT82B       | MCSNO/MSDO/S6_OUT                                       |
+| E17/1         | LEDxSO[0]             | LOCATED    | LVCMOS33_OUT | PR3B        | S8_IN/EIO                                               |
+| E18/0         |     unused, PULL:DOWN |            |              | PT84A       | S7_IN                                                   |
+| E20/1         |     unused, PULL:DOWN |            |              | PR11A       | SD3/SDA/USER_SDA/S4_IN                                  |
+| F1/7          |     unused, PULL:DOWN |            |              | PL15B       | EIO                                                     |
+| F13/1         | LEDxSO[1]             | LOCATED    | LVCMOS33_OUT | PR4A        | S8_OUT/EIO                                              |
+| F14/1         | LEDxSO[3]             | LOCATED    | LVCMOS33_OUT | PR6A        | S9_OUT/EIO                                              |
+| F15/1         | Reserved: sysCONFIG   |            |              | PR6B        | TMS/SCSN/S5_IN                                          |
+| F16/1         |     unused, PULL:DOWN |            |              | PR8A        | EIO                                                     |
+| F17/1         | Reserved: sysCONFIG   |            |              | PR8B        | TDI/SSI/SD0/S5_OUT                                      |
+| F18/1         |     unused, PULL:DOWN |            |              | PR10A       | EIO                                                     |
+| F19/1         | Reserved: sysCONFIG   |            |              | PR10B       | TDO/SSO/SD1/S3_OUT                                      |
+| F20/1         |     unused, PULL:DOWN |            |              | PR11B       | SD2/SCL/USER_SCL/S3_IN                                  |
+| G13/1         | LEDxSO[2]             | LOCATED    | LVCMOS33_OUT | PR4B        | SD10                                                    |
+| G14/1         |     unused, PULL:DOWN |            |              | PR15A       | SD9                                                     |
+| G15/1         |     unused, PULL:DOWN |            |              | PR15B       | SD8                                                     |
+| G18/1         | Reserved: sysCONFIG   |            |              | PR13A       | TCK/SCLK/PMU_EXT_CLK/S9_IN                              |
+| G19/1         |     unused, PULL:DOWN |            |              | PR13B       | PMU_WAKEUPN/SD11/S4_OUT                                 |
+| J1/7          | UartRTSntoFPGAxDI     | LOCATED    | LVCMOS33_IN  | PL17B       | EIO                                                     |
+| J2/7          | UartFTDItoFPGAxDI     | LOCATED    | LVCMOS33_IN  | PL17A       | PCLKT7_2/EIO                                            |
+| K1/7          |     unused, PULL:DOWN |            |              | PL19B       | EIO                                                     |
+| K2/7          | Clk48xCI              | LOCATED    | LVCMOS33_IN  | PL19A       | PCLKT7_1/EIO                                            |
+| K3/7          | UartFPGAtoFTDIxDO     | LOCATED    | LVCMOS33_OUT | PL20A       | PCLKT7_0/EIO                                            |
+| K4/7          | UartCTSntoFTDIxDO     | LOCATED    | LVCMOS33_OUT | PL20B       | EIO                                                     |
+| K5/6          |     unused, PULL:DOWN |            |              | PL24A       | EIO                                                     |
+| K6/6          | DebugDataxDO[9]       | LOCATED    | LVCMOS33_OUT | PL24B       | EIO                                                     |
+| K7/6          |     unused, PULL:DOWN |            |              | PL26A       | EIO                                                     |
+| K8/6          |     unused, PULL:DOWN |            |              | PL26B       | EIO                                                     |
+| L1/6          |     unused, PULL:DOWN |            |              | PL27A       | EIO                                                     |
+| L2/6          | ResetxRI              | LOCATED    | LVCMOS33_IN  | PL27B       | EIO                                                     |
+| L5/6          |     unused, PULL:DOWN |            |              | PL30A       | PCLKT6_0/EIO                                            |
+| L6/6          |     unused, PULL:DOWN |            |              | PL30B       | EIO                                                     |
+| L7/6          | DebugDataxDO[7]       | LOCATED    | LVCMOS33_OUT | PL32A       | PCLKT6_1/EIO                                            |
+| L8/6          | DebugDataxDO[6]       | LOCATED    | LVCMOS33_OUT | PL32B       | EIO                                                     |
+| L13/1         |     unused, PULL:DOWN |            |              | PR17A       | PCLKT1_2/SD12                                           |
+| L14/1         |     unused, PULL:DOWN |            |              | PR17B       | SD13                                                    |
+| L15/1         | LEDxSO[5]             | LOCATED    | LVCMOS33_OUT | PR19B       | SD15                                                    |
+| L16/1         | LEDxSO[4]             | LOCATED    | LVCMOS33_OUT | PR19A       | PCLKT1_1/SD14                                           |
+| L19/1         | LEDxSO[7]             | LOCATED    | LVCMOS33_OUT | PR20B       | EIO                                                     |
+| L20/1         | LEDxSO[6]             | LOCATED    | LVCMOS33_OUT | PR20A       | PCLKT1_0/EIO                                            |
+| M2/6          |     unused, PULL:DOWN |            |              | PL34A       | PCLKT6_2/EIO                                            |
+| M3/6          |     unused, PULL:DOWN |            |              | PL34B       | EIO                                                     |
+| M4/6          |     unused, PULL:DOWN |            |              | PL36A       | EIO                                                     |
+| M5/6          | DebugDataxDO[5]       | LOCATED    | LVCMOS33_OUT | PL36B       | EIO                                                     |
+| M6/6          | DebugDataxDO[4]       | LOCATED    | LVCMOS33_OUT | PL38A       | EIO                                                     |
+| M7/6          |     unused, PULL:DOWN |            |              | PL38B       | EIO                                                     |
+| M14/2         |     unused, PULL:DOWN |            |              | PR24B       | EIO                                                     |
+| M15/2         |     unused, PULL:DOWN |            |              | PR26B       | EIO                                                     |
+| M16/2         |     unused, PULL:DOWN |            |              | PR26A       | EIO                                                     |
+| M17/2         |     unused, PULL:DOWN |            |              | PR30A       | PCLKT2_0/EIO                                            |
+| M18/2         |     unused, PULL:DOWN |            |              | PR30B       | EIO                                                     |
+| M19/2         |     unused, PULL:DOWN |            |              | PR32A       | PCLKT2_1/EIO                                            |
+| M20/2         |     unused, PULL:DOWN |            |              | PR32B       | EIO                                                     |
+| N4/6          | DebugDataxDO[10]      | LOCATED    | LVCMOS33_OUT | PL40A       | EIO                                                     |
+| N5/6          |     unused, PULL:DOWN |            |              | PL40B       | EIO                                                     |
+| N6/6          | DebugDataxDO[3]       | LOCATED    | LVCMOS33_OUT | PL42A       | EIO                                                     |
+| N7/6          | DebugDataxDO[8]       | LOCATED    | LVCMOS33_OUT | PL42B       | EIO                                                     |
+| N14/2         |     unused, PULL:DOWN |            |              | PR24A       | EIO                                                     |
+| N15/2         |     unused, PULL:DOWN |            |              | PR27A       | EIO                                                     |
+| N16/2         |     unused, PULL:DOWN |            |              | PR27B       | EIO                                                     |
+| N19/2         |     unused, PULL:DOWN |            |              | PR34A       | PCLKT2_2/EIO                                            |
+| N20/2         |     unused, PULL:DOWN |            |              | PR34B       | EIO                                                     |
+| P1/6          |     unused, PULL:DOWN |            |              | PL44A       | EIO                                                     |
+| P2/6          | DebugDataxDO[11]      | LOCATED    | LVCMOS33_OUT | PL44B       | EIO                                                     |
+| P5/6          | DebugDataxDO[2]       | LOCATED    | LVCMOS33_OUT | PL46A       | EIO                                                     |
+| P6/6          |     unused, PULL:DOWN |            |              | PL46B       | EIO                                                     |
+| P7/4          |     unused, PULL:DOWN |            |              | PB26A       | BDQ22                                                   |
+| P8/4          |     unused, PULL:DOWN |            |              | PB26B       | BDQ22                                                   |
+| P9/4          |     unused, PULL:DOWN |            |              | PB32B       | BDQ38                                                   |
+| P10/4         |     unused, PULL:DOWN |            |              | PB34A       | BDQ38                                                   |
+| P11/4         |     unused, PULL:DOWN |            |              | PB46A       | BDQ38                                                   |
+| P12/3         |     unused, PULL:DOWN |            |              | PB64B       | ADC_CN4/BDQ60                                           |
+| P13/3         |     unused, PULL:DOWN |            |              | PB70A       | COMP2IP/BDQ76                                           |
+| P17/2         |     unused, PULL:DOWN |            |              | PR38A       | EIO                                                     |
+| P18/2         |     unused, PULL:DOWN |            |              | PR38B       | EIO                                                     |
+| P19/2         |     unused, PULL:DOWN |            |              | PR36A       | EIO                                                     |
+| P20/2         |     unused, PULL:DOWN |            |              | PR36B       | EIO                                                     |
+| R1/6          |     unused, PULL:DOWN |            |              | PL47A       | EIO                                                     |
+| R2/6          |     unused, PULL:DOWN |            |              | PL47B       | EIO                                                     |
+| R3/6          | DebugDataxDO[1]       | LOCATED    | LVCMOS33_OUT | PL49A       | EIO                                                     |
+| R4/6          | DebugDataxDO[0]       | LOCATED    | LVCMOS33_OUT | PL49B       | EIO                                                     |
+| R5/5          |     unused, PULL:DOWN |            |              | PB10A       | PCLKT5_2/CDR0_TESTP/ADC_CP2/COMP3P                      |
+| R6/5          |     unused, PULL:DOWN |            |              | PB10B       | PCLKC5_2/CDR0_TESTN/ADC_CN2/COMP3N                      |
+| R7/4          |     unused, PULL:DOWN |            |              | PB18A       | PCLKT4_3/DPHY_REFCLKT0_1/DPHY_REFCLKT1_1/BDQ22          |
+| R8/4          |     unused, PULL:DOWN |            |              | PB28A       | BDQ22                                                   |
+| R9/4          |     unused, PULL:DOWN |            |              | PB32A       | BDQ38                                                   |
+| R10/4         |     unused, PULL:DOWN |            |              | PB34B       | BDQ38                                                   |
+| R11/4         |     unused, PULL:DOWN |            |              | PB46B       | VREF4_2/BDQ38                                           |
+| R12/3         |     unused, PULL:DOWN |            |              | PB64A       | ADC_CP4/BDQ60                                           |
+| R13/3         |     unused, PULL:DOWN |            |              | PB70B       | COMP2IN/BDQ76                                           |
+| R16/70        |                       |            |              | ADC_DN0     |                                                         |
+| R17/2         | LEDxSO[8]             | LOCATED    | LVCMOS33_OUT | PR40A       | EIO                                                     |
+| R18/2         | LEDxSO[9]             | LOCATED    | LVCMOS33_OUT | PR40B       | EIO                                                     |
+| SD_REFCLKN/80 |                       |            |              | SD0_REFCLKN |                                                         |
+| SD_REFCLKP/80 |                       |            |              | SD0_REFCLKP |                                                         |
+| T1/5          |     unused, PULL:DOWN |            |              | PB4B        | CDR_RXN0/ADC_CN0/COMP1N                                 |
+| T6/4          |     unused, PULL:DOWN |            |              | PB16A       | VREF4_1/BDQ22                                           |
+| T7/4          |     unused, PULL:DOWN |            |              | PB18B       | PCLKC4_3/BDQ22                                          |
+| T8/4          |     unused, PULL:DOWN |            |              | PB28B       | BDQ22                                                   |
+| T10/4         |     unused, PULL:DOWN |            |              | PB40A       | PCLKT4_1/BDQ38                                          |
+| T11/4         |     unused, PULL:DOWN |            |              | PB40B       | PCLKC4_1/BDQ38                                          |
+| T12/3         |     unused, PULL:DOWN |            |              | PB62B       | ADC_CN10/BDQ60                                          |
+| T13/3         |     unused, PULL:DOWN |            |              | PB74A       | PCLKT3_3/ADC_CP14/DPHY_REFCLKT0_2/DPHY_REFCLKT1_2/BDQ76 |
+| T14/3         |     unused, PULL:DOWN |            |              | PB74B       | PCLKC3_3/ADC_CN14/BDQ76                                 |
+| T16/70        |                       |            |              | ADC_DP0     |                                                         |
+| T17/70        |                       |            |              | ADC_DP1     |                                                         |
+| T18/2         |     unused, PULL:DOWN |            |              | PR46A       | EIO                                                     |
+| T20/2         | LEDxSO[11]            | LOCATED    | LVCMOS33_OUT | PR42B       | EIO                                                     |
+| U1/5          |     unused, PULL:DOWN |            |              | PB4A        | LLC_GPLL0T_MFGOUT2/CDR_RXP0/VREF5_1/ADC_CP0/COMP1P      |
+| U6/4          |     unused, PULL:DOWN |            |              | PB16B       | BDQ22                                                   |
+| U7/4          |     unused, PULL:DOWN |            |              | PB20B       | BDQ22                                                   |
+| U10/4         |     unused, PULL:DOWN |            |              | PB42A       | BDQ38                                                   |
+| U11/3         |     unused, PULL:DOWN |            |              | PB56B       | ADC_CN7/BDQ60                                           |
+| U12/3         |     unused, PULL:DOWN |            |              | PB62A       | ADC_CP10/BDQ60                                          |
+| U14/3         |     unused, PULL:DOWN |            |              | PB68B       | ADC_CN8/BDQ60                                           |
+| U15/3         |     unused, PULL:DOWN |            |              | PB78A       | ADC_CP11/BDQ76                                          |
+| U16/3         |     unused, PULL:DOWN |            |              | PB80B       | ADC_CN12/BDQ76                                          |
+| U17/70        |                       |            |              | ADC_DN1     |                                                         |
+| U18/2         |     unused, PULL:DOWN |            |              | PR46B       | EIO                                                     |
+| U20/2         | LEDxSO[10]            | LOCATED    | LVCMOS33_OUT | PR42A       | EIO                                                     |
+| V1/5          |     unused, PULL:DOWN |            |              | PB6A        | PCLKT5_0/LLC_GPLL0T_MFGOUT1/CDR_RXP1/ADC_CP1/COMP2P     |
+| V6/4          |     unused, PULL:DOWN |            |              | PB20A       | BDQ22                                                   |
+| V7/4          |     unused, PULL:DOWN |            |              | PB24B       | PCLKC4_2/BDQ22                                          |
+| V9/4          |     unused, PULL:DOWN |            |              | PB36B       | BDQ38                                                   |
+| V10/4         |     unused, PULL:DOWN |            |              | PB42B       | BDQ38                                                   |
+| V11/3         |     unused, PULL:DOWN |            |              | PB56A       | ADC_CP7/BDQ60                                           |
+| V12/3         |     unused, PULL:DOWN |            |              | PB60B       | ADC_CN9/BDQSN60                                         |
+| V14/3         |     unused, PULL:DOWN |            |              | PB68A       | ADC_CP8/BDQ60                                           |
+| V16/3         |     unused, PULL:DOWN |            |              | PB78B       | ADC_CN11/BDQ76                                          |
+| V17/3         |     unused, PULL:DOWN |            |              | PB80A       | LRC_GPLL0T_MFGOUT2/ADC_CP12/BDQ76                       |
+| V18/2         |     unused, PULL:DOWN |            |              | PR47A       | EIO                                                     |
+| V19/2         |     unused, PULL:DOWN |            |              | PR47B       | EIO                                                     |
+| V20/2         | LEDxSO[13]            | LOCATED    | LVCMOS33_OUT | PR44B       | EIO                                                     |
+| W1/5          |     unused, PULL:DOWN |            |              | PB6B        | PCLKC5_0/CDR_RXN1/ADC_CN1/COMP2N                        |
+| W5/5          |     unused, PULL:DOWN |            |              | PB12B       | PCLKC5_3/CDR1_TESTN/VREF5_2                             |
+| W6/4          |     unused, PULL:DOWN |            |              | PB22A       | BDQS22                                                  |
+| W7/4          |     unused, PULL:DOWN |            |              | PB24A       | PCLKT4_2/BDQ22                                          |
+| W8/4          |     unused, PULL:DOWN |            |              | PB36A       | BDQ38                                                   |
+| W9/4          |     unused, PULL:DOWN |            |              | PB38A       | BDQS38                                                  |
+| W10/4         |     unused, PULL:DOWN |            |              | PB44A       | PCLKT4_0/BDQ38                                          |
+| W11/3         |     unused, PULL:DOWN |            |              | PB54A       | PCLKT3_0/VREF3_1/ADC_CP5/BDQ60                          |
+| W12/3         |     unused, PULL:DOWN |            |              | PB58B       | PCLKC3_1/ADC_CN6/BDQ60                                  |
+| W13/3         |     unused, PULL:DOWN |            |              | PB60A       | ADC_CP9/BDQS60                                          |
+| W14/3         |     unused, PULL:DOWN |            |              | PB72A       | PCLKT3_2/ADC_CP13/BDQ76                                 |
+| W15/3         |     unused, PULL:DOWN |            |              | PB72B       | PCLKC3_2/ADC_CN13/BDQ76                                 |
+| W17/3         |     unused, PULL:DOWN |            |              | PB82B       | ADC_CN15/BDQ76                                          |
+| W18/3         |     unused, PULL:DOWN |            |              | PB84A       | LRC_GPLL0T_IN/ATB_FORCE/BDQ76                           |
+| W19/2         |     unused, PULL:DOWN |            |              | PR49A       | EIO                                                     |
+| W20/2         | LEDxSO[12]            | LOCATED    | LVCMOS33_OUT | PR44A       | EIO                                                     |
+| Y2/5          |     unused, PULL:DOWN |            |              | PB8A        | PCLKT5_1/LLC_GPLL0T_IN/ADC_CP3                          |
+| Y3/5          |     unused, PULL:DOWN |            |              | PB8B        | PCLKC5_1/LLC_GPLL0C_IN/ADC_CN3                          |
+| Y5/5          |     unused, PULL:DOWN |            |              | PB12A       | PCLKT5_3/CDR1_TESTP                                     |
+| Y6/4          |     unused, PULL:DOWN |            |              | PB22B       | BDQSN22                                                 |
+| Y7/4          |     unused, PULL:DOWN |            |              | PB30A       | BDQ22                                                   |
+| Y8/4          |     unused, PULL:DOWN |            |              | PB30B       | BDQ22                                                   |
+| Y9/4          |     unused, PULL:DOWN |            |              | PB38B       | BDQSN38                                                 |
+| Y10/4         |     unused, PULL:DOWN |            |              | PB44B       | PCLKC4_0/BDQ38                                          |
+| Y11/3         |     unused, PULL:DOWN |            |              | PB54B       | PCLKC3_0/ADC_CN5/BDQ60                                  |
+| Y12/3         |     unused, PULL:DOWN |            |              | PB58A       | PCLKT3_1/ADC_CP6/DPHY_REFCLKT0_3/DPHY_REFCLKT1_3/BDQ60  |
+| Y13/3         |     unused, PULL:DOWN |            |              | PB66A       | COMP1IP/BDQ60                                           |
+| Y14/3         |     unused, PULL:DOWN |            |              | PB66B       | COMP1IN/BDQ60                                           |
+| Y15/3         |     unused, PULL:DOWN |            |              | PB76A       | COMP3IP/BDQS76                                          |
+| Y16/3         |     unused, PULL:DOWN |            |              | PB76B       | COMP3IN/BDQSN76                                         |
+| Y17/3         |     unused, PULL:DOWN |            |              | PB82A       | LRC_GPLL0T_MFGOUT1/ADC_CP15/BDQ76                       |
+| Y18/3         |     unused, PULL:DOWN |            |              | PB84B       | LRC_GPLL0C_IN/VREF3_2/ATB_SENSE/BDQ76                   |
+| Y19/2         |     unused, PULL:DOWN |            |              | PR49B       | EIO                                                     |
++---------------+-----------------------+------------+--------------+-------------+---------------------------------------------------------+
+
+sysCONFIG Pins:
++----------+----------------------------+----------+-------------+
+| Pad Name | sysCONFIG Pin Name         | Pin/Bank | Buffer Type |
++----------+----------------------------+----------+-------------+
+| PT74A    | INITN                      | D11/0    |             |
+| PT74B    | PROGRAMN                   | E11/0    |             |
+| PT76B    | DONE/S0_OUT                | D12/0    |             |
+| PR13A    | TCK/SCLK/PMU_EXT_CLK/S9_IN | G18/1    |             |
+| PR10B    | TDO/SSO/SD1/S3_OUT         | F19/1    |             |
+| PR8B     | TDI/SSI/SD0/S5_OUT         | F17/1    |             |
+| PR6B     | TMS/SCSN/S5_IN             | F15/1    |             |
++----------+----------------------------+----------+-------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {K2} [ get_ports {Clk48xCI} ]
+ldc_set_location -site {R4} [ get_ports {DebugDataxDO[0]} ]
+ldc_set_location -site {N4} [ get_ports {DebugDataxDO[10]} ]
+ldc_set_location -site {P2} [ get_ports {DebugDataxDO[11]} ]
+ldc_set_location -site {R3} [ get_ports {DebugDataxDO[1]} ]
+ldc_set_location -site {P5} [ get_ports {DebugDataxDO[2]} ]
+ldc_set_location -site {N6} [ get_ports {DebugDataxDO[3]} ]
+ldc_set_location -site {M6} [ get_ports {DebugDataxDO[4]} ]
+ldc_set_location -site {M5} [ get_ports {DebugDataxDO[5]} ]
+ldc_set_location -site {L8} [ get_ports {DebugDataxDO[6]} ]
+ldc_set_location -site {L7} [ get_ports {DebugDataxDO[7]} ]
+ldc_set_location -site {N7} [ get_ports {DebugDataxDO[8]} ]
+ldc_set_location -site {K6} [ get_ports {DebugDataxDO[9]} ]
+ldc_set_location -site {E17} [ get_ports {LEDxSO[0]} ]
+ldc_set_location -site {U20} [ get_ports {LEDxSO[10]} ]
+ldc_set_location -site {T20} [ get_ports {LEDxSO[11]} ]
+ldc_set_location -site {W20} [ get_ports {LEDxSO[12]} ]
+ldc_set_location -site {V20} [ get_ports {LEDxSO[13]} ]
+ldc_set_location -site {F13} [ get_ports {LEDxSO[1]} ]
+ldc_set_location -site {G13} [ get_ports {LEDxSO[2]} ]
+ldc_set_location -site {F14} [ get_ports {LEDxSO[3]} ]
+ldc_set_location -site {L16} [ get_ports {LEDxSO[4]} ]
+ldc_set_location -site {L15} [ get_ports {LEDxSO[5]} ]
+ldc_set_location -site {L20} [ get_ports {LEDxSO[6]} ]
+ldc_set_location -site {L19} [ get_ports {LEDxSO[7]} ]
+ldc_set_location -site {R17} [ get_ports {LEDxSO[8]} ]
+ldc_set_location -site {R18} [ get_ports {LEDxSO[9]} ]
+ldc_set_location -site {L2} [ get_ports {ResetxRI} ]
+ldc_set_location -site {K4} [ get_ports {UartCTSntoFTDIxDO} ]
+ldc_set_location -site {K3} [ get_ports {UartFPGAtoFTDIxDO} ]
+ldc_set_location -site {J2} [ get_ports {UartFTDItoFPGAxDI} ]
+ldc_set_location -site {J1} [ get_ports {UartRTSntoFPGAxDI} ]
+
+#PLL
+ldc_set_location -site {PLL_ULC} [ get_cells {main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst} ]
+# ldc_set_location -site {PLL_ULC} [ get_cells {main_pll_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst} ]
+
+
+
+
+
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Tue Jul  7 14:07:26 2026
+

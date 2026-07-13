@@ -1,0 +1,103 @@
+
+tmcheck -twr "mira_test_impl_1.twr"  
+
+pnmainc -log pnmain "mira_test_impl_1_bit.tcl"
+Loading mira_test_impl_1.udb ...
+Loading device for application GENERIC from file 'je5d30.nph' in environment: C:/lscc/radiant/2025.2/ispfpga.
+Package Status:                     Final          Version 1.
+Performance Hardware Data Status:   Final          Version 118.1.
+
+
+
+Design:  mira_test_top
+Family:  LIFCL
+Device:  LIFCL-40
+Package: CABGA400
+Performance Grade:   9_High-Performance_1.0V
+
+Constraint Summary
+   Total number of constraints: 45
+   Total number of constraints dropped: 0
+
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 3 secs , REAL time: 4 secs 
+
+
+
+BITGEN: Bitstream Generator Radiant Software (64-bit) 2025.2.0.48.0
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                        DONE_EX  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                        DONE_OD  |                            ON*  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                           OFF*  |
++---------------------------------+---------------------------------+
+|               EARLY_IO_RELEASE  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                  REGISTER_INIT  |                           ON**  |
++---------------------------------+---------------------------------+
+|   MASTER_PREAMBLE_TIMER_CYCLES  |                        600000*  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_I3C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                      DONE_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                     INITN_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                  PROGRAMN_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                        TRANSFR  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                           3.5*  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           OFF*  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                  CONFIG_IOSLEW  |                          SLOW*  |
++---------------------------------+---------------------------------+
+|                        WAKE_UP  |              ENABLE_DONE_SYNC*  |
++---------------------------------+---------------------------------+
+|                       BOOTMODE  |                          DUAL*  |
++---------------------------------+---------------------------------+
+|         CONFIGIO_VOLTAGE_BANK0  |                 NOT_SPECIFIED*  |
++---------------------------------+---------------------------------+
+|         CONFIGIO_VOLTAGE_BANK1  |                 NOT_SPECIFIED*  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 10.2.
+ 
+Saving bit stream in "C:/Users/Bernhard/my_designs/mira_test/impl_1/mira_test_impl_1.bit".
+Bitstream generation complete!
+
+Total CPU Time: 11 secs 
+Total REAL Time: 13 secs 
+Peak Memory Usage: 647 MB
+
+**** CMD bit_generate - CPU/Elapsed: 0 secs / 17 secs , MEM/Increased: 60.154 Mb/ 0.143 Mb, DATE: 11:42:29 07/09/26
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /18 secs 

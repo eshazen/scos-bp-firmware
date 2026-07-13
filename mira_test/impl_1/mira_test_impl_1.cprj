@@ -1,0 +1,10 @@
+-ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd"
+-lib "work" -vhd "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd" "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd" "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd" "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd" "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd" "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd" "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd"
+-sdc "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/impl_1.sdc"
+-path "C:/Users/Bernhard/my_designs/mira_test"
+-vh2008
+-top mira_test_top
+-isTop
+-a "LIFCL"
+-t "LIFCL-40"

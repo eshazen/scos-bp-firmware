@@ -1,0 +1,287 @@
+                         Lattice PAR Report File
+Radiant Software (64-bit) 2025.2.0.48.0
+Tue Jul  7 14:05:26 2026
+
+Command Line: par -w -n 3 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=ON \
+	mira_test_impl_1_map.udb mira_test_impl_1.udb 
+
+
+Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
+Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
+----------   --------     -----------     ------       ---------------    -----------     ----     ------
+5_2   *      0            0.752           0            0.044              0               01:20    Completed
+5_1          0            -0.634          2061         -                  -               01:25    Completed
+5_3          -            -               -            -                  -               01:04    Skipped
+
+* : Design saved.
+
+INFO <60001138> - par: Iteration 5_3 was terminated during the PAR process to save total runtime, as it was determined it would not improve upon a timing result achieved in a previous iteration.
+
+Total (real) run time for 3-seed: 3 mins 49 secs 
+
+par done!
+
+PAR: Place And Route Radiant Software (64-bit) 2025.2.0.48.0.
+PARed on: Tue Jul  7 14:06:51 2026
+
+Command Line: par -w -t 2 -hsp m -exp \
+	parPathBased=ON:aseRouteInitSetupSlackThreshold=-0.634 \
+	mira_test_impl_1_map.udb mira_test_impl_1_par.dir/5_2.udb 
+
+Loading mira_test_impl_1_map.udb ...
+Loading device for application GENERIC from file 'je5d30.nph' in environment: C:/lscc/radiant/2025.2/ispfpga.
+Package Status:                     Final          Version 1.
+Performance Hardware Data Status:   Final          Version 118.1.
+
+
+
+Design:  mira_test_top
+Family:  LIFCL
+Device:  LIFCL-40
+Package: CABGA400
+Performance Grade:   9_High-Performance_1.0V
+
+Constraint Summary
+   Total number of constraints: 44
+   Total number of constraints dropped: 0
+
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE           4048/16128        25% used
+
+WARNING <70001944> - par: No source clock for
+	generated clock	create_generated_clock -name {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/DPhyClkxC} -source [get_pins {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst/CKP}] -divide_by 8 [get_pins {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst/URWDCKHS }] .
+Number of Signals: 8682
+Number of Connections: 25377
+Device utilization summary:
+
+   VHI                   1/1           100% used
+   EBR                  36/84           43% used
+   MULT9                 8/112           7% used
+   MULT18                4/56            7% used
+   REG18                 8/112           7% used
+   ACC54                 2/28            7% used
+   PREADD9               8/112           7% used
+   LRAM                  2/2           100% used
+   SEIO33               32/185          17% used
+                        32/111          28% bonded
+   PLL                   1/3            33% used
+   DPHY                  1/2            50% used
+   APIO                  6/32           19% used
+   SLICE              4048/16128        25% used
+     LUT              5005/32256        16% used
+     REG              2218/32256         7% used
+
+
+Pin Constraint Summary:
+   32 out of 32 pins locked (100% locked).
+
+Starting Placer Phase 0 (HIER). CPU time: 8 secs , REAL time: 9 secs 
+............
+Finished Placer Phase 0 (HIER). CPU time: 9 secs , REAL time: 10 secs 
+
+
+Starting Placer Phase 1. CPU time: 10 secs , REAL time: 10 secs 
+..  ..
+WARNING: Database constraint "create_generated_clock -name {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/DPhyClkxC} -source [get_pins mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst/CKP] -divide_by 8 [get_pins mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst/URWDCKHS]" does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
+
+.................
+
+Placer score = 2115629.
+Finished Placer Phase 1. CPU time: 30 secs , REAL time: 31 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  1996498
+Finished Placer Phase 2.  CPU time: 32 secs , REAL time: 33 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 26 (0%)
+  PLL        : 1 out of 3 (33%)
+  DCS        : 0 out of 1 (0%)
+  DCC        : 0 out of 62 (0%)
+  ECLKDIV    : 0 out of 12 (0%)
+  PCLKDIV    : 0 out of 1 (0%)
+  OSC        : 0 out of 1 (0%)
+  DPHY       : 1 out of 2 (50%)
+  PCIE       : 0 out of 1 (0%)
+
+Global Clocks:
+  PRIMARY "mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.DPhyClkxC" from URWDCKHS on comp "mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst" on site "DPHY0", clk load = 2, ce load = 0, sr load = 0
+  PRIMARY "ClkxC" from CLKOP on comp "main_pll_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst" on PLL site "PLL_ULC", clk load = 2241, ce load = 0, sr load = 0
+  PRIMARY "GND_sig_mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst" from F0 on comp "GND_for_mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst" on site "R38C49A", clk load = 3, ce load = 0, sr load = 1
+  PRIMARY "ResetxRI_c" from comp "ResetxRI" on PIO site "L2 (PL27B)", clk load = 0, ce load = 0, sr load = 2022
+
+  PRIMARY  : 4 out of 16 (25%)
+
+Edge Clocks:
+
+  No edge clock selected.
+
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   32 out of 185 (17.3%) SEIO33 sites used.
+   32 out of 111 (28.8%) bonded SEIO33 sites used.
+   Number of SEIO33 components: 32; differential: 0
+   Number of Vref pins used: 0
+   0 out of 74 (0.0%) SEIO18 sites used.
+   0 out of 74 (0.0%) bonded SEIO18 sites used.
+   Number of SEIO18 components: 0; differential: 0
+   0 out of 37 (0.0%) DIFFIO18 sites used.
+   0 out of 37 (0.0%) bonded DIFFIO18 sites used.
+   Number of DIFFIO18 components: 0; differential: 0
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 0 / 12 (  0%)  | -          | -          | -          |
+| 1        | 8 / 21 ( 38%)  | 3.3V       | -          | -          |
+| 2        | 6 / 28 ( 21%)  | 3.3V       | -          | -          |
+| 3        | 0 / 32 (  0%)  | -          | -          | -          |
+| 4        | 0 / 32 (  0%)  | -          | -          | -          |
+| 5        | 0 / 10 (  0%)  | -          | -          | -          |
+| 6        | 13 / 28 ( 46%) | 3.3V       | -          | -          |
+| 7        | 5 / 22 ( 22%)  | 3.3V       | -          | -          |
++----------+----------------+------------+------------+------------+
+
+Total Placer CPU time: 32 secs , REAL time: 33 secs 
+
+
+Checksum -- place: f38a9e052187c9f8f2c4670b50bc0de33a928f6a
+Writing design to file mira_test_impl_1_par.dir/5_2.udb ...
+
+
+Start NBR router at 14:07:26 07/07/26
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+2029 connections routed with dedicated routing resources
+4 global clock signals routed
+8403 connections routed (of 25377 total) (33.11%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (8 used out of 32 available):
+    Signal "ClkxC" (4, 20)
+       Clock   loads: 2241  out of  2241 routed (100.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
+    Signal "ResetxRI_c" (2, 18)
+       Control loads: 2022  out of  2022 routed (100.00%)
+    Signal "mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.DPhyClkxC" (0, 16)
+       Clock   loads: 2     out of     2 routed (100.00%)
+    Signal "GND_sig_mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst" (3, 19)
+       Clock   loads: 3     out of     3 routed (100.00%)
+       Control loads: 1     out of     1 routed (100.00%)
+       Data    loads: 0     out of   108 routed (  0.00%)
+Other clocks:
+    Signal "main_pll_inst.lscc_pll_inst.intclkop_w"
+       Clock   loads: 1     out of     1 routed (100.00%)
+    Signal "Clk48xCI_c"
+       Clock   loads: 1     out of     1 routed (100.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+WARNING <70001944> - par: No source clock for
+	generated clock	create_generated_clock -name {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/DPhyClkxC} -source [get_pins {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst/CKP}] -divide_by 8 [get_pins {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst/URWDCKHS }] .
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing in Serial Mode ......
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Start NBR section for initial routing at 14:07:43 07/07/26
+Level 4, iteration 1
+2840(0.16%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 28 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 14:07:54 07/07/26
+Level 4, iteration 1
+2132(0.12%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 30 secs 
+Level 4, iteration 2
+716(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 32 secs 
+Level 4, iteration 3
+368(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 33 secs 
+Level 4, iteration 4
+136(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 34 secs 
+Level 4, iteration 5
+102(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 34 secs 
+Level 4, iteration 6
+35(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 35 secs 
+Level 4, iteration 7
+7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 35 secs 
+Level 4, iteration 8
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 36 secs 
+Level 4, iteration 9
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.752ns/0.000ns; real time: 36 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 14:08:02 07/07/26
+
+Start NBR section for post-routing at 14:08:06 07/07/26
+
+End NBR router with 0 unrouted connection(s)
+
+Checksum -- route: 31902e8637d4f58173b7e8f81029bb72d454ec22
+
+Total Router CPU time 42 secs , REAL time: 42 secs 
+Completely routed.
+End of route.  25377 routed (100.00%); 0 unrouted.
+
+Writing design to file mira_test_impl_1_par.dir/5_2.udb ...
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Estimated worst slack<setup/<ns>> = 0.752
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Estimated worst slack<hold/<ns>> = 0.044
+PAR_SUMMARY::Timing score<hold/<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Note: user must run 'timing' for timing closure signoff.
+
+Total CPU  Time: 1 mins 19 secs 
+Total REAL Time: 1 mins 20 secs 
+Peak Memory Usage: 755.98 MB
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
