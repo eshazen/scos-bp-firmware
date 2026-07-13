@@ -1,0 +1,5 @@
+#Start recording tcl command: 4/27/2026 01:21:22
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_close
+#Stop recording: 4/27/2026 01:21:46

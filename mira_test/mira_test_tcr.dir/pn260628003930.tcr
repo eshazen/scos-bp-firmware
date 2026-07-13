@@ -1,0 +1,10 @@
+#Start recording tcl command: 6/27/2026 23:48:03
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1 -forceOne
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+#Stop recording: 6/28/2026 00:39:30

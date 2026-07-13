@@ -1,0 +1,395 @@
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/lscc/radiant/2025.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2025.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="pn260323140224"></A><B><U><big>pn260323140224</big></U></B>
+#Start recording tcl command: 3/23/2026 09:23:47
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_run Export -impl impl_1
+prj_archive -includeAll "C:/Users/Bernhard/my_designs/20260323_mira_test-mipi_decode.zip"
+#Stop recording: 3/23/2026 14:02:24
+
+
+
+<A name="pn260415050415"></A><B><U><big>pn260415050415</big></U></B>
+#Start recording tcl command: 4/13/2026 15:50:48
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+#Stop recording: 4/15/2026 05:04:15
+
+
+
+<A name="pn260427012146"></A><B><U><big>pn260427012146</big></U></B>
+#Start recording tcl command: 4/27/2026 01:21:22
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_close
+#Stop recording: 4/27/2026 01:21:46
+
+
+
+<A name="pn260427141124"></A><B><U><big>pn260427141124</big></U></B>
+#Start recording tcl command: 4/27/2026 13:23:40
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_save 
+prj_close
+#Stop recording: 4/27/2026 14:11:24
+
+
+
+<A name="pn260508153100"></A><B><U><big>pn260508153100</big></U></B>
+#Start recording tcl command: 4/29/2026 09:49:27
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_impose_hldtiming_correction=True par_prioritize_hldcorrection=True
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_prioritize_hldcorrection=False
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_prioritize_hldcorrection=True
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_place_iterator=2
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_place_iterator=3
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_prioritize_hldcorrection=False
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_impose_hldtiming_correction=False par_pathbased_place=Off
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 syn_ram_rw_check=True
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 syn_ram_rw_check=False
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+#Stop recording: 5/8/2026 15:31:00
+
+
+
+<A name="pn260517104852"></A><B><U><big>pn260517104852</big></U></B>
+#Start recording tcl command: 5/13/2026 22:13:13
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_disable_source "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd"
+prj_remove_source "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd"
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+#Stop recording: 5/17/2026 10:48:52
+
+
+
+<A name="pn260528004034"></A><B><U><big>pn260528004034</big></U></B>
+#Start recording tcl command: 5/18/2026 07:12:22
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+#Stop recording: 5/28/2026 00:40:34
+
+
+
+<A name="pn260628003930"></A><B><U><big>pn260628003930</big></U></B>
+#Start recording tcl command: 6/27/2026 23:48:03
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1 -forceOne
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+#Stop recording: 6/28/2026 00:39:30
+
+
+
+<A name="pn260706140555"></A><B><U><big>pn260706140555</big></U></B>
+#Start recording tcl command: 7/6/2026 06:06:06
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 7/6/2026 14:05:55
+
+
+
+<A name="pn260709142937"></A><B><U><big>pn260709142937</big></U></B>
+#Start recording tcl command: 7/9/2026 11:41:59
+#Project Location: C:/Users/Bernhard/my_designs/mira_test; Project name: mira_test
+prj_open "C:/Users/Bernhard/my_designs/mira_test/mira_test.rdf"
+prj_run Export -impl impl_1
+#Stop recording: 7/9/2026 14:29:37
+
+
+
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn260323140224>pn260323140224</A></LI>
+<LI><A href=#pn260415050415>pn260415050415</A></LI>
+<LI><A href=#pn260427012146>pn260427012146</A></LI>
+<LI><A href=#pn260427141124>pn260427141124</A></LI>
+<LI><A href=#pn260508153100>pn260508153100</A></LI>
+<LI><A href=#pn260517104852>pn260517104852</A></LI>
+<LI><A href=#pn260528004034>pn260528004034</A></LI>
+<LI><A href=#pn260628003930>pn260628003930</A></LI>
+<LI><A href=#pn260706140555>pn260706140555</A></LI>
+<LI><A href=#pn260709142937>pn260709142937</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

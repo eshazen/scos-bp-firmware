@@ -1,0 +1,22 @@
+## Set clock period per design requirements 
+set WR_CLK_PERIOD 10
+set RD_CLK_PERIOD 10
+
+create_clock -name {wr_clk_i} -period $WR_CLK_PERIOD [get_ports wr_clk_i]
+create_clock -name {rd_clk_i} -period $RD_CLK_PERIOD [get_ports rd_clk_i]
+
+## Constraints when Nexus HARD_IP is used 
+set WR_MAXDLY [expr {$WR_CLK_PERIOD*0.8}]
+set RD_MAXDLY [expr {$RD_CLK_PERIOD*0.8}]
+set_max_delay -datapath_only -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.full_r*.*_inst]   $WR_MAXDLY 
+set_max_delay -datapath_only -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.afull_r*.*_inst]  $WR_MAXDLY 
+set_max_delay -datapath_only -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.empty_r*.*_inst]  $RD_MAXDLY 
+set_max_delay -datapath_only -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.aempty_r*.*_inst] $RD_MAXDLY 
+set_false_path -from [get_pins -hierarchical */*.FIFO16K_MODE_inst/EMPTY] -to [get_pins -hierarchical */*.FIFO16K_MODE_inst/EMPTYI] 
+set_false_path -from [get_pins -hierarchical */*.FIFO16K_MODE_inst/FULL] -to [get_pins -hierarchical */*.FIFO16K_MODE_inst/FULLI] 
+
+## Additional constraints when Output Register is Enabled 
+set_max_delay -datapath_only -from [get_cells -hierarchical */*.empty_r*.*_inst] -to [get_cells -hierarchical */*.empty_sync_r*.*_inst]    $RD_MAXDLY 
+set_max_delay -datapath_only -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.empty_sync_r*.*_inst]  $RD_MAXDLY 
+set_max_delay -datapath_only -from [get_cells -hierarchical */*.aempty_r*.*_inst] -to [get_cells -hierarchical */*.aempty_sync_r*.*_inst]  $RD_MAXDLY 
+set_max_delay -datapath_only -from [get_cells -hierarchical */*.FIFO16K_MODE_inst] -to [get_cells -hierarchical */*.aempty_sync_r*.*_inst] $RD_MAXDLY 

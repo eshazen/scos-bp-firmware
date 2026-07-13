@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="je5d00" date="2026 04 30 13:50:29" device="LIFCL-40" device_int="je5d30" display_module="MIPI_DPHY" display_vendor="latticesemi.com" family="LIFCL" gen_platform="Radiant" gen_platform_version="2025.2.0.48.0" generator="ipgen" library="module" module="mipi_dphy" name="mipi_dphy_rx" operation="Commercial" package="CABGA400" package_int="CABGA400" partnumber="LIFCL-40-9BG400C" source_format="Verilog" speed="9_High-Performance_1.0V" speed_int="12" vendor="latticesemi.com" version="1.9.0">
+ <Package>
+  <File modified="2026 04 30 13:50:29" name="rtl/mipi_dphy_rx_bb.v" type="black_box_verilog"/>
+  <File modified="2026 04 30 13:50:29" name="mipi_dphy_rx.cfg" type="cfg"/>
+  <File modified="2026 04 30 13:50:29" name="misc/mipi_dphy_rx_tmpl.v" type="template_verilog"/>
+  <File modified="2026 04 30 13:50:29" name="misc/mipi_dphy_rx_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2026 04 30 13:50:29" name="rtl/mipi_dphy_rx.v" type="top_level_verilog"/>
+  <File modified="2026 04 30 13:50:29" name="constraints/constraint.sdc" stage="lse:all,synplify:all" type="tcl_constraints"/>
+  <File modified="2026 04 30 13:50:29" name="constraints/mipi_dphy_rx.ldc" type="timing_constraints"/>
+  <File modified="2026 04 30 13:50:29" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2026 04 30 13:50:29" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2026 04 30 13:50:29" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2026 04 30 13:50:29" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2025 10 18 04:21:47" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

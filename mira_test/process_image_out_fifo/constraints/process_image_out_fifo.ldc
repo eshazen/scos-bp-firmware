@@ -1,0 +1,33 @@
+set device "LIFCL-40"
+set device_int "je5d30"
+set package "CABGA400"
+set package_int "CABGA400"
+set speed "9_High-Performance_1.0V"
+set speed_int "12"
+set operation "Commercial"
+set family "LIFCL"
+set architecture "je5d00"
+set partnumber "LIFCL-40-9BG400C"
+set WRAPPER_INST "lscc_fifo_inst"
+set FAMILY "LIFCL"
+set ADDRESS_DEPTH 4096
+set DATA_WIDTH 64
+set FIFO_CONTROLLER "HARD_IP"
+set FORCE_FAST_CONTROLLER 1
+set FWFT 0
+set IMPLEMENTATION "EBR"
+set ADDRESS_WIDTH 12
+set REGMODE "reg"
+set RESET_MODE "async"
+set ENABLE_ALMOST_FULL_FLAG "TRUE"
+set ALMOST_FULL_ASSERTION "static-single"
+set ALMOST_FULL_ASSERT_LVL 768
+set ALMOST_FULL_DEASSERT_LVL 767
+set ENABLE_ALMOST_EMPTY_FLAG "TRUE"
+set ALMOST_EMPTY_ASSERTION "static-single"
+set ALMOST_EMPTY_ASSERT_LVL 256
+set ALMOST_EMPTY_DEASSERT_LVL 257
+set ENABLE_DATA_COUNT "FALSE"
+
+
+## Refer to the generated Post-Synthesis constraints at eval/constraint.pdc 

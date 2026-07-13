@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="je5d00" date="2026 07 06 10:19:58" device="LIFCL-40" device_int="je5d30" display_module="FIFO" display_vendor="latticesemi.com" family="LIFCL" gen_platform="Radiant" gen_platform_version="2025.2.0.48.0" generator="ipgen" library="module" module="fifo" name="process_image_out_fifo" operation="Commercial" package="CABGA400" package_int="CABGA400" partnumber="LIFCL-40-9BG400C" source_format="Verilog" speed="9_High-Performance_1.0V" speed_int="12" vendor="latticesemi.com" version="2.5.0">
+ <Package>
+  <File modified="2026 07 06 10:19:58" name="rtl/process_image_out_fifo_bb.v" type="black_box_verilog"/>
+  <File modified="2026 07 06 10:19:58" name="process_image_out_fifo.cfg" type="cfg"/>
+  <File modified="2026 07 06 10:19:58" name="misc/process_image_out_fifo_tmpl.v" type="template_verilog"/>
+  <File modified="2026 07 06 10:19:58" name="misc/process_image_out_fifo_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2026 07 06 10:19:58" name="rtl/process_image_out_fifo.v" type="top_level_verilog"/>
+  <File modified="2026 07 06 10:19:58" name="constraints/process_image_out_fifo.ldc" type="timing_constraints"/>
+  <File modified="2026 07 06 10:19:58" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2026 07 06 10:19:58" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2026 07 06 10:19:58" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2026 07 06 10:19:58" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2025 10 18 04:21:43" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

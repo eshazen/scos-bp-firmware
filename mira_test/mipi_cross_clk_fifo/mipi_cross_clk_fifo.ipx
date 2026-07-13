@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="je5d00" date="2026 04 30 21:23:37" device="LIFCL-40" device_int="je5d30" display_module="FIFO_DC" display_vendor="latticesemi.com" family="LIFCL" gen_platform="Radiant" gen_platform_version="2025.2.0.48.0" generator="ipgen" library="module" module="fifo_dc" name="mipi_cross_clk_fifo" operation="Commercial" package="CABGA400" package_int="CABGA400" partnumber="LIFCL-40-9BG400C" source_format="Verilog" speed="9_High-Performance_1.0V" speed_int="12" vendor="latticesemi.com" version="2.7.0">
+ <Package>
+  <File modified="2026 04 30 21:23:37" name="rtl/mipi_cross_clk_fifo_bb.v" type="black_box_verilog"/>
+  <File modified="2026 04 30 21:23:37" name="mipi_cross_clk_fifo.cfg" type="cfg"/>
+  <File modified="2026 04 30 21:23:37" name="misc/mipi_cross_clk_fifo_tmpl.v" type="template_verilog"/>
+  <File modified="2026 04 30 21:23:37" name="misc/mipi_cross_clk_fifo_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2026 04 30 21:23:37" name="rtl/mipi_cross_clk_fifo.v" type="top_level_verilog"/>
+  <File modified="2026 04 30 21:23:37" name="constraints/constraint.sdc" stage="lse:all,synplify:all" type="tcl_constraints"/>
+  <File modified="2026 04 30 21:23:37" name="constraints/mipi_cross_clk_fifo.ldc" type="timing_constraints"/>
+  <File modified="2026 04 30 21:23:37" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2026 04 30 21:23:37" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2026 04 30 21:23:37" name="eval/dut_params.v" type="dependency_file"/>
+  <File modified="2026 04 30 21:23:37" name="eval/dut_inst.v" type="dependency_file"/>
+  <File modified="2026 04 30 21:23:37" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2026 04 30 21:23:37" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2025 10 18 04:21:42" name="testbench/clk_rst_gen.v" type="testbench_verilog"/>
+  <File modified="2025 10 18 04:21:42" name="testbench/fifo_master.v" type="testbench_verilog"/>
+  <File modified="2025 10 18 04:21:43" name="testbench/flag_checker.v" type="testbench_verilog"/>
+  <File modified="2025 10 18 04:21:43" name="testbench/mem_model.v" type="testbench_verilog"/>
+  <File modified="2025 10 18 04:21:43" name="testbench/tb_top.v" type="testbench_verilog"/>
+  <File modified="2026 05 01 04:23:37" name="eval/constraint.pdc" type="eval"/>
+  <File modified="2025 10 18 04:21:42" name="eval/create_constraint.py" type="eval"/>
+ </Package>
+</RadiantModule>

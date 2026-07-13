@@ -1,0 +1,108 @@
+-- all messages logged in file hdlparser.log
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/standard.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/standard.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/standard.vhd(9): INFO: analyzing package 'standard' (VHDL-1014)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_1164.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_1164.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_1164.vhd(15): INFO: analyzing package 'std_logic_1164' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_1164.vhd(178): INFO: analyzing package body 'std_logic_1164' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mgc_qsim.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mgc_qsim.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mgc_qsim.vhd(18): INFO: analyzing package 'qsim_logic' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mgc_qsim.vhd(753): INFO: analyzing package body 'qsim_logic' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_bit.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_bit.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_bit.vhd(54): INFO: analyzing package 'numeric_bit' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_bit.vhd(834): INFO: analyzing package body 'numeric_bit' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_std.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_std.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_std.vhd(57): INFO: analyzing package 'numeric_std' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/numeric_std.vhd(874): INFO: analyzing package body 'numeric_std' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/textio.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/textio.vhd(13): INFO: analyzing package 'textio' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/textio.vhd(114): INFO: analyzing package body 'textio' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_logic_textio.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_logic_textio.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_logic_textio.vhd(26): INFO: analyzing package 'std_logic_textio' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/std_logic_textio.vhd(72): INFO: analyzing package body 'std_logic_textio' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_attr.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_attr.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_attr.vhd(39): INFO: analyzing package 'attributes' (VHDL-1014)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_misc.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_misc.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_misc.vhd(30): INFO: analyzing package 'std_logic_misc' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_misc.vhd(182): INFO: analyzing package body 'std_logic_misc' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/math_real.vhd' (VHDL-1481)
+./.__tmp_vxr_0_(56): INFO: analyzing package 'math_real' (VHDL-1014)
+./.__tmp_vxr_0_(685): INFO: analyzing package body 'math_real' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd(9): INFO: analyzing package 'vl_types' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/mixed_lang_vltype.vhd(88): INFO: analyzing package body 'vl_types' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd(25): INFO: analyzing package 'std_logic_arith' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_arit.vhd(206): INFO: analyzing package body 'std_logic_arith' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd(35): INFO: analyzing package 'std_logic_signed' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_sign.vhd(96): INFO: analyzing package body 'std_logic_signed' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd(35): INFO: analyzing package 'std_logic_unsigned' (VHDL-1014)
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/syn_unsi.vhd(94): INFO: analyzing package body 'std_logic_unsigned' (VHDL-1013)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/synattr.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/synattr.vhd
+C:/lscc/radiant/2025.2/ispfpga/vhdl_packages/synattr.vhd(50): INFO: analyzing package 'attributes' (VHDL-1014)
+-- Analyzing Verilog file 'C:/lscc/radiant/2025.2/cae_library/synthesis/verilog/lifcl.v' (VERI-1482)
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/cae_library/synthesis/vhdl/lifcl.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/cae_library/synthesis/vhdl/lifcl.vhd
+-- Analyzing VHDL file 'C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd
+-- Analyzing Verilog file 'C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v' (VERI-1482)
+C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v(3205): INFO: undeclared symbol 'lmmi_rdata_o', assumed default net type 'wire' (VERI-2561)
+C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v(3206): INFO: undeclared symbol 'lmmi_rdata_valid_o', assumed default net type 'wire' (VERI-2561)
+C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v(3207): INFO: undeclared symbol 'lmmi_ready_o', assumed default net type 'wire' (VERI-2561)
+-- Analyzing Verilog file 'C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/Bernhard/my_designs/mira_test/main_pll/rtl/main_pll.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/Bernhard/my_designs/mira_test/process_image_out_fifo/rtl/process_image_out_fifo.v' (VERI-1482)
+-- Analyzing VHDL file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd(13): INFO: analyzing entity 'img_mean_std' (VHDL-1012)
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd(27): INFO: analyzing architecture 'architecture_img_mean_std' (VHDL-1010)
+-- Analyzing VHDL file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd(7): INFO: analyzing entity 'process_image' (VHDL-1012)
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd(25): INFO: analyzing architecture 'architecture_process_image' (VHDL-1010)
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd(91): ERROR: this construct is only supported in VHDL 1076-2008 (VHDL-1576)
+ERROR <35921576> - C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd(91): this construct is only supported in VHDL 1076-2008. VHDL-1576
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd(216): ERROR: unit 'architecture_process_image' is ignored due to previous errors (VHDL-1284)
+ERROR <35921284> - C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd(216): unit architecture_process_image ignored due to previous errors. VHDL-1284
+-- VHDL file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd' is ignored due to errors (VHDL-1482)
+-- Analyzing VHDL file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(23): INFO: analyzing entity 'mipi_rx' (VHDL-1012)
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(39): INFO: analyzing architecture 'architecture_mipi_rx' (VHDL-1010)
+-- Analyzing VHDL file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/Users/Bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd(24): INFO: analyzing entity 'frame_buf' (VHDL-1012)
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd(38): INFO: analyzing architecture 'architecture_frame_buf' (VHDL-1010)
+-- Analyzing VHDL file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd(12): INFO: analyzing entity 'uart_tx' (VHDL-1012)
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd(27): INFO: analyzing architecture 'behavioral' (VHDL-1010)
+-- Analyzing VHDL file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd(12): INFO: analyzing entity 'uart_rx' (VHDL-1012)
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd(26): INFO: analyzing architecture 'behavioral' (VHDL-1010)
+-- Analyzing VHDL file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd' (VHDL-1481)
+-- Analyzing VHDL file C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(23): INFO: analyzing entity 'mira_test_top' (VHDL-1012)
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(49): INFO: analyzing architecture 'architecture_mira_test_top' (VHDL-1010)
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(107): ERROR: this construct is only supported in VHDL 1076-2008 (VHDL-1576)
+ERROR <35921576> - C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(107): this construct is only supported in VHDL 1076-2008. VHDL-1576
+C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(238): ERROR: unit 'architecture_mira_test_top' is ignored due to previous errors (VHDL-1284)
+ERROR <35921284> - C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(238): unit architecture_mira_test_top ignored due to previous errors. VHDL-1284
+-- VHDL file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd' is ignored due to errors (VHDL-1482)
+INFO: exit parsing due to analyzing error.

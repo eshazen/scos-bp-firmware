@@ -1,0 +1,60 @@
+set device "LIFCL-40"
+set device_int "je5d30"
+set package "CABGA400"
+set package_int "CABGA400"
+set speed "9_High-Performance_1.0V"
+set speed_int "12"
+set operation "Commercial"
+set family "LIFCL"
+set architecture "je5d00"
+set partnumber "LIFCL-40-9BG400C"
+set WRAPPER_INST "lscc_fifo_dc_inst"
+set WADDR_DEPTH 128
+set WDATA_WIDTH 34
+set RADDR_DEPTH 128
+set RDATA_WIDTH 34
+set FIFO_CONTROLLER "HARD_IP"
+set FWFT 0
+set FORCE_FAST_CONTROLLER 1
+set IMPLEMENTATION "EBR"
+set WADDR_WIDTH 7
+set RADDR_WIDTH 7
+set REGMODE "reg"
+set OREG_IMPLEMENTATION "LUT"
+set RESETMODE "async"
+set ENABLE_ALMOST_FULL_FLAG "FALSE"
+set ALMOST_FULL_ASSERTION "static-single"
+set ALMOST_FULL_ASSERT_LVL 127
+set ALMOST_FULL_DEASSERT_LVL 126
+set ENABLE_ALMOST_EMPTY_FLAG "FALSE"
+set ALMOST_EMPTY_ASSERTION "static-single"
+set ALMOST_EMPTY_ASSERT_LVL 1
+set ALMOST_EMPTY_DEASSERT_LVL 2
+set ENABLE_DATA_COUNT_WR "FALSE"
+set ENABLE_DATA_COUNT_RD "FALSE"
+set FAMILY "LIFCL"
+
+
+if {$FAMILY == "LAV-AT"} {
+    set WR_CLK_PERIOD 5
+    set RD_CLK_PERIOD 5
+    
+    create_clock -name {wr_clk_i} -period $WR_CLK_PERIOD [get_ports wr_clk_i]
+    create_clock -name {rd_clk_i} -period $RD_CLK_PERIOD [get_ports rd_clk_i]
+}
+
+if {$FAMILY == "LIFCL" | $FAMILY == "LFCPNX" | $FAMILY == "LFD2NX" | $FAMILY == "LFMXO5"} {
+    set WR_CLK_PERIOD 8
+    set RD_CLK_PERIOD 8
+    
+    create_clock -name {wr_clk_i} -period $WR_CLK_PERIOD [get_ports wr_clk_i]
+    create_clock -name {rd_clk_i} -period $RD_CLK_PERIOD [get_ports rd_clk_i]
+}
+
+if {$FAMILY == "iCE40UP"} {
+    set WR_CLK_PERIOD 10
+    set RD_CLK_PERIOD 10
+    
+    create_clock -name {wr_clk_i} -period $WR_CLK_PERIOD [get_ports wr_clk_i]
+    create_clock -name {rd_clk_i} -period $RD_CLK_PERIOD [get_ports rd_clk_i]
+}
