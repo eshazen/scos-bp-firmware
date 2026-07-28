@@ -11,20 +11,20 @@
                 <ipxact:configurableElementValues>
                     <ipxact:configurableElementValue referenceId="FAMILY">LIFCL</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="T_FAMILY">LIFCL</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="ADDRESS_DEPTH">4096</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDRESS_DEPTH">6144</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="DATA_WIDTH">64</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="FIFO_CONTROLLER">HARD_IP</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="FORCE_FAST_CONTROLLER">True</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="FWFT">False</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="IMPLEMENTATION">EBR</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="Total Memory bits">262144</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="ADDRESS_WIDTH">12</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="Total Memory bits">393216</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDRESS_WIDTH">13</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="REGMODE">True</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="RESET_MODE">async</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ENABLE_ALMOST_FULL_FLAG">True</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ALMOST_FULL_ASSERTION">static-single</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="ALMOST_FULL_ASSERT_LVL">768</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="ALMOST_FULL_DEASSERT_LVL">767</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ALMOST_FULL_ASSERT_LVL">5632</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ALMOST_FULL_DEASSERT_LVL">5631</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ENABLE_ALMOST_EMPTY_FLAG">True</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ALMOST_EMPTY_ASSERTION">static-single</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ALMOST_EMPTY_ASSERT_LVL">256</ipxact:configurableElementValue>

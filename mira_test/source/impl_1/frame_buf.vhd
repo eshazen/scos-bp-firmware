@@ -15,7 +15,9 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity frame_buf is
 generic (
-	BIT_DEPTH		: integer := 12
+	BIT_DEPTH		: integer := 12;
+	N_COLS			: integer := 1600;
+	N_LINES			: integer := 480
 );
 port (
     ClkxCI          : in std_logic;
@@ -35,7 +37,7 @@ architecture architecture_frame_buf of frame_buf is
 
 	constant N_SLICES : integer := 12;
 	constant N_SLICESEL_BITS : integer := 4;
-	constant N_WORDS : integer := (1600/4) * 480/N_SLICES ; -- 4 pix per word, 480 lines per image
+	constant N_WORDS : integer := (N_COLS/4) * N_LINES/N_SLICES ; -- 4 pix per word, 480 lines per image
 	constant N_BYTES_PER_WORD : integer := 8;
 
 	-- input signal registers (for speed)

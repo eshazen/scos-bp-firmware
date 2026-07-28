@@ -60,6 +60,7 @@ add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/my_designs/mira_test/main_p
 add_file -vhdl -lib "work" {C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd}
 add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/my_designs/mira_test/process_image_out_fifo/rtl/process_image_out_fifo.v}
 add_file -vhdl -lib "work" {C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd}
+add_file -vhdl -lib "work" {C:/Users/Bernhard/my_designs/mira_test/source/impl_1/spi_rxtx_with_fifo.vhd}
 #-- top module name
 set_option -top_module mira_test_top
 set_option -include_path {C:/Users/Bernhard/my_designs/mira_test}

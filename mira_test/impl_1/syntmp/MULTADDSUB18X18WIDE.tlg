@@ -16,9 +16,9 @@ Selecting top level module MULTADDSUB18X18WIDE
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":47213:7:47213:14|Synthesizing module MULT9_hw in library work.
 @W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":47471:5:47471:16|Removing wire dsp_sleep_lt, as there is no assignment to it.
 Running optimization stage 1 on MULT9_hw .......
-Finished optimization stage 1 on MULT9_hw (CPU Time 0h:00m:00s, Memory Used current: 161MB peak: 162MB)
+Finished optimization stage 1 on MULT9_hw (CPU Time 0h:00m:00s, Memory Used current: 161MB peak: 163MB)
 Running optimization stage 1 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_REGISTER_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z1 .......
-Finished optimization stage 1 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_REGISTER_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z1 (CPU Time 0h:00m:00s, Memory Used current: 161MB peak: 162MB)
+Finished optimization stage 1 on MULT9_CORE_DISABLED_DISABLED_USED_BYPASS_REGISTER_BYPASS_DISABLED_DISABLED_ENABLED_ASYNC_Z1 (CPU Time 0h:00m:00s, Memory Used current: 161MB peak: 163MB)
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":44247:7:44247:18|Synthesizing module PREADD9_CORE in library work.
 
 	SIGNEDSTATIC_EN=65'b00100010001001001010100110100000101000010010011000100010101000100
@@ -359,7 +359,7 @@ Running optimization stage 2 on MULT18_CORE_DISABLED_ENABLED_DISABLED_ROUND_TO_Z
 Finished optimization stage 2 on MULT18_CORE_DISABLED_ENABLED_DISABLED_ROUND_TO_ZERO_ROUND_TO_BIT0_Z3 (CPU Time 0h:00m:00s, Memory Used current: 181MB peak: 192MB)
 Running optimization stage 2 on MULT18_hw .......
 @W: CL246 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":43191:12:43191:15|Input port bits 19 to 18 of pl18[19:0] are unused. Assign logic for all port bits or change the input port size.
-Finished optimization stage 2 on MULT18_hw (CPU Time 0h:00m:00s, Memory Used current: 178MB peak: 192MB)
+Finished optimization stage 2 on MULT18_hw (CPU Time 0h:00m:00s, Memory Used current: 179MB peak: 192MB)
 Running optimization stage 2 on PREADD9_hw .......
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":45503:10:45503:21|Input mc1_rstcl_en is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v":45505:10:45505:20|Input mc1_rstb_en is unused.

@@ -9,24 +9,24 @@
             <ipxact:instanceName>lscc_fifo_dc_inst</ipxact:instanceName>
             <ipxact:componentRef library="module" name="fifo_dc" vendor="latticesemi.com" version="2.7.0">
                 <ipxact:configurableElementValues>
-                    <ipxact:configurableElementValue referenceId="WADDR_DEPTH">128</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WADDR_DEPTH">64</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="WDATA_WIDTH">34</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="RADDR_DEPTH">128</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RADDR_DEPTH">64</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="RDATA_WIDTH">34</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="FIFO_CONTROLLER">HARD_IP</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="FWFT">False</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="FORCE_FAST_CONTROLLER">True</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="IMPLEMENTATION">EBR</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="Total Memory bits">4352</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="WADDR_WIDTH">7</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="RADDR_WIDTH">7</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="Total Memory bits">2176</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WADDR_WIDTH">6</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RADDR_WIDTH">6</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="REGMODE">True</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="OREG_IMPLEMENTATION">LUT</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="RESETMODE">async</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ENABLE_ALMOST_FULL_FLAG">False</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ALMOST_FULL_ASSERTION">static-single</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="ALMOST_FULL_ASSERT_LVL">127</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="ALMOST_FULL_DEASSERT_LVL">126</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ALMOST_FULL_ASSERT_LVL">63</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ALMOST_FULL_DEASSERT_LVL">62</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ENABLE_ALMOST_EMPTY_FLAG">False</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ALMOST_EMPTY_ASSERTION">static-single</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="ALMOST_EMPTY_ASSERT_LVL">1</ipxact:configurableElementValue>

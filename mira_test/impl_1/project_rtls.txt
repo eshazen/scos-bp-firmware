@@ -3,6 +3,7 @@
 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd"
 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd"
 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd"
+"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd"
 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd"
 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd"
 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd"

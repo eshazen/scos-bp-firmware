@@ -21,10 +21,10 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>NA</data>
 </row>
 <row>
-<data>main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock</data>
+<data>main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>230.3 MHz</data>
-<data>0.657</data>
+<data>170.2 MHz</data>
+<data>-0.874</data>
 </row>
 <row>
 <data>System</data>

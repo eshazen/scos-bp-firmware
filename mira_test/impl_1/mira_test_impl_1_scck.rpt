@@ -12,7 +12,7 @@ Hostname: ZBOOKNB
 
 Implementation : impl_1
 
-# Written on Tue Jul  7 14:04:25 2026
+# Written on Sun Jul 26 20:32:11 2026
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\lscc\radiant\2025.2\scripts\tcl\flow\radiant_synplify_vars.tcl"
@@ -37,7 +37,7 @@ Level     Clock                                                         Frequenc
                                                                                                                                                 
 0 -       System                                                        200.0 MHz     5.000         system       system_clkgroup           0    
                                                                                                                                                 
-0 -       main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     2573 
+0 -       main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     2638 
 ================================================================================================================================================
 
 
@@ -51,5 +51,5 @@ Clk48xCI                                                      0         Clk48xCI
                                                                                                                                                                                                       
 System                                                        0         -                                                                   -                          -                 -            
                                                                                                                                                                                                       
-main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     2573      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     CfgFSMSRegxDP_0[3:0].C     -                 -            
+main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     2638      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     CfgFSMSRegxDP_0[3:0].C     -                 -            
 ======================================================================================================================================================================================================

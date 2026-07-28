@@ -1,10 +1,9 @@
 
 PAR: Place And Route Radiant Software (64-bit) 2025.2.0.48.0.
-PARed on: Tue Jul  7 14:08:11 2026
+PARed on: Sun Jul 26 20:34:03 2026
 
-Command Line: par -w -t 3 -hsp m -exp \
-	parPathBased=ON:aseRouteInitSetupSlackThreshold=0.752 \
-	mira_test_impl_1_map.udb mira_test_impl_1_par.dir/5_3.udb 
+Command Line: par -w -t 3 -hsp m -exp parPathBased=ON mira_test_impl_1_map.udb \
+	mira_test_impl_1_par.dir/5_3.udb 
 
 Loading mira_test_impl_1_map.udb ...
 Loading device for application GENERIC from file 'je5d30.nph' in environment: C:/lscc/radiant/2025.2/ispfpga.
@@ -18,61 +17,90 @@ Family:  LIFCL
 Device:  LIFCL-40
 Package: CABGA400
 Performance Grade:   9_High-Performance_1.0V
+WARNING <77001032> - par: Unable to find the instance/port 'UartFTDItoFPGAxDI' in the constraint 'ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]'
+
+WARNING <77001031> - par: In the constraint 'ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]', the locate object is not specified
+
+WARNING <77001032> - par: Unable to find the instance/port 'UartRTSntoFPGAxDI' in the constraint 'ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]'
+
+WARNING <77001031> - par: In the constraint 'ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]', the locate object is not specified
+
 
 Constraint Summary
-   Total number of constraints: 44
-   Total number of constraints dropped: 0
+   Total number of constraints: 40
+   Total number of constraints dropped: 2
+   Dropped constraints are:
+     ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]
+     ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]
 
+WARNING <71003020> - par: Top module port 'UartRTSntoFPGAxDI' does not connect to anything.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE           4048/16128        25% used
+   SLICE           4178/16128        25% used
+
+WARNING <77001032> - par: Unable to find the instance/port 'UartFTDItoFPGAxDI' in the constraint 'ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]'
+
+WARNING <77001031> - par: In the constraint 'ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]', the locate object is not specified
+
+WARNING <77001032> - par: Unable to find the instance/port 'UartRTSntoFPGAxDI' in the constraint 'ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]'
+
+WARNING <77001031> - par: In the constraint 'ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]', the locate object is not specified
 
 WARNING <70001944> - par: No source clock for
 	generated clock	create_generated_clock -name {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/DPhyClkxC} -source [get_pins {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst/CKP}] -divide_by 8 [get_pins {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst/URWDCKHS }] .
-Number of Signals: 8682
-Number of Connections: 25377
+WARNING <77001032> - par: Unable to find the instance/port 'UartFTDItoFPGAxDI' in the constraint 'ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]'
+
+WARNING <77001031> - par: In the constraint 'ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]', the locate object is not specified
+
+WARNING <77001032> - par: Unable to find the instance/port 'UartRTSntoFPGAxDI' in the constraint 'ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]'
+
+WARNING <77001031> - par: In the constraint 'ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]', the locate object is not specified
+
+Number of Signals: 8886
+Number of Connections: 26074
 Device utilization summary:
 
    VHI                   1/1           100% used
-   EBR                  36/84           43% used
+   SIOLOGIC              2/186           1% used
+   EBR                  39/84           46% used
    MULT9                 8/112           7% used
    MULT18                4/56            7% used
    REG18                 8/112           7% used
    ACC54                 2/28            7% used
    PREADD9               8/112           7% used
    LRAM                  2/2           100% used
-   SEIO33               32/185          17% used
-                        32/111          28% bonded
+   SEIO33               28/185          15% used
+                        28/111          25% bonded
    PLL                   1/3            33% used
    DPHY                  1/2            50% used
    APIO                  6/32           19% used
-   SLICE              4048/16128        25% used
-     LUT              5005/32256        16% used
-     REG              2218/32256         7% used
+   SLICE              4178/16128        26% used
+     LUT              5136/32256        16% used
+     REG              2289/32256         7% used
 
 
 Pin Constraint Summary:
-   32 out of 32 pins locked (100% locked).
+   28 out of 28 pins locked (100% locked).
 
 Starting Placer Phase 0 (HIER). CPU time: 8 secs , REAL time: 9 secs 
 ............
-Finished Placer Phase 0 (HIER). CPU time: 9 secs , REAL time: 10 secs 
+Finished Placer Phase 0 (HIER). CPU time: 8 secs , REAL time: 9 secs 
 
 
 Starting Placer Phase 1. CPU time: 9 secs , REAL time: 10 secs 
 ..  ..
 WARNING: Database constraint "create_generated_clock -name {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/DPhyClkxC} -source [get_pins mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst/CKP] -divide_by 8 [get_pins mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst/URWDCKHS]" does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
 
-...................
+.................
 
-Placer score = 1965626.
-Finished Placer Phase 1. CPU time: 31 secs , REAL time: 32 secs 
+Placer score = 2203570.
+Finished Placer Phase 1. CPU time: 28 secs , REAL time: 29 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  1915231
-Finished Placer Phase 2.  CPU time: 33 secs , REAL time: 34 secs 
+Placer score =  2072105
+Finished Placer Phase 2.  CPU time: 29 secs , REAL time: 31 secs 
 
 
 ------------------ Clock Report ------------------
@@ -90,9 +118,9 @@ Global Clock Resources:
 
 Global Clocks:
   PRIMARY "mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.DPhyClkxC" from URWDCKHS on comp "mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst" on site "DPHY0", clk load = 2, ce load = 0, sr load = 0
-  PRIMARY "ClkxC" from CLKOP on comp "main_pll_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst" on PLL site "PLL_ULC", clk load = 2241, ce load = 0, sr load = 0
+  PRIMARY "ClkxC" from CLKOP on comp "main_pll_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst" on PLL site "PLL_ULC", clk load = 2313, ce load = 0, sr load = 0
   PRIMARY "GND_sig_mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst" from F0 on comp "GND_for_mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst" on site "R38C49A", clk load = 3, ce load = 0, sr load = 1
-  PRIMARY "ResetxRI_c" from comp "ResetxRI" on PIO site "L2 (PL27B)", clk load = 0, ce load = 0, sr load = 2022
+  PRIMARY "ResetxRI_c" from comp "ResetxRI" on PIO site "L2 (PL27B)", clk load = 0, ce load = 0, sr load = 2017
 
   PRIMARY  : 4 out of 16 (25%)
 
@@ -105,9 +133,9 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   32 out of 185 (17.3%) SEIO33 sites used.
-   32 out of 111 (28.8%) bonded SEIO33 sites used.
-   Number of SEIO33 components: 32; differential: 0
+   28 out of 185 (15.1%) SEIO33 sites used.
+   28 out of 111 (25.2%) bonded SEIO33 sites used.
+   Number of SEIO33 components: 28; differential: 0
    Number of Vref pins used: 0
    0 out of 74 (0.0%) SEIO18 sites used.
    0 out of 74 (0.0%) bonded SEIO18 sites used.
@@ -117,27 +145,35 @@ I/O Usage Summary (final):
    Number of DIFFIO18 components: 0; differential: 0
 
 I/O Bank Usage Summary:
-+----------+----------------+------------+------------+------------+
-| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
-+----------+----------------+------------+------------+------------+
-| 0        | 0 / 12 (  0%)  | -          | -          | -          |
-| 1        | 8 / 21 ( 38%)  | 3.3V       | -          | -          |
-| 2        | 6 / 28 ( 21%)  | 3.3V       | -          | -          |
-| 3        | 0 / 32 (  0%)  | -          | -          | -          |
-| 4        | 0 / 32 (  0%)  | -          | -          | -          |
-| 5        | 0 / 10 (  0%)  | -          | -          | -          |
-| 6        | 13 / 28 ( 46%) | 3.3V       | -          | -          |
-| 7        | 5 / 22 ( 22%)  | 3.3V       | -          | -          |
-+----------+----------------+------------+------------+------------+
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 0 / 12 (  0%) | -          | -          | -          |
+| 1        | 8 / 21 ( 38%) | 3.3V       | -          | -          |
+| 2        | 6 / 28 ( 21%) | 3.3V       | -          | -          |
+| 3        | 0 / 32 (  0%) | -          | -          | -          |
+| 4        | 0 / 32 (  0%) | -          | -          | -          |
+| 5        | 0 / 10 (  0%) | -          | -          | -          |
+| 6        | 5 / 28 ( 17%) | 3.3V       | -          | -          |
+| 7        | 9 / 22 ( 40%) | 3.3V       | -          | -          |
++----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 33 secs , REAL time: 34 secs 
+Total Placer CPU time: 30 secs , REAL time: 31 secs 
 
 
-Checksum -- place: bfd26e0fa3946072e18a34952f37f42548e6518
+Checksum -- place: 5d6517b9ba8465d686dcf18fbce17c5559901770
 Writing design to file mira_test_impl_1_par.dir/5_3.udb ...
 
+WARNING <77001032> - par: Unable to find the instance/port 'UartFTDItoFPGAxDI' in the constraint 'ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]'
 
-Start NBR router at 14:08:47 07/07/26
+WARNING <77001031> - par: In the constraint 'ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]', the locate object is not specified
+
+WARNING <77001032> - par: Unable to find the instance/port 'UartRTSntoFPGAxDI' in the constraint 'ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]'
+
+WARNING <77001031> - par: In the constraint 'ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]', the locate object is not specified
+
+
+Start NBR router at 20:34:35 07/26/26
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -155,17 +191,17 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-2029 connections routed with dedicated routing resources
+2058 connections routed with dedicated routing resources
 4 global clock signals routed
-8403 connections routed (of 25377 total) (33.11%)
+8574 connections routed (of 26074 total) (32.88%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (8 used out of 32 available):
     Signal "ClkxC" (4, 20)
-       Clock   loads: 2241  out of  2241 routed (100.00%)
+       Clock   loads: 2313  out of  2313 routed (100.00%)
        Data    loads: 0     out of     1 routed (  0.00%)
     Signal "ResetxRI_c" (2, 18)
-       Control loads: 2022  out of  2022 routed (100.00%)
+       Control loads: 2017  out of  2017 routed (100.00%)
     Signal "mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.DPhyClkxC" (0, 16)
        Clock   loads: 2     out of     2 routed (100.00%)
     Signal "GND_sig_mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst" (3, 19)
@@ -186,25 +222,63 @@ WARNING <70001944> - par: No source clock for
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 14:09:04 07/07/26
+Start NBR section for initial routing at 20:34:49 07/26/26
 Level 4, iteration 1
-3009(0.17%) conflicts; 0(0.00%) untouched conn; 128 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.109ns/-0.129ns; real time: 28 secs 
+3031(0.17%) conflicts; 0(0.00%) untouched conn; 463 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.153ns/-0.464ns; real time: 23 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-*****************************************************************************
-WARNING: The worst setup slack (-0.110ns) after initial routing exceeds the 
-specified threshold 0.752 ns. This par run will be terminated.
-*****************************************************************************
+Start NBR section for normal routing at 20:34:58 07/26/26
+Level 4, iteration 1
+2142(0.12%) conflicts; 0(0.00%) untouched conn; 473 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.229ns/-0.474ns; real time: 25 secs 
+Level 4, iteration 2
+653(0.04%) conflicts; 0(0.00%) untouched conn; 539 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.229ns/-0.540ns; real time: 27 secs 
+Level 4, iteration 3
+303(0.02%) conflicts; 0(0.00%) untouched conn; 473 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.229ns/-0.474ns; real time: 28 secs 
+Level 4, iteration 4
+120(0.01%) conflicts; 0(0.00%) untouched conn; 512 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.229ns/-0.513ns; real time: 28 secs 
+Level 4, iteration 5
+113(0.01%) conflicts; 0(0.00%) untouched conn; 512 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.229ns/-0.513ns; real time: 28 secs 
+Level 4, iteration 6
+56(0.00%) conflicts; 0(0.00%) untouched conn; 512 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.229ns/-0.513ns; real time: 29 secs 
+Level 4, iteration 7
+23(0.00%) conflicts; 0(0.00%) untouched conn; 512 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.229ns/-0.513ns; real time: 29 secs 
+Level 4, iteration 8
+8(0.00%) conflicts; 0(0.00%) untouched conn; 512 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.229ns/-0.513ns; real time: 30 secs 
+Level 4, iteration 9
+0(0.00%) conflict; 0(0.00%) untouched conn; 512 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.229ns/-0.513ns; real time: 30 secs 
+
+Start NBR section for post-routing at 20:35:05 07/26/26
+
+End NBR router with 0 unrouted connection(s)
+
+Checksum -- route: 6708b47260ac08310eef14ebd02c17c2fc1f09
+
+Total Router CPU time 30 secs , REAL time: 31 secs 
+Completely routed.
+End of route.  26074 routed (100.00%); 0 unrouted.
+
+Writing design to file mira_test_impl_1_par.dir/5_3.udb ...
 
 
+All signals are completely routed.
 
-PAR_SUMMARY::Run status = Skipped
-PAR_SUMMARY::Number of unrouted conns = <n/a>
-PAR_SUMMARY::Estimated worst slack<setup/<ns>> = <n/a>
-PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Estimated worst slack<setup/<ns>> = -0.229
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.511
 PAR_SUMMARY::Estimated worst slack<hold/<ns>> = <n/a>
 PAR_SUMMARY::Timing score<hold/<ns>> = <n/a>
 PAR_SUMMARY::Number of errors = 0
@@ -212,11 +286,11 @@ PAR_SUMMARY::Number of errors = 0
 Note: user must run 'timing' for timing closure signoff.
 
 Total CPU  Time: 1 mins 3 secs 
-Total REAL Time: 1 mins 4 secs 
-Peak Memory Usage: 754.90 MB
+Total REAL Time: 1 mins 5 secs 
+Peak Memory Usage: 758.81 MB
 
 
-par failed!
+par done!
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.

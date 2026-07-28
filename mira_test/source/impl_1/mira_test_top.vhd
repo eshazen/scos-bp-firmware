@@ -23,6 +23,8 @@ port (
     MipiRxN     : INOUT  std_logic_vector(1 downto 0);
     MipiRxCkP   : INOUT  std_logic;
     MipiRxCkN   : INOUT  std_logic;
+	CCISCLxSIO	: INOUT std_logic; -- sensor I2C
+	CCISDAxSIO	: INOUT std_logic; -- sensor I2C
 	
 	-- FTDI UART USB interface
 	UartRTSntoFPGAxDI : in  std_logic;
@@ -30,8 +32,14 @@ port (
 	UartFPGAtoFTDIxDO : out  std_logic;
 	UartFTDItoFPGAxDI : in std_logic;
 	
+	-- SPI Raspberry Pi 0 interface
+	SpiRPi0SCKxSI		: in std_logic;
+	SpiRPi0CSnxSI		: in std_logic;
+	SpiRPi0MISOxDO		: out std_logic;
+	SpiRPi0MOSIxDI		: in std_logic;
+	
 	-- Misc / Debug
-    DebugDataxDO    : OUT  std_logic_vector(11 downto 0);
+    DebugDataxDO    : OUT  std_logic_vector(3 downto 0);
 	LEDxSO : out std_logic_vector(13 downto 0)
 );
 end mira_test_top;
@@ -43,6 +51,9 @@ architecture architecture_mira_test_top of mira_test_top is
 	constant UART_CLK_DIV : integer := 8; -- Determines UART baud rate. 96 / 8 = 12 MBPS
 	constant N_CFG_REG_ADDR_BITS : integer := 4; -- determines number of available config registers
 	constant N_CMD_BYTES : integer := 2; -- number of bytes to read/write config register
+	constant N_COLS : integer := 1600; -- numer of columns in image. Mira config must match
+	constant N_LINES : integer := 480; -- numer of rows/lines in image. Mira config must match
+	constant IFACE_TYPE : string := "SPI"; -- Interface to Computer. Select UART or SPI.
 
 	signal ClkxC : std_logic;
 	signal PLLLockxS : std_logic;
@@ -71,9 +82,8 @@ architecture architecture_mira_test_top of mira_test_top is
 	signal InFramexS : std_logic;
 	signal InLinexS : std_logic;
 	
-	-- ## UART / Control logic related ##
-	signal UartFPGAtoFTDIxD : std_logic;
-	
+	-- ## UART / SPI / Control logic related ##
+
 	signal PDatOutTxRdyxS : std_logic;
 	signal PDatOutValidxS : std_logic;
 	signal PDatOutxD : std_logic_vector(7 downto 0);
@@ -87,6 +97,9 @@ architecture architecture_mira_test_top of mira_test_top is
 	signal ProcDatValidxS : std_logic;
 	signal RdyForProcDatxS : std_logic;
 	signal RunProcxS : std_logic;
+	signal ResetFIFOxS : std_logic;
+	
+	signal SpiRPi0MISOxD : std_logic;
 	
 	component main_pll is
     port(
@@ -163,10 +176,15 @@ begin
 				CfgStatexDN <= sIdle;
 		end case;
 		
-		-- Constant registers for information
+		-- Constant/read-only registers
+		CfgRegxDN(8)(2) <= CCISCLxSIO;
+		CfgRegxDN(8)(3) <= CCISDAxSIO;
 		CfgRegxDN(14) <= std_logic_vector(to_unsigned(BIT_DEPTH, 8));
 		CfgRegxDN(15) <= std_logic_vector(to_unsigned(FW_VER, 8));		
 	end process;
+	
+	CCISCLxSIO <= '0' when CfgRegxDP(8)(0) = '0' else 'Z'; 
+	CCISDAxSIO <= '0' when CfgRegxDP(8)(1) = '0' else 'Z'; 
 	
 	-- Configuration Register Map -- CfgReg
 	-- ( 0) - Status Bits: (0) Run Img Processing, (1) Trigger Raw Frame, (7) Reset FIFOs
@@ -176,9 +194,11 @@ begin
 	-- ( 4) - Spare
 	-- ( 5) - Raw Frame: Index of image slice to be acquired
 	-- ( 6) - Raw Frame: Number of frames to be summed
-	-- (7-13) - Spare
-	-- (14) - Bit Depth setting of this bitstream 
-	-- (15) - Firmware version
+	-- ( 7) - Spare
+	-- ( 8) - I2C: (0) SCL force, (1) SDA force, (2) SCL read, (3) SDA read
+	-- (9-13) - Spare
+	-- (14) - Bit Depth setting of this bitstream - read only
+	-- (15) - Firmware version - read only
 	
 	
 	-- this MUX selects which datastream is sent to the computer 
@@ -187,6 +207,7 @@ begin
 	
 		RunProcxS <= CfgRegxDP(0)(0);
 		FrameTrigxS <= CfgRegxDP(0)(1);
+		ResetFIFOxS <= CfgRegxDP(0)(7);
 		
 		RdyForCfgPDatxS <= '0';
 		RdyForProcDatxS <= '0';
@@ -236,18 +257,19 @@ begin
 	LEDxSO(12) <= not RunProcxS;
 	LEDxSO(13) <= not PLLLockxS ;
 	
-	DebugDataxDO(0) <= UartFPGAtoFTDIxD;
-	DebugDataxDO(1) <= UartFTDItoFPGAxDI;
-	DebugDataxDO(2) <= UartRTSntoFPGAxDI;
-	DebugDataxDO(3) <= InFramexS;
+	--DebugDataxDO(0) <= '0';--UartFPGAtoFTDIxD;
+	--DebugDataxDO(1) <= UartFTDItoFPGAxDI;
+	--DebugDataxDO(2) <= UartRTSntoFPGAxDI;
+	--DebugDataxDO(3) <= InFramexS;
 	--DebugDataxDO(4) <= FrameTrigxS;
 	--DebugDataxDO(5) <= UartParDatValidxS;
-	DebugDataxDO(11 downto 4) <= (others => '0');
+	--DebugDataxDO(11 downto 4) <= (others => '0');
 	
 	-- ## component instances ##
 	mipi_rx_inst : entity work.mipi_rx
 	generic map(
-		BIT_DEPTH => BIT_DEPTH
+		BIT_DEPTH => BIT_DEPTH,
+		N_COLS => N_COLS
 	)
 	port map(
 		ClkxCI => ClkxC,
@@ -265,7 +287,8 @@ begin
 	
 	process_image_inst : entity work.process_image
 	generic map(
-		BIT_DEPTH => BIT_DEPTH
+		BIT_DEPTH => BIT_DEPTH,
+		N_COLS => N_COLS
 	)
 	port map(
 		ClkxCI => ClkxC,
@@ -286,7 +309,9 @@ begin
 
 	frame_buf_inst : entity work.frame_buf
 	generic map(
-		BIT_DEPTH => BIT_DEPTH
+		BIT_DEPTH => BIT_DEPTH,
+		N_COLS => N_COLS,
+		N_LINES => N_LINES
 	)
     port map(
         ClkxCI          => ClkxC,
@@ -302,34 +327,72 @@ begin
         PDatValidxSO    => FrameDatValidxS
     );
 	
-    uart_tx_inst : entity work.uart_tx
-	generic map(
-		TX_CLK_DIV      => UART_CLK_DIV
-	)
-	port map(
-		ClkxCI 	 	    => ClkxC,
-		ResetxRI 	    => ResetxRI,
-		CTSnxSI		    => UartRTSntoFPGAxDI,
-		SerDatxDO 	    => UartFPGAtoFTDIxD,
-		UartRdyxSO      => PDatOutTxRdyxS,
-		ParDatValidxSI  => PDatOutValidxS,
-		ParDatxDI 	    => PDatOutxD
-	);
+	g_iface : if IFACE_TYPE = "UART" generate
+		uart_tx_inst : entity work.uart_tx
+		generic map(
+			TX_CLK_DIV      => UART_CLK_DIV
+		)
+		port map(
+			ClkxCI 	 	    => ClkxC,
+			ResetxRI 	    => ResetxRI,
+			CTSnxSI		    => UartRTSntoFPGAxDI,
+			SerDatxDO 	    => UartFPGAtoFTDIxDO,
+			UartRdyxSO      => PDatOutTxRdyxS,
+			ParDatValidxSI  => PDatOutValidxS,
+			ParDatxDI 	    => PDatOutxD
+		);
+		
+		uart_rx_inst : entity work.uart_rx
+		generic map(
+			RX_CLK_DIV	=> UART_CLK_DIV
+		)
+		port map(
+			ClkxCI 		=> ClkxC,
+			ResetxRI	=> ResetxRI,
+			SerDatxDI 	=> UartFTDItoFPGAxDI,
+			ParDatxDO 	=> CfgPDatInxD,
+			ParDatRdyxSO => CfgPDatInValidxS,
+			DebugxSO 	=> open
+		);
+		UartCTSntoFTDIxDO <= '0'; -- FPGA processes commands from PC nearly instantly, no flow control required.
+		
+		-- SPI interface disabled
+		SpiRPi0MISOxDO <= '0';
+		
+	elsif IFACE_TYPE = "SPI" generate
 	
-	uart_rx_inst : entity work.uart_rx
-	generic map(
-		RX_CLK_DIV	=> UART_CLK_DIV
-	)
-	port map(
-		ClkxCI 		=> ClkxC,
-		ResetxRI	=> ResetxRI,
-		SerDatxDI 	=> UartFTDItoFPGAxDI,
-		ParDatxDO 	=> CfgPDatInxD,
-		ParDatRdyxSO => CfgPDatInValidxS,
-		DebugxSO 	=> open
-	);
-	UartCTSntoFTDIxDO <= '0'; -- FPGA processes commands from PC nearly instantly, no flow control required.
-	UartFPGAtoFTDIxDO <= UartFPGAtoFTDIxD;
+		spi_rxtx : entity work.spi_rxtx_with_fifo
+		port map (
+			ClkxCI 	 		=> ClkxC,
+			ResetxRI 		=> ResetxRI,
+			ResetTxFIFOxSI 	=> ResetFIFOxS,
+			CSnxSI			=> SpiRPi0CSnxSI,
+			MISOxDO 		=> SpiRPi0MISOxD,
+			MOSIxDI			=> SpiRPi0MOSIxDI,
+			SCKxSI			=> SpiRPi0SCKxSI,
+			BuffFullxSO		=> open,
+			BuffEmptyxSO	=> PDatOutTxRdyxS,
+			ParDatRdyxSI 	=> PDatOutValidxS,
+			ParDatxDI 		=> PDatOutxD,
+			ParDatxDO		=> CfgPDatInxD,
+			ParDatRdyxSO 	=> CfgPDatInValidxS,
+			RxIndxSO		=> open,
+			TxIndxSO		=> open
+		);
+		
+		DebugDataxDO(0) <= SpiRPi0SCKxSI;
+		DebugDataxDO(1) <= SpiRPi0MOSIxDI;
+		DebugDataxDO(2) <= SpiRPi0MISOxD;
+		DebugDataxDO(3) <= SpiRPi0CSnxSI;
+		SpiRPi0MISOxDO <= SpiRPi0MISOxD;
+		
+		-- UART interface disabled
+		UartFPGAtoFTDIxDO <= '1';
+		UartCTSntoFTDIxDO <= '0';
+	
+	else generate
+		assert false report "Interface selection not supported." severity error;
+	end generate g_iface;
 	
 	main_pll_inst : main_pll port map(
 		clki_i => Clk48xCI,

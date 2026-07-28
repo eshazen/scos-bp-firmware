@@ -13,13 +13,13 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>1738</data>
+<data>1762</data>
 <report_link name="more">
 <data>C:\Users\Bernhard\my_designs\mira_test\impl_1\synlog\report\mira_test_impl_1_fpga_mapper_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>2713</data>
+<data>2766</data>
 <report_link name="more">
 <data>C:\Users\Bernhard\my_designs\mira_test\impl_1\synlog\report\mira_test_impl_1_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:29s</data>
+<data>0h:00m:30s</data>
 </info>
 <info name="Real Time">
 <data>0h:00m:30s</data>
 </info>
 <info name="Peak Memory">
-<data>425MB</data>
+<data>426MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1783458298</data>
+<data type="timestamp">1785123165</data>
 </info>
 </job_info>
 </job_run_status>

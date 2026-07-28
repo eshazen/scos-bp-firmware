@@ -46,6 +46,6 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-1</PortAdd>
-		<USBID>FT2232H MiniModule B Location 3122 Serial FT5X4HFTB</USBID>
+		<USBID>Lattice CrossLink-NX Eval Board B Location 2211432 Serial FT9ME96CB</USBID>
 	</CableOptions>
 </ispXCF>

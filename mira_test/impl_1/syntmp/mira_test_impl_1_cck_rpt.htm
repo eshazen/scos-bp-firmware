@@ -1,5 +1,5 @@
 <html><body><samp><pre>
-<!@TC:1783458227>
+<!@TC:1785123103>
 
 Copyright (C) 1994-2025 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -14,7 +14,7 @@ Hostname: ZBOOKNB
 
 Implementation : impl_1
 
-# Written on Tue Jul  7 14:04:27 2026
+# Written on Sun Jul 26 20:32:14 2026
 
 ##### DESIGN INFO #######################################################
 
@@ -41,7 +41,7 @@ Level     Clock                                                         Frequenc
 ------------------------------------------------------------------------------------------------------------------------------------------------
 0 -       Clk48xCI                                                      48.0 MHz      20.830        declared     default_clkgroup          0    
                                                                                                                                                 
-0 -       main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     2573 
+0 -       main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     2638 
 ================================================================================================================================================
 
 
@@ -53,7 +53,7 @@ Clock                                                         Load      Pin     
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Clk48xCI                                                      0         Clk48xCI(port)                                                      -                        -                 -            
                                                                                                                                                                                                     
-main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     2573      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     CfgFSMSRegxDP_0[7].C     -                 -            
+main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     2638      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     CfgFSMSRegxDP_0[7].C     -                 -            
 ====================================================================================================================================================================================================
 
 
@@ -64,9 +64,9 @@ Clock Relationships
 Starting                                                      Ending                                                        |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                                        System                                                        |     5.000            |     No paths         |     No paths         |     No paths                         
-System                                                        main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
-main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     System                                                        |     5.000            |     No paths         |     No paths         |     No paths                         
-main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                        main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     System                                                        |     5.000            |     No paths         |     No paths         |     No paths                         
+main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
 =======================================================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -75,18 +75,14 @@ main_pll_ipgen_lscc_pll_Z17_layer1|clkop_o_inferred_clock     main_pll_ipgen_lsc
 <a name=UnconstrainedStartEndPointsCCK44></a>Unconstrained Start/End Points</a>
 ******************************
 
+p:CCISCLxSIO (bidir end point)
+p:CCISCLxSIO (bidir start point)
+p:CCISDAxSIO (bidir end point)
+p:CCISDAxSIO (bidir start point)
 p:DebugDataxDO[0]
 p:DebugDataxDO[1]
 p:DebugDataxDO[2]
 p:DebugDataxDO[3]
-p:DebugDataxDO[4]
-p:DebugDataxDO[5]
-p:DebugDataxDO[6]
-p:DebugDataxDO[7]
-p:DebugDataxDO[8]
-p:DebugDataxDO[9]
-p:DebugDataxDO[10]
-p:DebugDataxDO[11]
 p:LEDxSO[0]
 p:LEDxSO[1]
 p:LEDxSO[2]
@@ -114,6 +110,10 @@ p:MipiRxP[0] (bidir start point)
 p:MipiRxP[1] (bidir end point)
 p:MipiRxP[1] (bidir start point)
 p:ResetxRI
+p:SpiRPi0CSnxSI
+p:SpiRPi0MISOxDO
+p:SpiRPi0MOSIxDI
+p:SpiRPi0SCKxSI
 p:UartCTSntoFTDIxDO
 p:UartFPGAtoFTDIxDO
 p:UartFTDItoFPGAxDI

@@ -6,6 +6,7 @@
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd'.
@@ -101,39 +102,40 @@
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd'.
 @N: CD231 :"C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Synthesizing work.mira_test_top.architecture_mira_test_top.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":59:23:59:24|Using onehot encoding for type cfgfsmstate_type. For example, enumeration sidle is mapped to "10000".
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":163:3:163:16|OTHERS clause is not synthesized.
-@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd":12:7:12:13|Synthesizing work.uart_rx.behavioral.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd":29:19:29:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000".
-@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":14:7:14:13|Synthesizing work.uart_tx.behavioral.
-@N: CD233 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":30:19:30:20|Using sequential encoding for type fsmstatetype.
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":134:3:134:16|OTHERS clause is not synthesized.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":70:23:70:24|Using onehot encoding for type cfgfsmstate_type. For example, enumeration sidle is mapped to "10000".
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":176:3:176:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":14:7:14:24|Synthesizing work.spi_rxtx_with_fifo.behavioral.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":46:19:46:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000000".
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":237:3:237:16|OTHERS clause is not synthesized.
 @N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":16:7:16:15|Synthesizing work.frame_buf.architecture_frame_buf.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":50:22:50:23|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000".
-@N: CD233 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":84:24:84:25|Using sequential encoding for type fifo_fsmstatetype.
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":265:12:265:25|OTHERS clause is not synthesized.
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":347:3:347:16|OTHERS clause is not synthesized.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":52:22:52:23|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000".
+@N: CD233 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":86:24:86:25|Using sequential encoding for type fifo_fsmstatetype.
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":267:12:267:25|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":349:3:349:16|OTHERS clause is not synthesized.
 @N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":15:7:15:19|Synthesizing work.process_image.architecture_process_image.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":41:19:41:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000000000".
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":190:3:190:16|OTHERS clause is not synthesized.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":42:19:42:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000000".
+@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":196:3:196:16|OTHERS clause is not synthesized.
 @N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":15:7:15:18|Synthesizing work.img_mean_std.architecture_img_mean_std.
 @N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":14:7:14:13|Synthesizing work.mipi_rx.architecture_mipi_rx.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":59:19:59:20|Using onehot encoding for type fsmstatetype. For example, enumeration swaitfssync is mapped to "100000000000".
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":126:2:126:3|Trying to extract state machine for register StatexDP.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Register bit PixValCombxDP(12) is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":88:2:88:3|Register bit PixValSqCombxDP(22) is always 0.
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":83:2:83:3|Trying to extract state machine for register StatexDP.
-@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":144:2:144:3|Found RAM FIFOMemxDP, depth=16, width=64
-@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":144:2:144:3|Found RAM MemxDP, depth=16000, width=64
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":113:2:113:3|Trying to extract state machine for register StatexDP.
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":77:2:77:3|Trying to extract state machine for register StatexDP.
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd":42:2:42:3|Trying to extract state machine for register StatexDP.
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":107:2:107:3|Trying to extract state machine for register CfgStatexDP.
+@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":60:19:60:20|Using onehot encoding for type fsmstatetype. For example, enumeration swaitfssync is mapped to "100000000000".
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":127:2:127:3|Trying to extract state machine for register StatexDP.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":89:2:89:3|Register bit PixValCombxDP(12) is always 0.
+@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":89:2:89:3|Register bit PixValSqCombxDP(22) is always 0.
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":84:2:84:3|Trying to extract state machine for register StatexDP.
+@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":146:2:146:3|Found RAM FIFOMemxDP, depth=16, width=64
+@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":146:2:146:3|Found RAM MemxDP, depth=16000, width=64
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":115:2:115:3|Trying to extract state machine for register StatexDP.
+@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Found RAM FIFOMemxDP, depth=8192, width=8
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Trying to extract state machine for register StatexDP.
+@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|Trying to extract state machine for register CfgStatexDP.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":30:1:30:17|Input UartRTSntoFPGAxDI is unused.
+@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":33:1:33:17|Input UartFTDItoFPGAxDI is unused.
 @N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
 @N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
 @N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
@@ -236,12 +238,6 @@
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2968:7:2968:52|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_hw_core in library work.
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":120:7:120:44|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo in library work.
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":11:81:11:102|Synthesizing module process_image_out_fifo in library work.
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":254:7:254:27|Synthesizing module lscc_fifo_fwft_fabric in library work.
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":411:7:411:20|Synthesizing module lscc_fifo_main in library work.
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":632:7:632:20|Synthesizing module lscc_hard_fifo in library work.
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2424:7:2424:23|Synthesizing module lscc_fifo_hw_core in library work.
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":57:7:57:15|Synthesizing module lscc_fifo in library work.
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v":49:7:49:14|Synthesizing module pmi_fifo in library work.
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":158:7:158:29|Synthesizing module main_pll_ipgen_lscc_pll in library work.
 @N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":10022:7:10022:9|Synthesizing module PLL in library work.
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":11:67:11:74|Synthesizing module main_pll in library work.
@@ -254,13 +250,6 @@
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":301:15:301:26|Input apb_pwrite_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":302:22:302:32|Input apb_paddr_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":303:22:303:33|Input apb_pwdata_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2452:29:2452:42|Input full_cascade_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":678:28:678:43|Input almost_full_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":679:28:679:47|Input almost_full_clr_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":680:28:680:44|Input almost_empty_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":681:28:681:48|Input almost_empty_clr_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":259:26:259:30|Input clk_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":260:26:260:30|Input rst_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2994:10:2994:23|Input full_cascade_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":679:32:679:47|Input almost_full_th_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":680:32:680:51|Input almost_full_clr_th_i is unused.
@@ -325,5 +314,4 @@
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":320:10:320:14|Input clk_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":321:10:321:14|Input rst_i is unused.
 @N|Running in 64-bit mode
-@N: NF117 :"c:\users\bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd":139:3:139:14|Number of passed parameters/generics from instance uart_tx_fifo does not match cell pmi_fifo_Z16_layer1 
 

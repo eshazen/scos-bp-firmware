@@ -59,6 +59,10 @@ INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst
 INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[5].intGnd undriven or does not drive anything - clipped
 INFO <35811146> - Signal mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[6].intGnd undriven or does not drive anything - clipped
 INFO <35811149> - ... More signals are undriven or does not drive anything - clipped
+INFO <35811145> - Instance CCISCLxSIO_pad.PIC_inst_out is optimized away.
+INFO <35811145> - Instance CCISCLxSIO_pad.PIC_inst_tristate is optimized away.
+INFO <35811145> - Instance CCISDAxSIO_pad.PIC_inst_out is optimized away.
+INFO <35811145> - Instance CCISDAxSIO_pad.PIC_inst_tristate is optimized away.
 Starting design annotation....
 WARNING <70001949> - The object mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTY in the option "-from" of constraint set_false_path -from [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTY}] -to [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTYI}] is not valid.
 WARNING <70001908> - set_false_path -from [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTY}] -to [get_pins {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst/EMPTYI}] is being ignored due to errors
@@ -71,7 +75,7 @@ Constraint Summary:
  
 Writing output file 'mira_test_impl_1_syn.udb'.
 POSTSYN finished successfully.
-Total CPU Time: 2 secs 
+Total CPU Time: 3 secs 
 Total REAL Time: 3 secs 
 Peak Memory Usage: 200 MB
-Checksum -- postsyn: e9421da37bc50bf7b7bd64db6610083ab48efa93
+Checksum -- postsyn: 2b89585af221a8a1a933cee3c5af17fbfc37f31c

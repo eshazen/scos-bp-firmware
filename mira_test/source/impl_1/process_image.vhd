@@ -14,7 +14,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity process_image is
 generic(
-	BIT_DEPTH	: integer := 12
+	BIT_DEPTH	: integer := 12;
+	N_COLS		: integer := 1600
 );
 port (
     ClkxCI          : in std_logic;
@@ -38,7 +39,7 @@ architecture architecture_process_image of process_image is
 
 	constant N_BYTES_PER_TILE : integer := 8; -- number of output bytes per tile
 
-	type fsmstatetype is (sIdle, sWaitInterFrame, sAcquire, sLoadSReg1, sLoadSReg2, sTxBytes, sPauseAcquire, sPauseLoadSReg1, sPauseLoadSReg2, sPauseTxBytes, sWaitIdle);
+	type fsmstatetype is (sIdle, sWaitInterFrame, sAcquire, sLoadSReg1, sLoadSReg2, sTxBytes, sPrePauseAcquire, sPauseAcquire, sPauseLoadSReg1, sPauseLoadSReg2, sPauseTxBytes, sWaitIdle);
 	signal StatexDP, StatexDN : fsmstatetype;
 	
 	signal ByteCntxDP, ByteCntxDN : integer range 0 to N_BYTES_PER_TILE-1;
@@ -123,8 +124,8 @@ begin
 				RunMSxS <= '1';
 				if RunxSI = '0' then
 					StatexDN <= sWaitIdle;
-				elsif (FIFOAlmostFullxS = '1' and FrameValidxSI = '0') then
-					StatexDN <= sPauseAcquire;
+				elsif FIFOAlmostFullxS = '1' then
+					StatexDN <= sPrePauseAcquire;
 				elsif FIFOEmptyxS = '0' then
 					FIFORdEnxS <= '1';
 					StatexDN <= sLoadSReg1;
@@ -151,7 +152,12 @@ begin
 					end if;
 					PDatValidxSO <= '1';
 				end if;	
-			
+				
+			when sPrePauseAcquire =>
+				RunMSxS <= '1';
+				if FrameValidxSI = '0' then
+					StatexDN <= sPauseAcquire;
+				end if;
 			when sPauseAcquire =>
 				if RunxSI = '0' then
 					StatexDN <= sWaitIdle;
@@ -194,7 +200,8 @@ begin
 
 	img_mean_std_inst : entity work.img_mean_std
 	generic map (
-		BIT_DEPTH		=> BIT_DEPTH
+		BIT_DEPTH		=> BIT_DEPTH,
+		N_COLS			=> N_COLS
 	)
 	port map (
 		ClkxCI          => ClkxCI,

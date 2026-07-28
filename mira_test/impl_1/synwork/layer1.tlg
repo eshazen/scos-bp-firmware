@@ -9,11 +9,11 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":477:7:477:49|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main in library work.
 
 	IMPLEMENTATION=24'b010001010100001001010010
-	WADDR_DEPTH=32'b00000000000000000000000010000000
-	WADDR_WIDTH=32'b00000000000000000000000000000111
+	WADDR_DEPTH=32'b00000000000000000000000001000000
+	WADDR_WIDTH=32'b00000000000000000000000000000110
 	WDATA_WIDTH=32'b00000000000000000000000000100010
-	RADDR_DEPTH=32'b00000000000000000000000010000000
-	RADDR_WIDTH=32'b00000000000000000000000000000111
+	RADDR_DEPTH=32'b00000000000000000000000001000000
+	RADDR_WIDTH=32'b00000000000000000000000000000110
 	RDATA_WIDTH=32'b00000000000000000000000000100010
 	REGMODE=40'b0000000000000000011100100110010101100111
 	OREG_IMPLEMENTATION=24'b010011000101010101010100
@@ -24,8 +24,8 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
 	INIT_MODE=32'b01101110011011110110111001100101
 	INIT_FILE_FORMAT=48'b011000100110100101101110011000010111001001111001
 	ALMOST_FULL_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000000001111111
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000000001111110
+	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000000000111111
+	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000000000111110
 	ALMOST_EMPTY_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
 	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000000000001
 	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000000000010
@@ -45,11 +45,11 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
 	IMPLEMENTATION=24'b010001010100001001010010
 	FAMILY=48'b000000000100110001001001010001100100001101001100
 	FAMILY_CODE=32'b00000000000000000000000000000001
-	WADDR_DEPTH=32'b00000000000000000000000010000000
-	WADDR_WIDTH=32'b00000000000000000000000000000111
+	WADDR_DEPTH=32'b00000000000000000000000001000000
+	WADDR_WIDTH=32'b00000000000000000000000000000110
 	WDATA_WIDTH=32'b00000000000000000000000000100010
-	RADDR_DEPTH=32'b00000000000000000000000010000000
-	RADDR_WIDTH=32'b00000000000000000000000000000111
+	RADDR_DEPTH=32'b00000000000000000000000001000000
+	RADDR_WIDTH=32'b00000000000000000000000000000110
 	RDATA_WIDTH=32'b00000000000000000000000000100010
 	REGMODE=40'b0000000000000000011100100110010101100111
 	OREG_IMPLEMENTATION=24'b010011000101010101010100
@@ -60,8 +60,8 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
 	INIT_MODE=32'b01101110011011110110111001100101
 	INIT_FILE_FORMAT=48'b011000100110100101101110011000010111001001111001
 	ALMOST_FULL_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000000001111111
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000000001111110
+	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000000000111111
+	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000000000111110
 	ALMOST_EMPTY_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
 	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000000000001
 	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000000000010
@@ -73,9 +73,9 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3159:7:3159:52|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core in library work.
 
 	FAMILY=48'b000000000100110001001001010001100100001101001100
-	WADDR_DEPTH=32'b00000000000000000000000010000000
+	WADDR_DEPTH=32'b00000000000000000000000001000000
 	WDATA_WIDTH=32'b00000000000000000000000000100100
-	RADDR_DEPTH=32'b00000000000000000000000010000000
+	RADDR_DEPTH=32'b00000000000000000000000001000000
 	RDATA_WIDTH=32'b00000000000000000000000000100100
 	REGMODE=40'b0000000000000000011100100110010101100111
 	OREG_IMPLEMENTATION=24'b010011000101010101010100
@@ -83,8 +83,8 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
 	ENABLE_ALMOST_FULL_FLAG=40'b0100011001000001010011000101001101000101
 	ENABLE_ALMOST_EMPTY_FLAG=40'b0100011001000001010011000101001101000101
 	ALMOST_FULL_ASSERTION=88'b0111001101110100011000010111010001101001011000110010110101100100011101010110000101101100
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000000001111111
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000000001111111
+	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000000000111111
+	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000000000111111
 	ALMOST_EMPTY_ASSERTION=88'b0111001101110100011000010111010001101001011000110010110101100100011101010110000101101100
 	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000000000001
 	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000000000001
@@ -97,7 +97,7 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
 Running optimization stage 1 on FIFO16K .......
 Finished optimization stage 1 on FIFO16K (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 208MB)
 Running optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1 .......
-Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1 (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 208MB)
+Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1 (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 209MB)
 @W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":783:40:783:48|Object wr_pong_r is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":784:40:784:48|Object rd_pong_r is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":785:40:785:52|Object wr_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
@@ -113,11 +113,11 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":130:7:130:44|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc in library work.
 
 	IMPLEMENTATION=24'b010001010100001001010010
-	WADDR_DEPTH=32'b00000000000000000000000010000000
-	WADDR_WIDTH=32'b00000000000000000000000000000111
+	WADDR_DEPTH=32'b00000000000000000000000001000000
+	WADDR_WIDTH=32'b00000000000000000000000000000110
 	WDATA_WIDTH=32'b00000000000000000000000000100010
-	RADDR_DEPTH=32'b00000000000000000000000010000000
-	RADDR_WIDTH=32'b00000000000000000000000000000111
+	RADDR_DEPTH=32'b00000000000000000000000001000000
+	RADDR_WIDTH=32'b00000000000000000000000000000110
 	RDATA_WIDTH=32'b00000000000000000000000000100010
 	REGMODE=24'b011100100110010101100111
 	OREG_IMPLEMENTATION=24'b010011000101010101010100
@@ -128,8 +128,8 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_
 	INIT_MODE=32'b01101110011011110110111001100101
 	INIT_FILE_FORMAT=48'b011000100110100101101110011000010111001001111001
 	ALMOST_FULL_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000000001111111
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000000001111110
+	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000000000111111
+	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000000000111110
 	ALMOST_EMPTY_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
 	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000000000001
 	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000000000010
@@ -345,12 +345,12 @@ Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s (C
 Running optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1 .......
 @W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":703:16:703:28|*Output lp_rx_clk_p_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":704:16:704:28|*Output lp_rx_clk_n_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
+Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 210MB)
 Running optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1 .......
-Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
+Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 210MB)
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":11:71:11:82|Synthesizing module mipi_dphy_rx in library work.
 Running optimization stage 1 on mipi_dphy_rx .......
-Finished optimization stage 1 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
+Finished optimization stage 1 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 210MB)
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":287:7:287:56|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric in library work.
 
 	REGMODE=24'b011100100110010101100111
@@ -362,16 +362,16 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fab
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":447:7:447:49|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_main in library work.
 
 	IMPLEMENTATION=24'b010001010100001001010010
-	ADDRESS_DEPTH=32'b00000000000000000001000000000000
-	ADDRESS_WIDTH=32'b00000000000000000000000000001100
+	ADDRESS_DEPTH=32'b00000000000000000001100000000000
+	ADDRESS_WIDTH=32'b00000000000000000000000000001101
 	DATA_WIDTH=32'b00000000000000000000000001000000
 	REGMODE=40'b0000000000000000011100100110010101100111
 	RESET_MODE=40'b0110000101110011011110010110111001100011
 	ENABLE_ALMOST_FULL_FLAG=32'b01010100010100100101010101000101
 	ENABLE_ALMOST_EMPTY_FLAG=32'b01010100010100100101010101000101
 	ALMOST_FULL_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000001100000000
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000001011111111
+	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000001011000000000
+	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000001010111111111
 	ALMOST_EMPTY_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
 	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000100000000
 	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000100000001
@@ -389,11 +389,11 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fab
 	IMPLEMENTATION=24'b010001010100001001010010
 	FAMILY=48'b000000000100110001001001010001100100001101001100
 	FAMILY_CODE=32'b00000000000000000000000000000001
-	WADDR_DEPTH=32'b00000000000000000001000000000000
-	WADDR_WIDTH=32'b00000000000000000000000000001100
+	WADDR_DEPTH=32'b00000000000000000001100000000000
+	WADDR_WIDTH=32'b00000000000000000000000000001101
 	WDATA_WIDTH=32'b00000000000000000000000001000000
-	RADDR_DEPTH=32'b00000000000000000001000000000000
-	RADDR_WIDTH=32'b00000000000000000000000000001100
+	RADDR_DEPTH=32'b00000000000000000001100000000000
+	RADDR_WIDTH=32'b00000000000000000000000000001101
 	RDATA_WIDTH=32'b00000000000000000000000001000000
 	REGMODE=40'b0000000000000000011100100110010101100111
 	RESETMODE=40'b0110000101110011011110010110111001100011
@@ -403,8 +403,8 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fab
 	INIT_MODE=32'b01101110011011110110111001100101
 	INIT_FILE_FORMAT=48'b011000100110100101101110011000010111001001111001
 	ALMOST_FULL_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000001100000000
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000001011111111
+	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000001011000000000
+	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000001010111111111
 	ALMOST_EMPTY_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
 	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000100000000
 	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000100000001
@@ -416,17 +416,17 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fab
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2968:7:2968:52|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_hw_core in library work.
 
 	FAMILY=48'b000000000100110001001001010001100100001101001100
-	WADDR_DEPTH=32'b00000000000000000001000000000000
+	WADDR_DEPTH=32'b00000000000000000001100000000000
 	WDATA_WIDTH=32'b00000000000000000000000000000010
-	RADDR_DEPTH=32'b00000000000000000001000000000000
+	RADDR_DEPTH=32'b00000000000000000001100000000000
 	RDATA_WIDTH=32'b00000000000000000000000000000010
 	REGMODE=40'b0000000000000000011100100110010101100111
 	RESETMODE=40'b0110000101110011011110010110111001100011
 	ENABLE_ALMOST_FULL_FLAG=32'b01010100010100100101010101000101
 	ENABLE_ALMOST_EMPTY_FLAG=32'b01010100010100100101010101000101
 	ALMOST_FULL_ASSERTION=88'b0111001101110100011000010111010001101001011000110010110101100100011101010110000101101100
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000001100000000
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000001100000000
+	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000001011000000000
+	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000001011000000000
 	ALMOST_EMPTY_ASSERTION=88'b0111001101110100011000010111010001101001011000110010110101100100011101010110000101101100
 	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000100000000
 	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000100000000
@@ -451,24 +451,24 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_
 Running optimization stage 1 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 .......
 @W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":691:27:691:39|*Output wr_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":692:27:692:39|*Output rd_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 211MB)
+Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
 @W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":488:29:488:38|Removing wire data_cnt_o, as there is no assignment to it.
 Running optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 .......
 @W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":488:29:488:38|*Output data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 211MB)
+Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":120:7:120:44|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo in library work.
 
 	IMPLEMENTATION=24'b010001010100001001010010
-	ADDRESS_DEPTH=32'b00000000000000000001000000000000
-	ADDRESS_WIDTH=32'b00000000000000000000000000001100
+	ADDRESS_DEPTH=32'b00000000000000000001100000000000
+	ADDRESS_WIDTH=32'b00000000000000000000000000001101
 	DATA_WIDTH=32'b00000000000000000000000001000000
 	REGMODE=24'b011100100110010101100111
 	RESET_MODE=40'b0110000101110011011110010110111001100011
 	ENABLE_ALMOST_FULL_FLAG=32'b01010100010100100101010101000101
 	ENABLE_ALMOST_EMPTY_FLAG=32'b01010100010100100101010101000101
 	ALMOST_FULL_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000001100000000
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000001011111111
+	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000001011000000000
+	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000001010111111111
 	ALMOST_EMPTY_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
 	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000100000000
 	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000100000001
@@ -481,166 +481,10 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_
 	T_REGMODE=40'b0000000000000000011100100110010101100111
    Generated name = process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1
 Running optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 .......
-Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 211MB)
+Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":11:81:11:102|Synthesizing module process_image_out_fifo in library work.
 Running optimization stage 1 on process_image_out_fifo .......
-Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 211MB)
-Could not match passed parameter, trying a case insensitive search ...
-Could not match passed parameter, trying a case insensitive search ...
-Could not match passed parameter, trying a case insensitive search ...
-Could not match passed parameter, trying a case insensitive search ...
-Could not match passed parameter, trying a case insensitive search ...
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":254:7:254:27|Synthesizing module lscc_fifo_fwft_fabric in library work.
-
-	REGMODE=40'b0110111001101111011100100110010101100111
-	FWFT=32'b00000000000000000000000000000000
-	DWID=32'b00000000000000000000000000001000
-   Generated name = lscc_fifo_fwft_fabric_noreg_0s_8s
-Running optimization stage 1 on lscc_fifo_fwft_fabric_noreg_0s_8s .......
-Finished optimization stage 1 on lscc_fifo_fwft_fabric_noreg_0s_8s (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 211MB)
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":411:7:411:20|Synthesizing module lscc_fifo_main in library work.
-
-	IMPLEMENTATION=56'b00000000000000000000000000000000010001010100001001010010
-	ADDRESS_DEPTH=32'b00000000000000000000011111111111
-	ADDRESS_WIDTH=32'b00000000000000000000000000001011
-	DATA_WIDTH=32'b00000000000000000000000000001000
-	REGMODE=40'b0110111001101111011100100110010101100111
-	RESET_MODE=40'b0110000101110011011110010110111001100011
-	ENABLE_ALMOST_FULL_FLAG=32'b01010100010100100101010101000101
-	ENABLE_ALMOST_EMPTY_FLAG=32'b01010100010100100101010101000101
-	ALMOST_FULL_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000011111010000
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000011111010000
-	ALMOST_EMPTY_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000000000000
-	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000000000000
-	ENABLE_DATA_COUNT=40'b0100011001000001010011000101001101000101
-	FAMILY=48'b000000000100110001001001010001100100001101001100
-	FIFO_CONTROLLER=56'b01001000010000010101001001000100010111110100100101010000
-	FORCE_FAST_CONTROLLER=32'b00000000000000000000000000000000
-   Generated name = lscc_fifo_main_Z12_layer1
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":632:7:632:20|Synthesizing module lscc_hard_fifo in library work.
-
-	_FCODE_LIFCL_=32'b00000000000000000000000000000001
-	_FCODE_ICE_=32'b00000000000000000000000000000010
-	_FCODE_AP6_=32'b00000000000000000000000000000011
-	_FCODE_COMMON_=32'b00000000000000000000000000000000
-	IMPLEMENTATION=56'b00000000000000000000000000000000010001010100001001010010
-	FAMILY=48'b000000000100110001001001010001100100001101001100
-	FAMILY_CODE=32'b00000000000000000000000000000001
-	WADDR_DEPTH=32'b00000000000000000000011111111111
-	WADDR_WIDTH=32'b00000000000000000000000000001011
-	WDATA_WIDTH=32'b00000000000000000000000000001000
-	RADDR_DEPTH=32'b00000000000000000000011111111111
-	RADDR_WIDTH=32'b00000000000000000000000000001011
-	RDATA_WIDTH=32'b00000000000000000000000000001000
-	REGMODE=40'b0110111001101111011100100110010101100111
-	RESETMODE=40'b0110000101110011011110010110111001100011
-	ENABLE_ALMOST_FULL_FLAG=32'b01010100010100100101010101000101
-	ENABLE_ALMOST_EMPTY_FLAG=32'b01010100010100100101010101000101
-	INIT_FILE=32'b01101110011011110110111001100101
-	INIT_MODE=32'b01101110011011110110111001100101
-	INIT_FILE_FORMAT=48'b011000100110100101101110011000010111001001111001
-	ALMOST_FULL_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000011111010000
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000011111010000
-	ALMOST_EMPTY_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000000000000
-	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000000000000
-	ECC_ENABLE=32'b00000000000000000000000000000000
-	ENABLE_DATA_COUNT_WR=40'b0100011001000001010011000101001101000101
-	ENABLE_DATA_COUNT_RD=40'b0100011001000001010011000101001101000101
-	FORCE_FAST_CONTROLLER=32'b00000000000000000000000000000000
-   Generated name = lscc_hard_fifo_Z13_layer1
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2424:7:2424:23|Synthesizing module lscc_fifo_hw_core in library work.
-
-	FAMILY=48'b000000000100110001001001010001100100001101001100
-	WADDR_DEPTH=32'b00000000000000000000011111111111
-	WDATA_WIDTH=32'b00000000000000000000000000001001
-	RADDR_DEPTH=32'b00000000000000000000011111111111
-	RDATA_WIDTH=32'b00000000000000000000000000001001
-	REGMODE=40'b0110111001101111011100100110010101100111
-	RESETMODE=40'b0110000101110011011110010110111001100011
-	ENABLE_ALMOST_FULL_FLAG=32'b01010100010100100101010101000101
-	ENABLE_ALMOST_EMPTY_FLAG=32'b01010100010100100101010101000101
-	ALMOST_FULL_ASSERTION=88'b0111001101110100011000010111010001101001011000110010110101100100011101010110000101101100
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000011111010000
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000011111010000
-	ALMOST_EMPTY_ASSERTION=88'b0111001101110100011000010111010001101001011000110010110101100100011101010110000101101100
-	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000000000000
-	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000000000000
-	ENABLE_DATA_COUNT_WR=40'b0100011001000001010011000101001101000101
-	ENABLE_DATA_COUNT_RD=40'b0100011001000001010011000101001101000101
-	ECC_ENABLE=32'b00000000000000000000000000000000
-	IS_CASCADE=1'b0
-   Generated name = lscc_fifo_hw_core_Z14_layer1
-@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2526:8:2526:14|Object empty_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2527:8:2527:18|Object empty_out_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2528:8:2528:19|Object aempty_out_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2529:8:2529:17|Object pre_read_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2530:8:2530:16|Object rd_en_p_r is declared but not assigned. Either assign a value or remove the declaration.
-Running optimization stage 1 on lscc_fifo_hw_core_Z14_layer1 .......
-Finished optimization stage 1 on lscc_fifo_hw_core_Z14_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
-@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":715:28:715:36|Object wr_pong_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":716:28:716:36|Object rd_pong_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":718:28:718:40|Object wr_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":719:28:719:40|Object rd_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":693:27:693:39|Removing wire wr_data_cnt_o, as there is no assignment to it.
-@W: CG360 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":694:27:694:39|Removing wire rd_data_cnt_o, as there is no assignment to it.
-Running optimization stage 1 on lscc_hard_fifo_Z13_layer1 .......
-@W: CL318 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":693:27:693:39|*Output wr_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":694:27:694:39|*Output rd_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on lscc_hard_fifo_Z13_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
-@W: CG360 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":459:29:459:38|Removing wire data_cnt_o, as there is no assignment to it.
-Running optimization stage 1 on lscc_fifo_main_Z12_layer1 .......
-@W: CL318 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":459:29:459:38|*Output data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on lscc_fifo_main_Z12_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":57:7:57:15|Synthesizing module lscc_fifo in library work.
-
-	IMPLEMENTATION=56'b00000000000000000000000000000000010001010100001001010010
-	ADDRESS_DEPTH=32'b00000000000000000000011111111111
-	ADDRESS_WIDTH=32'b00000000000000000000000000001011
-	DATA_WIDTH=32'b00000000000000000000000000001000
-	REGMODE=40'b0110111001101111011100100110010101100111
-	RESET_MODE=40'b0110000101110011011110010110111001100011
-	ENABLE_ALMOST_FULL_FLAG=32'b01010100010100100101010101000101
-	ENABLE_ALMOST_EMPTY_FLAG=32'b01010100010100100101010101000101
-	ALMOST_FULL_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_FULL_ASSERT_LVL=32'b00000000000000000000011111010000
-	ALMOST_FULL_DEASSERT_LVL=32'b00000000000000000000011111010000
-	ALMOST_EMPTY_ASSERTION=104'b01110011011101000110000101110100011010010110001100101101011100110110100101101110011001110110110001100101
-	ALMOST_EMPTY_ASSERT_LVL=32'b00000000000000000000000000000000
-	ALMOST_EMPTY_DEASSERT_LVL=32'b00000000000000000000000000000000
-	ENABLE_DATA_COUNT=40'b0100011001000001010011000101001101000101
-	FAMILY=40'b0100110001001001010001100100001101001100
-	FIFO_CONTROLLER=56'b01001000010000010101001001000100010111110100100101010000
-	FORCE_FAST_CONTROLLER=32'b00000000000000000000000000000000
-	FWFT=32'b00000000000000000000000000000000
-	T_FAMILY=48'b000000000100110001001001010001100100001101001100
-	T_REGMODE=40'b0110111001101111011100100110010101100111
-   Generated name = lscc_fifo_Z15_layer1
-Running optimization stage 1 on lscc_fifo_Z15_layer1 .......
-Finished optimization stage 1 on lscc_fifo_Z15_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
-@N: CG364 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v":49:7:49:14|Synthesizing module pmi_fifo in library work.
-
-	pmi_data_width=32'b00000000000000000000000000001000
-	pmi_data_depth=32'b00000000000000000000011111111111
-	pmi_full_flag=32'b00000000000000000000000100000000
-	pmi_empty_flag=32'b00000000000000000000000000000000
-	pmi_almost_full_flag=32'b00000000000000000000011111010000
-	pmi_almost_empty_flag=32'b00000000000000000000000000000000
-	pmi_regmode=40'b0110111001101111011100100110010101100111
-	pmi_family=40'b0100110001001001010001100100001101001100
-	pmi_implementation=56'b01001000010000010101001001000100010111110100100101010000
-	pmi_fwft=56'b01100100011010010111001101100001011000100110110001100101
-	module_type=64'b0111000001101101011010010101111101100110011010010110011001101111
-	T_IMPL=56'b00000000000000000000000000000000010001010100001001010010
-	T_CTRL=56'b01001000010000010101001001000100010111110100100101010000
-	T_FWFT=32'b00000000000000000000000000000000
-	adrw=32'b00000000000000000000000000001011
-   Generated name = pmi_fifo_Z16_layer1
-Running optimization stage 1 on pmi_fifo_Z16_layer1 .......
-Finished optimization stage 1 on pmi_fifo_Z16_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
+Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":158:7:158:29|Synthesizing module main_pll_ipgen_lscc_pll in library work.
 
 	FVCO=88'b0011000100110101001100110011011000101110001100000011000000110000001100000011000000110000
@@ -794,7 +638,7 @@ Finished optimization stage 1 on pmi_fifo_Z16_layer1 (CPU Time 0h:00m:00s, Memor
 	IPI_CMPN=48'b001100000110001000110000001100000011000100110001
 	FBK_CLK_DIV_O=32'b00000000000000000000000000001111
 	DIV_DEL=72'b001100000110001000110000001100000011000000110001001100010011000100110001
-   Generated name = main_pll_ipgen_lscc_pll_Z17_layer1
+   Generated name = main_pll_ipgen_lscc_pll_Z12_layer1
 @N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":10022:7:10022:9|Synthesizing module PLL in library work.
 Running optimization stage 1 on PLL .......
 Finished optimization stage 1 on PLL (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
@@ -807,20 +651,20 @@ Finished optimization stage 1 on PLL (CPU Time 0h:00m:00s, Memory Used current: 
 @W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":631:15:631:30|Removing wire apb_lmmi_wdata_w, as there is no assignment to it.
 @W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":632:15:632:30|Removing wire apb_lmmi_rdata_w, as there is no assignment to it.
 @W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":633:9:633:25|Removing wire apb_lmmi_wr_rdn_w, as there is no assignment to it.
-Running optimization stage 1 on main_pll_ipgen_lscc_pll_Z17_layer1 .......
+Running optimization stage 1 on main_pll_ipgen_lscc_pll_Z12_layer1 .......
 @W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":285:16:285:24|*Output refdetlos has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":304:16:304:27|*Output apb_pready_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":305:16:305:28|*Output apb_pslverr_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":306:23:306:34|*Output apb_prdata_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on main_pll_ipgen_lscc_pll_Z17_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
+Finished optimization stage 1 on main_pll_ipgen_lscc_pll_Z12_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
 @N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":11:67:11:74|Synthesizing module main_pll in library work.
 Running optimization stage 1 on main_pll .......
 Finished optimization stage 1 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
 Running optimization stage 2 on main_pll .......
-Finished optimization stage 2 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on PLL .......
-Finished optimization stage 2 on PLL (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
-Running optimization stage 2 on main_pll_ipgen_lscc_pll_Z17_layer1 .......
+Finished optimization stage 2 on PLL (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+Running optimization stage 2 on main_pll_ipgen_lscc_pll_Z12_layer1 .......
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":260:10:260:20|Input usr_fbclk_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":284:10:284:20|Input refdetreset is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":297:10:297:19|Input apb_pclk_i is unused.
@@ -830,47 +674,28 @@ Running optimization stage 2 on main_pll_ipgen_lscc_pll_Z17_layer1 .......
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":301:15:301:26|Input apb_pwrite_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":302:22:302:32|Input apb_paddr_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":303:22:303:33|Input apb_pwdata_i is unused.
-Finished optimization stage 2 on main_pll_ipgen_lscc_pll_Z17_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
-Running optimization stage 2 on pmi_fifo_Z16_layer1 .......
-Finished optimization stage 2 on pmi_fifo_Z16_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
-Running optimization stage 2 on lscc_fifo_Z15_layer1 .......
-Finished optimization stage 2 on lscc_fifo_Z15_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
-Running optimization stage 2 on lscc_fifo_hw_core_Z14_layer1 .......
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":2452:29:2452:42|Input full_cascade_i is unused.
-Finished optimization stage 2 on lscc_fifo_hw_core_Z14_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
-Running optimization stage 2 on lscc_hard_fifo_Z13_layer1 .......
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":678:28:678:43|Input almost_full_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":679:28:679:47|Input almost_full_clr_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":680:28:680:44|Input almost_empty_th_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":681:28:681:48|Input almost_empty_clr_th_i is unused.
-Finished optimization stage 2 on lscc_hard_fifo_Z13_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
-Running optimization stage 2 on lscc_fifo_main_Z12_layer1 .......
-Finished optimization stage 2 on lscc_fifo_main_Z12_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
-Running optimization stage 2 on lscc_fifo_fwft_fabric_noreg_0s_8s .......
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":259:26:259:30|Input clk_i is unused.
-@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":260:26:260:30|Input rst_i is unused.
-Finished optimization stage 2 on lscc_fifo_fwft_fabric_noreg_0s_8s (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on main_pll_ipgen_lscc_pll_Z12_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo .......
-Finished optimization stage 2 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 .......
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1 .......
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2994:10:2994:23|Input full_cascade_i is unused.
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 .......
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":679:32:679:47|Input almost_full_th_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":680:32:680:51|Input almost_full_clr_th_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":681:32:681:48|Input almost_empty_th_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":682:32:682:52|Input almost_empty_clr_th_i is unused.
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 .......
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s .......
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":290:10:290:14|Input clk_i is unused.
 @N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":291:10:291:14|Input rst_i is unused.
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on mipi_dphy_rx .......
-Finished optimization stage 2 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s .......
 @W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Pruning register bit 31 of count[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[30] is always 0.

@@ -21,15 +21,16 @@ Synopsys VHDL Compiler, Version comp202503synp2, Build 178R, Built Nov 11 2025 0
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/spi_rxtx_with_fifo.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd'.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 152MB peak: 153MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 154MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Jul  7 14:03:47 2026
+# Sun Jul 26 20:31:43 2026
 
 ###########################################################]

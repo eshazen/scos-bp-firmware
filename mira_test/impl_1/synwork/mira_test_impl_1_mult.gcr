@@ -1,97 +1,95 @@
 i main_pll_inst.lscc_pll_inst.clkop_o
 m 0 0
-u 216 2447
-n ckid0_0 {t:uart_rx_inst.StatexDP[0].C} Clock Optimization not enabled
-p {p:uart_rx_inst.ClkxCI}{t:uart_rx_inst.StatexDP[0].C}
-e ckid0_0 {t:uart_rx_inst.StatexDP[0].C} dffr
-p {p:uart_tx_inst.ClkxCI}{t:uart_tx_inst.StatexDP[1].C}
-e ckid0_1 {t:uart_tx_inst.StatexDP[1].C} dffr
+u 225 2505
+n ckid0_0 {t:g_iface\.spi_rxtx.StatexDP[0].C} Clock Optimization not enabled
+p {p:g_iface\.spi_rxtx.ClkxCI}{t:g_iface\.spi_rxtx.StatexDP[0].C}
+e ckid0_0 {t:g_iface\.spi_rxtx.StatexDP[0].C} dffr
 p {p:frame_buf_inst.ClkxCI}{t:frame_buf_inst.StatexDP[0].C}
-e ckid0_2 {t:frame_buf_inst.StatexDP[0].C} dffs
+e ckid0_1 {t:frame_buf_inst.StatexDP[0].C} dffs
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[27\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[27\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_3 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[27\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_2 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[27\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[29\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[29\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_4 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[29\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_3 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[29\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[28\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[28\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_5 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[28\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_4 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[28\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[15\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[15\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_6 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[15\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_5 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[15\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[20\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[20\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_7 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[20\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_6 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[20\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[25\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[25\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_8 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[25\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_7 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[25\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[17\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[17\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_9 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[17\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_8 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[17\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[22\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[22\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_10 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[22\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_9 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[22\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[14\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[14\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_11 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[14\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_10 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[14\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[19\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[19\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_12 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[19\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_11 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[19\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[24\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[24\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_13 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[24\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_12 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[24\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[16\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[16\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_14 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[16\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_13 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[16\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[21\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[21\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_15 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[21\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_14 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[21\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[26\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[26\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_16 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[26\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_15 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[26\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[31\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[31\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_17 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[31\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_16 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[31\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[30\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[30\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_18 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[30\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_17 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[30\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[10\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[10\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_19 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[10\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_18 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[10\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[13\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[13\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_20 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[13\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_19 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[13\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[18\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[18\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_21 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[18\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_20 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[18\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[12\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[12\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_22 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[12\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_21 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[12\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[4\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[4\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_23 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[4\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_22 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[4\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[9\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[9\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_24 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[9\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_23 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[9\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[1\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[1\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_25 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[1\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_24 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[1\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[6\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[6\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_26 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[6\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_25 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[6\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[11\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[11\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_27 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[11\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_26 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[11\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[3\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[3\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_28 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[3\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_27 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[3\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[8\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[8\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_29 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[8\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_28 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[8\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[2\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[2\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_30 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[2\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_29 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[2\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[7\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[7\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_31 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[7\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_30 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[7\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[23\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[23\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_32 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[23\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_31 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[23\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_33 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_32 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[5\]\.u_fifo.rd_clk_i}{t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[5\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C}
-e ckid0_34 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[5\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
+e ckid0_33 {t:process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[5\]\.u_fifo._LIFCL\._REG\.do_r[1:0].C} dffr
 p {p:process_image_inst.img_mean_std_inst.ClkxCI}{t:process_image_inst.img_mean_std_inst.RdAddrxDP[4:0].C}
-e ckid0_35 {t:process_image_inst.img_mean_std_inst.RdAddrxDP[4:0].C} dffr
+e ckid0_34 {t:process_image_inst.img_mean_std_inst.RdAddrxDP[4:0].C} dffr
 p {p:process_image_inst.ClkxCI}{t:process_image_inst.StatexDP[0].C}
-e ckid0_36 {t:process_image_inst.StatexDP[0].C} dffr
+e ckid0_35 {t:process_image_inst.StatexDP[0].C} dffr
 p {p:mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.clk_i}{t:mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.count[2:0].C}
-e ckid0_37 {t:mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.count[2:0].C} sdffr
+e ckid0_36 {t:mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.count[2:0].C} sdffr
 p {p:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo.rd_clk_i}{t:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.genblk2\.empty_r.C}
-e ckid0_38 {t:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.genblk2\.empty_r.C} dffs
+e ckid0_37 {t:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.genblk2\.empty_r.C} dffs
 p {p:mipi_rx_inst.ClkxCI}{t:mipi_rx_inst.StatexDP[0].C}
-e ckid0_39 {t:mipi_rx_inst.StatexDP[0].C} dffr
+e ckid0_38 {t:mipi_rx_inst.StatexDP[0].C} dffr
 p {p:main_pll_inst.clkop_o}{t:main_pll_inst.clkop_o}{t:CfgStatexDP[0].C}
-e ckid0_40 {t:CfgStatexDP[0].C} dffr
-d ckid0_0,ckid0_1,ckid0_2,ckid0_3,ckid0_4,ckid0_5,ckid0_6,ckid0_7,ckid0_8,ckid0_9,ckid0_10,ckid0_11,ckid0_12,ckid0_13,ckid0_14,ckid0_15,ckid0_16,ckid0_17,ckid0_18,ckid0_19,ckid0_20,ckid0_21,ckid0_22,ckid0_23,ckid0_24,ckid0_25,ckid0_26,ckid0_27,ckid0_28,ckid0_29,ckid0_30,ckid0_31,ckid0_32,ckid0_33,ckid0_34,ckid0_35,ckid0_36,ckid0_37,ckid0_38,ckid0_39,ckid0_40 {t:main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP} PLL Clock Optimization not enabled
+e ckid0_39 {t:CfgStatexDP[0].C} dffr
+d ckid0_0,ckid0_1,ckid0_2,ckid0_3,ckid0_4,ckid0_5,ckid0_6,ckid0_7,ckid0_8,ckid0_9,ckid0_10,ckid0_11,ckid0_12,ckid0_13,ckid0_14,ckid0_15,ckid0_16,ckid0_17,ckid0_18,ckid0_19,ckid0_20,ckid0_21,ckid0_22,ckid0_23,ckid0_24,ckid0_25,ckid0_26,ckid0_27,ckid0_28,ckid0_29,ckid0_30,ckid0_31,ckid0_32,ckid0_33,ckid0_34,ckid0_35,ckid0_36,ckid0_37,ckid0_38,ckid0_39 {t:main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP} PLL Clock Optimization not enabled
 i mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER®lscc_mipi_wrapper_rx.clk_byte_o
 m 0 0
 u 1 1
-n ckid0_41 {t:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.full_r.C} Clock Optimization not enabled
+n ckid0_40 {t:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.full_r.C} Clock Optimization not enabled
 p {p:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo.wr_clk_i}{t:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.full_r.C}
-e ckid0_41 {t:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.full_r.C} dffs
-d ckid0_41 {t:mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_dphy_cil.URWDCKHS} DPHY_Z7_layer1 Clock Optimization not enabled
+e ckid0_40 {t:mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.full_r.C} dffs
+d ckid0_40 {t:mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_dphy_cil.URWDCKHS} DPHY_Z7_layer1 Clock Optimization not enabled
 i Clk48xCI
 m 0 0
 u 0 0

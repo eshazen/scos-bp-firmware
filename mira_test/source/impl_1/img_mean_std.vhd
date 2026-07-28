@@ -14,7 +14,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity img_mean_std is
 generic(
-	BIT_DEPTH	: integer := 12
+	BIT_DEPTH	: integer := 12;
+	N_COLS		: integer := 1600
 );
 port (
     ClkxCI          : in std_logic;
@@ -35,7 +36,7 @@ architecture architecture_img_mean_std of img_mean_std is
     constant N_PIX_PER_CLK : integer := 4;
 	constant TILE_SIZE_X : integer := 64 / N_PIX_PER_CLK;
     constant TILE_SIZE_Y : integer := 60;
-    constant N_TILES_X : integer := 1600 /TILE_SIZE_X/N_PIX_PER_CLK;
+    constant N_TILES_X : integer := N_COLS / TILE_SIZE_X / N_PIX_PER_CLK;
 	constant N_BITS_SUM : integer := BIT_DEPTH + 12; -- ceil(log2(64*60)) = 12
 	constant N_BITS_SUM_SQ : integer := BIT_DEPTH*2 + 12;
 

@@ -15,6 +15,7 @@ add_file -vhdl -lib work "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/m
 add_file -vhdl -lib work "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd"
 add_file -vhdl -lib work "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd"
 add_file -vhdl -lib work "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd"
+add_file -vhdl -lib work "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/spi_rxtx_with_fifo.vhd"
 add_file -vhdl -lib work "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd"
 add_file -vhdl -lib work "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd"
 add_file -vhdl -lib work "C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd"

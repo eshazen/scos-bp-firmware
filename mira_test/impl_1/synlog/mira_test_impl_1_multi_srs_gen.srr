@@ -17,11 +17,11 @@ Synopsys Synopsys Netlist Linker, Version comp202503synp2, Build 178R, Built Nov
 @N|Running in 64-bit mode
 File C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\mira_test_impl_1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 161MB peak: 162MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 160MB peak: 161MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Jul  7 14:04:24 2026
+# Sun Jul 26 20:32:11 2026
 
 ###########################################################]

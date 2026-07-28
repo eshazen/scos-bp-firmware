@@ -13,7 +13,8 @@ use IEEE.std_logic_1164.all;
 
 entity mipi_rx is
 generic (
-	BIT_DEPTH  : integer := 12
+	BIT_DEPTH  : integer := 12;
+	N_COLS	   : integer := 1600
 );
 port (
 	ClkxCI   : IN  std_logic;
@@ -32,7 +33,7 @@ end mipi_rx;
 
 architecture architecture_mipi_rx of mipi_rx is
 	
-	constant N_LINE_BYTES : integer := 1600/4 * BIT_DEPTH/8;
+	constant N_LINE_BYTES : integer := N_COLS/4 * BIT_DEPTH/8;
 	
 	-- D-PHY reset / start up signals
     signal DPhyPDxSP, DPhyPDxSN : std_logic;
@@ -49,11 +50,11 @@ architecture architecture_mipi_rx of mipi_rx is
 	signal DPhyReadyxS : std_logic;
 	
 	-- cross-clock FIFO signals
-	signal FifoPDatxD : std_logic_vector(31 downto 0);
-	signal FifoSyncxS : std_logic_vector(1 downto 0);
+	signal FifoPDatxDP, FifoPDatxDN : std_logic_vector(31 downto 0);
+	signal FifoSyncxSP, FifoSyncxSN : std_logic_vector(1 downto 0);
 	signal FifoEmptyxS, FifoFullxS : std_logic;
 	signal FifoWrEnxS, FifoRdEnxS : std_logic;
-	signal FifoValidxSP, FifoValidxSN : std_logic_vector(1 downto 0);
+	signal FifoValidxSP, FifoValidxSN : std_logic_vector(2 downto 0);
 	
 	-- MIPI CSI decoder signals
 	type fsmstatetype is (sWaitFSSync, sFSDI, sWaitLSSync, sLSDI, sWaitLData, sReadLDataFirst, sReadLData0, sReadLData1, sReadLData2, sReadLData3, sReadLData4, sReadLDataLast);
@@ -143,6 +144,8 @@ begin
 		if (rising_edge(ClkxCI)) then
 			PixDataxDP <= PixDataxDN;
 			PixDataPrexDP <= PixDataPrexDN;
+			FifoPDatxDP <= FifoPDatxDN;
+			FifoSyncxSP <= FifoSyncxSN;
 		end if;
 	end process;
 
@@ -160,12 +163,12 @@ begin
 			-- if new word available in cross clock FIFO, read it
 			if FifoEmptyxS = '1' then
 				FifoRdEnxS <= '0';
-				FifoValidxSN(1) <= '0';
+				FifoValidxSN(FifoValidxSN'high) <= '0';
 			else
 				FifoRdEnxS <= '1';
-				FifoValidxSN(1) <= '1';
+				FifoValidxSN(FifoValidxSN'high) <= '1';
 			end if;
-			FifoValidxSN(0) <= FifoValidxSP(1);
+			FifoValidxSN(FifoValidxSN'high-1 downto 0) <= FifoValidxSP(FifoValidxSN'high downto 1);
 			
 			-- decoder state machine
 			StatexDN <= StatexDP;
@@ -178,26 +181,26 @@ begin
 			InFramexSO <= '0';
 			case StatexDP is
 				when sWaitFSSync => -- wait for frame start sync
-					if FifoValidxSP(0) = '1' and FifoSyncxS = "11" then -- TBD: what happens if lanes are out of sync??
+					if FifoValidxSP(0) = '1' and FifoSyncxSP = "11" then -- TBD: what happens if lanes are out of sync??
 						StatexDN <= sFSDI;
 					end if;
 				when sFSDI => -- check frame start data identifier
-					if FifoValidxSP(0) = '1' and FifoPDatxD(7 downto 0) = x"00" then
+					if FifoValidxSP(0) = '1' and FifoPDatxDP(7 downto 0) = x"00" then
 						StatexDN <= sWaitLSSync;
 					elsif FifoValidxSP(0) = '1' then -- unexpected data identifier
 						StatexDN <= sWaitFSSync; 
 					end if;
 				when sWaitLSSync => -- wait for line start sync
 					InFramexSO <= '1';
-					if FifoValidxSP(0) = '1' and FifoSyncxS = "11" then
+					if FifoValidxSP(0) = '1' and FifoSyncxSP = "11" then
 						StatexDN <= sLSDI;
 					end if;
 				when sLSDI => -- check line start data identifier
 					InFramexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						if FifoPDatxD(7 downto 0) = x"2A" then -- correct data identifier 0x2A == RAW8, 0x2B == RAW10, 0x2C == RAW12
+						if FifoPDatxDP(7 downto 0) = x"2A" then -- correct data identifier 0x2A == RAW8, 0x2B == RAW10, 0x2C == RAW12
 							StatexDN <= sReadLDataFirst;
-						elsif FifoPDatxD(7 downto 0) = x"01" then -- frame end data identifier
+						elsif FifoPDatxDP(7 downto 0) = x"01" then -- frame end data identifier
 							StatexDN <= sWaitFSSync;
 						else -- unexpected data identifier
 							StatexDN <= sWaitFSSync;
@@ -209,10 +212,10 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN( 7 downto  0) <= FifoPDatxD( 7 downto  0);-- 1st pixel
-						PixDataxDN(15 downto  8) <= FifoPDatxD(23 downto 16);-- 2nd pixel
-						PixDataxDN(23 downto 16) <= FifoPDatxD(15 downto  8);-- 3rd pixel
-						PixDataxDN(31 downto 24) <= FifoPDatxD(31 downto 24);-- 4th pixel
+						PixDataxDN( 7 downto  0) <= FifoPDatxDP( 7 downto  0);-- 1st pixel
+						PixDataxDN(15 downto  8) <= FifoPDatxDP(23 downto 16);-- 2nd pixel
+						PixDataxDN(23 downto 16) <= FifoPDatxDP(15 downto  8);-- 3rd pixel
+						PixDataxDN(31 downto 24) <= FifoPDatxDP(31 downto 24);-- 4th pixel
 						ByteCntxDN <= ByteCntxDP - 1;
 						StatexDN <= sReadLData0;
 					end if;
@@ -221,10 +224,10 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN( 7 downto  0) <= FifoPDatxD( 7 downto  0);-- 1st pixel
-						PixDataxDN(15 downto  8) <= FifoPDatxD(23 downto 16);-- 2nd pixel
-						PixDataxDN(23 downto 16) <= FifoPDatxD(15 downto  8);-- 3rd pixel
-						PixDataxDN(31 downto 24) <= FifoPDatxD(31 downto 24);-- 4th pixel
+						PixDataxDN( 7 downto  0) <= FifoPDatxDP( 7 downto  0);-- 1st pixel
+						PixDataxDN(15 downto  8) <= FifoPDatxDP(23 downto 16);-- 2nd pixel
+						PixDataxDN(23 downto 16) <= FifoPDatxDP(15 downto  8);-- 3rd pixel
+						PixDataxDN(31 downto 24) <= FifoPDatxDP(31 downto 24);-- 4th pixel
 						PixDataValidxSO <= '1';
 						if ByteCntxDP = 0 then
 							StatexDN <= sReadLDataLast;
@@ -251,12 +254,12 @@ begin
 		begin
 			if FifoEmptyxS = '1' then
 				FifoRdEnxS <= '0';
-				FifoValidxSN(1) <= '0';
+				FifoValidxSN(FifoValidxSN'high) <= '0';
 			else
 				FifoRdEnxS <= '1';
-				FifoValidxSN(1) <= '1';
+				FifoValidxSN(FifoValidxSN'high) <= '1';
 			end if;
-			FifoValidxSN(0) <= FifoValidxSP(1);
+			FifoValidxSN(FifoValidxSN'high-1 downto 0) <= FifoValidxSP(FifoValidxSN'high downto 1);
 			StatexDN <= StatexDP;
 			ByteCntxDN <= ByteCntxDP; 
 			PixDataxDO <= PixDataxDP;
@@ -268,26 +271,26 @@ begin
 			
 			case StatexDP is
 				when sWaitFSSync => -- wait for frame start sync
-					if FifoValidxSP(0) = '1' and FifoSyncxS = "11" then -- what happens if lanes are out of sync??
+					if FifoValidxSP(0) = '1' and FifoSyncxSP = "11" then -- what happens if lanes are out of sync??
 						StatexDN <= sFSDI;
 					end if;
 				when sFSDI => -- check frame start data identifier
-					if FifoValidxSP(0) = '1' and FifoPDatxD(7 downto 0) = x"00" then
+					if FifoValidxSP(0) = '1' and FifoPDatxDP(7 downto 0) = x"00" then
 						StatexDN <= sWaitLSSync;
 					elsif FifoValidxSP(0) = '1' then -- unexpected data identifier
 						StatexDN <= sWaitFSSync; 
 					end if;
 				when sWaitLSSync => -- wait for line start sync
 					InFramexSO <= '1';
-					if FifoValidxSP(0) = '1' and FifoSyncxS = "11" then
+					if FifoValidxSP(0) = '1' and FifoSyncxSP = "11" then
 						StatexDN <= sLSDI;
 					end if;
 				when sLSDI => -- check line start data identifier
 					InFramexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						if FifoPDatxD(7 downto 0) = x"2B" then -- correct data identifier 0x2A == RAW8, 0x2B == RAW10, 0x2C == RAW12
+						if FifoPDatxDP(7 downto 0) = x"2B" then -- correct data identifier 0x2A == RAW8, 0x2B == RAW10, 0x2C == RAW12
 							StatexDN <= sReadLDataFirst;
-						elsif FifoPDatxD(7 downto 0) = x"01" then -- frame end data identifier
+						elsif FifoPDatxDP(7 downto 0) = x"01" then -- frame end data identifier
 							StatexDN <= sWaitFSSync;
 						else -- unexpected data identifier
 							StatexDN <= sWaitFSSync;
@@ -298,10 +301,10 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN( 9 downto  2) <= FifoPDatxD( 7 downto  0);-- 1st pixel MSB
-						PixDataxDN(19 downto 12) <= FifoPDatxD(23 downto 16);-- 2nd pixel MSB
-						PixDataxDN(29 downto 22) <= FifoPDatxD(15 downto  8);-- 3rd pixel MSB
-						PixDataxDN(39 downto 32) <= FifoPDatxD(31 downto 24);-- 4th pixel MSB
+						PixDataxDN( 9 downto  2) <= FifoPDatxDP( 7 downto  0);-- 1st pixel MSB
+						PixDataxDN(19 downto 12) <= FifoPDatxDP(23 downto 16);-- 2nd pixel MSB
+						PixDataxDN(29 downto 22) <= FifoPDatxDP(15 downto  8);-- 3rd pixel MSB
+						PixDataxDN(39 downto 32) <= FifoPDatxDP(31 downto 24);-- 4th pixel MSB
 						ByteCntxDN <= ByteCntxDP - 1;
 						StatexDN <= sReadLData1;
 					end if;
@@ -309,10 +312,10 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN( 9 downto  2) <= FifoPDatxD( 7 downto  0);-- 1st pixel MSB
-						PixDataxDN(19 downto 12) <= FifoPDatxD(23 downto 16);-- 2nd pixel MSB
-						PixDataxDN(29 downto 22) <= FifoPDatxD(15 downto  8);-- 3rd pixel MSB
-						PixDataxDN(39 downto 32) <= FifoPDatxD(31 downto 24);-- 4th pixel MSB
+						PixDataxDN( 9 downto  2) <= FifoPDatxDP( 7 downto  0);-- 1st pixel MSB
+						PixDataxDN(19 downto 12) <= FifoPDatxDP(23 downto 16);-- 2nd pixel MSB
+						PixDataxDN(29 downto 22) <= FifoPDatxDP(15 downto  8);-- 3rd pixel MSB
+						PixDataxDN(39 downto 32) <= FifoPDatxDP(31 downto 24);-- 4th pixel MSB
 						PixDataValidxSO <= '1';
 						if ByteCntxDP = 0 then
 							StatexDN <= sReadLDataLast;
@@ -325,13 +328,13 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN( 1 downto  0) <= FifoPDatxD( 1 downto  0);-- 1st pixel LSB
-						PixDataxDN(11 downto 10) <= FifoPDatxD( 3 downto  2);-- 2nd pixel LSB
-						PixDataxDN(21 downto 20) <= FifoPDatxD( 5 downto  4);-- 3rd pixel LSB
-						PixDataxDN(31 downto 30) <= FifoPDatxD( 7 downto  6);-- 4th pixel LSB
-						PixDataPrexDN( 7 downto  0) <= FifoPDatxD(23 downto 16);-- 1st pixel MSB pre
-						PixDataPrexDN(15 downto  8) <= FifoPDatxD(15 downto  8);-- 2nd pixel MSB pre
-						PixDataPrexDN(23 downto 16) <= FifoPDatxD(31 downto 24);-- 3rd pixel MSB pre
+						PixDataxDN( 1 downto  0) <= FifoPDatxDP( 1 downto  0);-- 1st pixel LSB
+						PixDataxDN(11 downto 10) <= FifoPDatxDP( 3 downto  2);-- 2nd pixel LSB
+						PixDataxDN(21 downto 20) <= FifoPDatxDP( 5 downto  4);-- 3rd pixel LSB
+						PixDataxDN(31 downto 30) <= FifoPDatxDP( 7 downto  6);-- 4th pixel LSB
+						PixDataPrexDN( 7 downto  0) <= FifoPDatxDP(23 downto 16);-- 1st pixel MSB pre
+						PixDataPrexDN(15 downto  8) <= FifoPDatxDP(15 downto  8);-- 2nd pixel MSB pre
+						PixDataPrexDN(23 downto 16) <= FifoPDatxDP(31 downto 24);-- 3rd pixel MSB pre
 						PixDataValidxSO <= '0';
 						if ByteCntxDP = 0 then
 							StatexDN <= sReadLDataLast;
@@ -344,16 +347,16 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN( 1 downto  0) <= FifoPDatxD(17 downto 16);-- 1st pixel LSB
-						PixDataxDN(11 downto 10) <= FifoPDatxD(19 downto 18);-- 2nd pixel LSB
-						PixDataxDN(21 downto 20) <= FifoPDatxD(21 downto 20);-- 3rd pixel LSB
-						PixDataxDN(31 downto 30) <= FifoPDatxD(23 downto 22);-- 4th pixel LSB
+						PixDataxDN( 1 downto  0) <= FifoPDatxDP(17 downto 16);-- 1st pixel LSB
+						PixDataxDN(11 downto 10) <= FifoPDatxDP(19 downto 18);-- 2nd pixel LSB
+						PixDataxDN(21 downto 20) <= FifoPDatxDP(21 downto 20);-- 3rd pixel LSB
+						PixDataxDN(31 downto 30) <= FifoPDatxDP(23 downto 22);-- 4th pixel LSB
 						PixDataxDN( 9 downto  2) <= PixDataPrexDP( 7 downto  0);-- 1st pixel MSB
 						PixDataxDN(19 downto 12) <= PixDataPrexDP(15 downto  8);-- 2nd pixel MSB
 						PixDataxDN(29 downto 22) <= PixDataPrexDP(23 downto 16);-- 3rd pixel MSB
-						PixDataxDN(39 downto 32) <= FifoPDatxD( 7 downto  0);-- 4th pixel MSB
-						PixDataPrexDN( 7 downto  0) <= FifoPDatxD(15 downto  8);-- 1st pixel MSB pre
-						PixDataPrexDN(15 downto  8) <= FifoPDatxD(31 downto 24);-- 2nd pixel MSB pre
+						PixDataxDN(39 downto 32) <= FifoPDatxDP( 7 downto  0);-- 4th pixel MSB
+						PixDataPrexDN( 7 downto  0) <= FifoPDatxDP(15 downto  8);-- 1st pixel MSB pre
+						PixDataPrexDN(15 downto  8) <= FifoPDatxDP(31 downto 24);-- 2nd pixel MSB pre
 						PixDataValidxSO <= '1';
 						if ByteCntxDP = 0 then
 							StatexDN <= sReadLDataLast;
@@ -366,15 +369,15 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN( 1 downto  0) <= FifoPDatxD( 9 downto  8);-- 1st pixel LSB
-						PixDataxDN(11 downto 10) <= FifoPDatxD(11 downto 10);-- 2nd pixel LSB
-						PixDataxDN(21 downto 20) <= FifoPDatxD(13 downto 12);-- 3rd pixel LSB
-						PixDataxDN(31 downto 30) <= FifoPDatxD(15 downto 14);-- 4th pixel LSB
+						PixDataxDN( 1 downto  0) <= FifoPDatxDP( 9 downto  8);-- 1st pixel LSB
+						PixDataxDN(11 downto 10) <= FifoPDatxDP(11 downto 10);-- 2nd pixel LSB
+						PixDataxDN(21 downto 20) <= FifoPDatxDP(13 downto 12);-- 3rd pixel LSB
+						PixDataxDN(31 downto 30) <= FifoPDatxDP(15 downto 14);-- 4th pixel LSB
 						PixDataxDN( 9 downto  2) <= PixDataPrexDP( 7 downto  0);-- 1st pixel MSB
 						PixDataxDN(19 downto 12) <= PixDataPrexDP(15 downto  8);-- 2nd pixel MSB
-						PixDataxDN(29 downto 22) <= FifoPDatxD( 7 downto  0);-- 3rd pixel MSB
-						PixDataxDN(39 downto 32) <= FifoPDatxD(23 downto 16);-- 4th pixel MSB
-						PixDataPrexDN( 7 downto  0) <= FifoPDatxD(31 downto 24);-- 1st pixel MSB pre
+						PixDataxDN(29 downto 22) <= FifoPDatxDP( 7 downto  0);-- 3rd pixel MSB
+						PixDataxDN(39 downto 32) <= FifoPDatxDP(23 downto 16);-- 4th pixel MSB
+						PixDataPrexDN( 7 downto  0) <= FifoPDatxDP(31 downto 24);-- 1st pixel MSB pre
 						PixDataValidxSO <= '1';
 						if ByteCntxDP = 0 then
 							StatexDN <= sReadLDataLast;
@@ -387,14 +390,14 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN( 1 downto  0) <= FifoPDatxD(25 downto 24);-- 1st pixel LSB
-						PixDataxDN(11 downto 10) <= FifoPDatxD(27 downto 26);-- 2nd pixel LSB
-						PixDataxDN(21 downto 20) <= FifoPDatxD(29 downto 28);-- 3rd pixel LSB
-						PixDataxDN(31 downto 30) <= FifoPDatxD(31 downto 30);-- 4th pixel LSB
+						PixDataxDN( 1 downto  0) <= FifoPDatxDP(25 downto 24);-- 1st pixel LSB
+						PixDataxDN(11 downto 10) <= FifoPDatxDP(27 downto 26);-- 2nd pixel LSB
+						PixDataxDN(21 downto 20) <= FifoPDatxDP(29 downto 28);-- 3rd pixel LSB
+						PixDataxDN(31 downto 30) <= FifoPDatxDP(31 downto 30);-- 4th pixel LSB
 						PixDataxDN( 9 downto  2) <= PixDataPrexDP( 7 downto  0);-- 1st pixel MSB
-						PixDataxDN(19 downto 12) <= FifoPDatxD( 7 downto  0);-- 2nd pixel MSB
-						PixDataxDN(29 downto 22) <= FifoPDatxD(23 downto 16);-- 3rd pixel MSB
-						PixDataxDN(39 downto 32) <= FifoPDatxD(15 downto  8);-- 4th pixel MSB
+						PixDataxDN(19 downto 12) <= FifoPDatxDP( 7 downto  0);-- 2nd pixel MSB
+						PixDataxDN(29 downto 22) <= FifoPDatxDP(23 downto 16);-- 3rd pixel MSB
+						PixDataxDN(39 downto 32) <= FifoPDatxDP(15 downto  8);-- 4th pixel MSB
 						PixDataValidxSO <= '1';
 						if ByteCntxDP = 0 then
 							StatexDN <= sReadLDataLast;
@@ -422,12 +425,12 @@ begin
 		begin
 			if FifoEmptyxS = '1' then
 				FifoRdEnxS <= '0';
-				FifoValidxSN(1) <= '0';
+				FifoValidxSN(FifoValidxSN'high) <= '0';
 			else
 				FifoRdEnxS <= '1';
-				FifoValidxSN(1) <= '1';
+				FifoValidxSN(FifoValidxSN'high) <= '1';
 			end if;
-			FifoValidxSN(0) <= FifoValidxSP(1);
+			FifoValidxSN(FifoValidxSN'high-1 downto 0) <= FifoValidxSP(FifoValidxSN'high downto 1);
 			StatexDN <= StatexDP;
 			ByteCntxDN <= ByteCntxDP; 
 			PixDataxDO <= PixDataxDP;
@@ -439,26 +442,26 @@ begin
 			
 			case StatexDP is
 				when sWaitFSSync => -- wait for frame start sync
-					if FifoValidxSP(0) = '1' and FifoSyncxS = "11" then -- what happens if lanes are out of sync??
+					if FifoValidxSP(0) = '1' and FifoSyncxSP = "11" then -- what happens if lanes are out of sync??
 						StatexDN <= sFSDI;
 					end if;
 				when sFSDI => -- check frame start data identifier
-					if FifoValidxSP(0) = '1' and FifoPDatxD(7 downto 0) = x"00" then
+					if FifoValidxSP(0) = '1' and FifoPDatxDP(7 downto 0) = x"00" then
 						StatexDN <= sWaitLSSync;
 					elsif FifoValidxSP(0) = '1' then -- unexpected data identifier
 						StatexDN <= sWaitFSSync; 
 					end if;
 				when sWaitLSSync => -- wait for line start sync
 					InFramexSO <= '1';
-					if FifoValidxSP(0) = '1' and FifoSyncxS = "11" then
+					if FifoValidxSP(0) = '1' and FifoSyncxSP = "11" then
 						StatexDN <= sLSDI;
 					end if;
 				when sLSDI => -- check line start data identifier
 					InFramexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						if FifoPDatxD(7 downto 0) = x"2C" then -- correct data identifier 0x2A == RAW8, 0x2B == RAW10, 0x2C == RAW12
+						if FifoPDatxDP(7 downto 0) = x"2C" then -- correct data identifier 0x2A == RAW8, 0x2B == RAW10, 0x2C == RAW12
 							StatexDN <= sReadLDataFirst;
-						elsif FifoPDatxD(7 downto 0) = x"01" then -- frame end data identifier
+						elsif FifoPDatxDP(7 downto 0) = x"01" then -- frame end data identifier
 							StatexDN <= sWaitFSSync;
 						else -- unexpected data identifier
 							StatexDN <= sWaitFSSync;
@@ -469,11 +472,11 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN(11 downto  4) <= FifoPDatxD( 7 downto  0);-- 1st pixel MSB
-						PixDataxDN( 3 downto  0) <= FifoPDatxD(11 downto  8);-- 1st pixel LSB
-						PixDataxDN(23 downto 16) <= FifoPDatxD(23 downto 16);-- 2nd pixel MSB
-						PixDataxDN(15 downto 12) <= FifoPDatxD(15 downto 12);-- 2nd pixel LSB
-						PixDataxDN(35 downto 28) <= FifoPDatxD(31 downto 24);-- 3rd pixel MSB
+						PixDataxDN(11 downto  4) <= FifoPDatxDP( 7 downto  0);-- 1st pixel MSB
+						PixDataxDN( 3 downto  0) <= FifoPDatxDP(11 downto  8);-- 1st pixel LSB
+						PixDataxDN(23 downto 16) <= FifoPDatxDP(23 downto 16);-- 2nd pixel MSB
+						PixDataxDN(15 downto 12) <= FifoPDatxDP(15 downto 12);-- 2nd pixel LSB
+						PixDataxDN(35 downto 28) <= FifoPDatxDP(31 downto 24);-- 3rd pixel MSB
 						ByteCntxDN <= ByteCntxDP - 1;
 						StatexDN <= sReadLData1;
 					end if;
@@ -481,11 +484,11 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN(11 downto  4) <= FifoPDatxD( 7 downto  0);-- 1st pixel MSB
-						PixDataxDN( 3 downto  0) <= FifoPDatxD(11 downto  8);-- 1st pixel LSB
-						PixDataxDN(23 downto 16) <= FifoPDatxD(23 downto 16);-- 2nd pixel MSB
-						PixDataxDN(15 downto 12) <= FifoPDatxD(15 downto 12);-- 2nd pixel LSB
-						PixDataxDN(35 downto 28) <= FifoPDatxD(31 downto 24);-- 3rd pixel MSB
+						PixDataxDN(11 downto  4) <= FifoPDatxDP( 7 downto  0);-- 1st pixel MSB
+						PixDataxDN( 3 downto  0) <= FifoPDatxDP(11 downto  8);-- 1st pixel LSB
+						PixDataxDN(23 downto 16) <= FifoPDatxDP(23 downto 16);-- 2nd pixel MSB
+						PixDataxDN(15 downto 12) <= FifoPDatxDP(15 downto 12);-- 2nd pixel LSB
+						PixDataxDN(35 downto 28) <= FifoPDatxDP(31 downto 24);-- 3rd pixel MSB
 						PixDataValidxSO <= '1';
 						if ByteCntxDP = 0 then
 							StatexDN <= sReadLDataLast;
@@ -498,11 +501,11 @@ begin
 					InFramexSO <= '1';
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
-						PixDataxDN(27 downto 24)   <= FifoPDatxD(19 downto 16);-- 3rd pixel LSB
-						PixDataxDN(47 downto 40)   <= FifoPDatxD( 7 downto  0);-- 4th pixel MSB
-						PixDataxDN(39 downto 36)   <= FifoPDatxD(23 downto 20);-- 4th pixel LSB
-						PixDataPrexDN( 7 downto 0) <= FifoPDatxD(15 downto 8);-- 1st pixel MSB pre
-						PixDataPrexDN(15 downto 8) <= FifoPDatxD(31 downto 24);-- 2nd pixel MSB pre
+						PixDataxDN(27 downto 24)   <= FifoPDatxDP(19 downto 16);-- 3rd pixel LSB
+						PixDataxDN(47 downto 40)   <= FifoPDatxDP( 7 downto  0);-- 4th pixel MSB
+						PixDataxDN(39 downto 36)   <= FifoPDatxDP(23 downto 20);-- 4th pixel LSB
+						PixDataPrexDN( 7 downto 0) <= FifoPDatxDP(15 downto 8);-- 1st pixel MSB pre
+						PixDataPrexDN(15 downto 8) <= FifoPDatxDP(31 downto 24);-- 2nd pixel MSB pre
 						PixDataValidxSO <= '0';
 						if ByteCntxDP = 0 then
 							StatexDN <= sReadLDataLast;
@@ -516,13 +519,13 @@ begin
 					InLinexSO <= '1';
 					if FifoValidxSP(0) = '1' then
 						PixDataxDN(11 downto  4) <= PixDataPrexDP( 7 downto  0);-- 1st pixel MSB
-						PixDataxDN( 3 downto  0) <= FifoPDatxD( 3 downto  0);-- 1st pixel LSB
+						PixDataxDN( 3 downto  0) <= FifoPDatxDP( 3 downto  0);-- 1st pixel LSB
 						PixDataxDN(23 downto 16) <= PixDataPrexDP(15 downto 8);-- 2nd pixel MSB
-						PixDataxDN(15 downto 12) <= FifoPDatxD( 7 downto  4);-- 2nd pixel LSB
-						PixDataxDN(35 downto 28) <= FifoPDatxD(23 downto 16);-- 3rd pixel MSB
-						PixDataxDN(27 downto 24) <= FifoPDatxD(27 downto 24);-- 3rd pixel LSB
-						PixDataxDN(47 downto 40) <= FifoPDatxD(15 downto  8);-- 4th pixel MSB
-						PixDataxDN(39 downto 36) <= FifoPDatxD(31 downto 28);-- 4th pixel LSB
+						PixDataxDN(15 downto 12) <= FifoPDatxDP( 7 downto  4);-- 2nd pixel LSB
+						PixDataxDN(35 downto 28) <= FifoPDatxDP(23 downto 16);-- 3rd pixel MSB
+						PixDataxDN(27 downto 24) <= FifoPDatxDP(27 downto 24);-- 3rd pixel LSB
+						PixDataxDN(47 downto 40) <= FifoPDatxDP(15 downto  8);-- 4th pixel MSB
+						PixDataxDN(39 downto 36) <= FifoPDatxDP(31 downto 28);-- 4th pixel LSB
 						PixDataValidxSO <= '1';
 						if ByteCntxDP = 0 then
 							StatexDN <= sReadLDataLast;
@@ -542,6 +545,8 @@ begin
 			end case;
 				
 		end process;
+	else generate
+		assert false report "BIT_DEPTH not supported" severity error;
 	end generate g_memless;
 	
 	DebugDataxDO(0) <= DPhyClkxC;
@@ -586,8 +591,8 @@ begin
 		wr_data_i(33 downto 32) => DPhySyncxS(1 downto 0),
 		full_o => FifoFullxS,
 		empty_o => FifoEmptyxS,
-		rd_data_o(31 downto 0) => FifoPDatxD,
-		rd_data_o(33 downto 32) => FifoSyncxS
+		rd_data_o(31 downto 0) => FifoPDatxDN,
+		rd_data_o(33 downto 32) => FifoSyncxSN
 	);
 	
 	FifoWrEnxS <= '1' when FifoFullxS = '0' else '0';

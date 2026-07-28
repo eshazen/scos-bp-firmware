@@ -104,6 +104,7 @@ Output HDL filename: mira_test_impl_1.vm
 -path C:/Users/Bernhard/my_designs/mira_test/main_pll (searchpath added)
 -path C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo (searchpath added)
 -path C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx (searchpath added)
+-path C:/Users/Bernhard/my_designs/mira_test/process_image_out_fifo (searchpath added)
 -path C:/Users/Bernhard/my_designs/mira_test/source/impl_1 (searchpath added)
 -path C:/lscc/radiant/2025.2/ispfpga/je5d00/data (searchpath added)
 Mixed language design
@@ -111,6 +112,7 @@ Verilog design file: C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.v
 Verilog design file: C:/Users/Bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v
 Verilog design file: C:/Users/Bernhard/my_designs/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v
 Verilog design file: C:/Users/Bernhard/my_designs/mira_test/main_pll/rtl/main_pll.v
+Verilog design file: C:/Users/Bernhard/my_designs/mira_test/process_image_out_fifo/rtl/process_image_out_fifo.v
 VHDL library: pmi
 VHDL design file: C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd
 VHDL library: work
@@ -123,6 +125,12 @@ VHDL library: work
 VHDL design file: C:/Users/Bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd
 VHDL library: work
 VHDL design file: C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd
+VHDL library: work
+VHDL design file: C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd
+VHDL library: work
+VHDL design file: C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd
+VHDL library: work
+VHDL design file: C:/Users/Bernhard/my_designs/mira_test/source/impl_1/spi_rxtx_with_fifo.vhd
 Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/generic.v. VERI-1482
 Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/lifcl.v. VERI-1482
 Analyzing Verilog file C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/lifcl.v. VERI-1482
@@ -647,6 +655,7 @@ INFO <35901328> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_sub.v(50): analyz
 Analyzing Verilog file c:/users/bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v. VERI-1482
 Analyzing Verilog file c:/users/bernhard/my_designs/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v. VERI-1482
 Analyzing Verilog file c:/users/bernhard/my_designs/mira_test/main_pll/rtl/main_pll.v. VERI-1482
+Analyzing Verilog file c:/users/bernhard/my_designs/mira_test/process_image_out_fifo/rtl/process_image_out_fifo.v. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd
 
@@ -654,56 +663,7 @@ INFO <35921014> - synthesis: c:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd(4): ana
 Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd. VHDL-1481
 Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd
 
-INFO <35921012> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(23): analyzing entity mipi_rx. VHDL-1012
-INFO <35921010> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(39): analyzing architecture architecture_mipi_rx. VHDL-1010
-Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd. VHDL-1481
-Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd
-
-INFO <35921012> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd(30): analyzing entity frame_buf. VHDL-1012
-INFO <35921010> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd(44): analyzing architecture architecture_frame_buf. VHDL-1010
-Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd. VHDL-1481
-Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd
-
-INFO <35921012> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd(12): analyzing entity uart_tx. VHDL-1012
-INFO <35921010> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd(27): analyzing architecture behavioral. VHDL-1010
-Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd. VHDL-1481
-Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd
-
-INFO <35921012> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd(12): analyzing entity uart_rx. VHDL-1012
-INFO <35921010> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd(26): analyzing architecture behavioral. VHDL-1010
-Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd. VHDL-1481
-Analyzing VHDL file c:/users/bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd
-
-INFO <35921012> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(23): analyzing entity mira_test_top. VHDL-1012
-INFO <35921010> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(49): analyzing architecture architecture_mira_test_top. VHDL-1010
-INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/Bernhard/my_designs/mira_test/impl_1". VHDL-1504
-Top module language type = VHDL.
-INFO <35921172> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(204): others clause is never selected. VHDL-1172
-INFO <35921399> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(234): going to verilog side to elaborate module mipi_dphy_rx. VHDL-1399
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v(11): compiling module mipi_dphy_rx. VERI-1018
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v(5512): compiling module mipi_dphy_rx_ipgen_lscc_mipi_dphy(FAMILY="LIFCL",INT_TYPE="RX",INT_DATA_RATE=200.0,SYNC_CLOCK_FREQ=50,PLL_MODE="EXTERNAL",CO="011",CM="10000000",CIL_BYPASS="CIL_ENABLED",DPHY_TEST_PATTERN="0b10000000001000000000000000000000",T_DATA_SETTLE="110",T_CLK_SETTLE="101",CLKOS_EN=1,CLKOP_BYPASS=1,PLL_RST=1,LOCK_EN=1,DIVOP_ACTUAL_ST   ....   ="0b000000001",DELA="7",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",IPI_CMP="0b0100",CSET="24P",CRIPPLE="3P",IPP_CTRL="0b0100",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v(655): compiling module mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx(NUM_LANE=1,CIL_BYPASS="CIL_ENABLED",INT_DATA_RATE=200.0,REF_CLOCK_FREQ=50,CM="10000000",CO="011",T_DATA_SETTLE="110",T_CLK_SETTLE="101",DPHY_TEST_PATTERN="0b10000000001000000000000000000000"). VERI-1018
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v(267): compiling module mipi_dphy_rx_ipgen_lscc_clock_divider(TGT_FREQ_IN=50). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/lifcl.v(2615): compiling module DPHY(CONT_CLK_MODE="ENABLED",PLLCLKBYPASS="BYPASSED",RXCDRP="0b01",RXLPRP="0b001",TEST_PATTERN="0b10000000001000000000000000000000",TST="0b0000",U_PRG_RXHS_SETTLE="0b000110",UC_PRG_RXHS_SETTLE="0b000101"). VERI-1018
-INFO <35921400> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(234): back to VHDL to continue elaboration. VHDL-1400
-INFO <35921399> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(249): going to verilog side to elaborate module mipi_cross_clk_fifo. VHDL-1399
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v(11): compiling module mipi_cross_clk_fifo. VERI-1018
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v(130): compiling module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc(WADDR_DEPTH=1024,WADDR_WIDTH=10,WDATA_WIDTH=9,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=9,ENABLE_ALMOST_FULL_FLAG="FALSE",ENABLE_ALMOST_EMPTY_FLAG="FALSE",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=1023,ALMOST_FULL_DEASSERT_LVL=1022,ALMOST_EMPTY_ASSERTION="static-single",FIFO_CONTROLLER="HARD_IP"). VERI-1018
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v(317): compiling module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric(REGMODE="reg",DWID=9). VERI-1018
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v(477): compiling module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main(WADDR_DEPTH=1024,WADDR_WIDTH=10,WDATA_WIDTH=9,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=9,ENABLE_ALMOST_FULL_FLAG="FALSE",ENABLE_ALMOST_EMPTY_FLAG="FALSE",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=1023,ALMOST_FULL_DEASSERT_LVL=1022,ALMOST_EMPTY_ASSERTION="static-single",FIFO_CONTROLLER="HARD_IP"). VERI-1018
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v(702): compiling module mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc(WADDR_DEPTH=1024,WADDR_WIDTH=10,WDATA_WIDTH=9,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=9,ENABLE_ALMOST_FULL_FLAG="FALSE",ENABLE_ALMOST_EMPTY_FLAG="FALSE",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=1023,ALMOST_FULL_DEASSERT_LVL=1022,ALMOST_EMPTY_ASSERTION="static-single"). VERI-1018
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v(3159): compiling module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core(WADDR_DEPTH=32'b010000000000,WDATA_WIDTH=32'b01001,RADDR_DEPTH=32'b010000000000,RDATA_WIDTH=32'b01001,ENABLE_ALMOST_FULL_FLAG="FALSE",ENABLE_ALMOST_EMPTY_FLAG="FALSE",ALMOST_FULL_ASSERT_LVL=32'b01111111111,ALMOST_FULL_DEASSERT_LVL=32'b01111111111,ALMOST_EMPTY_ASSERT_LVL=32'b01,ALMOST_EMPTY_DEASSERT_LVL=32'b01,IS_CASCADE=1'b0). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/lifcl.v(3785): compiling module FIFO16K(DATA_WIDTH_W="X9",DATA_WIDTH_R="X9",GSR="DISABLED",RESETMODE="ASYNC",ASYNC_RST_RELEASE="ASYNC",CSDECODE_W="01",FULLBITS="0b01111111111010",ALMOST_FULL="0b01111111110010",ALMOST_EMPTY="0b00000000001111"). VERI-1018
-INFO <35921400> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(249): back to VHDL to continue elaboration. VHDL-1400
-INFO <35921172> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd(159): others clause is never selected. VHDL-1172
-INFO <35921172> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd(105): others clause is never selected. VHDL-1172
-INFO <35921172> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd(98): others clause is never selected. VHDL-1172
-INFO <35921399> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(168): going to verilog side to elaborate module main_pll. VHDL-1399
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/main_pll/rtl/main_pll.v(11): compiling module main_pll. VERI-1018
-WARNING <35901214> - synthesis: c:/users/bernhard/my_designs/mira_test/main_pll/rtl/main_pll.v(649): assignment to input clki_i. VERI-1214
-INFO <35901018> - synthesis: c:/users/bernhard/my_designs/mira_test/main_pll/rtl/main_pll.v(158): compiling module main_pll_ipgen_lscc_pll(FVCO=1536.0,CLKI_FREQ=48.0,CLKOP_FREQ_ACTUAL=192.0,LOCK_EN=1,FBK_MODE="INTCLKOP",FBCLK_DIVIDER_ACTUAL_STR="4",DIVOP_ACTUAL_STR="7",DIVOS_ACTUAL_STR="7",DIVOS2_ACTUAL_STR="7",DIVOS3_ACTUAL_STR="7",DIVOS4_ACTUAL_STR="7",DIVOS5_ACTUAL_STR="7",SSC_N_CODE_STR="0b000000100",DELA="7",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",IPI_CMP="0b1100",CSET="8P",CRIPPLE="1P",IPP_CTRL="0b0110",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/lifcl.v(10022): compiling module PLL(BW_CTL_BIAS="0b1111",CRIPPLE="1P",CSET="8P",DELA="7",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",DIVA="7",DIVB="7",DIVC="7",DIVD="7",DIVE="7",DIVF="7",ENCLK_CLKOP="ENABLED",V2I_1V_EN="ENABLED",FBK_INTEGER_MODE="ENABLED",FBK_MASK="0b00000000",FBK_MMD_DIG="4",FBK_MMD_PULS_CTL="0b0001",IPI_CMP="0b1100",IPP_CTRL="0b0110",K   ....   KVCO_SEL="60",V2I_PP_ICTRL="0b11111",V2I_PP_RES="9K",DIV_DEL=72'b01100000110001000110000001100000011000000110000001100010011000100110001,SIM_FLOAT_PRECISION="0.625"). VERI-1018
-INFO <35921400> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd(168): back to VHDL to continue elaboration. VHDL-1400
-Top module name (VHDL, mixed language): mira_test_top
-LSE: Compile Design done
-
+INFO <35921012> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(14): analyzing entity mipi_rx. VHDL-1012
+INFO <35921010> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(34): analyzing architecture architecture_mipi_rx. VHDL-1010
+WARNING <35921576> - synthesis: c:/users/bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd(161): this construct is only supported in VHDL 1076-2008. VHDL-1576
+ERROR <1009990> - synthesis: Stopping Synthesis Tool flow due to error.

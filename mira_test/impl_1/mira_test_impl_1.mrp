@@ -8,7 +8,7 @@ Package: CABGA400
 Performance Grade:  9_High-Performance_1.0V
 
 Mapper:    version Radiant Software (64-bit) 2025.2.0.48.0
-Mapped on: Tue Jul  7 14:05:12 2026
+Mapped on: Sun Jul 26 20:33:50 2026
 
 Design Information
 ------------------
@@ -22,26 +22,26 @@ Command line:   map -pdc
 Design Summary
 --------------
 
-   Number of registers:        2218 out of 32811 (7%)
-      Number of SLICE         registers: 2218 out of 32256 (7%)
-      Number of PIO Input     registers:    0 out of   185 (0%)
+   Number of registers:        2291 out of 32811 (7%)
+      Number of SLICE         registers: 2289 out of 32256 (7%)
+      Number of PIO Input     registers:    2 out of   185 (1%)
       Number of PIO Output    registers:    0 out of   185 (0%)
       Number of PIO Tri-State registers:    0 out of   185 (0%)
-   Number of LUT4s:            5005 out of 32256 (16%)
-      Number used as logic LUT4s:                       3233
+   Number of LUT4s:            5136 out of 32256 (16%)
+      Number used as logic LUT4s:                       3290
       Number used as distributed RAM:                      0 (6 per 16X4 RAM)
-      Number used as ripple logic:                      1772 (2 per CCU2)
-   Number of PIOs used/reserved:   39 out of   185 (21%)
+      Number used as ripple logic:                      1846 (2 per CCU2)
+   Number of PIOs used/reserved:   35 out of   185 (19%)
       Number of PIOs reserved:      7 (per sysConfig and/or prohibit constraint)
-      Number of PIOs used:         32
-        Number of PIOs used for single ended IO:        32
+      Number of PIOs used:         28
+        Number of PIOs used for single ended IO:        28
         Number of PIO pairs used for differential IO:    0
-        Number allocated to regular speed PIOs:    32 out of  111 (29%)
+        Number allocated to regular speed PIOs:    28 out of  111 (25%)
         Number allocated to high speed PIOs:        0 out of   74 (0%)
    Number of Dedicated IO used for ADC/PCIE/DPHY:    6 out of   32 (19%)
    Number of IDDR/ODDR/TDDR functions used:      0 out of   444 (0%)
    Number of IOs using at least one DDR function: 0 (0 differential)
-   Number of Block RAMs:          36 out of 84 (43%)
+   Number of Block RAMs:          39 out of 84 (46%)
    Number of Large RAMs:          2 out of 2 (100%)
    Number of Logical DSP Functions:
       Number of Pre-Adders (9+9):    0 out of 112 (0%)
@@ -106,7 +106,7 @@ Design Summary (cont)
    Number of Config WDT:          0 out of 1 (0%)
    Number of PCIEs:               0 out of 1 (0%)
    Number of Clocks:  6
-      Net ClkxC: 2317 loads, 2317 rising, 0 falling (Driver: Pin
+      Net ClkxC: 2396 loads, 2396 rising, 0 falling (Driver: Pin
      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP)
       Net mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_
      wrapper_rx.DPhyClkxC: 2 loads, 0 rising, 2 falling (Driver: Pin mipi_rx_ins
@@ -120,12 +120,12 @@ Design Summary (cont)
       Net MipiRxCkP: 1 load, 1 rising, 0 falling (Driver: Port MipiRxCkP)
       Net MipiRxCkN: 1 load, 1 rising, 0 falling (Driver: Port MipiRxCkN)
    Number of Clock Enables:  69
-      Net VCC: 8 loads, 0 SLICEs
+      Net VCC: 12 loads, 0 SLICEs
       Net mipi_rx_inst.DPhyPDxSP_i: 4 loads, 0 SLICEs
       Net mipi_rx_inst.StatexDP_RNIB2JQB[3]: 16 loads, 16 SLICEs
-      Net mipi_rx_inst.N_929_i: 8 loads, 8 SLICEs
       Net mipi_rx_inst.N_204_i: 40 loads, 40 SLICEs
       Net mipi_rx_inst.ByteCntxDPe: 9 loads, 9 SLICEs
+      Net mipi_rx_inst.PixDataPrexDPce[16]: 8 loads, 8 SLICEs
 
                                     Page 2
 
@@ -135,12 +135,12 @@ Design Summary (cont)
 
 Design Summary (cont)
 ---------------------
-      Net mipi_rx_inst.FifoEmptyxS_i: 1 loads, 0 SLICEs
       Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
      _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.FifoFullxS_i: 1
      loads, 0 SLICEs
-      Net process_image_inst.N_120_i: 64 loads, 64 SLICEs
+      Net mipi_rx_inst.FifoEmptyxS_i: 1 loads, 0 SLICEs
       Net process_image_inst.N_115_i: 32 loads, 0 SLICEs
+      Net process_image_inst.N_120_i: 64 loads, 64 SLICEs
       Net process_image_inst.img_mean_std_inst.TileCntxDPe: 5 loads, 5 SLICEs
       Net process_image_inst.img_mean_std_inst.un317_summemxdn: 54 loads, 54
      SLICEs
@@ -207,57 +207,57 @@ Design Summary (cont)
       Net frame_buf_inst.StatexDP[2]: 8 loads, 8 SLICEs
       Net frame_buf_inst.N_461_1: 2 loads, 0 SLICEs
       Net RdyForCfgPDatxS: 1 loads, 1 SLICEs
-      Net frame_buf_inst.un9_fifowrenxsp: 2 loads, 0 SLICEs
+      Net frame_buf_inst.WrAddrxDPe: 14 loads, 14 SLICEs
       Net frame_buf_inst.RdAddrxDPe: 14 loads, 14 SLICEs
       Net frame_buf_inst.un1_StatexDP_11_i: 18 loads, 18 SLICEs
       Net frame_buf_inst.SumCntxDPe: 8 loads, 8 SLICEs
-      Net frame_buf_inst.WrAddrxDPe: 14 loads, 14 SLICEs
+      Net frame_buf_inst.un9_fifowrenxsp: 2 loads, 0 SLICEs
       Net frame_buf_inst.N_163_i: 56 loads, 56 SLICEs
+      Net g_iface.spi_rxtx.ResetTxFIFORqdxSP_RNO: 1 loads, 1 SLICEs
       Net N_45_i: 13 loads, 13 SLICEs
-      Net PDatOutValidxS: 1 loads, 0 SLICEs
-      Net uart_tx_inst.BitCntxDPe: 4 loads, 4 SLICEs
-      Net uart_tx_inst.FifoRdEnxS_0_sqmuxa: 1 loads, 0 SLICEs
-      Net uart_tx_inst.N_388_i: 8 loads, 8 SLICEs
-      Net uart_tx_inst.SRegxDPce[8]: 1 loads, 1 SLICEs
-      Net uart_rx_inst.N_365_i: 8 loads, 8 SLICEs
-      Net CfgRegxDN_10_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_2_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_3_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_11_1_sqmuxa: 8 loads, 8 SLICEs
+      Net g_iface.spi_rxtx.StatexDP[7]: 5 loads, 5 SLICEs
+      Net g_iface.spi_rxtx.un1_TxSRegxDN_0_sqmuxa_i: 8 loads, 8 SLICEs
+      Net g_iface.spi_rxtx.N_30306: 21 loads, 21 SLICEs
+      Net g_iface.spi_rxtx.un4_pardatrdyxsi: 4 loads, 0 SLICEs
+      Net CfgRegxDN_9_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_8_1_sqmuxa: 6 loads, 6 SLICEs
       Net CfgRegxDN_7_1_sqmuxa: 8 loads, 8 SLICEs
       Net CfgRegxDN_6_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_0_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_1_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_4_1_sqmuxa: 8 loads, 8 SLICEs
       Net CfgRegxDN_5_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_8_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_9_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_4_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_3_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_2_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_1_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_0_1_sqmuxa: 9 loads, 9 SLICEs
       Net CfgRegxDN_13_1_sqmuxa: 8 loads, 8 SLICEs
       Net CfgRegxDN_12_1_sqmuxa: 8 loads, 8 SLICEs
-   Number of LSRs:  9
-      Net VCC: 21 loads, 0 SLICEs
+      Net CfgRegxDN_11_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_10_1_sqmuxa: 8 loads, 8 SLICEs
+      Net g_iface.spi_rxtx.N_83_i: 8 loads, 8 SLICEs
+   Number of LSRs:  10
+      Net VCC: 29 loads, 0 SLICEs
       Net mipi_rx_inst.StatexDP[10]: 1 loads, 1 SLICEs
-      Net N_1145: 1 loads, 1 SLICEs
+      Net mipi_rx_inst.N_219: 1 loads, 1 SLICEs
       Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
      _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.EMPTY: 2 loads, 2
      SLICEs
       Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
      _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.FULL: 1 loads, 1
      SLICEs
-      Pin ResetxRI: 2097 loads, 1996 SLICEs (Net: ResetxRI_c)
+      Pin ResetxRI: 2093 loads, 1992 SLICEs (Net: ResetxRI_c)
       Net mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_
      wrapper_rx.HARD_IP.CIL.u_clock_divider.count_0_sqmuxa_i: 3 loads, 3 SLICEs
       Net frame_buf_inst.StatexDP[2]: 3 loads, 3 SLICEs
-      Net frame_buf_inst.FIFOResetxS: 8 loads, 8 SLICEs
+      Net frame_buf_inst.FIFOResetxS: 4 loads, 4 SLICEs
+      Net g_iface.spi_rxtx.StatexDP[0]: 23 loads, 23 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net ResetxRI_c: 2097 loads
+      Net ResetxRI_c: 2093 loads
       Net process_image_inst.img_mean_std_inst.MemWrEnxS_0_sqmuxa_0_a2okb: 675
      loads
       Net process_image_inst.img_mean_std_inst.MemWrEnxS_0_sqmuxa_0_a2okb_1: 675
      loads
+      Net VCC: 491 loads
       Net process_image_inst.img_mean_std_inst.RdAddrxDP[4]: 486 loads
-      Net VCC: 449 loads
-      Net process_image_inst.img_mean_std_inst.RdAddrxDP[2]: 432 loads
 
                                     Page 4
 
@@ -267,23 +267,27 @@ Design Summary (cont)
 
 Design Summary (cont)
 ---------------------
+      Net process_image_inst.img_mean_std_inst.RdAddrxDP[2]: 432 loads
       Net process_image_inst.img_mean_std_inst.RdAddrxDP[1]: 216 loads
       Net process_image_inst.img_mean_std_inst.RdAddrxDP[3]: 108 loads
-      Net frame_buf_inst.StatexDP[2]: 83 loads
-      Net process_image_inst.StatexDP_Z[6]: 67 loads
+      Net mipi_rx_inst.FifoValidxSP[0]: 84 loads
+      Net frame_buf_inst.StatexDP[2]: 82 loads
 
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  2
    Number of criticals: 0
    Number of errors:    0
 
 Design Errors/Criticals/Warnings
 --------------------------------
 
-   No error, critical, or warning presents.
+WARNING <71003020> - map: Top module port 'UartRTSntoFPGAxDI' does not connect
+     to anything.
+WARNING <71003020> - map: Top module port 'UartRTSntoFPGAxDI' does not connect
+     to anything.
 
 IO (PIO) Attributes
 -------------------
@@ -291,6 +295,10 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CCISDAxSIO          | BIDIR     |           | I     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| CCISCLxSIO          | BIDIR     |           | I     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | LEDxSO[13]          | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -317,14 +325,6 @@ IO (PIO) Attributes
 | LEDxSO[2]           | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | LEDxSO[1]           | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| LEDxSO[0]           | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| DebugDataxDO[11]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| DebugDataxDO[10]    | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| DebugDataxDO[9]     | OUTPUT    |           |       |       |           |
 
                                     Page 5
 
@@ -335,15 +335,7 @@ IO (PIO) Attributes
 IO (PIO) Attributes (cont)
 --------------------------
 +---------------------+-----------+-----------+-------+-------+-----------+
-| DebugDataxDO[8]     | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| DebugDataxDO[7]     | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| DebugDataxDO[6]     | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| DebugDataxDO[5]     | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| DebugDataxDO[4]     | OUTPUT    |           |       |       |           |
+| LEDxSO[0]           | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | DebugDataxDO[3]     | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -353,13 +345,17 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+-------+-------+-----------+
 | DebugDataxDO[0]     | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| UartFTDItoFPGAxDI   | INPUT     |           |       |       |           |
+| SpiRPi0MOSIxDI      | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| SpiRPi0MISOxDO      | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| SpiRPi0CSnxSI       | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| SpiRPi0SCKxSI       | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | UartFPGAtoFTDIxDO   | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | UartCTSntoFTDIxDO   | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| UartRTSntoFPGAxDI   | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | ResetxRI            | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -391,6 +387,10 @@ PLL 1:                                 Pin/Node Value
        main_pll_inst.lscc_pll_inst.intclkop_w
   Reset Signal:                        NODE     GND
   Standby Signal:                      NODE     GND
+  PLL LOCK signal:                     NODE
+       main_pll_inst.lscc_pll_inst.PLLLockxS
+  PLL Internal LOCK Signal:                     NONE
+  A Divider:                                    15
 
                                     Page 6
 
@@ -400,10 +400,6 @@ PLL 1:                                 Pin/Node Value
 
 PLL Summary (cont)
 ------------------
-  PLL LOCK signal:                     NODE
-       main_pll_inst.lscc_pll_inst.PLLLockxS
-  PLL Internal LOCK Signal:                     NONE
-  A Divider:                                    15
   B Divider:                                    7
   C Divider:                                    7
   D Divider:                                    7
@@ -457,6 +453,10 @@ Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
      T[53:0].PREADD9_H0
          Type: PREADD9_CORE
 Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].PREADD9_L1
+         Type: PREADD9_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
+     T[53:0].PREADD9_H1
 
                                     Page 7
 
@@ -466,10 +466,6 @@ Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
 
 ASIC Components (cont)
 ----------------------
-     T[53:0].PREADD9_L1
-         Type: PREADD9_CORE
-Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
-     T[53:0].PREADD9_H1
          Type: PREADD9_CORE
 Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
      T[53:0].MULT18_0
@@ -523,6 +519,10 @@ Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
      T[53:0].MULT18_1
          Type: MULT18_CORE
 Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].REG18_L0_0
+         Type: REG18_CORE
+Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
+     T[53:0].REG18_L0_1
 
                                     Page 8
 
@@ -532,10 +532,6 @@ Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
 
 ASIC Components (cont)
 ----------------------
-     T[53:0].REG18_L0_0
-         Type: REG18_CORE
-Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
-     T[53:0].REG18_L0_1
          Type: REG18_CORE
 Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
      T[53:0].REG18_L1_0
@@ -589,6 +585,10 @@ Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
 Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
      o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[9].u_fifo/_LIFCL.fi
      fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[4].u_fifo/_LIFCL.fi
+     fo16K.FIFO16K_MODE_inst
 
                                     Page 9
 
@@ -598,10 +598,6 @@ Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
 
 ASIC Components (cont)
 ----------------------
-         Type: EBR_CORE
-Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
-     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[4].u_fifo/_LIFCL.fi
-     fo16K.FIFO16K_MODE_inst
          Type: EBR_CORE
 Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
      o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[12].u_fifo/_LIFCL.f
@@ -655,6 +651,10 @@ Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
      o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[22].u_fifo/_LIFCL.f
      ifo16K.FIFO16K_MODE_inst
          Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
+     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[17].u_fifo/_LIFCL.f
+     ifo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
 
                                    Page 10
 
@@ -664,10 +664,6 @@ Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
 
 ASIC Components (cont)
 ----------------------
-Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
-     o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[17].u_fifo/_LIFCL.f
-     ifo16K.FIFO16K_MODE_inst
-         Type: EBR_CORE
 Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
      o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[25].u_fifo/_LIFCL.f
      ifo16K.FIFO16K_MODE_inst
@@ -702,8 +698,17 @@ Instance Name: frame_buf_inst/p_memzing.MemxDP_p_memzing.MemxDP_0_1.LRAM_inst
          Type: LRAM_CORE
 Instance Name: frame_buf_inst/p_memzing.MemxDP_p_memzing.MemxDP_0_0.LRAM_inst
          Type: LRAM_CORE
-Instance Name: uart_tx_inst/uart_tx_fifo/u_mem0/fifo0/_HARD_IP.u_fifo/_SAME_WIDT
-     H._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.fifo16K.FIFO16K_MODE_inst
+Instance Name: g_iface.spi_rxtx/p_memzing.FIFOMemxDP_p_memzing.FIFOMemxDP_0_0.PD
+     PSC16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: g_iface.spi_rxtx/p_memzing.FIFOMemxDP_p_memzing.FIFOMemxDP_0_1.PD
+     PSC16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: g_iface.spi_rxtx/p_memzing.FIFOMemxDP_p_memzing.FIFOMemxDP_0_2.PD
+     PSC16K_MODE_inst
+         Type: EBR_CORE
+Instance Name: g_iface.spi_rxtx/p_memzing.FIFOMemxDP_p_memzing.FIFOMemxDP_0_3.PD
+     PSC16K_MODE_inst
          Type: EBR_CORE
 Instance Name: main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst
          Type: PLL_CORE
@@ -711,18 +716,79 @@ Instance Name: main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst
 Constraint Summary
 ------------------
 
-   Total number of constraints: 43
+   Total number of constraints: 44
    Total number of constraints dropped: 0
+
+
+
+
+                                   Page 11
+
+
+
+
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 4 secs
-   Total REAL Time: 6 secs
-   Peak Memory Usage: 435 MB
-Checksum -- map: c45ada9b3156329b66f81745c2db1e34f666d011
+   Total REAL Time: 5 secs
+   Peak Memory Usage: 437 MB
+Checksum -- map: a42bcb544f9fdf4a65f205c8f2a83ea3fdb0ff5
 
-                                   Page 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 12
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

@@ -5,19 +5,7 @@ Runtime Summary:
 	=====================================================
 		* Library: work, DesignUnit: main_pll
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: main_pll_ipgen_lscc_pll_Z17_layer1
-			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: pmi_fifo_Z16_layer1
-			Hardware Generation Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: lscc_fifo_Z15_layer1
-			Hardware Generation Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: lscc_fifo_hw_core_Z14_layer1
-			Hardware Generation Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: lscc_hard_fifo_Z13_layer1
-			Hardware Generation Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: lscc_fifo_main_Z12_layer1
-			Hardware Generation Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: lscc_fifo_fwft_fabric_noreg_0s_8s
+		* Library: work, DesignUnit: main_pll_ipgen_lscc_pll_Z12_layer1
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: process_image_out_fifo
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time

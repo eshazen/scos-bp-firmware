@@ -1,30 +1,33 @@
 Resource Usage Report
 Part: lifcl_40-9
 
-Register bits: 2218 of 32256 (7%)
+Register bits: 2289 of 32256 (7%)
 PIC Latch:       0
-I/O cells:       32
+I/O cells:       28
 
 Details:
-CCU2:           886
+BB:             2
+BFD1P3LX:       2
+CCU2:           923
 DPHY:           1
-FD1P3BX:        10
-FD1P3DX:        1989
-FD1P3IX:        215
+FD1P3BX:        12
+FD1P3DX:        1983
+FD1P3IX:        290
 FD1P3JX:        4
-FIFO16K:        34
+FIFO16K:        33
 GSR:            1
-IB:             4
+IB:             5
 INV:            22
-LUT4:           2387
+LUT4:           2431
 MULTADDSUB18X18WIDE: 2
-OB:             28
-PDPSC16K:       2
+OB:             19
+OBZ:            2
+PDPSC16K:       6
 PDPSC512K:      2
 PLL:            1
-VHI:            59
-VLO:            59
-WIDEFN9:        412
+VHI:            53
+VLO:            53
+WIDEFN9:        418
 
 Resource Usage inside macros:
 Registers: 0
@@ -37,11 +40,11 @@ Carry Chains: 0
 Blackboxes: 0
 
 Mapping Summary:
-Total number of registers: 2218 + 0 = 2218 of 32256 (6.88%)
-Total number of LUTs: 2387 + 0 = 2387 
-Total number of EBRs: 2 + 0 = 2 of 84 (2.38%)
+Total number of registers: 2289 + 0 = 2289 of 32256 (7.10%)
+Total number of LUTs: 2431 + 0 = 2431 
+Total number of EBRs: 6 + 0 = 6 of 84 (7.14%)
 Total number of LRAMs: 2 + 0 = 2 of 2 (100.00%)
 Total number of DSPs: 2 + 0 = 2 of 56 (3.57%)
 Total number of Distributed RAMs: 0 + 0 = 0 
-Total number of Carry Chains: 886 + 0 = 886 
-Total number of BlackBoxes: 155 + 0 = 155 
+Total number of Carry Chains: 923 + 0 = 923 
+Total number of BlackBoxes: 142 + 0 = 142 

@@ -23,28 +23,29 @@ Part:			LIFCL_40-9 (Lattice)
 SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
 --------------------------------------------------------
-FD1P3DX         1989                                    
-FD1P3BX         10                                      
-FD1P3IX         215                                     
+BFD1P3LX        2                                       
+FD1P3DX         1983                                    
+FD1P3BX         12                                      
+FD1P3IX         290                                     
 FD1P3JX         4                                       
                                                         
-Total FLOPS     2218               100 %                
+Total FLOPS     2291               100 %                
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mira_test_top:	2218 (36.25 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mira_test_top:	2291 (36.57 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
 INV                    22                                      
-LUT4                   2387                                    
-WIDEFN9                412                                     
-CCU2                   886                                     
+LUT4                   2431                                    
+WIDEFN9                418                                     
+CCU2                   923                                     
                                                                
-Total LUTS             2821               100 %                
-Total CARRY CHAINS     886                100 %                
+Total LUTS             2871               100 %                
+Total CARRY CHAINS     923                100 %                
 ===============================================================
-Total COMBINATIONAL LOGIC in the block mira_test_top:	3707 (60.59 % Utilization)
+Total COMBINATIONAL LOGIC in the block mira_test_top:	3794 (60.56 % Utilization)
 
 
 DSP
@@ -60,43 +61,45 @@ Total DSP in the block mira_test_top:	2 (0.03 % Utilization)
 MEMORY ELEMENTS
 Name               Total elements     Utilization     Notes
 -----------------------------------------------------------
-PDPSC16K           2                                       
+PDPSC16K           6                                       
 PDPSC512K          2                                       
                                                            
-Total BLOCKRAM     4                  100 %                
+Total BLOCKRAM     8                  100 %                
 ===========================================================
-Total MEMORY ELEMENTS in the block mira_test_top:	4 (0.07 % Utilization)
+Total MEMORY ELEMENTS in the block mira_test_top:	8 (0.13 % Utilization)
 
 
 IO PADS
 Name         Total elements     Utilization     Notes
 -----------------------------------------------------
-OB           28                                      
-IB           4                                       
+OB           19                                      
+OBZ          2                                       
+IB           5                                       
+BB           2                                       
                                                      
-Total IO     32                 100 %                
+Total IO     28                 100 %                
 =====================================================
-Total IO PADS in the block mira_test_top:	32 (0.52 % Utilization)
+Total IO PADS in the block mira_test_top:	28 (0.45 % Utilization)
 
 
 BLACKBOX
 Name                Total elements     Utilization     Notes
 ------------------------------------------------------------
-VHI                 59                                      
-VLO                 59                                      
+VHI                 53                                      
+VLO                 53                                      
 GSR                 1                                       
-FIFO16K             34                                      
+FIFO16K             33                                      
 DPHY                1                                       
 PLL                 1                                       
                                                             
-Total BLACK BOX     155                100 %                
+Total BLACK BOX     142                100 %                
 ============================================================
-Total BLACKBOX in the block mira_test_top:	155 (2.53 % Utilization)
+Total BLACKBOX in the block mira_test_top:	142 (2.27 % Utilization)
 
-------------------------------------------------------------------
-########   Utilization report for  cell:   frame_buf_10   ########
-Instance path:   frame_buf_inst                                   
-==================================================================
+---------------------------------------------------------------------------
+########   Utilization report for  cell:   frame_buf_10_1600_480   ########
+Instance path:   frame_buf_inst                                            
+===========================================================================
 
 SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
@@ -106,23 +109,23 @@ FD1P3BX         1
 FD1P3IX         113                                     
 FD1P3JX         4                                       
                                                         
-Total FLOPS     198                8.93 %               
+Total FLOPS     198                8.64 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block frame_buf_inst:	198 (3.24 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block frame_buf_inst:	198 (3.16 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
 INV                    1                                       
-LUT4                   325                                     
-WIDEFN9                13                                      
+LUT4                   318                                     
+WIDEFN9                33                                      
 CCU2                   72                                      
                                                                
-Total LUTS             339                12 %                 
-Total CARRY CHAINS     72                 8.13 %               
+Total LUTS             352                12.3 %               
+Total CARRY CHAINS     72                 7.8 %                
 ===============================================================
-Total COMBINATIONAL LOGIC in the block frame_buf_inst:	411 (6.72 % Utilization)
+Total COMBINATIONAL LOGIC in the block frame_buf_inst:	424 (6.77 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -131,9 +134,9 @@ Name               Total elements     Utilization     Notes
 PDPSC16K           2                                       
 PDPSC512K          2                                       
                                                            
-Total BLOCKRAM     4                  100 %                
+Total BLOCKRAM     4                  50 %                 
 ===========================================================
-Total MEMORY ELEMENTS in the block frame_buf_inst:	4 (0.07 % Utilization)
+Total MEMORY ELEMENTS in the block frame_buf_inst:	4 (0.06 % Utilization)
 
 
 BLACKBOX
@@ -142,7 +145,7 @@ Name                Total elements     Utilization     Notes
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     2                  1.29 %               
+Total BLACK BOX     2                  1.41 %               
 ============================================================
 Total BLACKBOX in the block frame_buf_inst:	2 (0.03 % Utilization)
 
@@ -156,7 +159,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            1                                       
                                                        
-Total LUTS     1                  0.03540 %            
+Total LUTS     1                  0.03480 %            
 =======================================================
 Total COMBINATIONAL LOGIC in the block main_pll_inst:	1 (0.02 % Utilization)
 
@@ -168,12 +171,12 @@ VHI                 2
 VLO                 2                                       
 PLL                 1                                       
                                                             
-Total BLACK BOX     5                  3.23 %               
+Total BLACK BOX     5                  3.52 %               
 ============================================================
 Total BLACKBOX in the block main_pll_inst:	5 (0.08 % Utilization)
 
 ----------------------------------------------------------------------------------------
-########   Utilization report for  cell:   main_pll_ipgen_lscc_pll_Z17_layer1   ########
+########   Utilization report for  cell:   main_pll_ipgen_lscc_pll_Z12_layer1   ########
 Instance path:   main_pll_inst.lscc_pll_inst                                            
 Parent Instance:   main_pll_inst                                                        
 ========================================================================================
@@ -183,7 +186,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            1                                       
                                                        
-Total LUTS     1                  0.03540 %            
+Total LUTS     1                  0.03480 %            
 =======================================================
 Total COMBINATIONAL LOGIC in the block main_pll_inst.lscc_pll_inst:	1 (0.02 % Utilization)
 
@@ -195,38 +198,39 @@ PLL                 1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block main_pll_inst.lscc_pll_inst:	3 (0.05 % Utilization)
 
-----------------------------------------------------------------
-########   Utilization report for  cell:   mipi_rx_10   ########
-Instance path:   mipi_rx_inst                                   
-================================================================
+---------------------------------------------------------------------
+########   Utilization report for  cell:   mipi_rx_10_1600   ########
+Instance path:   mipi_rx_inst                                        
+=====================================================================
 
 SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
 --------------------------------------------------------
-FD1P3DX         35                                      
+FD1P3DX         36                                      
 FD1P3BX         6                                       
-FD1P3IX         102                                     
+FD1P3IX         136                                     
                                                         
-Total FLOPS     143                6.45 %               
+Total FLOPS     178                7.77 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst:	143 (2.34 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst:	178 (2.84 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
 INV                    10                                      
-LUT4                   220                                     
+LUT4                   211                                     
+WIDEFN9                7                                       
 CCU2                   13                                      
                                                                
-Total LUTS             230                8.15 %               
-Total CARRY CHAINS     13                 1.47 %               
+Total LUTS             228                7.94 %               
+Total CARRY CHAINS     13                 1.41 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block mipi_rx_inst:	243 (3.97 % Utilization)
+Total COMBINATIONAL LOGIC in the block mipi_rx_inst:	241 (3.85 % Utilization)
 
 
 BLACKBOX
@@ -237,9 +241,9 @@ VHI                 10
 FIFO16K             1                                       
 DPHY                1                                       
                                                             
-Total BLACK BOX     22                 14.2 %               
+Total BLACK BOX     22                 15.5 %               
 ============================================================
-Total BLACKBOX in the block mipi_rx_inst:	22 (0.36 % Utilization)
+Total BLACKBOX in the block mipi_rx_inst:	22 (0.35 % Utilization)
 
 -------------------------------------------------------------------------
 ########   Utilization report for  cell:   mipi_cross_clk_fifo   ########
@@ -253,9 +257,9 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.67 %               
+Total FLOPS     37                 1.62 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst:	37 (0.60 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst:	37 (0.59 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -263,7 +267,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.07090 %            
+Total LUTS     2                  0.06970 %            
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst:	2 (0.03 % Utilization)
 
@@ -275,7 +279,7 @@ VHI                 5
 VLO                 5                                       
 FIFO16K             1                                       
                                                             
-Total BLACK BOX     11                 7.1 %                
+Total BLACK BOX     11                 7.75 %               
 ============================================================
 Total BLACKBOX in the block mipi_rx_inst.mipi_cross_clk_fifo_inst:	11 (0.18 % Utilization)
 
@@ -291,9 +295,9 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.67 %               
+Total FLOPS     37                 1.62 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst:	37 (0.60 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst:	37 (0.59 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -301,7 +305,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.07090 %            
+Total LUTS     2                  0.06970 %            
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst:	2 (0.03 % Utilization)
 
@@ -313,9 +317,9 @@ VHI                 4
 VLO                 4                                       
 FIFO16K             1                                       
                                                             
-Total BLACK BOX     9                  5.81 %               
+Total BLACK BOX     9                  6.34 %               
 ============================================================
-Total BLACKBOX in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst:	9 (0.15 % Utilization)
+Total BLACKBOX in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst:	9 (0.14 % Utilization)
 
 -----------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1   ########
@@ -329,9 +333,9 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.67 %               
+Total FLOPS     37                 1.62 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0:	37 (0.60 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0:	37 (0.59 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -339,7 +343,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.07090 %            
+Total LUTS     2                  0.06970 %            
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0:	2 (0.03 % Utilization)
 
@@ -351,7 +355,7 @@ VHI                 3
 VLO                 3                                       
 FIFO16K             1                                       
                                                             
-Total BLACK BOX     7                  4.52 %               
+Total BLACK BOX     7                  4.93 %               
 ============================================================
 Total BLACKBOX in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0:	7 (0.11 % Utilization)
 
@@ -367,9 +371,9 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.67 %               
+Total FLOPS     37                 1.62 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo:	37 (0.60 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo:	37 (0.59 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -377,7 +381,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.07090 %            
+Total LUTS     2                  0.06970 %            
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo:	2 (0.03 % Utilization)
 
@@ -389,7 +393,7 @@ VHI                 2
 VLO                 2                                       
 FIFO16K             1                                       
                                                             
-Total BLACK BOX     5                  3.23 %               
+Total BLACK BOX     5                  3.52 %               
 ============================================================
 Total BLACKBOX in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo:	5 (0.08 % Utilization)
 
@@ -405,9 +409,9 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.67 %               
+Total FLOPS     37                 1.62 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	37 (0.60 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	37 (0.59 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -415,7 +419,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.07090 %            
+Total LUTS     2                  0.06970 %            
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	2 (0.03 % Utilization)
 
@@ -427,7 +431,7 @@ FIFO16K             1
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	3 (0.05 % Utilization)
 
@@ -442,9 +446,9 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3IX         4                                       
                                                         
-Total FLOPS     4                  0.180 %              
+Total FLOPS     4                  0.1750 %             
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst:	4 (0.07 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst:	4 (0.06 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -453,7 +457,7 @@ Name           Total elements     Utilization     Notes
 INV            2                                       
 LUT4           6                                       
                                                        
-Total LUTS     8                  0.2840 %             
+Total LUTS     8                  0.2790 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_dphy_rx_inst:	8 (0.13 % Utilization)
 
@@ -465,9 +469,9 @@ VHI                 4
 VLO                 4                                       
 DPHY                1                                       
                                                             
-Total BLACK BOX     9                  5.81 %               
+Total BLACK BOX     9                  6.34 %               
 ============================================================
-Total BLACKBOX in the block mipi_rx_inst.mipi_dphy_rx_inst:	9 (0.15 % Utilization)
+Total BLACKBOX in the block mipi_rx_inst.mipi_dphy_rx_inst:	9 (0.14 % Utilization)
 
 -------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1   ########
@@ -480,9 +484,9 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3IX         4                                       
                                                         
-Total FLOPS     4                  0.180 %              
+Total FLOPS     4                  0.1750 %             
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst:	4 (0.07 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst:	4 (0.06 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -491,7 +495,7 @@ Name           Total elements     Utilization     Notes
 INV            2                                       
 LUT4           6                                       
                                                        
-Total LUTS     8                  0.2840 %             
+Total LUTS     8                  0.2790 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst:	8 (0.13 % Utilization)
 
@@ -503,7 +507,7 @@ VHI                 3
 VLO                 3                                       
 DPHY                1                                       
                                                             
-Total BLACK BOX     7                  4.52 %               
+Total BLACK BOX     7                  4.93 %               
 ============================================================
 Total BLACKBOX in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst:	7 (0.11 % Utilization)
 
@@ -518,9 +522,9 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3IX         4                                       
                                                         
-Total FLOPS     4                  0.180 %              
+Total FLOPS     4                  0.1750 %             
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx:	4 (0.07 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx:	4 (0.06 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -529,7 +533,7 @@ Name           Total elements     Utilization     Notes
 INV            2                                       
 LUT4           6                                       
                                                        
-Total LUTS     8                  0.2840 %             
+Total LUTS     8                  0.2790 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx:	8 (0.13 % Utilization)
 
@@ -541,7 +545,7 @@ DPHY                1
 VLO                 2                                       
 VHI                 2                                       
                                                             
-Total BLACK BOX     5                  3.23 %               
+Total BLACK BOX     5                  3.52 %               
 ============================================================
 Total BLACKBOX in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx:	5 (0.08 % Utilization)
 
@@ -556,9 +560,9 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3IX         4                                       
                                                         
-Total FLOPS     4                  0.180 %              
+Total FLOPS     4                  0.1750 %             
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider:	4 (0.07 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider:	4 (0.06 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -567,7 +571,7 @@ Name           Total elements     Utilization     Notes
 INV            1                                       
 LUT4           4                                       
                                                        
-Total LUTS     5                  0.1770 %             
+Total LUTS     5                  0.1740 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider:	5 (0.08 % Utilization)
 
@@ -578,37 +582,37 @@ Name                Total elements     Utilization     Notes
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     2                  1.29 %               
+Total BLACK BOX     2                  1.41 %               
 ============================================================
 Total BLACKBOX in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider:	2 (0.03 % Utilization)
 
-----------------------------------------------------------------------
-########   Utilization report for  cell:   process_image_10   ########
-Instance path:   process_image_inst                                   
-======================================================================
+---------------------------------------------------------------------------
+########   Utilization report for  cell:   process_image_10_1600   ########
+Instance path:   process_image_inst                                        
+===========================================================================
 
 SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
 --------------------------------------------------------
-FD1P3DX         1674                                    
+FD1P3DX         1675                                    
 FD1P3BX         1                                       
                                                         
-Total FLOPS     1675               75.5 %               
+Total FLOPS     1676               73.2 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block process_image_inst:	1675 (27.38 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block process_image_inst:	1676 (26.75 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
-LUT4                   1737                                    
-WIDEFN9                399                                     
+LUT4                   1732                                    
+WIDEFN9                378                                     
 CCU2                   787                                     
                                                                
-Total LUTS             2136               75.7 %               
-Total CARRY CHAINS     787                88.8 %               
+Total LUTS             2110               73.5 %               
+Total CARRY CHAINS     787                85.3 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block process_image_inst:	2923 (47.78 % Utilization)
+Total COMBINATIONAL LOGIC in the block process_image_inst:	2897 (46.24 % Utilization)
 
 
 DSP
@@ -628,37 +632,37 @@ VLO                 38
 VHI                 38                                      
 FIFO16K             32                                      
                                                             
-Total BLACK BOX     108                69.7 %               
+Total BLACK BOX     108                76.1 %               
 ============================================================
-Total BLACKBOX in the block process_image_inst:	108 (1.77 % Utilization)
+Total BLACKBOX in the block process_image_inst:	108 (1.72 % Utilization)
 
----------------------------------------------------------------------
-########   Utilization report for  cell:   img_mean_std_10   ########
-Instance path:   process_image_inst.img_mean_std_inst                
-Parent Instance:   process_image_inst                                
-=====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   img_mean_std_10_1600   ########
+Instance path:   process_image_inst.img_mean_std_inst                     
+Parent Instance:   process_image_inst                                     
+==========================================================================
 
 SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         1533                                    
                                                         
-Total FLOPS     1533               69.1 %               
+Total FLOPS     1533               66.9 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block process_image_inst.img_mean_std_inst:	1533 (25.06 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block process_image_inst.img_mean_std_inst:	1533 (24.47 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
-LUT4                   1629                                    
+LUT4                   1628                                    
 WIDEFN9                378                                     
 CCU2                   787                                     
                                                                
-Total LUTS             2007               71.1 %               
-Total CARRY CHAINS     787                88.8 %               
+Total LUTS             2006               69.9 %               
+Total CARRY CHAINS     787                85.3 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block process_image_inst.img_mean_std_inst:	2794 (45.67 % Utilization)
+Total COMBINATIONAL LOGIC in the block process_image_inst.img_mean_std_inst:	2793 (44.58 % Utilization)
 
 
 DSP
@@ -677,7 +681,7 @@ Name                Total elements     Utilization     Notes
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     2                  1.29 %               
+Total BLACK BOX     2                  1.41 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.img_mean_std_inst:	2 (0.03 % Utilization)
 
@@ -692,9 +696,19 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         64                                      
                                                         
-Total FLOPS     64                 2.89 %               
+Total FLOPS     64                 2.79 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst:	64 (1.05 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst:	64 (1.02 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name           Total elements     Utilization     Notes
+-------------------------------------------------------
+LUT4           1                                       
+                                                       
+Total LUTS     1                  0.03480 %            
+=======================================================
+Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst:	1 (0.02 % Utilization)
 
 
 BLACKBOX
@@ -704,9 +718,9 @@ VHI                 36
 VLO                 36                                      
 FIFO16K             32                                      
                                                             
-Total BLACK BOX     104                67.1 %               
+Total BLACK BOX     104                73.2 %               
 ============================================================
-Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst:	104 (1.70 % Utilization)
+Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst:	104 (1.66 % Utilization)
 
 -------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1   ########
@@ -719,9 +733,19 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         64                                      
                                                         
-Total FLOPS     64                 2.89 %               
+Total FLOPS     64                 2.79 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst:	64 (1.05 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst:	64 (1.02 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name           Total elements     Utilization     Notes
+-------------------------------------------------------
+LUT4           1                                       
+                                                       
+Total LUTS     1                  0.03480 %            
+=======================================================
+Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst:	1 (0.02 % Utilization)
 
 
 BLACKBOX
@@ -731,9 +755,9 @@ VHI                 35
 VLO                 35                                      
 FIFO16K             32                                      
                                                             
-Total BLACK BOX     102                65.8 %               
+Total BLACK BOX     102                71.8 %               
 ============================================================
-Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst:	102 (1.67 % Utilization)
+Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst:	102 (1.63 % Utilization)
 
 -----------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1   ########
@@ -746,9 +770,19 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         64                                      
                                                         
-Total FLOPS     64                 2.89 %               
+Total FLOPS     64                 2.79 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0:	64 (1.05 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0:	64 (1.02 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name           Total elements     Utilization     Notes
+-------------------------------------------------------
+LUT4           1                                       
+                                                       
+Total LUTS     1                  0.03480 %            
+=======================================================
+Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0:	1 (0.02 % Utilization)
 
 
 BLACKBOX
@@ -758,9 +792,9 @@ VHI                 34
 VLO                 34                                      
 FIFO16K             32                                      
                                                             
-Total BLACK BOX     100                64.5 %               
+Total BLACK BOX     100                70.4 %               
 ============================================================
-Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0:	100 (1.63 % Utilization)
+Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0:	100 (1.60 % Utilization)
 
 -----------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1   ########
@@ -773,9 +807,19 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         64                                      
                                                         
-Total FLOPS     64                 2.89 %               
+Total FLOPS     64                 2.79 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo:	64 (1.05 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo:	64 (1.02 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name           Total elements     Utilization     Notes
+-------------------------------------------------------
+LUT4           1                                       
+                                                       
+Total LUTS     1                  0.03480 %            
+=======================================================
+Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo:	1 (0.02 % Utilization)
 
 
 BLACKBOX
@@ -785,9 +829,9 @@ VHI                 33
 VLO                 33                                      
 FIFO16K             32                                      
                                                             
-Total BLACK BOX     98                 63.2 %               
+Total BLACK BOX     98                 69 %                 
 ============================================================
-Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo:	98 (1.60 % Utilization)
+Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo:	98 (1.56 % Utilization)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1   ########                                     
@@ -800,7 +844,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[11].u_fifo:	2 (0.03 % Utilization)
 
@@ -812,7 +856,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[11].u_fifo:	3 (0.05 % Utilization)
 
@@ -827,7 +871,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[5].u_fifo:	2 (0.03 % Utilization)
 
@@ -839,7 +883,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[5].u_fifo:	3 (0.05 % Utilization)
 
@@ -854,7 +898,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[23].u_fifo:	2 (0.03 % Utilization)
 
@@ -866,7 +910,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[23].u_fifo:	3 (0.05 % Utilization)
 
@@ -881,7 +925,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[7].u_fifo:	2 (0.03 % Utilization)
 
@@ -893,7 +937,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[7].u_fifo:	3 (0.05 % Utilization)
 
@@ -908,7 +952,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[2].u_fifo:	2 (0.03 % Utilization)
 
@@ -920,7 +964,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[2].u_fifo:	3 (0.05 % Utilization)
 
@@ -935,7 +979,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[8].u_fifo:	2 (0.03 % Utilization)
 
@@ -947,7 +991,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[8].u_fifo:	3 (0.05 % Utilization)
 
@@ -962,7 +1006,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[3].u_fifo:	2 (0.03 % Utilization)
 
@@ -974,7 +1018,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[3].u_fifo:	3 (0.05 % Utilization)
 
@@ -989,7 +1033,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[6].u_fifo:	2 (0.03 % Utilization)
 
@@ -1001,7 +1045,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[6].u_fifo:	3 (0.05 % Utilization)
 
@@ -1016,7 +1060,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[1].u_fifo:	2 (0.03 % Utilization)
 
@@ -1028,7 +1072,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[1].u_fifo:	3 (0.05 % Utilization)
 
@@ -1043,7 +1087,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[9].u_fifo:	2 (0.03 % Utilization)
 
@@ -1055,7 +1099,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[9].u_fifo:	3 (0.05 % Utilization)
 
@@ -1070,7 +1114,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[4].u_fifo:	2 (0.03 % Utilization)
 
@@ -1082,7 +1126,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[4].u_fifo:	3 (0.05 % Utilization)
 
@@ -1097,7 +1141,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[18].u_fifo:	2 (0.03 % Utilization)
 
@@ -1109,7 +1153,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[18].u_fifo:	3 (0.05 % Utilization)
 
@@ -1124,7 +1168,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[10].u_fifo:	2 (0.03 % Utilization)
 
@@ -1136,7 +1180,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[10].u_fifo:	3 (0.05 % Utilization)
 
@@ -1151,7 +1195,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[30].u_fifo:	2 (0.03 % Utilization)
 
@@ -1163,7 +1207,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[30].u_fifo:	3 (0.05 % Utilization)
 
@@ -1178,7 +1222,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[31].u_fifo:	2 (0.03 % Utilization)
 
@@ -1190,7 +1234,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[31].u_fifo:	3 (0.05 % Utilization)
 
@@ -1205,7 +1249,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[26].u_fifo:	2 (0.03 % Utilization)
 
@@ -1217,7 +1261,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[26].u_fifo:	3 (0.05 % Utilization)
 
@@ -1232,7 +1276,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[21].u_fifo:	2 (0.03 % Utilization)
 
@@ -1244,7 +1288,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[21].u_fifo:	3 (0.05 % Utilization)
 
@@ -1259,7 +1303,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[16].u_fifo:	2 (0.03 % Utilization)
 
@@ -1271,7 +1315,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[16].u_fifo:	3 (0.05 % Utilization)
 
@@ -1286,7 +1330,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[24].u_fifo:	2 (0.03 % Utilization)
 
@@ -1298,7 +1342,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[24].u_fifo:	3 (0.05 % Utilization)
 
@@ -1313,7 +1357,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[19].u_fifo:	2 (0.03 % Utilization)
 
@@ -1325,7 +1369,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[19].u_fifo:	3 (0.05 % Utilization)
 
@@ -1340,7 +1384,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[22].u_fifo:	2 (0.03 % Utilization)
 
@@ -1352,7 +1396,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[22].u_fifo:	3 (0.05 % Utilization)
 
@@ -1367,7 +1411,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[17].u_fifo:	2 (0.03 % Utilization)
 
@@ -1379,7 +1423,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[17].u_fifo:	3 (0.05 % Utilization)
 
@@ -1394,7 +1438,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[25].u_fifo:	2 (0.03 % Utilization)
 
@@ -1406,7 +1450,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[25].u_fifo:	3 (0.05 % Utilization)
 
@@ -1421,7 +1465,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[20].u_fifo:	2 (0.03 % Utilization)
 
@@ -1433,7 +1477,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[20].u_fifo:	3 (0.05 % Utilization)
 
@@ -1448,7 +1492,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[28].u_fifo:	2 (0.03 % Utilization)
 
@@ -1460,7 +1504,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[28].u_fifo:	3 (0.05 % Utilization)
 
@@ -1475,7 +1519,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[29].u_fifo:	2 (0.03 % Utilization)
 
@@ -1487,7 +1531,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[29].u_fifo:	3 (0.05 % Utilization)
 
@@ -1502,7 +1546,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[27].u_fifo:	2 (0.03 % Utilization)
 
@@ -1514,7 +1558,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[27].u_fifo:	3 (0.05 % Utilization)
 
@@ -1529,9 +1573,19 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	2 (0.03 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name           Total elements     Utilization     Notes
+-------------------------------------------------------
+LUT4           1                                       
+                                                       
+Total LUTS     1                  0.03480 %            
+=======================================================
+Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	1 (0.02 % Utilization)
 
 
 BLACKBOX
@@ -1541,7 +1595,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	3 (0.05 % Utilization)
 
@@ -1556,7 +1610,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[12].u_fifo:	2 (0.03 % Utilization)
 
@@ -1568,7 +1622,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[12].u_fifo:	3 (0.05 % Utilization)
 
@@ -1583,7 +1637,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[13].u_fifo:	2 (0.03 % Utilization)
 
@@ -1595,7 +1649,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[13].u_fifo:	3 (0.05 % Utilization)
 
@@ -1610,7 +1664,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[14].u_fifo:	2 (0.03 % Utilization)
 
@@ -1622,7 +1676,7 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[14].u_fifo:	3 (0.05 % Utilization)
 
@@ -1637,7 +1691,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.09020 %            
+Total FLOPS     2                  0.08730 %            
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[15].u_fifo:	2 (0.03 % Utilization)
 
@@ -1649,166 +1703,60 @@ FIFO16K             1
 VHI                 1                                       
 VLO                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     3                  2.11 %               
 ============================================================
 Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[15].u_fifo:	3 (0.05 % Utilization)
 
----------------------------------------------------------------
-########   Utilization report for  cell:   uart_rx_8   ########
-Instance path:   uart_rx_inst                                  
-===============================================================
+------------------------------------------------------------------------
+########   Utilization report for  cell:   spi_rxtx_with_fifo   ########
+Instance path:   g_iface.spi_rxtx                                       
+Parent Instance:   mira_test_top                                        
+========================================================================
 
 SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
 --------------------------------------------------------
-FD1P3DX         22                                      
-FD1P3BX         1                                       
+FD1P3DX         38                                      
+FD1P3BX         2                                       
+FD1P3IX         41                                      
                                                         
-Total FLOPS     23                 1.04 %               
+Total FLOPS     81                 3.54 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block uart_rx_inst:	23 (0.38 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block g_iface.spi_rxtx:	81 (1.29 % Utilization)
 
 
 COMBINATIONAL LOGIC
-Name           Total elements     Utilization     Notes
--------------------------------------------------------
-LUT4           34                                      
-                                                       
-Total LUTS     34                 1.21 %               
-=======================================================
-Total COMBINATIONAL LOGIC in the block uart_rx_inst:	34 (0.56 % Utilization)
-
-
-BLACKBOX
-Name                Total elements     Utilization     Notes
-------------------------------------------------------------
-VHI                 1                                       
-VLO                 1                                       
-                                                            
-Total BLACK BOX     2                  1.29 %               
-============================================================
-Total BLACKBOX in the block uart_rx_inst:	2 (0.03 % Utilization)
-
+Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
-########   Utilization report for  cell:   uart_tx_8   ########
-Instance path:   uart_tx_inst                                  
+INV                    1                                       
+LUT4                   134                                     
+CCU2                   37                                      
+                                                               
+Total LUTS             135                4.7 %                
+Total CARRY CHAINS     37                 4.01 %               
 ===============================================================
-
-SEQUENTIAL ELEMENTS
-Name            Total elements     Utilization     Notes
---------------------------------------------------------
-FD1P3DX         22                                      
-                                                        
-Total FLOPS     22                 0.9920 %             
-========================================================
-Total SEQUENTIAL ELEMENTS in the block uart_tx_inst:	22 (0.36 % Utilization)
+Total COMBINATIONAL LOGIC in the block g_iface.spi_rxtx:	172 (2.75 % Utilization)
 
 
-COMBINATIONAL LOGIC
-Name           Total elements     Utilization     Notes
--------------------------------------------------------
-LUT4           35                                      
-                                                       
-Total LUTS     35                 1.24 %               
-=======================================================
-Total COMBINATIONAL LOGIC in the block uart_tx_inst:	35 (0.57 % Utilization)
+MEMORY ELEMENTS
+Name               Total elements     Utilization     Notes
+-----------------------------------------------------------
+PDPSC16K           4                                       
+                                                           
+Total BLOCKRAM     4                  50 %                 
+===========================================================
+Total MEMORY ELEMENTS in the block g_iface.spi_rxtx:	4 (0.06 % Utilization)
 
 
 BLACKBOX
 Name                Total elements     Utilization     Notes
 ------------------------------------------------------------
-VLO                 6                                       
-VHI                 6                                       
-FIFO16K             1                                       
-                                                            
-Total BLACK BOX     13                 8.39 %               
-============================================================
-Total BLACKBOX in the block uart_tx_inst:	13 (0.21 % Utilization)
-
--------------------------------------------------------------------------
-########   Utilization report for  cell:   pmi_fifo_Z16_layer1   ########
-Instance path:   uart_tx_inst.uart_tx_fifo                               
-Parent Instance:   uart_tx_inst                                          
-=========================================================================
-
-BLACKBOX
-Name                Total elements     Utilization     Notes
-------------------------------------------------------------
-VHI                 5                                       
-VLO                 5                                       
-FIFO16K             1                                       
-                                                            
-Total BLACK BOX     11                 7.1 %                
-============================================================
-Total BLACKBOX in the block uart_tx_inst.uart_tx_fifo:	11 (0.18 % Utilization)
-
---------------------------------------------------------------------------
-########   Utilization report for  cell:   lscc_fifo_Z15_layer1   ########
-Instance path:   uart_tx_inst.uart_tx_fifo.u_mem0                         
-Parent Instance:   uart_tx_inst.uart_tx_fifo                              
-==========================================================================
-
-BLACKBOX
-Name                Total elements     Utilization     Notes
-------------------------------------------------------------
-VHI                 4                                       
-VLO                 4                                       
-FIFO16K             1                                       
-                                                            
-Total BLACK BOX     9                  5.81 %               
-============================================================
-Total BLACKBOX in the block uart_tx_inst.uart_tx_fifo.u_mem0:	9 (0.15 % Utilization)
-
--------------------------------------------------------------------------------
-########   Utilization report for  cell:   lscc_fifo_main_Z12_layer1   ########
-Instance path:   uart_tx_inst.uart_tx_fifo.u_mem0.fifo0                        
-Parent Instance:   uart_tx_inst.uart_tx_fifo.u_mem0                            
-===============================================================================
-
-BLACKBOX
-Name                Total elements     Utilization     Notes
-------------------------------------------------------------
-VHI                 3                                       
-VLO                 3                                       
-FIFO16K             1                                       
-                                                            
-Total BLACK BOX     7                  4.52 %               
-============================================================
-Total BLACKBOX in the block uart_tx_inst.uart_tx_fifo.u_mem0.fifo0:	7 (0.11 % Utilization)
-
--------------------------------------------------------------------------------
-########   Utilization report for  cell:   lscc_hard_fifo_Z13_layer1   ########
-Instance path:   uart_tx_inst.uart_tx_fifo.u_mem0.fifo0._HARD_IP.u_fifo        
-Parent Instance:   uart_tx_inst.uart_tx_fifo.u_mem0.fifo0                      
-===============================================================================
-
-BLACKBOX
-Name                Total elements     Utilization     Notes
-------------------------------------------------------------
-VHI                 2                                       
-VLO                 2                                       
-FIFO16K             1                                       
-                                                            
-Total BLACK BOX     5                  3.23 %               
-============================================================
-Total BLACKBOX in the block uart_tx_inst.uart_tx_fifo.u_mem0.fifo0._HARD_IP.u_fifo:	5 (0.08 % Utilization)
-
-----------------------------------------------------------------------------------------------------------------------
-########   Utilization report for  cell:   lscc_fifo_hw_core_Z14_layer1   ########                                    
-Instance path:   uart_tx_inst.uart_tx_fifo.u_mem0.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo
-Parent Instance:   uart_tx_inst.uart_tx_fifo.u_mem0.fifo0._HARD_IP.u_fifo                                             
-======================================================================================================================
-
-BLACKBOX
-Name                Total elements     Utilization     Notes
-------------------------------------------------------------
-FIFO16K             1                                       
 VLO                 1                                       
 VHI                 1                                       
                                                             
-Total BLACK BOX     3                  1.94 %               
+Total BLACK BOX     2                  1.41 %               
 ============================================================
-Total BLACKBOX in the block uart_tx_inst.uart_tx_fifo.u_mem0.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	3 (0.05 % Utilization)
+Total BLACKBOX in the block g_iface.spi_rxtx:	2 (0.03 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

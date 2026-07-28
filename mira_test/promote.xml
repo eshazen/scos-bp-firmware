@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/Bernhard/my_designs/mira_test/promote.xml" version="Diamond (64-bit) 2025.2.0.48.0" date="Thu Jul 09 11:42:29 2026" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/Users/Bernhard/my_designs/mira_test/promote.xml" version="Diamond (64-bit) 2025.2.0.48.0" date="Sun Jul 26 20:37:29 2026" vendor="Lattice Semiconductor Corporation" >
   <msg mid="35911000" type="Warning" internal="true" />
   <msg mid="2044320" type="Info" internal="true" />
   <msg mid="35911026" type="Warning" internal="true" />
@@ -7,6 +7,7 @@
   <msg mid="35921052" type="Warning" internal="true" />
   <msg mid="2046399" type="Info" internal="true" />
   <msg mid="2046359" type="Error" internal="true" />
+  <msg mid="2046346" type="Warning" internal="true" />
   <msg mid="35911012" type="Info" internal="true" />
   <msg mid="35921244" type="Warning" internal="true" />
   <msg mid="35911001" type="Warning" internal="true" />
@@ -24,7 +25,9 @@
   <msg mid="35921400" type="Info" internal="true" />
   <msg mid="2046084" type="Error" internal="true" />
   <msg mid="2046319" type="Error" internal="true" />
+  <msg mid="2046632" type="Error" internal="true" />
   <msg mid="35921613" type="Warning" internal="true" />
+  <msg mid="2046773" type="Error" internal="true" />
   <msg mid="35921196" type="Warning" internal="true" />
   <msg mid="2046336" type="Warning" internal="true" />
   <msg mid="35921153" type="Warning" internal="true" />
@@ -34,8 +37,8 @@
   <msg mid="35921033" type="Warning" internal="true" />
   <msg mid="2046241" type="Error" internal="true" />
   <msg mid="2046014" type="Info" internal="true" />
-  <msg mid="2046013" type="Info" internal="true" />
   <msg mid="2046196" type="Warning" internal="true" />
+  <msg mid="2046013" type="Info" internal="true" />
   <msg mid="2046033" type="Error" internal="true" />
   <msg mid="2046443" type="Warning" internal="true" />
   <msg mid="2046284" type="Error" internal="true" />
@@ -49,7 +52,6 @@
   <msg mid="2046400" type="Info" internal="true" />
   <msg mid="2043018" type="Info" internal="true" />
   <msg mid="2046318" type="Error" internal="true" />
-  <msg mid="2046346" type="Warning" internal="true" />
   <msg mid="35921272" type="Warning" internal="true" />
   <msg mid="35921768" type="Warning" internal="true" />
   <msg mid="2045000" type="Info" internal="true" />
@@ -85,7 +87,6 @@
   <msg mid="2046132" type="Error" internal="true" />
   <msg mid="2046275" type="Error" internal="true" />
   <msg mid="2046122" type="Error" internal="true" />
-  <msg mid="2046632" type="Error" internal="true" />
   <msg mid="35921632" type="Warning" internal="true" />
   <msg mid="2046402" type="Error" internal="true" />
   <msg mid="2046475" type="Error" internal="true" />
@@ -93,5 +94,4 @@
   <msg mid="2046250" type="Warning" internal="true" />
   <msg mid="2046289" type="Error" internal="true" />
   <msg mid="2046238" type="Error" internal="true" />
-  <msg mid="2046773" type="Error" internal="true" />
 </userSetting>

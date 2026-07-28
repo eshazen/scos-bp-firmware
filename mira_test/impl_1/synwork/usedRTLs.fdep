@@ -51,6 +51,7 @@ File                                                                            
 "C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v"                    verilog                        INCLUDED
 "C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v"                                                     verilog                        INCLUDED
 "C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.vhd"                                                       vhdl                      IN PROJECT
+"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd"                       vhdl                      IN PROJECT
 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd"                                vhdl                      IN PROJECT
 "C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd"                            vhdl                      IN PROJECT
 "C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v"     verilog                      IN PROJECT
