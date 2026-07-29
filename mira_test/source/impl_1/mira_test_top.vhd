@@ -47,13 +47,13 @@ end mira_test_top;
 architecture architecture_mira_test_top of mira_test_top is
 
 	constant FW_VER : integer := 1;
-	constant BIT_DEPTH : integer := 10; -- Image data bit depth. Supported: 8,10,12. Mira config must match
+	constant BIT_DEPTH : integer := 10; -- Image data bit depth. Supported: 8,10,12. Mira config must match.
 	constant UART_CLK_DIV : integer := 8; -- Determines UART baud rate. 96 / 8 = 12 MBPS
-	constant N_CFG_REG_ADDR_BITS : integer := 4; -- determines number of available config registers
-	constant N_CMD_BYTES : integer := 2; -- number of bytes to read/write config register
-	constant N_COLS : integer := 1600; -- numer of columns in image. Mira config must match
-	constant N_LINES : integer := 480; -- numer of rows/lines in image. Mira config must match
-	constant IFACE_TYPE : string := "SPI"; -- Interface to Computer. Select UART or SPI.
+	constant N_CFG_REG_ADDR_BITS : integer := 4; -- Determines number of available config registers, 2**N
+	constant N_CMD_BYTES : integer := 2; -- Number of bytes to read/write config register.
+	constant N_COLS : integer := 1600; -- Number of columns in image. Mira config must match.
+	constant N_LINES : integer := 480; -- Number of rows/lines in image. Mira config must match.
+	constant IFACE_TYPE : string := "SPI"; -- Interface to computer. Select "UART" or "SPI".
 
 	signal ClkxC : std_logic;
 	signal PLLLockxS : std_logic;
@@ -83,7 +83,6 @@ architecture architecture_mira_test_top of mira_test_top is
 	signal InLinexS : std_logic;
 	
 	-- ## UART / SPI / Control logic related ##
-
 	signal PDatOutTxRdyxS : std_logic;
 	signal PDatOutValidxS : std_logic;
 	signal PDatOutxD : std_logic_vector(7 downto 0);
@@ -110,9 +109,29 @@ architecture architecture_mira_test_top of mira_test_top is
 	end component;
 
 begin
-	assert N_CFG_REG_ADDR_BITS < 8 severity error; -- ensure <=7 bit address for cfg reg. high bit is r/w
+	-- ensure <=7 bit address for cfg reg. high bit is r/w
+	assert N_CFG_REG_ADDR_BITS < 8 severity error; 
 	
-	-- config FSM
+	-- ## configuration register related ##
+	
+	-- Configuration Register Map -- CfgReg
+	-- ( 0) - Status Bits: (0) Run Img Processing, (1) Trigger Raw Frame, (7) Reset FIFOs
+	-- ( 1) - Select Data Souce: 0x00 CfgReg, 0x01 Img Processing, 0x02 Raw Frame
+	-- ( 2) - Img Processing : Dark level subtraction value
+	-- ( 3) - Spare
+	-- ( 4) - Spare
+	-- ( 5) - Raw Frame: Index of image slice to be acquired
+	-- ( 6) - Raw Frame: Number of frames to be summed
+	-- ( 7) - Spare
+	-- ( 8) - I2C: (0) SCL force, (1) SDA force, (2) SCL read, (3) SDA read
+	-- ( 9) - Spare
+	-- (10) - Spare
+	-- (11) - Spare
+	-- (12) - Spare
+	-- (13) - Spare
+	-- (14) - Bit Depth setting of this bitstream - read only
+	-- (15) - Firmware version - read only
+	
 	-- FSM used to write/read configuration registers
 	p_cfg_memzing : process (ClkxC, ResetxRI)
 	begin
@@ -165,7 +184,7 @@ begin
 					CfgPDatOutValidxS <= '1';
 					CfgStatexDN <= sTxReg;
 				end if;
-			when sTxReg =>
+			when sTxReg => -- send out the requested configuration byte/register
 				CfgPDatOutxD <= CfgRegxDP(to_integer(unsigned(CfgFSMSRegxDP(0)(N_CFG_REG_ADDR_BITS-1 downto 0))));
 				if RdyForCfgPDatxS = '1' then
 					CfgPDatOutValidxS <= '1';
@@ -176,31 +195,17 @@ begin
 				CfgStatexDN <= sIdle;
 		end case;
 		
-		-- Constant/read-only registers
-		CfgRegxDN(8)(2) <= CCISCLxSIO;
-		CfgRegxDN(8)(3) <= CCISDAxSIO;
+		-- Define constant/read-only registers or bits in registers
+		CfgRegxDN(8)(2) <= CCISCLxSIO; -- SCL readback value
+		CfgRegxDN(8)(3) <= CCISDAxSIO; -- SDA readback values
 		CfgRegxDN(14) <= std_logic_vector(to_unsigned(BIT_DEPTH, 8));
 		CfgRegxDN(15) <= std_logic_vector(to_unsigned(FW_VER, 8));		
 	end process;
 	
+	-- bit-bang I2C output, controlled by rapidly changing configuration register 8
 	CCISCLxSIO <= '0' when CfgRegxDP(8)(0) = '0' else 'Z'; 
 	CCISDAxSIO <= '0' when CfgRegxDP(8)(1) = '0' else 'Z'; 
-	
-	-- Configuration Register Map -- CfgReg
-	-- ( 0) - Status Bits: (0) Run Img Processing, (1) Trigger Raw Frame, (7) Reset FIFOs
-	-- ( 1) - Select Data Souce: 0x00 CfgReg, 0x01 Img Processing, 0x02 Raw Frame
-	-- ( 2) - Img Processing : Dark level subtraction value
-	-- ( 3) - Spare
-	-- ( 4) - Spare
-	-- ( 5) - Raw Frame: Index of image slice to be acquired
-	-- ( 6) - Raw Frame: Number of frames to be summed
-	-- ( 7) - Spare
-	-- ( 8) - I2C: (0) SCL force, (1) SDA force, (2) SCL read, (3) SDA read
-	-- (9-13) - Spare
-	-- (14) - Bit Depth setting of this bitstream - read only
-	-- (15) - Firmware version - read only
-	
-	
+	-- ## Data acquisition MUX ##
 	-- this MUX selects which datastream is sent to the computer 
 	p_acq_mux_memless : process(all)
 	begin
@@ -257,13 +262,10 @@ begin
 	LEDxSO(12) <= not RunProcxS;
 	LEDxSO(13) <= not PLLLockxS ;
 	
-	--DebugDataxDO(0) <= '0';--UartFPGAtoFTDIxD;
-	--DebugDataxDO(1) <= UartFTDItoFPGAxDI;
-	--DebugDataxDO(2) <= UartRTSntoFPGAxDI;
-	--DebugDataxDO(3) <= InFramexS;
-	--DebugDataxDO(4) <= FrameTrigxS;
-	--DebugDataxDO(5) <= UartParDatValidxS;
-	--DebugDataxDO(11 downto 4) <= (others => '0');
+	DebugDataxDO(0) <= SpiRPi0SCKxSI;
+	DebugDataxDO(1) <= SpiRPi0MOSIxDI;
+	DebugDataxDO(2) <= SpiRPi0MISOxD;
+	DebugDataxDO(3) <= SpiRPi0CSnxSI;
 	
 	-- ## component instances ##
 	mipi_rx_inst : entity work.mipi_rx
@@ -294,12 +296,15 @@ begin
 		ClkxCI => ClkxC,
 		ResetxRI => ResetxRI,
 		RunxSI => RunProcxS,
+		
+		-- pixel data input
 		PixValxDI => PixDataxD,
 		PixDarkValxDI => CfgRegxDP(2),
 		PixValidxSI => PixDataValidxS,
 		FrameValidxSI => InFramexS,
 		LineValidxSI => InLinexS,
-
+		
+		-- processed data output
 		PDatxDO => ProcDatxD,
 		PDatValidxSO => ProcDatValidxS,
 		RdyForPDatxSI => RdyForProcDatxS,
@@ -316,12 +321,18 @@ begin
     port map(
         ClkxCI          => ClkxC,
         ResetxRI        => ResetxRI,
-        PixDatxDI       => PixDataxD,
+        
+		-- pixel data input
+		PixDatxDI       => PixDataxD,
         PixDatValidxSI  => PixDataValidxS,
         InFramexSI      => InFramexS,
         TrigxSI         => FrameTrigxS,
+		
+		-- control signals
 		SliceSelxDI	   => CfgRegxDP(5),
 		SumCntxDI		=> CfgRegxDP(6),
+		
+		-- processed data output
         UartRdyxSI      => RdyForFrameDatxS,
         PDatxDO         => FrameDatxD,
         PDatValidxSO    => FrameDatValidxS
@@ -358,6 +369,7 @@ begin
 		
 		-- SPI interface disabled
 		SpiRPi0MISOxDO <= '0';
+		SpiRPi0MISOxD <= '0';
 		
 	elsif IFACE_TYPE = "SPI" generate
 	
@@ -379,11 +391,6 @@ begin
 			RxIndxSO		=> open,
 			TxIndxSO		=> open
 		);
-		
-		DebugDataxDO(0) <= SpiRPi0SCKxSI;
-		DebugDataxDO(1) <= SpiRPi0MOSIxDI;
-		DebugDataxDO(2) <= SpiRPi0MISOxD;
-		DebugDataxDO(3) <= SpiRPi0CSnxSI;
 		SpiRPi0MISOxDO <= SpiRPi0MISOxD;
 		
 		-- UART interface disabled

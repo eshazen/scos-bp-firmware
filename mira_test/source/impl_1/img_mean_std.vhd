@@ -83,11 +83,11 @@ architecture architecture_img_mean_std of img_mean_std is
 
 
 begin
+
    -- architecture body
     p_memzing : process (ClkxCI, ResetxRI)
 	begin
 		if (ResetxRI = '1') then
-
 			PixValidxSP <= (others => '0');
             FrameValidLastxSP <= '0';
             LineValidLastxSP <= '0';
@@ -100,13 +100,12 @@ begin
 
             SumMemRdEnxSP <= '0';
 			SumOutValidxSP <= '0';
-			
 			RdAddrxDP <= 0;
 			SumMemxDP <= (others => (others => '0'));
 			SumSqMemxDP <= (others => (others => '0'));
-
             SumOutxDP <= (others => '0');
             SumSqOutxDP <= (others => '0');
+			
             PixValPrexDP <= (others => (others => '0'));
             PixValxDP <= (others => (others => '0'));
             PixValSqxDP <= (others => (others => '0'));
@@ -119,18 +118,14 @@ begin
             LineValidLastxSP <= LineValidLastxSN;
             FrameValidxSP <= FrameValidxSN;
             LineValidxSP <= LineValidxSN;
+			
             PixCntxDP <= PixCntxDN;
             TileCntxDP <= TileCntxDN;
             LineCntxDP <= LineCntxDN;
 			
             SumMemRdEnxSP <= SumMemRdEnxSN;
 			SumOutValidxSP <= SumOutValidxSN;
-			
 			RdAddrxDP <= RdAddrxDN;
-			
-			SumMemRdEnxSP <= SumMemRdEnxSN;
-			SumOutValidxSP <= SumOutValidxSN;
-			
 			SumMemxDP <= SumMemxDN;
 			SumSqMemxDP <= SumSqMemxDN;
 			SumOutxDP <= SumOutxDN;
@@ -146,19 +141,27 @@ begin
     
     -- input registers / pre-compute
 	pix_in_gen : for ii in 0 to N_PIX_PER_CLK-1 generate
+		-- unpacking into pixels and subtracting the mean dark pixel value as set in the config register
 		PixValPrexDN(ii) <= unsigned(PixValxDI((ii+1)*BIT_DEPTH-1 downto ii*BIT_DEPTH)) - unsigned(PixDarkValxDI);
+		-- computing the square of the pixel values
 		PixValSqxDN(ii) <= PixValPrexDP(ii) * PixValPrexDP(ii);
 	end generate pix_in_gen;
+	-- registering for speed
 	PixValxDN <= PixValPrexDP;
-	PixValCombxDN <= resize(PixValxDP(0), PixValCombxDN'length) + resize(PixValxDP(1), PixValCombxDN'length) + resize(PixValxDP(2), PixValCombxDN'length) + resize(PixValxDP(3), PixValCombxDN'length);
-	PixValSqCombxDN <= resize(PixValSqxDP(0), PixValSqCombxDN'length) + resize(PixValSqxDP(1), PixValSqCombxDN'length) + resize(PixValSqxDP(2), PixValSqCombxDN'length) + resize(PixValSqxDP(3), PixValSqCombxDN'length);
+	-- summing the 4 pixels that arrive in parallel
+	PixValCombxDN <= resize(PixValxDP(0), PixValCombxDN'length) + resize(PixValxDP(1), PixValCombxDN'length) 
+					+ resize(PixValxDP(2), PixValCombxDN'length) + resize(PixValxDP(3), PixValCombxDN'length);
+	PixValSqCombxDN <= resize(PixValSqxDP(0), PixValSqCombxDN'length) + resize(PixValSqxDP(1), PixValSqCombxDN'length) 
+					+ resize(PixValSqxDP(2), PixValSqCombxDN'length) + resize(PixValSqxDP(3), PixValSqCombxDN'length);
 	
+	-- shift registers for control signals so that they have the same delay as the data
 	PixValidxSN(PixValidxSN'high) <= PixValidxSI;
 	PixValidxSN(PixValidxSN'high-1 downto 0) <= PixValidxSP(PixValidxSN'high downto 1);
 	FrameValidxSN(PixValidxSN'high) <= FrameValidxSI;
 	FrameValidxSN(PixValidxSN'high-1 downto 0) <= FrameValidxSP(PixValidxSN'high downto 1);
 	LineValidxSN(PixValidxSN'high) <= LineValidxSI;
 	LineValidxSN(PixValidxSN'high-1 downto 0) <= LineValidxSP(PixValidxSN'high downto 1);
+	-- for edge detection
     FrameValidLastxSN <= FrameValidxSP(0);
     LineValidLastxSN <= LineValidxSP(0);
 	
@@ -179,17 +182,16 @@ begin
 	SumOutValidxSN <= '1' when TxHeaderxS = '1' or SumMemRdEnxSP = '1' else '0';
 	PDatValidxSO <= SumOutValidxSP;
 	
+	assert N_BITS_SUM <= PixSumxDO'length report "Pixel sum might overflow. Currently not supported." severity error;
     PixSumxDO <= std_logic_vector(resize(SumOutxDP, PixSumxDO'length));
-	g_pixsqsum_out : if (BIT_DEPTH=8 or BIT_DEPTH=10) generate
+	g_pixsqsum_out : if N_BITS_SUM_SQ <= PixSqSumxDO'length generate
 		PixSqSumxDO <= std_logic_vector(resize(SumSqOutxDP, PixSqSumxDO'length));
-	elsif BIT_DEPTH=12 generate
-		-- if dealing with RAW12, truncate 4 LSBs to fit in uint32
-		PixSqSumxDO <= std_logic_vector(SumSqOutxDP(N_BITS_SUM_SQ-1 downto N_BITS_SUM_SQ-32));
 	else generate
-		assert false report "BIT_DEPTH not supported" severity error;
+		-- if dealing with e.g. RAW12 and 60*64 tiles, truncate 4 LSBs to fit in uint32
+		assert false report "Truncating LSBs of sum of squared pixel values!!" severity warning;
+		PixSqSumxDO <= std_logic_vector(SumSqOutxDP(N_BITS_SUM_SQ-1 downto N_BITS_SUM_SQ-PixSqSumxDO'length));
 	end generate g_pixsqsum_out;
 	
-   
 	p_memless : process(all)
     begin
         PixCntxDN <= PixCntxDP;

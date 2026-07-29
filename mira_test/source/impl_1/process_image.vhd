@@ -2,7 +2,6 @@
 -- Wrapper for SCOS image pre-processing
 --
 -- 
---
 -- BU Neurophotonics Center 2026
 -- bzim@bu.edu
 ------------------------------------------------------------------------------
@@ -21,12 +20,15 @@ port (
     ClkxCI          : in std_logic;
     ResetxRI        : in std_logic;
 	RunxSI			: in std_logic;
+	
+	-- pixel data input
     PixValxDI       : in std_logic_vector(4*BIT_DEPTH-1 downto 0);
 	PixDarkValxDI	: in std_logic_vector(7 downto 0);
 	PixValidxSI		: in std_logic;
     FrameValidxSI   : in std_logic;
     LineValidxSI    : in std_logic;
 
+	-- processed data output
     PDatxDO	       : out std_logic_vector(7 downto 0);
     PDatValidxSO    : out std_logic;
 	RdyForPDatxSI	: in std_logic;
@@ -37,7 +39,9 @@ port (
 end process_image;
 architecture architecture_process_image of process_image is
 
-	constant N_BYTES_PER_TILE : integer := 8; -- number of output bytes per tile
+	-- number of output bytes per tile
+	-- currently fixed 32 bits for pixel sum per tile, and 32 bits for the sum of pixels squared
+	constant N_BYTES_PER_TILE : integer := 8; 
 
 	type fsmstatetype is (sIdle, sWaitInterFrame, sAcquire, sLoadSReg1, sLoadSReg2, sTxBytes, sPrePauseAcquire, sPauseAcquire, sPauseLoadSReg1, sPauseLoadSReg2, sPauseTxBytes, sWaitIdle);
 	signal StatexDP, StatexDN : fsmstatetype;
@@ -94,10 +98,13 @@ begin
 	
 	PDatxDO <= SRegxDP(7 downto 0);
 	
+	-- stop handeled by turning off the valid signals
 	PixValidxS	<= '0' when RunMSxS = '0' else PixValidxSI;
 	FrameValidxS <= '0' when RunMSxS = '0' else FrameValidxSI;
 	LineValidxS  <= '0' when RunMSxS = '0' else LineValidxSI;
 	
+	-- state machine for buffering the results in a fifo and serializing
+	-- the 64 bit results into byte format
 	p_memless : process(all)
 	begin
 		RunMSxS <= '0';
@@ -114,7 +121,7 @@ begin
 				if RunxSI = '1' and FIFOAlmostFullxS = '0' then
 					StatexDN <= sWaitInterFrame;
 				end if;
-			when sWaitInterFrame =>
+			when sWaitInterFrame => -- only start computation between frames, not in the middle of one
 				if RunxSI = '0'  then
 					StatexDN <= sIdle;
 				elsif FIFOAlmostFullxS = '0' and FrameValidxSI = '0' then
@@ -152,7 +159,10 @@ begin
 					end if;
 					PDatValidxSO <= '1';
 				end if;	
-				
+			
+			-- These states are reached if the fifo is almost full due to the computer not 
+			-- keeping up fetching data.
+			-- We still want to try to clear the buffer, but pause processing new images.
 			when sPrePauseAcquire =>
 				RunMSxS <= '1';
 				if FrameValidxSI = '0' then
@@ -187,6 +197,7 @@ begin
 					PDatValidxSO <= '1';
 				end if;
 				
+			-- only switch to idle when we're not in the middle of a frame
 			when sWaitIdle =>
 				RunMSxS <= '1';
 				if FrameValidxSI = '0' then

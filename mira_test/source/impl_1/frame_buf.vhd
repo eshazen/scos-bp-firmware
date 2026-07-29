@@ -22,23 +22,29 @@ generic (
 port (
     ClkxCI          : in std_logic;
     ResetxRI        : in std_logic;
+	
+	-- pixel data input
     PixDatxDI       : in std_logic_vector(4*BIT_DEPTH-1 downto 0);
     PixDatValidxSI  : in std_logic;
     InFramexSI      : in std_logic;
     TrigxSI         : in std_logic;
-	SliceSelxDI     : in std_logic_vector(7 downto 0);
+	
+	-- control signals
+	SliceSelxDI     : in std_logic_vector(7 downto 0); -- which slice of the image is to be acquired
 	SumCntxDI		: in std_logic_vector(7 downto 0); -- number of frames to be summed
-    UartRdyxSI      : in std_logic;
+    
+	-- processed data output
+	UartRdyxSI      : in std_logic;
     PDatxDO         : out std_logic_vector(7 downto 0);
     PDatValidxSO    : out std_logic
 );
 end frame_buf;
 architecture architecture_frame_buf of frame_buf is
 
-	constant N_SLICES : integer := 12;
-	constant N_SLICESEL_BITS : integer := 4;
-	constant N_WORDS : integer := (N_COLS/4) * N_LINES/N_SLICES ; -- 4 pix per word, 480 lines per image
-	constant N_BYTES_PER_WORD : integer := 8;
+	constant N_SLICES : integer := 12; -- number of horizontal sliced the image will be divided into
+	constant N_SLICESEL_BITS : integer := 4; -- must be true: 2**N_SLICESEL_BITS >= N_SLICES
+	constant N_WORDS : integer := (N_COLS/4) * N_LINES/N_SLICES ; -- how many words storage is needed. Note there are 4 pix per word
+	constant N_BYTES_PER_WORD : integer := 8; -- Fixed 16 bit result per pixel. This limits the number of frames that can be summed without overflow risk.
 
 	-- input signal registers (for speed)
 	signal PixDatValidxSP, PixDatValidxSN : std_logic;
@@ -69,7 +75,7 @@ architecture architecture_frame_buf of frame_buf is
     signal MemxDP, MemxDN : frame_mem_type;
 	-- Specify use of large_ram/LRAM vs block_ram for framebuffer. Note LRAM is limited in speed and aspect ratio.
 	attribute syn_ramstyle : string;
-	attribute syn_ramstyle of MemxDP : signal is "large_ram";--"block_ram";
+	attribute syn_ramstyle of MemxDP : signal is "large_ram"; -- or "block_ram";
 	
     -- Output signals
 	signal ShiftOutRegxDP, ShiftOutRegxDN : std_logic_vector(MemOutxDP(0)'range);
@@ -78,6 +84,9 @@ architecture architecture_frame_buf of frame_buf is
 	
 	-- Read FIFO related --
 	-- LRAM read FIFO implemented to overcome latency introduced by double registering output
+	-- This is necessary when summing multiple frames where we need to read, sum, and write quickly.
+	-- Note that there can be 'gaps' in PixDatValidxSI due to the clock difference between MIPI D-PHY and 
+	-- the rest of the design, so reading has to be halted from time to time.
 	constant N_FIFO_ADDR_BITS : integer := 4;
 	constant N_FIFO_WORDS : integer := 2**N_FIFO_ADDR_BITS;
 	constant FIFO_ALMOST_EMPTY_TRSH : integer := 5;
@@ -104,7 +113,6 @@ architecture architecture_frame_buf of frame_buf is
 	signal FIFOAlmostEmptyxS : std_logic;
 	signal FIFOAlmostFullxS : std_logic;
 	
-
 begin
 	assert N_SLICESEL_BITS <= 8 severity error;
 	assert N_SLICES <= (2**N_SLICESEL_BITS) severity error;
@@ -198,15 +206,16 @@ begin
 				-- load words into fifo to be ready to sum/read
 				WordCntxDN <= N_WORDS;
 				if FIFOAlmostEmptyxS = '0' then
-					if SumCntxDP >= to_integer(unsigned(SumCntxDI)) then
-						StatexDN <= sLoadWord;
-					else
+					if SumCntxDP >= to_integer(unsigned(SumCntxDI)) then -- store complete 
+						StatexDN <= sLoadWord; 
+					else -- need to add another frame
 						SumCntxDN <= SumCntxDP+1;
 						StatexDN <= sWaitFrame;
 					end if;
 				end if;	
             
             when sWaitFrame =>
+				-- wait for frame start
 				WordCntxDN <= to_integer(unsigned(SliceSelxDP)) * N_WORDS;
                 WrAddrxDN <= 0;
                 if InFrameLastxSP = '0' and InFramexSP = '1' then
@@ -214,6 +223,7 @@ begin
                 end if;
 				
 			when sWaitSlice =>
+				-- wait for the selected slice to start
 				WrAddrxDN <= 0;
 				if WordCntxDP = 0 then
 					StatexDN <= sStoreSlice;
@@ -222,6 +232,7 @@ begin
 				end if;
                 
             when sStoreSlice =>
+				-- store the selected slice
                 if PixDatValidxSP = '1' then
 					if WrAddrxDP < N_WORDS-1 then
 						WrAddrxDN <= WrAddrxDP +1;
@@ -232,7 +243,7 @@ begin
                     MemWrEnxS := '1';
 					FIFORdEnxS <= '1';
                 end if;
-                if InFramexSP = '0' then
+                if InFramexSP = '0' then  -- this should never be triggered
                     StatexDN <= sLoadWord;
                 end if;
 				
@@ -244,6 +255,7 @@ begin
 				StatexDN <= sShiftOutByte;
 				
 			when sShiftOutByte =>
+				-- serialize words to bytes
 				if UartRdyxSI = '1' then
 					PDatValidxSN <= '1';
 					if ByteCntxDP = 0 then
@@ -279,6 +291,7 @@ begin
 			end loop;
 		end if;
 		 
+		-- main LRAM frame buffer 
 		MemxDN <= MemxDP;
 		if MemWrEnxS = '1' then
 			MemxDN(WrAddrxDP) <= MemInxD;

@@ -4,13 +4,13 @@
 set ret 0
 if {[catch {
 
-if {![file exists {C:/Users/Bernhard/my_designs/mira_test/impl_1}]} {
-  file mkdir {C:/Users/Bernhard/my_designs/mira_test/impl_1}
+if {![file exists {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1}]} {
+  file mkdir {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1}
 }
-cd {C:/Users/Bernhard/my_designs/mira_test/impl_1}
+cd {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1}
 
-sys_set_attribute -gui on -msg {C:/Users/Bernhard/my_designs/mira_test/promote.xml}
-msg_load {C:/Users/Bernhard/my_designs/mira_test/promote.xml}
+sys_set_attribute -gui on -msg {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/promote.xml}
+msg_load {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/promote.xml}
 des_set_project_udb -in {mira_test_impl_1_map.udb} -out {mira_test_impl_1.udb} -milestone par -pm je5d00
 des_set_reference_udb -clean
 # par option
@@ -18,13 +18,13 @@ par_set_option { disable_timing_driven false placement_iterations 10 placement_i
 # run place & route
 par_run
 # backup netlist & constraint file
-if {[file exists {C:/Users/Bernhard/my_designs/mira_test/impl_1/mira_test_impl_1_syn.udb}] && [file exists {C:/Users/Bernhard/my_designs/mira_test/impl_1/mira_test_impl_1_map.udb}] && [file exists {C:/Users/Bernhard/my_designs/mira_test/impl_1/mira_test_impl_1.udb}]} {
-  file delete -force {C:/Users/Bernhard/my_designs/mira_test/impl_1/incr/mira_test_impl_1_syn.udb} {C:/Users/Bernhard/my_designs/mira_test/impl_1/incr/mira_test_impl_1_map.udb} {C:/Users/Bernhard/my_designs/mira_test/impl_1/incr/mira_test_impl_1.udb} {C:/Users/Bernhard/my_designs/mira_test/impl_1/incr/lastrun.pdc}
-  file copy -force -- {C:/Users/Bernhard/my_designs/mira_test/impl_1/mira_test_impl_1_syn.udb} {C:/Users/Bernhard/my_designs/mira_test/impl_1/incr/postsyn.udb}
-  file copy -force -- {C:/Users/Bernhard/my_designs/mira_test/impl_1/mira_test_impl_1_map.udb} {C:/Users/Bernhard/my_designs/mira_test/impl_1/incr/postmap.udb}
-  file copy -force -- {C:/Users/Bernhard/my_designs/mira_test/impl_1/mira_test_impl_1.udb} {C:/Users/Bernhard/my_designs/mira_test/impl_1/incr/postpar.udb}
-  if [file exists {C:/Users/Bernhard/my_designs/mira_test/source/impl_1/impl_1.pdc}] {
-    file copy -force -- {C:/Users/Bernhard/my_designs/mira_test/source/impl_1/impl_1.pdc} {C:/Users/Bernhard/my_designs/mira_test/impl_1/incr/lastrun.pdc}
+if {[file exists {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/mira_test_impl_1_syn.udb}] && [file exists {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/mira_test_impl_1_map.udb}] && [file exists {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/mira_test_impl_1.udb}]} {
+  file delete -force {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/incr/mira_test_impl_1_syn.udb} {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/incr/mira_test_impl_1_map.udb} {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/incr/mira_test_impl_1.udb} {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/incr/lastrun.pdc}
+  file copy -force -- {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/mira_test_impl_1_syn.udb} {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/incr/postsyn.udb}
+  file copy -force -- {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/mira_test_impl_1_map.udb} {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/incr/postmap.udb}
+  file copy -force -- {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/mira_test_impl_1.udb} {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/incr/postpar.udb}
+  if [file exists {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/impl_1.pdc}] {
+    file copy -force -- {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/impl_1.pdc} {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/incr/lastrun.pdc}
   }
 }
 

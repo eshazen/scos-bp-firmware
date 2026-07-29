@@ -24,7 +24,7 @@ Running in Lattice mode
 Starting:    C:\lscc\radiant\2025.2\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\radiant\2025.2\synpbase
 Hostname:    ZBOOKNB
-Date:        Sun Jul 26 20:31:42 2026
+Date:        Wed Jul 29 01:25:17 2026
 Version:     W-2025.03LR-SP1
 
 Arguments:   -product synplify_base -batch mira_test_impl_1_synplify.tcl
@@ -36,79 +36,79 @@ ProductType: synplify_pro
 
 
 
-log file: "C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srr"
+log file: "C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srr"
 Running: hdl_info_gen in foreground
 
 Generating HDL info...
-Copied C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srr to C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srf
+Copied C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srr to C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srf
 
 hdl_info_gen completed
-# Sun Jul 26 20:31:43 2026
+# Wed Jul 29 01:25:21 2026
 
 Return Code: 0
 Run Time:00h:00m:01s
-log file: "C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srr"
+log file: "C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srr"
 Running: impl_1 in foreground
 
 Running proj_1|impl_1
 
 Running Flow: compile (Compile) on proj_1|impl_1
-# Sun Jul 26 20:31:43 2026
+# Wed Jul 29 01:25:22 2026
 
 Running Flow: compile_flow (Compile Process) on proj_1|impl_1
-# Sun Jul 26 20:31:43 2026
+# Wed Jul 29 01:25:22 2026
 
 Running: compiler (Compile Input) on proj_1|impl_1
-# Sun Jul 26 20:31:43 2026
-Copied C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\mira_test_impl_1_comp.srs to C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srs
+# Wed Jul 29 01:25:22 2026
+Copied C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_comp.srs to C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srs
 
 compiler completed
-# Sun Jul 26 20:32:10 2026
+# Wed Jul 29 01:26:10 2026
 
 Return Code: 0
-Run Time:00h:00m:26s
+Run Time:00h:00m:47s
 
 Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl_1
-# Sun Jul 26 20:32:10 2026
+# Wed Jul 29 01:26:10 2026
 
 multi_srs_gen completed
-# Sun Jul 26 20:32:11 2026
+# Wed Jul 29 01:26:11 2026
 
 Return Code: 0
 Run Time:00h:00m:01s
-Copied C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\mira_test_impl_1_mult.srs to C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srs
-Copied C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srr to C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srf
+Copied C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_mult.srs to C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srs
+Copied C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srr to C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srf
 Complete: Compile Process on proj_1|impl_1
 
 Running: premap (Premap) on proj_1|impl_1
-# Sun Jul 26 20:32:11 2026
+# Wed Jul 29 01:26:11 2026
 
 premap completed with warnings
-# Sun Jul 26 20:32:14 2026
+# Wed Jul 29 01:26:16 2026
 
 Return Code: 1
-Run Time:00h:00m:03s
+Run Time:00h:00m:05s
 Complete: Compile on proj_1|impl_1
 
 Running Flow: map (Map) on proj_1|impl_1
-# Sun Jul 26 20:32:15 2026
+# Wed Jul 29 01:26:16 2026
 License granted for 4 parallel jobs
 
 Running: fpga_mapper (Map & Optimize) on proj_1|impl_1
-# Sun Jul 26 20:32:15 2026
-Copied C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\mira_test_impl_1_m.srm to C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srm
+# Wed Jul 29 01:26:16 2026
+Copied C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_m.srm to C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srm
 
 fpga_mapper completed with warnings
-# Sun Jul 26 20:32:46 2026
+# Wed Jul 29 01:27:01 2026
 
 Return Code: 1
-Run Time:00h:00m:31s
+Run Time:00h:00m:44s
 Complete: Map on proj_1|impl_1
-Copied C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srr to C:\Users\Bernhard\my_designs\mira_test\impl_1\mira_test_impl_1.srf
+Copied C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srr to C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1.srf
 Complete: Logic Synthesis on proj_1|impl_1
 TCL script complete: "mira_test_impl_1_synplify.tcl"
 exit status=0
 exit status=0
 Save changes for project:
-C:\Users\Bernhard\my_designs\mira_test\impl_1\proj_1.prj
+C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\proj_1.prj
 batch mode default:no

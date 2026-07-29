@@ -42,7 +42,7 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>                         Lattice PAR Report File
 Radiant Software (64-bit) 2025.2.0.48.0
-Sun Jul 26 20:34:01 2026
+Wed Jul 29 01:27:34 2026
 
 Command Line: par -w -n 10 -t 1 -s 1 -cores 4 -hsp m -exp parPathBased=ON \
 	mira_test_impl_1_map.udb mira_test_impl_1.udb 
@@ -52,28 +52,28 @@ Command Line: par -w -n 10 -t 1 -s 1 -cores 4 -hsp m -exp parPathBased=ON \
 Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
 Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
 ----------   --------     -----------     ------       ---------------    -----------     ----     ------
-5_8   *      0            0.284           0            0.044              0               01:09    Completed
-5_10         0            0.084           0            0.023              0               01:03    Completed
-5_2          0            -0.284          284          -                  -               01:06    Completed
-5_1          0            -0.161          395          -                  -               01:09    Completed
-5_3          0            -0.229          511          -                  -               01:06    Completed
-5_4          0            -0.308          662          -                  -               01:08    Completed
-5_5          -            -               -            -                  -               57       Skipped
-5_6          -            -               -            -                  -               57       Skipped
-5_7          -            -               -            -                  -               57       Skipped
-5_9          -            -               -            -                  -               50       Skipped
+5_8   *      0            0.284           0            0.044              0               02:17    Completed
+5_10         0            0.084           0            0.023              0               01:31    Completed
+5_2          0            -0.284          284          -                  -               01:31    Completed
+5_1          0            -0.161          395          -                  -               01:34    Completed
+5_3          0            -0.229          511          -                  -               01:28    Completed
+5_4          0            -0.308          662          -                  -               01:29    Completed
+5_5          -            -               -            -                  -               01:59    Skipped
+5_6          -            -               -            -                  -               02:00    Skipped
+5_7          -            -               -            -                  -               01:58    Skipped
+5_9          -            -               -            -                  -               01:08    Skipped
 * : Design saved.
 
 INFO &lt;60001138&gt; - par: Iterations 5_5, 5_6, 5_7, and 5_9 were terminated during the PAR process to save total runtime, as it was determined they would not improve upon a timing result achieved in a previous iteration.
 
-Total (real) run time for 10-seed: 3 mins 8 secs 
+Total (real) run time for 10-seed: 5 mins 2 secs 
 
 par done!
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
 PAR: Place And Route Radiant Software (64-bit) 2025.2.0.48.0.
-PARed on: Sun Jul 26 20:35:12 2026
+PARed on: Wed Jul 29 01:29:08 2026
 
 Command Line: par -w -t 8 -hsp m -exp \
 	parPathBased=ON:aseRouteInitSetupSlackThreshold=-0.284 \
@@ -158,25 +158,25 @@ Number of Connections: 26074
 Pin Constraint Summary:
    28 out of 28 pins locked (100% locked).
 
-Starting Placer Phase 0 (HIER). CPU time: 8 secs , REAL time: 8 secs 
+Starting Placer Phase 0 (HIER). CPU time: 13 secs , REAL time: 14 secs 
 ............
-Finished Placer Phase 0 (HIER). CPU time: 9 secs , REAL time: 9 secs 
+Finished Placer Phase 0 (HIER). CPU time: 15 secs , REAL time: 15 secs 
 
 
-Starting Placer Phase 1. CPU time: 9 secs , REAL time: 9 secs 
+Starting Placer Phase 1. CPU time: 16 secs , REAL time: 16 secs 
 ..  ..
 WARNING: Database constraint &quot;create_generated_clock -name {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/DPhyClkxC} -source [get_pins mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst/CKP] -divide_by 8 [get_pins mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst/URWDCKHS]&quot; does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
 
 ....................
 
 Placer score = 2077763.
-Finished Placer Phase 1. CPU time: 28 secs , REAL time: 28 secs 
+Finished Placer Phase 1. CPU time: 1 mins 6 secs , REAL time: 1 mins 8 secs 
 
 Starting Placer Phase 2.
 .
 
 Placer score =  2026908
-Finished Placer Phase 2.  CPU time: 29 secs , REAL time: 30 secs 
+Finished Placer Phase 2.  CPU time: 1 mins 9 secs , REAL time: 1 mins 11 secs 
 
 
 
@@ -235,10 +235,10 @@ I/O Bank Usage Summary:
 | 7        | 9 / 22 ( 40%) | 3.3V       | -          | -          |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 30 secs , REAL time: 30 secs 
+Total Placer CPU time: 1 mins 10 secs , REAL time: 1 mins 12 secs 
 
 
-Checksum -- place: aa3999695ad7cbf6272f2a54b01d09898b5e8d3
+Checksum -- place: 590cddc3422ef435e5d0dc591473d277ecdd8bda
 Writing design to file mira_test_impl_1_par.dir/5_8.udb ...
 
 WARNING &lt;77001032&gt; - par: Unable to find the instance/port &apos;UartFTDItoFPGAxDI&apos; in the constraint &apos;ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]&apos;
@@ -250,7 +250,7 @@ WARNING &lt;77001032&gt; - par: Unable to find the instance/port &apos;UartRTSnt
 WARNING &lt;77001031&gt; - par: In the constraint &apos;ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]&apos;, the locate object is not specified
 
 
-Start NBR router at 20:35:44 07/26/26
+Start NBR router at 01:30:23 07/29/26
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -299,55 +299,55 @@ WARNING &lt;70001944&gt; - par: No source clock for
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 20:35:57 07/26/26
+Start NBR section for initial routing at 01:30:54 07/29/26
 Level 4, iteration 1
 3042(0.17%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.269ns/0.000ns; real time: 23 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.269ns/0.000ns; real time: 46 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 20:36:07 07/26/26
+Start NBR section for normal routing at 01:31:08 07/29/26
 Level 4, iteration 1
 2169(0.12%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 26 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 48 secs 
 Level 4, iteration 2
 700(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 27 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 50 secs 
 Level 4, iteration 3
 345(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 28 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 51 secs 
 Level 4, iteration 4
 178(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 29 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 52 secs 
 Level 4, iteration 5
 52(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 29 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 52 secs 
 Level 4, iteration 6
 17(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 30 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 52 secs 
 Level 4, iteration 7
 9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 30 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 53 secs 
 Level 4, iteration 8
 16(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 30 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 53 secs 
 Level 4, iteration 9
 2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 31 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 53 secs 
 Level 4, iteration 10
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 31 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 0.284ns/0.000ns; real time: 54 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 20:36:14 07/26/26
+Start NBR section for setup/hold timing optimization with effort level 3 at 01:31:16 07/29/26
 
-Start NBR section for post-routing at 20:36:17 07/26/26
+Start NBR section for post-routing at 01:31:20 07/29/26
 
 End NBR router with 0 unrouted connection(s)
 
-Checksum -- route: 8724f981f810b5a066a23eb625e98977b3cb05
+Checksum -- route: 49a87efc516c8548ccbb900ab72d7794308baaf
 
-Total Router CPU time 34 secs , REAL time: 36 secs 
+Total Router CPU time 58 secs , REAL time: 1 mins 
 Completely routed.
 End of route.  26074 routed (100.00%); 0 unrouted.
 
@@ -367,9 +367,9 @@ PAR_SUMMARY::Number of errors = 0
 
 Note: user must run &apos;timing&apos; for timing closure signoff.
 
-Total CPU  Time: 1 mins 8 secs 
-Total REAL Time: 1 mins 9 secs 
-Peak Memory Usage: 758.70 MB
+Total CPU  Time: 2 mins 13 secs 
+Total REAL Time: 2 mins 17 secs 
+Peak Memory Usage: 758.60 MB
 
 
 par done!

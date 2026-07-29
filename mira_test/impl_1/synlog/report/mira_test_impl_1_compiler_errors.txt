@@ -1,5 +1,3 @@
-@E: CD213 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":254:1:254:12|Undefined identifier
-@E: CD213 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":255:1:255:12|Undefined identifier
-@E: Parse errors encountered - exiting
-@E::VHDL compiler failed
+@E: Z100 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":194:22:194:71|"Truncating LSBs of sum of squared pixel values!!"
+@E::Errors while synthesizing top module mira_test_top.
 

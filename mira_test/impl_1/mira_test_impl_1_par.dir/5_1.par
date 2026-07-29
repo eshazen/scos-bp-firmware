@@ -1,6 +1,6 @@
 
 PAR: Place And Route Radiant Software (64-bit) 2025.2.0.48.0.
-PARed on: Sun Jul 26 20:34:01 2026
+PARed on: Wed Jul 29 01:27:35 2026
 
 Command Line: par -w -t 1 -hsp m -exp parPathBased=ON mira_test_impl_1_map.udb \
 	mira_test_impl_1_par.dir/5_1.udb 
@@ -82,25 +82,25 @@ Device utilization summary:
 Pin Constraint Summary:
    28 out of 28 pins locked (100% locked).
 
-Starting Placer Phase 0 (HIER). CPU time: 8 secs , REAL time: 9 secs 
+Starting Placer Phase 0 (HIER). CPU time: 10 secs , REAL time: 10 secs 
 ............
-Finished Placer Phase 0 (HIER). CPU time: 8 secs , REAL time: 9 secs 
+Finished Placer Phase 0 (HIER). CPU time: 11 secs , REAL time: 11 secs 
 
 
-Starting Placer Phase 1. CPU time: 8 secs , REAL time: 9 secs 
+Starting Placer Phase 1. CPU time: 11 secs , REAL time: 12 secs 
 ..  ..
 WARNING: Database constraint "create_generated_clock -name {mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/DPhyClkxC} -source [get_pins mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst/CKP] -divide_by 8 [get_pins mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_dphy_cil.DPHY_inst/URWDCKHS]" does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
 
 .................
 
 Placer score = 2194080.
-Finished Placer Phase 1. CPU time: 28 secs , REAL time: 29 secs 
+Finished Placer Phase 1. CPU time: 40 secs , REAL time: 41 secs 
 
 Starting Placer Phase 2.
 .
 
 Placer score =  2081687
-Finished Placer Phase 2.  CPU time: 29 secs , REAL time: 30 secs 
+Finished Placer Phase 2.  CPU time: 42 secs , REAL time: 43 secs 
 
 
 ------------------ Clock Report ------------------
@@ -158,10 +158,10 @@ I/O Bank Usage Summary:
 | 7        | 9 / 22 ( 40%) | 3.3V       | -          | -          |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 30 secs , REAL time: 31 secs 
+Total Placer CPU time: 43 secs , REAL time: 43 secs 
 
 
-Checksum -- place: 12f23c9e2227a1e4a0674259fef60a0a7535ca51
+Checksum -- place: 430764c27802b699d3da155593b69b9f621165a
 Writing design to file mira_test_impl_1_par.dir/5_1.udb ...
 
 WARNING <77001032> - par: Unable to find the instance/port 'UartFTDItoFPGAxDI' in the constraint 'ldc_set_location -site {J2} [get_ports UartFTDItoFPGAxDI]'
@@ -173,7 +173,7 @@ WARNING <77001032> - par: Unable to find the instance/port 'UartRTSntoFPGAxDI' i
 WARNING <77001031> - par: In the constraint 'ldc_set_location -site {J1} [get_ports UartRTSntoFPGAxDI]', the locate object is not specified
 
 
-Start NBR router at 20:34:33 07/26/26
+Start NBR router at 01:28:20 07/29/26
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -222,56 +222,56 @@ WARNING <70001944> - par: No source clock for
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Start NBR section for initial routing at 20:34:47 07/26/26
+Start NBR section for initial routing at 01:28:39 07/29/26
 Level 4, iteration 1
 3105(0.18%) conflicts; 0(0.00%) untouched conn; 465 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.193ns/-0.466ns; real time: 23 secs 
+Estimated worst slack/total negative slack<setup>: -0.193ns/-0.466ns; real time: 32 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 20:34:57 07/26/26
+Start NBR section for normal routing at 01:28:52 07/29/26
 Level 4, iteration 1
 2212(0.13%) conflicts; 0(0.00%) untouched conn; 540 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.541ns; real time: 26 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.541ns; real time: 35 secs 
 Level 4, iteration 2
 710(0.04%) conflicts; 0(0.00%) untouched conn; 425 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.426ns; real time: 28 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.426ns; real time: 38 secs 
 Level 4, iteration 3
 372(0.02%) conflicts; 0(0.00%) untouched conn; 540 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.541ns; real time: 29 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.541ns; real time: 39 secs 
 Level 4, iteration 4
 192(0.01%) conflicts; 0(0.00%) untouched conn; 396 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 30 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 40 secs 
 Level 4, iteration 5
 66(0.00%) conflicts; 0(0.00%) untouched conn; 396 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 30 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 40 secs 
 Level 4, iteration 6
 31(0.00%) conflicts; 0(0.00%) untouched conn; 396 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 31 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 41 secs 
 Level 4, iteration 7
 51(0.00%) conflicts; 0(0.00%) untouched conn; 396 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 31 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 41 secs 
 Level 4, iteration 8
 10(0.00%) conflicts; 0(0.00%) untouched conn; 396 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 32 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 42 secs 
 Level 4, iteration 9
 2(0.00%) conflicts; 0(0.00%) untouched conn; 396 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 32 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 42 secs 
 Level 4, iteration 10
 1(0.00%) conflict; 0(0.00%) untouched conn; 396 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 32 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 43 secs 
 Level 4, iteration 11
 0(0.00%) conflict; 0(0.00%) untouched conn; 396 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 32 secs 
+Estimated worst slack/total negative slack<setup>: -0.161ns/-0.397ns; real time: 43 secs 
 
-Start NBR section for post-routing at 20:35:05 07/26/26
+Start NBR section for post-routing at 01:29:03 07/29/26
 
 End NBR router with 0 unrouted connection(s)
 
-Checksum -- route: 8a788624ba279dfaf278f074817f24eeebfbb204
+Checksum -- route: 3c51a8d8b5b8238f1cf9d1c08b33849d9c69db77
 
-Total Router CPU time 33 secs , REAL time: 34 secs 
+Total Router CPU time 44 secs , REAL time: 45 secs 
 Completely routed.
 End of route.  26074 routed (100.00%); 0 unrouted.
 
@@ -291,9 +291,9 @@ PAR_SUMMARY::Number of errors = 0
 
 Note: user must run 'timing' for timing closure signoff.
 
-Total CPU  Time: 1 mins 6 secs 
-Total REAL Time: 1 mins 8 secs 
-Peak Memory Usage: 758.66 MB
+Total CPU  Time: 1 mins 31 secs 
+Total REAL Time: 1 mins 32 secs 
+Peak Memory Usage: 759.04 MB
 
 
 par done!

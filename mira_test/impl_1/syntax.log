@@ -15,22 +15,22 @@ Implementation : impl_1
 Synopsys VHDL Compiler, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
 
 @N|Running in 64-bit mode
-@N:"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Top entity is set to mira_test_top.
+@N:"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Top entity is set to mira_test_top.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mipi_rx.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/frame_buf.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_rx.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/img_mean_std.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/spi_rxtx_with_fifo.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/uart_tx.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/process_image.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/my_designs/mira_test/source/impl_1/mira_test_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/mipi_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/frame_buf.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/uart_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/img_mean_std.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/spi_rxtx_with_fifo.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/uart_tx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/process_image.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/mira_test_top.vhd'.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 153MB peak: 154MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 159MB peak: 159MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jul 26 20:31:43 2026
+# Wed Jul 29 01:25:21 2026
 
 ###########################################################]

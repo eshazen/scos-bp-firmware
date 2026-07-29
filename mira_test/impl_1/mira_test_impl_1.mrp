@@ -8,16 +8,15 @@ Package: CABGA400
 Performance Grade:  9_High-Performance_1.0V
 
 Mapper:    version Radiant Software (64-bit) 2025.2.0.48.0
-Mapped on: Sun Jul 26 20:33:50 2026
+Mapped on: Wed Jul 29 01:27:18 2026
 
 Design Information
 ------------------
 
-Command line:   map -pdc
-     C:/Users/Bernhard/my_designs/mira_test/source/impl_1/impl_1.pdc -i
-     mira_test_impl_1_syn.udb -o mira_test_impl_1_map.udb -mp
-     mira_test_impl_1.mrp -hierrpt -gui -msgset
-     C:/Users/Bernhard/my_designs/mira_test/promote.xml
+Command line:   map -pdc C:/Users/Bernhard/github/scos-bp-firmware/mira_test/sou
+     rce/impl_1/impl_1.pdc -i mira_test_impl_1_syn.udb -o
+     mira_test_impl_1_map.udb -mp mira_test_impl_1.mrp -hierrpt -gui -msgset
+     C:/Users/Bernhard/github/scos-bp-firmware/mira_test/promote.xml
 
 Design Summary
 --------------
@@ -60,6 +59,7 @@ Design Summary
          Used MULT9:                 8
          Bypassed MULT9:             0
       Number of MULT18:              4 out of 56 (7%)
+         Used MULT18:                4
 
                                     Page 1
 
@@ -69,7 +69,6 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-         Used MULT18:                4
          Disabled MULT18:            0
       Number of MULT18X36:           0 out of 28 (0%)
       Number of MULT36:              0 out of 14 (0%)
@@ -126,6 +125,7 @@ Design Summary (cont)
       Net mipi_rx_inst.N_204_i: 40 loads, 40 SLICEs
       Net mipi_rx_inst.ByteCntxDPe: 9 loads, 9 SLICEs
       Net mipi_rx_inst.PixDataPrexDPce[16]: 8 loads, 8 SLICEs
+      Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
 
                                     Page 2
 
@@ -135,7 +135,6 @@ Design Summary (cont)
 
 Design Summary (cont)
 ---------------------
-      Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
      _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.FifoFullxS_i: 1
      loads, 0 SLICEs
       Net mipi_rx_inst.FifoEmptyxS_i: 1 loads, 0 SLICEs
@@ -192,6 +191,7 @@ Design Summary (cont)
       Net process_image_inst.img_mean_std_inst.un232_summemxdn: 54 loads, 54
      SLICEs
       Net process_image_inst.img_mean_std_inst.un147_summemxdn: 54 loads, 54
+     SLICEs
 
                                     Page 3
 
@@ -201,7 +201,6 @@ Design Summary (cont)
 
 Design Summary (cont)
 ---------------------
-     SLICEs
       Net process_image_inst.img_mean_std_inst.LineCntxDPe: 6 loads, 6 SLICEs
       Net process_image_inst.PDatValidxS: 32 loads, 0 SLICEs
       Net frame_buf_inst.StatexDP[2]: 8 loads, 8 SLICEs
@@ -258,6 +257,7 @@ Design Summary (cont)
      loads
       Net VCC: 491 loads
       Net process_image_inst.img_mean_std_inst.RdAddrxDP[4]: 486 loads
+      Net process_image_inst.img_mean_std_inst.RdAddrxDP[2]: 432 loads
 
                                     Page 4
 
@@ -267,7 +267,6 @@ Design Summary (cont)
 
 Design Summary (cont)
 ---------------------
-      Net process_image_inst.img_mean_std_inst.RdAddrxDP[2]: 432 loads
       Net process_image_inst.img_mean_std_inst.RdAddrxDP[1]: 216 loads
       Net process_image_inst.img_mean_std_inst.RdAddrxDP[3]: 108 loads
       Net mipi_rx_inst.FifoValidxSP[0]: 84 loads
@@ -325,6 +324,7 @@ IO (PIO) Attributes
 | LEDxSO[2]           | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | LEDxSO[1]           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 
                                     Page 5
 
@@ -334,7 +334,6 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
-+---------------------+-----------+-----------+-------+-------+-----------+
 | LEDxSO[0]           | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | DebugDataxDO[3]     | OUTPUT    |           |       |       |           |
@@ -391,6 +390,7 @@ PLL 1:                                 Pin/Node Value
        main_pll_inst.lscc_pll_inst.PLLLockxS
   PLL Internal LOCK Signal:                     NONE
   A Divider:                                    15
+  B Divider:                                    7
 
                                     Page 6
 
@@ -400,7 +400,6 @@ PLL 1:                                 Pin/Node Value
 
 PLL Summary (cont)
 ------------------
-  B Divider:                                    7
   C Divider:                                    7
   D Divider:                                    7
   E Divider:                                    7
@@ -457,6 +456,7 @@ Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
          Type: PREADD9_CORE
 Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
      T[53:0].PREADD9_H1
+         Type: PREADD9_CORE
 
                                     Page 7
 
@@ -466,7 +466,6 @@ Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
 
 ASIC Components (cont)
 ----------------------
-         Type: PREADD9_CORE
 Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_3_0_19_0_.DSP_GU
      T[53:0].MULT18_0
          Type: MULT18_CORE
@@ -523,6 +522,7 @@ Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
          Type: REG18_CORE
 Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
      T[53:0].REG18_L0_1
+         Type: REG18_CORE
 
                                     Page 8
 
@@ -532,7 +532,6 @@ Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
 
 ASIC Components (cont)
 ----------------------
-         Type: REG18_CORE
 Instance Name: process_image_inst/img_mean_std_inst/PixValSqxDN_1_0_19_0_.DSP_GU
      T[53:0].REG18_L1_0
          Type: REG18_CORE
@@ -589,6 +588,7 @@ Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
 Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
      o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[4].u_fifo/_LIFCL.fi
      fo16K.FIFO16K_MODE_inst
+         Type: EBR_CORE
 
                                     Page 9
 
@@ -598,7 +598,6 @@ Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
 
 ASIC Components (cont)
 ----------------------
-         Type: EBR_CORE
 Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
      o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[12].u_fifo/_LIFCL.f
      ifo16K.FIFO16K_MODE_inst
@@ -655,6 +654,7 @@ Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
      o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[17].u_fifo/_LIFCL.f
      ifo16K.FIFO16K_MODE_inst
          Type: EBR_CORE
+Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
 
                                    Page 10
 
@@ -664,7 +664,6 @@ Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
 
 ASIC Components (cont)
 ----------------------
-Instance Name: process_image_inst/process_image_out_fifo_inst/lscc_fifo_inst/fif
      o0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[25].u_fifo/_LIFCL.f
      ifo16K.FIFO16K_MODE_inst
          Type: EBR_CORE
@@ -716,8 +715,9 @@ Instance Name: main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst
 Constraint Summary
 ------------------
 
-   Total number of constraints: 44
+   Total number of constraints: 46
    Total number of constraints dropped: 0
+
 
 
 
@@ -731,10 +731,10 @@ Constraint Summary
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 4 secs
-   Total REAL Time: 5 secs
+   Total CPU Time: 5 secs
+   Total REAL Time: 6 secs
    Peak Memory Usage: 437 MB
-Checksum -- map: a42bcb544f9fdf4a65f205c8f2a83ea3fdb0ff5
+Checksum -- map: f106b5af87a51170675c70c9e993324b31a9c838
 
 
 

@@ -1,3 +1,4 @@
 Library, Design Unit ,Compile time , Hardware Gen ,Optimization Stg1 ,Optimization Stg2 , Peak Mem Usage, Incr Mem Usage, Hardware Gen ,Optimization Stg1 ,Optimization Stg2
-work , Entity: img_mean_std_10_1600 Architecture: architecture_img_mean_std,0h:00m:01s,0h:00m:00s,0h:00m:00s,0h:00m:01s,   393 MB,    31 MB,     0 MB,     2 MB,    29 MB
-work , Entity: frame_buf_10_1600_480 Architecture: architecture_frame_buf,0h:00m:05s,0h:00m:01s,0h:00m:03s,0h:00m:00s,   393 MB,   178 MB,   141 MB,    30 MB,     7 MB
+work , Entity: img_mean_std_10_1600 Architecture: architecture_img_mean_std,0h:00m:02s,0h:00m:00s,0h:00m:00s,0h:00m:02s,   393 MB,    31 MB,     0 MB,     2 MB,    29 MB
+work , Entity: frame_buf_10_1600_480 Architecture: architecture_frame_buf,0h:00m:07s,0h:00m:01s,0h:00m:05s,0h:00m:00s,   393 MB,   178 MB,   141 MB,    30 MB,     7 MB
+work , Entity: spi_rxtx_with_fifo Architecture: behavioral,0h:00m:02s,0h:00m:00s,0h:00m:01s,0h:00m:00s,   393 MB,    61 MB,    47 MB,    14 MB,     0 MB

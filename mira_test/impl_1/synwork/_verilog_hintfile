@@ -11,14 +11,14 @@
 #CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\arith.vhd":1762882135
 #CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vhd2008\\unsigned.vhd":1762882136
 #CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\pmi_lifcl.vhd":1760761307
-#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\mipi_rx.vhd":1783883505
-#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\frame_buf.vhd":1783690102
-#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\uart_rx.vhd":1692077381
-#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\img_mean_std.vhd":1783690286
-#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\spi_rxtx_with_fifo.vhd":1783887447
-#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\uart_tx.vhd":1779117114
-#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\process_image.vhd":1785120188
-#CUR:"C:\\Users\\Bernhard\\my_designs\\mira_test\\source\\impl_1\\mira_test_top.vhd":1785122895
+#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\source\\impl_1\\mipi_rx.vhd":1785300094
+#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\source\\impl_1\\frame_buf.vhd":1785306404
+#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\source\\impl_1\\uart_rx.vhd":1692077381
+#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\source\\impl_1\\img_mean_std.vhd":1785309569
+#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\source\\impl_1\\spi_rxtx_with_fifo.vhd":1783887447
+#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\source\\impl_1\\uart_tx.vhd":1779117114
+#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\source\\impl_1\\process_image.vhd":1785307014
+#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\source\\impl_1\\mira_test_top.vhd":1785310019
 @E8lFkRDClNHs_#0C0F_0bH
 DLssN$FRIsH	
 M0bkR	BDcBUGQ

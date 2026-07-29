@@ -19,14 +19,19 @@ generic (
 port (
 	ClkxCI   : IN  std_logic;
     ResetxRI   : IN  std_logic;
+	
+	-- Image sensor interface / MIPI lanes
     MipiRxP     : INOUT  std_logic_vector(1 downto 0);
     MipiRxN     : INOUT  std_logic_vector(1 downto 0);
     MipiRxCkP   : INOUT  std_logic;
     MipiRxCkN   : INOUT  std_logic;
+	
+	-- Parallel decoded pixel output
     PixDataxDO  : OUT  std_logic_vector(4*BIT_DEPTH-1 downto 0);
     PixDataValidxSO : OUT  std_logic;
 	InLinexSO : OUT  std_logic;
 	InFramexSO : OUT  std_logic;
+	
 	DebugDataxDO    : OUT  std_logic_vector(11 downto 0)
 );
 end mipi_rx;
@@ -60,9 +65,10 @@ architecture architecture_mipi_rx of mipi_rx is
 	type fsmstatetype is (sWaitFSSync, sFSDI, sWaitLSSync, sLSDI, sWaitLData, sReadLDataFirst, sReadLData0, sReadLData1, sReadLData2, sReadLData3, sReadLData4, sReadLDataLast);
 	signal StatexDP, StatexDN : fsmstatetype;
 	signal ByteCntxDP, ByteCntxDN : integer range 0 to N_LINE_BYTES-1;
-	
     signal PixDataxDP, PixDataxDN : std_logic_vector(PixDataxDO'range);
 	
+	-- function to calculate how much storage is needed to assemble pixel data that
+	-- does not align with 8 bit byte border
 	function get_pixdatapre_width(bit_depth_in:integer) 
         return integer is
     begin
@@ -77,7 +83,6 @@ architecture architecture_mipi_rx of mipi_rx is
 			return 0;
         end if;
     end function;
-	
 	signal PixDataPrexDP, PixDataPrexDN : std_logic_vector(get_pixdatapre_width(BIT_DEPTH)-1 downto 0);
 	
 	component mipi_dphy_rx is
@@ -149,15 +154,17 @@ begin
 		end if;
 	end process;
 
-	-- reset signals for D-PHY
+	-- Reset signals for D-PHY
 	StartDelayCntxDN <= StartDelayCntxDP + 1 when StartDelayCntxDP < MAX_START_DELAY else MAX_START_DELAY;
-	DPhySyncRstxSN <= '1' when StartDelayCntxDP < 10000 else '0';
-	DPhyPDxSN <= '1' when StartDelayCntxDP < 2000 else '0';
-	DPhyLmmiRstNxSN <= '0' when StartDelayCntxDP < 11000 else '1';
-	DPhyClkxCN <= not DPhyClkxC;
+	DPhyPDxSN <= '1' when StartDelayCntxDP < 2000 else '0'; -- first release power-down
+	DPhySyncRstxSN <= '1' when StartDelayCntxDP < 10000 else '0'; -- second release reset
+	DPhyLmmiRstNxSN <= '0' when StartDelayCntxDP < 11000 else '1'; -- third release cfg interface reset
+	DPhyClkxCN <= not DPhyClkxC; -- clock inversion
 	
+	-- Select the correct decoder depending on bit_depth setting
+	-- Note: All these decoders are very minimal. But so far the MIPI output of the Mira seems so error free
+	-- that implementing verifying of checksums and other robustness measures are not high priority.
 	g_memless : if BIT_DEPTH=8 generate -- RAW8 decoder
-	
 		p_memless : process (all)
 		begin
 			-- if new word available in cross clock FIFO, read it
@@ -168,6 +175,7 @@ begin
 				FifoRdEnxS <= '1';
 				FifoValidxSN(FifoValidxSN'high) <= '1';
 			end if;
+			-- shift register to keep track which words are valid
 			FifoValidxSN(FifoValidxSN'high-1 downto 0) <= FifoValidxSP(FifoValidxSN'high downto 1);
 			
 			-- decoder state machine
@@ -245,8 +253,7 @@ begin
 					
 				when others =>
 					StatexDN <= sWaitFSSync;
-			end case;
-				
+			end case;		
 		end process;
 	
 	elsif BIT_DEPTH=10 generate  -- RAW10 decoder
@@ -260,6 +267,7 @@ begin
 				FifoValidxSN(FifoValidxSN'high) <= '1';
 			end if;
 			FifoValidxSN(FifoValidxSN'high-1 downto 0) <= FifoValidxSP(FifoValidxSN'high downto 1);
+			
 			StatexDN <= StatexDP;
 			ByteCntxDN <= ByteCntxDP; 
 			PixDataxDO <= PixDataxDP;
@@ -268,7 +276,6 @@ begin
 			PixDataValidxSO <= '0';
 			InLinexSO <= '0';
 			InFramexSO <= '0';
-			
 			case StatexDP is
 				when sWaitFSSync => -- wait for frame start sync
 					if FifoValidxSP(0) = '1' and FifoSyncxSP = "11" then -- what happens if lanes are out of sync??
@@ -414,13 +421,10 @@ begin
 					
 				when others =>
 					StatexDN <= sWaitFSSync;
-			end case;
-				
+			end case;	
 		end process;
 	
-	
 	elsif BIT_DEPTH=12 generate  -- RAW12 decoder
-	
 		p_memless : process (all)
 		begin
 			if FifoEmptyxS = '1' then
@@ -431,6 +435,7 @@ begin
 				FifoValidxSN(FifoValidxSN'high) <= '1';
 			end if;
 			FifoValidxSN(FifoValidxSN'high-1 downto 0) <= FifoValidxSP(FifoValidxSN'high downto 1);
+			
 			StatexDN <= StatexDP;
 			ByteCntxDN <= ByteCntxDP; 
 			PixDataxDO <= PixDataxDP;
@@ -439,7 +444,6 @@ begin
 			PixDataValidxSO <= '0';
 			InLinexSO <= '0';
 			InFramexSO <= '0';
-			
 			case StatexDP is
 				when sWaitFSSync => -- wait for frame start sync
 					if FifoValidxSP(0) = '1' and FifoSyncxSP = "11" then -- what happens if lanes are out of sync??
@@ -539,12 +543,12 @@ begin
 					InLinexSO <= '1';
 					PixDataValidxSO <= '1';
 					StatexDN <= sWaitLSSync;
-					
+			
 				when others =>
 					StatexDN <= sWaitFSSync;
-			end case;
-				
+			end case;				
 		end process;
+	
 	else generate
 		assert false report "BIT_DEPTH not supported" severity error;
 	end generate g_memless;

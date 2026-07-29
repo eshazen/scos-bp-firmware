@@ -1,1 +1,6 @@
 Library, Design Unit ,Compile time , Hardware Gen ,Optimization Stg1 ,Optimization Stg2 , Peak Mem Usage, Incr Mem Usage, Hardware Gen ,Optimization Stg1 ,Optimization Stg2
+work, process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1,0h:00m:01s,0h:00m:01s,-,0h:00m:00s,   213 MB,     2 MB,     2 MB,     0 MB,     0 MB
+work, process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1,0h:00m:02s,0h:00m:01s,-,0h:00m:00s,   213 MB,     2 MB,     2 MB,     0 MB,     0 MB
+work, mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1,0h:00m:01s,0h:00m:01s,0h:00m:00s,0h:00m:00s,   214 MB,     1 MB,     1 MB,     0 MB,     0 MB
+work, mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1,0h:00m:02s,0h:00m:02s,-,0h:00m:00s,   214 MB,     1 MB,     1 MB,     0 MB,     0 MB
+work, mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1,0h:00m:01s,0h:00m:01s,-,0h:00m:00s,   214 MB,     1 MB,     1 MB,     0 MB,     0 MB

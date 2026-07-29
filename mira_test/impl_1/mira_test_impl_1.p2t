@@ -1,6 +1,6 @@
 -w
 -gui
--msgset "C:/Users/Bernhard/my_designs/mira_test/promote.xml"
+-msgset "C:/Users/Bernhard/github/scos-bp-firmware/mira_test/promote.xml"
 -n 10
 -t 1
 -s 1

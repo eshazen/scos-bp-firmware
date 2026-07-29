@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2025.2.0.48.0
 
-Sun Jul 26 20:33:56 2026
+Wed Jul 29 01:27:27 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -8,7 +8,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command line:    timing -sethld -sp 9_High-Performance_1.0V -hsp m -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt mira_test_impl_1.tw1 mira_test_impl_1_map.udb -gui -msgset C:/Users/Bernhard/my_designs/mira_test/promote.xml
+Command line:    timing -sethld -sp 9_High-Performance_1.0V -hsp m -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt mira_test_impl_1.tw1 mira_test_impl_1_map.udb -gui -msgset C:/Users/Bernhard/github/scos-bp-firmware/mira_test/promote.xml
 
 -------------------------------------------
 Design:          mira_test_top

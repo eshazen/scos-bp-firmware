@@ -4,13 +4,13 @@
 set ret 0
 if {[catch {
 
-sys_set_attribute -gui on -msg {C:/Users/Bernhard/my_designs/mira_test/promote.xml}
-msg_load {C:/Users/Bernhard/my_designs/mira_test/promote.xml}
+sys_set_attribute -gui on -msg {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/promote.xml}
+msg_load {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/promote.xml}
 des_set_project_udb -in {mira_test_impl_1.udb} -milestone bit -pm je5d00
 # bitgen option
 bit_set_option { enable_early_io_wakeup false output_format "binary"   ip_evaluation false register_initialization true bitstream_mode normal }
 #-- write result file
-bit_generate -w {C:/Users/Bernhard/my_designs/mira_test/impl_1/mira_test_impl_1}
+bit_generate -w {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/impl_1/mira_test_impl_1}
 
 } out]} {
    puts $out

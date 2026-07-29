@@ -31,25 +31,25 @@ Implementation : impl_1
 Synopsys VHDL Compiler, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
 
 @N|Running in 64-bit mode
-@N:"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Top entity is set to mira_test_top.
+@N:"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Top entity is set to mira_test_top.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\uart_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\uart_tx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd'.
 VHDL syntax check successful!
 @N: CD231 :"C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-File C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd changed - recompiling
+File C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd changed - recompiling
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 154MB peak: 155MB)
 
 
 Process completed successfully.
-# Sun Jul 26 20:31:43 2026
+# Wed Jul 29 01:25:22 2026
 
 ###########################################################]
 ###########################################################[
@@ -200,101 +200,101 @@ Synopsys Verilog Compiler, Version comp202503synp2, Build 178R, Built Nov 11 202
 @N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
 @I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v" (library work)
 @I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
-@I::"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v" (library work)
-@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3205:23:3205:34|Net lmmi_rdata_o is not declared.
-@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3206:23:3206:40|Net lmmi_rdata_valid_o is not declared.
-@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3207:23:3207:34|Net lmmi_ready_o is not declared.
-@I::"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v" (library work)
-@I::"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v" (library work)
-@I::"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v" (library work)
+@I::"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v" (library work)
+@W: CG1337 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3205:23:3205:34|Net lmmi_rdata_o is not declared.
+@W: CG1337 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3206:23:3206:40|Net lmmi_rdata_valid_o is not declared.
+@W: CG1337 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3207:23:3207:34|Net lmmi_ready_o is not declared.
+@I::"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v" (library work)
+@I::"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v" (library work)
+@I::"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v" (library work)
 Verilog syntax check successful!
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 205MB peak: 206MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 210MB peak: 210MB)
 
 
 Process completed successfully.
-# Sun Jul 26 20:31:44 2026
+# Wed Jul 29 01:25:23 2026
 
 ###########################################################]
 ###########################################################[
-@N:"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Top entity is set to mira_test_top.
+@N:"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Top entity is set to mira_test_top.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_rx.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\uart_tx.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\uart_rx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\uart_tx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd'.
 VHDL syntax check successful!
-File C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd changed - recompiling
+File C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd changed - recompiling
 @N: CD231 :"C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Synthesizing work.mira_test_top.architecture_mira_test_top.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":70:23:70:24|Using onehot encoding for type cfgfsmstate_type. For example, enumeration sidle is mapped to "10000".
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":176:3:176:16|OTHERS clause is not synthesized.
-@W: CD272 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":331:14:331:32|Comparison (=) of different length arrays is always false!
+@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Synthesizing work.mira_test_top.architecture_mira_test_top.
+@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":70:23:70:24|Using onehot encoding for type cfgfsmstate_type. For example, enumeration sidle is mapped to "10000".
+@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":195:3:195:16|OTHERS clause is not synthesized.
+@W: CD272 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":343:14:343:32|Comparison (=) of different length arrays is always false!
 Running optimization stage 1 on main_pll .......
-Finished optimization stage 1 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 156MB peak: 157MB)
-@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":14:7:14:24|Synthesizing work.spi_rxtx_with_fifo.behavioral.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":46:19:46:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000000".
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":237:3:237:16|OTHERS clause is not synthesized.
+Finished optimization stage 1 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 157MB peak: 158MB)
+@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":14:7:14:24|Synthesizing work.spi_rxtx_with_fifo.behavioral.
+@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":46:19:46:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000000".
+@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":237:3:237:16|OTHERS clause is not synthesized.
 Post processing for work.spi_rxtx_with_fifo.behavioral
 Running optimization stage 1 on spi_rxtx_with_fifo .......
-@W: CL240 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":23:2:23:12|Signal BuffFullxSO is floating; a simulation mismatch is possible.
-Finished optimization stage 1 on spi_rxtx_with_fifo (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 218MB)
-@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":16:7:16:15|Synthesizing work.frame_buf.architecture_frame_buf.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":52:22:52:23|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000".
-@N: CD233 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":86:24:86:25|Using sequential encoding for type fifo_fsmstatetype.
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":267:12:267:25|OTHERS clause is not synthesized.
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":349:3:349:16|OTHERS clause is not synthesized.
+@W: CL240 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":23:2:23:12|Signal BuffFullxSO is floating; a simulation mismatch is possible.
+Finished optimization stage 1 on spi_rxtx_with_fifo (CPU Time 0h:00m:01s, Memory Used current: 218MB peak: 219MB)
+@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":16:7:16:15|Synthesizing work.frame_buf.architecture_frame_buf.
+@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":58:22:58:23|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000".
+@N: CD233 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":95:24:95:25|Using sequential encoding for type fifo_fsmstatetype.
+@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":279:12:279:25|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":362:3:362:16|OTHERS clause is not synthesized.
 Post processing for work.frame_buf.architecture_frame_buf
 Running optimization stage 1 on frame_buf .......
-Finished optimization stage 1 on frame_buf (CPU Time 0h:00m:03s, Memory Used current: 389MB peak: 390MB)
-@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":15:7:15:19|Synthesizing work.process_image.architecture_process_image.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":42:19:42:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000000".
-@N: CD604 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":196:3:196:16|OTHERS clause is not synthesized.
+Finished optimization stage 1 on frame_buf (CPU Time 0h:00m:05s, Memory Used current: 389MB peak: 391MB)
+@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":14:7:14:19|Synthesizing work.process_image.architecture_process_image.
+@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":46:19:46:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000000".
+@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":207:3:207:16|OTHERS clause is not synthesized.
 Running optimization stage 1 on process_image_out_fifo .......
-Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 389MB peak: 390MB)
-@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":15:7:15:18|Synthesizing work.img_mean_std.architecture_img_mean_std.
+Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 389MB peak: 391MB)
+@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":15:7:15:18|Synthesizing work.img_mean_std.architecture_img_mean_std.
 Post processing for work.img_mean_std.architecture_img_mean_std
 Running optimization stage 1 on img_mean_std .......
-Finished optimization stage 1 on img_mean_std (CPU Time 0h:00m:00s, Memory Used current: 391MB peak: 392MB)
+Finished optimization stage 1 on img_mean_std (CPU Time 0h:00m:00s, Memory Used current: 391MB peak: 393MB)
 Post processing for work.process_image.architecture_process_image
 Running optimization stage 1 on process_image .......
-Finished optimization stage 1 on process_image (CPU Time 0h:00m:00s, Memory Used current: 391MB peak: 392MB)
-@N: CD630 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":14:7:14:13|Synthesizing work.mipi_rx.architecture_mipi_rx.
-@N: CD231 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":60:19:60:20|Using onehot encoding for type fsmstatetype. For example, enumeration swaitfssync is mapped to "100000000000".
+Finished optimization stage 1 on process_image (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
+@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":14:7:14:13|Synthesizing work.mipi_rx.architecture_mipi_rx.
+@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":65:19:65:20|Using onehot encoding for type fsmstatetype. For example, enumeration swaitfssync is mapped to "100000000000".
 Running optimization stage 1 on mipi_cross_clk_fifo .......
-Finished optimization stage 1 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 391MB peak: 392MB)
+Finished optimization stage 1 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
 Running optimization stage 1 on mipi_dphy_rx .......
-Finished optimization stage 1 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 391MB peak: 392MB)
+Finished optimization stage 1 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
 Post processing for work.mipi_rx.architecture_mipi_rx
 Running optimization stage 1 on mipi_rx .......
-Finished optimization stage 1 on mipi_rx (CPU Time 0h:00m:00s, Memory Used current: 391MB peak: 392MB)
+Finished optimization stage 1 on mipi_rx (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
 Post processing for work.mira_test_top.architecture_mira_test_top
 Running optimization stage 1 on mira_test_top .......
-@W: CL271 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|Pruning unused bits 6 to 4 of p_cfg_memzing.CfgFSMSRegxDP_0_2(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-Finished optimization stage 1 on mira_test_top (CPU Time 0h:00m:00s, Memory Used current: 391MB peak: 393MB)
+@W: CL271 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning unused bits 6 to 4 of p_cfg_memzing.CfgFSMSRegxDP_0_2(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+Finished optimization stage 1 on mira_test_top (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
 Running optimization stage 2 on mipi_dphy_rx .......
 Finished optimization stage 2 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 360MB peak: 393MB)
 Running optimization stage 2 on mipi_cross_clk_fifo .......
 Finished optimization stage 2 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 360MB peak: 393MB)
 Running optimization stage 2 on mipi_rx_10_1600 .......
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mipi_rx.vhd":127:2:127:3|Trying to extract state machine for register StatexDP.
+@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":132:2:132:3|Trying to extract state machine for register StatexDP.
 Extracted state machine for register StatexDP
 State machine has 11 reachable states with original encodings of:
    000000000001
@@ -310,17 +310,17 @@ State machine has 11 reachable states with original encodings of:
    100000000000
 Finished optimization stage 2 on mipi_rx_10_1600 (CPU Time 0h:00m:00s, Memory Used current: 362MB peak: 393MB)
 Running optimization stage 2 on img_mean_std_10_1600 .......
-@W: CL279 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":89:2:89:3|Pruning register bits 31 to 23 of PixValSqCombxDP(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":89:2:89:3|Pruning register bits 21 to 13 of PixValCombxDP(21 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":89:2:89:3|Register bit PixValCombxDP(12) is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":89:2:89:3|Register bit PixValSqCombxDP(22) is always 0.
-@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":89:2:89:3|Pruning register bit 22 of PixValSqCombxDP(22 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\img_mean_std.vhd":89:2:89:3|Pruning register bit 12 of PixValCombxDP(12 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Finished optimization stage 2 on img_mean_std_10_1600 (CPU Time 0h:00m:01s, Memory Used current: 391MB peak: 393MB)
+@W: CL279 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bits 31 to 23 of PixValSqCombxDP(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bits 21 to 13 of PixValCombxDP(21 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Register bit PixValCombxDP(12) is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Register bit PixValSqCombxDP(22) is always 0.
+@W: CL260 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bit 22 of PixValSqCombxDP(22 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bit 12 of PixValCombxDP(12 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Finished optimization stage 2 on img_mean_std_10_1600 (CPU Time 0h:00m:02s, Memory Used current: 391MB peak: 393MB)
 Running optimization stage 2 on process_image_out_fifo .......
 Finished optimization stage 2 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 372MB peak: 393MB)
 Running optimization stage 2 on process_image_10_1600 .......
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\process_image.vhd":84:2:84:3|Trying to extract state machine for register StatexDP.
+@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":88:2:88:3|Trying to extract state machine for register StatexDP.
 Extracted state machine for register StatexDP
 State machine has 12 reachable states with original encodings of:
    000000000001
@@ -337,9 +337,9 @@ State machine has 12 reachable states with original encodings of:
    100000000000
 Finished optimization stage 2 on process_image_10_1600 (CPU Time 0h:00m:00s, Memory Used current: 374MB peak: 393MB)
 Running optimization stage 2 on frame_buf_10_1600_480 .......
-@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":146:2:146:3|Found RAM FIFOMemxDP, depth=16, width=64
-@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":146:2:146:3|Found RAM MemxDP, depth=16000, width=64
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":115:2:115:3|Trying to extract state machine for register StatexDP.
+@N: CL134 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Found RAM FIFOMemxDP, depth=16, width=64
+@N: CL134 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Found RAM MemxDP, depth=16000, width=64
+@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":123:2:123:3|Trying to extract state machine for register StatexDP.
 Extracted state machine for register StatexDP
 State machine has 9 reachable states with original encodings of:
    000000001
@@ -351,15 +351,15 @@ State machine has 9 reachable states with original encodings of:
    001000000
    010000000
    100000000
-@W: CL246 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\frame_buf.vhd":29:1:29:11|Input port bits 7 to 4 of sliceselxdi(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
-Finished optimization stage 2 on frame_buf_10_1600_480 (CPU Time 0h:00m:00s, Memory Used current: 380MB peak: 393MB)
+@W: CL246 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":33:1:33:11|Input port bits 7 to 4 of sliceselxdi(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+Finished optimization stage 2 on frame_buf_10_1600_480 (CPU Time 0h:00m:00s, Memory Used current: 381MB peak: 393MB)
 Running optimization stage 2 on spi_rxtx_with_fifo .......
-@N: CL134 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Found RAM FIFOMemxDP, depth=8192, width=8
-@W: CL190 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Pruning register bits 7 to 5 of FIFOBytesAvailableHighBytexDP(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Trying to extract state machine for register StatexDP.
+@N: CL134 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Found RAM FIFOMemxDP, depth=8192, width=8
+@W: CL190 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Pruning register bits 7 to 5 of FIFOBytesAvailableHighBytexDP(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Trying to extract state machine for register StatexDP.
 Extracted state machine for register StatexDP
 State machine has 8 reachable states with original encodings of:
    00000001
@@ -370,14 +370,14 @@ State machine has 8 reachable states with original encodings of:
    00100000
    01000000
    10000000
-Finished optimization stage 2 on spi_rxtx_with_fifo (CPU Time 0h:00m:00s, Memory Used current: 380MB peak: 393MB)
+Finished optimization stage 2 on spi_rxtx_with_fifo (CPU Time 0h:00m:00s, Memory Used current: 381MB peak: 393MB)
 Running optimization stage 2 on main_pll .......
-Finished optimization stage 2 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 380MB peak: 393MB)
+Finished optimization stage 2 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 381MB peak: 393MB)
 Running optimization stage 2 on mira_test_top .......
-@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|Pruning register bit 3 of CfgRegxDP_14(3 downto 2). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL169 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|Pruning unused register p_cfg_memzing.CfgRegxDP_15(0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|Pruning unused register CfgRegxDP_14(2). Make sure that there are no unused intermediate registers.
-@N: CL201 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":120:2:120:3|Trying to extract state machine for register CfgStatexDP.
+@W: CL260 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning register bit 3 of CfgRegxDP_14(3 downto 2). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning unused register p_cfg_memzing.CfgRegxDP_15(0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning unused register CfgRegxDP_14(2). Make sure that there are no unused intermediate registers.
+@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Trying to extract state machine for register CfgStatexDP.
 Extracted state machine for register CfgStatexDP
 State machine has 5 reachable states with original encodings of:
    00001
@@ -385,21 +385,21 @@ State machine has 5 reachable states with original encodings of:
    00100
    01000
    10000
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":30:1:30:17|Input UartRTSntoFPGAxDI is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\source\impl_1\mira_test_top.vhd":33:1:33:17|Input UartFTDItoFPGAxDI is unused.
-Finished optimization stage 2 on mira_test_top (CPU Time 0h:00m:00s, Memory Used current: 380MB peak: 393MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":30:1:30:17|Input UartRTSntoFPGAxDI is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":33:1:33:17|Input UartFTDItoFPGAxDI is unused.
+Finished optimization stage 2 on mira_test_top (CPU Time 0h:00m:00s, Memory Used current: 381MB peak: 393MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================
-@L: C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\layer0.duruntime
+@L: C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\layer0.duruntime
 
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 303MB peak: 393MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:19s; Memory used current: 304MB peak: 393MB)
 
 
 Process completed successfully.
-# Sun Jul 26 20:31:57 2026
+# Wed Jul 29 01:25:44 2026
 
 ###########################################################]
 ###########################################################[
@@ -534,23 +534,23 @@ Process completed successfully.
 @N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
 @I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v" (library work)
 @I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
-@I::"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v" (library work)
-@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3205:23:3205:34|Net lmmi_rdata_o is not declared.
-@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3206:23:3206:40|Net lmmi_rdata_valid_o is not declared.
-@W: CG1337 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3207:23:3207:34|Net lmmi_ready_o is not declared.
-@I::"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v" (library work)
-@I::"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v" (library work)
-@I::"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v" (library work)
+@I::"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v" (library work)
+@W: CG1337 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3205:23:3205:34|Net lmmi_rdata_o is not declared.
+@W: CG1337 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3206:23:3206:40|Net lmmi_rdata_valid_o is not declared.
+@W: CG1337 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":3207:23:3207:34|Net lmmi_ready_o is not declared.
+@I::"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v" (library work)
+@I::"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v" (library work)
+@I::"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v" (library work)
 Verilog syntax check successful!
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":317:7:317:56|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric in library work.
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":317:7:317:56|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric in library work.
 
 	REGMODE=24'b011100100110010101100111
 	FWFT=32'b00000000000000000000000000000000
 	DWID=32'b00000000000000000000000000100010
    Generated name = mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric_reg_0s_34s
 Running optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric_reg_0s_34s .......
-Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric_reg_0s_34s (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 208MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":477:7:477:49|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main in library work.
+Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric_reg_0s_34s (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 209MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":477:7:477:49|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main in library work.
 
 	IMPLEMENTATION=24'b010001010100001001010010
 	WADDR_DEPTH=32'b00000000000000000000000001000000
@@ -580,7 +580,7 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
 	FIFO_CONTROLLER=56'b01001000010000010101001001000100010111110100100101010000
 	FORCE_FAST_CONTROLLER=32'b00000000000000000000000000000001
    Generated name = mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":702:7:702:49|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc in library work.
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":702:7:702:49|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc in library work.
 
 	_FCODE_LIFCL_=32'b00000000000000000000000000000001
 	_FCODE_ICE_=32'b00000000000000000000000000000010
@@ -614,7 +614,7 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
 	ENABLE_DATA_COUNT_RD=40'b0100011001000001010011000101001101000101
 	FORCE_FAST_CONTROLLER=32'b00000000000000000000000000000001
    Generated name = mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3159:7:3159:52|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core in library work.
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3159:7:3159:52|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core in library work.
 
 	FAMILY=48'b000000000100110001001001010001100100001101001100
 	WADDR_DEPTH=32'b00000000000000000000000001000000
@@ -639,22 +639,22 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fab
    Generated name = mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1
 @N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":3785:7:3785:13|Synthesizing module FIFO16K in library work.
 Running optimization stage 1 on FIFO16K .......
-Finished optimization stage 1 on FIFO16K (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 208MB)
+Finished optimization stage 1 on FIFO16K (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
 Running optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1 .......
-Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1 (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 209MB)
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":783:40:783:48|Object wr_pong_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":784:40:784:48|Object rd_pong_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":785:40:785:52|Object wr_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":786:40:786:52|Object rd_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":783:40:783:48|Object wr_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":784:40:784:48|Object rd_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":785:40:785:52|Object wr_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":786:40:786:52|Object rd_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1 .......
-Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1 (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 209MB)
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|Removing wire wr_data_cnt_o, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|Removing wire rd_data_cnt_o, as there is no assignment to it.
+Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|Removing wire wr_data_cnt_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|Removing wire rd_data_cnt_o, as there is no assignment to it.
 Running optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1 .......
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|*Output wr_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|*Output rd_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1 (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 209MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":130:7:130:44|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc in library work.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|*Output wr_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|*Output rd_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":130:7:130:44|Synthesizing module mipi_cross_clk_fifo_ipgen_lscc_fifo_dc in library work.
 
 	IMPLEMENTATION=24'b010001010100001001010010
 	WADDR_DEPTH=32'b00000000000000000000000001000000
@@ -688,11 +688,11 @@ Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_
 	T_REGMODE=40'b0000000000000000011100100110010101100111
    Generated name = mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1
 Running optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1 .......
-Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1 (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 209MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":11:78:11:96|Synthesizing module mipi_cross_clk_fifo in library work.
+Finished optimization stage 1 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":11:78:11:96|Synthesizing module mipi_cross_clk_fifo in library work.
 Running optimization stage 1 on mipi_cross_clk_fifo .......
-Finished optimization stage 1 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 209MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5512:7:5512:39|Synthesizing module mipi_dphy_rx_ipgen_lscc_mipi_dphy in library work.
+Finished optimization stage 1 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5512:7:5512:39|Synthesizing module mipi_dphy_rx_ipgen_lscc_mipi_dphy in library work.
 
 	FAMILY=40'b0100110001001001010001100100001101001100
 	INT_TYPE=16'b0101001001011000
@@ -814,7 +814,7 @@ Finished optimization stage 1 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memor
 	V2I_KVCO_SEL=16'b0011011000110000
 	V2I_1V_EN=56'b01000101010011100100000101000010010011000100010101000100
    Generated name = mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":655:7:655:45|Synthesizing module mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx in library work.
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":655:7:655:45|Synthesizing module mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx in library work.
 
 	NUM_LANE=32'b00000000000000000000000000000010
 	GEAR=32'b00000000000000000000000000010000
@@ -836,13 +836,13 @@ Finished optimization stage 1 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memor
 	DPHY_GEAR=32'b00110000011000100011000000110001
 	DPHY_DESKEW_EN=64'b0100010001001001010100110100000101000010010011000100010101000100
    Generated name = mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":267:7:267:43|Synthesizing module mipi_dphy_rx_ipgen_lscc_clock_divider in library work.
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":267:7:267:43|Synthesizing module mipi_dphy_rx_ipgen_lscc_clock_divider in library work.
 
 	TGT_FREQ_IN=32'b00000000000000000000000001100000
 	DIVIDER=32'b00000000000000000000000000000101
    Generated name = mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s
 Running optimization stage 1 on mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s .......
-Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 209MB)
+Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 210MB)
 @N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":2615:7:2615:10|Synthesizing module DPHY in library work.
 
 	GSR=56'b01000101010011100100000101000010010011000100010101000100
@@ -879,31 +879,31 @@ Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s (C
    Generated name = DPHY_Z7_layer1
 @W: CG146 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":2615:7:2615:10|Creating black box for empty module DPHY_Z7_layer1
 
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":703:16:703:28|Removing wire lp_rx_clk_p_o, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":704:16:704:28|Removing wire lp_rx_clk_n_o, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":733:15:733:25|Removing wire lp_data_p_w, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":734:15:734:25|Removing wire lp_data_n_w, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":740:9:740:21|Removing wire clk_lp_ctrl_i, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":742:9:742:15|Removing wire cd_d0_p, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":743:9:743:15|Removing wire cd_d0_n, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":703:16:703:28|Removing wire lp_rx_clk_p_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":704:16:704:28|Removing wire lp_rx_clk_n_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":733:15:733:25|Removing wire lp_data_p_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":734:15:734:25|Removing wire lp_data_n_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":740:9:740:21|Removing wire clk_lp_ctrl_i, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":742:9:742:15|Removing wire cd_d0_p, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":743:9:743:15|Removing wire cd_d0_n, as there is no assignment to it.
 Running optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1 .......
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":703:16:703:28|*Output lp_rx_clk_p_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":704:16:704:28|*Output lp_rx_clk_n_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 210MB)
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":703:16:703:28|*Output lp_rx_clk_p_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":704:16:704:28|*Output lp_rx_clk_n_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1 (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 210MB)
 Running optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1 .......
-Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 210MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":11:71:11:82|Synthesizing module mipi_dphy_rx in library work.
+Finished optimization stage 1 on mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1 (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 210MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":11:71:11:82|Synthesizing module mipi_dphy_rx in library work.
 Running optimization stage 1 on mipi_dphy_rx .......
-Finished optimization stage 1 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 210MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":287:7:287:56|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric in library work.
+Finished optimization stage 1 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 210MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":287:7:287:56|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric in library work.
 
 	REGMODE=24'b011100100110010101100111
 	FWFT=32'b00000000000000000000000000000000
 	DWID=32'b00000000000000000000000001000000
    Generated name = process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s
 Running optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s .......
-Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 210MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":447:7:447:49|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_main in library work.
+Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 210MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":447:7:447:49|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_main in library work.
 
 	IMPLEMENTATION=24'b010001010100001001010010
 	ADDRESS_DEPTH=32'b00000000000000000001100000000000
@@ -924,7 +924,7 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fab
 	FIFO_CONTROLLER=56'b01001000010000010101001001000100010111110100100101010000
 	FORCE_FAST_CONTROLLER=32'b00000000000000000000000000000001
    Generated name = process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":639:7:639:49|Synthesizing module process_image_out_fifo_ipgen_lscc_hard_fifo in library work.
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":639:7:639:49|Synthesizing module process_image_out_fifo_ipgen_lscc_hard_fifo in library work.
 
 	_FCODE_LIFCL_=32'b00000000000000000000000000000001
 	_FCODE_ICE_=32'b00000000000000000000000000000010
@@ -957,7 +957,7 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fab
 	ENABLE_DATA_COUNT_RD=40'b0100011001000001010011000101001101000101
 	FORCE_FAST_CONTROLLER=32'b00000000000000000000000000000001
    Generated name = process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2968:7:2968:52|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_hw_core in library work.
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2968:7:2968:52|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo_hw_core in library work.
 
 	FAMILY=48'b000000000100110001001001010001100100001101001100
 	WADDR_DEPTH=32'b00000000000000000001100000000000
@@ -979,28 +979,28 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fab
 	ECC_ENABLE=32'b00000000000000000000000000000000
 	IS_CASCADE=1'b0
    Generated name = process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3075:16:3075:22|Object empty_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3076:16:3076:26|Object empty_out_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3077:16:3077:27|Object aempty_out_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3078:16:3078:25|Object pre_read_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3079:16:3079:24|Object rd_en_p_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3075:16:3075:22|Object empty_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3076:16:3076:26|Object empty_out_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3077:16:3077:27|Object aempty_out_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3078:16:3078:25|Object pre_read_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3079:16:3079:24|Object rd_en_p_r is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1 .......
-Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1 (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 210MB)
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":721:40:721:48|Object wr_pong_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":722:40:722:48|Object rd_pong_r is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":723:40:723:52|Object wr_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":724:40:724:52|Object rd_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":691:27:691:39|Removing wire wr_data_cnt_o, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":692:27:692:39|Removing wire rd_data_cnt_o, as there is no assignment to it.
+Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1 (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 211MB)
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":721:40:721:48|Object wr_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":722:40:722:48|Object rd_pong_r is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":723:40:723:52|Object wr_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":724:40:724:52|Object rd_pong_nxt_c is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":691:27:691:39|Removing wire wr_data_cnt_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":692:27:692:39|Removing wire rd_data_cnt_o, as there is no assignment to it.
 Running optimization stage 1 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 .......
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":691:27:691:39|*Output wr_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":692:27:692:39|*Output rd_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":488:29:488:38|Removing wire data_cnt_o, as there is no assignment to it.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":691:27:691:39|*Output wr_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":692:27:692:39|*Output rd_data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":488:29:488:38|Removing wire data_cnt_o, as there is no assignment to it.
 Running optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 .......
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":488:29:488:38|*Output data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":120:7:120:44|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo in library work.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":488:29:488:38|*Output data_cnt_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":120:7:120:44|Synthesizing module process_image_out_fifo_ipgen_lscc_fifo in library work.
 
 	IMPLEMENTATION=24'b010001010100001001010010
 	ADDRESS_DEPTH=32'b00000000000000000001100000000000
@@ -1025,11 +1025,11 @@ Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_
 	T_REGMODE=40'b0000000000000000011100100110010101100111
    Generated name = process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1
 Running optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 .......
-Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":11:81:11:102|Synthesizing module process_image_out_fifo in library work.
+Finished optimization stage 1 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":11:81:11:102|Synthesizing module process_image_out_fifo in library work.
 Running optimization stage 1 on process_image_out_fifo .......
-Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 210MB peak: 212MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":158:7:158:29|Synthesizing module main_pll_ipgen_lscc_pll in library work.
+Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":158:7:158:29|Synthesizing module main_pll_ipgen_lscc_pll in library work.
 
 	FVCO=88'b0011000100110101001100110011011000101110001100000011000000110000001100000011000000110000
 	CLKI_FREQ=72'b001101000011100000101110001100000011000000110000001100000011000000110000
@@ -1185,151 +1185,151 @@ Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Me
    Generated name = main_pll_ipgen_lscc_pll_Z12_layer1
 @N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v":10022:7:10022:9|Synthesizing module PLL in library work.
 Running optimization stage 1 on PLL .......
-Finished optimization stage 1 on PLL (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":285:16:285:24|Removing wire refdetlos, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":304:16:304:27|Removing wire apb_pready_o, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":305:16:305:28|Removing wire apb_pslverr_o, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":306:23:306:34|Removing wire apb_prdata_o, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":629:9:629:26|Removing wire apb_lmmi_request_w, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":630:15:630:31|Removing wire apb_lmmi_offset_w, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":631:15:631:30|Removing wire apb_lmmi_wdata_w, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":632:15:632:30|Removing wire apb_lmmi_rdata_w, as there is no assignment to it.
-@W: CG360 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":633:9:633:25|Removing wire apb_lmmi_wr_rdn_w, as there is no assignment to it.
+Finished optimization stage 1 on PLL (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":285:16:285:24|Removing wire refdetlos, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":304:16:304:27|Removing wire apb_pready_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":305:16:305:28|Removing wire apb_pslverr_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":306:23:306:34|Removing wire apb_prdata_o, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":629:9:629:26|Removing wire apb_lmmi_request_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":630:15:630:31|Removing wire apb_lmmi_offset_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":631:15:631:30|Removing wire apb_lmmi_wdata_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":632:15:632:30|Removing wire apb_lmmi_rdata_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":633:9:633:25|Removing wire apb_lmmi_wr_rdn_w, as there is no assignment to it.
 Running optimization stage 1 on main_pll_ipgen_lscc_pll_Z12_layer1 .......
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":285:16:285:24|*Output refdetlos has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":304:16:304:27|*Output apb_pready_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":305:16:305:28|*Output apb_pslverr_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL318 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":306:23:306:34|*Output apb_prdata_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
-Finished optimization stage 1 on main_pll_ipgen_lscc_pll_Z12_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
-@N: CG364 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":11:67:11:74|Synthesizing module main_pll in library work.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":285:16:285:24|*Output refdetlos has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":304:16:304:27|*Output apb_pready_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":305:16:305:28|*Output apb_pslverr_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":306:23:306:34|*Output apb_prdata_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+Finished optimization stage 1 on main_pll_ipgen_lscc_pll_Z12_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+@N: CG364 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":11:67:11:74|Synthesizing module main_pll in library work.
 Running optimization stage 1 on main_pll .......
-Finished optimization stage 1 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 212MB)
+Finished optimization stage 1 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
 Running optimization stage 2 on main_pll .......
-Finished optimization stage 2 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+Finished optimization stage 2 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on PLL .......
-Finished optimization stage 2 on PLL (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+Finished optimization stage 2 on PLL (CPU Time 0h:00m:01s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on main_pll_ipgen_lscc_pll_Z12_layer1 .......
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":260:10:260:20|Input usr_fbclk_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":284:10:284:20|Input refdetreset is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":297:10:297:19|Input apb_pclk_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":298:10:298:23|Input apb_preset_n_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":299:15:299:27|Input apb_penable_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":300:15:300:24|Input apb_psel_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":301:15:301:26|Input apb_pwrite_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":302:22:302:32|Input apb_paddr_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\main_pll\rtl\main_pll.v":303:22:303:33|Input apb_pwdata_i is unused.
-Finished optimization stage 2 on main_pll_ipgen_lscc_pll_Z12_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":260:10:260:20|Input usr_fbclk_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":284:10:284:20|Input refdetreset is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":297:10:297:19|Input apb_pclk_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":298:10:298:23|Input apb_preset_n_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":299:15:299:27|Input apb_penable_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":300:15:300:24|Input apb_psel_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":301:15:301:26|Input apb_pwrite_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":302:22:302:32|Input apb_paddr_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":303:22:303:33|Input apb_pwdata_i is unused.
+Finished optimization stage 2 on main_pll_ipgen_lscc_pll_Z12_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo .......
-Finished optimization stage 2 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+Finished optimization stage 2 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 .......
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1 .......
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2994:10:2994:23|Input full_cascade_i is unused.
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":2994:10:2994:23|Input full_cascade_i is unused.
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 .......
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":679:32:679:47|Input almost_full_th_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":680:32:680:51|Input almost_full_clr_th_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":681:32:681:48|Input almost_empty_th_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":682:32:682:52|Input almost_empty_clr_th_i is unused.
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":679:32:679:47|Input almost_full_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":680:32:680:51|Input almost_full_clr_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":681:32:681:48|Input almost_empty_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":682:32:682:52|Input almost_empty_clr_th_i is unused.
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 .......
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s .......
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":290:10:290:14|Input clk_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":291:10:291:14|Input rst_i is unused.
-Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":290:10:290:14|Input clk_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":291:10:291:14|Input rst_i is unused.
+Finished optimization stage 2 on process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on mipi_dphy_rx .......
-Finished optimization stage 2 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 213MB)
+Finished optimization stage 2 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
 Running optimization stage 2 on mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s .......
-@W: CL260 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Pruning register bit 31 of count[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[30] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[29] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[28] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[27] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[26] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[25] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[24] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[23] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[22] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[21] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[20] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[19] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[18] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[17] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[16] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[15] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[14] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[13] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[12] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[11] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[10] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[9] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[8] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[7] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[6] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[5] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[4] is always 0.
-@N: CL189 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[3] is always 0.
-@W: CL279 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Pruning register bits 30 to 3 of count[30:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Finished optimization stage 2 on mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+@W: CL260 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Pruning register bit 31 of count[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[30] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[29] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[28] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[27] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[26] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[25] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[24] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[23] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[22] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[21] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[20] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[19] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[18] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[17] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[16] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[15] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[14] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[13] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[12] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[11] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[10] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[9] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[8] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[7] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[6] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[5] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[4] is always 0.
+@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Register bit count[3] is always 0.
+@W: CL279 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":305:4:305:9|Pruning register bits 30 to 3 of count[30:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 2 on mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 214MB)
 Running optimization stage 2 on mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1 .......
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":682:15:682:27|Input lmmi_resetn_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":691:15:691:24|Input pll_lock_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":693:15:693:28|Input hs_rx_clk_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":694:15:694:29|Input hs_rx_data_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":695:15:695:30|Input hs_data_des_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":696:15:696:24|Input hs_rx_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":700:15:700:24|Input lp_rx_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":706:15:706:24|Input lp_tx_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":707:15:707:28|Input lp_tx_data_p_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":708:15:708:28|Input lp_tx_data_n_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":709:15:709:29|Input lp_tx_data_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":710:15:710:27|Input lp_tx_clk_p_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":711:15:711:27|Input lp_tx_clk_n_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":715:15:715:24|Input usrstdby_i is unused.
-Finished optimization stage 2 on mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":682:15:682:27|Input lmmi_resetn_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":691:15:691:24|Input pll_lock_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":693:15:693:28|Input hs_rx_clk_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":694:15:694:29|Input hs_rx_data_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":695:15:695:30|Input hs_data_des_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":696:15:696:24|Input hs_rx_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":700:15:700:24|Input lp_rx_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":706:15:706:24|Input lp_tx_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":707:15:707:28|Input lp_tx_data_p_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":708:15:708:28|Input lp_tx_data_n_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":709:15:709:29|Input lp_tx_data_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":710:15:710:27|Input lp_tx_clk_p_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":711:15:711:27|Input lp_tx_clk_n_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":715:15:715:24|Input usrstdby_i is unused.
+Finished optimization stage 2 on mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 214MB)
 Running optimization stage 2 on mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1 .......
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5684:15:5684:24|Input hs_tx_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5685:15:5685:28|Input hs_tx_clk_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5686:36:5686:47|Input hs_tx_data_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5687:15:5687:29|Input hs_tx_data_en_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5709:15:5709:25|Input pll_clkop_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5710:15:5710:25|Input pll_clkos_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5723:15:5723:28|Input txclk_hsgate_i is unused.
-Finished optimization stage 2 on mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5684:15:5684:24|Input hs_tx_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5685:15:5685:28|Input hs_tx_clk_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5686:36:5686:47|Input hs_tx_data_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5687:15:5687:29|Input hs_tx_data_en_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5709:15:5709:25|Input pll_clkop_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5710:15:5710:25|Input pll_clkos_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":5723:15:5723:28|Input txclk_hsgate_i is unused.
+Finished optimization stage 2 on mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 214MB)
 Running optimization stage 2 on mipi_cross_clk_fifo .......
-Finished optimization stage 2 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 214MB)
 Running optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1 .......
-Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 214MB)
 Running optimization stage 2 on FIFO16K .......
-Finished optimization stage 2 on FIFO16K (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on FIFO16K (CPU Time 0h:00m:01s, Memory Used current: 212MB peak: 214MB)
 Running optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1 .......
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3186:10:3186:23|Input full_cascade_i is unused.
-Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3186:10:3186:23|Input full_cascade_i is unused.
+Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 214MB)
 Running optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1 .......
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":743:32:743:47|Input almost_full_th_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":744:32:744:51|Input almost_full_clr_th_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":745:32:745:48|Input almost_empty_th_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":746:32:746:52|Input almost_empty_clr_th_i is unused.
-Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":743:32:743:47|Input almost_full_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":744:32:744:51|Input almost_full_clr_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":745:32:745:48|Input almost_empty_th_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":746:32:746:52|Input almost_empty_clr_th_i is unused.
+Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 214MB)
 Running optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1 .......
-Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 214MB)
 Running optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric_reg_0s_34s .......
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":320:10:320:14|Input clk_i is unused.
-@N: CL159 :"C:\Users\Bernhard\my_designs\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":321:10:321:14|Input rst_i is unused.
-Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric_reg_0s_34s (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 213MB)
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":320:10:320:14|Input clk_i is unused.
+@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":321:10:321:14|Input rst_i is unused.
+Finished optimization stage 2 on mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric_reg_0s_34s (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 214MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================
-@L: C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\layer1.duruntime
+@L: C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\layer1.duruntime
 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 212MB peak: 213MB)
+At c_ver Exit (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:24s; Memory used current: 212MB peak: 214MB)
 
 
 Process completed successfully.
-# Sun Jul 26 20:32:09 2026
+# Wed Jul 29 01:26:08 2026
 
 ###########################################################]
 ###########################################################[
@@ -1352,7 +1352,7 @@ Synopsys Synopsys Netlist Linker, Version comp202503synp2, Build 178R, Built Nov
 
 =======================================================================================
 For a summary of linker messages for components that did not bind, please see log file:
-@L: C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\mira_test_impl_1_comp.linkerlog
+@L: C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_comp.linkerlog
 =======================================================================================
 
 
@@ -1361,21 +1361,21 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jul 26 20:32:09 2026
+# Wed Jul 29 01:26:09 2026
 
 ###########################################################]
 
 For a summary of runtime and memory usage for all design units, please see file:
 ==========================================================
-@L: C:\Users\Bernhard\my_designs\mira_test\impl_1\synwork\mira_test_impl_1_comp.rt.csv
+@L: C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_comp.rt.csv
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:25s; Memory used current: 85MB peak: 86MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:47s; CPU Time elapsed 0h:00m:45s; Memory used current: 86MB peak: 87MB)
 
-Process took 0h:00m:26s realtime, 0h:00m:25s cputime
+Process took 0h:00m:47s realtime, 0h:00m:45s cputime
 
 Process completed successfully.
-# Sun Jul 26 20:32:09 2026
+# Wed Jul 29 01:26:09 2026
 
 ###########################################################]
