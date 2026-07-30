@@ -1,6 +1,6 @@
 i main_pll_inst.lscc_pll_inst.clkop_o
 m 0 0
-u 225 2505
+u 227 2540
 n ckid0_0 {t:g_iface\.spi_rxtx.StatexDP[0].C} Clock Optimization not enabled
 p {p:g_iface\.spi_rxtx.ClkxCI}{t:g_iface\.spi_rxtx.StatexDP[0].C}
 e ckid0_0 {t:g_iface\.spi_rxtx.StatexDP[0].C} dffr

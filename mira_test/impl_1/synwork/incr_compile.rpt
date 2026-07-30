@@ -5,345 +5,453 @@ and may only be used pursuant to the terms and conditions of a written license a
 with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
-Build: W-2025.03LR-SP1
-Install: C:\lscc\radiant\2025.2\synpbase
+Build: X-2025.09LR-SP1
+Install: C:\lscc\radiant\2026.1\synpbase
 OS: Windows 10 or later
-Hostname: ZBOOKNB
+Hostname: LEGIONNB
 
 Implementation : impl_1
-Synopsys HDL compiler and linker, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
+Synopsys HDL compiler and linker, Version comp202509synp2, Build 154R, Built May 20 2026 06:20:37, @
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-86       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59)
+97       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 124
+Modules that may have changed as a result of file changes: 152
 MID:  lib.cell.view
 2        work.ebr_addr_pipe.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 3        work.ebr_read_mux.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-111      work.frame_buf.architecture_frame_buf may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-121      work.img_mean_std.architecture_img_mean_std may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+134      work.hsiao_ecc_decoder.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+135      work.hsiao_ecc_encoder.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 4        work.lscc_add_sub.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 5        work.lscc_adder.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 6        work.lscc_cntr.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 7        work.lscc_complex_mult.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 8        work.lscc_distributed_dpram.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 9        work.lscc_distributed_rom.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 10       work.lscc_distributed_spram.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 11       work.lscc_fifo.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 12       work.lscc_fifo_dc.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 13       work.lscc_fifo_dc_fwft_fabric.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 14       work.lscc_fifo_dc_hw_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 15       work.lscc_fifo_dc_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 16       work.lscc_fifo_fwft_fabric.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 17       work.lscc_fifo_hw_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 18       work.lscc_fifo_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 19       work.lscc_fifo_mem_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 20       work.lscc_fifo_mem_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 21       work.lscc_fifo_soft_mem.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 22       work.lscc_hard_fifo.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 23       work.lscc_hard_fifo_dc.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+136      work.lscc_lfmxo4_addr_wiring.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+137      work.lscc_lfmxo4_byte_enable.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+138      work.lscc_lfmxo4_byte_enable_multi.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+139      work.lscc_lfmxo4_core_port_wiring.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+140      work.lscc_lfmxo4_cs_decode.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+141      work.lscc_lfmxo4_data_deinterleave.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+142      work.lscc_lfmxo4_data_interleave.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+143      work.lscc_lfmxo4_data_routing.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+144      work.lscc_lfmxo4_data_slice.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+145      work.lscc_lfmxo4_dp8k_rd_wiring.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+146      work.lscc_lfmxo4_dp8k_wr_wiring.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+147      work.lscc_lfmxo4_fifo_dc.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+148      work.lscc_lfmxo4_fifo_dc_distributed_ram.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+149      work.lscc_lfmxo4_fifo_dc_ecc.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+150      work.lscc_lfmxo4_fifo_dc_flag_and_cnts_logic.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+151      work.lscc_lfmxo4_fifo_dc_gray_reg.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+152      work.lscc_lfmxo4_fifo_dc_gray_synchronizer.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+153      work.lscc_lfmxo4_fifo_dc_harden.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+154      work.lscc_lfmxo4_fifo_dc_harden_prim.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+155      work.lscc_lfmxo4_fifo_dc_harden_rd_ctrl_logic.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+156      work.lscc_lfmxo4_fifo_dc_harden_rd_output_logic.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+157      work.lscc_lfmxo4_fifo_dc_harden_ring_counter.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+158      work.lscc_lfmxo4_fifo_dc_harden_wr_ctrl_logic.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+159      work.lscc_lfmxo4_fifo_dc_prim_gen.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+160      work.lscc_lfmxo4_fifo_dc_rd_ctrl_logic.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+161      work.lscc_lfmxo4_fifo_dc_wr_ctrl_logic.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+162      work.lscc_lfmxo4_mix_width_interleave.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+163      work.lscc_lfmxo4_pdpw_rd_wiring.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+164      work.lscc_lfmxo4_pdpw_wr_wiring.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 24       work.lscc_lfmxo4_ram_dp.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+165      work.lscc_lfmxo4_ram_dp_behavioral.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 25       work.lscc_lfmxo4_ram_dp_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+166      work.lscc_lfmxo4_ram_dp_lut_decode.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 26       work.lscc_lfmxo4_ram_dp_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+167      work.lscc_lfmxo4_ram_dp_mix_no_byte_en.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+168      work.lscc_lfmxo4_ram_dp_mix_w_byte_en.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+169      work.lscc_lfmxo4_ram_dp_non_mix.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+170      work.lscc_lfmxo4_ram_dp_out_reg.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+171      work.lscc_lfmxo4_ram_dp_rd_addr_pipe.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+172      work.lscc_lfmxo4_ram_dp_rd_en_reg.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+173      work.lscc_lfmxo4_ram_dp_read_mux.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 27       work.lscc_lfmxo4_ram_dp_true.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+174      work.lscc_lfmxo4_ram_dp_true_behavioral.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 28       work.lscc_lfmxo4_ram_dp_true_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+175      work.lscc_lfmxo4_ram_dp_true_ecc_decoder.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 29       work.lscc_lfmxo4_ram_dp_true_inst.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+176      work.lscc_lfmxo4_ram_dp_true_lut_decode.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 30       work.lscc_lfmxo4_ram_dp_true_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+177      work.lscc_lfmxo4_ram_dp_true_mixed_width.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+178      work.lscc_lfmxo4_ram_dp_true_read_mux.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+179      work.lscc_lfmxo4_ram_dp_true_same_width.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 31       work.lscc_lfmxo4_ram_dq.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 32       work.lscc_lfmxo4_ram_dq_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 33       work.lscc_lfmxo4_ram_dq_inst.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
+180      work.lscc_lfmxo4_ram_dq_lut_decode.verilog may have changed because the following files changed:
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 34       work.lscc_lfmxo4_ram_dq_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 35       work.lscc_lfmxo4_write_through.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 36       work.lscc_lfxo4_ram_dp_true_addr_pipe.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-37       work.lscc_lfxo4_ram_dp_true_read_mux.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 38       work.lscc_mult_accumulate.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 39       work.lscc_mult_add_sub.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 40       work.lscc_mult_add_sub_sum.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 41       work.lscc_multiplier.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 42       work.lscc_multiplier_dsp.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 43       work.lscc_multiplier_lut.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 44       work.lscc_ram_dp.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 45       work.lscc_ram_dp_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 46       work.lscc_ram_dp_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 47       work.lscc_ram_dp_true.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 48       work.lscc_ram_dp_true_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 49       work.lscc_ram_dp_true_inst.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 50       work.lscc_ram_dp_true_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 51       work.lscc_ram_dq.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 52       work.lscc_ram_dq_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 53       work.lscc_ram_dq_inst.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 54       work.lscc_ram_dq_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 55       work.lscc_reset_async.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 56       work.lscc_rom.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 57       work.lscc_rom_inst.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 58       work.lscc_rom_inst_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 59       work.lscc_shift_register.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 60       work.lscc_soft_fifo.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 61       work.lscc_soft_fifo_dc.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 62       work.lscc_subtractor.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 63       work.lscc_write_through.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-117      work.main_pll.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-118      work.main_pll_ipgen_lscc_apb2lmmi.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-119      work.main_pll_ipgen_lscc_pll.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-120      work.main_pll_ipgen_pll_csr.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 98       work.mipi_cross_clk_fifo.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 99       work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 100      work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 101      work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 102      work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 103      work.mipi_cross_clk_fifo_ipgen_lscc_fifo_mem_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 104      work.mipi_cross_clk_fifo_ipgen_lscc_fifo_mem_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 105      work.mipi_cross_clk_fifo_ipgen_lscc_fifo_soft_mem.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 106      work.mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 107      work.mipi_cross_clk_fifo_ipgen_lscc_reset_async.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 108      work.mipi_cross_clk_fifo_ipgen_lscc_soft_fifo_dc.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 64       work.mipi_dphy_rx.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 65       work.mipi_dphy_rx_ipgen_lscc_apb2lmmi.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 66       work.mipi_dphy_rx_ipgen_lscc_clock_divider.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 67       work.mipi_dphy_rx_ipgen_lscc_gddr_sync.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 68       work.mipi_dphy_rx_ipgen_lscc_mipi_dphy.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 69       work.mipi_dphy_rx_ipgen_lscc_mipi_dphy_soft_rx.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 70       work.mipi_dphy_rx_ipgen_lscc_mipi_dphy_soft_tx.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 71       work.mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 72       work.mipi_dphy_rx_ipgen_lscc_mipi_wrapper_tx.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 73       work.mipi_dphy_rx_ipgen_lscc_pll.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 74       work.mipi_dphy_rx_ipgen_pll_csr.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 109      work.mipi_rx.architecture_mipi_rx may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-75       work.mira_test_top.architecture_mira_test_top may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (architecture and entity definition)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (architecture and entity definition)
 77       work.pmi_add.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 78       work.pmi_addsub.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 79       work.pmi_complex_mult.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 80       work.pmi_counter.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 81       work.pmi_distributed_dpram.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 82       work.pmi_distributed_rom.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 83       work.pmi_distributed_shift_reg.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 84       work.pmi_distributed_spram.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 85       work.pmi_fifo.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 86       work.pmi_fifo_dc.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 87       work.pmi_mac.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 88       work.pmi_mult.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 89       work.pmi_multaddsub.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 90       work.pmi_multaddsubsum.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 91       work.pmi_ram_dp.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 92       work.pmi_ram_dp_be.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 93       work.pmi_ram_dp_true.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 94       work.pmi_ram_dq.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 95       work.pmi_ram_dq_be.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 96       work.pmi_rom.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 97       work.pmi_sub.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-123      work.process_image.architecture_process_image may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-125      work.process_image_out_fifo.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-126      work.process_image_out_fifo_ipgen_lscc_fifo.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-127      work.process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-128      work.process_image_out_fifo_ipgen_lscc_fifo_hw_core.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-129      work.process_image_out_fifo_ipgen_lscc_fifo_main.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-130      work.process_image_out_fifo_ipgen_lscc_hard_fifo.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-131      work.process_image_out_fifo_ipgen_lscc_soft_fifo.verilog may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-132      work.spi_rxtx_with_fifo.behavioral may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-115      work.uart_rx.behavioral may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
-113      work.uart_tx.behavioral may have changed because the following files changed:
-                        C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-28 23:45:24, 2026-07-29 00:26:59) <-- (may instantiate this module)
+                        C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-29 22:01:02, 2026-07-29 22:11:05) <-- (may instantiate this module)
 
 *******************************************************************
-Unmodified files: 71
+Unmodified files: 98
 FID:  path (timestamp)
-79       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v (2026-04-30 13:51:05)
-80       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v (2026-07-12 11:58:46)
-81       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v (2026-04-30 13:50:29)
-82       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v (2026-07-26 19:44:01)
-83       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd (2026-07-28 23:26:44)
-84       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd (2026-07-29 00:19:29)
-85       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd (2026-07-28 21:41:34)
-87       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd (2026-07-28 23:36:54)
-88       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd (2026-07-12 13:17:27)
-89       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\uart_rx.vhd (2023-08-14 22:29:41)
-90       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\uart_tx.vhd (2026-05-18 08:11:54)
-3        C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v (2025-11-12 07:20:48)
-4        C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl/lscc_lfmxo4_ram_dp_true.v (2025-10-17 21:21:40)
-5        C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v (2025-11-13 19:20:42)
-6        C:\lscc\radiant\2025.2\ip\pmi\../common/adder/rtl/lscc_adder.v (2025-10-17 21:21:42)
-7        C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl/lscc_add_sub.v (2025-10-17 21:21:42)
-8        C:\lscc\radiant\2025.2\ip\pmi\../common/complex_mult/rtl/lscc_complex_mult.v (2025-10-17 21:21:42)
-9        C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl/lscc_cntr.v (2025-10-17 21:21:42)
-10       C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_dpram/rtl/lscc_distributed_dpram.v (2025-10-17 21:21:42)
-11       C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_rom/rtl/lscc_distributed_rom.v (2025-10-17 21:21:42)
-12       C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_spram/rtl/lscc_distributed_spram.v (2025-10-17 21:21:42)
-13       C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl/lscc_fifo.v (2025-10-17 21:21:42)
-14       C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl/lscc_fifo_dc.v (2025-10-17 21:21:43)
-15       C:\lscc\radiant\2025.2\ip\pmi\../common/mult_accumulate/rtl/lscc_mult_accumulate.v (2025-10-17 21:21:44)
-16       C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub/rtl/lscc_mult_add_sub.v (2025-10-17 21:21:44)
-17       C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v (2025-10-17 21:21:44)
-18       C:\lscc\radiant\2025.2\ip\pmi\../common/multiplier/rtl/lscc_multiplier.v (2025-10-17 21:21:44)
-19       C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl/lscc_ram_dp.v (2025-10-17 21:21:44)
-20       C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl/lscc_ram_dp_true.v (2025-10-17 21:21:45)
-21       C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl/lscc_ram_dq.v (2025-10-17 21:21:45)
-22       C:\lscc\radiant\2025.2\ip\pmi\../common/ram_shift_reg/rtl/lscc_shift_register.v (2025-10-17 21:21:45)
-23       C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl/lscc_rom.v (2025-10-17 21:21:45)
-24       C:\lscc\radiant\2025.2\ip\pmi\../common/subtractor/rtl/lscc_subtractor.v (2025-10-17 21:21:45)
-25       C:\lscc\radiant\2025.2\ip\pmi\pmi_add.v (2025-10-17 21:21:47)
-26       C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v (2025-10-17 21:21:47)
-27       C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v (2025-10-17 21:21:47)
-28       C:\lscc\radiant\2025.2\ip\pmi\pmi_counter.v (2025-10-17 21:21:47)
-29       C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_dpram.v (2025-10-17 21:21:47)
-30       C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_rom.v (2025-10-17 21:21:47)
-31       C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v (2025-10-17 21:21:47)
-32       C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_spram.v (2025-10-17 21:21:47)
-33       C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v (2025-10-17 21:21:47)
-34       C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo_dc.v (2025-10-17 21:21:47)
-35       C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.v (2025-10-17 21:21:47)
-36       C:\lscc\radiant\2025.2\ip\pmi\pmi_lifcl.vhd (2025-10-17 21:21:47)
-37       C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v (2025-10-17 21:21:47)
-38       C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v (2025-10-17 21:21:47)
-39       C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v (2025-10-17 21:21:47)
-40       C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v (2025-10-17 21:21:47)
-41       C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v (2025-10-17 21:21:47)
-42       C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v (2025-10-17 21:21:47)
-43       C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_true.v (2025-10-17 21:21:47)
-44       C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v (2025-10-17 21:21:47)
-45       C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v (2025-10-17 21:21:47)
-46       C:\lscc\radiant\2025.2\ip\pmi\pmi_rom.v (2025-10-17 21:21:47)
-47       C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v (2025-10-17 21:21:47)
-48       C:\lscc\radiant\2025.2\synpbase\lib\lucent\lifcl.v (2025-12-03 22:29:32)
-49       C:\lscc\radiant\2025.2\synpbase\lib\lucent\pmi_def.v (2025-11-11 06:43:29)
-71       C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\arith.vhd (2025-11-11 09:28:55)
-72       C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\location.map (2025-11-12 05:44:59)
-73       C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\numeric.vhd (2025-11-11 09:47:41)
-74       C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std.vhd (2025-11-11 09:28:56)
-75       C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std1164.vhd (2025-11-11 09:28:56)
-76       C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std_textio.vhd (2025-11-11 09:28:56)
-77       C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\unsigned.vhd (2025-11-11 09:28:56)
-51       C:\lscc\radiant\2025.2\synpbase\lib\vhd\hyperents.vhd (2025-11-11 09:28:54)
-54       C:\lscc\radiant\2025.2\synpbase\lib\vhd\snps_haps_pkg.vhd (2025-11-11 09:28:55)
-57       C:\lscc\radiant\2025.2\synpbase\lib\vhd\umr_capim.vhd (2025-11-11 09:28:55)
-59       C:\lscc\radiant\2025.2\synpbase\lib\vlog\hypermods.v (2025-11-11 09:28:53)
-60       C:\lscc\radiant\2025.2\synpbase\lib\vlog\scemi_objects.v (2025-11-11 09:28:53)
-61       C:\lscc\radiant\2025.2\synpbase\lib\vlog\scemi_pipes.svh (2025-11-11 09:28:53)
+91       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v (2026-07-24 00:37:02)
+92       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v (2026-07-29 21:02:48)
+93       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v (2026-07-24 00:37:02)
+94       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v (2026-07-29 21:02:48)
+95       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd (2026-07-29 21:02:48)
+96       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd (2026-07-29 21:02:48)
+98       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd (2026-07-29 21:02:48)
+99       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd (2026-07-29 21:02:48)
+100      C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd (2026-07-29 21:02:48)
+101      C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\uart_rx.vhd (2026-07-24 00:37:02)
+102      C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\uart_tx.vhd (2026-07-24 00:37:02)
+103      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v (2026-04-15 22:16:42)
+104      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_distributed_ram.v (2026-01-29 04:51:15)
+105      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_ecc.v (2026-04-15 23:00:09)
+106      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_flag_and_cnts_logic.v (2026-03-27 02:35:42)
+107      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_gray_reg.v (2026-01-29 04:51:27)
+108      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_gray_synchronizer.v (2026-01-29 04:51:31)
+109      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_harden.v (2026-04-09 23:45:57)
+110      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_harden_prim.v (2026-03-31 21:58:51)
+111      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_harden_rd_ctrl_logic.v (2026-04-08 00:25:14)
+112      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_harden_rd_output_logic.v (2026-01-29 06:02:20)
+113      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_harden_ring_counter.v (2026-01-29 04:52:08)
+114      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_harden_wr_ctrl_logic.v (2026-03-27 02:35:43)
+115      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_prim_gen.v (2026-04-22 17:27:01)
+116      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_rd_ctrl_logic.v (2026-01-29 04:52:29)
+117      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/fifo_dc/rtl\lscc_lfmxo4_fifo_dc_wr_ctrl_logic.v (2026-01-29 04:52:37)
+118      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v (2026-04-21 00:28:27)
+119      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp_behavioral.v (2026-04-22 18:16:13)
+120      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp_functions.vh (2026-04-09 22:08:48)
+121      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp_impl.v (2026-04-21 00:28:27)
+122      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp_lut_decode.v (2026-02-08 23:18:09)
+123      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp_true/rtl/lscc_lfmxo4_ram_dp_true.v (2026-04-20 18:47:36)
+124      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true_behavioral.v (2026-04-15 01:35:59)
+125      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true_ecc_decoder.v (2026-03-01 17:04:23)
+126      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true_functions.vh (2025-12-07 19:04:08)
+127      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true_impl.v (2026-02-25 20:59:49)
+128      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true_lut_decode.v (2026-02-25 20:59:58)
+129      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v (2026-04-13 19:44:33)
+130      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dq/rtl\hsiao_ecc_decoder.v (2026-02-23 18:10:05)
+131      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dq/rtl\hsiao_ecc_encoder.v (2026-02-04 17:36:18)
+132      C:\lscc\radiant\2026.1\ip\pmi\../LFMXO4/ram_dq/rtl\lscc_lfmxo4_ram_dq_lut_decode.v (2026-03-29 20:14:50)
+133      C:\lscc\radiant\2026.1\ip\pmi\../common/adder/rtl/lscc_adder.v (2024-08-01 22:26:31)
+134      C:\lscc\radiant\2026.1\ip\pmi\../common/adder_subtractor/rtl/lscc_add_sub.v (2023-10-30 22:42:37)
+135      C:\lscc\radiant\2026.1\ip\pmi\../common/complex_mult/rtl/lscc_complex_mult.v (2023-10-25 02:09:00)
+136      C:\lscc\radiant\2026.1\ip\pmi\../common/counter/rtl/lscc_cntr.v (2019-08-05 00:41:47)
+137      C:\lscc\radiant\2026.1\ip\pmi\../common/distributed_dpram/rtl/lscc_distributed_dpram.v (2023-09-17 23:20:57)
+138      C:\lscc\radiant\2026.1\ip\pmi\../common/distributed_rom/rtl/lscc_distributed_rom.v (2023-09-17 23:21:20)
+139      C:\lscc\radiant\2026.1\ip\pmi\../common/distributed_spram/rtl/lscc_distributed_spram.v (2023-09-17 23:21:44)
+140      C:\lscc\radiant\2026.1\ip\pmi\../common/fifo/rtl/lscc_fifo.v (2025-02-27 08:21:14)
+141      C:\lscc\radiant\2026.1\ip\pmi\../common/fifo_dc/rtl/lscc_fifo_dc.v (2025-02-26 18:41:19)
+142      C:\lscc\radiant\2026.1\ip\pmi\../common/mult_accumulate/rtl/lscc_mult_accumulate.v (2023-10-25 02:39:25)
+143      C:\lscc\radiant\2026.1\ip\pmi\../common/mult_add_sub/rtl/lscc_mult_add_sub.v (2023-10-25 02:44:01)
+144      C:\lscc\radiant\2026.1\ip\pmi\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v (2023-10-25 02:46:56)
+145      C:\lscc\radiant\2026.1\ip\pmi\../common/multiplier/rtl/lscc_multiplier.v (2023-10-25 02:49:49)
+146      C:\lscc\radiant\2026.1\ip\pmi\../common/ram_dp/rtl/lscc_ram_dp.v (2024-11-12 22:26:42)
+147      C:\lscc\radiant\2026.1\ip\pmi\../common/ram_dp_true/rtl/lscc_ram_dp_true.v (2024-11-12 22:26:55)
+148      C:\lscc\radiant\2026.1\ip\pmi\../common/ram_dq/rtl/lscc_ram_dq.v (2024-11-12 22:27:03)
+149      C:\lscc\radiant\2026.1\ip\pmi\../common/ram_shift_reg/rtl/lscc_shift_register.v (2023-09-17 23:37:22)
+150      C:\lscc\radiant\2026.1\ip\pmi\../common/rom/rtl/lscc_rom.v (2024-11-12 22:27:10)
+151      C:\lscc\radiant\2026.1\ip\pmi\../common/subtractor/rtl/lscc_subtractor.v (2019-08-05 00:43:15)
+152      C:\lscc\radiant\2026.1\ip\pmi\pmi_add.v (2019-07-10 16:12:46)
+153      C:\lscc\radiant\2026.1\ip\pmi\pmi_addsub.v (2026-05-03 18:16:06)
+154      C:\lscc\radiant\2026.1\ip\pmi\pmi_complex_mult.v (2019-07-10 16:14:03)
+155      C:\lscc\radiant\2026.1\ip\pmi\pmi_counter.v (2026-05-03 18:17:08)
+156      C:\lscc\radiant\2026.1\ip\pmi\pmi_distributed_dpram.v (2019-08-05 19:55:15)
+157      C:\lscc\radiant\2026.1\ip\pmi\pmi_distributed_rom.v (2019-08-05 19:55:15)
+158      C:\lscc\radiant\2026.1\ip\pmi\pmi_distributed_shift_reg.v (2022-10-18 01:05:48)
+159      C:\lscc\radiant\2026.1\ip\pmi\pmi_distributed_spram.v (2019-08-05 19:55:15)
+160      C:\lscc\radiant\2026.1\ip\pmi\pmi_fifo.v (2024-06-18 03:10:05)
+161      C:\lscc\radiant\2026.1\ip\pmi\pmi_fifo_dc.v (2026-02-02 20:39:20)
+162      C:\lscc\radiant\2026.1\ip\pmi\pmi_lifcl.v (2020-05-10 18:31:25)
+163      C:\lscc\radiant\2026.1\ip\pmi\pmi_lifcl.vhd (2022-03-29 00:54:48)
+164      C:\lscc\radiant\2026.1\ip\pmi\pmi_mac.v (2019-07-10 16:15:11)
+165      C:\lscc\radiant\2026.1\ip\pmi\pmi_mult.v (2019-07-10 16:15:37)
+166      C:\lscc\radiant\2026.1\ip\pmi\pmi_multaddsub.v (2019-07-10 16:16:06)
+167      C:\lscc\radiant\2026.1\ip\pmi\pmi_multaddsubsum.v (2026-05-03 18:19:25)
+168      C:\lscc\radiant\2026.1\ip\pmi\pmi_ram_dp.v (2025-10-14 01:09:55)
+169      C:\lscc\radiant\2026.1\ip\pmi\pmi_ram_dp_be.v (2025-10-14 01:10:11)
+170      C:\lscc\radiant\2026.1\ip\pmi\pmi_ram_dp_true.v (2025-10-14 01:34:15)
+171      C:\lscc\radiant\2026.1\ip\pmi\pmi_ram_dq.v (2025-10-14 01:11:42)
+172      C:\lscc\radiant\2026.1\ip\pmi\pmi_ram_dq_be.v (2025-10-14 01:11:55)
+173      C:\lscc\radiant\2026.1\ip\pmi\pmi_rom.v (2024-04-10 17:35:41)
+174      C:\lscc\radiant\2026.1\ip\pmi\pmi_sub.v (2019-07-10 16:17:30)
+175      C:\lscc\radiant\2026.1\synpbase\lib\lucent\lifcl.v (2026-06-11 04:55:16)
+176      C:\lscc\radiant\2026.1\synpbase\lib\lucent\pmi_def.v (2026-05-22 02:15:27)
+177      C:\lscc\radiant\2026.1\synpbase\lib\vhd2008\arith.vhd (2026-05-22 02:15:29)
+178      C:\lscc\radiant\2026.1\synpbase\lib\vhd2008\location.map (2026-05-22 02:15:29)
+179      C:\lscc\radiant\2026.1\synpbase\lib\vhd2008\numeric.vhd (2026-05-22 02:15:29)
+180      C:\lscc\radiant\2026.1\synpbase\lib\vhd2008\std.vhd (2026-05-22 02:15:29)
+181      C:\lscc\radiant\2026.1\synpbase\lib\vhd2008\std1164.vhd (2026-05-22 02:15:29)
+182      C:\lscc\radiant\2026.1\synpbase\lib\vhd2008\std_textio.vhd (2026-05-22 02:15:29)
+183      C:\lscc\radiant\2026.1\synpbase\lib\vhd2008\unsigned.vhd (2026-05-22 02:15:29)
+184      C:\lscc\radiant\2026.1\synpbase\lib\vhd\hyperents.vhd (2026-05-22 02:15:29)
+185      C:\lscc\radiant\2026.1\synpbase\lib\vhd\snps_haps_pkg.vhd (2026-05-22 02:15:29)
+186      C:\lscc\radiant\2026.1\synpbase\lib\vhd\umr_capim.vhd (2026-05-22 02:15:29)
+187      C:\lscc\radiant\2026.1\synpbase\lib\vlog\hypermods.v (2026-05-22 02:15:29)
+188      C:\lscc\radiant\2026.1\synpbase\lib\vlog\scemi_objects.v (2026-05-22 02:15:29)
+189      C:\lscc\radiant\2026.1\synpbase\lib\vlog\scemi_pipes.svh (2026-05-22 02:15:29)
 
 *******************************************************************
-Unchanged modules: 0
+Unchanged modules: 25
 MID:  lib.cell.view
+111      work.frame_buf.architecture_frame_buf
+112      work.frame_buf.vhdl
+121      work.img_mean_std.architecture_img_mean_std
+122      work.img_mean_std.vhdl
+117      work.main_pll.verilog
+118      work.main_pll_ipgen_lscc_apb2lmmi.verilog
+119      work.main_pll_ipgen_lscc_pll.verilog
+120      work.main_pll_ipgen_pll_csr.verilog
+75       work.mira_test_top.architecture_mira_test_top
+76       work.mira_test_top.vhdl
+123      work.process_image.architecture_process_image
+124      work.process_image.vhdl
+125      work.process_image_out_fifo.verilog
+126      work.process_image_out_fifo_ipgen_lscc_fifo.verilog
+127      work.process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric.verilog
+128      work.process_image_out_fifo_ipgen_lscc_fifo_hw_core.verilog
+129      work.process_image_out_fifo_ipgen_lscc_fifo_main.verilog
+130      work.process_image_out_fifo_ipgen_lscc_hard_fifo.verilog
+131      work.process_image_out_fifo_ipgen_lscc_soft_fifo.verilog
+132      work.spi_rxtx_with_fifo.behavioral
+133      work.spi_rxtx_with_fifo.vhdl
+115      work.uart_rx.behavioral
+116      work.uart_rx.vhdl
+113      work.uart_tx.behavioral
+114      work.uart_tx.vhdl

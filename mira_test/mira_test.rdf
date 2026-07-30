@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RadiantProject version="4.2" radiant="2025.2.0.48.0" title="mira_test" device="LIFCL-40-9BG400C" performance_grade="9_High-Performance_1.0V" family_int="je5d00" device_int="je5d30" package_int="CABGA400" operation_int="COM" speed_int="12" default_implementation="impl_1">
+<RadiantProject version="4.2" radiant="2026.1.0.37.0" title="mira_test" device="LIFCL-40-9BG400C" performance_grade="9_High-Performance_1.0V" family_int="je5d00" device_int="je5d30" package_int="CABGA400" operation_int="COM" speed_int="12" default_implementation="impl_1">
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
         <Options def_top="mira_test_top" top="mira_test_top"/>
@@ -40,7 +40,7 @@
             <Options/>
         </Source>
         <Source name="source/impl_1/impl_1.sdc" type="Pre-Synthesis Constraints File" type_short="SDC">
-            <Options/>
+            <Options module_filename="source/impl_1/mira_test_top.vhd"/>
         </Source>
         <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>

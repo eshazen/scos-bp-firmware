@@ -1,4 +1,4 @@
-# Wed Jul 29 01:26:16 2026
+# Wed Jul 29 23:23:43 2026
 
 
 Copyright (C) 1994-2025 Synopsys, Inc.
@@ -7,36 +7,36 @@ and may only be used pursuant to the terms and conditions of a written license a
 with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
-Build: W-2025.03LR-SP1
-Install: C:\lscc\radiant\2025.2\synpbase
+Build: X-2025.09LR-SP1
+Install: C:\lscc\radiant\2026.1\synpbase
 OS: Windows 10 or later
-Hostname: ZBOOKNB
+Hostname: LEGIONNB
 
 Implementation : impl_1
-Synopsys Lattice Technology Mapper, Version map202503latsp1, Build 093R, Built Dec  2 2025 10:00:10, @
+Synopsys Lattice Technology Mapper, Version map202509latsp1, Build 093R, Built May 20 2026 06:42:48, @
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 184MB peak: 184MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 185MB peak: 185MB)
 
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 201MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 202MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 201MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 202MB)
 
-Reading custom part data from path: C:\lscc\radiant\2025.2\synpbase\lib\lattice_custom\radiant_custom_partdata.txt
+Reading custom part data from path: C:\lscc\radiant\2026.1\synpbase\lib\lattice_custom\radiant_custom_partdata.txt
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 200MB peak: 201MB)
-
-
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 202MB peak: 203MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 201MB peak: 202MB)
 
 
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 203MB peak: 204MB)
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 263MB peak: 263MB)
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 264MB peak: 264MB)
 
 @N: MO111 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|Tristate driver rd_data_cnt_o_1 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) on net rd_data_cnt_o_1 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|Tristate driver rd_data_cnt_o_2 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) on net rd_data_cnt_o_2 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) has its enable tied to GND.
@@ -49,12 +49,12 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapse
 @N: MO111 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|Tristate driver wr_data_cnt_o_2 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) on net wr_data_cnt_o_2 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|Tristate driver wr_data_cnt_o_3 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) on net wr_data_cnt_o_3 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) has its enable tied to GND.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 273MB peak: 273MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 274MB peak: 274MB)
 
 
-Starting area decomp  (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 273MB peak: 274MB)
+Starting area decomp  (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 274MB peak: 275MB)
 
-@N: MO231 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":132:2:132:3|Found counter in view:work.mipi_rx_10_1600(architecture_mipi_rx) instance ByteCntxDP[8:0] 
+@N: MO231 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Found counter in view:work.mipi_rx_10_1600(architecture_mipi_rx) instance ByteCntxDP[8:0] 
 @N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3550:36:3550:41|Removing sequential instance mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\._REG\.genblk1\.async\.do_r[35] (in view: work.mipi_rx_10_1600(architecture_mipi_rx)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3550:36:3550:41|Removing sequential instance mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\._REG\.genblk1\.async\.do_r[34] (in view: work.mipi_rx_10_1600(architecture_mipi_rx)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: MO231 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Found counter in view:work.img_mean_std_10_1600(architecture_img_mean_std) instance TileCntxDP[4:0] 
@@ -70,224 +70,225 @@ Starting area decomp  (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s
 @N: MF179 :|Found 13 by 13 bit equality operator ('==') p_memless\.un12_fifordaddrxdp (in view: work.spi_rxtx_with_fifo(behavioral))
 @N: MF179 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":244:5:244:33|Found 13 by 13 bit equality operator ('==') p_memless\.un5_fifordaddrxdp (in view: work.spi_rxtx_with_fifo(behavioral))
 
-Finished area decomp  (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 292MB peak: 297MB)
+Finished area decomp  (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 294MB peak: 298MB)
 
 
-Starting factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 294MB peak: 297MB)
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 296MB peak: 298MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 294MB peak: 297MB)
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 296MB peak: 298MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 NConnInternalConnection caching is on
+enable_timing_through_bidir is set to 1
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 297MB peak: 302MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 298MB peak: 302MB)
 
 @N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixCntxDP_0[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
 @N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixCntxDP_0[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
 @N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixCntxDP_0[0] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[10] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[9] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[8] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[7] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[6] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[5] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[4] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[3] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[3] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[21] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[20] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[19] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[18] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[17] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[16] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[15] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[14] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[13] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[12] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_19[11] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[18] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[17] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[16] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[15] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[14] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[13] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[12] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[11] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[10] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[9] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[8] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[7] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[6] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[5] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[4] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[11] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[10] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[9] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[8] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[7] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[6] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[5] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[4] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[3] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[21] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[20] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_20[19] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[4] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[3] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[21] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[20] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[19] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[18] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[17] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[16] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[15] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[14] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[13] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_21[12] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[19] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[18] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[17] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[16] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[15] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[14] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[13] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[12] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[11] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[10] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[9] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[8] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[7] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[6] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[5] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[12] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[11] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[10] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[9] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[8] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[7] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[6] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[5] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[4] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[3] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_23[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing sequential instance process_image_inst.img_mean_std_inst.PixValSqCombxDP_24_22[21] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[13] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[12] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[11] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[10] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[25] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[24] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[23] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[22] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[21] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[20] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[19] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[18] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[17] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[16] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[15] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing sequential instance ClkCntxDP_mod[14] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[3] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_1[3] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_1[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_1[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_1[0] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[13] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[12] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[11] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[10] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[9] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[8] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[7] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[6] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[5] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance mipi_rx_inst.StartDelayCntxDP_0[4] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[10] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[25] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[24] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[23] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[22] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[21] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[20] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[19] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[18] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[17] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[16] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[15] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[14] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[13] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[12] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[11] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[0] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[39] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[38] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[37] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[36] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[35] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[34] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[33] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[32] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[31] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[30] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[29] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[28] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[27] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_0[26] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[9] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[8] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[7] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[6] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[5] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[4] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[3] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[30] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[29] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[28] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[27] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[26] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[25] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[24] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[23] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[22] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[21] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[20] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_2_mod[5] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_2_mod[4] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_2_mod[3] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_2_mod[2] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_2_mod[1] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_2_mod[0] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[39] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[38] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[37] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[36] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing sequential instance frame_buf_inst.PixDatxDP_1_mod[35] (in view: work.mira_test_top(architecture_mira_test_top)) because it does not drive other instances.
 
-Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synlog\mira_test_impl_1_fpga_mapper.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[3] because it is equivalent to instance mipi_rx_inst.PixDataxDP[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[3] because it is equivalent to instance mipi_rx_inst.PixDataxDP[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[3] because it is equivalent to instance mipi_rx_inst.PixDataxDP[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0_0_0[31] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[31] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_3[31] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0_1[16] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_0[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[16] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_0[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_1_mod[16] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_0[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0_0_0[25] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[25] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_2_mod[25] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing instance frame_buf_inst.PixDatxDP_1_mod[16] because it is equivalent to instance frame_buf_inst.PixDatxDP[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[30] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[31] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[22] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[23] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\synlog\mira_test_impl_1_fpga_mapper.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_0[0] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_1[0] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_0[1] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_1[1] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_0[2] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_1[2] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_0[3] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_1[3] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_0[4] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_1[4] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_0[5] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_1[5] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_0[6] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_1[6] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_0[7] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgFSMSRegxDP_1_1[7] because it is equivalent to instance p_cfg_memzing.CfgFSMSRegxDP_1[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgRegxDP_2_0[0] because it is equivalent to instance p_cfg_memzing.CfgRegxDP_2[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgRegxDP_2_0[1] because it is equivalent to instance p_cfg_memzing.CfgRegxDP_2[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgRegxDP_2_0[2] because it is equivalent to instance p_cfg_memzing.CfgRegxDP_2[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgRegxDP_2_0[3] because it is equivalent to instance p_cfg_memzing.CfgRegxDP_2[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgRegxDP_2_0[4] because it is equivalent to instance p_cfg_memzing.CfgRegxDP_2[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgRegxDP_2_0[5] because it is equivalent to instance p_cfg_memzing.CfgRegxDP_2[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgRegxDP_2_0[6] because it is equivalent to instance p_cfg_memzing.CfgRegxDP_2[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Removing instance p_cfg_memzing.CfgRegxDP_2_0[7] because it is equivalent to instance p_cfg_memzing.CfgRegxDP_2[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_0[3] because it is equivalent to instance mipi_rx_inst.PixDataxDP[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod[3] because it is equivalent to instance mipi_rx_inst.PixDataxDP[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[3] because it is equivalent to instance mipi_rx_inst.PixDataxDP[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_0[6] because it is equivalent to instance mipi_rx_inst.PixDataxDP[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod[6] because it is equivalent to instance mipi_rx_inst.PixDataxDP[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[6] because it is equivalent to instance mipi_rx_inst.PixDataxDP[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_0_0_0[20] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod[20] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod_2_mod[20] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_0_1[17] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_0[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod[17] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_0[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod_1_mod[17] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_0[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_0_0_0[23] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod[23] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod_2_mod[23] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_0_1[13] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_0[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod[13] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_0[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod_1_mod[13] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_0[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_0_0_0[37] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[37]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod[37] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[37]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod_3[37] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[37]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_0_0_0[27] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod[27] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod_2_mod[27] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_0_0_0[21] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod[21] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":151:2:151:3|Removing instance mipi_rx_inst.PixDataxDP_mod_2_mod[21] because it is equivalent to instance mipi_rx_inst.PixDataxDP_0_1[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing instance frame_buf_inst.PixDatxDP_1_mod[13] because it is equivalent to instance frame_buf_inst.PixDatxDP[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Removing instance frame_buf_inst.PixDatxDP_1_mod[17] because it is equivalent to instance frame_buf_inst.PixDatxDP[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[10] because it is equivalent to instance ClkCntxDP_0[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[11] because it is equivalent to instance ClkCntxDP_0_0[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[13] because it is equivalent to instance ClkCntxDP_0_0[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[14] because it is equivalent to instance ClkCntxDP_0_0[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[18] because it is equivalent to instance ClkCntxDP_0_0[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[19] because it is equivalent to instance ClkCntxDP_0_0[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[20] because it is equivalent to instance ClkCntxDP_0_0[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[22] because it is equivalent to instance ClkCntxDP_0_0[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[23] because it is equivalent to instance ClkCntxDP_0_0[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":247:2:247:3|Removing instance ClkCntxDP_mod_0[25] because it is equivalent to instance ClkCntxDP_0_0[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[31] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[22] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[23] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[24] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[25] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[26] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[27] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[28] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[29] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22_0[30] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_22[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[24] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[25] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[26] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[27] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[28] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[29] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[29] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[30] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[31] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[22] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[23] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[24] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[25] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[26] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[27] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[23] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19_0[28] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_19[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[24] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[25] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[26] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[27] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[28] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[29] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[30] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[31] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24_0[22] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_24[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[22] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[23] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[24] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[25] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[26] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[27] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[28] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[29] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[30] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20_0[31] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_20[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[30] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[31] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[22] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[23] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[24] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[25] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[26] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[27] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[28] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21_0[29] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_21[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[31] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[22] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[23] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[24] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[25] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[26] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[27] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[28] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[29] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15_0[30] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_15[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[0] because it is equivalent to instance mipi_rx_inst.PixDataxDP[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[0] because it is equivalent to instance mipi_rx_inst.PixDataxDP[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[0] because it is equivalent to instance mipi_rx_inst.PixDataxDP[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[1] because it is equivalent to instance mipi_rx_inst.PixDataxDP[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[1] because it is equivalent to instance mipi_rx_inst.PixDataxDP[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[1] because it is equivalent to instance mipi_rx_inst.PixDataxDP[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[2] because it is equivalent to instance mipi_rx_inst.PixDataxDP[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[2] because it is equivalent to instance mipi_rx_inst.PixDataxDP[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[2] because it is equivalent to instance mipi_rx_inst.PixDataxDP[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[4] because it is equivalent to instance mipi_rx_inst.PixDataxDP[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[4] because it is equivalent to instance mipi_rx_inst.PixDataxDP[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[4] because it is equivalent to instance mipi_rx_inst.PixDataxDP[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[5] because it is equivalent to instance mipi_rx_inst.PixDataxDP[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[5] because it is equivalent to instance mipi_rx_inst.PixDataxDP[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[5] because it is equivalent to instance mipi_rx_inst.PixDataxDP[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[6] because it is equivalent to instance mipi_rx_inst.PixDataxDP[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[6] because it is equivalent to instance mipi_rx_inst.PixDataxDP[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[6] because it is equivalent to instance mipi_rx_inst.PixDataxDP[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[7] because it is equivalent to instance mipi_rx_inst.PixDataxDP[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[7] because it is equivalent to instance mipi_rx_inst.PixDataxDP[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[7] because it is equivalent to instance mipi_rx_inst.PixDataxDP[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[8] because it is equivalent to instance mipi_rx_inst.PixDataxDP[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[8] because it is equivalent to instance mipi_rx_inst.PixDataxDP[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[8] because it is equivalent to instance mipi_rx_inst.PixDataxDP[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_0[9] because it is equivalent to instance mipi_rx_inst.PixDataxDP[9]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod[9] because it is equivalent to instance mipi_rx_inst.PixDataxDP[9]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":149:2:149:3|Removing instance mipi_rx_inst.PixDataxDP_mod_0[9] because it is equivalent to instance mipi_rx_inst.PixDataxDP[9]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[30] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[31] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[22] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23_0[23] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_23[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[25] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[26] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[27] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[28] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[29] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[30] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[31] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[31]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[10] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[11] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[12] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[13] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[14] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[15] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[16] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[17] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[18] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Removing instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18_0[19] because it is equivalent to instance process_image_inst.img_mean_std_inst.p_memzing.SumSqMemxDP_18[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Only the first 100 messages of id 'BN132' are reported. To see all messages use 'report_messages -log C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synlog\mira_test_impl_1_fpga_mapper.srr -id BN132' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN132} -count unlimited' in the Tcl shell.
+Only the first 100 messages of id 'BN132' are reported. To see all messages use 'report_messages -log C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\synlog\mira_test_impl_1_fpga_mapper.srr -id BN132' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN132} -count unlimited' in the Tcl shell.
 @N: FA113 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":173:18:173:19|Pipelining module un1_PixValxDP_3[22:11]. For more information, search for "pipelining" in Online Help.
 @N: MF169 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pushed in register PixValxDP\\\[3\\\].
 @N: MF169 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pushed in register PixValxDP\\\[2\\\].
@@ -295,35 +296,35 @@ Only the first 100 messages of id 'BN132' are reported. To see all messages use 
 @N: MF169 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pushed in register PixValxDP\\\[1\\\].
 @N: MF169 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pushed in register PixValxDP\\\[0\\\].
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 409MB peak: 427MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 411MB peak: 427MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 409MB peak: 427MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 411MB peak: 427MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 409MB peak: 427MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 411MB peak: 427MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 363MB peak: 427MB)
+Finished preparing to map (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 362MB peak: 427MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:17s; Memory used current: 372MB peak: 427MB)
+Finished technology mapping (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 372MB peak: 427MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:18s		    -0.76ns		3299 /      2340
-   2		0h:00m:18s		    -0.76ns		3281 /      2340
+   1		0h:00m:07s		    -0.76ns		3299 /      2375
+   2		0h:00m:07s		    -0.76ns		3263 /      2375
 @N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[0] (in view: work.mira_test_top(architecture_mira_test_top)) with 9 loads 1 time to improve timing.
 @N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[1] (in view: work.mira_test_top(architecture_mira_test_top)) with 7 loads 1 time to improve timing.
-@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[0] (in view: work.mira_test_top(architecture_mira_test_top)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFORdAddrxDP_1[0] (in view: work.mira_test_top(architecture_mira_test_top)) with 4 loads 1 time to improve timing.
 @N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[2] (in view: work.mira_test_top(architecture_mira_test_top)) with 9 loads 1 time to improve timing.
-@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[4] (in view: work.mira_test_top(architecture_mira_test_top)) with 8 loads 1 time to improve timing.
 @N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[3] (in view: work.mira_test_top(architecture_mira_test_top)) with 8 loads 1 time to improve timing.
 @N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[5] (in view: work.mira_test_top(architecture_mira_test_top)) with 8 loads 1 time to improve timing.
-@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFORdAddrxDP_1[3] (in view: work.mira_test_top(architecture_mira_test_top)) with 4 loads 1 time to improve timing.
-@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFORdAddrxDP_1[2] (in view: work.mira_test_top(architecture_mira_test_top)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[4] (in view: work.mira_test_top(architecture_mira_test_top)) with 8 loads 1 time to improve timing.
+@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[3] (in view: work.mira_test_top(architecture_mira_test_top)) with 4 loads 1 time to improve timing.
 @N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFORdAddrxDP_1[5] (in view: work.mira_test_top(architecture_mira_test_top)) with 4 loads 1 time to improve timing.
-@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFORdAddrxDP_1[4] (in view: work.mira_test_top(architecture_mira_test_top)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[4] (in view: work.mira_test_top(architecture_mira_test_top)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFORdAddrxDP_1[2] (in view: work.mira_test_top(architecture_mira_test_top)) with 4 loads 1 time to improve timing.
 @N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[8] (in view: work.mira_test_top(architecture_mira_test_top)) with 8 loads 1 time to improve timing.
 @N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[7] (in view: work.mira_test_top(architecture_mira_test_top)) with 8 loads 1 time to improve timing.
 @N: FX271 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Replicating instance g_iface\.spi_rxtx.FIFOWrAddrxDP[6] (in view: work.mira_test_top(architecture_mira_test_top)) with 8 loads 1 time to improve timing.
@@ -340,32 +341,32 @@ Timing driven replication report
 Added 15 Registers via timing driven replication
 Added 9 LUTs via timing driven replication
 
-   3		0h:00m:19s		    -0.68ns		3291 /      2355
+   3		0h:00m:08s		    -0.68ns		3273 /      2390
 
 
-   4		0h:00m:19s		    -0.68ns		3291 /      2355
+   4		0h:00m:08s		    -0.68ns		3273 /      2390
 Net buffering Report for view:work.mira_test_top(architecture_mira_test_top):
 Added 0 Buffers
 Added 0 Registers via replication
 Added 1 LUTs via replication
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:21s; Memory used current: 373MB peak: 427MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 372MB peak: 427MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 377MB peak: 427MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 376MB peak: 427MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:23s; Memory used current: 377MB peak: 427MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 376MB peak: 427MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:23s; Memory used current: 377MB peak: 427MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 376MB peak: 427MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:23s; Memory used current: 290MB peak: 427MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 290MB peak: 427MB)
 
-Writing Analyst data base C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_m.srm
+Writing Analyst data base C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_m.srm
 @W: MO171 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\impl_1\syntmp\multaddsub18x18wide.v":54517:0:54517:5|Sequential instance process_image_inst.img_mean_std_inst.PixValSqxDN_1_0_19_0_.DSP_GUT[53:0].ACC54_0_genblk86\.ACC54_inst_signed3 is reduced to a combinational gate by constant propagation. 
 @W: MO171 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\impl_1\syntmp\multaddsub18x18wide.v":54691:0:54691:5|Sequential instance process_image_inst.img_mean_std_inst.PixValSqxDN_1_0_19_0_.DSP_GUT[53:0].ACC54_0_genblk86\.ACC54_inst_cr2[0] is reduced to a combinational gate by constant propagation. 
 @W: MO171 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\impl_1\syntmp\multaddsub18x18wide.v":54691:0:54691:5|Sequential instance process_image_inst.img_mean_std_inst.PixValSqxDN_1_0_19_0_.DSP_GUT[53:0].ACC54_0_genblk86\.ACC54_inst_cr2[1] is reduced to a combinational gate by constant propagation. 
@@ -467,28 +468,28 @@ Writing Analyst data base C:\Users\Bernhard\github\scos-bp-firmware\mira_test\im
 @W: MO171 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\impl_1\syntmp\multaddsub18x18wide.v":45727:0:45727:5|Sequential instance process_image_inst.img_mean_std_inst.PixValSqxDN_1_0_19_0_.DSP_GUT[53:0].PREADD9_L1_genblk15\.PREADD9_inst_blso[0] is reduced to a combinational gate by constant propagation. 
 @W: MO171 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\impl_1\syntmp\multaddsub18x18wide.v":45727:0:45727:5|Sequential instance process_image_inst.img_mean_std_inst.PixValSqxDN_1_0_19_0_.DSP_GUT[53:0].PREADD9_L1_genblk15\.PREADD9_inst_blso[1] is reduced to a combinational gate by constant propagation. 
 
-Only the first 100 messages of id 'MO171' are reported. To see all messages use 'report_messages -log C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synlog\mira_test_impl_1_fpga_mapper.srr -id MO171' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {MO171} -count unlimited' in the Tcl shell.
+Only the first 100 messages of id 'MO171' are reported. To see all messages use 'report_messages -log C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\synlog\mira_test_impl_1_fpga_mapper.srr -id MO171' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {MO171} -count unlimited' in the Tcl shell.
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:38s; CPU Time elapsed 0h:00m:38s; Memory used current: 361MB peak: 427MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 362MB peak: 427MB)
 
 Writing Verilog Simulation files
 
-Writing scf file... (Real Time elapsed 0h:00m:40s; CPU Time elapsed 0h:00m:40s; Memory used current: 362MB peak: 427MB)
+Writing scf file... (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 363MB peak: 427MB)
 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:40s; Memory used current: 363MB peak: 427MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 363MB peak: 427MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:40s; Memory used current: 363MB peak: 427MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 363MB peak: 427MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:41s; Memory used current: 352MB peak: 427MB)
+Start final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 352MB peak: 427MB)
 
 @W: MT246 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\main_pll\rtl\main_pll.v":1269:67:1269:71|Blackbox PLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":3182:20:3182:26|Blackbox FIFO16K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std.vhd":11:22:11:35|Blackbox MULTADDSUB18X18WIDE is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\lscc\radiant\2026.1\synpbase\lib\vhd2008\std.vhd":11:22:11:35|Blackbox MULTADDSUB18X18WIDE is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_dphy_rx\rtl\mipi_dphy_rx.v":1203:69:1203:78|Blackbox DPHY_Z7_layer1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @N: MT615 |Found clock Clk48xCI with period 20.83ns 
 @W: MT646 |Found inferred clock main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock with period 5.00ns. Please declare a clock for each of the following:
@@ -2741,6 +2742,41 @@ Start final timing analysis (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:0
        net  mipi_rx_inst.ClkxC
        net  mipi_rx_inst.ClkxC
        net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
+       net  mipi_rx_inst.ClkxC
        net  mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.ClkxC
        net  mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.ClkxC
        net  mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_clock_divider.ClkxC
@@ -2785,7 +2821,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Wed Jul 29 01:26:59 2026
+# Timing report written on Wed Jul 29 23:23:58 2026
 #
 
 
@@ -2793,8 +2829,8 @@ Top view:               mira_test_top
 Requested Frequency:    48.0 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    C:\lscc\radiant\2025.2\scripts\tcl\flow\radiant_synplify_vars.tcl
-                       C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1_cpe.ldc
+Constraint File(s):    C:\lscc\radiant\2026.1\scripts\tcl\flow\radiant_synplify_vars.tcl
+                       C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1_cpe.ldc
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -2854,21 +2890,21 @@ Detailed Report for Clock: main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_c
 Starting Points with Worst Slack
 ********************************
 
-                                                Starting                                                                                                        Arrival           
-Instance                                        Reference                                                     Type        Pin     Net                           Time        Slack 
-                                                Clock                                                                                                                             
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1]          main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[1]       0.838       -0.874
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast[0]         main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFOWrAddrxDP_fast[0]         0.798       -0.834
-g_iface\.spi_rxtx.FIFORdAddrxDP_0_0_fast[0]     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0_0_fast[0]     0.753       -0.789
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast[1]         main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFOWrAddrxDP_fast[1]         0.753       -0.789
-g_iface\.spi_rxtx.FIFORdAddrxDP_1[6]            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[6]       0.863       -0.736
-g_iface\.spi_rxtx.FIFORdAddrxDP_1[7]            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[7]       0.863       -0.736
-g_iface\.spi_rxtx.FIFORdAddrxDP_1[8]            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[8]       0.863       -0.736
-g_iface\.spi_rxtx.FIFORdAddrxDP_1[9]            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[9]       0.863       -0.736
-g_iface\.spi_rxtx.FIFOWrAddrxDP[10]             main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFOWrAddrxDP_0_1[10]         0.908       -0.722
-g_iface\.spi_rxtx.FIFOWrAddrxDP[11]             main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFOWrAddrxDP_0_1[11]         0.908       -0.722
-==================================================================================================================================================================================
+                                              Starting                                                                                                      Arrival           
+Instance                                      Reference                                                     Type        Pin     Net                         Time        Slack 
+                                              Clock                                                                                                                           
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[1]          main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[1]     0.838       -0.874
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast[0]       main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFOWrAddrxDP_fast[0]       0.798       -0.834
+g_iface\.spi_rxtx.FIFORdAddrxDP_1_fast[0]     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_1_fast[0]     0.753       -0.789
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast[1]       main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFOWrAddrxDP_fast[1]       0.753       -0.789
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[6]          main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[6]     0.863       -0.736
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[7]          main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[7]     0.863       -0.736
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[8]          main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[8]     0.863       -0.736
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[9]          main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFORdAddrxDP_0okb_1[9]     0.863       -0.736
+g_iface\.spi_rxtx.FIFOWrAddrxDP[10]           main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFOWrAddrxDP_0_1[10]       0.908       -0.722
+g_iface\.spi_rxtx.FIFOWrAddrxDP[11]           main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX     Q       FIFOWrAddrxDP_0_1[11]       0.908       -0.722
+==============================================================================================================================================================================
 
 
 Ending Points with Worst Slack
@@ -2878,16 +2914,16 @@ Ending Points with Worst Slack
 Instance                                                              Reference                                                     Type         Pin         Net             Time         Slack 
                                                                       Clock                                                                                                                     
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-g_iface\.spi_rxtx.FIFORdAddrxDP_1[5]                                  main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX      D           N_33430[5]      4.789        -0.874
-g_iface\.spi_rxtx.FIFORdAddrxDP_1_fast[5]                             main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX      D           N_33430[5]      4.789        -0.874
-g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[12]     N_33430[11]     5.000        -0.860
-g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[12]     N_33430[11]     5.000        -0.860
-g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[13]     N_33430[12]     5.000        -0.860
-g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[13]     N_33430[12]     5.000        -0.860
-g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[12]     N_33430[11]     5.000        -0.860
-g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[12]     N_33430[11]     5.000        -0.860
-g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[13]     N_33430[12]     5.000        -0.860
-g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[13]     N_33430[12]     5.000        -0.860
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[5]                                  main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX      D           N_33607[5]      4.789        -0.874
+g_iface\.spi_rxtx.FIFORdAddrxDP_1_fast[5]                             main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     FD1P3IX      D           N_33607[5]      4.789        -0.874
+g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[12]     N_33607[11]     5.000        -0.860
+g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[12]     N_33607[11]     5.000        -0.860
+g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[13]     N_33607[12]     5.000        -0.860
+g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[13]     N_33607[12]     5.000        -0.860
+g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[12]     N_33607[11]     5.000        -0.860
+g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[12]     N_33607[11]     5.000        -0.860
+g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[13]     N_33607[12]     5.000        -0.860
+g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     PDPSC16K     ADR[13]     N_33607[12]     5.000        -0.860
 ================================================================================================================================================================================================
 
 
@@ -2907,7 +2943,7 @@ Path information for path number 1:
     = Slack (critical) :                     -0.874
 
     Number of logic level(s):                12
-    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1] / Q
+    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_1[1] / Q
     Ending point:                            g_iface\.spi_rxtx.FIFORdAddrxDP_1[5] / D
     The start point is clocked by            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
@@ -2915,10 +2951,10 @@ Path information for path number 1:
 Instance / Net                                                          Pin      Pin               Arrival     No. of    
 Name                                                        Type        Name     Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------------
-g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1]                      FD1P3IX     Q        Out     0.838     0.838 r     -         
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[1]                        FD1P3IX     Q        Out     0.838     0.838 r     -         
 FIFORdAddrxDP_0okb_1[1]                                     Net         -        -       -         -           3         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]            LUT4        B        In      0.000     0.838 r     -         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]            LUT4        Z        Out     0.568     1.406 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]            LUT4        A        In      0.000     0.838 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]            LUT4        Z        Out     0.568     1.406 r     -         
 un5_fifordaddrxdp_0_N_43_i                                  Net         -        -       -         -           2         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0      CCU2        A1       In      0.000     1.406 r     -         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0      CCU2        COUT     Out     0.784     2.190 r     -         
@@ -2937,7 +2973,7 @@ g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_33_0     CCU2        S0      
 un5_fifordaddrxdp_i                                         Net         -        -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO           LUT4        C        In      0.000     2.974 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO           LUT4        Z        Out     0.523     3.497 r     -         
-N_28721                                                     Net         -        -       -         -           1         
+N_28896                                                     Net         -        -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0               CCU2        B0       In      0.000     3.497 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0               CCU2        COUT     Out     0.784     4.280 r     -         
 un1_FIFORdAddrxDP_1_cry_0                                   Net         -        -       -         -           1         
@@ -2952,7 +2988,7 @@ g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_5_0               CCU2        S0      
 un1_FIFORdAddrxDP_1_cry_5_0_S0                              Net         -        -       -         -           1         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[5]                        LUT4        B        In      0.000     5.005 r     -         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[5]                        LUT4        Z        Out     0.658     5.663 r     -         
-N_33430[5]                                                  Net         -        -       -         -           6         
+N_33607[5]                                                  Net         -        -       -         -           6         
 g_iface\.spi_rxtx.FIFORdAddrxDP_1[5]                        FD1P3IX     D        In      0.000     5.663 r     -         
 =========================================================================================================================
 
@@ -2968,7 +3004,7 @@ Path information for path number 2:
     = Slack (critical) :                     -0.874
 
     Number of logic level(s):                12
-    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1] / Q
+    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_1[1] / Q
     Ending point:                            g_iface\.spi_rxtx.FIFORdAddrxDP_1_fast[5] / D
     The start point is clocked by            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
@@ -2976,10 +3012,10 @@ Path information for path number 2:
 Instance / Net                                                          Pin      Pin               Arrival     No. of    
 Name                                                        Type        Name     Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------------
-g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1]                      FD1P3IX     Q        Out     0.838     0.838 r     -         
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[1]                        FD1P3IX     Q        Out     0.838     0.838 r     -         
 FIFORdAddrxDP_0okb_1[1]                                     Net         -        -       -         -           3         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]            LUT4        B        In      0.000     0.838 r     -         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]            LUT4        Z        Out     0.568     1.406 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]            LUT4        A        In      0.000     0.838 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]            LUT4        Z        Out     0.568     1.406 r     -         
 un5_fifordaddrxdp_0_N_43_i                                  Net         -        -       -         -           2         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0      CCU2        A1       In      0.000     1.406 r     -         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0      CCU2        COUT     Out     0.784     2.190 r     -         
@@ -2998,7 +3034,7 @@ g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_33_0     CCU2        S0      
 un5_fifordaddrxdp_i                                         Net         -        -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO           LUT4        C        In      0.000     2.974 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO           LUT4        Z        Out     0.523     3.497 r     -         
-N_28721                                                     Net         -        -       -         -           1         
+N_28896                                                     Net         -        -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0               CCU2        B0       In      0.000     3.497 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0               CCU2        COUT     Out     0.784     4.280 r     -         
 un1_FIFORdAddrxDP_1_cry_0                                   Net         -        -       -         -           1         
@@ -3013,7 +3049,7 @@ g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_5_0               CCU2        S0      
 un1_FIFORdAddrxDP_1_cry_5_0_S0                              Net         -        -       -         -           1         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[5]                        LUT4        B        In      0.000     5.005 r     -         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[5]                        LUT4        Z        Out     0.658     5.663 r     -         
-N_33430[5]                                                  Net         -        -       -         -           6         
+N_33607[5]                                                  Net         -        -       -         -           6         
 g_iface\.spi_rxtx.FIFORdAddrxDP_1_fast[5]                   FD1P3IX     D        In      0.000     5.663 r     -         
 =========================================================================================================================
 
@@ -3030,7 +3066,7 @@ Path information for path number 3:
     = Slack (non-critical) :                 -0.860
 
     Number of logic level(s):                15
-    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1] / Q
+    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_1[1] / Q
     Ending point:                            g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0 / ADR[13]
     The start point is clocked by            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            System [rising]
@@ -3038,10 +3074,10 @@ Path information for path number 3:
 Instance / Net                                                                     Pin         Pin               Arrival     No. of    
 Name                                                                  Type         Name        Dir     Delay     Time        Fan Out(s)
 ---------------------------------------------------------------------------------------------------------------------------------------
-g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1]                                FD1P3IX      Q           Out     0.838     0.838 r     -         
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[1]                                  FD1P3IX      Q           Out     0.838     0.838 r     -         
 FIFORdAddrxDP_0okb_1[1]                                               Net          -           -       -         -           3         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]                      LUT4         B           In      0.000     0.838 r     -         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]                      LUT4         Z           Out     0.568     1.406 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]                      LUT4         A           In      0.000     0.838 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]                      LUT4         Z           Out     0.568     1.406 r     -         
 un5_fifordaddrxdp_0_N_43_i                                            Net          -           -       -         -           2         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0                CCU2         A1          In      0.000     1.406 r     -         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0                CCU2         COUT        Out     0.784     2.190 r     -         
@@ -3060,7 +3096,7 @@ g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_33_0               CCU2      
 un5_fifordaddrxdp_i                                                   Net          -           -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO                     LUT4         C           In      0.000     2.974 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO                     LUT4         Z           Out     0.523     3.497 r     -         
-N_28721                                                               Net          -           -       -         -           1         
+N_28896                                                               Net          -           -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0                         CCU2         B0          In      0.000     3.497 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0                         CCU2         COUT        Out     0.784     4.280 r     -         
 un1_FIFORdAddrxDP_1_cry_0                                             Net          -           -       -         -           1         
@@ -3084,7 +3120,7 @@ g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_11_0                        CCU2      
 un1_FIFORdAddrxDP_1_cry_11_0_S1                                       Net          -           -       -         -           2         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[12]                                 LUT4         B           In      0.000     5.227 r     -         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[12]                                 LUT4         Z           Out     0.633     5.860 r     -         
-N_33430[12]                                                           Net          -           -       -         -           4         
+N_33607[12]                                                           Net          -           -       -         -           4         
 g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     PDPSC16K     ADR[13]     In      0.000     5.860 r     -         
 =======================================================================================================================================
 
@@ -3101,7 +3137,7 @@ Path information for path number 4:
     = Slack (non-critical) :                 -0.860
 
     Number of logic level(s):                15
-    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1] / Q
+    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_1[1] / Q
     Ending point:                            g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0 / ADR[12]
     The start point is clocked by            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            System [rising]
@@ -3109,10 +3145,10 @@ Path information for path number 4:
 Instance / Net                                                                     Pin         Pin               Arrival     No. of    
 Name                                                                  Type         Name        Dir     Delay     Time        Fan Out(s)
 ---------------------------------------------------------------------------------------------------------------------------------------
-g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1]                                FD1P3IX      Q           Out     0.838     0.838 r     -         
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[1]                                  FD1P3IX      Q           Out     0.838     0.838 r     -         
 FIFORdAddrxDP_0okb_1[1]                                               Net          -           -       -         -           3         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]                      LUT4         B           In      0.000     0.838 r     -         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]                      LUT4         Z           Out     0.568     1.406 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]                      LUT4         A           In      0.000     0.838 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]                      LUT4         Z           Out     0.568     1.406 r     -         
 un5_fifordaddrxdp_0_N_43_i                                            Net          -           -       -         -           2         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0                CCU2         A1          In      0.000     1.406 r     -         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0                CCU2         COUT        Out     0.784     2.190 r     -         
@@ -3131,7 +3167,7 @@ g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_33_0               CCU2      
 un5_fifordaddrxdp_i                                                   Net          -           -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO                     LUT4         C           In      0.000     2.974 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO                     LUT4         Z           Out     0.523     3.497 r     -         
-N_28721                                                               Net          -           -       -         -           1         
+N_28896                                                               Net          -           -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0                         CCU2         B0          In      0.000     3.497 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0                         CCU2         COUT        Out     0.784     4.280 r     -         
 un1_FIFORdAddrxDP_1_cry_0                                             Net          -           -       -         -           1         
@@ -3155,7 +3191,7 @@ g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_11_0                        CCU2      
 un1_FIFORdAddrxDP_1_cry_11_0_S0                                       Net          -           -       -         -           2         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[11]                                 LUT4         B           In      0.000     5.227 r     -         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[11]                                 LUT4         Z           Out     0.633     5.860 r     -         
-N_33430[11]                                                           Net          -           -       -         -           4         
+N_33607[11]                                                           Net          -           -       -         -           4         
 g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     PDPSC16K     ADR[12]     In      0.000     5.860 r     -         
 =======================================================================================================================================
 
@@ -3172,7 +3208,7 @@ Path information for path number 5:
     = Slack (non-critical) :                 -0.860
 
     Number of logic level(s):                15
-    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1] / Q
+    Starting point:                          g_iface\.spi_rxtx.FIFORdAddrxDP_1[1] / Q
     Ending point:                            g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_3 / ADR[13]
     The start point is clocked by            main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            System [rising]
@@ -3180,10 +3216,10 @@ Path information for path number 5:
 Instance / Net                                                                     Pin         Pin               Arrival     No. of    
 Name                                                                  Type         Name        Dir     Delay     Time        Fan Out(s)
 ---------------------------------------------------------------------------------------------------------------------------------------
-g_iface\.spi_rxtx.FIFORdAddrxDP_0_0[1]                                FD1P3IX      Q           Out     0.838     0.838 r     -         
+g_iface\.spi_rxtx.FIFORdAddrxDP_1[1]                                  FD1P3IX      Q           Out     0.838     0.838 r     -         
 FIFORdAddrxDP_0okb_1[1]                                               Net          -           -       -         -           3         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]                      LUT4         B           In      0.000     0.838 r     -         
-g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIR2GKD[1]                      LUT4         Z           Out     0.568     1.406 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]                      LUT4         A           In      0.000     0.838 r     -         
+g_iface\.spi_rxtx.FIFOWrAddrxDP_fast_RNIVLC8I[1]                      LUT4         Z           Out     0.568     1.406 r     -         
 un5_fifordaddrxdp_0_N_43_i                                            Net          -           -       -         -           2         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0                CCU2         A1          In      0.000     1.406 r     -         
 g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_1_0                CCU2         COUT        Out     0.784     2.190 r     -         
@@ -3202,7 +3238,7 @@ g_iface\.spi_rxtx.p_memless\.un5_fifordaddrxdp_0_I_33_0               CCU2      
 un5_fifordaddrxdp_i                                                   Net          -           -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO                     LUT4         C           In      0.000     2.974 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0_RNO                     LUT4         Z           Out     0.523     3.497 r     -         
-N_28721                                                               Net          -           -       -         -           1         
+N_28896                                                               Net          -           -       -         -           1         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0                         CCU2         B0          In      0.000     3.497 r     -         
 g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_0_0                         CCU2         COUT        Out     0.784     4.280 r     -         
 un1_FIFORdAddrxDP_1_cry_0                                             Net          -           -       -         -           1         
@@ -3226,7 +3262,7 @@ g_iface\.spi_rxtx.un1_FIFORdAddrxDP_1_cry_11_0                        CCU2      
 un1_FIFORdAddrxDP_1_cry_11_0_S1                                       Net          -           -       -         -           2         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[12]                                 LUT4         B           In      0.000     5.227 r     -         
 g_iface\.spi_rxtx.FIFORdAddrxDP_0[12]                                 LUT4         Z           Out     0.633     5.860 r     -         
-N_33430[12]                                                           Net          -           -       -         -           4         
+N_33607[12]                                                           Net          -           -       -         -           4         
 g_iface\.spi_rxtx.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_3     PDPSC16K     ADR[13]     In      0.000     5.860 r     -         
 =======================================================================================================================================
 
@@ -3246,16 +3282,16 @@ Starting Points with Worst Slack
 Instance                                                           Reference     Type         Pin        Net            Time        Slack
                                                                    Clock                                                                 
 -----------------------------------------------------------------------------------------------------------------------------------------
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[0]      N_28861[0]     0.000       2.674
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[0]      N_28861[0]     0.000       2.674
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[16]     N_28819[0]     0.000       2.674
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[16]     N_28819[0]     0.000       2.674
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[32]     N_28777[0]     0.000       2.674
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[32]     N_28777[0]     0.000       2.674
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     System        PDPSC16K     DO[12]     N_28735[0]     0.000       2.674
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     System        PDPSC16K     DO[12]     N_28735[0]     0.000       2.674
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[1]      N_28861[1]     0.000       2.732
-frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[1]      N_28861[1]     0.000       2.732
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[0]      N_29036[0]     0.000       2.674
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[0]      N_29036[0]     0.000       2.674
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[16]     N_28994[0]     0.000       2.674
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[16]     N_28994[0]     0.000       2.674
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[32]     N_28952[0]     0.000       2.674
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[32]     N_28952[0]     0.000       2.674
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     System        PDPSC16K     DO[12]     N_28910[0]     0.000       2.674
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_1     System        PDPSC16K     DO[12]     N_28910[0]     0.000       2.674
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[1]      N_29036[1]     0.000       2.732
+frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     System        PDPSC16K     DO[1]      N_29036[1]     0.000       2.732
 =========================================================================================================================================
 
 
@@ -3306,7 +3342,7 @@ Instance / Net                                                                  
 Name                                                               Type          Name       Dir     Delay     Time        Fan Out(s)
 ------------------------------------------------------------------------------------------------------------------------------------
 frame_buf_inst.p_memzing\.FIFOMemxDP_p_memzing\.FIFOMemxDP_0_0     PDPSC16K      DO[0]      Out     0.000     0.000 r     -         
-N_28861[0]                                                         Net           -          -       -         -           3         
+N_29036[0]                                                         Net           -          -       -         -           3         
 frame_buf_inst.un40_meminxd_cry_0_0                                CCU2          A1         In      0.000     0.000 r     -         
 frame_buf_inst.un40_meminxd_cry_0_0                                CCU2          COUT       Out     0.784     0.784 r     -         
 un40_meminxd_cry_0                                                 Net           -          -       -         -           1         
@@ -3346,16 +3382,16 @@ frame_buf_inst.p_memzing\.MemxDP_p_memzing\.MemxDP_0_0             PDPSC512K    
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:41s; Memory used current: 354MB peak: 427MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 355MB peak: 427MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:42s; Memory used current: 354MB peak: 427MB)
+Finished timing report (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 355MB peak: 427MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lifcl_40-9
 
-Register bits: 2289 of 32256 (7%)
+Register bits: 2324 of 32256 (7%)
 PIC Latch:       0
 I/O cells:       28
 Block Rams : 6 of 84 (7%)
@@ -3368,14 +3404,14 @@ BFD1P3LX:       2
 CCU2:           923
 DPHY:           1
 FD1P3BX:        12
-FD1P3DX:        1983
-FD1P3IX:        290
+FD1P3DX:        1984
+FD1P3IX:        324
 FD1P3JX:        4
 FIFO16K:        33
 GSR:            1
 IB:             5
 INV:            22
-LUT4:           2431
+LUT4:           2425
 MULTADDSUB18X18WIDE: 2
 OB:             19
 OBZ:            2
@@ -3384,7 +3420,7 @@ PDPSC512K:      2
 PLL:            1
 VHI:            53
 VLO:            53
-WIDEFN9:        418
+WIDEFN9:        412
 
 Resource Usage inside macros:
 Registers: 0
@@ -3397,8 +3433,8 @@ Carry Chains: 0
 Blackboxes: 0
 
 Mapping Summary:
-Total number of registers: 2289 + 0 = 2289 of 32256 (7.10%)
-Total number of LUTs: 2431 + 0 = 2431 
+Total number of registers: 2324 + 0 = 2324 of 32256 (7.20%)
+Total number of LUTs: 2425 + 0 = 2425 
 Total number of EBRs: 6 + 0 = 6 of 84 (7.14%)
 Total number of LRAMs: 2 + 0 = 2 of 2 (100.00%)
 Total number of DSPs: 2 + 0 = 2 of 56 (3.57%)
@@ -3407,9 +3443,9 @@ Total number of Carry Chains: 923 + 0 = 923
 Total number of BlackBoxes: 142 + 0 = 142 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:43s; CPU Time elapsed 0h:00m:42s; Memory used current: 193MB peak: 427MB)
+At Mapper Exit (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 194MB peak: 427MB)
 
-Process took 0h:00m:43s realtime, 0h:00m:42s cputime
-# Wed Jul 29 01:27:00 2026
+Process took 0h:00m:15s realtime, 0h:00m:15s cputime
+# Wed Jul 29 23:23:58 2026
 
 ###########################################################]

@@ -4,31 +4,31 @@ Report for cell mira_test_top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                 MULT18	       4.00        100.0
-                                  LUT4	       5136        100.0
-                               LUTGATE	       3290        100.0
+                                  LUT4	       5118        100.0
+                               LUTGATE	       3272        100.0
                                 LUTCCU	       1846        100.0
                                  IOREG	          2        100.0
                                  IOBUF	         28        100.0
-                                PFUREG	       2289        100.0
+                                PFUREG	       2324        100.0
                                    EBR	         39        100.0
                                  ACC54	          2        100.0
                                   LRAM	          2        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                 frame_buf_10_1600_480	          1        10.3
+                 frame_buf_10_1600_480	          1         9.9
                               main_pll	          1         0.0
-                       mipi_rx_10_1600	          1         5.1
-                 process_image_10_1600	          1        79.1
-                    spi_rxtx_with_fifo	          1         4.1
+                       mipi_rx_10_1600	          1         4.8
+                 process_image_10_1600	          1        79.5
+                    spi_rxtx_with_fifo	          1         4.3
 ---------------------------------------------------
 Report for cell mipi_rx_10_1600
    Instance path: mira_test_top/mipi_rx_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        260         5.1
-                               LUTGATE	        234         7.1
+                                  LUT4	        247         4.8
+                               LUTGATE	        221         6.8
                                 LUTCCU	         26         1.4
-                                PFUREG	        178         7.8
+                                PFUREG	        213         9.2
                                    EBR	          1         2.6
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
@@ -138,15 +138,15 @@ Report for cell process_image_10_1600
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                 MULT18	       4.00        100.0
-                                  LUT4	       4062        79.1
-                               LUTGATE	       2488        75.6
+                                  LUT4	       4067        79.5
+                               LUTGATE	       2493        76.2
                                 LUTCCU	       1574        85.3
-                                PFUREG	       1676        73.2
+                                PFUREG	       1676        72.1
                                    EBR	         32        82.1
                                  ACC54	          2        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                  img_mean_std_10_1600	          1        77.1
+                  img_mean_std_10_1600	          1        77.3
                 process_image_out_fifo	          1         0.0
 ---------------------------------------------------
 Report for cell img_mean_std_10_1600
@@ -154,10 +154,10 @@ Report for cell img_mean_std_10_1600
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                 MULT18	       4.00        100.0
-                                  LUT4	       3958        77.1
-                               LUTGATE	       2384        72.5
+                                  LUT4	       3958        77.3
+                               LUTGATE	       2384        72.9
                                 LUTCCU	       1574        85.3
-                                PFUREG	       1533        67.0
+                                PFUREG	       1533        66.0
                                  ACC54	          2        100.0
 ---------------------------------------------------
 Report for cell process_image_out_fifo
@@ -469,10 +469,10 @@ Report for cell frame_buf_10_1600_480
    Instance path: mira_test_top/frame_buf_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        529        10.3
-                               LUTGATE	        385        11.7
+                                  LUT4	        508         9.9
+                               LUTGATE	        364        11.1
                                 LUTCCU	        144         7.8
-                                PFUREG	        198         8.7
+                                PFUREG	        198         8.5
                                    EBR	          2         5.1
                                   LRAM	          2        100.0
 ---------------------------------------------------
@@ -480,8 +480,8 @@ Report for cell spi_rxtx_with_fifo
    Instance path: mira_test_top/g_iface.spi_rxtx
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        209         4.1
-                               LUTGATE	        135         4.1
+                                  LUT4	        220         4.3
+                               LUTGATE	        146         4.5
                                 LUTCCU	         74         4.0
                                 PFUREG	         81         3.5
                                    EBR	          4        10.3

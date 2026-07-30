@@ -1,7 +1,7 @@
-C:\lscc\radiant\2025.2\synpbase\bin64\syn_nfilter.exe  -link  -top  mira_test_top  -multisrs  C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_comp.srs  -osyn  C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_mult.srs  -log  C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synlog\mira_test_impl_1_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\..\lscc\radiant\2025.2\synpbase\bin64\syn_nfilter.exe -link -top mira_test_top -multisrs ..\synwork\mira_test_impl_1_comp.srs -osyn ..\synwork\mira_test_impl_1_mult.srs -log ..\synlog\mira_test_impl_1_multi_srs_gen.srr
+C:\lscc\radiant\2026.1\synpbase\bin64\syn_nfilter.exe  -link  -top  mira_test_top  -multisrs  C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_comp.srs  -osyn  C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\synwork\mira_test_impl_1_mult.srs  -log  C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\synlog\mira_test_impl_1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\lscc\radiant\2026.1\synpbase\bin64\syn_nfilter.exe -link -top mira_test_top -multisrs ..\synwork\mira_test_impl_1_comp.srs -osyn ..\synwork\mira_test_impl_1_mult.srs -log ..\synlog\mira_test_impl_1_multi_srs_gen.srr
 rc:0 success:1 runtime:1
-file:..\synwork\mira_test_impl_1_comp.srs|io:i|time:1785313569|size:118247|exec:0|csum:AF42D6B2FE7C5C28DDA513AE57615EE5
-file:..\synwork\mira_test_impl_1_mult.srs|io:o|time:1785313570|size:10759|exec:0|csum:
-file:..\synlog\mira_test_impl_1_multi_srs_gen.srr|io:o|time:1785313571|size:1166|exec:0|csum:
-file:..\..\..\..\..\..\..\lscc\radiant\2025.2\synpbase\bin64\syn_nfilter.exe|io:i|time:1762883177|size:10805248|exec:1|csum:852D19A9663831A0E2C4EB49CF2B6DEC
+file:..\synwork\mira_test_impl_1_comp.srs|io:i|time:1785392619|size:118749|exec:0|csum:EE82DDF555E4977F294CBB485B7A9CEC
+file:..\synwork\mira_test_impl_1_mult.srs|io:o|time:1785392620|size:10833|exec:0|csum:
+file:..\synlog\mira_test_impl_1_multi_srs_gen.srr|io:o|time:1785392620|size:1167|exec:0|csum:
+file:..\..\..\..\..\..\..\lscc\radiant\2026.1\synpbase\bin64\syn_nfilter.exe|io:i|time:1779441299|size:10887168|exec:1|csum:7C0A7065AC7D00E791C5352FDA1F66ED

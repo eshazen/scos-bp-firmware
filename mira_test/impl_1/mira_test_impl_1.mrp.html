@@ -48,25 +48,25 @@ Device:  LIFCL-40
 Package: CABGA400
 Performance Grade:  9_High-Performance_1.0V
 
-Mapper:    version Radiant Software (64-bit) 2025.2.0.48.0
-Mapped on: Wed Jul 29 01:27:18 2026
+Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
+Mapped on: Wed Jul 29 23:24:07 2026
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map -pdc C:/Users/Bernhard/github/scos-bp-firmware/mira_test/sou
+Command line:   map -pdc C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/sou
      rce/impl_1/impl_1.pdc -i mira_test_impl_1_syn.udb -o
      mira_test_impl_1_map.udb -mp mira_test_impl_1.mrp -hierrpt -gui -msgset
-     C:/Users/Bernhard/github/scos-bp-firmware/mira_test/promote.xml
+     C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/promote.xml
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
-   Number of registers:        2291 out of 32811 (7%)
-      Number of SLICE         registers: 2289 out of 32256 (7%)
+   Number of registers:        2326 out of 32811 (7%)
+      Number of SLICE         registers: 2324 out of 32256 (7%)
       Number of PIO Input     registers:    2 out of   185 (1%)
       Number of PIO Output    registers:    0 out of   185 (0%)
       Number of PIO Tri-State registers:    0 out of   185 (0%)
-   Number of LUT4s:            5136 out of 32256 (16%)
-      Number used as logic LUT4s:                       3290
+   Number of LUT4s:            5118 out of 32256 (16%)
+      Number used as logic LUT4s:                       3272
       Number used as distributed RAM:                      0 (6 per 16X4 RAM)
       Number used as ripple logic:                      1846 (2 per CCU2)
    Number of PIOs used/reserved:   35 out of   185 (19%)
@@ -135,7 +135,7 @@ Command line:   map -pdc C:/Users/Bernhard/github/scos-bp-firmware/mira_test/sou
    Number of Config WDT:          0 out of 1 (0%)
    Number of PCIEs:               0 out of 1 (0%)
    Number of Clocks:  6
-      Net ClkxC: 2396 loads, 2396 rising, 0 falling (Driver: Pin
+      Net ClkxC: 2431 loads, 2431 rising, 0 falling (Driver: Pin
      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP)
       Net mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_
      wrapper_rx.DPhyClkxC: 2 loads, 0 rising, 2 falling (Driver: Pin mipi_rx_ins
@@ -151,16 +151,16 @@ Command line:   map -pdc C:/Users/Bernhard/github/scos-bp-firmware/mira_test/sou
    Number of Clock Enables:  69
       Net VCC: 12 loads, 0 SLICEs
       Net mipi_rx_inst.DPhyPDxSP_i: 4 loads, 0 SLICEs
-      Net mipi_rx_inst.StatexDP_RNIB2JQB[3]: 16 loads, 16 SLICEs
-      Net mipi_rx_inst.N_204_i: 40 loads, 40 SLICEs
+      Net mipi_rx_inst.un1_StatexDP_7_0_0_o2_0_RNIRI4IC: 16 loads, 16 SLICEs
+      Net mipi_rx_inst.N_650_i: 8 loads, 8 SLICEs
+      Net mipi_rx_inst.N_315_i: 40 loads, 40 SLICEs
       Net mipi_rx_inst.ByteCntxDPe: 9 loads, 9 SLICEs
-      Net mipi_rx_inst.PixDataPrexDPce[16]: 8 loads, 8 SLICEs
+      Net mipi_rx_inst.FifoEmptyxS_i: 1 loads, 0 SLICEs
       Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
      _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.FifoFullxS_i: 1
      loads, 0 SLICEs
-      Net mipi_rx_inst.FifoEmptyxS_i: 1 loads, 0 SLICEs
-      Net process_image_inst.N_115_i: 32 loads, 0 SLICEs
       Net process_image_inst.N_120_i: 64 loads, 64 SLICEs
+      Net process_image_inst.N_115_i: 32 loads, 0 SLICEs
       Net process_image_inst.img_mean_std_inst.TileCntxDPe: 5 loads, 5 SLICEs
       Net process_image_inst.img_mean_std_inst.un317_summemxdn: 54 loads, 54
      SLICEs
@@ -217,52 +217,52 @@ Command line:   map -pdc C:/Users/Bernhard/github/scos-bp-firmware/mira_test/sou
       Net process_image_inst.PDatValidxS: 32 loads, 0 SLICEs
       Net frame_buf_inst.StatexDP[2]: 8 loads, 8 SLICEs
       Net frame_buf_inst.N_461_1: 2 loads, 0 SLICEs
-      Net RdyForCfgPDatxS: 1 loads, 1 SLICEs
       Net frame_buf_inst.WrAddrxDPe: 14 loads, 14 SLICEs
       Net frame_buf_inst.RdAddrxDPe: 14 loads, 14 SLICEs
       Net frame_buf_inst.un1_StatexDP_11_i: 18 loads, 18 SLICEs
       Net frame_buf_inst.SumCntxDPe: 8 loads, 8 SLICEs
       Net frame_buf_inst.un9_fifowrenxsp: 2 loads, 0 SLICEs
       Net frame_buf_inst.N_163_i: 56 loads, 56 SLICEs
+      Net RdyForCfgPDatxS: 1 loads, 1 SLICEs
       Net g_iface.spi_rxtx.ResetTxFIFORqdxSP_RNO: 1 loads, 1 SLICEs
       Net N_45_i: 13 loads, 13 SLICEs
-      Net g_iface.spi_rxtx.StatexDP[7]: 5 loads, 5 SLICEs
+      Net g_iface.spi_rxtx.StatexDP_Q[7]: 5 loads, 5 SLICEs
       Net g_iface.spi_rxtx.un1_TxSRegxDN_0_sqmuxa_i: 8 loads, 8 SLICEs
-      Net g_iface.spi_rxtx.N_30306: 21 loads, 21 SLICEs
+      Net g_iface.spi_rxtx.N_30481: 21 loads, 21 SLICEs
       Net g_iface.spi_rxtx.un4_pardatrdyxsi: 4 loads, 0 SLICEs
-      Net CfgRegxDN_9_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_8_1_sqmuxa: 6 loads, 6 SLICEs
-      Net CfgRegxDN_7_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_6_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_5_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_4_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_3_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_2_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_1_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_0_1_sqmuxa: 9 loads, 9 SLICEs
-      Net CfgRegxDN_13_1_sqmuxa: 8 loads, 8 SLICEs
-      Net CfgRegxDN_12_1_sqmuxa: 8 loads, 8 SLICEs
       Net CfgRegxDN_11_1_sqmuxa: 8 loads, 8 SLICEs
       Net CfgRegxDN_10_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_12_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_13_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_0_1_sqmuxa: 9 loads, 9 SLICEs
+      Net CfgRegxDN_1_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_2_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_3_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_4_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_5_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_6_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_7_1_sqmuxa: 8 loads, 8 SLICEs
+      Net CfgRegxDN_8_1_sqmuxa: 6 loads, 6 SLICEs
+      Net CfgRegxDN_9_1_sqmuxa: 8 loads, 8 SLICEs
       Net g_iface.spi_rxtx.N_83_i: 8 loads, 8 SLICEs
    Number of LSRs:  10
       Net VCC: 29 loads, 0 SLICEs
       Net mipi_rx_inst.StatexDP[10]: 1 loads, 1 SLICEs
-      Net mipi_rx_inst.N_219: 1 loads, 1 SLICEs
+      Net N_345: 1 loads, 1 SLICEs
       Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
      _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.EMPTY: 2 loads, 2
      SLICEs
       Net mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD
      _IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo.FULL: 1 loads, 1
      SLICEs
-      Pin ResetxRI: 2093 loads, 1992 SLICEs (Net: ResetxRI_c)
+      Pin ResetxRI: 2094 loads, 1993 SLICEs (Net: ResetxRI_c)
       Net mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_
      wrapper_rx.HARD_IP.CIL.u_clock_divider.count_0_sqmuxa_i: 3 loads, 3 SLICEs
       Net frame_buf_inst.StatexDP[2]: 3 loads, 3 SLICEs
       Net frame_buf_inst.FIFOResetxS: 4 loads, 4 SLICEs
       Net g_iface.spi_rxtx.StatexDP[0]: 23 loads, 23 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net ResetxRI_c: 2093 loads
+      Net ResetxRI_c: 2094 loads
       Net process_image_inst.img_mean_std_inst.MemWrEnxS_0_sqmuxa_0_a2okb: 675
      loads
       Net process_image_inst.img_mean_std_inst.MemWrEnxS_0_sqmuxa_0_a2okb_1: 675
@@ -272,8 +272,8 @@ Command line:   map -pdc C:/Users/Bernhard/github/scos-bp-firmware/mira_test/sou
       Net process_image_inst.img_mean_std_inst.RdAddrxDP[2]: 432 loads
       Net process_image_inst.img_mean_std_inst.RdAddrxDP[1]: 216 loads
       Net process_image_inst.img_mean_std_inst.RdAddrxDP[3]: 108 loads
-      Net mipi_rx_inst.FifoValidxSP[0]: 84 loads
       Net frame_buf_inst.StatexDP[2]: 82 loads
+      Net CfgFSMSRegxDP_0[3]: 70 loads
 
    Number of warnings:  2
    Number of criticals: 0
@@ -659,10 +659,10 @@ Instance Name: main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 
-   Total CPU Time: 5 secs
-   Total REAL Time: 6 secs
-   Peak Memory Usage: 437 MB
-Checksum -- map: f106b5af87a51170675c70c9e993324b31a9c838
+   Total CPU Time: 3 secs
+   Total REAL Time: 3 secs
+   Peak Memory Usage: 440 MB
+Checksum -- map: 4b34b32b261380faad90aede9b97501ecff21d05
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.
@@ -670,7 +670,7 @@ Copyright (c) 1995-2001 Lucent
      Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems
      All rights reserved.
-Copyright (c) 2002-2025 Lattice Semiconductor
+Copyright (c) 2002-2026 Lattice Semiconductor
      Corporation,  All rights reserved.
 </PRE></DIV>
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>

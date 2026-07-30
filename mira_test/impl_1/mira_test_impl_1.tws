@@ -1,14 +1,14 @@
-Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2025.2.0.48.0
+Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2026.1.0.37.0
 
-Wed Jul 29 01:27:12 2026
+Wed Jul 29 23:24:05 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt mira_test_impl_1.tws mira_test_impl_1_syn.udb -gui -msgset C:/Users/Bernhard/github/scos-bp-firmware/mira_test/promote.xml
+Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt mira_test_impl_1.tws mira_test_impl_1_syn.udb -gui -msgset C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/promote.xml
 
 -------------------------------------------
 Design:          mira_test_top
@@ -59,7 +59,7 @@ set_max_delay -from [get_cells {mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_
 
 1.2  Constraint Coverage
 ---------------------------
-Constraint Coverage: 99.2558%
+Constraint Coverage: 99.255%
 
 
 1.3  Overall Summary
@@ -83,19 +83,19 @@ p_cfg_memzing.CfgRegxDP_8_reg[0].ff_inst/Q
                                         |          No required time
 p_cfg_memzing.CfgRegxDP_8_reg[1].ff_inst/Q                           
                                         |          No required time
-p_cfg_memzing.CfgRegxDP_10_reg[3].ff_inst/Q                           
-                                        |          No required time
-p_cfg_memzing.CfgRegxDP_10_reg[4].ff_inst/Q                           
-                                        |          No required time
-p_cfg_memzing.CfgRegxDP_10_reg[6].ff_inst/Q                           
-                                        |          No required time
 p_cfg_memzing.CfgRegxDP_10_reg[0].ff_inst/Q                           
                                         |          No required time
 p_cfg_memzing.CfgRegxDP_10_reg[1].ff_inst/Q                           
                                         |          No required time
+p_cfg_memzing.CfgRegxDP_10_reg[3].ff_inst/Q                           
+                                        |          No required time
+p_cfg_memzing.CfgRegxDP_10_reg[4].ff_inst/Q                           
+                                        |          No required time
 p_cfg_memzing.CfgRegxDP_10_reg[2].ff_inst/Q                           
                                         |          No required time
 p_cfg_memzing.CfgRegxDP_10_reg[5].ff_inst/Q                           
+                                        |          No required time
+p_cfg_memzing.CfgRegxDP_10_reg[6].ff_inst/Q                           
                                         |          No required time
 -------------------------------------------------------------------
                                         |                          
@@ -240,25 +240,25 @@ Clock Domain Crossing
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
 process_image_inst/img_mean_std_inst/SumSqOutxDP[9].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 process_image_inst/img_mean_std_inst/SumSqOutxDP[8].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 process_image_inst/img_mean_std_inst/SumSqOutxDP[7].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 process_image_inst/img_mean_std_inst/SumSqOutxDP[6].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 process_image_inst/img_mean_std_inst/SumSqOutxDP[5].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 process_image_inst/img_mean_std_inst/SumSqOutxDP[4].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 process_image_inst/img_mean_std_inst/SumSqOutxDP[3].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 process_image_inst/img_mean_std_inst/SumSqOutxDP[2].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 process_image_inst/img_mean_std_inst/SumSqOutxDP[1].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 process_image_inst/img_mean_std_inst/SumSqOutxDP[0].ff_inst/DF              
-                                         |    3.936 ns 
+                                         |    4.055 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -275,21 +275,21 @@ Detail report of critical paths
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                     Detailed Report for timing paths 
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
- ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q  (SLICEREG)
 Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[9].ff_inst/DF  (SLICEREG)
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -301,10 +301,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -313,35 +313,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[9].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[9].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[9].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[9].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[9].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[9]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[9]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[9]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[9]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[9].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[9].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[9].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[9].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[9].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[9]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[9]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[9]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[9]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[9].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -354,19 +354,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[9].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -378,10 +378,10 @@ Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[8].ff_inst/D
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -393,10 +393,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -405,35 +405,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[8].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[8].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[8].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[8].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[8].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[8]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[8]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[8]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[8]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[8].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[8].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[8].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[8].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[8].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[8]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[8]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[8]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[8]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[8].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -446,19 +446,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[8].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -470,10 +470,10 @@ Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[7].ff_inst/D
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -485,10 +485,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -497,35 +497,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[7].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[7].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[7].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[7].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[7].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[7]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[7]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[7]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[7]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[7].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[7].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[7].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[7].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[7].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[7]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[7]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[7]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[7]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[7].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -538,19 +538,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[7].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -562,10 +562,10 @@ Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[6].ff_inst/D
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -577,10 +577,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -589,35 +589,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[6].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[6].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[6].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[6].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[6].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[6]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[6]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[6]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[6]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[6].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[6].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[6].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[6].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[6].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[6]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[6]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[6]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[6]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[6].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -630,19 +630,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[6].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -654,10 +654,10 @@ Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[5].ff_inst/D
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -669,10 +669,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -681,35 +681,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[5].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[5].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[5].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[5].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[5].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[5]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[5]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[5]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[5]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[5].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[5].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[5].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[5].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[5].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[5]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[5]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[5]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[5]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[5].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -722,19 +722,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[5].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -746,10 +746,10 @@ Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[4].ff_inst/D
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -761,10 +761,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -773,35 +773,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[4].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[4].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[4].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[4].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[4].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[4]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[4]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[4]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[4]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[4].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[4].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[4].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[4].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[4].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[4]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[4]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[4]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[4]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[4].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -814,19 +814,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -838,10 +838,10 @@ Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[3].ff_inst/D
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -853,10 +853,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -865,35 +865,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[3].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[3].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[3].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[3].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[3].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[3]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[3]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[3]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[3]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[3].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[3].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[3].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[3].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[3].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[3]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[3]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[3]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[3]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[3].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -906,19 +906,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[3].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -930,10 +930,10 @@ Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[2].ff_inst/D
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -945,10 +945,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -957,35 +957,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[2].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[2].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[2].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[2].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[2].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[2]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[2]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[2]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[2]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[2].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[2].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[2].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[2].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[2].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[2]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[2]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[2]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[2]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[2].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -998,19 +998,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[2].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -1022,10 +1022,10 @@ Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[1].ff_inst/D
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -1037,10 +1037,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -1049,35 +1049,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[1].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[1].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[1].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[1].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[1].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[1]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[1]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[1]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[1]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[1].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[1].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[1].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[1].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[1].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[1]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[1]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[1]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[1]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[1].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -1090,19 +1090,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[1].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -1114,10 +1114,10 @@ Path End         : process_image_inst/img_mean_std_inst/SumSqOutxDP[0].ff_inst/D
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 7
-Delay Ratio      : 73.7% (route), 26.3% (logic)
+Delay Ratio      : 75.1% (route), 24.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 10.415 ns 
-Path Slack       : 3.936 ns  (Passed)
+Path Slack       : 4.055 ns  (Passed)
 
 
 Source Clock Path
@@ -1129,10 +1129,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY          0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                  1.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                  1.666  2390    
-ClkxC                                                     NET DELAY          3.000                  4.666  2390    
+                                          PLL_CORE                           0.000                  1.666  2425    
+ClkxC                                                     NET DELAY          3.000                  4.666  2425    
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK
                                                           CLOCK PIN          0.000                  4.666  1       
 
@@ -1141,35 +1141,35 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
 process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/CLK->process_image_inst/img_mean_std_inst/RdAddrxDP_reg[4].ff_inst/Q
-                                          SLICEREG        REG_DEL            0.304                  4.970  486     
+                                          SLICEREG        REG_DEL            0.283                  4.949  486     
 process_image_inst/img_mean_std_inst/RdAddrxDP[4]
-                                                          NET DELAY          3.000                  7.970  486     
+                                                          NET DELAY          3.000                  7.949  486     
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[0].lut4_inst1/C->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[0].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  8.183  1       
+                                          LUT4            CTOF_DEL           0.198                  8.147  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[0].lut1_out
-                                                          NET DELAY          0.300                  8.483  1       
+                                                          NET DELAY          0.300                  8.447  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[0].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7_cZ[0].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                  8.762  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                  8.706  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_7[0]
-                                                          NET DELAY          0.300                  9.062  1       
+                                                          NET DELAY          0.300                  9.006  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[0]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2_cZ[0]/Z
-                                          LUT4            CTOF_DEL           0.213                  9.275  1       
+                                          LUT4            CTOF_DEL           0.198                  9.204  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_2[0]
-                                                          NET DELAY          0.300                  9.575  1       
+                                                          NET DELAY          0.300                  9.504  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[0].lut4_inst1/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[0].lut4_inst1/Z
-                                          LUT4            CTOF_DEL           0.213                  9.788  1       
+                                          LUT4            CTOF_DEL           0.198                  9.702  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[0].lut1_out
-                                                          NET DELAY          0.300                 10.088  1       
+                                                          NET DELAY          0.300                 10.002  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[0].slicemux_inst/D1->process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO_cZ[0].slicemux_inst/Z
-                                          SLICEMUX        CTOOF_DEL          0.279                 10.367  1       
+                                          SLICEMUX        CTOOF_DEL          0.259                 10.261  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_RNO[0]
-                                                          NET DELAY          0.300                 10.667  1       
+                                                          NET DELAY          0.300                 10.561  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[0]/A->process_image_inst/img_mean_std_inst/SumSqOutxDN_cZ[0]/Z
-                                          LUT4            CTOF_DEL           0.213                 10.880  1       
+                                          LUT4            CTOF_DEL           0.198                 10.759  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDN[0]
-                                                          NET DELAY          0.300                 11.180  1       
+                                                          NET DELAY          0.300                 11.059  1       
 process_image_inst/img_mean_std_inst/SumSqOutxDP[0].ff_inst/DF
-                                                          ENDPOINT           0.000                 11.180  1       
+                                                          ENDPOINT           0.000                 11.059  1       
 
 
 Destination Clock Path
@@ -1182,19 +1182,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL           1.366                 11.781  1       
 Clk48xCI_c                                                NET DELAY          0.300                 12.081  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                           0.000                 12.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                           0.000                 12.081  2390    
-ClkxC                                                     NET DELAY          3.000                 15.081  2390    
+                                          PLL_CORE                           0.000                 12.081  2425    
+ClkxC                                                     NET DELAY          3.000                 15.081  2425    
 process_image_inst/img_mean_std_inst/SumSqOutxDP[0].ff_inst/CLK
                                                           CLOCK PIN          0.000                 15.081  1       
                                                           Uncertainty     -(0.000)                 15.081  
-                                                          Setup time     -(-0.035)                 15.116  
+                                                          Setup time     -(-0.033)                 15.114  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Required Time                                                                                      15.116  
-Arrival Time                                                                                    -(11.180)  
+Required Time                                                                                      15.114  
+Arrival Time                                                                                    -(11.059)  
 ----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
-Path Slack  (Passed)                                                                                3.936  
+Path Slack  (Passed)                                                                                4.055  
 
 
 
@@ -1216,26 +1216,25 @@ Path Slack  (Passed)                                                            
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-mipi_rx_inst/FifoPDatxDP_reg[4].ff_inst/DF              
-                                         |    0.428 ns 
-mipi_rx_inst/FifoPDatxDP_reg[3].ff_inst/DF              
-                                         |    0.428 ns 
-mipi_rx_inst/FifoPDatxDP_reg[2].ff_inst/DF              
-                                         |    0.428 ns 
 mipi_rx_inst/FifoPDatxDP_reg[1].ff_inst/DF              
-                                         |    0.428 ns 
+                                         |    0.419 ns 
 mipi_rx_inst/FifoPDatxDP_reg[0].ff_inst/DF              
-                                         |    0.428 ns 
+                                         |    0.419 ns 
+mipi_rx_inst/FifoSyncPrexSP_reg[1].ff_inst/DF              
+                                         |    0.419 ns 
+mipi_rx_inst/FifoSyncPrexSP_reg[0].ff_inst/DF              
+                                         |    0.419 ns 
 mipi_rx_inst/FifoSyncxSP_reg[1].ff_inst/DF              
-                                         |    0.428 ns 
+                                         |    0.419 ns 
 mipi_rx_inst/FifoSyncxSP_reg[0].ff_inst/DF              
-                                         |    0.428 ns 
+                                         |    0.419 ns 
+mipi_rx_inst/FifoValidxSP_reg[2].ff_inst/DF              
+                                         |    0.419 ns 
 mipi_rx_inst/FifoValidxSP_reg[1].ff_inst/DF              
-                                         |    0.428 ns 
-mipi_rx_inst/FifoValidxSP_reg[0].ff_inst/DF              
-                                         |    0.428 ns 
+                                         |    0.419 ns 
+mipi_rx_inst/FifoValidxSP[0].ff_inst/DF  |    0.419 ns 
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.genblk2.empty_r.ff_inst/DF              
-                                         |    0.428 ns 
+                                         |    0.419 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -1252,21 +1251,21 @@ Detail report of critical paths
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
                     Detailed Report for timing paths 
- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
- ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[4].ff_inst/Q  (SLICEREG)
-Path End         : mipi_rx_inst/FifoPDatxDP_reg[4].ff_inst/DF  (SLICEREG)
+Path Begin       : mipi_rx_inst/FifoPDatPrexDP_reg[1].ff_inst/Q  (SLICEREG)
+Path End         : mipi_rx_inst/FifoPDatxDP_reg[1].ff_inst/DF  (SLICEREG)
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
+Delay Ratio      : 54.3% (route), 45.7% (logic)
 Clock Skew       : 0.000 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
+Path Slack       : 0.419 ns  (Passed)
 
 
 Source Clock Path
@@ -1278,22 +1277,22 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[4].ff_inst/CLK
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoPDatPrexDP_reg[1].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[4].ff_inst/CLK->mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[4].ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
-mipi_rx_inst/FifoPDatxDN[4]                               NET DELAY      0.300                  5.237  1       
-mipi_rx_inst/FifoPDatxDP_reg[4].ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
+mipi_rx_inst/FifoPDatPrexDP_reg[1].ff_inst/CLK->mipi_rx_inst/FifoPDatPrexDP_reg[1].ff_inst/Q
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
+mipi_rx_inst/FifoPDatPrexDP[1]                            NET DELAY      0.300                  5.218  1       
+mipi_rx_inst/FifoPDatxDP_reg[1].ff_inst/DF
+                                                          ENDPOINT       0.000                  5.218  1       
 
 
 Destination Clock Path
@@ -1306,34 +1305,34 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/FifoPDatxDP_reg[4].ff_inst/CLK
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoPDatxDP_reg[1].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
                                                           Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
+                                                          Hold time      0.133                  4.799  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
+Path Slack  (Passed)                                                                            0.419  
 
 
 
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[3].ff_inst/Q  (SLICEREG)
-Path End         : mipi_rx_inst/FifoPDatxDP_reg[3].ff_inst/DF  (SLICEREG)
+Path Begin       : mipi_rx_inst/FifoPDatPrexDP_reg[0].ff_inst/Q  (SLICEREG)
+Path End         : mipi_rx_inst/FifoPDatxDP_reg[0].ff_inst/DF  (SLICEREG)
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
+Delay Ratio      : 54.3% (route), 45.7% (logic)
 Clock Skew       : 0.000 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
+Path Slack       : 0.419 ns  (Passed)
 
 
 Source Clock Path
@@ -1345,22 +1344,22 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[3].ff_inst/CLK
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoPDatPrexDP_reg[0].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
 
 
 Data Path
 Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[3].ff_inst/CLK->mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[3].ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
-mipi_rx_inst/FifoPDatxDN[3]                               NET DELAY      0.300                  5.237  1       
-mipi_rx_inst/FifoPDatxDP_reg[3].ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
+mipi_rx_inst/FifoPDatPrexDP_reg[0].ff_inst/CLK->mipi_rx_inst/FifoPDatPrexDP_reg[0].ff_inst/Q
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
+mipi_rx_inst/FifoPDatPrexDP[0]                            NET DELAY      0.300                  5.218  1       
+mipi_rx_inst/FifoPDatxDP_reg[0].ff_inst/DF
+                                                          ENDPOINT       0.000                  5.218  1       
 
 
 Destination Clock Path
@@ -1373,235 +1372,34 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/FifoPDatxDP_reg[3].ff_inst/CLK
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoPDatxDP_reg[0].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
                                                           Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
+                                                          Hold time      0.133                  4.799  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
+Path Slack  (Passed)                                                                            0.419  
 
 
 
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[2].ff_inst/Q  (SLICEREG)
-Path End         : mipi_rx_inst/FifoPDatxDP_reg[2].ff_inst/DF  (SLICEREG)
-Source Clock     : ClkxC (R)
-Destination Clock: ClkxC (R)
-Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
-Clock Skew       : 0.000 ns 
-Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
-Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
-Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
-                                          BB              PADI_DEL       1.366                  1.366  1       
-Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[2].ff_inst/CLK
-                                                          CLOCK PIN      0.000                  4.666  1       
-
-
-Data Path
-Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[2].ff_inst/CLK->mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[2].ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
-mipi_rx_inst/FifoPDatxDN[2]                               NET DELAY      0.300                  5.237  1       
-mipi_rx_inst/FifoPDatxDP_reg[2].ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-                                                          CONSTRAINT     0.000                  0.000  1       
-Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
-Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
-Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
-                                          BB              PADI_DEL       1.366                  1.366  1       
-Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/FifoPDatxDP_reg[2].ff_inst/CLK
-                                                          CLOCK PIN      0.000                  4.666  1       
-                                                          Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
-
-
-
-
-++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[1].ff_inst/Q  (SLICEREG)
-Path End         : mipi_rx_inst/FifoPDatxDP_reg[1].ff_inst/DF  (SLICEREG)
-Source Clock     : ClkxC (R)
-Destination Clock: ClkxC (R)
-Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
-Clock Skew       : 0.000 ns 
-Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
-Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
-Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
-                                          BB              PADI_DEL       1.366                  1.366  1       
-Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[1].ff_inst/CLK
-                                                          CLOCK PIN      0.000                  4.666  1       
-
-
-Data Path
-Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[1].ff_inst/CLK->mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[1].ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
-mipi_rx_inst/FifoPDatxDN[1]                               NET DELAY      0.300                  5.237  1       
-mipi_rx_inst/FifoPDatxDP_reg[1].ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-                                                          CONSTRAINT     0.000                  0.000  1       
-Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
-Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
-Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
-                                          BB              PADI_DEL       1.366                  1.366  1       
-Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/FifoPDatxDP_reg[1].ff_inst/CLK
-                                                          CLOCK PIN      0.000                  4.666  1       
-                                                          Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
-
-
-
-
-++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[0].ff_inst/Q  (SLICEREG)
-Path End         : mipi_rx_inst/FifoPDatxDP_reg[0].ff_inst/DF  (SLICEREG)
-Source Clock     : ClkxC (R)
-Destination Clock: ClkxC (R)
-Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
-Clock Skew       : 0.000 ns 
-Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
-Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
-Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
-                                          BB              PADI_DEL       1.366                  1.366  1       
-Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[0].ff_inst/CLK
-                                                          CLOCK PIN      0.000                  4.666  1       
-
-
-Data Path
-Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[0].ff_inst/CLK->mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[0].ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
-mipi_rx_inst/FifoPDatxDN[0]                               NET DELAY      0.300                  5.237  1       
-mipi_rx_inst/FifoPDatxDP_reg[0].ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-                                                          CONSTRAINT     0.000                  0.000  1       
-Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
-Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
-Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
-                                          BB              PADI_DEL       1.366                  1.366  1       
-Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
-main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/FifoPDatxDP_reg[0].ff_inst/CLK
-                                                          CLOCK PIN      0.000                  4.666  1       
-                                                          Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
-----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
-
-
-
-
-++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
 Path Begin       : mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[33].ff_inst/Q  (SLICEREG)
-Path End         : mipi_rx_inst/FifoSyncxSP_reg[1].ff_inst/DF  (SLICEREG)
+Path End         : mipi_rx_inst/FifoSyncPrexSP_reg[1].ff_inst/DF  (SLICEREG)
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
+Delay Ratio      : 54.3% (route), 45.7% (logic)
 Clock Skew       : 0.000 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
+Path Slack       : 0.419 ns  (Passed)
 
 
 Source Clock Path
@@ -1613,10 +1411,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[33].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
 
@@ -1625,10 +1423,10 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[33].ff_inst/CLK->mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[33].ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
-mipi_rx_inst/FifoSyncxSN[1]                               NET DELAY      0.300                  5.237  1       
-mipi_rx_inst/FifoSyncxSP_reg[1].ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
+mipi_rx_inst/FifoSyncPrexSN[1]                            NET DELAY      0.300                  5.218  1       
+mipi_rx_inst/FifoSyncPrexSP_reg[1].ff_inst/DF
+                                                          ENDPOINT       0.000                  5.218  1       
 
 
 Destination Clock Path
@@ -1641,34 +1439,34 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/FifoSyncxSP_reg[1].ff_inst/CLK
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoSyncPrexSP_reg[1].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
                                                           Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
+                                                          Hold time      0.133                  4.799  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
+Path Slack  (Passed)                                                                            0.419  
 
 
 
 
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[32].ff_inst/Q  (SLICEREG)
-Path End         : mipi_rx_inst/FifoSyncxSP_reg[0].ff_inst/DF  (SLICEREG)
+Path End         : mipi_rx_inst/FifoSyncPrexSP_reg[0].ff_inst/DF  (SLICEREG)
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
+Delay Ratio      : 54.3% (route), 45.7% (logic)
 Clock Skew       : 0.000 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
+Path Slack       : 0.419 ns  (Passed)
 
 
 Source Clock Path
@@ -1680,10 +1478,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[32].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
 
@@ -1692,10 +1490,10 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[32].ff_inst/CLK->mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL._REG.genblk1.async.do_r[32].ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
-mipi_rx_inst/FifoSyncxSN[0]                               NET DELAY      0.300                  5.237  1       
-mipi_rx_inst/FifoSyncxSP_reg[0].ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
+mipi_rx_inst/FifoSyncPrexSN[0]                            NET DELAY      0.300                  5.218  1       
+mipi_rx_inst/FifoSyncPrexSP_reg[0].ff_inst/DF
+                                                          ENDPOINT       0.000                  5.218  1       
 
 
 Destination Clock Path
@@ -1708,19 +1506,220 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoSyncPrexSP_reg[0].ff_inst/CLK
+                                                          CLOCK PIN      0.000                  4.666  1       
+                                                          Uncertainty    0.000                  4.666  
+                                                          Hold time      0.133                  4.799  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                            0.419  
+
+
+
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : mipi_rx_inst/FifoSyncPrexSP_reg[1].ff_inst/Q  (SLICEREG)
+Path End         : mipi_rx_inst/FifoSyncxSP_reg[1].ff_inst/DF  (SLICEREG)
+Source Clock     : ClkxC (R)
+Destination Clock: ClkxC (R)
+Logic Level      : 1
+Delay Ratio      : 54.3% (route), 45.7% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.419 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
+Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
+Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
+                                          BB              PADI_DEL       1.366                  1.366  1       
+Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                       0.000                  1.666  2425    
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoSyncPrexSP_reg[1].ff_inst/CLK
+                                                          CLOCK PIN      0.000                  4.666  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+mipi_rx_inst/FifoSyncPrexSP_reg[1].ff_inst/CLK->mipi_rx_inst/FifoSyncPrexSP_reg[1].ff_inst/Q
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
+mipi_rx_inst/FifoSyncPrexSP[1]                            NET DELAY      0.300                  5.218  1       
+mipi_rx_inst/FifoSyncxSP_reg[1].ff_inst/DF
+                                                          ENDPOINT       0.000                  5.218  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+                                                          CONSTRAINT     0.000                  0.000  1       
+Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
+Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
+Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
+                                          BB              PADI_DEL       1.366                  1.366  1       
+Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                       0.000                  1.666  2425    
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoSyncxSP_reg[1].ff_inst/CLK
+                                                          CLOCK PIN      0.000                  4.666  1       
+                                                          Uncertainty    0.000                  4.666  
+                                                          Hold time      0.133                  4.799  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                            0.419  
+
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : mipi_rx_inst/FifoSyncPrexSP_reg[0].ff_inst/Q  (SLICEREG)
+Path End         : mipi_rx_inst/FifoSyncxSP_reg[0].ff_inst/DF  (SLICEREG)
+Source Clock     : ClkxC (R)
+Destination Clock: ClkxC (R)
+Logic Level      : 1
+Delay Ratio      : 54.3% (route), 45.7% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.419 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
+Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
+Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
+                                          BB              PADI_DEL       1.366                  1.366  1       
+Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                       0.000                  1.666  2425    
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoSyncPrexSP_reg[0].ff_inst/CLK
+                                                          CLOCK PIN      0.000                  4.666  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+mipi_rx_inst/FifoSyncPrexSP_reg[0].ff_inst/CLK->mipi_rx_inst/FifoSyncPrexSP_reg[0].ff_inst/Q
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
+mipi_rx_inst/FifoSyncPrexSP[0]                            NET DELAY      0.300                  5.218  1       
+mipi_rx_inst/FifoSyncxSP_reg[0].ff_inst/DF
+                                                          ENDPOINT       0.000                  5.218  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+                                                          CONSTRAINT     0.000                  0.000  1       
+Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
+Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
+Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
+                                          BB              PADI_DEL       1.366                  1.366  1       
+Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                       0.000                  1.666  2425    
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
 mipi_rx_inst/FifoSyncxSP_reg[0].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
                                                           Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
+                                                          Hold time      0.133                  4.799  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
+Path Slack  (Passed)                                                                            0.419  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : mipi_rx_inst/FifoValidxSP_reg[3].ff_inst/Q  (SLICEREG)
+Path End         : mipi_rx_inst/FifoValidxSP_reg[2].ff_inst/DF  (SLICEREG)
+Source Clock     : ClkxC (R)
+Destination Clock: ClkxC (R)
+Logic Level      : 1
+Delay Ratio      : 54.3% (route), 45.7% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.419 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
+Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
+Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
+                                          BB              PADI_DEL       1.366                  1.366  1       
+Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                       0.000                  1.666  2425    
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoValidxSP_reg[3].ff_inst/CLK
+                                                          CLOCK PIN      0.000                  4.666  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+mipi_rx_inst/FifoValidxSP_reg[3].ff_inst/CLK->mipi_rx_inst/FifoValidxSP_reg[3].ff_inst/Q
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
+mipi_rx_inst/FifoValidxSP[3]                              NET DELAY      0.300                  5.218  1       
+mipi_rx_inst/FifoValidxSP_reg[2].ff_inst/DF
+                                                          ENDPOINT       0.000                  5.218  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+                                                          CONSTRAINT     0.000                  0.000  1       
+Clk48xCI                                  mira_test_top   CLOCK LATENCY  0.000                  0.000  1       
+Clk48xCI                                                  NET DELAY      0.000                  0.000  1       
+Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
+                                          BB              PADI_DEL       1.366                  1.366  1       
+Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                       0.000                  1.666  2425    
+main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoValidxSP_reg[2].ff_inst/CLK
+                                                          CLOCK PIN      0.000                  4.666  1       
+                                                          Uncertainty    0.000                  4.666  
+                                                          Hold time      0.133                  4.799  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
+----------------------------------------  --------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                            0.419  
 
 
 
@@ -1732,10 +1731,10 @@ Path End         : mipi_rx_inst/FifoValidxSP_reg[1].ff_inst/DF  (SLICEREG)
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
+Delay Ratio      : 54.3% (route), 45.7% (logic)
 Clock Skew       : 0.000 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
+Path Slack       : 0.419 ns  (Passed)
 
 
 Source Clock Path
@@ -1747,10 +1746,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
 mipi_rx_inst/FifoValidxSP_reg[2].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
 
@@ -1759,10 +1758,10 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
 mipi_rx_inst/FifoValidxSP_reg[2].ff_inst/CLK->mipi_rx_inst/FifoValidxSP_reg[2].ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
-mipi_rx_inst/FifoValidxSP[2]                              NET DELAY      0.300                  5.237  1       
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
+mipi_rx_inst/FifoValidxSP[2]                              NET DELAY      0.300                  5.218  1       
 mipi_rx_inst/FifoValidxSP_reg[1].ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
+                                                          ENDPOINT       0.000                  5.218  1       
 
 
 Destination Clock Path
@@ -1775,19 +1774,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
 mipi_rx_inst/FifoValidxSP_reg[1].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
                                                           Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
+                                                          Hold time      0.133                  4.799  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
+Path Slack  (Passed)                                                                            0.419  
 
 
 
@@ -1795,14 +1794,14 @@ Path Slack  (Passed)                                                            
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mipi_rx_inst/FifoValidxSP_reg[1].ff_inst/Q  (SLICEREG)
-Path End         : mipi_rx_inst/FifoValidxSP_reg[0].ff_inst/DF  (SLICEREG)
+Path End         : mipi_rx_inst/FifoValidxSP[0].ff_inst/DF  (SLICEREG)
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
+Delay Ratio      : 54.3% (route), 45.7% (logic)
 Clock Skew       : 0.000 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
+Path Slack       : 0.419 ns  (Passed)
 
 
 Source Clock Path
@@ -1814,10 +1813,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
 mipi_rx_inst/FifoValidxSP_reg[1].ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
 
@@ -1826,10 +1825,9 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
 mipi_rx_inst/FifoValidxSP_reg[1].ff_inst/CLK->mipi_rx_inst/FifoValidxSP_reg[1].ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
-mipi_rx_inst/FifoValidxSP[1]                              NET DELAY      0.300                  5.237  1       
-mipi_rx_inst/FifoValidxSP_reg[0].ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
+mipi_rx_inst/FifoValidxSP[1]                              NET DELAY      0.300                  5.218  1       
+mipi_rx_inst/FifoValidxSP[0].ff_inst/DF                   ENDPOINT       0.000                  5.218  1       
 
 
 Destination Clock Path
@@ -1842,19 +1840,18 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
-mipi_rx_inst/FifoValidxSP_reg[0].ff_inst/CLK
-                                                          CLOCK PIN      0.000                  4.666  1       
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
+mipi_rx_inst/FifoValidxSP[0].ff_inst/CLK                  CLOCK PIN      0.000                  4.666  1       
                                                           Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
+                                                          Hold time      0.133                  4.799  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
+Path Slack  (Passed)                                                                            0.419  
 
 
 
@@ -1866,10 +1863,10 @@ Path End         : mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_
 Source Clock     : ClkxC (R)
 Destination Clock: ClkxC (R)
 Logic Level      : 1
-Delay Ratio      : 52.5% (route), 47.5% (logic)
+Delay Ratio      : 54.3% (route), 45.7% (logic)
 Clock Skew       : 0.000 ns 
 Hold Constraint  : 0.000 ns 
-Path Slack       : 0.428 ns  (Passed)
+Path Slack       : 0.419 ns  (Passed)
 
 
 Source Clock Path
@@ -1881,10 +1878,10 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.genblk2.empty_sync_r.ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
 
@@ -1893,11 +1890,11 @@ Data Path
 Name                                      Cell/Site Name  Delay Name     Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.genblk2.empty_sync_r.ff_inst/CLK->mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.genblk2.empty_sync_r.ff_inst/Q
-                                          SLICEREG        REG_DEL        0.271                  4.937  1       
+                                          SLICEREG        REG_DEL        0.252                  4.918  1       
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/empty_sync_r
-                                                          NET DELAY      0.300                  5.237  1       
+                                                          NET DELAY      0.300                  5.218  1       
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.genblk2.empty_r.ff_inst/DF
-                                                          ENDPOINT       0.000                  5.237  1       
+                                                          ENDPOINT       0.000                  5.218  1       
 
 
 Destination Clock Path
@@ -1910,19 +1907,19 @@ Clk48xCI_pad.bb_inst/B->Clk48xCI_pad.bb_inst/O
                                           BB              PADI_DEL       1.366                  1.366  1       
 Clk48xCI_c                                                NET DELAY      0.300                  1.666  1       
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
-                                          PLL_CORE                       0.000                  1.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
 main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->main_pll_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
-                                          PLL_CORE                       0.000                  1.666  2390    
-ClkxC                                                     NET DELAY      3.000                  4.666  2390    
+                                          PLL_CORE                       0.000                  1.666  2425    
+ClkxC                                                     NET DELAY      3.000                  4.666  2425    
 mipi_rx_inst/mipi_cross_clk_fifo_inst/lscc_fifo_dc_inst/fifo_dc0/_HARD_IP.u_fifo/_SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo/_LIFCL.genblk2.empty_r.ff_inst/CLK
                                                           CLOCK PIN      0.000                  4.666  1       
                                                           Uncertainty    0.000                  4.666  
-                                                          Hold time      0.143                  4.809  
+                                                          Hold time      0.133                  4.799  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Required Time                                                                                  -4.809  
-Arrival Time                                                                                    5.237  
+Required Time                                                                                  -4.799  
+Arrival Time                                                                                    5.218  
 ----------------------------------------  --------------  -------------  -----  ---------------------  ------  
-Path Slack  (Passed)                                                                            0.428  
+Path Slack  (Passed)                                                                            0.419  
 
 
 

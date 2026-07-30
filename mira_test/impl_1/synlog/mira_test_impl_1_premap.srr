@@ -1,4 +1,4 @@
-# Wed Jul 29 01:26:11 2026
+# Wed Jul 29 23:23:41 2026
 
 
 Copyright (C) 1994-2025 Synopsys, Inc.
@@ -7,46 +7,46 @@ and may only be used pursuant to the terms and conditions of a written license a
 with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
-Build: W-2025.03LR-SP1
-Install: C:\lscc\radiant\2025.2\synpbase
+Build: X-2025.09LR-SP1
+Install: C:\lscc\radiant\2026.1\synpbase
 OS: Windows 10 or later
-Hostname: ZBOOKNB
+Hostname: LEGIONNB
 
 Implementation : impl_1
-Synopsys Lattice Technology Pre-mapping, Version map202503latsp1, Build 093R, Built Dec  2 2025 10:00:10, @
+Synopsys Lattice Technology Pre-mapping, Version map202509latsp1, Build 093R, Built May 20 2026 06:42:48, @
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 184MB peak: 184MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 185MB peak: 185MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 202MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 203MB)
 
-Reading constraint file: C:\lscc\radiant\2025.2\scripts\tcl\flow\radiant_synplify_vars.tcl
-Reading constraint file: C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1_cpe.ldc
-@L: C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1_scck.rpt 
-See clock summary report "C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1_scck.rpt"
+Reading constraint file: C:\lscc\radiant\2026.1\scripts\tcl\flow\radiant_synplify_vars.tcl
+Reading constraint file: C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1_cpe.ldc
+@L: C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1_scck.rpt 
+See clock summary report "C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\mira_test_impl_1_scck.rpt"
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 201MB peak: 202MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 200MB peak: 203MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 201MB peak: 203MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 200MB peak: 203MB)
 
-Reading custom part data from path: C:\lscc\radiant\2025.2\synpbase\lib\lattice_custom\radiant_custom_partdata.txt
+Reading custom part data from path: C:\lscc\radiant\2026.1\synpbase\lib\lattice_custom\radiant_custom_partdata.txt
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 214MB peak: 214MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 215MB peak: 215MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 214MB peak: 216MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 215MB peak: 217MB)
 
 NConnInternalConnection caching is on
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 268MB peak: 268MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 269MB peak: 269MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 268MB peak: 270MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 269MB peak: 270MB)
 
 @N: MO111 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|Tristate driver rd_data_cnt_o_1 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) on net rd_data_cnt_o_1 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":527:27:527:39|Tristate driver rd_data_cnt_o_2 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) on net rd_data_cnt_o_2 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) has its enable tied to GND.
@@ -59,13 +59,13 @@ Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 @N: MO111 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|Tristate driver wr_data_cnt_o_2 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) on net wr_data_cnt_o_2 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":526:27:526:39|Tristate driver wr_data_cnt_o_3 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) on net wr_data_cnt_o_3 (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1(verilog)) has its enable tied to GND.
 
-Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 269MB peak: 270MB)
+Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 270MB peak: 270MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 269MB peak: 270MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 270MB peak: 270MB)
 
 @N: BN115 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":192:32:192:37|Removing instance u_fwft (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":132:2:132:3|Removing sequential instance DPhyLmmiRstNxSP (in view: work.mipi_rx_10_1600(architecture_mipi_rx)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Removing sequential instance DPhyLmmiRstNxSP (in view: work.mipi_rx_10_1600(architecture_mipi_rx)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN115 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\process_image_out_fifo\rtl\process_image_out_fifo.v":170:31:170:36|Removing instance u_fwft (in view: work.process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3390:12:3390:17|Removing sequential instance _LIFCL\.afull_r (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3345:20:3345:25|Removing sequential instance _LIFCL\.genblk3\.aempty_r (in view: work.mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_hw_core_Z3_layer1(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
@@ -126,14 +126,14 @@ original code -> new code
    01000 -> 01000
    10000 -> 10000
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 276MB peak: 276MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 275MB peak: 275MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 277MB peak: 277MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 275MB peak: 276MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=84 on top level netlist mira_test_top 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 277MB peak: 278MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 276MB peak: 276MB)
 
 
 
@@ -145,9 +145,7 @@ Level     Clock                                                         Frequenc
 ------------------------------------------------------------------------------------------------------------------------------------------------
 0 -       Clk48xCI                                                      48.0 MHz      20.830        declared     default_clkgroup          0    
                                                                                                                                                 
-0 -       System                                                        200.0 MHz     5.000         system       system_clkgroup           0    
-                                                                                                                                                
-0 -       main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     2638 
+0 -       main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     2673 
 ================================================================================================================================================
 
 
@@ -160,12 +158,10 @@ Clock                                                         Load      Pin     
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Clk48xCI                                                      0         Clk48xCI(port)                                                      -                          -                 -            
                                                                                                                                                                                                       
-System                                                        0         -                                                                   -                          -                 -            
-                                                                                                                                                                                                      
-main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     2638      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     CfgFSMSRegxDP_0[3:0].C     -                 -            
+main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock     2673      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     CfgFSMSRegxDP_0[3:0].C     -                 -            
 ======================================================================================================================================================================================================
 
-@W: MT530 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3311:20:3311:25|Found inferred clock main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock which controls 2638 sequential elements including mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.genblk2\.empty_r. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\bernhard\github\scos-bp-firmware\mira_test\mipi_cross_clk_fifo\rtl\mipi_cross_clk_fifo.v":3311:20:3311:25|Found inferred clock main_pll_ipgen_lscc_pll_Z12_layer1|clkop_o_inferred_clock which controls 2673 sequential elements including mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.genblk2\.empty_r. This clock has no specified timing constraint which may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -179,13 +175,13 @@ Number of ICG latches not removed:	0
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 2506 clock pin(s) of sequential element(s)
-0 instances converted, 2506 sequential instances remain driven by gated/generated clocks
+2 gated/generated clock tree(s) driving 2541 clock pin(s) of sequential element(s)
+0 instances converted, 2541 sequential instances remain driven by gated/generated clocks
 
 ============================================================================================================================================================================ Gated/Generated Clocks =============================================================================================================================================================================
 Clock Tree ID     Driving Element                                                                                                         Drive Element Type     Unconverted Fanout     Sample Instance                                                                                                                                            Explanation                   
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_39      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP                                                              PLL                    2505                   CfgStatexDP[0]                                                                                                                                             Clock Optimization not enabled
+@KP:ckid0_39      main_pll_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP                                                              PLL                    2540                   CfgStatexDP[0]                                                                                                                                             Clock Optimization not enabled
 @KP:ckid0_40      mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER\.lscc_mipi_wrapper_rx.HARD_IP\.CIL\.u_dphy_cil.URWDCKHS     DPHY_Z7_layer1         1                      mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP\.u_fifo._SAME_WIDTH\._FIFO_ADDR\[0\]\._FIFO_DATA\[0\]\.u_fifo._LIFCL\.full_r     Clock Optimization not enabled
 =================================================================================================================================================================================================================================================================================================================================================================================
 
@@ -199,19 +195,19 @@ Summary of user generated gated clocks:
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 275MB peak: 278MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 275MB peak: 277MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 277MB peak: 278MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 277MB peak: 277MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 279MB peak: 279MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 280MB peak: 280MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 281MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 280MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Wed Jul 29 01:26:16 2026
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jul 29 23:23:42 2026
 
 ###########################################################]

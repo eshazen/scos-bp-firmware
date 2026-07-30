@@ -1,10 +1,11 @@
--ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.v"
--lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd"
--ver "C:/Users/Bernhard/github/scos-bp-firmware/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v"
--sdc "C:/Users/Bernhard/github/scos-bp-firmware/mira_test/mipi_dphy_rx/constraints/mipi_dphy_rx.ldc"
--sdc "C:/Users/Bernhard/github/scos-bp-firmware/mira_test/mipi_dphy_rx/constraints/constraint.sdc"
--path "C:/Users/Bernhard/github/scos-bp-firmware/mira_test/mipi_dphy_rx" "C:/Users/Bernhard/github/scos-bp-firmware/mira_test"
+-ver "C:/lscc/radiant/2026.1/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v"
+-sdc "C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/mipi_dphy_rx/constraints/mipi_dphy_rx.ldc"
+-sdc "C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/mipi_dphy_rx/constraints/constraint.sdc"
+-path "C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/mipi_dphy_rx" "C:/Users/Bernhard/Github/scos-bp-firmware/mira_test"
 -vh2008
 -top mipi_dphy_rx
+-isIP
 -a "LIFCL"
 -t "LIFCL-40"

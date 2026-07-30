@@ -1,13 +1,13 @@
-#OPTIONS:"|-modgen|-top|MULTADDSUB18X18WIDE|-I|C:\\lscc\\radiant\\2025.2\\synpbase\\lib|-devicelib|C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\xilinx\\unisim.v|-encrypt|-pro|-sysv|-dw|-primux|-ram|-fixsmult|-tri_compatible|-autosm|-fid2|-sharing|on|-ll|2000|-params|C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\impl_1\\syntmp\\MULTADDSUB18X18WIDE.param"
-#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\bin64\\c_ver.exe":1762882888
-#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vlog\\hypermods.v":1762882133
-#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vlog\\scemi_objects.v":1762882133
-#CUR:"C:\\lscc\\radiant\\2025.2\\synpbase\\lib\\vlog\\scemi_pipes.svh":1762882133
-#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\impl_1\\syntmp\\MULTADDSUB18X18WIDE.v":1762877536
-#CUR:"C:\\Users\\Bernhard\\github\\scos-bp-firmware\\mira_test\\impl_1\\syntmp\\MULTADDSUB18X18WIDE.param":1785313601
+#OPTIONS:"|-modgen|-top|MULTADDSUB18X18WIDE|-I|C:\\lscc\\radiant\\2026.1\\synpbase\\lib|-devicelib|C:\\lscc\\radiant\\2026.1\\synpbase\\lib\\xilinx\\unisim.v|-encrypt|-pro|-sysv|-dw|-primux|-ram|-fixsmult|-tri_compatible|-autosm|-fid2|-sharing|on|-ll|2000|-params|C:\\Users\\Bernhard\\Github\\scos-bp-firmware\\mira_test\\impl_1\\syntmp\\MULTADDSUB18X18WIDE.param"
+#CUR:"C:\\lscc\\radiant\\2026.1\\synpbase\\bin64\\c_ver.exe":1779441298
+#CUR:"C:\\lscc\\radiant\\2026.1\\synpbase\\lib\\vlog\\hypermods.v":1779441329
+#CUR:"C:\\lscc\\radiant\\2026.1\\synpbase\\lib\\vlog\\scemi_objects.v":1779441329
+#CUR:"C:\\lscc\\radiant\\2026.1\\synpbase\\lib\\vlog\\scemi_pipes.svh":1779441329
+#CUR:"C:\\Users\\Bernhard\\Github\\scos-bp-firmware\\mira_test\\impl_1\\syntmp\\MULTADDSUB18X18WIDE.v":1779441326
+#CUR:"C:\\Users\\Bernhard\\Github\\scos-bp-firmware\\mira_test\\impl_1\\syntmp\\MULTADDSUB18X18WIDE.param":1785392633
 #numinternalfiles:3
 #defaultlanguage:verilog
-0			"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v" verilog
+0			"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\syntmp\MULTADDSUB18X18WIDE.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 #Dependency Lists(Users Of)

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
-<ispXCF version="R2025.2">
+<ispXCF version="R2026.1">
 	<Comment></Comment>
 	<Chain>
 		<Comm>JTAG</Comm>
@@ -20,7 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../impl_1/mira_test_impl_1.bit</File>
-			<FileTime>03/20/26 22:33:11</FileTime>
+			<FileTime>07/29/26 23:26:14</FileTime>
+			<JedecChecksum>0xD3D7</JedecChecksum>
 			<MemoryType>Static Random Access Memory (SRAM)</MemoryType>
 			<Operation>Fast Configuration</Operation>
 			<Option>
@@ -45,7 +46,7 @@
 	</ProjectOptions>
 	<CableOptions>
 		<CableName>USB2</CableName>
-		<PortAdd>FTUSB-1</PortAdd>
-		<USBID>Lattice CrossLink-NX Eval Board B Location 2211432 Serial FT9ME96CB</USBID>
+		<PortAdd>FTUSB-0</PortAdd>
+		<USBID>Lattice CrossLink-NX Eval Board A Location 0141 Serial FT9ME96CA</USBID>
 	</CableOptions>
 </ispXCF>

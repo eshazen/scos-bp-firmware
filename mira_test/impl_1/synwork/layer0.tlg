@@ -1,39 +1,39 @@
-@N: CD231 :"C:\lscc\radiant\2025.2\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Synthesizing work.mira_test_top.architecture_mira_test_top.
-@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":70:23:70:24|Using onehot encoding for type cfgfsmstate_type. For example, enumeration sidle is mapped to "10000".
-@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":195:3:195:16|OTHERS clause is not synthesized.
-@W: CD272 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":343:14:343:32|Comparison (=) of different length arrays is always false!
+@N: CD231 :"C:\lscc\radiant\2026.1\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":16:7:16:19|Synthesizing work.mira_test_top.architecture_mira_test_top.
+@N: CD231 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":70:23:70:24|Using onehot encoding for type cfgfsmstate_type. For example, enumeration sidle is mapped to "10000".
+@N: CD604 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":195:3:195:16|OTHERS clause is not synthesized.
+@W: CD272 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":343:14:343:32|Comparison (=) of different length arrays is always false!
 Running optimization stage 1 on main_pll .......
 Finished optimization stage 1 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 157MB peak: 158MB)
-@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":14:7:14:24|Synthesizing work.spi_rxtx_with_fifo.behavioral.
-@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":46:19:46:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000000".
-@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":237:3:237:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":14:7:14:24|Synthesizing work.spi_rxtx_with_fifo.behavioral.
+@N: CD231 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":46:19:46:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "10000000".
+@N: CD604 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":237:3:237:16|OTHERS clause is not synthesized.
 Post processing for work.spi_rxtx_with_fifo.behavioral
 Running optimization stage 1 on spi_rxtx_with_fifo .......
-@W: CL240 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":23:2:23:12|Signal BuffFullxSO is floating; a simulation mismatch is possible.
-Finished optimization stage 1 on spi_rxtx_with_fifo (CPU Time 0h:00m:01s, Memory Used current: 218MB peak: 219MB)
-@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":16:7:16:15|Synthesizing work.frame_buf.architecture_frame_buf.
-@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":58:22:58:23|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000".
-@N: CD233 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":95:24:95:25|Using sequential encoding for type fifo_fsmstatetype.
-@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":279:12:279:25|OTHERS clause is not synthesized.
-@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":362:3:362:16|OTHERS clause is not synthesized.
+@W: CL240 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":23:2:23:12|Signal BuffFullxSO is floating; a simulation mismatch is possible.
+Finished optimization stage 1 on spi_rxtx_with_fifo (CPU Time 0h:00m:00s, Memory Used current: 218MB peak: 219MB)
+@N: CD630 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":16:7:16:15|Synthesizing work.frame_buf.architecture_frame_buf.
+@N: CD231 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":58:22:58:23|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000".
+@N: CD233 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":95:24:95:25|Using sequential encoding for type fifo_fsmstatetype.
+@N: CD604 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":279:12:279:25|OTHERS clause is not synthesized.
+@N: CD604 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":362:3:362:16|OTHERS clause is not synthesized.
 Post processing for work.frame_buf.architecture_frame_buf
 Running optimization stage 1 on frame_buf .......
-Finished optimization stage 1 on frame_buf (CPU Time 0h:00m:05s, Memory Used current: 389MB peak: 391MB)
-@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":14:7:14:19|Synthesizing work.process_image.architecture_process_image.
-@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":46:19:46:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000000".
-@N: CD604 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":207:3:207:16|OTHERS clause is not synthesized.
+Finished optimization stage 1 on frame_buf (CPU Time 0h:00m:01s, Memory Used current: 390MB peak: 390MB)
+@N: CD630 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":14:7:14:19|Synthesizing work.process_image.architecture_process_image.
+@N: CD231 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":46:19:46:20|Using onehot encoding for type fsmstatetype. For example, enumeration sidle is mapped to "100000000000".
+@N: CD604 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":207:3:207:16|OTHERS clause is not synthesized.
 Running optimization stage 1 on process_image_out_fifo .......
-Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 389MB peak: 391MB)
-@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":15:7:15:18|Synthesizing work.img_mean_std.architecture_img_mean_std.
+Finished optimization stage 1 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 390MB peak: 390MB)
+@N: CD630 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":15:7:15:18|Synthesizing work.img_mean_std.architecture_img_mean_std.
 Post processing for work.img_mean_std.architecture_img_mean_std
 Running optimization stage 1 on img_mean_std .......
-Finished optimization stage 1 on img_mean_std (CPU Time 0h:00m:00s, Memory Used current: 391MB peak: 393MB)
+Finished optimization stage 1 on img_mean_std (CPU Time 0h:00m:00s, Memory Used current: 391MB peak: 392MB)
 Post processing for work.process_image.architecture_process_image
 Running optimization stage 1 on process_image .......
 Finished optimization stage 1 on process_image (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
-@N: CD630 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":14:7:14:13|Synthesizing work.mipi_rx.architecture_mipi_rx.
-@N: CD231 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":65:19:65:20|Using onehot encoding for type fsmstatetype. For example, enumeration swaitfssync is mapped to "100000000000".
+@N: CD630 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":14:7:14:13|Synthesizing work.mipi_rx.architecture_mipi_rx.
+@N: CD231 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":67:19:67:20|Using onehot encoding for type fsmstatetype. For example, enumeration swaitfssync is mapped to "100000000000".
 Running optimization stage 1 on mipi_cross_clk_fifo .......
 Finished optimization stage 1 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
 Running optimization stage 1 on mipi_dphy_rx .......
@@ -43,27 +43,27 @@ Running optimization stage 1 on mipi_rx .......
 Finished optimization stage 1 on mipi_rx (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
 Post processing for work.mira_test_top.architecture_mira_test_top
 Running optimization stage 1 on mira_test_top .......
-@W: CL271 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning unused bits 6 to 4 of p_cfg_memzing.CfgFSMSRegxDP_0_2(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
-@W: CL111 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL271 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning unused bits 6 to 4 of p_cfg_memzing.CfgFSMSRegxDP_0_2(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(1) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_15(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(2) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|All reachable assignments to p_cfg_memzing.CfgRegxDP_14(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
 Finished optimization stage 1 on mira_test_top (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
 Running optimization stage 2 on mipi_dphy_rx .......
-Finished optimization stage 2 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 360MB peak: 393MB)
+Finished optimization stage 2 on mipi_dphy_rx (CPU Time 0h:00m:00s, Memory Used current: 361MB peak: 393MB)
 Running optimization stage 2 on mipi_cross_clk_fifo .......
-Finished optimization stage 2 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 360MB peak: 393MB)
+Finished optimization stage 2 on mipi_cross_clk_fifo (CPU Time 0h:00m:00s, Memory Used current: 361MB peak: 393MB)
 Running optimization stage 2 on mipi_rx_10_1600 .......
-@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":132:2:132:3|Trying to extract state machine for register StatexDP.
+@N: CL201 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mipi_rx.vhd":134:2:134:3|Trying to extract state machine for register StatexDP.
 Extracted state machine for register StatexDP
 State machine has 11 reachable states with original encodings of:
    000000000001
@@ -77,19 +77,19 @@ State machine has 11 reachable states with original encodings of:
    001000000000
    010000000000
    100000000000
-Finished optimization stage 2 on mipi_rx_10_1600 (CPU Time 0h:00m:00s, Memory Used current: 362MB peak: 393MB)
+Finished optimization stage 2 on mipi_rx_10_1600 (CPU Time 0h:00m:00s, Memory Used current: 363MB peak: 393MB)
 Running optimization stage 2 on img_mean_std_10_1600 .......
-@W: CL279 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bits 31 to 23 of PixValSqCombxDP(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bits 21 to 13 of PixValCombxDP(21 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Register bit PixValCombxDP(12) is always 0.
-@N: CL189 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Register bit PixValSqCombxDP(22) is always 0.
-@W: CL260 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bit 22 of PixValSqCombxDP(22 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bit 12 of PixValCombxDP(12 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Finished optimization stage 2 on img_mean_std_10_1600 (CPU Time 0h:00m:02s, Memory Used current: 391MB peak: 393MB)
+@W: CL279 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bits 31 to 23 of PixValSqCombxDP(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bits 21 to 13 of PixValCombxDP(21 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Register bit PixValCombxDP(12) is always 0.
+@N: CL189 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Register bit PixValSqCombxDP(22) is always 0.
+@W: CL260 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bit 22 of PixValSqCombxDP(22 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\img_mean_std.vhd":90:2:90:3|Pruning register bit 12 of PixValCombxDP(12 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Finished optimization stage 2 on img_mean_std_10_1600 (CPU Time 0h:00m:00s, Memory Used current: 392MB peak: 393MB)
 Running optimization stage 2 on process_image_out_fifo .......
-Finished optimization stage 2 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 372MB peak: 393MB)
+Finished optimization stage 2 on process_image_out_fifo (CPU Time 0h:00m:00s, Memory Used current: 376MB peak: 393MB)
 Running optimization stage 2 on process_image_10_1600 .......
-@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":88:2:88:3|Trying to extract state machine for register StatexDP.
+@N: CL201 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\process_image.vhd":88:2:88:3|Trying to extract state machine for register StatexDP.
 Extracted state machine for register StatexDP
 State machine has 12 reachable states with original encodings of:
    000000000001
@@ -104,11 +104,11 @@ State machine has 12 reachable states with original encodings of:
    001000000000
    010000000000
    100000000000
-Finished optimization stage 2 on process_image_10_1600 (CPU Time 0h:00m:00s, Memory Used current: 374MB peak: 393MB)
+Finished optimization stage 2 on process_image_10_1600 (CPU Time 0h:00m:00s, Memory Used current: 376MB peak: 393MB)
 Running optimization stage 2 on frame_buf_10_1600_480 .......
-@N: CL134 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Found RAM FIFOMemxDP, depth=16, width=64
-@N: CL134 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Found RAM MemxDP, depth=16000, width=64
-@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":123:2:123:3|Trying to extract state machine for register StatexDP.
+@N: CL134 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Found RAM FIFOMemxDP, depth=16, width=64
+@N: CL134 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":154:2:154:3|Found RAM MemxDP, depth=16000, width=64
+@N: CL201 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":123:2:123:3|Trying to extract state machine for register StatexDP.
 Extracted state machine for register StatexDP
 State machine has 9 reachable states with original encodings of:
    000000001
@@ -120,15 +120,15 @@ State machine has 9 reachable states with original encodings of:
    001000000
    010000000
    100000000
-@W: CL246 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":33:1:33:11|Input port bits 7 to 4 of sliceselxdi(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
-Finished optimization stage 2 on frame_buf_10_1600_480 (CPU Time 0h:00m:00s, Memory Used current: 381MB peak: 393MB)
+@W: CL246 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\frame_buf.vhd":33:1:33:11|Input port bits 7 to 4 of sliceselxdi(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+Finished optimization stage 2 on frame_buf_10_1600_480 (CPU Time 0h:00m:00s, Memory Used current: 382MB peak: 393MB)
 Running optimization stage 2 on spi_rxtx_with_fifo .......
-@N: CL134 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Found RAM FIFOMemxDP, depth=8192, width=8
-@W: CL190 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Pruning register bits 7 to 5 of FIFOBytesAvailableHighBytexDP(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Trying to extract state machine for register StatexDP.
+@N: CL134 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":116:2:116:3|Found RAM FIFOMemxDP, depth=8192, width=8
+@W: CL190 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Optimizing register bit FIFOBytesAvailableHighBytexDP(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Pruning register bits 7 to 5 of FIFOBytesAvailableHighBytexDP(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\spi_rxtx_with_fifo.vhd":88:2:88:3|Trying to extract state machine for register StatexDP.
 Extracted state machine for register StatexDP
 State machine has 8 reachable states with original encodings of:
    00000001
@@ -139,14 +139,14 @@ State machine has 8 reachable states with original encodings of:
    00100000
    01000000
    10000000
-Finished optimization stage 2 on spi_rxtx_with_fifo (CPU Time 0h:00m:00s, Memory Used current: 381MB peak: 393MB)
+Finished optimization stage 2 on spi_rxtx_with_fifo (CPU Time 0h:00m:00s, Memory Used current: 382MB peak: 393MB)
 Running optimization stage 2 on main_pll .......
-Finished optimization stage 2 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 381MB peak: 393MB)
+Finished optimization stage 2 on main_pll (CPU Time 0h:00m:00s, Memory Used current: 382MB peak: 393MB)
 Running optimization stage 2 on mira_test_top .......
-@W: CL260 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning register bit 3 of CfgRegxDP_14(3 downto 2). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL169 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning unused register p_cfg_memzing.CfgRegxDP_15(0). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning unused register CfgRegxDP_14(2). Make sure that there are no unused intermediate registers.
-@N: CL201 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Trying to extract state machine for register CfgStatexDP.
+@W: CL260 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning register bit 3 of CfgRegxDP_14(3 downto 2). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning unused register p_cfg_memzing.CfgRegxDP_15(0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Pruning unused register CfgRegxDP_14(2). Make sure that there are no unused intermediate registers.
+@N: CL201 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":139:2:139:3|Trying to extract state machine for register CfgStatexDP.
 Extracted state machine for register CfgStatexDP
 State machine has 5 reachable states with original encodings of:
    00001
@@ -154,12 +154,12 @@ State machine has 5 reachable states with original encodings of:
    00100
    01000
    10000
-@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":30:1:30:17|Input UartRTSntoFPGAxDI is unused.
-@N: CL159 :"C:\Users\Bernhard\github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":33:1:33:17|Input UartFTDItoFPGAxDI is unused.
-Finished optimization stage 2 on mira_test_top (CPU Time 0h:00m:00s, Memory Used current: 381MB peak: 393MB)
+@N: CL159 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":30:1:30:17|Input UartRTSntoFPGAxDI is unused.
+@N: CL159 :"C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\source\impl_1\mira_test_top.vhd":33:1:33:17|Input UartFTDItoFPGAxDI is unused.
+Finished optimization stage 2 on mira_test_top (CPU Time 0h:00m:00s, Memory Used current: 383MB peak: 393MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================
-@L: C:\Users\Bernhard\github\scos-bp-firmware\mira_test\impl_1\synwork\layer0.duruntime
+@L: C:\Users\Bernhard\Github\scos-bp-firmware\mira_test\impl_1\synwork\layer0.duruntime
 
 

@@ -1,21 +1,6 @@
 Runtime Summary:
 ================
 
-	* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1
-		Hardware Generation Phase   : 0h:00m:01s
-
-	* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1
-		Hardware Generation Phase   : 0h:00m:01s
-
-	* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1
-		Hardware Generation Phase   : 0h:00m:01s
-
-	* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1
-		Hardware Generation Phase   : 0h:00m:02s
-
-	* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1
-		Hardware Generation Phase   : 0h:00m:01s
-
 	The following design units have negligible CPU times:
 	=====================================================
 		* Library: work, DesignUnit: main_pll
@@ -28,6 +13,10 @@ Runtime Summary:
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_fifo_hw_core_Z10_layer1
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_fifo_fwft_fabric_reg_0s_64s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: mipi_dphy_rx
@@ -36,6 +25,10 @@ Runtime Summary:
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_clock_divider_96s_5s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: mipi_cross_clk_fifo
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1
@@ -44,19 +37,11 @@ Runtime Summary:
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_hard_fifo_dc_Z2_layer1
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_fwft_fabric_reg_0s_34s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: PLL
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_mipi_wrapper_rx_Z6_layer1
-			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: FIFO16K
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1
-			Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1
-			Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: mipi_dphy_rx_ipgen_lscc_mipi_dphy_Z5_layer1
-			Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_main_Z1_layer1
-			Optimization Phase: Negligible CPU time

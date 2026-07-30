@@ -32,6 +32,7 @@ set_option -default_enum_encoding default
 set_option -write_apr_constraint 1
 
 #synplifyPro options
+set_option -dcc_insertion none
 set_option -fix_gated_and_generated_clocks 0
 set_option -update_models_cp 0
 set_option -resolve_multiple_driver 0
@@ -45,29 +46,29 @@ set_option -automatic_compile_point 0
 
 set_option -dup false
 set_option -disable_io_insertion false
-add_file -constraint {C:/lscc/radiant/2025.2/scripts/tcl/flow/radiant_synplify_vars.tcl}
+add_file -constraint {C:/lscc/radiant/2026.1/scripts/tcl/flow/radiant_synplify_vars.tcl}
 add_file -constraint {mira_test_impl_1_cpe.ldc}
-add_file -verilog {C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.v}
-add_file -vhdl -lib pmi {C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd}
-add_file -vhdl -lib "work" {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/mira_test_top.vhd}
-add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v}
-add_file -vhdl -lib "work" {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/mipi_rx.vhd}
-add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v}
-add_file -vhdl -lib "work" {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/uart_tx.vhd}
-add_file -vhdl -lib "work" {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/frame_buf.vhd}
-add_file -vhdl -lib "work" {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/uart_rx.vhd}
-add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/main_pll/rtl/main_pll.v}
-add_file -vhdl -lib "work" {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/process_image.vhd}
-add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/process_image_out_fifo/rtl/process_image_out_fifo.v}
-add_file -vhdl -lib "work" {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/img_mean_std.vhd}
-add_file -vhdl -lib "work" {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/source/impl_1/spi_rxtx_with_fifo.vhd}
+add_file -verilog {C:/lscc/radiant/2026.1/ip/pmi/pmi_lifcl.v}
+add_file -vhdl -lib pmi {C:/lscc/radiant/2026.1/ip/pmi/pmi_lifcl.vhd}
+add_file -vhdl -lib "work" {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/source/impl_1/mira_test_top.vhd}
+add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/mipi_dphy_rx/rtl/mipi_dphy_rx.v}
+add_file -vhdl -lib "work" {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/source/impl_1/mipi_rx.vhd}
+add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/mipi_cross_clk_fifo/rtl/mipi_cross_clk_fifo.v}
+add_file -vhdl -lib "work" {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/source/impl_1/uart_tx.vhd}
+add_file -vhdl -lib "work" {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/source/impl_1/frame_buf.vhd}
+add_file -vhdl -lib "work" {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/source/impl_1/uart_rx.vhd}
+add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/main_pll/rtl/main_pll.v}
+add_file -vhdl -lib "work" {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/source/impl_1/process_image.vhd}
+add_file -verilog -vlog_std v2001 {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/process_image_out_fifo/rtl/process_image_out_fifo.v}
+add_file -vhdl -lib "work" {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/source/impl_1/img_mean_std.vhd}
+add_file -vhdl -lib "work" {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/source/impl_1/spi_rxtx_with_fifo.vhd}
 #-- top module name
 set_option -top_module mira_test_top
-set_option -include_path {C:/Users/Bernhard/github/scos-bp-firmware/mira_test}
-set_option -include_path {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/main_pll}
-set_option -include_path {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/mipi_cross_clk_fifo}
-set_option -include_path {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/mipi_dphy_rx}
-set_option -include_path {C:/Users/Bernhard/github/scos-bp-firmware/mira_test/process_image_out_fifo}
+set_option -include_path {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test}
+set_option -include_path {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/main_pll}
+set_option -include_path {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/mipi_cross_clk_fifo}
+set_option -include_path {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/mipi_dphy_rx}
+set_option -include_path {C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/process_image_out_fifo}
 
 #-- set result format/file last
 project -result_format "vm"

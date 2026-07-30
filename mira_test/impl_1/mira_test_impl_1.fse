@@ -1,29 +1,29 @@
 
-fsm_encoding {1013221321} onehot
+fsm_encoding {1013421341} onehot
 
-fsm_state_encoding {1013221321} swaitfssync {00000000001}
+fsm_state_encoding {1013421341} swaitfssync {00000000001}
 
-fsm_state_encoding {1013221321} sfsdi {00000000010}
+fsm_state_encoding {1013421341} sfsdi {00000000010}
 
-fsm_state_encoding {1013221321} swaitlssync {00000000100}
+fsm_state_encoding {1013421341} swaitlssync {00000000100}
 
-fsm_state_encoding {1013221321} slsdi {00000001000}
+fsm_state_encoding {1013421341} slsdi {00000001000}
 
-fsm_state_encoding {1013221321} sreadldatafirst {00000010000}
+fsm_state_encoding {1013421341} sreadldatafirst {00000010000}
 
-fsm_state_encoding {1013221321} sreadldata0 {00000100000}
+fsm_state_encoding {1013421341} sreadldata0 {00000100000}
 
-fsm_state_encoding {1013221321} sreadldata1 {00001000000}
+fsm_state_encoding {1013421341} sreadldata1 {00001000000}
 
-fsm_state_encoding {1013221321} sreadldata2 {00010000000}
+fsm_state_encoding {1013421341} sreadldata2 {00010000000}
 
-fsm_state_encoding {1013221321} sreadldata3 {00100000000}
+fsm_state_encoding {1013421341} sreadldata3 {00100000000}
 
-fsm_state_encoding {1013221321} sreadldata4 {01000000000}
+fsm_state_encoding {1013421341} sreadldata4 {01000000000}
 
-fsm_state_encoding {1013221321} sreadldatalast {10000000000}
+fsm_state_encoding {1013421341} sreadldatalast {10000000000}
 
-fsm_registers {1013221321} {StatexDP[0]}  {StatexDP[1]}  {StatexDP[2]}  {StatexDP[3]}  {StatexDP[4]}  {StatexDP[5]}  {StatexDP[6]}  {StatexDP[7]}  {StatexDP[8]}  {StatexDP[9]}  {StatexDP[10]} 
+fsm_registers {1013421341} {StatexDP[0]}  {StatexDP[1]}  {StatexDP[2]}  {StatexDP[3]}  {StatexDP[4]}  {StatexDP[5]}  {StatexDP[6]}  {StatexDP[7]}  {StatexDP[8]}  {StatexDP[9]}  {StatexDP[10]} 
 
 fsm_encoding {16882882} onehot
 

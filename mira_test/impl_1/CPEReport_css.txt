@@ -1,15 +1,11 @@
 ###File created by Lattice CPE. Do not modify.###
-create_clock -name {Clk48xCI} -period 20.83 [get_ports Clk48xCI] originating in top was kept as is.
-
-create_clock -name {clki_i} -period 20.833 [get_ports clki_i] originating in instance main_pll_inst in IP main_pll was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+create_clock -name {sync_clk_i} -period 10.416 [get_ports sync_clk_i] originating in instance mipi_dphy_rx_inst in IP constraint was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
 
 create_clock -name {wr_clk_i} -period 8 [get_ports wr_clk_i] originating in instance mipi_cross_clk_fifo_inst in IP mipi_cross_clk_fifo was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
 
 create_clock -name {rd_clk_i} -period 8 [get_ports rd_clk_i] originating in instance mipi_cross_clk_fifo_inst in IP mipi_cross_clk_fifo was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
 
-create_clock -name {sync_clk_i} -period 10.416 [get_ports sync_clk_i] originating in instance mipi_dphy_rx_inst in IP constraint was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
-
-# IO_TYPE constraint - Refclk originating in instance main_pll_inst in IP main_pll was kept as is.
+create_clock -name {clki_i} -period 20.833 [get_ports clki_i] originating in instance main_pll_inst in IP main_pll was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
 
 # Clock period calculations for different clock domains originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
 
@@ -42,5 +38,9 @@ create_clock -name {sync_clk_i} -period 10.416 [get_ports sync_clk_i] originatin
 #	set_false_path -to [get_pins -hierarchical u_eclkdiv.ECLKDIV_inst/DIVRST] originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
 
 #} originating in instance mipi_dphy_rx_inst in IP constraint was kept as is.
+
+# IO_TYPE constraint - Refclk originating in instance main_pll_inst in IP main_pll was kept as is.
+
+create_clock -name {Clk48xCI} -period 20.83 [get_ports Clk48xCI] originating in top was kept as is.
 
 

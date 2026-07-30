@@ -1,14 +1,7 @@
 Runtime Summary:
 ================
 
-	*Library: work, Entity: img_mean_std_10_1600, Architecture: architecture_img_mean_std
-		Optimization Phase          : 0h:00m:02s
-
 	*Library: work, Entity: frame_buf_10_1600_480, Architecture: architecture_frame_buf
-		Hardware Generation Phase   : 0h:00m:01s
-		Initial Cleanup Phase       : 0h:00m:05s
-
-	*Library: work, Entity: spi_rxtx_with_fifo, Architecture: behavioral
 		Initial Cleanup Phase       : 0h:00m:01s
 
 	The following design units have negligible CPU times:
@@ -16,11 +9,13 @@ Runtime Summary:
 		*Library: work, Entity: mipi_rx_10_1600, Architecture: architecture_mipi_rx
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: img_mean_std_10_1600, Architecture: architecture_img_mean_std
-			Hardware Generation Phase, Initial Cleanup Phase: Negligible CPU time
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: process_image_10_1600, Architecture: architecture_process_image
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		*Library: work, Entity: spi_rxtx_with_fifo, Architecture: behavioral
+		*Library: work, Entity: frame_buf_10_1600_480, Architecture: architecture_frame_buf
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: spi_rxtx_with_fifo, Architecture: behavioral
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: mira_test_top, Architecture: architecture_mira_test_top
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: mipi_dphy_rx, Architecture: syn_black_box
@@ -31,5 +26,3 @@ Runtime Summary:
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: main_pll, Architecture: syn_black_box
 			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		*Library: work, Entity: frame_buf_10_1600_480, Architecture: architecture_frame_buf
-			Optimization Phase: Negligible CPU time

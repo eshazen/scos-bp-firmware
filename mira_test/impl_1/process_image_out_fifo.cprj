@@ -1,9 +1,10 @@
--ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.v"
--lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_lifcl.vhd"
--ver "C:/Users/Bernhard/github/scos-bp-firmware/mira_test/process_image_out_fifo/rtl/process_image_out_fifo.v"
--sdc "C:/Users/Bernhard/github/scos-bp-firmware/mira_test/process_image_out_fifo/constraints/process_image_out_fifo.ldc"
--path "C:/Users/Bernhard/github/scos-bp-firmware/mira_test/process_image_out_fifo" "C:/Users/Bernhard/github/scos-bp-firmware/mira_test"
+-ver "C:/lscc/radiant/2026.1/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/process_image_out_fifo/rtl/process_image_out_fifo.v"
+-sdc "C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/process_image_out_fifo/constraints/process_image_out_fifo.ldc"
+-path "C:/Users/Bernhard/Github/scos-bp-firmware/mira_test/process_image_out_fifo" "C:/Users/Bernhard/Github/scos-bp-firmware/mira_test"
 -vh2008
 -top process_image_out_fifo
+-isIP
 -a "LIFCL"
 -t "LIFCL-40"

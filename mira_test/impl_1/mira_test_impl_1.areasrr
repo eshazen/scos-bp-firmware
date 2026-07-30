@@ -5,10 +5,10 @@ and may only be used pursuant to the terms and conditions of a written license a
 with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
-Build: W-2025.03LR-SP1
-Install: C:\lscc\radiant\2025.2\synpbase
+Build: X-2025.09LR-SP1
+Install: C:\lscc\radiant\2026.1\synpbase
 OS: Windows 10 or later
-Hostname: ZBOOKNB
+Hostname: LEGIONNB
 
 Implementation : impl_1
 
@@ -24,28 +24,28 @@ SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 BFD1P3LX        2                                       
-FD1P3DX         1983                                    
+FD1P3DX         1984                                    
 FD1P3BX         12                                      
-FD1P3IX         290                                     
+FD1P3IX         324                                     
 FD1P3JX         4                                       
                                                         
-Total FLOPS     2291               100 %                
+Total FLOPS     2326               100 %                
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mira_test_top:	2291 (36.57 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mira_test_top:	2326 (36.99 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
 INV                    22                                      
-LUT4                   2431                                    
-WIDEFN9                418                                     
+LUT4                   2425                                    
+WIDEFN9                412                                     
 CCU2                   923                                     
                                                                
-Total LUTS             2871               100 %                
+Total LUTS             2859               100 %                
 Total CARRY CHAINS     923                100 %                
 ===============================================================
-Total COMBINATIONAL LOGIC in the block mira_test_top:	3794 (60.56 % Utilization)
+Total COMBINATIONAL LOGIC in the block mira_test_top:	3782 (60.15 % Utilization)
 
 
 DSP
@@ -94,7 +94,7 @@ PLL                 1
                                                             
 Total BLACK BOX     142                100 %                
 ============================================================
-Total BLACKBOX in the block mira_test_top:	142 (2.27 % Utilization)
+Total BLACKBOX in the block mira_test_top:	142 (2.26 % Utilization)
 
 ---------------------------------------------------------------------------
 ########   Utilization report for  cell:   frame_buf_10_1600_480   ########
@@ -109,23 +109,23 @@ FD1P3BX         1
 FD1P3IX         113                                     
 FD1P3JX         4                                       
                                                         
-Total FLOPS     198                8.64 %               
+Total FLOPS     198                8.51 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block frame_buf_inst:	198 (3.16 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block frame_buf_inst:	198 (3.15 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
 INV                    1                                       
-LUT4                   318                                     
-WIDEFN9                33                                      
+LUT4                   311                                     
+WIDEFN9                26                                      
 CCU2                   72                                      
                                                                
-Total LUTS             352                12.3 %               
+Total LUTS             338                11.8 %               
 Total CARRY CHAINS     72                 7.8 %                
 ===============================================================
-Total COMBINATIONAL LOGIC in the block frame_buf_inst:	424 (6.77 % Utilization)
+Total COMBINATIONAL LOGIC in the block frame_buf_inst:	410 (6.52 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -159,7 +159,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            1                                       
                                                        
-Total LUTS     1                  0.03480 %            
+Total LUTS     1                  0.0350 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block main_pll_inst:	1 (0.02 % Utilization)
 
@@ -186,7 +186,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            1                                       
                                                        
-Total LUTS     1                  0.03480 %            
+Total LUTS     1                  0.0350 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block main_pll_inst.lscc_pll_inst:	1 (0.02 % Utilization)
 
@@ -210,27 +210,26 @@ Instance path:   mipi_rx_inst
 SEQUENTIAL ELEMENTS
 Name            Total elements     Utilization     Notes
 --------------------------------------------------------
-FD1P3DX         36                                      
+FD1P3DX         37                                      
 FD1P3BX         6                                       
-FD1P3IX         136                                     
+FD1P3IX         170                                     
                                                         
-Total FLOPS     178                7.77 %               
+Total FLOPS     213                9.16 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst:	178 (2.84 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst:	213 (3.39 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
 INV                    10                                      
-LUT4                   211                                     
-WIDEFN9                7                                       
+LUT4                   212                                     
 CCU2                   13                                      
                                                                
-Total LUTS             228                7.94 %               
+Total LUTS             222                7.76 %               
 Total CARRY CHAINS     13                 1.41 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block mipi_rx_inst:	241 (3.85 % Utilization)
+Total COMBINATIONAL LOGIC in the block mipi_rx_inst:	235 (3.74 % Utilization)
 
 
 BLACKBOX
@@ -257,7 +256,7 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.62 %               
+Total FLOPS     37                 1.59 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst:	37 (0.59 % Utilization)
 
@@ -267,7 +266,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.06970 %            
+Total LUTS     2                  0.070 %              
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst:	2 (0.03 % Utilization)
 
@@ -281,7 +280,7 @@ FIFO16K             1
                                                             
 Total BLACK BOX     11                 7.75 %               
 ============================================================
-Total BLACKBOX in the block mipi_rx_inst.mipi_cross_clk_fifo_inst:	11 (0.18 % Utilization)
+Total BLACKBOX in the block mipi_rx_inst.mipi_cross_clk_fifo_inst:	11 (0.17 % Utilization)
 
 ------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   mipi_cross_clk_fifo_ipgen_lscc_fifo_dc_Z4_layer1   ########
@@ -295,7 +294,7 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.62 %               
+Total FLOPS     37                 1.59 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst:	37 (0.59 % Utilization)
 
@@ -305,7 +304,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.06970 %            
+Total LUTS     2                  0.070 %              
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst:	2 (0.03 % Utilization)
 
@@ -333,7 +332,7 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.62 %               
+Total FLOPS     37                 1.59 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0:	37 (0.59 % Utilization)
 
@@ -343,7 +342,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.06970 %            
+Total LUTS     2                  0.070 %              
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0:	2 (0.03 % Utilization)
 
@@ -371,7 +370,7 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.62 %               
+Total FLOPS     37                 1.59 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo:	37 (0.59 % Utilization)
 
@@ -381,7 +380,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.06970 %            
+Total LUTS     2                  0.070 %              
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo:	2 (0.03 % Utilization)
 
@@ -409,7 +408,7 @@ Name            Total elements     Utilization     Notes
 FD1P3BX         3                                       
 FD1P3IX         34                                      
                                                         
-Total FLOPS     37                 1.62 %               
+Total FLOPS     37                 1.59 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	37 (0.59 % Utilization)
 
@@ -419,7 +418,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 INV            2                                       
                                                        
-Total LUTS     2                  0.06970 %            
+Total LUTS     2                  0.070 %              
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_cross_clk_fifo_inst.lscc_fifo_dc_inst.fifo_dc0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	2 (0.03 % Utilization)
 
@@ -446,7 +445,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3IX         4                                       
                                                         
-Total FLOPS     4                  0.1750 %             
+Total FLOPS     4                  0.1720 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst:	4 (0.06 % Utilization)
 
@@ -457,7 +456,7 @@ Name           Total elements     Utilization     Notes
 INV            2                                       
 LUT4           6                                       
                                                        
-Total LUTS     8                  0.2790 %             
+Total LUTS     8                  0.280 %              
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_dphy_rx_inst:	8 (0.13 % Utilization)
 
@@ -484,7 +483,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3IX         4                                       
                                                         
-Total FLOPS     4                  0.1750 %             
+Total FLOPS     4                  0.1720 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst:	4 (0.06 % Utilization)
 
@@ -495,7 +494,7 @@ Name           Total elements     Utilization     Notes
 INV            2                                       
 LUT4           6                                       
                                                        
-Total LUTS     8                  0.2790 %             
+Total LUTS     8                  0.280 %              
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst:	8 (0.13 % Utilization)
 
@@ -522,7 +521,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3IX         4                                       
                                                         
-Total FLOPS     4                  0.1750 %             
+Total FLOPS     4                  0.1720 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx:	4 (0.06 % Utilization)
 
@@ -533,7 +532,7 @@ Name           Total elements     Utilization     Notes
 INV            2                                       
 LUT4           6                                       
                                                        
-Total LUTS     8                  0.2790 %             
+Total LUTS     8                  0.280 %              
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx:	8 (0.13 % Utilization)
 
@@ -560,7 +559,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3IX         4                                       
                                                         
-Total FLOPS     4                  0.1750 %             
+Total FLOPS     4                  0.1720 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider:	4 (0.06 % Utilization)
 
@@ -571,7 +570,7 @@ Name           Total elements     Utilization     Notes
 INV            1                                       
 LUT4           4                                       
                                                        
-Total LUTS     5                  0.1740 %             
+Total LUTS     5                  0.1750 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block mipi_rx_inst.mipi_dphy_rx_inst.lscc_mipi_dphy_inst.RECEIVER.lscc_mipi_wrapper_rx.HARD_IP.CIL.u_clock_divider:	5 (0.08 % Utilization)
 
@@ -597,22 +596,22 @@ Name            Total elements     Utilization     Notes
 FD1P3DX         1675                                    
 FD1P3BX         1                                       
                                                         
-Total FLOPS     1676               73.2 %               
+Total FLOPS     1676               72.1 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block process_image_inst:	1676 (26.75 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block process_image_inst:	1676 (26.65 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
-LUT4                   1732                                    
-WIDEFN9                378                                     
+LUT4                   1733                                    
+WIDEFN9                380                                     
 CCU2                   787                                     
                                                                
-Total LUTS             2110               73.5 %               
+Total LUTS             2113               73.9 %               
 Total CARRY CHAINS     787                85.3 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block process_image_inst:	2897 (46.24 % Utilization)
+Total COMBINATIONAL LOGIC in the block process_image_inst:	2900 (46.12 % Utilization)
 
 
 DSP
@@ -647,9 +646,9 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         1533                                    
                                                         
-Total FLOPS     1533               66.9 %               
+Total FLOPS     1533               65.9 %               
 ========================================================
-Total SEQUENTIAL ELEMENTS in the block process_image_inst.img_mean_std_inst:	1533 (24.47 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block process_image_inst.img_mean_std_inst:	1533 (24.38 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -659,10 +658,10 @@ LUT4                   1628
 WIDEFN9                378                                     
 CCU2                   787                                     
                                                                
-Total LUTS             2006               69.9 %               
+Total LUTS             2006               70.2 %               
 Total CARRY CHAINS     787                85.3 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block process_image_inst.img_mean_std_inst:	2793 (44.58 % Utilization)
+Total COMBINATIONAL LOGIC in the block process_image_inst.img_mean_std_inst:	2793 (44.42 % Utilization)
 
 
 DSP
@@ -696,7 +695,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         64                                      
                                                         
-Total FLOPS     64                 2.79 %               
+Total FLOPS     64                 2.75 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst:	64 (1.02 % Utilization)
 
@@ -706,7 +705,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 LUT4           1                                       
                                                        
-Total LUTS     1                  0.03480 %            
+Total LUTS     1                  0.0350 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst:	1 (0.02 % Utilization)
 
@@ -720,7 +719,7 @@ FIFO16K             32
                                                             
 Total BLACK BOX     104                73.2 %               
 ============================================================
-Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst:	104 (1.66 % Utilization)
+Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst:	104 (1.65 % Utilization)
 
 -------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   process_image_out_fifo_ipgen_lscc_fifo_Z11_layer1   ########
@@ -733,7 +732,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         64                                      
                                                         
-Total FLOPS     64                 2.79 %               
+Total FLOPS     64                 2.75 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst:	64 (1.02 % Utilization)
 
@@ -743,7 +742,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 LUT4           1                                       
                                                        
-Total LUTS     1                  0.03480 %            
+Total LUTS     1                  0.0350 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst:	1 (0.02 % Utilization)
 
@@ -757,7 +756,7 @@ FIFO16K             32
                                                             
 Total BLACK BOX     102                71.8 %               
 ============================================================
-Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst:	102 (1.63 % Utilization)
+Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst:	102 (1.62 % Utilization)
 
 -----------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   process_image_out_fifo_ipgen_lscc_fifo_main_Z8_layer1   ########
@@ -770,7 +769,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         64                                      
                                                         
-Total FLOPS     64                 2.79 %               
+Total FLOPS     64                 2.75 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0:	64 (1.02 % Utilization)
 
@@ -780,7 +779,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 LUT4           1                                       
                                                        
-Total LUTS     1                  0.03480 %            
+Total LUTS     1                  0.0350 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0:	1 (0.02 % Utilization)
 
@@ -794,7 +793,7 @@ FIFO16K             32
                                                             
 Total BLACK BOX     100                70.4 %               
 ============================================================
-Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0:	100 (1.60 % Utilization)
+Total BLACKBOX in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0:	100 (1.59 % Utilization)
 
 -----------------------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   process_image_out_fifo_ipgen_lscc_hard_fifo_Z9_layer1   ########
@@ -807,7 +806,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         64                                      
                                                         
-Total FLOPS     64                 2.79 %               
+Total FLOPS     64                 2.75 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo:	64 (1.02 % Utilization)
 
@@ -817,7 +816,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 LUT4           1                                       
                                                        
-Total LUTS     1                  0.03480 %            
+Total LUTS     1                  0.0350 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo:	1 (0.02 % Utilization)
 
@@ -844,7 +843,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[11].u_fifo:	2 (0.03 % Utilization)
 
@@ -871,7 +870,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[5].u_fifo:	2 (0.03 % Utilization)
 
@@ -898,7 +897,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[23].u_fifo:	2 (0.03 % Utilization)
 
@@ -925,7 +924,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[7].u_fifo:	2 (0.03 % Utilization)
 
@@ -952,7 +951,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[2].u_fifo:	2 (0.03 % Utilization)
 
@@ -979,7 +978,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[8].u_fifo:	2 (0.03 % Utilization)
 
@@ -1006,7 +1005,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[3].u_fifo:	2 (0.03 % Utilization)
 
@@ -1033,7 +1032,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[6].u_fifo:	2 (0.03 % Utilization)
 
@@ -1060,7 +1059,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[1].u_fifo:	2 (0.03 % Utilization)
 
@@ -1087,7 +1086,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[9].u_fifo:	2 (0.03 % Utilization)
 
@@ -1114,7 +1113,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[4].u_fifo:	2 (0.03 % Utilization)
 
@@ -1141,7 +1140,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[18].u_fifo:	2 (0.03 % Utilization)
 
@@ -1168,7 +1167,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[10].u_fifo:	2 (0.03 % Utilization)
 
@@ -1195,7 +1194,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[30].u_fifo:	2 (0.03 % Utilization)
 
@@ -1222,7 +1221,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[31].u_fifo:	2 (0.03 % Utilization)
 
@@ -1249,7 +1248,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[26].u_fifo:	2 (0.03 % Utilization)
 
@@ -1276,7 +1275,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[21].u_fifo:	2 (0.03 % Utilization)
 
@@ -1303,7 +1302,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[16].u_fifo:	2 (0.03 % Utilization)
 
@@ -1330,7 +1329,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[24].u_fifo:	2 (0.03 % Utilization)
 
@@ -1357,7 +1356,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[19].u_fifo:	2 (0.03 % Utilization)
 
@@ -1384,7 +1383,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[22].u_fifo:	2 (0.03 % Utilization)
 
@@ -1411,7 +1410,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[17].u_fifo:	2 (0.03 % Utilization)
 
@@ -1438,7 +1437,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[25].u_fifo:	2 (0.03 % Utilization)
 
@@ -1465,7 +1464,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[20].u_fifo:	2 (0.03 % Utilization)
 
@@ -1492,7 +1491,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[28].u_fifo:	2 (0.03 % Utilization)
 
@@ -1519,7 +1518,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[29].u_fifo:	2 (0.03 % Utilization)
 
@@ -1546,7 +1545,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[27].u_fifo:	2 (0.03 % Utilization)
 
@@ -1573,7 +1572,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	2 (0.03 % Utilization)
 
@@ -1583,7 +1582,7 @@ Name           Total elements     Utilization     Notes
 -------------------------------------------------------
 LUT4           1                                       
                                                        
-Total LUTS     1                  0.03480 %            
+Total LUTS     1                  0.0350 %             
 =======================================================
 Total COMBINATIONAL LOGIC in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo:	1 (0.02 % Utilization)
 
@@ -1610,7 +1609,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[12].u_fifo:	2 (0.03 % Utilization)
 
@@ -1637,7 +1636,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[13].u_fifo:	2 (0.03 % Utilization)
 
@@ -1664,7 +1663,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[14].u_fifo:	2 (0.03 % Utilization)
 
@@ -1691,7 +1690,7 @@ Name            Total elements     Utilization     Notes
 --------------------------------------------------------
 FD1P3DX         2                                       
                                                         
-Total FLOPS     2                  0.08730 %            
+Total FLOPS     2                  0.0860 %             
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block process_image_inst.process_image_out_fifo_inst.lscc_fifo_inst.fifo0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[15].u_fifo:	2 (0.03 % Utilization)
 
@@ -1720,7 +1719,7 @@ FD1P3DX         38
 FD1P3BX         2                                       
 FD1P3IX         41                                      
                                                         
-Total FLOPS     81                 3.54 %               
+Total FLOPS     81                 3.48 %               
 ========================================================
 Total SEQUENTIAL ELEMENTS in the block g_iface.spi_rxtx:	81 (1.29 % Utilization)
 
@@ -1729,13 +1728,14 @@ COMBINATIONAL LOGIC
 Name                   Total elements     Utilization     Notes
 ---------------------------------------------------------------
 INV                    1                                       
-LUT4                   134                                     
+LUT4                   133                                     
+WIDEFN9                6                                       
 CCU2                   37                                      
                                                                
-Total LUTS             135                4.7 %                
+Total LUTS             140                4.9 %                
 Total CARRY CHAINS     37                 4.01 %               
 ===============================================================
-Total COMBINATIONAL LOGIC in the block g_iface.spi_rxtx:	172 (2.75 % Utilization)
+Total COMBINATIONAL LOGIC in the block g_iface.spi_rxtx:	177 (2.81 % Utilization)
 
 
 MEMORY ELEMENTS

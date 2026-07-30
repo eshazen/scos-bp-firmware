@@ -57,9 +57,11 @@ architecture architecture_mipi_rx of mipi_rx is
 	-- cross-clock FIFO signals
 	signal FifoPDatxDP, FifoPDatxDN : std_logic_vector(31 downto 0);
 	signal FifoSyncxSP, FifoSyncxSN : std_logic_vector(1 downto 0);
+	signal FifoPDatPrexDP, FifoPDatPrexDN : std_logic_vector(31 downto 0);
+	signal FifoSyncPrexSP, FifoSyncPrexSN : std_logic_vector(1 downto 0);
 	signal FifoEmptyxS, FifoFullxS : std_logic;
 	signal FifoWrEnxS, FifoRdEnxS : std_logic;
-	signal FifoValidxSP, FifoValidxSN : std_logic_vector(2 downto 0);
+	signal FifoValidxSP, FifoValidxSN : std_logic_vector(3 downto 0);
 	
 	-- MIPI CSI decoder signals
 	type fsmstatetype is (sWaitFSSync, sFSDI, sWaitLSSync, sLSDI, sWaitLData, sReadLDataFirst, sReadLData0, sReadLData1, sReadLData2, sReadLData3, sReadLData4, sReadLDataLast);
@@ -151,6 +153,8 @@ begin
 			PixDataPrexDP <= PixDataPrexDN;
 			FifoPDatxDP <= FifoPDatxDN;
 			FifoSyncxSP <= FifoSyncxSN;
+			FifoPDatPrexDP <= FifoPDatPrexDN;
+			FifoSyncPrexSP <= FifoSyncPrexSN;
 		end if;
 	end process;
 
@@ -595,10 +599,13 @@ begin
 		wr_data_i(33 downto 32) => DPhySyncxS(1 downto 0),
 		full_o => FifoFullxS,
 		empty_o => FifoEmptyxS,
-		rd_data_o(31 downto 0) => FifoPDatxDN,
-		rd_data_o(33 downto 32) => FifoSyncxSN
+		rd_data_o(31 downto 0) => FifoPDatPrexDN,
+		rd_data_o(33 downto 32) => FifoSyncPrexSN
 	);
-	
 	FifoWrEnxS <= '1' when FifoFullxS = '0' else '0';
+	-- additional set of output registers for speed
+	FifoPDatxDN <= FifoPDatPrexDP;
+	FifoSyncxSN <= FifoSyncPrexSP;
+	
 	
 end architecture_mipi_rx;
