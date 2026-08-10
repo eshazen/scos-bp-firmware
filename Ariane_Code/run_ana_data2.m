@@ -1,0 +1,183 @@
+%% load data 12.1
+
+% fname_data = '.\sample_data\data_12.1\aarohi2_20s.mat';
+% fname_dark = '.\sample_data\data_12.1\aarohi2_dark.mat';
+
+% fname_data = '.\sample_data\data_12.1\aarohi3_20s.mat';
+% fname_dark = '.\sample_data\data_12.1\aarohi3_dark.mat';
+
+% fname_data = '.\sample_data\data_12.1\ariane_20s.mat';
+% fname_dark = '.\sample_data\data_12.1\ariane_dark.mat';
+
+% load(fname_dark);
+% meas_dark = meas;
+% load(fname_data);
+
+%% load data 12.16
+% fname = '.\sample_data\data_12.16\kyle_tests.mat';
+% load(fname);
+% meas = kyle;
+% meas_dark = kyle_dark;
+
+% fname = '.\sample_data\data_12.16\aarohi_tests.mat';
+% load(fname);
+% meas = aarohi;
+% meas_dark = aarohi_dark;
+
+% fname = '.\sample_data\data_12.16\zichen_tests.mat';
+% load(fname);
+% meas = zichen;
+% meas_dark = zichen_dark;
+
+%% load synth data
+% fname = '.\sample_data\SynthData\const_no_grad.mat';
+% fname = '.\sample_data\SynthData\const_lin_grad.mat';
+fname = '.\sample_data\SynthData\const_dist_grad.mat';
+% fname = '.\sample_data\SynthData\sin_int.mat';
+% fname = '.\sample_data\SynthData\sin_k2f.mat';
+% fname = '.\sample_data\SynthData\const_off_k2f.mat';
+
+% fname = '.\sample_data\SynthData\const_lin_grad_tstnoise_top.mat';
+% fname = '.\sample_data\SynthData\const_lin_grad_tstnoise_mid.mat';
+% fname = '.\sample_data\SynthData\const_lin_grad_tstnoise_bot.mat';
+
+% fname = '.\sample_data\SynthData\const_step_grad.mat';
+% fname = '.\sample_data\SynthData\const_step_grad_tstnoise_top.mat';
+% fname = '.\sample_data\SynthData\const_step_grad_tstnoise_bot.mat';
+
+load(fname);
+
+
+%%
+% digitization variance offset
+var_digitization = 1/12;
+
+gain = 0.0956;
+
+window_size = [8 8];
+window_size2 = [16 16];
+window_size3 = [32 32];
+window_size4 = [160 160];
+
+
+%% calculate dark values
+
+mean_dark_frame = mean(meas_dark, 3);
+mean_dark_value = mean(mean_dark_frame(:));
+var_read = mean(var(double(meas_dark), 0, [1, 2]), "all");
+
+mean_on_frame = mean(meas,3);
+
+%%
+
+
+% --- normal whole frame ---
+frames = meas - mean_dark_value;
+[K2_f, K2_raw, K2_shot, K2_spatial, mean_var_I, mean_sq_mean_I] = getK2fTiled(frames, var_read, size(frames(:,:,1)));
+
+% --- normal tiled ---
+[K2_f_tiled, K2_raw_tiled, K2_shot_tiled, K2_spatial_tiled, mean_var_I_tiled, mean_sq_mean_I_tiled] = getK2fTiled(frames, var_read, window_size);
+[K2_f_tiled2, K2_raw_tiled2, K2_shot_tiled2, K2_spatial_tiled2, mean_var_I_tiled2, mean_sq_mean_I_tiled2]  = getK2fTiled(frames, var_read, window_size2);
+[K2_f_tiled3, K2_raw_tiled3, K2_shot_tiled3, K2_spatial_tiled3, mean_var_I_tiled3, mean_sq_mean_I_tiled3]  = getK2fTiled(frames, var_read, window_size3);
+[K2_f_tiled4, K2_raw_tiled4, K2_shot_tiled4, K2_spatial_tiled4, mean_var_I_tiled4, mean_sq_mean_I_tiled4] = getK2fTiled(frames, var_read, window_size4);
+
+% --- tiled with 50% overlap ---
+offset = window_size/2;
+[K2_f_tiled_offs, K2_raw_tiled_offs, K2_shot_tiled_offs, K2_spatial_tiled_offs, mean_var_I_tiled_offs, mean_sq_mean_I_tiled_offs] = ...
+    getK2fTiled(frames((offset(1)+1):(end-offset(1)), (offset(2)+1):(end-offset(2)), :), var_read, window_size);
+K2_f_tiled_ovlp = 0.5*K2_f_tiled_offs + 0.5*K2_f_tiled; % should use lower weight for _ovlp
+K2_raw_tiled_ovlp = 0.5*K2_raw_tiled_offs + 0.5*K2_raw_tiled;
+K2_shot_tiled_ovlp = 0.5*K2_shot_tiled_offs + 0.5*K2_shot_tiled;
+K2_spatial_tiled_ovlp = 0.5*K2_spatial_tiled_offs + 0.5*K2_spatial_tiled;
+mean_var_I_tiled_ovlp = 0.5*mean_var_I_tiled_offs + 0.5*mean_var_I_tiled;
+mean_sq_mean_I_tiled_ovlp = 0.5*mean_sq_mean_I_tiled_offs + 0.5*mean_sq_mean_I_tiled;
+
+% --- with dark frame subtraction, whole frame ---
+% image_dfs = double(meas(:,:,iframe)) - mean_dark_frame;
+% K2_f_dfs(iframe) = getK2fTiled(image_dfs, var_read, size(image));
+
+
+%%
+
+mean_K2f = mean([K2_f, K2_f_tiled, K2_f_tiled2, K2_f_tiled3, K2_f_tiled4, K2_f_tiled_offs, K2_f_tiled_ovlp])';
+var_K2f = var([K2_f, K2_f_tiled, K2_f_tiled2, K2_f_tiled3, K2_f_tiled4, K2_f_tiled_offs, K2_f_tiled_ovlp])';
+mean_K2raw = mean([K2_raw, K2_raw_tiled, K2_raw_tiled2, K2_raw_tiled3, K2_raw_tiled4, K2_raw_tiled_offs, K2_raw_tiled_ovlp])';
+var_K2raw = var([K2_raw, K2_raw_tiled, K2_raw_tiled2, K2_raw_tiled3, K2_raw_tiled4, K2_raw_tiled_offs, K2_raw_tiled_ovlp])';
+mean_K2shot = mean([K2_shot, K2_shot_tiled, K2_shot_tiled2, K2_shot_tiled3, K2_shot_tiled4, K2_shot_tiled_offs, K2_shot_tiled_ovlp])';
+var_K2shot = var([K2_shot, K2_shot_tiled, K2_shot_tiled2, K2_shot_tiled3, K2_shot_tiled4, K2_shot_tiled_offs, K2_shot_tiled_ovlp])';
+vec_K2spatial = [K2_spatial, K2_spatial_tiled, K2_spatial_tiled2, K2_spatial_tiled3, K2_spatial_tiled4, K2_spatial_tiled_offs, K2_spatial_tiled_ovlp]';
+mean_mean_var_I = mean([mean_var_I, mean_var_I_tiled, mean_var_I_tiled2, mean_var_I_tiled3, ...
+    mean_var_I_tiled4, mean_var_I_tiled_offs, mean_var_I_tiled_ovlp])';
+mean_mean_sq_mean_I = mean([mean_sq_mean_I, mean_sq_mean_I_tiled, mean_sq_mean_I_tiled2, ...
+    mean_sq_mean_I_tiled3, mean_sq_mean_I_tiled4, mean_sq_mean_I_tiled_offs, mean_sq_mean_I_tiled_ovlp])';
+var_mean_var_I = var([mean_var_I, mean_var_I_tiled, mean_var_I_tiled2, mean_var_I_tiled3, ...
+    mean_var_I_tiled4, mean_var_I_tiled_offs, mean_var_I_tiled_ovlp])';
+var_mean_sq_mean_I = var([mean_sq_mean_I, mean_sq_mean_I_tiled, mean_sq_mean_I_tiled2, ...
+    mean_sq_mean_I_tiled3, mean_sq_mean_I_tiled4, mean_sq_mean_I_tiled_offs, mean_sq_mean_I_tiled_ovlp])';
+row_names = {'Single ROI', '8x8 ROI', '16x16 ROI', '32x32 ROI', '160x160 ROI', '8x8 ROI offset', '8x8 ROI 50%ovlp'};
+col_names = {'mean(K2f)', 'var(K2f)', 'K2sp', 'mean(K2raw)', 'var(K2raw)', 'mean(var(I))', 'var(var(I))', 'mean(mean(I)^2)', 'var(mean(I)^2)', ...
+    'mean(K2shot)', 'var(K2shot)'};
+noise_table = table(mean_K2f, var_K2f, vec_K2spatial, mean_K2raw, var_K2raw, mean_mean_var_I, var_mean_var_I, ...
+    mean_mean_sq_mean_I, var_mean_sq_mean_I, mean_K2shot, var_K2shot, 'RowNames', row_names, 'VariableNames', col_names);
+disp(noise_table);
+
+% disp( "                   mean(1/K2f)/std(1/K2f)");
+% disp(['Single ROI :       ', num2str(mean(1./K2_f)/std(1./K2_f), 3)]);
+% disp(['8x8 ROI :          ', num2str(mean(1./K2_f_tiled)/std(1./K2_f_tiled), 3)]);
+% disp(['8x8 ROI offset:    ', num2str(mean(1./K2_f_tiled_offs)/std(1./K2_f_tiled_offs), 3)]);
+% disp(['8x8 ROI 50%ovlp :  ', num2str(mean(1./K2_f_tiled_ovlp)/std(1./K2_f_tiled_ovlp), 3)]);
+% disp(['16x16 ROI :        ', num2str(mean(1./K2_f_tiled2)/std(1./K2_f_tiled2), 3)]);
+% disp(['32x32 ROI :        ', num2str(mean(1./K2_f_tiled3)/std(1./K2_f_tiled3), 3)]);
+% disp(['160x160 ROI :      ', num2str(mean(1./K2_f_tiled4)/std(1./K2_f_tiled4), 3)]);
+
+
+%%
+figure;
+tiledlayout(2,1);
+
+ax1 = nexttile;
+plot(1./K2_f);
+hold on;
+plot(1./K2_f_tiled);
+plot(1./K2_f_tiled_ovlp);
+plot(1./K2_f_tiled2);
+plot(1./K2_f_tiled3);
+plot(1./K2_f_tiled4);
+
+% set(gca,"YScale",'log');
+title(fname);
+xlabel("Frame Number");
+ylabel("1/K2");
+legend({"Single ROI", "8x8 ROI", "8x8 ROI 50%ovlp", "16x16 ROI", "32x32 ROI", "160x160 ROI"});
+grid on;
+
+ax2 = nexttile;
+plot(squeeze(mean(double(meas),[1, 2])));
+grid on;
+
+ylabel("Mean Intensity [DL]");
+xlabel("Frame Number");
+
+linkaxes([ax1 ax2],'x');
+
+%%
+figure;
+imagesc(mean_dark_frame);
+axis off;
+colorbar;
+title(["Mean dark image  ", fname],"Interpreter","none");
+text(10,10, {['Mean: ', num2str(mean(mean_dark_frame(:)),3)], ['Var: ' , num2str(var(mean_dark_frame(:)),3)]}, ...
+    "FontSize",14, "Color",'w', 'VerticalAlignment','top')
+
+figure;
+imagesc(mean_on_frame);
+axis off;
+colorbar;
+title(["Mean ON image  ", fname],"Interpreter","none");
+text(10,10, {['Mean: ', num2str(mean(mean_on_frame(:)),3)], ['Var: ' , num2str(var(mean_on_frame(:)),3)]}, ...
+    "FontSize",14, "Color",'w', 'VerticalAlignment','top')
+
+
+
+
+

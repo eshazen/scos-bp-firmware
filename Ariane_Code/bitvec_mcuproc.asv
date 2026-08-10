@@ -1,0 +1,53 @@
+function K2f = bitvec_mcuproc(fnamein)
+
+window_size = [16 16];
+frame_size = [640 480];
+ntiles = prod(frame_size./window_size);
+npix = prod(window_size);
+
+var_digitization = 1/12;
+gain = 0.0956;
+var_read = 1;
+
+pix_sum_array = zeros(ntiles,1);
+pix_sq_sum_array = zeros(ntiles,1);
+K2_f = [];
+
+
+fin = fopen(fnamein, "r");
+tline = fgetl(fin);
+
+frame_count = 0;
+tile_count = 0;
+
+fprintf('Frame %3u', frame_count);
+
+while tline ~= -1
+   [pix_sum, ~, ~, ni] = sscanf(tline,'%u', 1);
+   [pix_sq_sum, ~, ~, ~] = sscanf(tline(ni:end),'%u', 1);
+
+   if pix_sum==1000 && pix_sq_sum==1000
+       % frame start
+       frame_count = frame_count + 1;
+       tile_count = 0;
+       pix_sum_array = zeros(ntiles,1);
+       pix_sq_sum_array = zeros(ntiles,1);
+   else
+       tile_count = tile_count +1;
+       pix_sum_array(tile_count) = pix_sum;
+       pix_sq_sum_array(tile_count) = pix_sq_sum;
+   end
+
+   if tile_count == ntiles
+       % frame end
+       mean_I_array = pix_sum_array / npix;
+       var_I_array = pix_sq_sum_array/npix - mean_I_array.^2;
+       var_shot_array = mean_I_array*gain;
+       K2_f_array = (var_I_array - var_digitization - var_shot_array - var_read)./(mean_I_array.^2);
+       K2_f(frame_count) = mean(K2_f_array(:));
+   end
+   
+   tline = fgetl(fin);
+end
+
+fclose(fin);

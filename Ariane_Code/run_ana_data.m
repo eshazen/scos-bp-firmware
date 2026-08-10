@@ -1,0 +1,236 @@
+%% load data 12.1
+
+% fname_data = '.\sample_data\data_12.1\aarohi2_20s.mat';
+% fname_dark = '.\sample_data\data_12.1\aarohi2_dark.mat';
+
+% fname_data = '.\sample_data\data_12.1\aarohi3_20s.mat';
+% fname_dark = '.\sample_data\data_12.1\aarohi3_dark.mat';
+
+% fname_data = '.\sample_data\data_12.1\ariane_20s.mat';
+% fname_dark = '.\sample_data\data_12.1\ariane_dark.mat';
+
+% load(fname_dark);
+% meas_dark = meas;
+% load(fname_data);
+
+%% load data 12.16
+% fname = '.\sample_data\data_12.16\kyle_tests.mat';
+% load(fname);
+% meas = kyle;
+% meas_dark = kyle_dark;
+
+% fname = '.\sample_data\data_12.16\aarohi_tests.mat';
+% load(fname);
+% meas = aarohi;
+% meas_dark = aarohi_dark;
+
+% fname = '.\sample_data\data_12.16\zichen_tests.mat';
+% load(fname);
+% meas = zichen;
+% meas_dark = zichen_dark;
+
+%% load synth data
+% fname = '.\sample_data\SynthData\const.mat';
+% fname = '.\sample_data\SynthData\sin_int.mat';
+fname = '.\sample_data\SynthData\sin_k2f.mat';
+% fname = '.\sample_data\SynthData\const_off_k2f.mat';
+load(fname);
+
+
+%%
+% digitization variance offset
+var_digitization = 1/12;
+
+gain = 0.0956;
+
+window_size = [8 8];
+
+
+%% calculate dark values
+
+mean_dark_frame = mean(meas_dark, 3);
+mean_dark_value = mean(mean_dark_frame(:));
+var_read = mean(var(double(meas_dark), 0, [1, 2]), "all");
+
+mean_on_frame = mean(meas,3);
+
+%%
+
+nframes = size(meas,3);
+K2_f = zeros(nframes, 1);
+K2_f_dfs = zeros(nframes, 1);
+K2_f_tiled = zeros(nframes, 1);
+K2_f_tiled_ovlp = zeros(nframes, 1);
+
+for iframe = 1:nframes
+    % --- normal whole frame ---
+    image = double(meas(:,:,iframe)) - mean_dark_value;
+
+    mean_I = mean(image(:));
+    var_I = var(image(:));
+    var_shot = mean_I*gain;
+
+    K2_f(iframe) = (var_I - var_digitization - var_shot - var_read)./(mean_I.^2);
+
+    % --- normal tiled ---
+    mean_I_array = zeros(size(image)./window_size);
+    var_I_array = zeros(size(image)./window_size);
+    for ix = 1:size(mean_I_array,1)
+        for iy = 1:size(mean_I_array,2)
+            image_slice = image((1:window_size(1)) + (ix-1)*window_size(1), (1:window_size(2)) + (iy-1)*window_size(2));
+            mean_I_array(ix,iy) = mean(image_slice(:));
+            var_I_array(ix,iy) = var(image_slice(:));
+        end
+    end
+
+    var_shot_array = mean_I_array*gain;
+
+    K2_total_array = var_I_array./(mean_I_array.^2);
+    K2_total_mean = mean(K2_total_array(:));
+    window_factor = window_size(1)*window_size(2)/(window_size(1)*window_size(2) - K2_total_mean);
+
+    K2_f_array = (var_I_array - var_digitization - var_shot_array - var_read)./(mean_I_array.^2);
+
+    K2_f_tiled(iframe) = mean(K2_f_array(:)) * window_factor;
+
+
+    % --- tiled with 50% overlap ---
+    mean_I_array_offs = zeros(size(image)./window_size -1);
+    var_I_array_offs = zeros(size(image)./window_size -1);
+    for ix = 1:size(mean_I_array_offs,1)
+        for iy = 1:size(mean_I_array_offs,2)
+            image_slice = image((1:window_size(1)) + (ix-1)*window_size(1) + window_size(1)/2, ...
+                (1:window_size(2)) + (iy-1)*window_size(2)  + window_size(2)/2);
+            mean_I_array_offs(ix,iy) = mean(image_slice(:));
+            var_I_array_offs(ix,iy) = var(image_slice(:));
+        end
+    end
+
+    mean_I_array_ovlp = [mean_I_array(:); mean_I_array_offs(:)];
+    var_I_array_ovlp = [var_I_array(:); var_I_array_offs(:)];
+
+    var_shot_array_ovlp = mean_I_array_ovlp*gain;
+
+    K2_total_array_ovlp = var_I_array_ovlp./(mean_I_array_ovlp.^2);
+    K2_total_mean_ovlp = mean(K2_total_array_ovlp(:));
+    window_factor = window_size(1)*window_size(2)/(window_size(1)*window_size(2) - K2_total_mean_ovlp);
+
+    K2_f_array_ovlp = (var_I_array_ovlp - var_digitization - var_shot_array_ovlp - var_read)./(mean_I_array_ovlp.^2);
+
+    K2_f_tiled_ovlp(iframe) = mean(K2_f_array_ovlp(:)) * window_factor;
+
+
+    % --- with dark frame subtraction, whole frame ---
+    image_dfs = double(meas(:,:,iframe)) - mean_dark_frame;
+
+    mean_I_dfs = mean(image_dfs(:));
+    var_I_dfs = var(image_dfs(:));
+    var_shot_dfs = mean_I_dfs*gain;
+
+    K2_f_dfs(iframe) = (var_I_dfs - var_digitization - var_shot_dfs - var_read)./(mean_I_dfs.^2);
+end
+
+% --- spatial heterogenity correction ---
+% single frame
+var_spatial = var(mean_on_frame(:)) - gain*mean(mean_on_frame(:)-mean_dark_value)/nframes;
+K2_spatial = var_spatial / (mean(mean_on_frame(:)-mean_dark_value)^2);
+K2_f_sps = K2_f - K2_spatial;
+
+% tiled
+mean_sp_array = zeros(size(mean_on_frame)./window_size);
+var_sp_array = zeros(size(mean_on_frame)./window_size);
+for ix = 1:size(mean_I_array,1)
+    for iy = 1:size(mean_I_array,2)
+        image_slice = mean_on_frame((1:window_size(1)) + (ix-1)*window_size(1), ...
+            (1:window_size(2)) + (iy-1)*window_size(2))-mean_dark_value;
+        mean_sp_array(ix,iy) = mean(image_slice(:));
+        var_sp_array(ix,iy) = var(image_slice(:));
+    end
+end
+K2_spatial_array = (var_sp_array - gain*mean_sp_array/nframes) ./ (mean_sp_array.^2);
+K2_f_sps_tiled = K2_f_tiled - mean(K2_spatial_array(:))*window_factor;
+
+% tiled 50% overlap
+mean_sp_array_offs = zeros(size(mean_on_frame)./window_size -1);
+var_sp_array_offs = zeros(size(mean_on_frame)./window_size -1);
+for ix = 1:size(mean_I_array_offs,1)
+    for iy = 1:size(mean_I_array_offs,2)
+        image_slice = mean_on_frame((1:window_size(1)) + (ix-1)*window_size(1) + window_size(1)/2, ...
+            (1:window_size(2)) + (iy-1)*window_size(2) + window_size(2)/2)-mean_dark_value;
+        mean_sp_array_offs(ix,iy) = mean(image_slice(:));
+        var_sp_array_offs(ix,iy) = var(image_slice(:));
+    end
+end
+mean_sp_array_ovlp = [mean_sp_array(:); mean_sp_array_offs(:)];
+var_sp_array_ovlp = [var_sp_array(:); var_sp_array_offs(:)];
+K2_spatial_array_ovlp = (var_sp_array_ovlp - gain*mean_sp_array_ovlp/nframes) ./ (mean_sp_array_ovlp.^2);
+K2_f_sps_tiled_ovlp = K2_f_tiled_ovlp - mean(K2_spatial_array_ovlp(:))*window_factor;
+
+%%
+
+disp(['Var Raw  : ', num2str(var_I_dfs,3)]);
+disp(['Var Digi : ', num2str(var_digitization,3)]);
+disp(['Var Shot : ', num2str(var_shot_dfs,3)]);
+disp(['Var Read : ', num2str(var_read,3)]);
+disp(['Var Spat : ', num2str(var_spatial,3)]);
+disp("");
+disp("std(K2f)/mean(K2f)");
+disp(['Single ROI :                    ', num2str(std(K2_f)/mean(K2_f), 3)]);
+disp(['8x8 ROI :                       ', num2str(std(K2_f_tiled)/mean(K2_f_tiled), 3)]);
+disp(['8x8 ROI 50%ovlp :               ', num2str(std(K2_f_tiled_ovlp)/mean(K2_f_tiled_ovlp), 3)]);
+disp(['Single ROI spatial subtr :      ', num2str(std(K2_f_sps)/mean(K2_f_sps), 3)]);
+disp(['8x8 ROI spatial subtr :         ', num2str(std(K2_f_sps_tiled)/mean(K2_f_sps_tiled), 3)]);
+disp(['8x8 ROI 50%ovlp spatial subtr : ', num2str(std(K2_f_sps_tiled_ovlp)/mean(K2_f_sps_tiled_ovlp), 3)]);
+
+%%
+figure;
+tiledlayout(2,1);
+
+ax1 = nexttile;
+plot(1./K2_f);
+hold on;
+plot(1./K2_f_tiled);
+plot(1./K2_f_tiled_ovlp);
+
+plot(1./K2_f_sps);
+plot(1./K2_f_sps_tiled);
+plot(1./K2_f_sps_tiled_ovlp);
+
+% set(gca,"YScale",'log');
+title(fname);
+xlabel("Frame Number");
+ylabel("1/K2");
+legend({"Single ROI", "8x8 ROI", "8x8 ROI 50%ovlp", "Single ROI spatial subtr", ...
+    "8x8 ROI spatial subtr", "8x8 ROI 50%ovlp spatial subtr"})
+grid on;
+
+ax2 = nexttile;
+plot(squeeze(mean(double(meas),[1, 2])));
+grid on;
+
+ylabel("Mean Intensity [DL]");
+xlabel("Frame Number");
+
+linkaxes([ax1 ax2],'x');
+
+%%
+figure;
+imagesc(mean_dark_frame);
+axis off;
+colorbar;
+title(["Mean dark image  ", fname],"Interpreter","none");
+text(10,10, {['Mean: ', num2str(mean(mean_dark_frame(:)),3)], ['Var: ' , num2str(var(mean_dark_frame(:)),3)]}, ...
+    "FontSize",14, "Color",'w', 'VerticalAlignment','top')
+
+figure;
+imagesc(mean_on_frame);
+axis off;
+colorbar;
+title(["Mean ON image  ", fname],"Interpreter","none");
+text(10,10, {['Mean: ', num2str(mean(mean_on_frame(:)),3)], ['Var: ' , num2str(var(mean_on_frame(:)),3)]}, ...
+    "FontSize",14, "Color",'w', 'VerticalAlignment','top')
+
+
+
+
+

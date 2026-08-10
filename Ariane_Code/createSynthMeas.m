@@ -1,0 +1,37 @@
+function createSynthMeas(fnameout, k2f)
+
+if nargin < 1 
+    fnameout = '.\sample_data\SynthData\const_step_grad.mat';
+end
+if nargin < 2
+    k2f = 1e-4;
+end
+imean = 400;
+nframes = 500;
+
+ivec = imean + 0*sin(2*pi()*(1:nframes)/100);
+k2f_vec = k2f + 0*k2f/10*sin(2*pi()*(1:nframes)/100);
+
+sz = [640 480 nframes];
+
+meas = zeros(sz,'uint16');
+
+for iif = 1:sz(3)
+    meas(:,:,iif) = uint16(getSynthFrame(ivec(iif), k2f_vec(iif), sz(1:2))); 
+end
+
+%% dark measurement
+nframes_dark = 100;
+sz_dark = sz;
+sz_dark(3) = nframes_dark;
+
+meas_dark = zeros(sz_dark,'uint16');
+
+for iif = 1:sz_dark(3)
+    meas_dark(:,:,iif) = uint16(getSynthFrame(0, k2f, sz_dark(1:2))); 
+end
+
+
+%% save data
+
+save(fnameout, "meas_dark", "meas", "imean", "ivec", "k2f", "k2f_vec", "-v7.3");

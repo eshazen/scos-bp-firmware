@@ -1,0 +1,16 @@
+I added three files needed to process my SCOS images. 
+
+box_process_test:
+Run this code to process the images. 
+Change path_dirA to the folder path where the images are stored, and saveFolder/saveFile to wherever you will save the data. 
+My images are 400x400 px collected at 390Hz. You can change file_length to control how  many images are being processed. 
+The output of this code is a variable "data" which contains a BFi, PPG, Kf, Intensity, raw K, read noise, shot noise , digitization noise for each image
+
+K2_conv: 
+Function that calculates Kf among other variables from the std dev and intensity of the images. 
+
+calculateSpatialContrast: 
+Function that outputs standard deviation and mean from images across 7x7 windows. Options to use convolution or not/ use windowing or not. 
+
+Note: 
+This code was written by me and Kenny, Kenny mostly wrote the code for K2_conv and calculateSpatialContrast. 

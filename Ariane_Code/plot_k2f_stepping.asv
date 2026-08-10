@@ -1,0 +1,85 @@
+
+%% create synthetic measurements with different k2f's
+
+k2f_in = logspace(-6,-2, 4*3+1);
+
+for ii = 1:length(k2f_in)
+    fnameout = sprintf('.\\sample_data\\SynthData\\k2f_stepping\\const_lin_grad_%08.2e.mat', k2f_in(ii));
+    disp(fnameout);
+    if isfile(fnameout)
+        disp('File exists, skipping.')
+    else
+        disp('Creating file.')
+        createSynthMeas(fnameout, k2f_in(ii));
+    end
+end
+
+
+%%
+
+window_size = [8 8];
+window_size3 = [32 32];
+
+mean_K2f = zeros(length(k2f_in), 3);
+var_K2f = zeros(length(k2f_in), 3);
+mean_K2raw = zeros(length(k2f_in), 3);
+var_K2raw = zeros(length(k2f_in), 3);
+mean_K2shot = zeros(length(k2f_in), 3);
+var_K2shot = zeros(length(k2f_in), 3);
+vec_K2spatial = zeros(length(k2f_in), 3);
+
+for ii = 1:length(k2f_in)
+    fnamein = sprintf('.\\sample_data\\SynthData\\k2f_stepping\\const_lin_grad_%08.2e.mat', k2f_in(ii));
+    % fnamein = sprintf('.\\sample_data\\SynthData\\k2f_stepping\\const_lin_grad_%03u.mat', ii);
+    load(fnamein);
+    disp(['Loading ', fnamein]);
+    mean_dark_frame = mean(meas_dark, 3);
+    mean_dark_value = mean(mean_dark_frame(:));
+    var_read = mean(var(double(meas_dark), 0, [1, 2]), "all");
+
+    % --- normal whole frame ---
+    frames = meas - mean_dark_value;
+    [K2_f, K2_raw, K2_shot, K2_spatial, mean_var_I, mean_sq_mean_I] = getK2fTiled(frames, var_read, size(frames(:,:,1)));
+    
+    % --- normal tiled ---
+    [K2_f_tiled, K2_raw_tiled, K2_shot_tiled, K2_spatial_tiled, mean_var_I_tiled, mean_sq_mean_I_tiled] = getK2fTiled(frames, var_read, window_size);
+    [K2_f_tiled3, K2_raw_tiled3, K2_shot_tiled3, K2_spatial_tiled3, mean_var_I_tiled3, mean_sq_mean_I_tiled3]  = getK2fTiled(frames, var_read, window_size3);
+
+    mean_K2f(ii,:) = mean([K2_f, K2_f_tiled, K2_f_tiled3]);
+    var_K2f(ii,:) = var([K2_f, K2_f_tiled, K2_f_tiled3]);
+    mean_K2raw(ii,:) = mean([K2_raw, K2_raw_tiled, K2_raw_tiled3]);
+    var_K2raw(ii,:) = var([K2_raw, K2_raw_tiled, K2_raw_tiled3]);
+    mean_K2shot(ii,:) = mean([K2_shot, K2_shot_tiled, K2_shot_tiled3]);
+    var_K2shot(ii,:) = var([K2_shot, K2_shot_tiled, K2_shot_tiled3]);
+    vec_K2spatial(ii,:) = [K2_spatial, K2_spatial_tiled, K2_spatial_tiled3];
+
+end
+
+%%
+
+figure;
+tiledlayout(2,1);
+
+ax1 = nexttile;
+
+loglog(k2f_in, mean_K2f./sqrt(var_K2f), '.-');
+row_names = {'Single ROI', '8x8 ROI', '32x32 ROI'};
+xlabel("K^2_f input");
+ylabel('mean(K^2_f) / std(K^2_f)')
+legend(row_names,'Location','northwest');
+grid on;
+title('All with +-5% linear gradient')
+
+ax2 = nexttile;
+loglog(k2f_in, mean_K2f(:,1), '.-');
+hold on
+loglog(k2f_in, mean_K2raw(:,1), '.-');
+loglog(k2f_in, mean_K2shot(:,1), '.-');
+loglog(k2f_in, vec_K2spatial(:,1), '.-');
+
+xlabel("K^2_f input");
+ylabel('K^2 (Single ROI)');
+legend({'K^2_f', 'K^2_{raw}', 'K^2_{shot}', 'K^2_{spatial}'},'Location','northwest');
+grid on;
+
+linkaxes([ax1 ax2],'x');

@@ -1,0 +1,74 @@
+function bitvec_vhdlproc(fnamein, fnameout)
+
+window_size = [16 16];
+
+pix_sum = zeros(640/window_size(1),1);
+pix_sq_sum = zeros(640/window_size(1),1);
+
+
+fin = fopen(fnamein, "r");
+fout = fopen(fnameout, "w");
+
+tline = fgetl(fin);
+
+line_valid_last = 0;
+frame_valid_last = 0;
+line_count = 0;
+pix_count = 0;
+tile_count = 0;
+frame
+
+while tline ~= -1
+    [frame_valid, ~, ~, ni] = sscanf(tline,'%u', 1);
+    [line_valid, ~, ~, ni] = sscanf(tline(ni:end),'%u', 1);
+    pix_val = bin2dec(tline(ni:end));
+
+    if frame_valid == 0
+        % outside of frame, reset all
+        line_count = 0;
+        pix_count = 0;
+        tile_count = 0;
+        continue
+    else  
+        if frame_valid_last == 0
+            % new frame
+            fprintf(fout, '%08u %08u\n', 1000, 1000);
+        end
+
+        if line_valid == 1
+             if line_valid_last == 0 
+                % new line started
+                line_count = line_count +1;
+                pix_count = 1;
+                tile_count = 1;
+            end
+            % receiving data
+            if pix_count == 1 && mod(line_count, window_size(2)) == 1
+                % first pixel in tile, reset sums
+                pix_sum(tile_count) = pix_val;
+                pix_sq_sum(tile_count) = pix_val*pix_val;
+            else
+                pix_sum(tile_count) = pix_sum(tile_count) + pix_val;
+                pix_sq_sum(tile_count) = pix_sq_sum(tile_count) + pix_val*pix_val;
+            end
+            
+            if pix_count == window_size(1)
+                % last pixel in tile for this line 
+                if mod(line_count, window_size(2)) == 0
+                    % this was the last pixel in the tile overall
+                    fprintf(fout, '%08u %08u\n', pix_sum(tile_count), pix_sq_sum(tile_count));
+                end
+                pix_count = 1;
+                tile_count = tile_count +1;
+            else
+                pix_count = pix_count +1;
+            end
+        end
+    end
+
+    line_valid_last = line_valid;
+    frame_valid_last = frame_valid;
+end
+
+fclose(fin);
+fclose(fout);
