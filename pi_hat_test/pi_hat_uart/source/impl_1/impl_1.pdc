@@ -1,0 +1,13 @@
+#
+# PDC for BlinkyTest1
+#
+ldc_set_location -site {L5} [get_ports {LED0}]
+ldc_set_location -site {K5} [get_ports {LED1}]
+ldc_set_location -site {J8} [get_ports Clk48xCI]
+ldc_set_location -site {E1} [get_ports UART_Rx_Pin]
+ldc_set_location -site {E2} [get_ports UART_Tx_Pin]
+# guesstimate clock uncertainty at about 1% of period
+# set setup time to 3x 1% to be conservative
+# large uncertainty in hold time results in PAR fail
+set_clock_uncertainty -setup 0.3 [get_clocks clk]
+set_clock_uncertainty -hold 0.1 [get_clocks clk]
