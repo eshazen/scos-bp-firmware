@@ -1,0 +1,25 @@
+# ldc_set_location -site {L2} [get_ports ResetxRI]
+ldc_set_location -site {J8} [get_ports Clk48xCI]
+
+ldc_set_location -site {L5} [get_ports {LEDxSO[0]}]
+ldc_set_location -site {K5} [get_ports {LEDxSO[1]}]
+
+ldc_set_location -site {E3} [get_ports SpiRPi0SCKxSI]
+ldc_set_location -site {B3} [get_ports SpiRPi0CSnxSI]
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports SpiRPi0CSnxSI]
+ldc_set_location -site {E4} [get_ports SpiRPi0MISOxDO]
+ldc_set_location -site {D5} [get_ports SpiRPi0MOSIxDI]
+
+ldc_set_location -site {L4} [get_ports CCISCLxSIO]
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports CCISCLxSIO]
+ldc_set_location -site {L3} [get_ports CCISDAxSIO]
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports CCISDAxSIO]
+
+# guesstimate clock uncertainty at about 1% of period
+# set setup time to 3x 1% to be conservative
+# large uncertainty in hold time results in PAR fail
+set_clock_uncertainty -setup 0.3 [get_clocks ClkxC]
+set_clock_uncertainty -hold 0.1 [get_clocks ClkxC]
+# Force use of correct MIPI DPHY
+ldc_set_location -site {DPHY1} [get_cells mipi_rx_inst/mipi_dphy_rx_inst/lscc_mipi_dphy_inst/RECEIVER.lscc_mipi_wrapper_rx/HARD_IP.CIL.u_dphy_cil.DPHY_inst]
+

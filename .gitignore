@@ -16,6 +16,9 @@
 *.srp
 *.dmp
 ._Real_._Math_.vhd
+*.bit
+*.db
+synwork/
 
 #------------------------------------------------------------
 # GHDL gitignore
