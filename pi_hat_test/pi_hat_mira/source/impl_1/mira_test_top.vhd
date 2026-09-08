@@ -20,7 +20,7 @@ entity mira_test_top is
     Clk48xCI : in std_logic;
 --    ResetxRI : in std_logic; -- no hardware reset
 
-    -- Image sensor interface
+    -- Image sensor interfaces
     MipiRxP    : inout std_logic_vector(1 downto 0);
     MipiRxN    : inout std_logic_vector(1 downto 0);
     MipiRxCkP  : inout std_logic;
@@ -28,11 +28,16 @@ entity mira_test_top is
     CCISCLxSIO : inout std_logic;       -- sensor I2C
     CCISDAxSIO : inout std_logic;       -- sensor I2C
 
---    -- FTDI UART USB interface (not used for SPI)
---    UartRTSntoFPGAxDI : in  std_logic;
---    UartCTSntoFTDIxDO : out std_logic;
---    UartFPGAtoFTDIxDO : out std_logic;
---    UartFTDItoFPGAxDI : in  std_logic;
+    -- Image sensor controls
+    MIRA_PWR_en    : out std_logic;     -- power enable
+    MIRA_CLK_en    : out std_logic;     -- clock enable
+    MIRA_RSTn      : out std_logic;     -- active low reset
+    MIRA_REQ_EXP   : out std_logic;
+    MIRA_REQ_FRAME : out std_logic;
+
+    -- UART for debug
+    UART_Rx_Pin : in  std_logic;
+    UART_Tx_Pin : out std_logic;
 
     -- SPI Raspberry Pi 0 interface
     SpiRPi0SCKxSI  : in  std_logic;
@@ -49,7 +54,6 @@ architecture architecture_mira_test_top of mira_test_top is
 
   constant FW_VER              : integer := 1;
   constant BIT_DEPTH           : integer := 10;    -- Image data bit depth. Supported: 8,10,12. Mira config must match.
-  constant UART_CLK_DIV        : integer := 8;     -- Determines UART baud rate. 96 / 8 = 12 MBPS
   constant N_CFG_REG_ADDR_BITS : integer := 4;     -- Determines number of available config registers, 2**N
   constant N_CMD_BYTES         : integer := 2;     -- Number of bytes to read/write config register.
   constant N_COLS              : integer := 1600;  -- Number of columns in image. Mira config must match.
@@ -103,6 +107,20 @@ architecture architecture_mira_test_top of mira_test_top is
 
   signal SpiRPi0MISOxD : std_logic;
 
+  -- internal signals for MIRA outputs
+  signal mira_pwr_en_r    : std_logic := '0';
+  signal mira_rst_r       : std_logic := '0';
+  signal mira_clk_en_r    : std_logic := '0';
+  signal mira_req_exp_r   : std_logic := '0';
+  signal mira_req_frame_r : std_logic := '0';
+  signal mira_scl_r       : std_logic := '1';
+  signal mira_sda_r       : std_logic := '1';
+
+  signal msg_rx_data  : std_logic_vector(15 downto 0);
+  signal msg_rx_func  : std_logic_vector(1 downto 0);
+  signal msg_rx_valid : std_logic;
+  signal msg_tx_data  : std_logic_vector(15 downto 0);
+
   component main_pll is
     port(
       clki_i  : in  std_logic;
@@ -111,7 +129,29 @@ architecture architecture_mira_test_top of mira_test_top is
       );
   end component;
 
+  component uart_bus is
+    generic (
+      BAUD_16_DIV : integer);
+    port (
+      clk          : in  std_logic;
+      rst          : in  std_logic;
+      uart_ser_tx  : out std_logic;
+      uart_ser_rx  : in  std_logic;
+      msg_rx_data  : out std_logic_vector(15 downto 0);
+      msg_rx_func  : out std_logic_vector(1 downto 0);
+      msg_rx_valid : out std_logic;
+      msg_tx_data  : in  std_logic_vector(15 downto 0));
+  end component uart_bus;
+
 begin
+
+  -- drive MIRA control pins from register bits
+  MIRA_CLK_en    <= mira_clk_en_r;
+  MIRA_PWR_en    <= mira_pwr_en_r;
+  MIRA_REQ_EXP   <= mira_req_exp_r;
+  MIRA_REQ_FRAME <= mira_req_frame_r;
+  MIRA_RSTn      <= mira_rst_r;
+
   -- ensure <=7 bit address for cfg reg. high bit is r/w
   assert N_CFG_REG_ADDR_BITS < 8 severity error;
 
@@ -249,13 +289,32 @@ begin
       ClkCntxDP <= 0;
     elsif (rising_edge(ClkxC)) then
       ClkCntxDP <= ClkCntxDN;
+
+      -- read to UART (currently not used)
+      if msg_rx_valid = '1' and msg_rx_func = "00" then
+        msg_tx_data(15 downto 0) <= std_logic_vector(to_unsigned(ClkCntxDP, msg_tx_data'length));
+----        msg_tx_data(0)           <= MIRA_SCL;
+----        msg_tx_data(1)           <= MIRA_SDA;
+----        msg_tx_data(15 downto 8) <= std_logic_vector(ctr(13 downto 6));
+--        msg_tx_data(7 downto 2)  <= "000000";
+      end if;
+
+      -- write from UART
+      if msg_rx_valid = '1' and msg_rx_func = "01" then
+        mira_scl_r    <= msg_rx_data(0);  -- 01
+        mira_sda_r    <= msg_rx_data(1);  -- 02
+        mira_rst_r    <= msg_rx_data(2);  -- 04
+        mira_clk_en_r <= msg_rx_data(3);  -- 08
+        mira_pwr_en_r <= msg_rx_data(4);  -- 10
+        LEDxSO(0)     <= msg_rx_data(5);  -- 20
+      end if;
+
     end if;
   end process;
 
   -- debug signals
   ClkCntxDN <= ClkCntxDP + 1 when ClkCntxDP < 47999999 else 0;
-  LEDxSO(0) <= '0'           when ClkCntxDP < 12000000 else '1';
-  LEDxSO(1) <= not CfgRegxDP(10)(0);
+  LEDxSO(1) <= '0'           when ClkCntxDP < 12000000 else '1';
 
   -- ## component instances ##
   mipi_rx_inst : entity work.mipi_rx
@@ -354,5 +413,18 @@ begin
     clkop_o => ClkxC,
     lock_o  => PLLLockxS
     );
+
+  uart_bus_1 : entity work.uart_bus
+    generic map (
+      BAUD_16_DIV => 52)
+    port map (
+      clk          => ClkxC,
+      rst          => ResetxRI,
+      uart_ser_tx  => UART_Tx_Pin,
+      uart_ser_rx  => UART_Rx_Pin,
+      msg_rx_data  => msg_rx_data,
+      msg_rx_func  => msg_rx_func,
+      msg_rx_valid => msg_rx_valid,
+      msg_tx_data  => msg_tx_data);
 
 end architecture_mira_test_top;

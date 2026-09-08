@@ -4,6 +4,17 @@ ldc_set_location -site {J8} [get_ports Clk48xCI]
 ldc_set_location -site {L5} [get_ports {LEDxSO[0]}]
 ldc_set_location -site {K5} [get_ports {LEDxSO[1]}]
 
+ldc_set_location -site {E1} [get_ports UART_Rx_Pin]
+ldc_set_location -site {E2} [get_ports UART_Tx_Pin]
+
+ldc_set_location -site {C3} [get_ports MIRA_PWR_en]
+ldc_set_location -site {K2} [get_ports MIRA_RSTn]
+ldc_set_location -site {J4} [get_ports MIRA_CLK_en]
+ldc_set_location -site {H4} [get_ports MIRA_REQ_EXP]
+ldc_set_location -site {L1} [get_ports MIRA_REQ_FRAME]
+ldc_set_location -site {L4} [get_ports MIRA_SCL]
+ldc_set_location -site {L3} [get_ports MIRA_SDA]
+
 ldc_set_location -site {E3} [get_ports SpiRPi0SCKxSI]
 ldc_set_location -site {B3} [get_ports SpiRPi0CSnxSI]
 ldc_set_port -iobuf {PULLMODE=UP} [get_ports SpiRPi0CSnxSI]
