@@ -7,7 +7,8 @@ import numpy as np
 spi_bus = 0
 spi_dev = 0
 spi_mode = 0
-spi_max_speed_hz = 12_000_000
+# spi_max_speed_hz = 12_000_000
+spi_max_speed_hz = 10_000_000
 spi = spidev.SpiDev()
 spi.open(spi_bus, spi_dev) #(bus, device)
 spi.max_speed_hz = spi_max_speed_hz
