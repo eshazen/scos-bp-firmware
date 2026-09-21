@@ -1,3 +1,8 @@
+//
+// C++ version of get_frame_spi
+// Basic SpiDevice class written by Gemini
+//
+
 #include <iostream>
 #include <vector>
 #include <cstdint>
@@ -47,8 +52,54 @@ public:
     std::vector<uint8_t> tx_buf(length, 0x00); 
     std::vector<uint8_t> rx_buf(length, 0x00);
 
-    transfer(tx_buf.data(), rx_buf.data(), length);
+    if( !transfer(tx_buf.data(), rx_buf.data(), length)) {
+      printf("read_bytes( %d failed)\n", length);
+    }
     return rx_buf;
+  }
+
+  // spi_read( nbytes) equivalent to Bernard's version
+  // Expects the board to send back the byte count first
+  std::vector<uint8_t> spi_read( int n_bytes_rqd = 2) {
+    std::vector<uint8_t> out_buf( n_bytes_rqd, 0);
+//        out_buf = bytearray(n_bytes_rqd)
+//    n_bytes_read = 0
+//    bytes_available = 0
+    int n_bytes_read = 0;
+    int bytes_available = 0;
+//    while n_bytes_read < n_bytes_rqd:
+    while( n_bytes_read < n_bytes_rqd) {
+//        # limit reads/writes to chunks of less than SPI bufsiz
+//        # (/sys/module/spidev/parameters/bufsiz ~= 4096 on this machine)
+//        n_rdnow = min(bytes_available+2, 4096)
+      int n_rdnow = std::min(bytes_available+2, 4096);
+//        buf = spi.readbytes(n_rdnow)
+      std::vector<uint8_t> buf = read_bytes( n_rdnow);
+//        if len(buf) < n_rdnow:
+//            print(f"read error: expected {n_rdnow}, received {len(buf)}")
+      printf("read_bytes(%d) returned %d\n", n_rdnow, buf.size());
+      if( buf.size() < n_rdnow) {
+	printf("read error:  expected %d, received %d\n", n_rdnow, buf.size());
+      }
+//        bytes_available = buf[0] + buf[1]*256 - (n_rdnow-2)
+      int bytes_available = buf[0] + buf[1]*256 - (n_rdnow-2);
+      if( n_rdnow > 2) {
+	//	out_buf[n_bytes_read:(n_bytes_read+n_rdnow)] = buf[2:];
+	memcpy( &out_buf[n_bytes_read], &buf[2], n_rdnow);
+	n_bytes_read += (n_rdnow-2);
+      } else {
+	usleep( 1000);
+      }
+
+    }
+    return out_buf;
+	
+//        if n_rdnow > 2:
+//            out_buf[n_bytes_read:(n_bytes_read+n_rdnow)] = buf[2:]
+//            n_bytes_read += (n_rdnow-2)
+//        else:
+//            sleep(0.001)
+//    return out_buf
   }
 
   // spi.writebytes2() for 3-byte command only
@@ -128,6 +179,7 @@ int main() {
 
   // Open SPI bus 0, Chip Select 0, Mode 0 at 12 MHz
   if (!spi.open_spi("/dev/spidev0.0", SPI_MODE_0, 12000000)) {
+    printf("Error opening SPI\n");
     return 1;
   }
 
@@ -150,7 +202,7 @@ int main() {
   // spi.writebytes2([0xfe, 15, 0]) # read cmd for fw version
   spi.writebytes2(0xfe, 15, 0); // read cmd for fw version
   // buf = spi_read(4)
-  std::vector<uint8_t> buf = spi.read_bytes(4);
+  std::vector<uint8_t> buf = spi.spi_read(4);
   // if buf[0] == 0xfd and buf[2] == 0xfd:
   //     bit_depth = buf[1]
   //     fw_ver = buf[3]
@@ -163,8 +215,9 @@ int main() {
     printf("FPGA fw ver: %d, bit depth: %d\n", fw_ver, bit_depth);
   } else {
     printf("read error\n");
+    for( int i=0; i<6; i++)
+      printf("buf[%d] = 0x%x\n", i, buf[i]);
   }
-	
 //
 //
 //
