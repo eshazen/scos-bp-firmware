@@ -1,7 +1,8 @@
+#
+# eric_read.py : read and dump raw frame data
+#
 import spidev
 from time import sleep
-import matplotlib.pyplot as plt
-import numpy as np
 
 # Initialize SPI bus
 spi_bus = 0
@@ -13,7 +14,6 @@ spi = spidev.SpiDev()
 spi.open(spi_bus, spi_dev) #(bus, device)
 spi.max_speed_hz = spi_max_speed_hz
 spi.mode = spi_mode
-rxtx_buf = np.zeros(8196, dtype=np.uint8)
 spi.writebytes2([0, 0, 0]) # flush cfg fsm
 
 def spi_read(n_bytes_rqd=2):
@@ -85,24 +85,7 @@ for islice in range(n_slices):
 spi.close()
 print("")
 
-img_data = np.frombuffer(img_raw_data, dtype=np.uint16)
-    
-img_mean = np.mean(img_data)
-img_var = np.var(img_data)
-img_k2 = img_var/(img_mean**2)
-print(f"pix val mean {img_mean:.1f}  var {img_var:.2f}  k2 {img_k2:.3f}")
+with open("dump.dat", "wb") as f:
+    f.write( img_raw_data)
 
-# Display the image using Matplotlib
-print("show image")
-img = img_data.reshape((n_rows*n_slices, n_cols))
-plt.imshow(img, cmap='gray')
-plt.axis('off')  # Hide axes for cleaner image display
-plt.show()
-
-# Display histogram
-# plt.hist(img_data.flatten(), [i for i in range(0,2**12,1)])
-# plt.xlim([0, n_img_sum*(2**bit_depth)])
-# plt.xlabel('Digital Level')
-# plt.title(f'RAW{bit_depth} Histogram of {n_img_sum} Images')
-# plt.text(200, 800*4, f"mean: {img_mean:.1f} \nvar: {img_var:.2f} \nk2: {img_k2:.3f}")
-# plt.show()
+print("Wrote image to dump.dat")

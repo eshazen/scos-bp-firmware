@@ -47,7 +47,8 @@ def spi_init():
     spi_bus = 0
     spi_dev = 0
     spi_mode = 0
-    spi_max_speed_hz = 12_000_000
+    # spi_max_speed_hz = 12_000_000
+    spi_max_speed_hz = 10_000_000
     spi.open(spi_bus, spi_dev) #(bus, device)
     spi.max_speed_hz = spi_max_speed_hz
     spi.mode = spi_mode
@@ -275,7 +276,8 @@ def turn_on(cfg_fname=None):
     sleep(0.01)
     # step 8
     main_opt_ops()
-    set_ldo(enable=True) # TODO: is this step necessary and correct? It is not explicitly mentioned in the datasheet
+    # Note (ESH): try leaving out the re-enable (doesn't seem to make any difference)
+    # set_ldo(enable=True) # TODO: is this step necessary and correct? It is not explicitly mentioned in the datasheet
     sleep(0.01)
     # step 9
     upload_cfg(cfg_fname=cfg_fname)

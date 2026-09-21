@@ -106,3 +106,5 @@ flycheck_*.el
 
 # undo-tree
 *.~undo-tree~
+
+__pycache__
