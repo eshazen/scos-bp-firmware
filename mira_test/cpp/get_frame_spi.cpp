@@ -22,6 +22,9 @@
 #define USLEEP_DELAY 1000
 #define SPI_SPEED_HZ 10000000
 
+#define WIDTH 1600
+#define HEIGHT 480
+
 #include "SpiDevice.hh"
 
 int main( int argc, char *argv[]) {
@@ -29,9 +32,9 @@ int main( int argc, char *argv[]) {
   std::vector<uint8_t> rxtx_buf(8196);
   std::vector<uint8_t> cmd3(3);
 
-  int n_rows = 40;
-  int n_cols = 1600;
   int n_slices = 12;
+  int n_rows = HEIGHT/n_slices;
+  int n_cols = WIDTH;
   int n_img_sum = 1;
   int n_bytes_per_row = n_cols * 2;
 
@@ -125,16 +128,24 @@ int main( int argc, char *argv[]) {
 
   printf("\nRead %d bytes\n", total_read);
 
-  for( int i=0; i<16; i+=2) {
-    uint16_t pix = img_raw_data[i] + (img_raw_data[i+1]<<8);
-    printf(" %d", pix);
+  uint16_t* imageData10bit = new uint16_t[WIDTH * HEIGHT];
+
+  // calculate average
+  for( int i=0; i<WIDTH*HEIGHT; i++) {
+    uint16_t pix = img_raw_data[2*i] + (img_raw_data[2*i+1]<<8);
+    imageData10bit[i] = (double)pix / n_img_sum;
+  }
+
+  for( int i=0; i<16; i++) {
+    printf(" %d", imageData10bit[i]);
   }
   printf("\n");
 
   if( output_file) {
+
     printf("Attempting to dump raw binary data to %s\n", output_file);
     FILE *fp = fopen( output_file, "wb");
-    fwrite( img_raw_data.data(), 1, total_read, fp);
+    fwrite( imageData10bit, sizeof(uint16_t), WIDTH*HEIGHT, fp);
     fclose( fp);
   }
 
