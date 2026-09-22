@@ -17,4 +17,8 @@ RAW10 images from the Mira220+FPGA evaluation board or Pi Hat.
     usage:  display_test_sdl2 [input_file]
       opens a window using the SDL2 library and displays image
       if no input file is specified, generates a test pattern
-
+	  
+      if needed to build on Pi:
+	  
+      # Install dependencies
+      sudo apt-get install -y libsdl2-dev build-essential
