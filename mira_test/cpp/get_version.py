@@ -27,14 +27,23 @@ def spi_read(n_bytes_rqd=2):
         # (/sys/module/spidev/parameters/bufsiz ~= 4096 on this machine)
         n_rdnow = min(bytes_available+2, 4096)
         buf = spi.readbytes(n_rdnow)
+        lbuf = len(buf)
+        print(f"read bytes( {n_rdnow} ) returned {lbuf}")
+        print(buf)
         if len(buf) < n_rdnow:
             print(f"read error: expected {n_rdnow}, received {len(buf)}")
         bytes_available = buf[0] + buf[1]*256 - (n_rdnow-2)
+        print(f"bytes_available = {bytes_available}")
         if n_rdnow > 2:
+            print("add to out_buf from 2:")
+            print(buf)
             out_buf[n_bytes_read:(n_bytes_read+n_rdnow)] = buf[2:]
             n_bytes_read += (n_rdnow-2)
+            print(f"n_bytes_read = {n_bytes_read}")
         else:
             sleep(0.001)
+    print("out_buf")
+    print(out_buf)
     return out_buf
 
 n_rows = 40

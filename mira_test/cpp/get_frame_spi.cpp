@@ -1,11 +1,17 @@
 //
 // C++ version of get_frame_spi
-// Basic SpiDevice class written by Gemini
+// Basic SpiDevice class written by Gemini AI
 //
+
+// usage:
+// get_frame_spi [-s <frames_to_sum>] [output_file]
+
+// #define DEBUG
 
 #include <iostream>
 #include <vector>
 #include <cstdint>
+#include <cstdio>
 #include <cstring>
 #include <fcntl.h>
 #include <sys/ioctl.h>
@@ -13,163 +19,15 @@
 #include <unistd.h>
 #include <cstdint>
 
-class SpiDevice {
-private:
-  int fd = -1;
-  uint32_t speed_hz = 12000000; // Default 12 MHz
-  uint8_t bits_per_word = 8;
-  uint8_t mode = SPI_MODE_0;
+#define USLEEP_DELAY 1000
+#define SPI_SPEED_HZ 10000000
 
-public:
-  SpiDevice() = default;
-    
-  ~SpiDevice() {
-    close_spi();
-  }
+#include "SpiDevice.hh"
 
-  // Opens the device (e.g., "/dev/spidev0.0") and configures defaults
-  bool open_spi(const std::string& device, uint8_t spi_mode = SPI_MODE_0, uint32_t max_speed = 1000000) {
-    fd = open(device.c_str(), O_RDWR);
-    if (fd < 0) {
-      std::perror("Error opening SPI device");
-      return false;
-    }
-
-    mode = spi_mode;
-    speed_hz = max_speed;
-
-    // Apply settings via ioctl configuration macros
-    if (ioctl(fd, SPI_IOC_WR_MODE, &mode) < 0) return false;
-    if (ioctl(fd, SPI_IOC_WR_BITS_PER_WORD, &bits_per_word) < 0) return false;
-    if (ioctl(fd, SPI_IOC_WR_MAX_SPEED_HZ, &speed_hz) < 0) return false;
-
-    return true;
-  }
-
-  // Equivalent to spi.readbytes(n)
-  // Sends dummy zeros to clock in data from the peripheral
-  std::vector<uint8_t> read_bytes(size_t length) {
-    std::vector<uint8_t> tx_buf(length, 0x00); 
-    std::vector<uint8_t> rx_buf(length, 0x00);
-
-    if( !transfer(tx_buf.data(), rx_buf.data(), length)) {
-      printf("read_bytes( %d failed)\n", length);
-    }
-    return rx_buf;
-  }
-
-  // spi_read( nbytes) equivalent to Bernard's version
-  // Expects the board to send back the byte count first
-  std::vector<uint8_t> spi_read( int n_bytes_rqd = 2) {
-    std::vector<uint8_t> out_buf( n_bytes_rqd, 0);
-//        out_buf = bytearray(n_bytes_rqd)
-//    n_bytes_read = 0
-//    bytes_available = 0
-    int n_bytes_read = 0;
-    int bytes_available = 0;
-//    while n_bytes_read < n_bytes_rqd:
-    while( n_bytes_read < n_bytes_rqd) {
-//        # limit reads/writes to chunks of less than SPI bufsiz
-//        # (/sys/module/spidev/parameters/bufsiz ~= 4096 on this machine)
-//        n_rdnow = min(bytes_available+2, 4096)
-      int n_rdnow = std::min(bytes_available+2, 4096);
-//        buf = spi.readbytes(n_rdnow)
-      std::vector<uint8_t> buf = read_bytes( n_rdnow);
-//        if len(buf) < n_rdnow:
-//            print(f"read error: expected {n_rdnow}, received {len(buf)}")
-      printf("read_bytes(%d) returned %d\n", n_rdnow, buf.size());
-      if( buf.size() < n_rdnow) {
-	printf("read error:  expected %d, received %d\n", n_rdnow, buf.size());
-      }
-//        bytes_available = buf[0] + buf[1]*256 - (n_rdnow-2)
-      int bytes_available = buf[0] + buf[1]*256 - (n_rdnow-2);
-      if( n_rdnow > 2) {
-	//	out_buf[n_bytes_read:(n_bytes_read+n_rdnow)] = buf[2:];
-	memcpy( &out_buf[n_bytes_read], &buf[2], n_rdnow);
-	n_bytes_read += (n_rdnow-2);
-      } else {
-	usleep( 1000);
-      }
-
-    }
-    return out_buf;
-	
-//        if n_rdnow > 2:
-//            out_buf[n_bytes_read:(n_bytes_read+n_rdnow)] = buf[2:]
-//            n_bytes_read += (n_rdnow-2)
-//        else:
-//            sleep(0.001)
-//    return out_buf
-  }
-
-  // spi.writebytes2() for 3-byte command only
-  bool writebytes2( uint8_t cmd1, uint8_t cmd2, uint8_t cmd3) {
-    std::vector<uint8_t> temp(3, 0);
-    temp[0] = cmd1;
-    temp[1] = cmd2;
-    temp[2] = cmd3;
-    return transfer( temp.data(), nullptr, temp.size());
-  }    
-
-  // Equivalent to spi.writebytes([...])
-  bool write_bytes(const std::vector<uint8_t>& data) {
-    // We pass nullptr to rx_buf if we only want to transmit
-    return transfer(data.data(), nullptr, data.size());
-  }
-
-  // Equivalent to spi.xfer() / spi.xfer2()
-  // Simultaneously writes and reads
-  std::vector<uint8_t> xfer(const std::vector<uint8_t>& data) {
-    std::vector<uint8_t> rx_buf(data.size(), 0x00);
-    transfer(data.data(), rx_buf.data(), data.size());
-    return rx_buf;
-  }
-
-  void close_spi() {
-    if (fd >= 0) {
-      close(fd);
-      fd = -1;
-    }
-  }
-
-private:
-  // Core ioctl messaging wrapper
-  bool transfer(const uint8_t* tx, uint8_t* rx, size_t length) {
-    if (fd < 0) return false;
-
-    struct spi_ioc_transfer tr;
-    std::memset(&tr, 0, sizeof(tr));
-
-    tr.tx_buf = reinterpret_cast<unsigned long>(tx);
-    tr.rx_buf = reinterpret_cast<unsigned long>(rx);
-    tr.len = static_cast<__u32>(length);
-    tr.speed_hz = speed_hz;
-    tr.bits_per_word = bits_per_word;
-    tr.delay_usecs = 0;
-    tr.cs_change = 0; // Keep CS asserted until transfer completes
-
-    // SPI_IOC_MESSAGE(1) means we are passing an array containing 1 transfer struct
-    int ret = ioctl(fd, SPI_IOC_MESSAGE(1), &tr);
-    if (ret < 0) {
-      std::perror("Error during SPI ioctl message transfer");
-      return false;
-    }
-    return true;
-  }
-};
-
-int main() {
+int main( int argc, char *argv[]) {
   SpiDevice spi;
-  // rxtx_buf = np.zeros(8196, dtype=np.uint8)
   std::vector<uint8_t> rxtx_buf(8196);
   std::vector<uint8_t> cmd3(3);
-
-    // n_rows = 40
-    // n_cols = 1600
-    // n_slices = 12
-    // n_img_sum = 1 # number of images to sum in fpga
-    // 
-    // n_bytes_per_row = int(n_cols * 2)
 
   int n_rows = 40;
   int n_cols = 1600;
@@ -177,38 +35,47 @@ int main() {
   int n_img_sum = 1;
   int n_bytes_per_row = n_cols * 2;
 
+  char *output_file = NULL;
+
+  if( argc > 1) {
+    for( int i=1; i<argc; i++) {
+      if( *argv[i] == '-') {
+	switch( toupper( argv[i][1])) {
+	case 'S':
+	  if( i > argc-1) {
+	    printf("Need frame count after -S\n");
+	    exit(1);
+	  }
+	  n_img_sum = atoi( argv[i+1]);
+	  printf("Summing %d frames\n", n_img_sum);
+	  ++i;
+	  break;
+	default:
+	  printf("unknown option '%c'\n", argv[i][1]);
+	}
+      } else {
+	output_file = argv[i];
+      }
+    }
+  }
+
   // Open SPI bus 0, Chip Select 0, Mode 0 at 12 MHz
-  if (!spi.open_spi("/dev/spidev0.0", SPI_MODE_0, 12000000)) {
+  if (!spi.open_spi("/dev/spidev0.0", SPI_MODE_0, SPI_SPEED_HZ)) {
     printf("Error opening SPI\n");
     return 1;
   }
 
-  // spi.writebytes2([0, 0, 0]) # flush cfg fsm
-  spi.writebytes2( 0, 0, 0);
-
-  // spi.writebytes2([0xfe, (1<<7)+1, 0]) # select cfg reg as data source
+  spi.writebytes2( 0, 0, 0); // flush cfg fsm
   spi.writebytes2( 0xfe, (1<<7)+1, 0); // select cfg reg as data source
-  // # reset tx buffer in fpga
-  // spi.writebytes2([0xfe, (1<<7)+0, (1<<7)])
+  // reset tx buffer in fpga
   spi.writebytes2(0xfe, (1<<7)+0, (1<<7));
   spi.writebytes2(0xfe, (1<<7)+0, 0);
-  // sleep(0.001)
-  usleep( 1000);
-  // # get firmware version and bit depth
-  // spi.writebytes2([0xfe, (1<<7)+1, 0]) # select cfg reg as data source
+  usleep( USLEEP_DELAY);
+  // get firmware version and bit depth
   spi.writebytes2(0xfe, (1<<7)+1, 0); // select cfg reg as data source
-  // spi.writebytes2([0xfe, 14, 0]) # read cmd for bit depth
   spi.writebytes2(0xfe, 14, 0); // read cmd for bit depth
-  // spi.writebytes2([0xfe, 15, 0]) # read cmd for fw version
   spi.writebytes2(0xfe, 15, 0); // read cmd for fw version
-  // buf = spi_read(4)
   std::vector<uint8_t> buf = spi.spi_read(4);
-  // if buf[0] == 0xfd and buf[2] == 0xfd:
-  //     bit_depth = buf[1]
-  //     fw_ver = buf[3]
-  //     print(f"FPGA fw ver: {fw_ver}, bit depth: {bit_depth}")
-  // else:
-  //     print(f"read error, buf = {buf}")
   if( buf[0] == 0xfd && buf[2] == 0xfd) {
     int bit_depth = buf[1];
     int fw_ver = buf[3];
@@ -217,22 +84,59 @@ int main() {
     printf("read error\n");
     for( int i=0; i<6; i++)
       printf("buf[%d] = 0x%x\n", i, buf[i]);
+    exit(1);
   }
-//
-//
-//
-//
-//  // Example 1: Read 5 bytes
-//  std::vector<uint8_t> incoming = spi.read_bytes(5);
-//  std::cout << "Read bytes: ";
-//  for (auto byte : incoming) std::printf("0x%02X ", byte);
-//  std::cout << "\n";
-//
-//  // Example 2: Write command bytes
-//  spi.write_bytes({0x41, 0x42, 0x43});
-//
-//  // Example 3: Transfer (Simultaneous Read/Write)
-//  std::vector<uint8_t> response = spi.xfer({0x9F, 0x00, 0x00}); // e.g., Read Jedec ID command
+
+  // # configure for frame buffer read
+  // #ser.write([0xfe, ireg, ival])
+  spi.writebytes2(0xfe, (1<<7)+1, 2); // select raw frame as data source
+  spi.writebytes2(0xfe, (1<<7)+5, 0); // select slice 0
+  spi.writebytes2(0xfe, (1<<7)+6, n_img_sum-1); // set to sum N images
+  // 
+  // # reset tx buffer in fpga
+  spi.writebytes2(0xfe, (1<<7)+0, (1<<7));
+  spi.writebytes2(0xfe, (1<<7)+0, 0);
+  usleep( USLEEP_DELAY);
+
+  int total_read = 0;
+
+  // img_raw_data = bytearray()
+  std::vector<uint8_t> img_raw_data;
+  // print("Trigger slice   ", end='')
+  printf("Trigger slice: ");
+  // for islice in range(n_slices):
+  for( int islice=0; islice<n_slices; islice++) {
+    printf("%d ", islice);
+    fflush(stdout);
+  //     print(f"\b\b{islice:2d}", end='', flush=True)
+       spi.writebytes2(0xfe, (1<<7)+5, islice); // set slice number
+       spi.writebytes2(0xfe, (1<<7)+0, 1<<1); // trigger slice
+       spi.writebytes2(0xfe, (1<<7)+0, 0);
+       std::vector<uint8_t> raw = spi.spi_read(n_rows*n_bytes_per_row);
+#ifdef DEBUG
+       printf("Read %d bytes\n", raw.size());
+#endif
+       total_read += raw.size();
+       img_raw_data.insert( img_raw_data.end(), raw.begin(), raw.end());
+  //     img_raw_data.extend(spi_read(n_rows*n_bytes_per_row))
+  // 
+  // spi.close()
+  }
+
+  printf("\nRead %d bytes\n", total_read);
+
+  for( int i=0; i<16; i+=2) {
+    uint16_t pix = img_raw_data[i] + (img_raw_data[i+1]<<8);
+    printf(" %d", pix);
+  }
+  printf("\n");
+
+  if( output_file) {
+    printf("Attempting to dump raw binary data to %s\n", output_file);
+    FILE *fp = fopen( output_file, "wb");
+    fwrite( img_raw_data.data(), 1, total_read, fp);
+    fclose( fp);
+  }
 
   return 0;
 }
