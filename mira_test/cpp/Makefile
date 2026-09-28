@@ -1,5 +1,7 @@
 all: display_test_sdl2 get_frame_spi
 
+MiraDevice.o: MiraDevice.cpp Miradevice.h SpiDevice.hh
+
 clean:
 	rm -f display_test_sdl2 get_frame_spi
 
