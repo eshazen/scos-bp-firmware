@@ -1,5 +1,7 @@
 //
 // C++ version of get_frame_spi
+// Converted from python by E. Hazen
+//
 // Basic SpiDevice class written by Gemini AI
 //
 
@@ -19,9 +21,13 @@
 #include <unistd.h>
 #include <cstdint>
 
+// required delay after some ops for FPGA to catch up
 #define USLEEP_DELAY 1000
+
+// SPI bus speed - 10MHz works
 #define SPI_SPEED_HZ 10000000
 
+// must match sensor config
 #define WIDTH 1600
 #define HEIGHT 480
 
@@ -29,20 +35,21 @@
 
 int main( int argc, char *argv[]) {
   SpiDevice spi;
-  std::vector<uint8_t> rxtx_buf(8196);
-  std::vector<uint8_t> cmd3(3);
+  std::vector<uint8_t> rxtx_buf(8196); // SPI data buffer
+  std::vector<uint8_t> cmd3(3);	       // SPI command buffer
 
-  int n_slices = 12;
-  int n_rows = HEIGHT/n_slices;
-  int n_cols = WIDTH;
-  int n_img_sum = 1;
-  int n_bytes_per_row = n_cols * 2;
+  int n_slices = 12;		// number of "slices" to read
+  int n_rows = HEIGHT/n_slices;	// rows per slice
+  int n_cols = WIDTH;		// columns per slice
+  int n_img_sum = 1;		// number of frames to sum for averaging
+  int n_bytes_per_row = n_cols * 2; // number of bytes to read per row (16 bits/pixel for RAW10)
 
-  char *output_file = NULL;
+  char *output_file = NULL;	// output file name if any
 
+  // process any command-line arguments
   if( argc > 1) {
     for( int i=1; i<argc; i++) {
-      if( *argv[i] == '-') {
+      if( *argv[i] == '-') {	// options start with '-'
 	switch( toupper( argv[i][1])) {
 	case 'S':
 	  if( i > argc-1) {
@@ -62,7 +69,7 @@ int main( int argc, char *argv[]) {
     }
   }
 
-  // Open SPI bus 0, Chip Select 0, Mode 0 at 12 MHz
+  // Open SPI bus 0, Chip Select 0, Mode 0 at specified speed
   if (!spi.open_spi("/dev/spidev0.0", SPI_MODE_0, SPI_SPEED_HZ)) {
     printf("Error opening SPI\n");
     return 1;
@@ -101,7 +108,7 @@ int main( int argc, char *argv[]) {
   spi.writebytes2(0xfe, (1<<7)+0, 0);
   usleep( USLEEP_DELAY);
 
-  int total_read = 0;
+  int total_read = 0;		// counter for bytes read
 
   // img_raw_data = bytearray()
   std::vector<uint8_t> img_raw_data;
@@ -111,19 +118,16 @@ int main( int argc, char *argv[]) {
   for( int islice=0; islice<n_slices; islice++) {
     printf("%d ", islice);
     fflush(stdout);
-  //     print(f"\b\b{islice:2d}", end='', flush=True)
-       spi.writebytes2(0xfe, (1<<7)+5, islice); // set slice number
-       spi.writebytes2(0xfe, (1<<7)+0, 1<<1); // trigger slice
-       spi.writebytes2(0xfe, (1<<7)+0, 0);
-       std::vector<uint8_t> raw = spi.spi_read(n_rows*n_bytes_per_row);
+    //     print(f"\b\b{islice:2d}", end='', flush=True)
+    spi.writebytes2(0xfe, (1<<7)+5, islice); // set slice number
+    spi.writebytes2(0xfe, (1<<7)+0, 1<<1); // trigger slice
+    spi.writebytes2(0xfe, (1<<7)+0, 0);
+    std::vector<uint8_t> raw = spi.spi_read(n_rows*n_bytes_per_row); // read the data
 #ifdef DEBUG
-       printf("Read %d bytes\n", raw.size());
+    printf("Read %d bytes\n", raw.size());
 #endif
-       total_read += raw.size();
-       img_raw_data.insert( img_raw_data.end(), raw.begin(), raw.end());
-  //     img_raw_data.extend(spi_read(n_rows*n_bytes_per_row))
-  // 
-  // spi.close()
+    total_read += raw.size();
+    img_raw_data.insert( img_raw_data.end(), raw.begin(), raw.end()); // add data to end
   }
 
   printf("\nRead %d bytes\n", total_read);
@@ -136,13 +140,14 @@ int main( int argc, char *argv[]) {
     imageData10bit[i] = (double)pix / n_img_sum;
   }
 
+  // print first 16 values for confidence
   for( int i=0; i<16; i++) {
     printf(" %d", imageData10bit[i]);
   }
   printf("\n");
 
+  // write data to file if requested
   if( output_file) {
-
     printf("Attempting to dump raw binary data to %s\n", output_file);
     FILE *fp = fopen( output_file, "wb");
     fwrite( imageData10bit, sizeof(uint16_t), WIDTH*HEIGHT, fp);
