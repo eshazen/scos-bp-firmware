@@ -6,6 +6,11 @@
 #include <string>
 #include <chrono>
 #include <thread>
+#include <cstring>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/ioctl.h>
+#include <linux/spi/spidev.h>
 #include "SpiDevice.hh"
 
 class MiraDevice {
