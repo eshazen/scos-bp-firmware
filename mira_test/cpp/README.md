@@ -1,18 +1,18 @@
 # mira_test/cpp
 
-This directory contains two sample programs to readout and display
-RAW10 images from the Mira220+FPGA evaluation board or Pi Hat.
-
+This directory contains C++ code converted from Bernhard's Python.
 (currently only tested on the eval board)
 
-`get_frame_spi.cpp` 
+`cfg_mira.cpp` - configure the MIRA chip from a CSV config file
+
+`get_frame_spi.cpp` - read one frame (with optional averaging)
 
     usage:  get_frame_spi [-s frames_to_sum] [output_file]
       reads one complete 1600x480 RAW10 frame in 12 slices
       up to 63 frames can be summed (before int16 overflow)
       data may be optionally written in raw int16 binary to file
 
-`display_test_sdl2.cpp`
+`display_test_sdl2.cpp` - display on the screen an image
 
     usage:  display_test_sdl2 [input_file]
       opens a window using the SDL2 library and displays image
@@ -22,3 +22,7 @@ RAW10 images from the Mira220+FPGA evaluation board or Pi Hat.
 	  
       # Install dependencies
       sudo apt-get install -y libsdl2-dev build-essential
+
+`SpiDevice.hh` - low-level SPI bus library
+
+`MiraDevice.cpp` - MIRA interface class for I2C configuration

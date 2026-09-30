@@ -1,3 +1,8 @@
+//
+// Bernhard's python class mira.py converted by AI to C++
+// 
+
+
 #ifndef MIRA_DEVICE_H
 #define MIRA_DEVICE_H
 

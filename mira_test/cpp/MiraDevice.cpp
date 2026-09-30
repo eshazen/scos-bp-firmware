@@ -1,3 +1,6 @@
+//
+// Bernhard's python class mira.py converted by AI to C++
+// 
 
 #include "MiraDevice.h"
 #include <cstdio>
@@ -71,7 +74,9 @@ uint8_t MiraDevice::read_all_bits() {
 
     if (buf[0] != 8 * 2 || buf[1] != 0) {
         std::cerr << "Error: unexpected number of available bytes" << std::endl;
-        return 0;
+	for( int i=0; i<buf.size(); i++)
+	  fprintf( stderr, " %d: 0x%x\n", i, buf[i]);
+	exit( 1);
     }
 
     uint8_t res = 0;
@@ -385,7 +390,7 @@ bool MiraDevice::upload_config(const std::string& cfg_filename, bool verbose) {
     if (cfg_filename.empty()) {
         full_path = std::string(CONFIG_DIR) + DEFAULT_CONFIG;
     } else {
-        full_path = std::string(CONFIG_DIR) + cfg_filename;
+        full_path = cfg_filename;
     }
 
     std::ifstream file(full_path);
