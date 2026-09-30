@@ -1,6 +1,8 @@
 
 #include "SpiDevice.hh"
 
+// #define DEBUG
+
 SpiDevice::SpiDevice() {
 }
     
@@ -26,37 +28,34 @@ bool SpiDevice::open_spi(const std::string& device, uint8_t spi_mode, uint32_t m
   return true;
 }
 
-std::vector<uint8_t> SpiDevice::read_bytes(size_t length) {
-  std::vector<uint8_t> tx_buf(length, 0x00); 
-  std::vector<uint8_t> rx_buf(length, 0x00);
-
-  if( !transfer(tx_buf.data(), rx_buf.data(), length)) {
+uint8_t* SpiDevice::read_bytes(size_t length) {
+  if( !transfer(static_tx_buf, static_rx_buf, length)) {
     printf("read_bytes( %d failed)\n", length);
+    return nullptr;
   }
-  return rx_buf;
+  return static_rx_buf;
 }
 
   // spi_read( nbytes) equivalent to Bernard's version
   // Expects the board to send back the byte count first
 std::vector<uint8_t> SpiDevice::spi_read( int n_bytes_rqd) {
   std::vector<uint8_t> out_buf( n_bytes_rqd, 0);
+
+  printf("spi_read( %d)\n", n_bytes_rqd);
+
   int n_bytes_read = 0;
   int bytes_available = 0;
   int n_rdnow;
   while( n_bytes_read < n_bytes_rqd) {
     n_rdnow = std::min(bytes_available+2, 4096);
-    std::vector<uint8_t> buf = read_bytes( n_rdnow);
+    uint8_t* buf = read_bytes( n_rdnow);
 #ifdef DEBUG
-    printf("read_bytes(%d) returned %d\n", n_rdnow, buf.size());
-    for( int i=0; i< (std::min(buf.size(),(size_t)10)) ; i++)
+    for( int i=0; i<std::min(n_rdnow,10) ; i++)
       printf("buf[%d] = 0x%x\n", i, buf[i]);
 #endif
-    if( buf.size() < n_rdnow) {
-      printf("read error:  expected %d, received %d\n", n_rdnow, buf.size());
-    }
     bytes_available = buf[0] + buf[1]*256 - (n_rdnow-2);
 #ifdef DEBUG
-    printf("bytes_available = %d (from %d, %d, %d)\n", bytes_available, buf[0], buf[1], n_rdnow-2);
+    printf("bytes_available = %d (from buf(%d, %d), n_rdnow-2=%d)\n", bytes_available, buf[0], buf[1], n_rdnow-2);
 #endif
     if( bytes_available < 0) {
       printf("Error!  bytes_available = %d\n", bytes_available);
@@ -64,7 +63,7 @@ std::vector<uint8_t> SpiDevice::spi_read( int n_bytes_rqd) {
     }
     if( n_rdnow > 2) {
 #ifdef DEBUG
-      printf("add to out_buf\n");
+      printf("add to out_buf %d bytes at %d\n", n_rdnow, n_bytes_read);
 #endif
       // out_buf[n_bytes_read:(n_bytes_read+n_rdnow)] = buf[2:]
       memcpy( &out_buf[n_bytes_read], &buf[2], n_rdnow);
@@ -82,26 +81,12 @@ std::vector<uint8_t> SpiDevice::spi_read( int n_bytes_rqd) {
 
   // spi.writebytes2() for 3-byte command only
 bool SpiDevice::writebytes2( uint8_t cmd1, uint8_t cmd2, uint8_t cmd3) {
-  std::vector<uint8_t> temp(3, 0);
+  uint8_t temp[3];
   temp[0] = cmd1;
   temp[1] = cmd2;
   temp[2] = cmd3;
-  return transfer( temp.data(), nullptr, temp.size());
+  return transfer( temp, nullptr, 3);
 }    
-
-  // Equivalent to spi.writebytes([...])
-bool SpiDevice:: write_bytes(const std::vector<uint8_t>& data) {
-  // We pass nullptr to rx_buf if we only want to transmit
-  return transfer(data.data(), nullptr, data.size());
-}
-
-  // Equivalent to spi.xfer() / spi.xfer2()
-  // Simultaneously writes and reads
-std::vector<uint8_t> SpiDevice::xfer(const std::vector<uint8_t>& data) {
-  std::vector<uint8_t> rx_buf(data.size(), 0x00);
-  transfer(data.data(), rx_buf.data(), data.size());
-  return rx_buf;
-}
 
 void SpiDevice::close_spi() {
   if (fd >= 0) {

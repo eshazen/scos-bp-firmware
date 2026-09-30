@@ -70,12 +70,12 @@ void MiraDevice::read_bit() {
 
 uint8_t MiraDevice::read_all_bits() {
     // Collect all bit reads triggered by read_bit()
-    std::vector<uint8_t> buf = spi.read_bytes(2 + 8 * 2);
+  uint8_t* buf = spi.read_bytes(2 + 8 * 2);
 
     if (buf[0] != 8 * 2 || buf[1] != 0) {
         std::cerr << "Error: unexpected number of available bytes" << std::endl;
-	for( int i=0; i<buf.size(); i++)
-	  fprintf( stderr, " %d: 0x%x\n", i, buf[i]);
+//	for( int i=0; i<buf.size(); i++)
+//	  fprintf( stderr, " %d: 0x%x\n", i, buf[i]);
 	exit( 1);
     }
 

@@ -1,7 +1,12 @@
-all: display_test_sdl2 get_frame_spi MiraDevice.o cfg_mira ReadFrame
+
+EXECS = display_test_sdl2 MiraDevice.o cfg_mira ReadFrame TestDump
+
+all: ${EXECS}
 
 clean:
-	rm -f display_test_sdl2 get_frame_spi MiraDevice.o cfg_mira ReadFrame *~ \#* *.o
+	rm -f ${EXECS} *~ \#* *.o
+
+TestDump.o: TestDump.cpp MiraImage.h SpiDevice.hh
 
 MiraDevice.o: MiraDevice.cpp MiraDevice.h SpiDevice.hh
 
@@ -22,5 +27,6 @@ cfg_mira: SpiDevice.o MiraDevice.o cfg_mira.o
 display_test_sdl2: display_test_sdl2.cpp
 	g++ -std=c++17 -O2 -o display_test_sdl2 display_test_sdl2.cpp -lSDL2
 
-get_frame_spi: SpiDevice.o get_frame_spi.o
+TestDump: TestDump.o SpiDevice.o MiraImage.o
 	g++ -o $@ $^
+ 

@@ -27,7 +27,6 @@
 
 class MiraImage {
 private:
-  SpiDevice spi;
   std::vector<uint8_t> rxtx_buf; // SPI data buffer
   std::vector<uint8_t> cmd3;	       // SPI command buffer
 
@@ -38,6 +37,8 @@ private:
   char *output_file = NULL;	// output file name if any
 
 public:
+  SpiDevice spi;
+
   MiraImage();
   ~MiraImage();
 
