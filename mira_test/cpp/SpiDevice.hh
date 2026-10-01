@@ -22,7 +22,7 @@ class SpiDevice {
 private:
   int fd = -1;
   uint32_t usleep_delay = 1000;
-  uint32_t speed_hz = 8000000; // Default 12 MHz
+  uint32_t speed_hz = 10000000; // Default 10 MHz
   uint8_t bits_per_word = 8;
   uint8_t mode = SPI_MODE_0;
   uint8_t static_tx_buf[MAX_SPI_XFER];
@@ -33,7 +33,7 @@ public:
   ~SpiDevice();
 
   // Opens the device (e.g., "/dev/spidev0.0") and configures defaults
-  bool open_spi(const std::string& device, uint8_t spi_mode = SPI_MODE_0, uint32_t max_speed = 1000000);
+  bool open_spi(const std::string& device, uint8_t spi_mode = SPI_MODE_0, uint32_t max_speed = 10000000);
   uint8_t* read_bytes(size_t length);
   std::vector<uint8_t> spi_read( int n_bytes_rqd = 2);
   bool writebytes2( uint8_t cmd1, uint8_t cmd2, uint8_t cmd3);

@@ -4,6 +4,8 @@
 // #define DEBUG
 
 SpiDevice::SpiDevice() {
+  memset( static_rx_buf, 0, sizeof(static_rx_buf));
+  memset( static_tx_buf, 0, sizeof(static_tx_buf));
 }
     
 SpiDevice::~SpiDevice() {
@@ -31,7 +33,7 @@ bool SpiDevice::open_spi(const std::string& device, uint8_t spi_mode, uint32_t m
 uint8_t* SpiDevice::read_bytes(size_t length) {
   if( !transfer(static_tx_buf, static_rx_buf, length)) {
     printf("read_bytes( %d failed)\n", length);
-    return nullptr;
+    exit(1);
   }
   return static_rx_buf;
 }
@@ -63,10 +65,12 @@ std::vector<uint8_t> SpiDevice::spi_read( int n_bytes_rqd) {
     }
     if( n_rdnow > 2) {
 #ifdef DEBUG
-      printf("add to out_buf %d bytes at %d\n", n_rdnow, n_bytes_read);
+      printf("add to out_buf n_rdnow=%d bytes at %d\n", n_rdnow, n_bytes_read);
 #endif
       // out_buf[n_bytes_read:(n_bytes_read+n_rdnow)] = buf[2:]
-      memcpy( &out_buf[n_bytes_read], &buf[2], n_rdnow);
+      printf("memmove( %x %x %d)\n", &out_buf[n_bytes_read], &buf[2], n_rdnow);
+      printf("out_buf = %x  n_bytes_read = %d\n", &out_buf[0], n_bytes_read);
+      memmove( &out_buf[n_bytes_read], &buf[2], n_rdnow);
       n_bytes_read += (n_rdnow-2);
 #ifdef DEBUG
       printf("n_bytes_read = %d\n", n_bytes_read);

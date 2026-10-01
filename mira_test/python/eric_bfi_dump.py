@@ -39,6 +39,8 @@ VAR_READ = 1
 bfi = np.empty(N_FRAMES_TO_DISP)
 bfi[:] = np.nan
 
+bfile = open( "dump.dat", "wb")
+
 def spi_read(n_bytes_rqd=2):
     global spi
     out_buf = bytearray(n_bytes_rqd)
@@ -61,7 +63,7 @@ def spi_read(n_bytes_rqd=2):
 ptr = 0
 frm_cnt = 0
 def update():
-    global bfi, ptr, frm_cnt
+    global bfi, ptr, frm_cnt, bfile
     rawdat_bytes = spi_read(N_BYTES_PER_XFER)
     
     # check first header, calculate offset
@@ -88,7 +90,10 @@ def update():
                 
                 pix_sum_array = rawdat[indices_sum]
                 pix_sq_sum_array = rawdat[indices_sq_sum]
-                
+
+                bfile.write( pix_sum_array)
+                bfile.write( pix_sq_sum_array)
+
                 # Calculate statistics
                 mean_I_array = pix_sum_array / N_PIX
                 var_I_array = pix_sq_sum_array / N_PIX - mean_I_array ** 2
