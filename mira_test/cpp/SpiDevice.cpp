@@ -1,8 +1,6 @@
 
 #include "SpiDevice.hh"
 
-// #define DEBUG
-
 SpiDevice::SpiDevice() {
   memset( static_rx_buf, 0, sizeof(static_rx_buf));
   memset( static_tx_buf, 0, sizeof(static_tx_buf));
@@ -10,6 +8,10 @@ SpiDevice::SpiDevice() {
     
 SpiDevice::~SpiDevice() {
     close_spi();
+}
+
+void SpiDevice::verbose( int v) {
+  debug = v;
 }
 
 bool SpiDevice::open_spi(const std::string& device, uint8_t spi_mode, uint32_t max_speed) {
@@ -51,30 +53,26 @@ std::vector<uint8_t> SpiDevice::spi_read( int n_bytes_rqd) {
   while( n_bytes_read < n_bytes_rqd) {
     n_rdnow = std::min(bytes_available+2, 4096);
     uint8_t* buf = read_bytes( n_rdnow);
-#ifdef DEBUG
-    for( int i=0; i<std::min(n_rdnow,10) ; i++)
-      printf("buf[%d] = 0x%x\n", i, buf[i]);
-#endif
+    if( debug) 
+      for( int i=0; i<std::min(n_rdnow,10) ; i++)
+	printf("buf[%d] = 0x%x\n", i, buf[i]);
     bytes_available = buf[0] + buf[1]*256 - (n_rdnow-2);
-#ifdef DEBUG
-    printf("bytes_available = %d (from buf(%d, %d), n_rdnow-2=%d)\n", bytes_available, buf[0], buf[1], n_rdnow-2);
-#endif
+    if( debug)
+      printf("bytes_available = %d (from buf(%d, %d), n_rdnow-2=%d)\n", bytes_available, buf[0], buf[1], n_rdnow-2);
     if( bytes_available < 0) {
       printf("Error!  bytes_available = %d\n", bytes_available);
       exit(1);
     }
     if( n_rdnow > 2) {
-#ifdef DEBUG
-      printf("add to out_buf n_rdnow=%d bytes at %d\n", n_rdnow, n_bytes_read);
-#endif
+      if( debug)
+	printf("add to out_buf n_rdnow=%d bytes at %d\n", n_rdnow, n_bytes_read);
       // out_buf[n_bytes_read:(n_bytes_read+n_rdnow)] = buf[2:]
       printf("memmove( %x %x %d)\n", &out_buf[n_bytes_read], &buf[2], n_rdnow);
       printf("out_buf = %x  n_bytes_read = %d\n", &out_buf[0], n_bytes_read);
       memmove( &out_buf[n_bytes_read], &buf[2], n_rdnow);
       n_bytes_read += (n_rdnow-2);
-#ifdef DEBUG
-      printf("n_bytes_read = %d\n", n_bytes_read);
-#endif
+      if( debug)
+	printf("n_bytes_read = %d\n", n_bytes_read);
     } else {
       usleep( usleep_delay);
     }

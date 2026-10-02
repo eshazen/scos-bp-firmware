@@ -22,7 +22,8 @@
 #define WIDTH 1600
 #define HEIGHT 480
 
-#define SPI_SPEED_HZ 10000000
+// #define SPI_SPEED_HZ 10000000
+#define SPI_SPEED_HZ 8000000
 #define USLEEP_DELAY 1000
 
 class MiraImage {

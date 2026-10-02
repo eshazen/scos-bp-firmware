@@ -27,6 +27,7 @@ private:
   uint8_t mode = SPI_MODE_0;
   uint8_t static_tx_buf[MAX_SPI_XFER];
   uint8_t static_rx_buf[MAX_SPI_XFER];
+  int debug = 0;
 
 public:
   SpiDevice();
@@ -38,6 +39,7 @@ public:
   std::vector<uint8_t> spi_read( int n_bytes_rqd = 2);
   bool writebytes2( uint8_t cmd1, uint8_t cmd2, uint8_t cmd3);
   void close_spi();
+  void verbose( int v);
 
 private:
   bool transfer(const uint8_t* tx, uint8_t* rx, size_t length);

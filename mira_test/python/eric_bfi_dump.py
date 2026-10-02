@@ -40,6 +40,7 @@ bfi = np.empty(N_FRAMES_TO_DISP)
 bfi[:] = np.nan
 
 bfile = open( "dump.dat", "wb")
+sfile = open( "sums.dat", "wb")
 
 def spi_read(n_bytes_rqd=2):
     global spi
@@ -84,15 +85,17 @@ def update():
                 print(f' header error 0x{header[0]:08x} 0x{header[1]:08x}')
                 result = np.nan
             else:
-                # Extract pixel sum and sum of squares
+                bfile.write( rawdat_bytes)
+
+               # Extract pixel sum and sum of squares
                 indices_sum = np.arange(0, 2 * N_TILES, 2) + 2 + iframe * (2 * N_TILES + 2)
                 indices_sq_sum = np.arange(0, 2 * N_TILES, 2) + 3 + iframe * (2 * N_TILES + 2)
                 
                 pix_sum_array = rawdat[indices_sum]
                 pix_sq_sum_array = rawdat[indices_sq_sum]
 
-                bfile.write( pix_sum_array)
-                bfile.write( pix_sq_sum_array)
+                sfile.write( pix_sum_array)
+                sfile.write( pix_sq_sum_array)
 
                 # Calculate statistics
                 mean_I_array = pix_sum_array / N_PIX

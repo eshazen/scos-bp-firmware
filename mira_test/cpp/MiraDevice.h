@@ -20,7 +20,6 @@
 
 class MiraDevice {
 private:
-    SpiDevice spi;
     uint8_t mira_addr = 0x54;  // Mira220 I2C address
     uint8_t scl_f = 1;         // SCL force state (1 = high-impedance, 0 = driven low)
     uint8_t sda_f = 1;         // SDA force state (1 = high-impedance, 0 = driven low)
@@ -50,6 +49,8 @@ private:
     void sleep_us(uint32_t us);
 
 public:
+    SpiDevice spi;
+
     // Constructor/Destructor
     MiraDevice(uint8_t i2c_addr = 0x54);
     ~MiraDevice();
