@@ -37,6 +37,8 @@ public:
   bool open_spi(const std::string& device, uint8_t spi_mode = SPI_MODE_0, uint32_t max_speed = 10000000);
   uint8_t* read_bytes(size_t length);
   std::vector<uint8_t> spi_read( int n_bytes_rqd = 2);
+  // std::vector<uint8_t> spi_read_frames( int n_bytes_rqd);
+  uint8_t* spi_read_frames( int n_bytes_rqd);
   bool writebytes2( uint8_t cmd1, uint8_t cmd2, uint8_t cmd3);
   void close_spi();
   void verbose( int v);

@@ -84,32 +84,6 @@ std::vector<uint8_t> MiraImage::read_frame( int n_img_sum) {
 
   return img_raw_data;
 
-  
-//   printf("\nRead %d bytes\n", total_read);
-// 
-//   uint16_t* imageData10bit = new uint16_t[WIDTH * HEIGHT];
-// 
-//   // calculate average
-//   for( int i=0; i<WIDTH*HEIGHT; i++) {
-//     uint16_t pix = img_raw_data[2*i] + (img_raw_data[2*i+1]<<8);
-//     imageData10bit[i] = (double)pix / n_img_sum;
-//   }
-// 
-//   // print first 16 values for confidence
-//   for( int i=0; i<16; i++) {
-//     printf(" %d", imageData10bit[i]);
-//   }
-//   printf("\n");
-// 
-//   // write data to file if requested
-//   if( output_file) {
-//     printf("Attempting to dump raw binary data to %s\n", output_file);
-//     FILE *fp = fopen( output_file, "wb");
-//     fwrite( imageData10bit, sizeof(uint16_t), WIDTH*HEIGHT, fp);
-//     fclose( fp);
-//   }
-
-
 }
 
 

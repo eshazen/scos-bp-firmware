@@ -27,8 +27,6 @@ static  double VAR_DIGI = 1./12;
 static  double GAIN = 0.0956 / 10; // need to re-measure this
 static  double VAR_READ = 1.;
 
-static uint8_t big_buf[N_BYTES_PER_XFER];
-
 int main( int argc, char *argv[]) {
 
   int ver, depth;
@@ -43,8 +41,6 @@ int main( int argc, char *argv[]) {
 
 
   printf("bytes/xfer = %d\n", N_BYTES_PER_XFER);
-
-  uint8_t* pbig;
 
   int debug;
 
@@ -108,8 +104,14 @@ int main( int argc, char *argv[]) {
   while( nloop++ < N_FRAMES_TO_DISP) {
     printf("Loop %d\n", nloop);
 
-    pbig = spi_read( &mira, N_BYTES_PER_XFER);
-    dump( pbig, N_BYTES_PER_XFER, "Big Buf");
+    // This is the "spi_read" in 
+    //    std::vector<uint8_t> raw = mira.spi.spi_read( N_BYTES_PER_XFER);
+    //    dump( raw.data(), N_BYTES_PER_XFER, "Vector");
+
+    // std::vector<uint8_t> dat = mira.spi.spi_read_frames( N_BYTES_PER_XFER);
+    raw = mira.spi.spi_read_frames( N_BYTES_PER_XFER);
+    dump( raw, N_BYTES_PER_XFER, "Big Buf");
+    free( raw);
 
   }
 
@@ -133,23 +135,24 @@ void dump( uint8_t* raw, int rsiz, const char *s) {
 }
 
 
-uint8_t* spi_read( MiraImage* mira, int n_bytes_rqd) {
-  uint8_t* ptmp;
-  int n_bytes_read = 0;
-  int bytes_available = 0;
-  while( n_bytes_read < n_bytes_rqd) {
-    ptmp = mira->spi.read_bytes(2);
-    bytes_available = ptmp[0] + ptmp[1]*256;
-    if( bytes_available > 0) {
-      // limit reads/writes to chunks of less than SPI bufsiz
-      // (/sys/module/spidev/parameters/bufsiz ~= 4096 on this machine)
-      int n_rdnow = std::min( std::min( bytes_available, n_bytes_rqd-n_bytes_read), 4096-2);
-      ptmp = mira->spi.read_bytes( 2+n_rdnow);
-      memmove( big_buf+n_bytes_read, ptmp+2, n_rdnow);
-      n_bytes_read += n_rdnow;
-    } else {
-      usleep( 1000);
-    }
-  }
-  return big_buf;
-}
+// uint8_t* spi_read( MiraImage* mira, int n_bytes_rqd) {
+//   uint8_t* ptmp;
+//   int n_bytes_read = 0;
+//   int bytes_available = 0;
+//   while( n_bytes_read < n_bytes_rqd) {
+//     ptmp = mira->spi.read_bytes(2);
+//     bytes_available = ptmp[0] + ptmp[1]*256;
+//     // FIXME: check for overflow here
+//     if( bytes_available > 0) {
+//       // limit reads/writes to chunks of less than SPI bufsiz
+//       // (/sys/module/spidev/parameters/bufsiz ~= 4096 on this machine)
+//       int n_rdnow = std::min( std::min( bytes_available, n_bytes_rqd-n_bytes_read), 4096-2);
+//       ptmp = mira->spi.read_bytes( 2+n_rdnow);
+//       memmove( big_buf+n_bytes_read, ptmp+2, n_rdnow);
+//       n_bytes_read += n_rdnow;
+//     } else {
+//       usleep( 1000);
+//     }
+//   }
+//   return big_buf;
+// }

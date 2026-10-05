@@ -40,12 +40,53 @@ uint8_t* SpiDevice::read_bytes(size_t length) {
   return static_rx_buf;
 }
 
-  // spi_read( nbytes) equivalent to Bernard's version
-  // Expects the board to send back the byte count first
-std::vector<uint8_t> SpiDevice::spi_read( int n_bytes_rqd) {
-  std::vector<uint8_t> out_buf( n_bytes_rqd, 0);
+//
+// from BZ plot_bfi_rt_spi.p... read frame mean data
+// for BFI plotting.  Similar to spi_read() below but
+// for unknown reasons not interchangeable
+//
+//std::vector<uint8_t> SpiDevice::spi_read_frames( int n_bytes_rqd) {
+uint8_t* SpiDevice::spi_read_frames( int n_bytes_rqd) {
+  //  std::vector<uint8_t> out_buf;
 
-  printf("spi_read( %d)\n", n_bytes_rqd);
+  uint8_t* big_buf = (uint8_t *)calloc( n_bytes_rqd+128, 1);
+  if( !big_buf) {
+    printf("buffer alloc failed in spi_read_frames()\n");
+    exit(1);
+  }
+
+  uint8_t* ptmp;
+  int n_bytes_read = 0;
+  int bytes_available = 0;
+  while( n_bytes_read < n_bytes_rqd) {
+    ptmp = read_bytes(2);
+    bytes_available = ptmp[0] + ptmp[1]*256;
+    // FIXME: check for overflow here
+    if( bytes_available > 0) {
+      // limit reads/writes to chunks of less than SPI bufsiz
+      // (/sys/module/spidev/parameters/bufsiz ~= 4096 on this machine)
+      int n_rdnow = std::min( std::min( bytes_available, n_bytes_rqd-n_bytes_read), 4096-2);
+      ptmp = read_bytes( 2+n_rdnow);
+      memmove( big_buf+n_bytes_read, ptmp+2, n_rdnow);
+      n_bytes_read += n_rdnow;
+    } else {
+      usleep( 1000);
+    }
+  }
+
+  return big_buf;
+}
+
+
+// spi_read( nbytes) equivalent to Bernard's version from
+// get_frame_spi.py
+// Expects the board to send back the byte count first
+// NOTE:  this only works for reading "slices" of an image in the
+//   raw frame mode.
+std::vector<uint8_t> SpiDevice::spi_read( int n_bytes_rqd) {
+  std::vector<uint8_t> out_buf( n_bytes_rqd+128);
+
+  if( debug) printf("spi_read( %d)\n", n_bytes_rqd);
 
   int n_bytes_read = 0;
   int bytes_available = 0;
@@ -64,11 +105,12 @@ std::vector<uint8_t> SpiDevice::spi_read( int n_bytes_rqd) {
       exit(1);
     }
     if( n_rdnow > 2) {
-      if( debug)
+      if( debug) {
 	printf("add to out_buf n_rdnow=%d bytes at %d\n", n_rdnow, n_bytes_read);
       // out_buf[n_bytes_read:(n_bytes_read+n_rdnow)] = buf[2:]
-      printf("memmove( %x %x %d)\n", &out_buf[n_bytes_read], &buf[2], n_rdnow);
-      printf("out_buf = %x  n_bytes_read = %d\n", &out_buf[0], n_bytes_read);
+	printf("memmove( %x %x %d)\n", &out_buf[n_bytes_read], &buf[2], n_rdnow);
+	printf("out_buf = %x  n_bytes_read = %d\n", &out_buf[0], n_bytes_read);
+      }
       memmove( &out_buf[n_bytes_read], &buf[2], n_rdnow);
       n_bytes_read += (n_rdnow-2);
       if( debug)

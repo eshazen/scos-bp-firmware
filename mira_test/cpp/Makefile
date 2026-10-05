@@ -16,7 +16,7 @@ LDFLAGS = -g
 clean:
 	rm -f ${EXECS} *~ \#* *.o
 
-TestDump.o: TestDump.cpp MiraImage.h SpiDevice.hh
+TestDump.o: TestDump.cpp MiraImage.h SpiDevice.hh MiraDevice.h
 
 MiraDevice.o: MiraDevice.cpp MiraDevice.h SpiDevice.hh
 
