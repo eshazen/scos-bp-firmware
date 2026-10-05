@@ -51,14 +51,9 @@ int main( int argc, char *argv[]) {
     exit(1);
   }
 
-  std::vector<uint8_t> img_raw_data = mira.read_frame( n_img_sum);
+  uint8_t* img_raw_data = mira.read_frame( n_img_sum);
 
-  printf("\nRead %d bytes\n", img_raw_data.size());
-  if( img_raw_data.size() != WIDTH * HEIGHT * 2) {
-    printf("Expected %d bytes but got %d\n", WIDTH*HEIGHT*2, img_raw_data.size());
-    exit(1);
-  }
-
+  printf("\nRead %d bytes\n", MiraImage::image_bytes);
   uint16_t* imageData10bit = new uint16_t[WIDTH * HEIGHT];
 
   // calculate average

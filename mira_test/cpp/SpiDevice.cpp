@@ -40,21 +40,16 @@ uint8_t* SpiDevice::read_bytes(size_t length) {
   return static_rx_buf;
 }
 
+
 //
 // from BZ plot_bfi_rt_spi.p... read frame mean data
 // for BFI plotting.  Similar to spi_read() below but
 // for unknown reasons not interchangeable
 //
 //std::vector<uint8_t> SpiDevice::spi_read_frames( int n_bytes_rqd) {
-uint8_t* SpiDevice::spi_read_frames( int n_bytes_rqd) {
+uint8_t* SpiDevice::spi_read_frames( uint8_t* big_buf, int n_bytes_rqd) {
   //  std::vector<uint8_t> out_buf;
-
-  uint8_t* big_buf = (uint8_t *)calloc( n_bytes_rqd+128, 1);
-  if( !big_buf) {
-    printf("buffer alloc failed in spi_read_frames()\n");
-    exit(1);
-  }
-
+ 
   uint8_t* ptmp;
   int n_bytes_read = 0;
   int bytes_available = 0;
@@ -73,7 +68,7 @@ uint8_t* SpiDevice::spi_read_frames( int n_bytes_rqd) {
       usleep( 1000);
     }
   }
-
+ 
   return big_buf;
 }
 
@@ -83,9 +78,11 @@ uint8_t* SpiDevice::spi_read_frames( int n_bytes_rqd) {
 // Expects the board to send back the byte count first
 // NOTE:  this only works for reading "slices" of an image in the
 //   raw frame mode.
-std::vector<uint8_t> SpiDevice::spi_read( int n_bytes_rqd) {
-  std::vector<uint8_t> out_buf( n_bytes_rqd+128);
-
+//
+// user must supply buffer <n_bytes_reqd> bytes long
+// return pointer to user buffer or nullptr on error
+//
+uint8_t* SpiDevice::spi_read( uint8_t* out_buf, int n_bytes_rqd) {
   if( debug) printf("spi_read( %d)\n", n_bytes_rqd);
 
   int n_bytes_read = 0;

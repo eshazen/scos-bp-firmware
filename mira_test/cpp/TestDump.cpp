@@ -11,21 +11,7 @@
 uint8_t* spi_read( MiraImage* mira, int rsiz);
 void dump( uint8_t* raw, int rsiz, const char *s);
 
-
-static  int N_FRAMES_TO_DISP = 10;
-static  const int FRAME_RATE = 240;
-
-static  const int N_FRAMES_PER_XFER = 1;
-static  const int TILE_SIZE[] = {64, 60};
-static  const int FRAME_SIZE[] = {1600, 480};
-
-static  const int N_PIX = TILE_SIZE[0] * TILE_SIZE[1];
-static  const int N_TILES = (FRAME_SIZE[0] * FRAME_SIZE[1] / N_PIX);
-static  const int N_BYTES_PER_XFER = (4*N_FRAMES_PER_XFER*(2*N_TILES+2));
-
-static  double VAR_DIGI = 1./12;
-static  double GAIN = 0.0956 / 10; // need to re-measure this
-static  double VAR_READ = 1.;
+static uint8_t big_buf[MiraImage::N_BYTES_PER_XFER];
 
 int main( int argc, char *argv[]) {
 
@@ -36,13 +22,14 @@ int main( int argc, char *argv[]) {
 
   char *output_file = NULL;
   FILE *fp = nullptr;
+  int N_FRAMES_TO_DISP = 10;
 
   static uint8_t header[] = {0xfe, 0xff, 0x00, 0x00, 0xff, 0xff, 0x00, 0x00};
 
-
-  printf("bytes/xfer = %d\n", N_BYTES_PER_XFER);
+  printf("bytes/xfer = %d\n", MiraImage::N_BYTES_PER_XFER);
 
   int debug;
+  bool dump_data = false;
 
   // process any command-line arguments
   if( argc > 1) {
@@ -61,6 +48,9 @@ int main( int argc, char *argv[]) {
 	  N_FRAMES_TO_DISP = atoi( argv[i+1]);
 	  printf("Running %d frames\n", n_img_sum);
 	  ++i;
+	  break;
+	case 'D':
+	  dump_data = true;
 	  break;
 	default:
 	  printf("unknown option '%c'\n", argv[i][1]);
@@ -95,7 +85,6 @@ int main( int argc, char *argv[]) {
 //    # run img processing
   mira.spi.writebytes2(0xfe, (1<<7)+0, 1) ;
 
-  uint8_t* raw;
   int nloop = 0;
   int n_avail;
 
@@ -104,15 +93,14 @@ int main( int argc, char *argv[]) {
   while( nloop++ < N_FRAMES_TO_DISP) {
     printf("Loop %d\n", nloop);
 
-    // This is the "spi_read" in 
-    //    std::vector<uint8_t> raw = mira.spi.spi_read( N_BYTES_PER_XFER);
-    //    dump( raw.data(), N_BYTES_PER_XFER, "Vector");
-
-    // std::vector<uint8_t> dat = mira.spi.spi_read_frames( N_BYTES_PER_XFER);
-    raw = mira.spi.spi_read_frames( N_BYTES_PER_XFER);
-    dump( raw, N_BYTES_PER_XFER, "Big Buf");
-    free( raw);
-
+    mira.spi.spi_read_frames( big_buf, MiraImage::N_BYTES_PER_XFER);
+    if( memcmp( big_buf, header, sizeof(header))) {
+      printf("Error!  Missing header\n");
+      exit(1);
+    }
+    if( dump_data) {
+      dump( big_buf, MiraImage::N_BYTES_PER_XFER, "Big Buf");
+    }
   }
 
   mira.spi.writebytes2(0xfe, (1<<7)+0, 0); // stop img processing
@@ -134,25 +122,3 @@ void dump( uint8_t* raw, int rsiz, const char *s) {
   printf("\n");
 }
 
-
-// uint8_t* spi_read( MiraImage* mira, int n_bytes_rqd) {
-//   uint8_t* ptmp;
-//   int n_bytes_read = 0;
-//   int bytes_available = 0;
-//   while( n_bytes_read < n_bytes_rqd) {
-//     ptmp = mira->spi.read_bytes(2);
-//     bytes_available = ptmp[0] + ptmp[1]*256;
-//     // FIXME: check for overflow here
-//     if( bytes_available > 0) {
-//       // limit reads/writes to chunks of less than SPI bufsiz
-//       // (/sys/module/spidev/parameters/bufsiz ~= 4096 on this machine)
-//       int n_rdnow = std::min( std::min( bytes_available, n_bytes_rqd-n_bytes_read), 4096-2);
-//       ptmp = mira->spi.read_bytes( 2+n_rdnow);
-//       memmove( big_buf+n_bytes_read, ptmp+2, n_rdnow);
-//       n_bytes_read += n_rdnow;
-//     } else {
-//       usleep( 1000);
-//     }
-//   }
-//   return big_buf;
-// }

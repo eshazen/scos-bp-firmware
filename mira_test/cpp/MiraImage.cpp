@@ -32,7 +32,7 @@ bool MiraImage::read_ver_depth( int *version, int *depth) {
   spi.writebytes2(0xfe, (1<<7)+1, 0); // select cfg reg as data source
   spi.writebytes2(0xfe, 14, 0); // read cmd for bit depth
   spi.writebytes2(0xfe, 15, 0); // read cmd for fw version
-  std::vector<uint8_t> buf = spi.spi_read(4);
+  uint8_t* buf = spi.spi_read( buff_ver_depth, 4);
   if( buf[0] == 0xfd && buf[2] == 0xfd) {
     *depth = buf[1];
     *version = buf[3];
@@ -45,7 +45,7 @@ bool MiraImage::read_ver_depth( int *version, int *depth) {
   }
 }
 
-std::vector<uint8_t> MiraImage::read_frame( int n_img_sum) {
+uint8_t* MiraImage::read_frame( int n_img_sum) {
 
   // # configure for frame buffer read
   // #ser.write([0xfe, ireg, ival])
@@ -61,7 +61,7 @@ std::vector<uint8_t> MiraImage::read_frame( int n_img_sum) {
   int total_read = 0;		// counter for bytes read
 
   // img_raw_data = bytearray()
-  std::vector<uint8_t> img_raw_data;
+  uint8_t* img_raw_data = buff_image;
   // print("Trigger slice   ", end='')
   printf("Trigger slice: ");
   // for islice in range(n_slices):
@@ -72,18 +72,18 @@ std::vector<uint8_t> MiraImage::read_frame( int n_img_sum) {
     spi.writebytes2(0xfe, (1<<7)+5, islice); // set slice number
     spi.writebytes2(0xfe, (1<<7)+0, 1<<1); // trigger slice
     spi.writebytes2(0xfe, (1<<7)+0, 0);
-    std::vector<uint8_t> raw = spi.spi_read(n_rows*n_bytes_per_row); // read the data
+    uint8_t* raw = spi.spi_read( buff_slice, slice_bytes); // read the data
 #ifdef DEBUG
-    printf("Read %d bytes\n", raw.size());
+    printf("Read %d bytes\n", slice_bytes);
 #endif
-    total_read += raw.size();
-    img_raw_data.insert( img_raw_data.end(), raw.begin(), raw.end()); // add data to end
+    total_read += slice_bytes;
+    memmove( img_raw_data, raw, slice_bytes);
+    img_raw_data += slice_bytes;
   }
 
   // FIXME:  implement averaging
 
-  return img_raw_data;
-
+  return buff_image;
 }
 
 

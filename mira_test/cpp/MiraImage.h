@@ -31,14 +31,35 @@ private:
   std::vector<uint8_t> rxtx_buf; // SPI data buffer
   std::vector<uint8_t> cmd3;	       // SPI command buffer
 
-  int n_slices = 12;		// number of "slices" to read
-  int n_rows = HEIGHT/n_slices;	// rows per slice
-  int n_cols = WIDTH;		// columns per slice
-  int n_bytes_per_row = n_cols * 2; // number of bytes to read per row (16 bits/pixel for RAW10)
+  static constexpr int n_slices = 12;		// number of "slices" to read
+  static constexpr int n_rows = HEIGHT/n_slices;	// rows per slice
+  static constexpr int n_cols = WIDTH;		// columns per slice
+  static constexpr int n_bytes_per_row = n_cols * 2; // number of bytes to read per row (16 bits/pixel for RAW10)
   char *output_file = NULL;	// output file name if any
+  static constexpr  int slice_bytes = n_rows * n_bytes_per_row;
+
+  static  constexpr int FRAME_RATE = 240;
+
+  static  constexpr int N_FRAMES_PER_XFER = 1;
+  static  constexpr int TILE_SIZE[] = {64, 60};
+  static  constexpr int FRAME_SIZE[] = {1600, 480};
+
+  static  constexpr int N_PIX = TILE_SIZE[0] * TILE_SIZE[1];
+  static  constexpr int N_TILES = (FRAME_SIZE[0] * FRAME_SIZE[1] / N_PIX);
+  
+  static  constexpr double VAR_DIGI = 1./12;
+  static  constexpr double GAIN = 0.0956 / 10; // need to re-measure this
+  static  constexpr double VAR_READ = 1.;
+
+  // fixed buffers to save complexity
+  uint8_t buff_ver_depth[4];	// buffer for version, depth
+  uint8_t buff_slice[slice_bytes];
+  uint8_t buff_image[slice_bytes * n_slices];
 
 public:
   SpiDevice spi;
+  static constexpr int image_bytes = slice_bytes * n_slices;
+  static  constexpr int N_BYTES_PER_XFER = (4*N_FRAMES_PER_XFER*(2*N_TILES+2));
 
   MiraImage();
   ~MiraImage();
@@ -46,8 +67,7 @@ public:
   bool initialize();
   void close();
   bool read_ver_depth( int *version, int *depth);
-  std::vector<uint8_t> read_frame( int n_img_sum = 1);
-
+  uint8_t* read_frame( int n_img_sum = 1);
 };
 
 #endif
