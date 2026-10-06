@@ -46,7 +46,6 @@ uint8_t* SpiDevice::read_bytes(size_t length) {
 // for BFI plotting.  Similar to spi_read() below but
 // for unknown reasons not interchangeable
 //
-//std::vector<uint8_t> SpiDevice::spi_read_frames( int n_bytes_rqd) {
 uint8_t* SpiDevice::spi_read_frames( uint8_t* big_buf, int n_bytes_rqd) {
   //  std::vector<uint8_t> out_buf;
  

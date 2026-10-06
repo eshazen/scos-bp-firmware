@@ -1,44 +1,112 @@
 //
-// get BFI data using MiraImage class
-// converted from plot_bfi_rt_spi.py by E. Hazen
+// put the board in BFI mode
+// get sums etc and calculate BFI
 //
 
 #include "MiraImage.h"
 
+#include <cstring>
+#include <cstdio>
+
+uint8_t* spi_read( MiraImage* mira, int rsiz);
+void dump( uint8_t* raw, int rsiz, const char *s);
+
 int main( int argc, char *argv[]) {
+
+  int ver, depth;
+
   MiraImage mira;
+
+  char *output_file = NULL;
+  FILE *fp = nullptr;
+  int num_loops = 10;
+  int num_frames = 24;
+
+  static uint8_t header[] = {0xfe, 0xff, 0x00, 0x00, 0xff, 0xff, 0x00, 0x00};
+
+  int debug;
+  bool dump_data = false;
+  bool print_sums = false;
+  bool calc_avgs = false;
+  bool calc_bfi = false;
+
+  char help[] = "usage: GetBFI [-n loops] [-f frames] [-v] [-d] [-s] [-a]";
+
+  // process any command-line arguments
+  if( argc > 1) {
+    for( int i=1; i<argc; i++) {
+      if( *argv[i] == '-') {	// options start with '-'
+	switch( toupper( argv[i][1])) {
+	case 'H':
+	  puts(help);
+	  exit(1);
+	  break;
+	case 'B':
+	  calc_bfi = true;
+	  break;
+	case 'V':
+	  ++debug;
+	  mira.spi.verbose( debug);
+	  break;
+	case 'S':
+	  print_sums = true;
+	  break;
+	case 'A':
+	  calc_avgs = true;
+	  break;
+	case 'N':
+	  if( i > argc-1) {
+	    printf("Need loop count after -N\n");
+	    exit(1);
+	  }
+	  num_loops = atoi( argv[i+1]);
+	  printf("Running %d loops\n", num_loops);
+	  ++i;
+	  break;
+	case 'F':
+	  if( i > argc-1) {
+	    printf("Need frame count after -F\n");
+	    exit(1);
+	  }
+	  num_frames = atoi( argv[i+1]);
+	  printf("Running %d frames\n", num_frames);
+	  ++i;
+	  break;
+	case 'D':
+	  dump_data = true;
+	  break;
+	default:
+	  printf("unknown option '%c'\n", argv[i][1]);
+	}
+      } else {
+	output_file = argv[i];
+      }
+    }
+  }
+    
+  if( output_file)
+    fp = fopen( output_file, "wb");
+
+  if( !mira.initialize()) {
+    printf("mira init failed\n");
+    exit(1);
+  }
   
-  mira.initialize();		// initialize SPI bus etc
+  uint8_t* big_buf = (uint8_t *)calloc( mira.bytes_in_frames( num_frames), 1);
+  uint32_t* sums = (uint32_t *)calloc( MiraImage::N_TILES*num_frames, sizeof(uint32_t));
+  uint32_t* sum_sq = (uint32_t *)calloc( MiraImage::N_TILES*num_frames, sizeof(uint32_t));
+  
+
   mira.read_ver_depth( &ver, &depth); // get FW version and bit depth
   printf("Version = %d  bit depth = %d\n", ver, depth);
+  if( depth != 10) {
+    printf("This code only works for bit depth 10 (got %d)\n", depth);
+    exit(1);
+  }
 
-  vector<uint8_t> rxtx_buf( 8196, 0);
+  printf("Running for %d loops, %d frames/loop\n", num_loops, num_frames);
 
-  mira.spi.writebytes2(0, 0, 0); // flush cfg fsm
-
-  int N_FRAMES_TO_DISP = 1200;
-  int FRAME_RATE = 240;
-  int N_FRAMES_PER_XFER = 24;
-  int TILE_SIZE[] = {64, 60};
-  int FRAME_SIZE[] = {1600, 480};
-
-  int N_PIX = TILE_SIZE[0] * TILE_SIZE[1];
-  int N_TILES = int(FRAME_SIZE[0] * FRAME_SIZE[1] / N_PIX);
-  int N_BYTES_PER_XFER = int(4*N_FRAMES_PER_XFER*(2*N_TILES+2));
-
-  double VAR_DIGI = 1/12;
-  double GAIN = 0.0956 / 10; // need to re-measure this
-  double VAR_READ = 1;
-
-  int ptr = 0;
-  int frm_cnt = 0;
-    
-//timer = pg.QtCore.QTimer()
-//timer.timeout.connect(update)
-//timer.start(40)
-//
 //    # configure for real-time bfi
-//    #ser.write([0xfe, ireg, ival])
   mira.spi.writebytes2(0xfe, (1<<7)+1, 1); // select bfi pre-processing as datasource
   mira.spi.writebytes2(0xfe, (1<<7)+2, 0); // dark level subtraction = 0
 //    # reset tx buffer in fpga
@@ -47,76 +115,57 @@ int main( int argc, char *argv[]) {
 //    # run img processing
   mira.spi.writebytes2(0xfe, (1<<7)+0, 1) ;
 
-    // run processing
-  for( int i=0; i<10; i++)
-    update();
+  int nloop = 0;
+  int n_avail;
+
+  long start, end;
+
+  while( nloop++ < num_loops) {
+    printf("Loop %d\n", nloop);
+
+    mira.spi.spi_read_frames( big_buf, mira.bytes_in_frames( num_frames));
+    if( !mira.extract_sums( big_buf, num_frames, sums, sum_sq)) {
+      printf("error in extract_sums\n");
+      exit(1);
+    }
+    if( print_sums) {
+      uint32_t* ss = sums;
+      uint32_t* sq = sum_sq;
+      for( int f=0; f<num_frames; f++) {
+	printf("Frame: %d\n", f);
+	for( int t=0; t<MiraImage::N_TILES; t++) {
+	  printf("%3d: %12d (0x%08x) %12d (0x%08x)\n", t, *ss, *ss, *sq, *sq);
+	  ++ss;
+	  ++sq;
+	}
+      }
+    }
+
+    if( calc_bfi) {
+      double bfi = mira.calc_bfi( num_frames, sums, sum_sq);
+      printf("BFI = %lf\n", bfi);
+    }
+
+    if( dump_data) {
+      dump( big_buf, mira.bytes_in_frames( num_frames), "Big Buf");
+    }
+  }
 
   mira.spi.writebytes2(0xfe, (1<<7)+0, 0); // stop img processing
   mira.spi.close_spi();
+
+  if( fp)
+    fclose(fp);
 }
 
-void update() {
-//    global bfi, ptr, frm_cnt
-//    rawdat_bytes = spi_read(N_BYTES_PER_XFER)
-  vector<uint8_t> rawdat_bytes = mira.spi.spi_read( N_BYTES_PER_XFER);
-//    
-//    # check first header, calculate offset
-  int offset = 0;
-  vector<uint8_t> header;
-  vector<uint8_t> header_test = { 0xfe, 0xff, 0, 0, 0xff, 0xff, 0, 0 };
-  header.assign(  rawdat_bytes.begin(), rawdat_bytes.begin() + 8);  // = rawdat_bytes[0:8]
-//    while not (header == b'\xfe\xff\x00\x00\xff\xff\x00\x00') and offset+10 < N_BYTES_PER_XFER:
-  while( !(header == header_test) && offset+10 < N_BYTES_PER_XFER) {
-    offset += 1;
-//        header = rawdat_bytes[offset:offset+8]
-    header.assign( rawdat_bytes.begin()+offset, rawdat_bytes.begin()+8);
-    if( offset == 0) {
-//        rawdat = np.frombuffer(rawdat_bytes, dtype=np.uint32)
-// now we want to re-interpret the rawdat_bytes as rawdat (uint32)
-      uint32_t* rawdat = (uint32_t *)rawdat_bytes.data();
-
-//        for iframe in range(N_FRAMES_PER_XFER):
-      for( int ifram=0; ifram<N_FRAME_PER_XFER; ifram++) {
-//            # Check header
-	// NOTE now 'header' refers to uint32
-//            header_start = int(iframe * (2 * N_TILES + 2))
-//            header = rawdat[header_start:header_start + 2]
-	int hs = iframe * (2 * N_TILES + 2);
-	
-//            if not (header == [65534, 65535]).all():
-//                print(f' header error 0x{header[0]:08x} 0x{header[1]:08x}')
-//                result = np.nan
-	} else {
-//            else:
-//                # Extract pixel sum and sum of squares
-//                indices_sum = np.arange(0, 2 * N_TILES, 2) + 2 + iframe * (2 * N_TILES + 2)
-//                indices_sq_sum = np.arange(0, 2 * N_TILES, 2) + 3 + iframe * (2 * N_TILES + 2)
-//                
-//                pix_sum_array = rawdat[indices_sum]
-//                pix_sq_sum_array = rawdat[indices_sq_sum]
-//                
-//                # Calculate statistics
-//                mean_I_array = pix_sum_array / N_PIX
-//                var_I_array = pix_sq_sum_array / N_PIX - mean_I_array ** 2
-//                var_shot_array = mean_I_array * GAIN
-//                K2_f_array = (var_I_array - VAR_DIGI - var_shot_array - VAR_READ) / (mean_I_array ** 2)
-//                result = 1/np.mean(K2_f_array)
-//                #result = pix_sum_array[1]
-	}
-//            # Store result
-//            K2_f_index = (ptr + iframe) % N_FRAMES_TO_DISP
-//            bfi[K2_f_index] = result
-      }
-    } else {
-        printf( "incurred offset of %d bytes\n", offset);
-	//        # flush to realign
-	mira.spi.spi_read( offset);
-    }
+void dump( uint8_t* raw, int rsiz, const char *s) {
+  if( s)
+    printf("%s", s);
+  for( int i=0; i<rsiz; i++) {
+    if( i % 32 == 0)
+      printf("\n%04x: ", i);
+    printf("%02x ", raw[i]);
   }
-//
-//    ptr = (ptr+N_FRAMES_PER_XFER) % N_FRAMES_TO_DISP
-//    frm_cnt += N_FRAMES_PER_XFER
-//    bfi[ptr:ptr+N_FRAMES_PER_XFER] = np.nan # create gap in front of newest data
-//    #print(f'Result {bfi[ptr-1]}')
-//    curve.setData(x=tv, y=bfi)
+
+  printf("\n");
 }

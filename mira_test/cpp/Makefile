@@ -1,9 +1,9 @@
 
-EXECS = display_test_sdl2 cfg_mira ReadFrame TestDump
+EXECS = display_test_sdl2 cfg_mira ReadFrame TestDump GetBFI
 
 all: objects ${EXECS}
 
-objects: ReadFrame.o MiraDevice.o SpiDevice.o MiraImage.o
+objects: ReadFrame.o MiraDevice.o SpiDevice.o MiraImage.o GetBFI.o
 
 # asan is broken on R-pi :(
 # CPPFLAGS = -g -O1 -fsanitize=address -fno-omit-frame-pointer -fsanitize=undefined
@@ -15,6 +15,9 @@ LDFLAGS = -g
 
 clean:
 	rm -f ${EXECS} *~ \#* *.o
+
+
+GetBFI.o: GetBFI.cpp MiraImage.h SpiDevice.hh MiraDevice.h
 
 TestDump.o: TestDump.cpp MiraImage.h SpiDevice.hh MiraDevice.h
 
@@ -38,4 +41,7 @@ display_test_sdl2: display_test_sdl2.cpp
 	g++ -std=c++17 -O2 -o display_test_sdl2 display_test_sdl2.cpp -lSDL2
 
 TestDump: TestDump.o SpiDevice.o MiraImage.o
+	g++ -o $@ $^ ${LDFLAGS}
+
+GetBFI: GetBFI.o SpiDevice.o MiraImage.o
 	g++ -o $@ $^ ${LDFLAGS}

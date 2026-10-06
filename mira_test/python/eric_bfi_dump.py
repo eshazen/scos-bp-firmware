@@ -90,7 +90,8 @@ def update():
                # Extract pixel sum and sum of squares
                 indices_sum = np.arange(0, 2 * N_TILES, 2) + 2 + iframe * (2 * N_TILES + 2)
                 indices_sq_sum = np.arange(0, 2 * N_TILES, 2) + 3 + iframe * (2 * N_TILES + 2)
-                
+
+                # arrays are size 200 (N_TILES)
                 pix_sum_array = rawdat[indices_sum]
                 pix_sq_sum_array = rawdat[indices_sq_sum]
 

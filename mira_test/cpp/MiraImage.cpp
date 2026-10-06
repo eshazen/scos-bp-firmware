@@ -81,9 +81,66 @@ uint8_t* MiraImage::read_frame( int n_img_sum) {
     img_raw_data += slice_bytes;
   }
 
-  // FIXME:  implement averaging
-
   return buff_image;
 }
 
 
+// calculate bytes in n frames
+// N.B. there is a 2 x int32 header on each frame
+//
+int MiraImage::bytes_in_frames( int n_frames) {
+  return (sizeof(int32_t)*n_frames*(2*N_TILES+2));
+}
+
+
+
+//
+// process raw data, extract sums into two arrays
+// return true if OK, false if error (usually missing header)
+//
+bool MiraImage::extract_sums( uint8_t* raw, int n_frames, uint32_t* sums, uint32_t* sum_sq) {
+  uint32_t* raw32 = (uint32_t *)raw;
+  for( int i=0; i<n_frames; i++) {
+    if( raw32[0] != 0xfffeL || raw32[1] != 0xffffL) {
+      printf("MiraImage::extract_sums error.  Expected header, saw %x, %x\n", raw32[0], raw32[1]);
+      printf("At int32 offset %d\n", raw32 - (uint32_t *)raw);
+      return false;
+    }
+    raw32 += 2;
+    for( int k=0; k<MiraImage::N_TILES; k++) {
+      sums[k] = raw32[0];
+      sum_sq[k] = raw32[1];
+      raw32 += 2;
+    }
+  }
+  return true;
+}
+
+
+//
+// calculate BFI from a set of sums
+//
+double MiraImage::calc_bfi( int n_frames, uint32_t* sums, uint32_t* sum_sq) {
+
+  //  calloc( MiraImage::N_TILES*num_frames, sizeof(uint32_t));
+
+//  # Calculate statistics
+//  mean_I_array = pix_sum_array / N_PIX
+  double mean_I_array[N_TILES];
+  for( int i=0; i<N_TILES; i++) sums[i] / N_PIX;
+//  var_I_array = pix_sq_sum_array / N_PIX - mean_I_array ** 2
+  double var_I_array[N_TILES];
+  for( int i=0; i<N_TILES; i++) var_I_array[i] = sum_sq[i] / N_PIX - mean_I_array[i]*mean_I_array[i];
+//  var_shot_array = mean_I_array * GAIN
+  double var_shot_array[N_TILES];
+  for( int i=0; i<N_TILES; i++) var_shot_array[i] = mean_I_array[i] * GAIN;
+//  K2_f_array = (var_I_array - VAR_DIGI - var_shot_array - VAR_READ) / (mean_I_array ** 2)
+  double K2_f_array[N_TILES];
+  for( int i=0; i<N_TILES; i++) 
+    K2_f_array[i] = (var_I_array[i] - VAR_DIGI - var_shot_array[i] - VAR_READ) / (mean_I_array[i]*mean_I_array[i]);
+//  result = 1/np.mean(K2_f_array)
+  double sum = 0.;
+  for( int i=0; i<N_TILES; i++)
+    sum += K2_f_array[i];
+  return 1.0 / (sum / N_TILES);
+}
