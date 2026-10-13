@@ -10,4 +10,5 @@ for the SCOS blood pressure project.
 | `pi_hat_test/`            | Folder with firmware for custom Pi Hat board         |
 | `pi_hat_test/pi_hat_uart` | UART-controlled power/clock test                     |
 | `pi_hat_test/pi_hat_mira` | BZ firmware with power/clock control                 |
-|                           |                                                      |
+| `mira_test/cpp/`          | CPP code for initialization and readout              |
+| `mira_test/python/`       | Python code for initialization and readout           |
