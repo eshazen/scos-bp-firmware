@@ -17,11 +17,16 @@ int main( int argc, char *argv[]) {
 
   char *output_file = NULL;
 
+  const char* help = "usage: ReadFrame [<output_file>] [-s <frames_to_sum>]";
+
   // process any command-line arguments
   if( argc > 1) {
     for( int i=1; i<argc; i++) {
       if( *argv[i] == '-') {	// options start with '-'
 	switch( toupper( argv[i][1])) {
+	case 'H':
+	  puts(help);
+	  exit(1);
 	case 'S':
 	  if( i > argc-1) {
 	    printf("Need frame count after -S\n");

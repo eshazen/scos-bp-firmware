@@ -122,6 +122,7 @@ void printn( double* v, int n) {
 
 //
 // calculate BFI from a set of sums
+// translated more or less literally from Bernhard's python
 //
 double MiraImage::calc_bfi( int n_frames, uint32_t* sums, uint32_t* sum_sq) {
 
