@@ -19,18 +19,18 @@ int main( int argc, char *argv[]) {
 
   char *output_file = NULL;
   FILE *fp = nullptr;
-  int num_loops = 10;
+  int num_loops = 1200;
   int num_frames = 24;
 
   static uint8_t header[] = {0xfe, 0xff, 0x00, 0x00, 0xff, 0xff, 0x00, 0x00};
 
-  int debug;
+  int debug = 0;
   bool dump_data = false;
   bool print_sums = false;
   bool calc_avgs = false;
-  bool calc_bfi = false;
+  bool calc_bfi = true;
 
-  char help[] = "usage: GetBFI [-n loops] [-f frames] [-v] [-d] [-s] [-a]";
+  char help[] = "usage: GetBFI [-n loops] [-f frames] [-v] [-s] [-a]";
 
   // process any command-line arguments
   if( argc > 1) {
@@ -40,9 +40,6 @@ int main( int argc, char *argv[]) {
 	case 'H':
 	  puts(help);
 	  exit(1);
-	  break;
-	case 'B':
-	  calc_bfi = true;
 	  break;
 	case 'V':
 	  ++debug;
@@ -121,7 +118,8 @@ int main( int argc, char *argv[]) {
   long start, end;
 
   while( nloop++ < num_loops) {
-    printf("Loop %d\n", nloop);
+    if( debug)
+      printf("Loop %d\n", nloop);
 
     mira.spi.spi_read_frames( big_buf, mira.bytes_in_frames( num_frames));
     if( !mira.extract_sums( big_buf, num_frames, sums, sum_sq)) {

@@ -20,9 +20,11 @@ spi.mode = spi_mode
 rxtx_buf = np.zeros(8196, dtype=np.uint8)
 spi.writebytes2([0, 0, 0]) # flush cfg fsm
 
-N_FRAMES_TO_DISP = 1200
+# N_FRAMES_TO_DISP = 1200
+N_FRAMES_TO_DISP = 2
 FRAME_RATE = 240
-N_FRAMES_PER_XFER = 24
+# N_FRAMES_PER_XFER = 24
+N_FRAMES_PER_XFER = 1
 TILE_SIZE = [64, 60]
 FRAME_SIZE = [1600, 480]
 
@@ -100,11 +102,17 @@ def update():
 
                 # Calculate statistics
                 mean_I_array = pix_sum_array / N_PIX
+                print("mean_I_array: ", mean_I_array[:3])
                 var_I_array = pix_sq_sum_array / N_PIX - mean_I_array ** 2
+                print("var_I_array: ", var_I_array[:3])
                 var_shot_array = mean_I_array * GAIN
+                print("var_shot_array: ", var_shot_array[:3])
                 K2_f_array = (var_I_array - VAR_DIGI - var_shot_array - VAR_READ) / (mean_I_array ** 2)
+                print("K2_f_array: ", K2_f_array[:3])
+                print("K2 mean: ", np.mean(K2_f_array))
                 result = 1/np.mean(K2_f_array)
                 #result = pix_sum_array[1]
+                #print( f"result = {result}")
 
             # Store result
             K2_f_index = (ptr + iframe) % N_FRAMES_TO_DISP

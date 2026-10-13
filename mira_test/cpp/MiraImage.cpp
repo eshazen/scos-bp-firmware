@@ -73,9 +73,6 @@ uint8_t* MiraImage::read_frame( int n_img_sum) {
     spi.writebytes2(0xfe, (1<<7)+0, 1<<1); // trigger slice
     spi.writebytes2(0xfe, (1<<7)+0, 0);
     uint8_t* raw = spi.spi_read( buff_slice, slice_bytes); // read the data
-#ifdef DEBUG
-    printf("Read %d bytes\n", slice_bytes);
-#endif
     total_read += slice_bytes;
     memmove( img_raw_data, raw, slice_bytes);
     img_raw_data += slice_bytes;
@@ -116,31 +113,48 @@ bool MiraImage::extract_sums( uint8_t* raw, int n_frames, uint32_t* sums, uint32
   return true;
 }
 
+void printn( double* v, int n) {
+  for( int i=0; i<n; i++)
+    printf(" %f", v[i]);
+  printf("\n");
+}
+
 
 //
 // calculate BFI from a set of sums
 //
 double MiraImage::calc_bfi( int n_frames, uint32_t* sums, uint32_t* sum_sq) {
 
-  //  calloc( MiraImage::N_TILES*num_frames, sizeof(uint32_t));
-
 //  # Calculate statistics
+//
 //  mean_I_array = pix_sum_array / N_PIX
+//
   double mean_I_array[N_TILES];
-  for( int i=0; i<N_TILES; i++) sums[i] / N_PIX;
-//  var_I_array = pix_sq_sum_array / N_PIX - mean_I_array ** 2
+  for( int i=0; i<N_TILES; i++) 
+    mean_I_array[i] = (double)sums[i] / N_PIX;
+  //
+  //  var_I_array = pix_sq_sum_array / N_PIX - mean_I_array ** 2
+  //
   double var_I_array[N_TILES];
-  for( int i=0; i<N_TILES; i++) var_I_array[i] = sum_sq[i] / N_PIX - mean_I_array[i]*mean_I_array[i];
-//  var_shot_array = mean_I_array * GAIN
+  for( int i=0; i<N_TILES; i++) 
+    var_I_array[i] = (double)sum_sq[i] / N_PIX - mean_I_array[i]*mean_I_array[i];
+  //
+  //  var_shot_array = mean_I_array * GAIN
+  //
   double var_shot_array[N_TILES];
-  for( int i=0; i<N_TILES; i++) var_shot_array[i] = mean_I_array[i] * GAIN;
-//  K2_f_array = (var_I_array - VAR_DIGI - var_shot_array - VAR_READ) / (mean_I_array ** 2)
+  for( int i=0; i<N_TILES; i++) 
+    var_shot_array[i] = mean_I_array[i] * GAIN;
+  //
+  //  K2_f_array = (var_I_array - VAR_DIGI - var_shot_array - VAR_READ) / (mean_I_array ** 2)
+  //
   double K2_f_array[N_TILES];
   for( int i=0; i<N_TILES; i++) 
     K2_f_array[i] = (var_I_array[i] - VAR_DIGI - var_shot_array[i] - VAR_READ) / (mean_I_array[i]*mean_I_array[i]);
-//  result = 1/np.mean(K2_f_array)
-  double sum = 0.;
+  //
+  //  result = 1/np.mean(K2_f_array)
+  //
+  double ksum = 0.;
   for( int i=0; i<N_TILES; i++)
-    sum += K2_f_array[i];
-  return 1.0 / (sum / N_TILES);
+    ksum += K2_f_array[i];
+  return 1.0 / (ksum / N_TILES);
 }

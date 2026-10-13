@@ -47,7 +47,7 @@ private:
 
   
   static  constexpr double VAR_DIGI = 1./12;
-  static  constexpr double GAIN = 0.0956 / 10; // need to re-measure this
+  static  constexpr double GAIN = 0.0956 / 10.; // need to re-measure this
   static  constexpr double VAR_READ = 1.;
   static  constexpr int N_PIX = TILE_SIZE[0] * TILE_SIZE[1];
 
@@ -55,6 +55,8 @@ private:
   uint8_t buff_ver_depth[4];		  // buffer for version, depth
   uint8_t buff_slice[slice_bytes];
   uint8_t buff_image[slice_bytes * n_slices];
+
+  static constexpr int debug = 1;
 
 public:
   SpiDevice spi;

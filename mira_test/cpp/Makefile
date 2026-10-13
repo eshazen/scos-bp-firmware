@@ -1,5 +1,5 @@
 
-EXECS = display_test_sdl2 cfg_mira ReadFrame TestDump GetBFI
+EXECS = display_test_sdl2 cfg_mira ReadFrame GetBFI
 
 all: objects ${EXECS}
 
@@ -19,7 +19,7 @@ clean:
 
 GetBFI.o: GetBFI.cpp MiraImage.h SpiDevice.hh MiraDevice.h
 
-TestDump.o: TestDump.cpp MiraImage.h SpiDevice.hh MiraDevice.h
+#TestDump.o: TestDump.cpp MiraImage.h SpiDevice.hh MiraDevice.h
 
 MiraDevice.o: MiraDevice.cpp MiraDevice.h SpiDevice.hh
 
@@ -40,8 +40,8 @@ cfg_mira: SpiDevice.o MiraDevice.o cfg_mira.o
 display_test_sdl2: display_test_sdl2.cpp
 	g++ -std=c++17 -O2 -o display_test_sdl2 display_test_sdl2.cpp -lSDL2
 
-TestDump: TestDump.o SpiDevice.o MiraImage.o
-	g++ -o $@ $^ ${LDFLAGS}
+#TestDump: TestDump.o SpiDevice.o MiraImage.o
+#	g++ -o $@ $^ ${LDFLAGS}
 
 GetBFI: GetBFI.o SpiDevice.o MiraImage.o
 	g++ -o $@ $^ ${LDFLAGS}
