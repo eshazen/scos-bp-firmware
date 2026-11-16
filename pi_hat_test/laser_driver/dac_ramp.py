@@ -69,6 +69,6 @@ set_rgb( False, False, False)
 if len(sys.argv) < 2:
     while True:
         for code in range(4095):
-            set_dac_code( code, 2)
+            set_dac_code( code, 1)
 else:
-    set_dac_code( int(sys.argv[1]), 2)
+    set_dac_code( int(sys.argv[1]), 1)

@@ -17,7 +17,7 @@ clean:
 	rm -f ${EXECS} *~ \#* *.o
 
 
-GetBFI.o: GetBFI.cpp MiraImage.h SpiDevice.hh MiraDevice.h
+GetBFI.o: GetBFI.cpp MiraImage.h SpiDevice.hh MiraDevice.h BFI_Plotter.c
 
 #TestDump.o: TestDump.cpp MiraImage.h SpiDevice.hh MiraDevice.h
 

@@ -8,6 +8,8 @@
 #include <cstring>
 #include <cstdio>
 
+#include "BFI_Plotter.c"
+
 uint8_t* spi_read( MiraImage* mira, int rsiz);
 void dump( uint8_t* raw, int rsiz, const char *s);
 
@@ -29,14 +31,18 @@ int main( int argc, char *argv[]) {
   bool print_sums = false;
   bool calc_avgs = false;
   bool calc_bfi = true;
+  bool show_plot = false;
 
-  char help[] = "usage: GetBFI [-n loops] [-f frames] [-v] [-s] [-a]";
+  char help[] = "usage: GetBFI [-p] [-n loops] [-f frames] [-v] [-s] [-a]";
 
   // process any command-line arguments
   if( argc > 1) {
     for( int i=1; i<argc; i++) {
       if( *argv[i] == '-') {	// options start with '-'
 	switch( toupper( argv[i][1])) {
+	case 'P':
+	  show_plot = true;
+	  break;
 	case 'H':
 	  puts(help);
 	  exit(1);
@@ -141,7 +147,10 @@ int main( int argc, char *argv[]) {
 
     if( calc_bfi) {
       double bfi = mira.calc_bfi( num_frames, sums, sum_sq);
-      printf("BFI = %lf\n", bfi);
+      if( show_plot)
+	plot( bfi);
+      else
+	printf("BFI = %lf\n", bfi);
     }
 
     if( dump_data) {
