@@ -7,6 +7,9 @@
 from time import perf_counter, sleep
 import numpy as np
 import spidev
+import sys
+
+debug = False
 
 # Initialize SPI bus
 spi_bus = 0
@@ -102,14 +105,18 @@ def update():
 
                 # Calculate statistics
                 mean_I_array = pix_sum_array / N_PIX
-                print("mean_I_array: ", mean_I_array[:3])
+                if debug:
+                    print("mean_I_array: ", mean_I_array[:3])
                 var_I_array = pix_sq_sum_array / N_PIX - mean_I_array ** 2
-                print("var_I_array: ", var_I_array[:3])
+                if debug:
+                    print("var_I_array: ", var_I_array[:3])
                 var_shot_array = mean_I_array * GAIN
-                print("var_shot_array: ", var_shot_array[:3])
+                if debug:
+                    print("var_shot_array: ", var_shot_array[:3])
                 K2_f_array = (var_I_array - VAR_DIGI - var_shot_array - VAR_READ) / (mean_I_array ** 2)
-                print("K2_f_array: ", K2_f_array[:3])
-                print("K2 mean: ", np.mean(K2_f_array))
+                if debug:
+                    print("K2_f_array: ", K2_f_array[:3])
+                    print("K2 mean: ", np.mean(K2_f_array))
                 result = 1/np.mean(K2_f_array)
                 #result = pix_sum_array[1]
                 #print( f"result = {result}")
@@ -141,7 +148,11 @@ if __name__ == '__main__':
     # run img processing
     spi.writebytes2([0xfe, (1<<7)+0, 1]) 
 
-    for i in range(10):
+    count = 10
+    if len(sys.argv) > 1:
+        count = int(sys.argv[1])
+        
+    for i in range(count):
         update()
 
     print(" closing")
