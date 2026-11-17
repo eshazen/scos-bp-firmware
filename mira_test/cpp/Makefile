@@ -1,9 +1,11 @@
 
-EXECS = display_test_sdl2 cfg_mira ReadFrame GetBFI
+EXECS = display_test_sdl2 cfg_mira ReadFrame GetBFI LaserControl
 
-all: objects ${EXECS}
+all: ${EXECS}
 
-objects: ReadFrame.o MiraDevice.o SpiDevice.o MiraImage.o GetBFI.o Serial_AI.o
+# all: objects ${EXECS}
+
+# objects: ReadFrame.o MiraDevice.o SpiDevice.o MiraImage.o GetBFI.o Serial_AI.o DAC_control_AI.o
 
 # Define this for the red pi hat board (enable UART comms)
 CPPDEFINES = -DPI_HAT_UART
@@ -15,7 +17,9 @@ LDFLAGS = -g
 clean:
 	rm -f ${EXECS} *~ \#* *.o
 
-GetBFI.o: GetBFI.cpp MiraImage.h SpiDevice.hh MiraDevice.h BFI_Plotter.c
+LaserControl.o: DAC_control_AI.cpp LaserControl.cpp
+
+GetBFI.o: GetBFI.cpp MiraImage.h SpiDevice.hh MiraDevice.h ASCII_Plot_AI.c
 
 #TestDump.o: TestDump.cpp MiraImage.h SpiDevice.hh MiraDevice.h
 
@@ -42,4 +46,7 @@ display_test_sdl2: display_test_sdl2.cpp
 #	g++ -o $@ $^ ${LDFLAGS}
 
 GetBFI: GetBFI.o SpiDevice.o MiraImage.o
+	g++ -o $@ $^ ${LDFLAGS}
+
+LaserControl: LaserControl.o DAC_control_AI.o
 	g++ -o $@ $^ ${LDFLAGS}

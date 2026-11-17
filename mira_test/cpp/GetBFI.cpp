@@ -8,7 +8,7 @@
 #include <cstring>
 #include <cstdio>
 
-#include "BFI_Plotter.c"
+#include "ASCII_Plot_AI.c"
 
 uint8_t* spi_read( MiraImage* mira, int rsiz);
 void dump( uint8_t* raw, int rsiz, const char *s);
@@ -29,7 +29,6 @@ int main( int argc, char *argv[]) {
   int debug = 0;
   bool dump_data = false;
   bool print_sums = false;
-  bool calc_avgs = false;
   bool calc_bfi = true;
   bool show_plot = false;
 
@@ -53,9 +52,6 @@ int main( int argc, char *argv[]) {
 	  break;
 	case 'S':
 	  print_sums = true;
-	  break;
-	case 'A':
-	  calc_avgs = true;
 	  break;
 	case 'N':
 	  if( i > argc-1) {

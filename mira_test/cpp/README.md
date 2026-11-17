@@ -5,6 +5,15 @@ This directory contains C++ code converted from Bernhard's Python.
 
 `cfg_mira.cpp` - configure the MIRA chip from a CSV config file
 
+    cfg_mira [-c <config_file>] [s]
+             -c to power-up and configure
+             -s to shut down
+
+`LaserControl.cpp` - control VCSEL and RGB LED
+
+    LaserControl [-d dac_setting]        # set DAC 3080 = 6ma
+                 [-l r g b]              # set RGB LED
+
 `ReadFrame.cpp` - read one frame (with optional averaging)
 
     usage: ReadFrame [<output_file>] [-s <frames_to_sum>]
@@ -14,11 +23,14 @@ This directory contains C++ code converted from Bernhard's Python.
 
 `GetBFI.cpp` - switch to BFI mode, read and calculate BFI
 
-    usage: usage: GetBFI [-n loops] [-f frames] [-v] [-s] [-a]
+    usage: usage: GetBFI [-n loops] [-f frames] [-v] [-s] [-p] [-d]
 	  loops is number of times to calculate and print BFI
 	  frames is number of frames to average per BFI point
+	  -h prints help
 	  -s displays raw sum data for debugging
 	  -v verbose output for debugging
+	  -p runs a text plot of BFI
+	  -d dump data for debug
 
 `display_test_sdl2.cpp` - display on the screen an image
 
