@@ -1,3 +1,16 @@
+//
+// Initialization and control interface for Mira220 sensor
+// Expects Bernhard's FPGA code with SPI interface
+//
+// initialize() - initialize SPI bus, reset the FPGA SPI
+// read_ver_depth() - read FPGA code version and bit depth
+// read_frame(n) - read a complete frame in slices
+//   sum n frames for averaging
+// bytes_in_frames(n) - calculate size of n frames
+// extract_sums() - process raw BFI data, extract sums
+// printn(v,n) - print n doubles from v
+// calc_bfi() - calculate BFI
+//
 
 #include "MiraImage.h"
 

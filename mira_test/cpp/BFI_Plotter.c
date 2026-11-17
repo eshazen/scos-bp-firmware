@@ -3,7 +3,7 @@
 #include <float.h>
 #include <math.h>
 
-#define TEST_MAIN
+// #define TEST_MAIN
 
 #define PLOT_WIDTH  100
 #define PLOT_HEIGHT 50
