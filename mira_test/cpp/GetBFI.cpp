@@ -145,8 +145,10 @@ int main( int argc, char *argv[]) {
       double bfi = mira.calc_bfi( num_frames, sums, sum_sq);
       if( show_plot)
 	plot( bfi);
-      else
-	printf("BFI = %lf\n", bfi);
+      else {
+	printf("%lf\n", bfi);
+	fflush( stdout);
+      }
     }
 
     if( dump_data) {

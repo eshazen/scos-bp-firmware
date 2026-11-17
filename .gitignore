@@ -39,6 +39,13 @@ cover/
 
 # --- Executables ---
 *.exe
+GetBFI
+LaserControl
+ReadFrame
+cfg_mira
+display_test_sdl2
+
+*.dat
 
 # --- Log Files ---
 *.log
