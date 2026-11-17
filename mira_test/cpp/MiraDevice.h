@@ -18,6 +18,11 @@
 #include <linux/spi/spidev.h>
 #include "SpiDevice.hh"
 
+#ifdef PI_HAT_UART
+#include "Serial_AI.hh"
+#endif
+
+
 class MiraDevice {
 private:
     uint8_t mira_addr = 0x54;  // Mira220 I2C address
@@ -73,6 +78,14 @@ public:
     bool read_dark_mean(uint16_t& dark_mean);
     bool read_revision(uint8_t& revision);
     bool main_otp_ops();
+
+#ifdef PI_HAT_UART
+  // UART power control
+  void mira_power_up();
+  void mira_power_down();
+  void mira_led_on();
+  void mira_all_off();
+#endif  
 
     // Configuration
     bool upload_config(const std::string& cfg_filename = "", bool verbose = false);

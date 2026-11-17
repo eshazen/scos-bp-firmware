@@ -1,6 +1,11 @@
 //
 // Bernhard's python class mira.py converted by AI to C++
-// 
+//
+// Constructor just sets address and such
+// Destructor closes SPI
+// initialize() - initialize SPI, clear FPGA SPI and reset
+// turn_on(cf) - initialize Mira220 from config file
+//
 
 #include "MiraDevice.h"
 #include <cstdio>
@@ -9,6 +14,10 @@
 #include <sstream>
 #include <iostream>
 #include <algorithm>
+
+#ifdef PI_HAT_UART
+#include "Serial_AI.hh"
+#endif
 
 // Constants
 static constexpr uint32_t USLEEP_DELAY = 10;
@@ -35,6 +44,13 @@ bool MiraDevice::initialize() {
         std::cerr << "Failed to open SPI device" << std::endl;
         return false;
     }
+
+#ifdef PI_HAT_UART
+    if (serial_open("/dev/ttyS0") != 0) {
+      std::cerr << "Failed to open UART /dev/ttyS0" << std::endl;
+      return false;
+    }
+#endif    
 
     // Flush CFG FSM
     spi.writebytes2(0x00, 0x00, 0x00);
@@ -451,6 +467,12 @@ bool MiraDevice::turn_on(const std::string& cfg_filename) {
     printf("Initializing Mira with config file: %s\n", config_file.c_str());
 
     // Step 1-5: Handled by sequencer chip on demo board
+    // 
+#ifdef PI_HAT_UART
+    // UART interface for power sequence on red Pi hat board
+    printf("Mira power up via UART");
+    mira_power_up();
+#endif    
 
     // Step 6: Wait for PLL to lock
     printf("Waiting for PLL to lock...\n");
@@ -511,3 +533,31 @@ void MiraDevice::sleep_ms(uint32_t ms) {
 void MiraDevice::sleep_us(uint32_t us) {
     std::this_thread::sleep_for(std::chrono::microseconds(us));
 }
+
+// ---- UART power and LED control ----
+#ifdef PI_HAT_UART
+
+void MiraDevice::mira_power_up() {
+    serial_send_string("$P@@");
+    serial_send_string("$P@P");
+    serial_send_string("$P@X");
+    serial_send_string("$P@\\");
+    serial_send_string("$P@|");
+}
+
+void MiraDevice::mira_power_down() {
+    serial_send_string("$P@\\");
+    serial_send_string("$P@X");
+    serial_send_string("$P@P");
+    serial_send_string("$P@@");
+}
+
+void MiraDevice::mira_led_on() {
+  serial_send_string("$P@|");
+}
+
+void MiraDevice::mira_all_off() {
+  serial_send_string("$P@@");
+
+}
+#endif
