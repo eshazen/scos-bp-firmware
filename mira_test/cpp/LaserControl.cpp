@@ -13,6 +13,7 @@ int main( int argc, char *argv[]) {
 
   bool set_laser = false;
   bool set_led = false;
+  bool shutdown_laser = false;
 
   // process any command-line arguments
   if( argc > 1) {
@@ -25,8 +26,14 @@ int main( int argc, char *argv[]) {
 	    exit(1);
 	  }
 	  dac = atoi( argv[i+1]);
-	  set_laser = true;
+	  if( dac == 0)
+	    shutdown_laser = true;
+	  else
+	    set_laser = true;
 	  ++i;
+	  break;
+	case 'S':
+	  shutdown_laser = true;
 	  break;
 	case 'L':
 	  if( i+3 > argc-1) {
@@ -43,20 +50,25 @@ int main( int argc, char *argv[]) {
       }
     }
   } else {
-    printf("LaserControl [-d DAC] [-l r g b]\n");
-    printf("  DAC = 0 to shut off laser\n");
+    printf("LaserControl [-d DAC] [-l r g b] [-s]\n");
+    printf("   -s to shut off laser\n");
+  }
+
+  if( shutdown_laser) {
+    printf("Powering down laser\n");
+    hw.setDacCode( 0);
+    hw.setShutdown( true);
+    exit(0);
   }
 
   if( set_laser) {
     printf("Set laser to %d\n", dac);
     hw.setDacCode( dac);
-//    if( dac == 0)
-//      hw.setShutdown( true);
-//    else
-      hw.setShutdown( false);
+    hw.setShutdown( false);
   }
 
   if( set_led) {
+    printf("Set LED RGB = %d, %d, %d\n", r, g, b);
     hw.setRgb( r, g, b);
   }
 
